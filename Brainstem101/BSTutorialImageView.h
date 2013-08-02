@@ -9,6 +9,8 @@
 @protocol BSTutorialImageViewDelegate <NSObject>
 @required
 - (void) dissmissTutorialImageView:(id)tutorialView;
+@optional
+- (void) userDidChooseToViewTutorial:(BOOL)wantsToView;
 @end
 
 @interface BSTutorialImageView : UIImageView
@@ -16,9 +18,11 @@
 @property (weak, nonatomic) id <BSTutorialImageViewDelegate> delegate;
 @property (strong, nonatomic) UIButton *exitButton;
 
++ (BSTutorialImageView *) askTutorial;
 + (BSTutorialImageView *) page0Tutorial;
 + (BSTutorialImageView *) atlasTutorial;
 + (BSTutorialImageView *) clinicalTutorial;
++ (BSTutorialImageView *) profileTutorial;
 
 @end
 

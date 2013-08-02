@@ -26,10 +26,6 @@ static BSModel *modelSingleton = nil;
         //tutorial logic
         _inTutorialMode = NO;
         _hasSeenFuckometer = NO;
-        if (![[NSUserDefaults standardUserDefaults] boolForKey:@"tutorial"]) {
-            _inTutorialMode = YES;
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"tutorial"];
-        }
         
         BSStructureGenerator *structuresObject = [[BSStructureGenerator alloc] init];
         _Nuclei         = [structuresObject Nuclei];
@@ -95,6 +91,15 @@ static BSModel *modelSingleton = nil;
         }
         return tmpTypeInSection;
     }
+}
+
+
+- (BOOL) isFirstLaunch {
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"hasLaunched"]){
+        NSLog(@"first launch");
+        return YES;
+    }
+    return NO;
 }
 
 @end

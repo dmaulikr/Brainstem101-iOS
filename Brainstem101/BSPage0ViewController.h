@@ -14,7 +14,8 @@
 @interface BSPage0ViewController : UIViewController <BSTutorialImageViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageViewOverlay;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundCoverImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *tagImageView;
 @property (strong, nonatomic) IBOutlet UIButton *atlasButton;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *clinicalButtons;
 @property (strong, nonatomic) IBOutlet BSFuckometerView *fuckometerView;

@@ -25,32 +25,58 @@
         [button setEnabled:NO];
     }
     [_atlasButton setEnabled:NO];
-    [_backgroundImageViewOverlay setAlpha:0.0];
     
 }
+
+
 
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
+    
+    _tagImageView = [[UIImageView alloc] init];
+    CGRect newFrame = _backgroundImageView.bounds;
+    newFrame.origin.x = newFrame.origin.x + 200;
+    [_tagImageView setFrame:newFrame];
+    [_tagImageView setImage:[UIImage imageNamed:@"page0-background-tag.png"]];
+    [_backgroundImageView addSubview:_tagImageView];
+    
     [self runFuckometer];
     
     questionCount = 0;
     [self setUpQuizViewFrames];
     
-    if ([[BSModel sharedModel] inTutorialMode]) {
+    if ([[BSModel sharedModel] isFirstLaunch]) {
+        
         double delayInSeconds = LOAD_TIME;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            [self enterTutorial:nil];
+            [self askUserIfTheyWantToSeeTheTutorial];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLaunched"];
         });
+    }else{
         
+        if ([[BSModel sharedModel] inTutorialMode]) {
+            double delayInSeconds = LOAD_TIME;
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                [self enterTutorial:nil];
+            });
+        }
     }
 }
 
--(void) setUpQuizViewFrames{
-    quizViewInitialFrame = quizviewLeftFrame = quizViewRightFrame = _quizView.frame;
-    quizViewRightFrame.origin.x += 500;
-    quizviewLeftFrame.origin.x -= 500;
+-(void)askUserIfTheyWantToSeeTheTutorial{
+    if (![self.view viewWithTag:8008]) {
+        BSTutorialImageView *tutorialView = [BSTutorialImageView askTutorial];
+        [tutorialView setDelegate:self];
+        [tutorialView setTag:8008];
+        [tutorialView setAlpha:0.0];
+        [self.view addSubview:tutorialView];
+        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [tutorialView setAlpha:1.0];
+        } completion:nil];
+    }
 }
 
 -(IBAction) enterTutorial:(id)sender {
@@ -66,22 +92,32 @@
     }
 }
 
+-(void) setUpQuizViewFrames{
+    quizViewInitialFrame = quizviewLeftFrame = quizViewRightFrame = _quizView.frame;
+    quizViewRightFrame.origin.x += 500;
+    quizviewLeftFrame.origin.x -= 500;
+}
+
+
 -(void)runFuckometer {
     if ([[BSModel sharedModel] hasSeenFuckometer]) {
         for (UIButton *button in _clinicalButtons) {
             [button setEnabled:YES];
         }
         [_atlasButton setEnabled:YES];
-        [UIView animateWithDuration:0.5 animations:^{
-            [_backgroundImageViewOverlay setAlpha:1.0];
-        }];
+        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [_backgroundCoverImageView setAlpha:0.0];
+            [_tagImageView setFrame:_backgroundImageView.bounds];
+        } completion:nil];
+
         return;
     }
 
-    [self.fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
+    [_fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            [_backgroundImageViewOverlay setAlpha:1];
+            [_backgroundCoverImageView setAlpha:0];
             [_fuckometerView setAlpha:0];
+            [_tagImageView setFrame:_backgroundImageView.bounds];
         } completion:^(BOOL finished) {
             for (UIButton *button in _clinicalButtons) {
                 [button setEnabled:YES];

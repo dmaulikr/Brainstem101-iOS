@@ -14,8 +14,9 @@
 #import "BSStructure.h"
 #import "BSStructurePath.h"
 #import "BSDetailsView.h"
+#import "BSTutorialImageView.h"
 
-@interface BSProfileViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface BSProfileViewController : UIViewController <UIGestureRecognizerDelegate, BSTutorialImageViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundView;
 @property (strong, nonatomic) IBOutlet BSProfileSectionView *sectionView;

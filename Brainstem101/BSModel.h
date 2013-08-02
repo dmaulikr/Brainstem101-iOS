@@ -24,4 +24,6 @@
 
 - (NSMutableArray*)getType:(BSStructureType)type inSection:(int)section;
 
+- (BOOL) isFirstLaunch;
+
 @end
