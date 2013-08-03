@@ -15,13 +15,12 @@
 -(void)awakeFromNib{
     [self setBackgroundColor:[UIColor clearColor]];
     [_answerBoxView setBackgroundColor:[UIColor clearColor]];
-    [_questionBoxView setBackgroundColor:[UIColor clearColor]];
+    [_answerBoxView setText:nil];
 }
 
 -(void) loadQuestionFromDictionary:(NSDictionary *) dict{
     currentQuestion = dict;
     [_answerBoxView setText:@""];
-    [_questionBoxView setText:currentQuestion[@"question"]];
     [_backgroundImageView setImage:[UIImage imageNamed:currentQuestion[@"background"]]];
     [_forgroundImageView setImage:[UIImage imageNamed:currentQuestion[@"image"]]];
 }

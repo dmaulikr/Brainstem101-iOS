@@ -872,20 +872,19 @@
                             </view>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLC-JP-nmz" customClass="BSQuizView">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-ZC-Uky" userLabel="Background">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-ZC-Uky" userLabel="Background"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cTL-Ti-awn" userLabel="Forground">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="194" id="yxp-kg-2HO"/>
+                                            <constraint firstAttribute="height" constant="269" id="IFs-lR-o23"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cTL-Ti-awn" userLabel="Forground"/>
-                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="GZ2-Wk-IrI" userLabel="Question Box">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="whS-YO-aeW" userLabel="Answer Box">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                    <textField opaque="NO" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="ANSWER" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="whS-YO-aeW" userLabel="Answer Box">
+                                        <color key="backgroundColor" red="0.48127547554347827" green="0.48127547554347827" blue="0.48127547554347827" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="X9b-qk-UxQ"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.86735733695652173" green="0.86735733695652173" blue="0.86735733695652173" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -893,24 +892,21 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="cTL-Ti-awn" firstAttribute="top" secondItem="yLC-JP-nmz" secondAttribute="top" type="default" id="5CO-ni-aEq"/>
-                                    <constraint firstItem="GZ2-Wk-IrI" firstAttribute="leading" secondItem="yLC-JP-nmz" secondAttribute="leading" type="default" id="6OE-wG-PZl"/>
                                     <constraint firstItem="CD6-ZC-Uky" firstAttribute="top" secondItem="yLC-JP-nmz" secondAttribute="top" type="default" id="7aO-bf-zHx"/>
                                     <constraint firstItem="whS-YO-aeW" firstAttribute="leading" secondItem="yLC-JP-nmz" secondAttribute="leading" type="default" id="9MU-Bg-teR"/>
                                     <constraint firstItem="CD6-ZC-Uky" firstAttribute="leading" secondItem="yLC-JP-nmz" secondAttribute="leading" type="default" id="CZg-5z-MlP"/>
                                     <constraint firstItem="CD6-ZC-Uky" firstAttribute="trailing" secondItem="yLC-JP-nmz" secondAttribute="trailing" type="default" id="ImG-Ja-aQ0"/>
                                     <constraint firstItem="cTL-Ti-awn" firstAttribute="trailing" secondItem="yLC-JP-nmz" secondAttribute="trailing" type="default" id="JZp-ce-aC7"/>
-                                    <constraint firstItem="GZ2-Wk-IrI" firstAttribute="trailing" secondItem="yLC-JP-nmz" secondAttribute="trailing" type="default" id="TKI-T5-hnC"/>
-                                    <constraint firstItem="whS-YO-aeW" firstAttribute="top" secondItem="GZ2-Wk-IrI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bE4-Rj-aQQ"/>
+                                    <constraint firstItem="whS-YO-aeW" firstAttribute="bottom" secondItem="yLC-JP-nmz" secondAttribute="bottom" type="default" id="dTs-he-xDa"/>
                                     <constraint firstItem="cTL-Ti-awn" firstAttribute="leading" secondItem="yLC-JP-nmz" secondAttribute="leading" type="default" id="dfd-de-U2G"/>
-                                    <constraint firstItem="CD6-ZC-Uky" firstAttribute="bottom" secondItem="cTL-Ti-awn" secondAttribute="bottom" type="default" id="jwZ-ch-z2l"/>
-                                    <constraint firstAttribute="bottom" secondItem="whS-YO-aeW" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="l3O-jL-o7i"/>
+                                    <constraint firstItem="cTL-Ti-awn" firstAttribute="bottom" secondItem="yLC-JP-nmz" secondAttribute="bottom" type="default" id="qCo-D9-1iH"/>
+                                    <constraint firstItem="CD6-ZC-Uky" firstAttribute="bottom" secondItem="yLC-JP-nmz" secondAttribute="bottom" type="default" id="rVl-3H-Hgq"/>
                                     <constraint firstItem="whS-YO-aeW" firstAttribute="trailing" secondItem="yLC-JP-nmz" secondAttribute="trailing" type="default" id="xPv-pH-eGl"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="answerBoxView" destination="whS-YO-aeW" id="64h-7s-sXc"/>
                                     <outlet property="backgroundImageView" destination="CD6-ZC-Uky" id="ZqS-1m-Ylu"/>
                                     <outlet property="forgroundImageView" destination="cTL-Ti-awn" id="t7k-pe-8dm"/>
-                                    <outlet property="questionBoxView" destination="GZ2-Wk-IrI" id="SW2-5M-53c"/>
                                     <outletCollection property="gestureRecognizers" destination="QSk-Nq-jL6" appends="YES" id="gaR-La-RS9"/>
                                     <outletCollection property="gestureRecognizers" destination="R4V-fI-O9x" appends="YES" id="uEc-kJ-5e3"/>
                                     <outletCollection property="gestureRecognizers" destination="swq-vv-XRC" appends="YES" id="eYw-BA-XrP"/>
@@ -995,7 +991,6 @@
                             <constraint firstAttribute="bottom" secondItem="cE9-MD-God" secondAttribute="bottom" constant="214" id="6Xe-7l-9T6"/>
                             <constraint firstItem="AhF-f8-wfz" firstAttribute="top" secondItem="EtD-Nw-XI1" secondAttribute="top" constant="212" id="Agw-nC-hbX"/>
                             <constraint firstAttribute="bottom" secondItem="dqT-FL-ujV" secondAttribute="bottom" constant="282" id="AoT-Ue-VuT"/>
-                            <constraint firstItem="yLC-JP-nmz" firstAttribute="top" secondItem="EtD-Nw-XI1" secondAttribute="top" constant="755" id="EDl-us-21a"/>
                             <constraint firstItem="cE9-MD-God" firstAttribute="trailing" secondItem="AhF-f8-wfz" secondAttribute="trailing" type="default" id="JoV-65-LcA"/>
                             <constraint firstItem="dqT-FL-ujV" firstAttribute="leading" secondItem="EtD-Nw-XI1" secondAttribute="leading" constant="212" id="KGc-cU-G0F"/>
                             <constraint firstItem="Ca1-Ph-CjA" firstAttribute="trailing" secondItem="EtD-Nw-XI1" secondAttribute="trailing" type="default" id="NaC-dk-Nbh"/>
@@ -1068,6 +1063,143 @@
         <image name="profile-section-backdrop.png" width="1536" height="2048"/>
         <image name="profile-text-backdrop.png" width="1536" height="2048"/>
     </resources>
+    <classes>
+        <class className="BSAtlasViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSAtlasViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clinicalButtonAction:"/>
+                <relationship kind="action" name="handleRotation:" candidateClass="UIRotationGestureRecognizer"/>
+                <relationship kind="action" name="handleSingleTap:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="handleSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="minusButton:"/>
+                <relationship kind="action" name="plusButton:"/>
+                <relationship kind="action" name="rotateAllSections:"/>
+                <relationship kind="action" name="searchButtonPressed:"/>
+                <relationship kind="outlet" name="doorImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="doorShadowImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="indexTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="mainPanel" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mainPanelOverlay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mainPanelShadow" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="orangeImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="searchBox" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="BSClinicalCollectionViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSClinicalCollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="syndromNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BSClinicalCollectionViewSectionCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSClinicalCollectionViewSectionCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView0" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imageView1" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="BSClinicalDetailsTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSClinicalDetailsTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="deficitsView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="symptomsView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="BSClinicalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSClinicalViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="boxViewOverlay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="deficitTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="descriptionView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="fadingEyeView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mugshotView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="sectionCollectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="syndromeSelectionCollectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="BSDetailsView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSDetailsView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BSDrawModeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSDrawModeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clear:"/>
+                <relationship kind="action" name="goBackToProfile:"/>
+                <relationship kind="action" name="hintButtonAction:"/>
+                <relationship kind="action" name="saveAsImage:"/>
+                <relationship kind="action" name="undo:"/>
+                <relationship kind="outlet" name="drawView" candidateClass="BSDrawView"/>
+                <relationship kind="outlet" name="sectionView" candidateClass="BSSectionView"/>
+            </relationships>
+        </class>
+        <class className="BSDrawView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSDrawView.h"/>
+        </class>
+        <class className="BSFuckometerView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSFuckometerView.h"/>
+        </class>
+        <class className="BSPage0ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSPage0ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="action" name="dice:"/>
+                <relationship kind="action" name="enterTutorial:"/>
+                <relationship kind="action" name="handleGestures:"/>
+                <relationship kind="outlet" name="atlasButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="backgroundCoverImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="fuckometerView" candidateClass="BSFuckometerView"/>
+                <relationship kind="outlet" name="quizView" candidateClass="BSQuizView"/>
+                <relationship kind="outlet" name="tagImageView" candidateClass="UIImageView"/>
+                <relationship kind="outletCollection" name="clinicalButtons" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="BSProfileSectionView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSProfileSectionView.h"/>
+        </class>
+        <class className="BSProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSProfileViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="goBackToAtlas:"/>
+                <relationship kind="action" name="handeSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="handleRotation:"/>
+                <relationship kind="outlet" name="backgroundView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="detailView" candidateClass="BSDetailsView"/>
+                <relationship kind="outlet" name="sectionView" candidateClass="BSProfileSectionView"/>
+            </relationships>
+        </class>
+        <class className="BSQuizView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSQuizView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="answerBoxView" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="forgroundImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="BSSectionView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSSectionView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

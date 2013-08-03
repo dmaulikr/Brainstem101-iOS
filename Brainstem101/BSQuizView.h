@@ -11,7 +11,6 @@
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImageView;
 @property (nonatomic, strong) IBOutlet UIImageView *forgroundImageView;
 
-@property (nonatomic, strong) IBOutlet UITextField *questionBoxView;
 @property (nonatomic, strong) IBOutlet UITextField *answerBoxView;
 
 -(void) loadQuestionFromDictionary:(NSDictionary *) dict;
