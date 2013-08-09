@@ -423,6 +423,11 @@
     BSStructure *cn3 = [[BSStructure alloc]initWithName:@"CN III (Oculomotor)" andType:BSStructureTypeCranialNerve];
     [_CranialNerves addObject:cn3];
     
+    BSStructure *n0 = [[BSStructure alloc] initWithName:@"Abducens Nucleus" andType:BSStructureTypeNucleus];
+    [n0 setStructureDescription:@"Cell bodies whose axons innervate the  lateral rectus (intrinsic eye muscle)."];
+    n0.structureName = @"- Abducens Nucleus";
+    [_CranialNerves addObject:n0];
+    
     BSStructure *cn4 = [[BSStructure alloc]initWithName:@"CN IV (Trochlear)" andType:BSStructureTypeCranialNerve];
     [cn4 setStructureDescription:@"Axons that innervate the  Superior Oblique m., (an intrinsic muscle of the eye)"];
     [_CranialNerves addObject:cn4];
