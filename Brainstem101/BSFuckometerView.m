@@ -17,12 +17,12 @@
     _backgroundView = [[UIImageView alloc] initWithFrame:self.bounds];
     [_backgroundView setContentMode:UIViewContentModeScaleAspectFit];
     [_backgroundView setImage:[UIImage imageNamed:@"fuckometer-background.png"]];
-    [_backgroundView setAlpha:0.0];
+//    [_backgroundView setAlpha:0.0];
     
     _needleView = [[UIImageView alloc] initWithFrame:self.bounds];
     [_needleView setContentMode:UIViewContentModeScaleAspectFit];
     [_needleView setImage:[UIImage imageNamed:@"fuckometer-needle.png"]];
-    [_needleView setAlpha:0.0];
+//    [_needleView setAlpha:0.0];
     
     [self addSubview:_backgroundView];
     [self addSubview:_needleView];
