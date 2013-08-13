@@ -114,7 +114,7 @@
 }
 
 - (void) fade{
-    [_backingView setAlpha:0.5];
+    [_backingView setAlpha:0.3];
 }
 - (void) unfade{
     [_backingView setAlpha:1.0];

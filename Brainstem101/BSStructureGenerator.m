@@ -108,6 +108,9 @@
     [n12 setStructureDescription:@"Cell bodies that receive information from the semicircular canals, utricle, saccule, and vermis of cerebellum. Responsible for integrating vestibular inputs.  Axons descend to brainstem as the vestibuloreticular tracts and to the spinal cord as the vestibulospinal tracts."];
     [_Nuclei addObject:n12];
     
+    
+    
+    
     BSStructure *n13 = [[BSStructure alloc] initWithName:@"Interpeduncular Nucleus" andType:BSStructureTypeNucleus];
     [n13 setStructureDescription:@"Imposes inhibitory effect on many other brain regions (dampens dopamine effects). More specifically, receives excitatory input from medial Habenula, the diagonal band, the dorsal tegmentum, Raphe Nuclei, the Central Grey and the Locus Ceruleus. Outputs inhibitory signal to dorsal tegmental structures."];
     [_Nuclei addObject:n13];
@@ -129,6 +132,7 @@
     
     BSStructure *n17 = [[BSStructure alloc] initWithName:@"Medial Motor Nuclei" andType:BSStructureTypeNucleus];
     [_Nuclei addObject:n17];
+    
     
     BSStructure *n18 = [[BSStructure alloc] initWithName:@"Medial Vestibular Nucleus" andType:BSStructureTypeNucleus];
     [n18 setStructureDescription:@"Cell bodies that receive information from the semicircular canals and project to the cervical spinal cord to innervate neck muscles to stabilize the head in space, axons are also part of the vestibulo-occular reflex (VOR)."];
@@ -174,7 +178,6 @@
     
     
     BSStructure *nn27 = [[BSStructure alloc]initWithName:@"Principal Nucleus" andType:BSStructureTypeNucleus];
-    [n27 setStructureDescription:@"Comming soon.."];
     [_Nuclei addObject:nn27];
     
     //TODO: maybe separate these
@@ -207,8 +210,11 @@
     BSStructure *n35 = [[BSStructure alloc] initWithName:@"Spinal Trigeminal Nucleus" andType:BSStructureTypeNucleus];
     [_Nuclei addObject:n35];
     
+    BSStructure *cn5 = [[BSStructure alloc] initWithName:@"Trigeminal Motor Nucleus" andType:BSStructureTypeNucleus];
+    [_Nuclei addObject:cn5];
+    
     BSStructure *n36 = [[BSStructure alloc] initWithName:@"Trochlear Nucleus" andType:BSStructureTypeNucleus];
-    [_Nuclei addObject:n36]; 
+    [_Nuclei addObject:n36];
     
 }
 
@@ -332,9 +338,19 @@
     [a1 addArteryNamed:@"anterior-spinal" forIndecies:@[@0, @1, @2]];
     [_Arteries addObject:a1];
     
-    BSStructure *a2 = [[BSStructure alloc] initWithName:@"Basilar" andType:BSStructureTypeArtery];
-    [a2 addArteryNamed:@"paramedian-basilar" forIndecies:@[@3, @4, @5, @6, @7 ,@8]];
+    BSStructure *a2 = [[BSStructure alloc] initWithName:@"Basilar Paramedian" andType:BSStructureTypeArtery];
+    [a2 addArteryNamed:@"basilar-paramedian" forIndecies:@[@3, @4, @5, @6, @7 ,@8]];
     [_Arteries addObject:a2];
+    
+    BSStructure *a21 = [[BSStructure alloc] initWithName:@"Basilar Long Circumferential" andType:BSStructureTypeArtery];
+    [a21 addArteryNamed:@"basilar-long" forIndecies:@[@4, @5, @6]];
+    [_Arteries addObject:a21];
+    
+    
+    BSStructure *a22 = [[BSStructure alloc] initWithName:@"Basilar Short Circumferential" andType:BSStructureTypeArtery];
+    [a22 addArteryNamed:@"basilar-short" forIndecies:@[@4, @5, @6]];
+    [_Arteries addObject:a22];
+    
     
     BSStructure *a3 = [[BSStructure alloc] initWithName:@"Posterior Cerebral" andType:BSStructureTypeArtery];
     [a3 addArteryNamed:@"posterior-cerebral" forIndecies:@[@7, @8]];
@@ -423,27 +439,121 @@
     BSStructure *cn3 = [[BSStructure alloc]initWithName:@"CN III (Oculomotor)" andType:BSStructureTypeCranialNerve];
     [_CranialNerves addObject:cn3];
     
-    BSStructure *n0 = [[BSStructure alloc] initWithName:@"Abducens Nucleus" andType:BSStructureTypeNucleus];
-    [n0 setStructureDescription:@"Cell bodies whose axons innervate the  lateral rectus (intrinsic eye muscle)."];
-    n0.structureName = @"- Abducens Nucleus";
-    [_CranialNerves addObject:n0];
+    BSStructure *n27 = [[BSStructure alloc]initWithName:@"Oculomotor Nucleus" andType:BSStructureTypeNucleus];
+    [n27 setStructureDescription:@"(GSE) Cell Bodies whose axons innervate  4 of the 6 intrinsic muscles of the eye (Superior Rectus, Medial Rectus, Inferior Rectus, Inerior Oblique) and regulates blinking by innervating the Levator palpebrae Superioris m."];
+    n27.structureName = @"- Oculomotor Nucleus";
+    [_CranialNerves addObject:n27];
+    
+    BSStructure *n8 = [[BSStructure alloc] initWithName:@"Edinger-Westphal Nucleus" andType:BSStructureTypeNucleus];
+    [n8 setStructureDescription:@"(GVE) Cell bodies whose preganglionic parasympathetic axons project to the cilliary ganglion of the eye. Functions include pupillary constriction (Sphincter Pupillae) acommodation (Cilliary muscles of the lens), and convergence."];
+    n8.structureName = @"- Edinger-Westphal Nucleus";
+    [_CranialNerves addObject:n8];
+    
+    //////////////////////////////////
     
     BSStructure *cn4 = [[BSStructure alloc]initWithName:@"CN IV (Trochlear)" andType:BSStructureTypeCranialNerve];
     [cn4 setStructureDescription:@"Axons that innervate the  Superior Oblique m., (an intrinsic muscle of the eye)"];
     [_CranialNerves addObject:cn4];
     
+    
+    BSStructure *n36 = [[BSStructure alloc] initWithName:@"Trochlear Nucleus" andType:BSStructureTypeNucleus];
+    n36.structureName = @"- Trochlear Nucleus";
+    [_CranialNerves addObject:n36];
+    
+    
+    
+    ///////////////////////////////////
+    
     BSStructure *cn5 = [[BSStructure alloc]initWithName:@"CN V (Trigeminal)" andType:BSStructureTypeCranialNerve];
     [_CranialNerves addObject:cn5];
     
+    BSStructure *cn55 = [[BSStructure alloc] initWithName:@"Trigeminal Motor Nucleus" andType:BSStructureTypeNucleus];
+    cn55.structureName = @"- Trigeminal Motor Nucleus";
+    [_CranialNerves addObject:cn55];
+    
+    BSStructure *nn27 = [[BSStructure alloc]initWithName:@"Principal Nucleus" andType:BSStructureTypeNucleus];
+
+    nn27.structureName = @"- Principal Nucleus";
+    [_CranialNerves addObject:nn27];
+    
+    
+    BSStructure *n35 = [[BSStructure alloc] initWithName:@"Spinal Trigeminal Nucleus" andType:BSStructureTypeNucleus];
+    n35.structureName = @"- Spinal Trigeminal Nucleus";
+    [_CranialNerves addObject:n35];
+    
+    
+    BSStructure *t21 = [[BSStructure alloc] initWithName:@"Mesencephalic Nucleus" andType:BSStructureTypeNucleus];
+    [t21 setStructureDescription:@"Pseudounipolar cells that carry proprioception sensation from the jaw directly to the  trigeminal motor nuclei. Afferent component of the Jaw Jerk ReflexLoss of Jaw Jerk Reflex (dysfunction of afferent component)"];
+    t21.structureName = @"- Mesencephalic Nucleus";
+    [_CranialNerves addObject:t21];
+    
+    ////////////////////////////////////
+    
     BSStructure *cn6 = [[BSStructure alloc]initWithName:@"CN VI (Abducens)" andType:BSStructureTypeCranialNerve];
     [_CranialNerves addObject:cn6];
+    
+    BSStructure *n0 = [[BSStructure alloc] initWithName:@"Abducens Nucleus" andType:BSStructureTypeNucleus];
+    [n0 setStructureDescription:@"Cell bodies whose axons innervate the  lateral rectus (intrinsic eye muscle)."];
+    n0.structureName = @"- Abducens Nucleus";
+    [_CranialNerves addObject:n0];
+    
+    
+    //////////////////////////////////////
     
     BSStructure *cn7 = [[BSStructure alloc]initWithName:@"CN VII (Facial)" andType:BSStructureTypeCranialNerve];
     [cn7 setStructureDescription:@"Axons that carry efferent motor signals to ALL muscles of  facial expression"];
     [_CranialNerves addObject:cn7];
     
+    
+    BSStructure *n7 = [[BSStructure alloc] initWithName:@"Facial Motor Nucleus" andType:BSStructureTypeNucleus];
+    [n7 setStructureDescription:@"Cell bodies whose axons generate motor signals to animate facial muscles."];
+    n7.structureName = @"- Facial Motor Nucleus";
+    [_CranialNerves addObject:n7];
+    
+    BSStructure *n33 = [[BSStructure alloc] initWithName:@"Salivatory Nucleus" andType:BSStructureTypeNucleus];
+    [n33 setStructureDescription:@"(GVE) Parasympathetic preganglionic cell bodies whose axons synapse on the otic ganglia whose axons will stimulate secretion of saliva by the parotid gland."];
+    n33.structureName = @"- Salivatory Nucleus";
+    [_CranialNerves addObject:n33];
+    
+    BSStructure *n34 = [[BSStructure alloc] initWithName:@"Solitary Nucleus and Tract" andType:BSStructureTypeNucleus];
+    [n34 setStructureDescription:@"Cell bodies that receive taste sensation (Via CN VII and IX), and visceral sensation from Heart, Lungs, GI and Liver (via CN IX and CN X) -- Noteworthy: signal from chemoreceptors of Carotid Bodies associate with CN IX, whereas, signals picked up by Aortic Body chemoreceptors use CN X to reach the brainstem. Send projections to Hypothalamus (paraventricular nuclei) and Amygdala (central Nuclei). Axons centered within the Solitary nucleus; it carries both afferent and efferent fibers"];
+    n34.structureName = @"- Solitary Nucleus and Tract";
+    [_CranialNerves addObject:n34];
+    
+    //////////////////////////////////
+    
     BSStructure *cn8 = [[BSStructure alloc]initWithName:@"CN VIII (Vestibulocochlear)" andType:BSStructureTypeCranialNerve];
     [_CranialNerves addObject:cn8];
+    
+    
+    BSStructure *n12 = [[BSStructure alloc] initWithName:@"Inferior Vestibular Nucleus" andType:BSStructureTypeNucleus];
+    [n12 setStructureDescription:@"Cell bodies that receive information from the semicircular canals, utricle, saccule, and vermis of cerebellum. Responsible for integrating vestibular inputs.  Axons descend to brainstem as the vestibuloreticular tracts and to the spinal cord as the vestibulospinal tracts."];
+    n12.structureName = @"- Inferior Vestibular Nucleus";
+    [_CranialNerves addObject:n12];
+    
+    BSStructure *n18 = [[BSStructure alloc] initWithName:@"Medial Vestibular Nucleus" andType:BSStructureTypeNucleus];
+    [n18 setStructureDescription:@"Cell bodies that receive information from the semicircular canals and project to the cervical spinal cord to innervate neck muscles to stabilize the head in space, axons are also part of the vestibulo-occular reflex (VOR)."];
+    n18.structureName = @"- Medial Vestibular Nucleus";
+    [_CranialNerves addObject:n18];
+    
+    
+    BSStructure *n15 = [[BSStructure alloc] initWithName:@"Lateral Vestibular Nucleus" andType:BSStructureTypeNucleus];
+    n15.structureName = @"- Lateral Vestibular Nucleus";
+    [_CranialNerves addObject:n15];
+    
+    
+    BSStructure *n3 = [[BSStructure alloc] initWithName:@"Anterior Cochlear Nucleus" andType:BSStructureTypeNucleus];
+    [n3 setStructureDescription:@"Cell bodies that consists of anteroventral and posterovental cochlear nuclei. Receives input from the cochlea (through the Auditory Nerve). The axonsof the ventral cochlear nucleus project as  the ventral acoustic striae , through trapezoid body to contralateral superior olivary complex."];
+    n3.structureName = @"- Anterior Cochlear Nucleus";
+    [_CranialNerves addObject:n3];
+    
+    BSStructure *n29 = [[BSStructure alloc] initWithName:@"Posterior Cochlear Nucleus" andType:BSStructureTypeNucleus];
+    [n29 setStructureDescription:@"Cell bodies that receive signals from the cochlea, through the 'Auditory Nerve'. The axons project as the Intermediate Acoustic Striae which joins the ascending fibers in the contralateral lateral lemniscus (traveling to Inferior Colliculus)"];
+    n29.structureName = @"- Posterior Cochlear Nucleus";
+    [_CranialNerves addObject:n29];
+    
+    
+    /////////////////////////////////////
     
     BSStructure *cn9 = [[BSStructure alloc]initWithName:@"CN IX (Glossopharyngeal)" andType:BSStructureTypeCranialNerve];
     [_CranialNerves addObject:cn9];

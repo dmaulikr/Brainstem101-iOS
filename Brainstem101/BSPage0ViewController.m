@@ -105,7 +105,7 @@
             [button setEnabled:YES];
         }
         [_atlasButton setEnabled:YES];
-        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [_backgroundCoverImageView setAlpha:0.0];
             [_tagImageView setFrame:_backgroundImageView.bounds];
         } completion:nil];

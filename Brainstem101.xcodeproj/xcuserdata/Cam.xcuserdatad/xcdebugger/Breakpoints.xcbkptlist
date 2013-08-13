@@ -60,13 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Brainstem101/BSQuestionGenerator.m"
-         timestampString = "397180690.000599"
+         timestampString = "398074703.807454"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "235"
-         endingLineNumber = "235"
-         landmarkName = "-getNextQuestion"
-         landmarkType = "5">
+         startingLineNumber = "226"
+         endingLineNumber = "226">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"

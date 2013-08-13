@@ -62,6 +62,18 @@
 		321C8EA31711224600517510 /* draw-mode-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA21711224600517510 /* draw-mode-background.png */; };
 		321C8EA617115CD200517510 /* fuckometer-needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA417115CD200517510 /* fuckometer-needle.png */; };
 		321C8EA717115CD200517510 /* fuckometer-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA517115CD200517510 /* fuckometer-background.png */; };
+		322FBF3917B9ECA10056D964 /* basilar-long-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3617B9ECA10056D964 /* basilar-long-4.png */; };
+		322FBF3A17B9ECA10056D964 /* basilar-long-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3717B9ECA10056D964 /* basilar-long-5.png */; };
+		322FBF3B17B9ECA10056D964 /* basilar-long-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3817B9ECA10056D964 /* basilar-long-6.png */; };
+		322FBF4217B9ECB50056D964 /* basilar-paramedian-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3C17B9ECB50056D964 /* basilar-paramedian-3.png */; };
+		322FBF4317B9ECB50056D964 /* basilar-paramedian-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3D17B9ECB50056D964 /* basilar-paramedian-4.png */; };
+		322FBF4417B9ECB50056D964 /* basilar-paramedian-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3E17B9ECB50056D964 /* basilar-paramedian-5.png */; };
+		322FBF4517B9ECB50056D964 /* basilar-paramedian-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3F17B9ECB50056D964 /* basilar-paramedian-6.png */; };
+		322FBF4617B9ECB50056D964 /* basilar-paramedian-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4017B9ECB50056D964 /* basilar-paramedian-7.png */; };
+		322FBF4717B9ECB50056D964 /* basilar-paramedian-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4117B9ECB50056D964 /* basilar-paramedian-8.png */; };
+		322FBF4B17B9ECBD0056D964 /* basilar-short-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4817B9ECBD0056D964 /* basilar-short-4.png */; };
+		322FBF4C17B9ECBD0056D964 /* basilar-short-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4917B9ECBD0056D964 /* basilar-short-5.png */; };
+		322FBF4D17B9ECBD0056D964 /* basilar-short-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4A17B9ECBD0056D964 /* basilar-short-6.png */; };
 		3230B659168062C3004A196E /* BSProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230B658168062C3004A196E /* BSProfileViewController.m */; };
 		323A7234177735C500222ECF /* tutorial-atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 323A7232177735C500222ECF /* tutorial-atlas.png */; };
 		323A7235177735C500222ECF /* tutorial-page0.png in Resources */ = {isa = PBXBuildFile; fileRef = 323A7233177735C500222ECF /* tutorial-page0.png */; };
@@ -107,177 +119,177 @@
 		326FB6A6170C15E0002CD59B /* foville-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A5170C15E0002CD59B /* foville-perf.png */; };
 		326FB6A8170C15E7002CD59B /* claude-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A7170C15E7002CD59B /* claude-perf.png */; };
 		3271C05F178D5C3C00C7F8BF /* page0-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3271C05E178D5C3C00C7F8BF /* page0-background.png */; };
-		32782E6617B4A701008C072D /* accessory-nucleus-(CNXI).png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB117B4A701008C072D /* accessory-nucleus-(CNXI).png */; };
-		32782E6717B4A701008C072D /* anterior-corticospinal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB217B4A701008C072D /* anterior-corticospinal-tract.png */; };
-		32782E6817B4A701008C072D /* cuneate-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB317B4A701008C072D /* cuneate-nucleus.png */; };
-		32782E6917B4A701008C072D /* gracile-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB417B4A701008C072D /* gracile-nucleus.png */; };
-		32782E6A17B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB517B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face.png */; };
-		32782E6B17B4A701008C072D /* proprioception-from-ipsilateral-arm.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB617B4A701008C072D /* proprioception-from-ipsilateral-arm.png */; };
-		32782E6C17B4A701008C072D /* pyramidal-decussation.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB717B4A701008C072D /* pyramidal-decussation.png */; };
-		32782E6D17B4A701008C072D /* quadriplegia.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB817B4A701008C072D /* quadriplegia.png */; };
+		32782E6617B4A701008C072D /* accessory-nucleus-(CNXI)-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */; };
+		32782E6717B4A701008C072D /* anterior-corticospinal-tract-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */; };
+		32782E6817B4A701008C072D /* cuneate-nucleus-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB317B4A701008C072D /* cuneate-nucleus-0.png */; };
+		32782E6917B4A701008C072D /* gracile-nucleus-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB417B4A701008C072D /* gracile-nucleus-0.png */; };
+		32782E6A17B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB517B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png */; };
+		32782E6B17B4A701008C072D /* proprioception-from-ipsilateral-arm-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB617B4A701008C072D /* proprioception-from-ipsilateral-arm-0.png */; };
+		32782E6C17B4A701008C072D /* pyramidal-decussation-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB717B4A701008C072D /* pyramidal-decussation-0.png */; };
+		32782E6D17B4A701008C072D /* quadriplegia-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB817B4A701008C072D /* quadriplegia-0.png */; };
 		32782E6E17B4A701008C072D /* quiz-background-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB917B4A701008C072D /* quiz-background-0.png */; };
-		32782E6F17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBA17B4A701008C072D /* spinal-trigeminal-nucleus.png */; };
-		32782E7017B4A701008C072D /* spinal-trigeminal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBB17B4A701008C072D /* spinal-trigeminal-tract.png */; };
-		32782E7117B4A701008C072D /* spinocerebellar-tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBC17B4A701008C072D /* spinocerebellar-tracts.png */; };
-		32782E7217B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBE17B4A701008C072D /* als.png */; };
-		32782E7317B4A701008C072D /* contralateral-hemiplegia.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBF17B4A701008C072D /* contralateral-hemiplegia.png */; };
-		32782E7417B4A701008C072D /* cuneate-fasciculus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC017B4A701008C072D /* cuneate-fasciculus.png */; };
-		32782E7517B4A701008C072D /* gracile-fasciculus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC117B4A701008C072D /* gracile-fasciculus.png */; };
-		32782E7617B4A701008C072D /* gracile-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC217B4A701008C072D /* gracile-nucleus.png */; };
-		32782E7717B4A701008C072D /* hypoglossal-nuclei-(CNXI).png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC317B4A701008C072D /* hypoglossal-nuclei-(CNXI).png */; };
-		32782E7817B4A701008C072D /* internal-arcuate-fibers.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC417B4A701008C072D /* internal-arcuate-fibers.png */; };
-		32782E7917B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC517B4A701008C072D /* medial-lemniscus.png */; };
-		32782E7A17B4A701008C072D /* nucleus-ambiguus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC617B4A701008C072D /* nucleus-ambiguus.png */; };
-		32782E7B17B4A701008C072D /* proprioception-vibration-&-fine-touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC717B4A701008C072D /* proprioception-vibration-&-fine-touch.png */; };
+		32782E6F17B4A701008C072D /* spinal-trigeminal-nucleus-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBA17B4A701008C072D /* spinal-trigeminal-nucleus-0.png */; };
+		32782E7017B4A701008C072D /* spinal-trigeminal-tract-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBB17B4A701008C072D /* spinal-trigeminal-tract-0.png */; };
+		32782E7117B4A701008C072D /* spinocerebellar-tracts-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBC17B4A701008C072D /* spinocerebellar-tracts-0.png */; };
+		32782E7217B4A701008C072D /* als-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBE17B4A701008C072D /* als-1.png */; };
+		32782E7317B4A701008C072D /* contralateral-hemiplegia-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DBF17B4A701008C072D /* contralateral-hemiplegia-1.png */; };
+		32782E7417B4A701008C072D /* cuneate-fasciculus-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC017B4A701008C072D /* cuneate-fasciculus-1.png */; };
+		32782E7517B4A701008C072D /* gracile-fasciculus-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC117B4A701008C072D /* gracile-fasciculus-1.png */; };
+		32782E7617B4A701008C072D /* gracile-nucleus-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC217B4A701008C072D /* gracile-nucleus-1.png */; };
+		32782E7717B4A701008C072D /* hypoglossal-nuclei-(CNXI)-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC317B4A701008C072D /* hypoglossal-nuclei-(CNXI)-1.png */; };
+		32782E7817B4A701008C072D /* internal-arcuate-fibers-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC417B4A701008C072D /* internal-arcuate-fibers-1.png */; };
+		32782E7917B4A701008C072D /* medial-lemniscus-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC517B4A701008C072D /* medial-lemniscus-1.png */; };
+		32782E7A17B4A701008C072D /* nucleus-ambiguus-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC617B4A701008C072D /* nucleus-ambiguus-1.png */; };
+		32782E7B17B4A701008C072D /* proprioception-vibration-&-fine-touch-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC717B4A701008C072D /* proprioception-vibration-&-fine-touch-1.png */; };
 		32782E7C17B4A701008C072D /* quiz-background-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC817B4A701008C072D /* quiz-background-1.png */; };
-		32782E7D17B4A701008C072D /* solitary-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC917B4A701008C072D /* solitary-nucleus.png */; };
-		32782E7E17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCA17B4A701008C072D /* spinal-trigeminal-nucleus.png */; };
-		32782E7F17B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCC17B4A701008C072D /* als.png */; };
-		32782E8017B4A701008C072D /* anterior-spinocerebellar-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCD17B4A701008C072D /* anterior-spinocerebellar-tract.png */; };
-		32782E8117B4A701008C072D /* clinical-wallenberg's.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCE17B4A701008C072D /* clinical-wallenberg's.png */; };
-		32782E8217B4A701008C072D /* corticospinal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCF17B4A701008C072D /* corticospinal-tract.png */; };
-		32782E8317B4A701008C072D /* hypoglossal-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD017B4A701008C072D /* hypoglossal-nucleus.png */; };
-		32782E8417B4A701008C072D /* inferior-cerebellar-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD117B4A701008C072D /* inferior-cerebellar-peduncle.png */; };
-		32782E8517B4A701008C072D /* inferior-olivary-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD217B4A701008C072D /* inferior-olivary-nucleus.png */; };
-		32782E8617B4A701008C072D /* inferior-vestibular-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD317B4A701008C072D /* inferior-vestibular-nucleus.png */; };
-		32782E8717B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD417B4A701008C072D /* medial-lemniscus.png */; };
-		32782E8817B4A701008C072D /* medial-medullary-syndrome.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD517B4A701008C072D /* medial-medullary-syndrome.png */; };
-		32782E8917B4A701008C072D /* medial-vestibular-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD617B4A701008C072D /* medial-vestibular-nucleus.png */; };
-		32782E8A17B4A701008C072D /* mlf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD717B4A701008C072D /* mlf.png */; };
-		32782E8B17B4A701008C072D /* motor-nucleus-of-vagus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD817B4A701008C072D /* motor-nucleus-of-vagus.png */; };
-		32782E8C17B4A701008C072D /* nucleus-ambiguus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD917B4A701008C072D /* nucleus-ambiguus.png */; };
+		32782E7D17B4A701008C072D /* solitary-nucleus-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DC917B4A701008C072D /* solitary-nucleus-1.png */; };
+		32782E7E17B4A701008C072D /* spinal-trigeminal-nucleus-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCA17B4A701008C072D /* spinal-trigeminal-nucleus-1.png */; };
+		32782E7F17B4A701008C072D /* als-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCC17B4A701008C072D /* als-2.png */; };
+		32782E8017B4A701008C072D /* anterior-spinocerebellar-tract-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCD17B4A701008C072D /* anterior-spinocerebellar-tract-2.png */; };
+		32782E8117B4A701008C072D /* clinical-wallenberg's-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCE17B4A701008C072D /* clinical-wallenberg's-2.png */; };
+		32782E8217B4A701008C072D /* corticospinal-tract-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DCF17B4A701008C072D /* corticospinal-tract-2.png */; };
+		32782E8317B4A701008C072D /* hypoglossal-nucleus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD017B4A701008C072D /* hypoglossal-nucleus-2.png */; };
+		32782E8417B4A701008C072D /* inferior-cerebellar-peduncle-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD117B4A701008C072D /* inferior-cerebellar-peduncle-2.png */; };
+		32782E8517B4A701008C072D /* inferior-olivary-nucleus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD217B4A701008C072D /* inferior-olivary-nucleus-2.png */; };
+		32782E8617B4A701008C072D /* inferior-vestibular-nucleus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD317B4A701008C072D /* inferior-vestibular-nucleus-2.png */; };
+		32782E8717B4A701008C072D /* medial-lemniscus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD417B4A701008C072D /* medial-lemniscus-2.png */; };
+		32782E8817B4A701008C072D /* medial-medullary-syndrome-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD517B4A701008C072D /* medial-medullary-syndrome-2.png */; };
+		32782E8917B4A701008C072D /* medial-vestibular-nucleus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD617B4A701008C072D /* medial-vestibular-nucleus-2.png */; };
+		32782E8A17B4A701008C072D /* mlf-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD717B4A701008C072D /* mlf-2.png */; };
+		32782E8B17B4A701008C072D /* motor-nucleus-of-vagus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD817B4A701008C072D /* motor-nucleus-of-vagus-2.png */; };
+		32782E8C17B4A701008C072D /* nucleus-ambiguus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DD917B4A701008C072D /* nucleus-ambiguus-2.png */; };
 		32782E8D17B4A701008C072D /* quiz-background-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDA17B4A701008C072D /* quiz-background-2.png */; };
-		32782E8E17B4A701008C072D /* solitary-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDB17B4A701008C072D /* solitary-tract.png */; };
-		32782E8F17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDC17B4A701008C072D /* spinal-trigeminal-nucleus.png */; };
-		32782E9017B4A701008C072D /* spinal-trigeminal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDD17B4A701008C072D /* spinal-trigeminal-tract.png */; };
-		32782E9117B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDF17B4A701008C072D /* als.png */; };
-		32782E9217B4A701008C072D /* anterior-cochlear-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE017B4A701008C072D /* anterior-cochlear-nucleus.png */; };
-		32782E9317B4A701008C072D /* central-tegmental-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE117B4A701008C072D /* central-tegmental-tract.png */; };
-		32782E9417B4A701008C072D /* corticospinal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE217B4A701008C072D /* corticospinal-tract.png */; };
-		32782E9517B4A701008C072D /* inferior-cerebellar-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE317B4A701008C072D /* inferior-cerebellar-peduncle.png */; };
-		32782E9617B4A701008C072D /* lateral-vestibular-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE417B4A701008C072D /* lateral-vestibular-nucleus.png */; };
-		32782E9717B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE517B4A701008C072D /* medial-lemniscus.png */; };
-		32782E9817B4A701008C072D /* medial-vestibular-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE617B4A701008C072D /* medial-vestibular-nucleus.png */; };
-		32782E9917B4A701008C072D /* mlf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE717B4A701008C072D /* mlf.png */; };
-		32782E9A17B4A701008C072D /* nucleus-raphe-magnus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE817B4A701008C072D /* nucleus-raphe-magnus.png */; };
-		32782E9B17B4A701008C072D /* nucleus-raphe-palidus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE917B4A701008C072D /* nucleus-raphe-palidus.png */; };
-		32782E9C17B4A701008C072D /* posterior-cochlear-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DEA17B4A701008C072D /* posterior-cochlear-nucleus.png */; };
+		32782E8E17B4A701008C072D /* solitary-tract-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDB17B4A701008C072D /* solitary-tract-2.png */; };
+		32782E8F17B4A701008C072D /* spinal-trigeminal-nucleus-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDC17B4A701008C072D /* spinal-trigeminal-nucleus-2.png */; };
+		32782E9017B4A701008C072D /* spinal-trigeminal-tract-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDD17B4A701008C072D /* spinal-trigeminal-tract-2.png */; };
+		32782E9117B4A701008C072D /* als-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DDF17B4A701008C072D /* als-3.png */; };
+		32782E9217B4A701008C072D /* anterior-cochlear-nucleus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE017B4A701008C072D /* anterior-cochlear-nucleus-3.png */; };
+		32782E9317B4A701008C072D /* central-tegmental-tract-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE117B4A701008C072D /* central-tegmental-tract-3.png */; };
+		32782E9417B4A701008C072D /* corticospinal-tract-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE217B4A701008C072D /* corticospinal-tract-3.png */; };
+		32782E9517B4A701008C072D /* inferior-cerebellar-peduncle-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE317B4A701008C072D /* inferior-cerebellar-peduncle-3.png */; };
+		32782E9617B4A701008C072D /* lateral-vestibular-nucleus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE417B4A701008C072D /* lateral-vestibular-nucleus-3.png */; };
+		32782E9717B4A701008C072D /* medial-lemniscus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE517B4A701008C072D /* medial-lemniscus-3.png */; };
+		32782E9817B4A701008C072D /* medial-vestibular-nucleus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE617B4A701008C072D /* medial-vestibular-nucleus-3.png */; };
+		32782E9917B4A701008C072D /* mlf-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE717B4A701008C072D /* mlf-3.png */; };
+		32782E9A17B4A701008C072D /* nucleus-raphe-magnus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE817B4A701008C072D /* nucleus-raphe-magnus-3.png */; };
+		32782E9B17B4A701008C072D /* nucleus-raphe-palidus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DE917B4A701008C072D /* nucleus-raphe-palidus-3.png */; };
+		32782E9C17B4A701008C072D /* posterior-cochlear-nucleus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DEA17B4A701008C072D /* posterior-cochlear-nucleus-3.png */; };
 		32782E9D17B4A701008C072D /* quiz-background-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DEB17B4A701008C072D /* quiz-background-3.png */; };
-		32782E9E17B4A701008C072D /* solitary-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DEC17B4A701008C072D /* solitary-nucleus.png */; };
-		32782E9F17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DED17B4A701008C072D /* spinal-trigeminal-nucleus.png */; };
-		32782EA017B4A701008C072D /* spinal-trigeminal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DEE17B4A701008C072D /* spinal-trigeminal-tract.png */; };
-		32782EA117B4A701008C072D /* abducens-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF017B4A701008C072D /* abducens-nucleus.png */; };
-		32782EA217B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF117B4A701008C072D /* als.png */; };
-		32782EA317B4A701008C072D /* central-tegmental-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF217B4A701008C072D /* central-tegmental-tract.png */; };
-		32782EA417B4A701008C072D /* corticospinal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF317B4A701008C072D /* corticospinal-tract.png */; };
-		32782EA517B4A701008C072D /* facial-motor-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF417B4A701008C072D /* facial-motor-nucleus.png */; };
-		32782EA617B4A701008C072D /* facial-nerve-(CNVII).png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF517B4A701008C072D /* facial-nerve-(CNVII).png */; };
-		32782EA717B4A701008C072D /* fourth-ventricle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF617B4A701008C072D /* fourth-ventricle.png */; };
-		32782EA817B4A701008C072D /* lateral-rectus-&-stapedius.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF717B4A701008C072D /* lateral-rectus-&-stapedius.png */; };
-		32782EA917B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF817B4A701008C072D /* medial-lemniscus.png */; };
-		32782EAA17B4A701008C072D /* medial-vestibular-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF917B4A701008C072D /* medial-vestibular-nucleus.png */; };
-		32782EAB17B4A701008C072D /* middle-cerebellar-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFA17B4A701008C072D /* middle-cerebellar-peduncle.png */; };
-		32782EAC17B4A701008C072D /* mlf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFB17B4A701008C072D /* mlf.png */; };
-		32782EAD17B4A701008C072D /* nucleus-raphe-magnus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFC17B4A701008C072D /* nucleus-raphe-magnus.png */; };
-		32782EAE17B4A701008C072D /* pontine-tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFD17B4A701008C072D /* pontine-tracts.png */; };
-		32782EAF17B4A701008C072D /* posterior-longitudinal-fasciculus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFE17B4A701008C072D /* posterior-longitudinal-fasciculus.png */; };
+		32782E9E17B4A701008C072D /* solitary-nucleus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DEC17B4A701008C072D /* solitary-nucleus-3.png */; };
+		32782E9F17B4A701008C072D /* spinal-trigeminal-nucleus-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DED17B4A701008C072D /* spinal-trigeminal-nucleus-3.png */; };
+		32782EA017B4A701008C072D /* spinal-trigeminal-tract-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DEE17B4A701008C072D /* spinal-trigeminal-tract-3.png */; };
+		32782EA117B4A701008C072D /* abducens-nucleus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF017B4A701008C072D /* abducens-nucleus-4.png */; };
+		32782EA217B4A701008C072D /* als-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF117B4A701008C072D /* als-4.png */; };
+		32782EA317B4A701008C072D /* central-tegmental-tract-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF217B4A701008C072D /* central-tegmental-tract-4.png */; };
+		32782EA417B4A701008C072D /* corticospinal-tract-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF317B4A701008C072D /* corticospinal-tract-4.png */; };
+		32782EA517B4A701008C072D /* facial-motor-nucleus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF417B4A701008C072D /* facial-motor-nucleus-4.png */; };
+		32782EA617B4A701008C072D /* facial-nerve-(CNVII)-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF517B4A701008C072D /* facial-nerve-(CNVII)-4.png */; };
+		32782EA717B4A701008C072D /* fourth-ventricle-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF617B4A701008C072D /* fourth-ventricle-4.png */; };
+		32782EA817B4A701008C072D /* lateral-rectus-&-stapedius-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF717B4A701008C072D /* lateral-rectus-&-stapedius-4.png */; };
+		32782EA917B4A701008C072D /* medial-lemniscus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF817B4A701008C072D /* medial-lemniscus-4.png */; };
+		32782EAA17B4A701008C072D /* medial-vestibular-nucleus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DF917B4A701008C072D /* medial-vestibular-nucleus-4.png */; };
+		32782EAB17B4A701008C072D /* middle-cerebellar-peduncle-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFA17B4A701008C072D /* middle-cerebellar-peduncle-4.png */; };
+		32782EAC17B4A701008C072D /* mlf-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFB17B4A701008C072D /* mlf-4.png */; };
+		32782EAD17B4A701008C072D /* nucleus-raphe-magnus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFC17B4A701008C072D /* nucleus-raphe-magnus-4.png */; };
+		32782EAE17B4A701008C072D /* pontine-tracts-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFD17B4A701008C072D /* pontine-tracts-4.png */; };
+		32782EAF17B4A701008C072D /* posterior-longitudinal-fasciculus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFE17B4A701008C072D /* posterior-longitudinal-fasciculus-4.png */; };
 		32782EB017B4A701008C072D /* quiz-background-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DFF17B4A701008C072D /* quiz-background-4.png */; };
-		32782EB117B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0017B4A701008C072D /* spinal-trigeminal-nucleus.png */; };
-		32782EB217B4A701008C072D /* superior-vestibular-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0117B4A701008C072D /* superior-vestibular-nucleus.png */; };
-		32782EB317B4A701008C072D /* ventral-pontine-syndrome.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0217B4A701008C072D /* ventral-pontine-syndrome.png */; };
-		32782EB417B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0417B4A701008C072D /* als.png */; };
-		32782EB517B4A701008C072D /* central-tegmental-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0517B4A701008C072D /* central-tegmental-tract.png */; };
-		32782EB617B4A701008C072D /* locked-in.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0617B4A701008C072D /* locked-in.png */; };
-		32782EB717B4A701008C072D /* locus-ceruleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0717B4A701008C072D /* locus-ceruleus.png */; };
-		32782EB817B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0817B4A701008C072D /* medial-lemniscus.png */; };
-		32782EB917B4A701008C072D /* mesencephalic-nucleus-and-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0917B4A701008C072D /* mesencephalic-nucleus-and-tract.png */; };
-		32782EBA17B4A701008C072D /* middle-cerebellar-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0A17B4A701008C072D /* middle-cerebellar-peduncle.png */; };
-		32782EBB17B4A701008C072D /* mlf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0B17B4A701008C072D /* mlf.png */; };
-		32782EBC17B4A701008C072D /* nucleus-raphe-pontis.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0C17B4A701008C072D /* nucleus-raphe-pontis.png */; };
-		32782EBD17B4A701008C072D /* pontine-nuclei.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0D17B4A701008C072D /* pontine-nuclei.png */; };
-		32782EBE17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0E17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal.png */; };
+		32782EB117B4A701008C072D /* spinal-trigeminal-nucleus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0017B4A701008C072D /* spinal-trigeminal-nucleus-4.png */; };
+		32782EB217B4A701008C072D /* superior-vestibular-nucleus-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0117B4A701008C072D /* superior-vestibular-nucleus-4.png */; };
+		32782EB317B4A701008C072D /* ventral-pontine-syndrome-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0217B4A701008C072D /* ventral-pontine-syndrome-4.png */; };
+		32782EB417B4A701008C072D /* als-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0417B4A701008C072D /* als-5.png */; };
+		32782EB517B4A701008C072D /* central-tegmental-tract-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0517B4A701008C072D /* central-tegmental-tract-5.png */; };
+		32782EB617B4A701008C072D /* locked-in-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0617B4A701008C072D /* locked-in-5.png */; };
+		32782EB717B4A701008C072D /* locus-ceruleus-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0717B4A701008C072D /* locus-ceruleus-5.png */; };
+		32782EB817B4A701008C072D /* medial-lemniscus-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0817B4A701008C072D /* medial-lemniscus-5.png */; };
+		32782EB917B4A701008C072D /* mesencephalic-nucleus-and-tract-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0917B4A701008C072D /* mesencephalic-nucleus-and-tract-5.png */; };
+		32782EBA17B4A701008C072D /* middle-cerebellar-peduncle-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0A17B4A701008C072D /* middle-cerebellar-peduncle-5.png */; };
+		32782EBB17B4A701008C072D /* mlf-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0B17B4A701008C072D /* mlf-5.png */; };
+		32782EBC17B4A701008C072D /* nucleus-raphe-pontis-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0C17B4A701008C072D /* nucleus-raphe-pontis-5.png */; };
+		32782EBD17B4A701008C072D /* pontine-nuclei-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0D17B4A701008C072D /* pontine-nuclei-5.png */; };
+		32782EBE17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0E17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal-5.png */; };
 		32782EBF17B4A701008C072D /* quiz-background-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E0F17B4A701008C072D /* quiz-background-5.png */; };
-		32782EC017B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1117B4A701008C072D /* als.png */; };
-		32782EC117B4A701008C072D /* aqueductal-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1217B4A701008C072D /* aqueductal-grey.png */; };
-		32782EC217B4A701008C072D /* central-tegmental-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1317B4A701008C072D /* central-tegmental-tract.png */; };
-		32782EC317B4A701008C072D /* cerebral-aqueduct.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1417B4A701008C072D /* cerebral-aqueduct.png */; };
-		32782EC417B4A701008C072D /* lateral-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1517B4A701008C072D /* lateral-lemniscus.png */; };
-		32782EC517B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1617B4A701008C072D /* medial-lemniscus.png */; };
-		32782EC617B4A701008C072D /* mesencephalic-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1717B4A701008C072D /* mesencephalic-nucleus.png */; };
-		32782EC717B4A701008C072D /* middle-cerebellar-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1817B4A701008C072D /* middle-cerebellar-peduncle.png */; };
-		32782EC817B4A701008C072D /* mlf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1917B4A701008C072D /* mlf.png */; };
-		32782EC917B4A701008C072D /* nucleus-centralis-superior.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1A17B4A701008C072D /* nucleus-centralis-superior.png */; };
+		32782EC017B4A701008C072D /* als-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1117B4A701008C072D /* als-6.png */; };
+		32782EC117B4A701008C072D /* aqueductal-grey-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1217B4A701008C072D /* aqueductal-grey-6.png */; };
+		32782EC217B4A701008C072D /* central-tegmental-tract-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1317B4A701008C072D /* central-tegmental-tract-6.png */; };
+		32782EC317B4A701008C072D /* cerebral-aqueduct-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1417B4A701008C072D /* cerebral-aqueduct-6.png */; };
+		32782EC417B4A701008C072D /* lateral-lemniscus-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1517B4A701008C072D /* lateral-lemniscus-6.png */; };
+		32782EC517B4A701008C072D /* medial-lemniscus-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1617B4A701008C072D /* medial-lemniscus-6.png */; };
+		32782EC617B4A701008C072D /* mesencephalic-nucleus-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1717B4A701008C072D /* mesencephalic-nucleus-6.png */; };
+		32782EC717B4A701008C072D /* middle-cerebellar-peduncle-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1817B4A701008C072D /* middle-cerebellar-peduncle-6.png */; };
+		32782EC817B4A701008C072D /* mlf-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1917B4A701008C072D /* mlf-6.png */; };
+		32782EC917B4A701008C072D /* nucleus-centralis-superior-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1A17B4A701008C072D /* nucleus-centralis-superior-6.png */; };
 		32782ECA17B4A701008C072D /* quiz-background-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1B17B4A701008C072D /* quiz-background-6.png */; };
-		32782ECB17B4A701008C072D /* superior-cerebellar-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1C17B4A701008C072D /* superior-cerebellar-peduncle.png */; };
-		32782ECC17B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1E17B4A701008C072D /* als.png */; };
-		32782ECD17B4A701008C072D /* central-tegmental-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1F17B4A701008C072D /* central-tegmental-tract.png */; };
-		32782ECE17B4A701008C072D /* cerebral-aqueduct.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2017B4A701008C072D /* cerebral-aqueduct.png */; };
-		32782ECF17B4A701008C072D /* cerebral-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2117B4A701008C072D /* cerebral-peduncle.png */; };
-		32782ED017B4A701008C072D /* corticobulbar-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2217B4A701008C072D /* corticobulbar-tract.png */; };
-		32782ED117B4A701008C072D /* corticospinal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2317B4A701008C072D /* corticospinal-tract.png */; };
-		32782ED217B4A701008C072D /* inferior-colliculus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2417B4A701008C072D /* inferior-colliculus.png */; };
-		32782ED317B4A701008C072D /* lateral-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2517B4A701008C072D /* lateral-lemniscus.png */; };
-		32782ED417B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2617B4A701008C072D /* medial-lemniscus.png */; };
-		32782ED517B4A701008C072D /* mlf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2717B4A701008C072D /* mlf.png */; };
-		32782ED617B4A701008C072D /* periaqueductal-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2817B4A701008C072D /* periaqueductal-grey.png */; };
+		32782ECB17B4A701008C072D /* superior-cerebellar-peduncle-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1C17B4A701008C072D /* superior-cerebellar-peduncle-6.png */; };
+		32782ECC17B4A701008C072D /* als-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1E17B4A701008C072D /* als-7.png */; };
+		32782ECD17B4A701008C072D /* central-tegmental-tract-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E1F17B4A701008C072D /* central-tegmental-tract-7.png */; };
+		32782ECE17B4A701008C072D /* cerebral-aqueduct-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2017B4A701008C072D /* cerebral-aqueduct-7.png */; };
+		32782ECF17B4A701008C072D /* cerebral-peduncle-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2117B4A701008C072D /* cerebral-peduncle-7.png */; };
+		32782ED017B4A701008C072D /* corticobulbar-tract-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2217B4A701008C072D /* corticobulbar-tract-7.png */; };
+		32782ED117B4A701008C072D /* corticospinal-tract-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2317B4A701008C072D /* corticospinal-tract-7.png */; };
+		32782ED217B4A701008C072D /* inferior-colliculus-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2417B4A701008C072D /* inferior-colliculus-7.png */; };
+		32782ED317B4A701008C072D /* lateral-lemniscus-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2517B4A701008C072D /* lateral-lemniscus-7.png */; };
+		32782ED417B4A701008C072D /* medial-lemniscus-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2617B4A701008C072D /* medial-lemniscus-7.png */; };
+		32782ED517B4A701008C072D /* mlf-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2717B4A701008C072D /* mlf-7.png */; };
+		32782ED617B4A701008C072D /* periaqueductal-grey-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2817B4A701008C072D /* periaqueductal-grey-7.png */; };
 		32782ED717B4A701008C072D /* quiz-background-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2917B4A701008C072D /* quiz-background-7.png */; };
-		32782ED817B4A701008C072D /* superior-cerebellar-peduncle.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2A17B4A701008C072D /* superior-cerebellar-peduncle.png */; };
-		32782ED917B4A701008C072D /* trochlear-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2B17B4A701008C072D /* trochlear-nucleus.png */; };
-		32782EDA17B4A701008C072D /* ventral-trigeminothalamic-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2C17B4A701008C072D /* ventral-trigeminothalamic-tract.png */; };
-		32782EDB17B4A701008C072D /* als.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2E17B4A701008C072D /* als.png */; };
-		32782EDC17B4A701008C072D /* benedikt's.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2F17B4A701008C072D /* benedikt's.png */; };
-		32782EDD17B4A701008C072D /* central-tegmental-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3017B4A701008C072D /* central-tegmental-tract.png */; };
-		32782EDE17B4A701008C072D /* cerebellothalamic-tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3117B4A701008C072D /* cerebellothalamic-tracts.png */; };
-		32782EDF17B4A701008C072D /* cerebral-aqueduct.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3217B4A701008C072D /* cerebral-aqueduct.png */; };
-		32782EE017B4A701008C072D /* claude's.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3317B4A701008C072D /* claude's.png */; };
-		32782EE117B4A701008C072D /* corticobulbar-tracts.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3417B4A701008C072D /* corticobulbar-tracts.png */; };
-		32782EE217B4A701008C072D /* corticospinal-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3517B4A701008C072D /* corticospinal-tract.png */; };
-		32782EE317B4A701008C072D /* crus-cerebri.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3617B4A701008C072D /* crus-cerebri.png */; };
-		32782EE417B4A701008C072D /* false.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3717B4A701008C072D /* false.png */; };
-		32782EE517B4A701008C072D /* homonomous-hemianopia.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3817B4A701008C072D /* homonomous-hemianopia.png */; };
-		32782EE617B4A701008C072D /* medial-geniculate-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3917B4A701008C072D /* medial-geniculate-nucleus.png */; };
-		32782EE717B4A701008C072D /* medial-lemniscus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3A17B4A701008C072D /* medial-lemniscus.png */; };
-		32782EE817B4A701008C072D /* mesencephalic-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3B17B4A701008C072D /* mesencephalic-nucleus.png */; };
-		32782EE917B4A701008C072D /* mlf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3C17B4A701008C072D /* mlf.png */; };
-		32782EEA17B4A701008C072D /* obstructive-hydrocephalus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3D17B4A701008C072D /* obstructive-hydrocephalus.png */; };
-		32782EEB17B4A701008C072D /* oculomotor-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3E17B4A701008C072D /* oculomotor-nucleus.png */; };
-		32782EEC17B4A701008C072D /* optic-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3F17B4A701008C072D /* optic-tract.png */; };
-		32782EED17B4A701008C072D /* paralysis-of-upgaze.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4017B4A701008C072D /* paralysis-of-upgaze.png */; };
-		32782EEE17B4A701008C072D /* parkinson's-disease.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4117B4A701008C072D /* parkinson's-disease.png */; };
-		32782EEF17B4A701008C072D /* periaqueductal-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4217B4A701008C072D /* periaqueductal-grey.png */; };
+		32782ED817B4A701008C072D /* superior-cerebellar-peduncle-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2A17B4A701008C072D /* superior-cerebellar-peduncle-7.png */; };
+		32782ED917B4A701008C072D /* trochlear-nucleus-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2B17B4A701008C072D /* trochlear-nucleus-7.png */; };
+		32782EDA17B4A701008C072D /* ventral-trigeminothalamic-tract-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2C17B4A701008C072D /* ventral-trigeminothalamic-tract-7.png */; };
+		32782EDB17B4A701008C072D /* als-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2E17B4A701008C072D /* als-8.png */; };
+		32782EDC17B4A701008C072D /* benedikt's-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E2F17B4A701008C072D /* benedikt's-8.png */; };
+		32782EDD17B4A701008C072D /* central-tegmental-tract-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3017B4A701008C072D /* central-tegmental-tract-8.png */; };
+		32782EDE17B4A701008C072D /* cerebellothalamic-tracts-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3117B4A701008C072D /* cerebellothalamic-tracts-8.png */; };
+		32782EDF17B4A701008C072D /* cerebral-aqueduct-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3217B4A701008C072D /* cerebral-aqueduct-8.png */; };
+		32782EE017B4A701008C072D /* claude's-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3317B4A701008C072D /* claude's-8.png */; };
+		32782EE117B4A701008C072D /* corticobulbar-tracts-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3417B4A701008C072D /* corticobulbar-tracts-8.png */; };
+		32782EE217B4A701008C072D /* corticospinal-tract-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3517B4A701008C072D /* corticospinal-tract-8.png */; };
+		32782EE317B4A701008C072D /* crus-cerebri-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3617B4A701008C072D /* crus-cerebri-8.png */; };
+		32782EE417B4A701008C072D /* false-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3717B4A701008C072D /* false-8.png */; };
+		32782EE517B4A701008C072D /* homonomous-hemianopia-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3817B4A701008C072D /* homonomous-hemianopia-8.png */; };
+		32782EE617B4A701008C072D /* medial-geniculate-nucleus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3917B4A701008C072D /* medial-geniculate-nucleus-8.png */; };
+		32782EE717B4A701008C072D /* medial-lemniscus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3A17B4A701008C072D /* medial-lemniscus-8.png */; };
+		32782EE817B4A701008C072D /* mesencephalic-nucleus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3B17B4A701008C072D /* mesencephalic-nucleus-8.png */; };
+		32782EE917B4A701008C072D /* mlf-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3C17B4A701008C072D /* mlf-8.png */; };
+		32782EEA17B4A701008C072D /* obstructive-hydrocephalus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3D17B4A701008C072D /* obstructive-hydrocephalus-8.png */; };
+		32782EEB17B4A701008C072D /* oculomotor-nucleus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3E17B4A701008C072D /* oculomotor-nucleus-8.png */; };
+		32782EEC17B4A701008C072D /* optic-tract-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E3F17B4A701008C072D /* optic-tract-8.png */; };
+		32782EED17B4A701008C072D /* paralysis-of-upgaze-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4017B4A701008C072D /* paralysis-of-upgaze-8.png */; };
+		32782EEE17B4A701008C072D /* parkinson's-disease-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4117B4A701008C072D /* parkinson's-disease-8.png */; };
+		32782EEF17B4A701008C072D /* periaqueductal-grey-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4217B4A701008C072D /* periaqueductal-grey-8.png */; };
 		32782EF017B4A701008C072D /* quiz-background-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4317B4A701008C072D /* quiz-background-8.png */; };
-		32782EF117B4A701008C072D /* red-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4417B4A701008C072D /* red-nucleus.png */; };
-		32782EF217B4A701008C072D /* superior-colliculus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4517B4A701008C072D /* superior-colliculus.png */; };
-		32782EF317B4A701008C072D /* weber's.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4617B4A701008C072D /* weber's.png */; };
+		32782EF117B4A701008C072D /* red-nucleus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4417B4A701008C072D /* red-nucleus-8.png */; };
+		32782EF217B4A701008C072D /* superior-colliculus-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4517B4A701008C072D /* superior-colliculus-8.png */; };
+		32782EF317B4A701008C072D /* weber's-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4617B4A701008C072D /* weber's-8.png */; };
 		32782EF417B4A701008C072D /* gen.py in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4717B4A701008C072D /* gen.py */; };
-		32782EF517B4A701008C072D /* aica.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4917B4A701008C072D /* aica.png */; };
-		32782EF617B4A701008C072D /* anterior-spinal-artery.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4A17B4A701008C072D /* anterior-spinal-artery.png */; };
-		32782EF717B4A701008C072D /* basilar.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4B17B4A701008C072D /* basilar.png */; };
-		32782EF817B4A701008C072D /* long-circumfrentials.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4C17B4A701008C072D /* long-circumfrentials.png */; };
-		32782EF917B4A701008C072D /* pica.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4D17B4A701008C072D /* pica.png */; };
-		32782EFA17B4A701008C072D /* posterior-cerebral.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4E17B4A701008C072D /* posterior-cerebral.png */; };
-		32782EFB17B4A701008C072D /* posterior-communicating-artery.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4F17B4A701008C072D /* posterior-communicating-artery.png */; };
+		32782EF517B4A701008C072D /* aica-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4917B4A701008C072D /* aica-perfusion.png */; };
+		32782EF617B4A701008C072D /* anterior-spinal-artery-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4A17B4A701008C072D /* anterior-spinal-artery-perfusion.png */; };
+		32782EF717B4A701008C072D /* basilar-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4B17B4A701008C072D /* basilar-perfusion.png */; };
+		32782EF817B4A701008C072D /* long-circumfrentials-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4C17B4A701008C072D /* long-circumfrentials-perfusion.png */; };
+		32782EF917B4A701008C072D /* pica-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4D17B4A701008C072D /* pica-perfusion.png */; };
+		32782EFA17B4A701008C072D /* posterior-cerebral-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4E17B4A701008C072D /* posterior-cerebral-perfusion.png */; };
+		32782EFB17B4A701008C072D /* posterior-communicating-artery-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E4F17B4A701008C072D /* posterior-communicating-artery-perfusion.png */; };
 		32782EFC17B4A701008C072D /* quiz-background-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5017B4A701008C072D /* quiz-background-perfusion.png */; };
-		32782EFD17B4A701008C072D /* short-circumfrentials.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5117B4A701008C072D /* short-circumfrentials.png */; };
-		32782EFE17B4A701008C072D /* superior-cerebellar.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5217B4A701008C072D /* superior-cerebellar.png */; };
-		32782EFF17B4A701008C072D /* vertebral-artery.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5317B4A701008C072D /* vertebral-artery.png */; };
-		32782F0017B4A701008C072D /* (CNIII)-oculomotor-nerve.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5517B4A701008C072D /* (CNIII)-oculomotor-nerve.png */; };
-		32782F0117B4A701008C072D /* (CNIV)-trochlear-nerve.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5617B4A701008C072D /* (CNIV)-trochlear-nerve.png */; };
-		32782F0217B4A701008C072D /* (CNIX) glossopharengeal nerve.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5717B4A701008C072D /* (CNIX) glossopharengeal nerve.png */; };
-		32782F0317B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5817B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract.png */; };
-		32782F0417B4A701008C072D /* (CNV)-trigeminal-nerve.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5917B4A701008C072D /* (CNV)-trigeminal-nerve.png */; };
-		32782F0517B4A701008C072D /* (CNVI)-abducens-nerve.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5A17B4A701008C072D /* (CNVI)-abducens-nerve.png */; };
-		32782F0617B4A701008C072D /* (CNVII)facial-nerve.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5B17B4A701008C072D /* (CNVII)facial-nerve.png */; };
-		32782F0717B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5C17B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve.png */; };
-		32782F0817B4A701008C072D /* (CNX)-vagus-nerve-roots.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5D17B4A701008C072D /* (CNX)-vagus-nerve-roots.png */; };
-		32782F0917B4A701008C072D /* (CNXI)-accessory-nerve-roots.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5E17B4A701008C072D /* (CNXI)-accessory-nerve-roots.png */; };
-		32782F0A17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5F17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots.png */; };
-		32782F0B17B4A701008C072D /* accessory-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6017B4A701008C072D /* accessory-nucleus.png */; };
-		32782F0C17B4A701008C072D /* mesencephalic-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6117B4A701008C072D /* mesencephalic-nucleus.png */; };
-		32782F0D17B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6217B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei.png */; };
-		32782F0E17B4A701008C072D /* principal-sensory-nucleus.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6317B4A701008C072D /* principal-sensory-nucleus.png */; };
+		32782EFD17B4A701008C072D /* short-circumfrentials-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5117B4A701008C072D /* short-circumfrentials-perfusion.png */; };
+		32782EFE17B4A701008C072D /* superior-cerebellar-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5217B4A701008C072D /* superior-cerebellar-perfusion.png */; };
+		32782EFF17B4A701008C072D /* vertebral-artery-perfusion.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5317B4A701008C072D /* vertebral-artery-perfusion.png */; };
+		32782F0017B4A701008C072D /* (CNIII)-oculomotor-nerve-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5517B4A701008C072D /* (CNIII)-oculomotor-nerve-side.png */; };
+		32782F0117B4A701008C072D /* (CNIV)-trochlear-nerve-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5617B4A701008C072D /* (CNIV)-trochlear-nerve-side.png */; };
+		32782F0217B4A701008C072D /* (CNIX) glossopharengeal nerve-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5717B4A701008C072D /* (CNIX) glossopharengeal nerve-side.png */; };
+		32782F0317B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5817B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract-side.png */; };
+		32782F0417B4A701008C072D /* (CNV)-trigeminal-nerve-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5917B4A701008C072D /* (CNV)-trigeminal-nerve-side.png */; };
+		32782F0517B4A701008C072D /* (CNVI)-abducens-nerve-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5A17B4A701008C072D /* (CNVI)-abducens-nerve-side.png */; };
+		32782F0617B4A701008C072D /* (CNVII)facial-nerve-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5B17B4A701008C072D /* (CNVII)facial-nerve-side.png */; };
+		32782F0717B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5C17B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve-side.png */; };
+		32782F0817B4A701008C072D /* (CNX)-vagus-nerve-roots-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5D17B4A701008C072D /* (CNX)-vagus-nerve-roots-side.png */; };
+		32782F0917B4A701008C072D /* (CNXI)-accessory-nerve-roots-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5E17B4A701008C072D /* (CNXI)-accessory-nerve-roots-side.png */; };
+		32782F0A17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E5F17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots-side.png */; };
+		32782F0B17B4A701008C072D /* accessory-nucleus-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6017B4A701008C072D /* accessory-nucleus-side.png */; };
+		32782F0C17B4A701008C072D /* mesencephalic-nucleus-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6117B4A701008C072D /* mesencephalic-nucleus-side.png */; };
+		32782F0D17B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6217B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei-side.png */; };
+		32782F0E17B4A701008C072D /* principal-sensory-nucleus-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6317B4A701008C072D /* principal-sensory-nucleus-side.png */; };
 		32782F0F17B4A701008C072D /* quiz-background-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6417B4A701008C072D /* quiz-background-side.png */; };
-		32782F1017B4A701008C072D /* superior-&-inferior-colliculi.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6517B4A701008C072D /* superior-&-inferior-colliculi.png */; };
+		32782F1017B4A701008C072D /* superior-&-inferior-colliculi-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */; };
 		3278A65E16719CE50068EF48 /* BSDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3278A65D16719CE50068EF48 /* BSDetailsView.m */; };
 		327CE45B170ADE710020F918 /* foville-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE456170ADE710020F918 /* foville-sec.png */; };
 		327CE45C170ADE710020F918 /* locked-in-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE457170ADE710020F918 /* locked-in-sec.png */; };
@@ -347,7 +359,6 @@
 		32BAE7AD17180F0D00F04334 /* spinal-trigeminal-t-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7AB17180F0900F04334 /* spinal-trigeminal-t-overlay-side.png */; };
 		32BAE7B71718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7AF1718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png */; };
 		32BAE7B81718175E00F04334 /* anterior-spinal-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B01718175E00F04334 /* anterior-spinal-a-overlay-front.png */; };
-		32BAE7B91718175E00F04334 /* basilar-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B11718175E00F04334 /* basilar-a-overlay-front.png */; };
 		32BAE7BA1718175E00F04334 /* posterior-cerebral-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B21718175E00F04334 /* posterior-cerebral-a-overlay-front.png */; };
 		32BAE7BB1718175E00F04334 /* posterior-communicating-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B31718175E00F04334 /* posterior-communicating-a-overlay-front.png */; };
 		32BAE7BC1718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B41718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png */; };
@@ -391,12 +402,6 @@
 		32D33536179E542100F95A7D /* anterior-spinal-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351E179E542100F95A7D /* anterior-spinal-0.png */; };
 		32D33537179E542100F95A7D /* anterior-spinal-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351F179E542100F95A7D /* anterior-spinal-1.png */; };
 		32D33538179E542100F95A7D /* anterior-spinal-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33520179E542100F95A7D /* anterior-spinal-2.png */; };
-		32D33539179E542100F95A7D /* paramedian-basilar-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33521179E542100F95A7D /* paramedian-basilar-3.png */; };
-		32D3353A179E542100F95A7D /* paramedian-basilar-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33522179E542100F95A7D /* paramedian-basilar-4.png */; };
-		32D3353B179E542100F95A7D /* paramedian-basilar-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33523179E542100F95A7D /* paramedian-basilar-5.png */; };
-		32D3353C179E542100F95A7D /* paramedian-basilar-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33524179E542100F95A7D /* paramedian-basilar-6.png */; };
-		32D3353D179E542100F95A7D /* paramedian-basilar-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33525179E542100F95A7D /* paramedian-basilar-7.png */; };
-		32D3353E179E542100F95A7D /* paramedian-basilar-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33526179E542100F95A7D /* paramedian-basilar-8.png */; };
 		32D3353F179E542100F95A7D /* pica-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33527179E542100F95A7D /* pica-1.png */; };
 		32D33540179E542100F95A7D /* pica-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33528179E542100F95A7D /* pica-2.png */; };
 		32D33541179E542100F95A7D /* pica-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33529179E542100F95A7D /* pica-3.png */; };
@@ -416,6 +421,9 @@
 		32D84798178D463400718C4C /* corticospinal-t-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D84796178D463400718C4C /* corticospinal-t-overlay-back.png */; };
 		32D84799178D463400718C4C /* medial-lemniscus-t-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D84797178D463400718C4C /* medial-lemniscus-t-overlay-back.png */; };
 		32E4D2911651AACB0051AE2D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E4D2901651AACB0051AE2D /* BSModel.m */; };
+		32E51B7A17B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7917B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png */; };
+		32E51B7D17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7B17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png */; };
+		32E51B7E17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */; };
 		32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E77B4B16326B3A0077D0B4 /* BSStemView.m */; };
 		32E90EDE176C339000948158 /* BSUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E90EDD176C339000948158 /* BSUploader.m */; };
 		32EDE7A7177102DC006434A5 /* atlas-sxn-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE79E177102DC006434A5 /* atlas-sxn-0.png */; };
@@ -628,8 +636,8 @@
 		32FB6693171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BC171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml */; };
 		32FB6694171FDF0B005E6DE6 /* trapezoid-body-?-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BD171FDF0B005E6DE6 /* trapezoid-body-?-4.xml */; };
 		32FB6695171FDF0B005E6DE6 /* trochlear-n-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BE171FDF0B005E6DE6 /* trochlear-n-7.xml */; };
-		32FB6696171FDF0B005E6DE6 /* v-trigeminal-cn-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BF171FDF0B005E6DE6 /* v-trigeminal-cn-4.xml */; };
-		32FB6697171FDF0B005E6DE6 /* v-trigeminal-cn-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C0171FDF0B005E6DE6 /* v-trigeminal-cn-5.xml */; };
+		32FB6696171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BF171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml */; };
+		32FB6697171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C0171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml */; };
 		32FB6698171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C1171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml */; };
 		32FB6699171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C2171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml */; };
 		32FB669A171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C3171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml */; };
@@ -717,6 +725,18 @@
 		321C8EA21711224600517510 /* draw-mode-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "draw-mode-background.png"; sourceTree = "<group>"; };
 		321C8EA417115CD200517510 /* fuckometer-needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuckometer-needle.png"; sourceTree = "<group>"; };
 		321C8EA517115CD200517510 /* fuckometer-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuckometer-background.png"; sourceTree = "<group>"; };
+		322FBF3617B9ECA10056D964 /* basilar-long-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-4.png"; sourceTree = "<group>"; };
+		322FBF3717B9ECA10056D964 /* basilar-long-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-5.png"; sourceTree = "<group>"; };
+		322FBF3817B9ECA10056D964 /* basilar-long-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-6.png"; sourceTree = "<group>"; };
+		322FBF3C17B9ECB50056D964 /* basilar-paramedian-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-3.png"; sourceTree = "<group>"; };
+		322FBF3D17B9ECB50056D964 /* basilar-paramedian-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-4.png"; sourceTree = "<group>"; };
+		322FBF3E17B9ECB50056D964 /* basilar-paramedian-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-5.png"; sourceTree = "<group>"; };
+		322FBF3F17B9ECB50056D964 /* basilar-paramedian-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-6.png"; sourceTree = "<group>"; };
+		322FBF4017B9ECB50056D964 /* basilar-paramedian-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-7.png"; sourceTree = "<group>"; };
+		322FBF4117B9ECB50056D964 /* basilar-paramedian-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-8.png"; sourceTree = "<group>"; };
+		322FBF4817B9ECBD0056D964 /* basilar-short-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-4.png"; sourceTree = "<group>"; };
+		322FBF4917B9ECBD0056D964 /* basilar-short-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-5.png"; sourceTree = "<group>"; };
+		322FBF4A17B9ECBD0056D964 /* basilar-short-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-6.png"; sourceTree = "<group>"; };
 		3230B657168062C3004A196E /* BSProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSProfileViewController.h; sourceTree = "<group>"; };
 		3230B658168062C3004A196E /* BSProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileViewController.m; sourceTree = "<group>"; };
 		323A7232177735C500222ECF /* tutorial-atlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-atlas.png"; sourceTree = "<group>"; };
@@ -777,177 +797,177 @@
 		326FB6A5170C15E0002CD59B /* foville-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-perf.png"; sourceTree = "<group>"; };
 		326FB6A7170C15E7002CD59B /* claude-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-perf.png"; sourceTree = "<group>"; };
 		3271C05E178D5C3C00C7F8BF /* page0-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background.png"; sourceTree = "<group>"; };
-		32782DB117B4A701008C072D /* accessory-nucleus-(CNXI).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-nucleus-(CNXI).png"; sourceTree = "<group>"; };
-		32782DB217B4A701008C072D /* anterior-corticospinal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-corticospinal-tract.png"; sourceTree = "<group>"; };
-		32782DB317B4A701008C072D /* cuneate-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cuneate-nucleus.png"; sourceTree = "<group>"; };
-		32782DB417B4A701008C072D /* gracile-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gracile-nucleus.png"; sourceTree = "<group>"; };
-		32782DB517B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipsilateral-loss-of-pain-and-temperature-of-the-face.png"; sourceTree = "<group>"; };
-		32782DB617B4A701008C072D /* proprioception-from-ipsilateral-arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "proprioception-from-ipsilateral-arm.png"; sourceTree = "<group>"; };
-		32782DB717B4A701008C072D /* pyramidal-decussation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pyramidal-decussation.png"; sourceTree = "<group>"; };
-		32782DB817B4A701008C072D /* quadriplegia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quadriplegia.png; sourceTree = "<group>"; };
+		32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-nucleus-(CNXI)-0.png"; sourceTree = "<group>"; };
+		32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-corticospinal-tract-0.png"; sourceTree = "<group>"; };
+		32782DB317B4A701008C072D /* cuneate-nucleus-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cuneate-nucleus-0.png"; sourceTree = "<group>"; };
+		32782DB417B4A701008C072D /* gracile-nucleus-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gracile-nucleus-0.png"; sourceTree = "<group>"; };
+		32782DB517B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png"; sourceTree = "<group>"; };
+		32782DB617B4A701008C072D /* proprioception-from-ipsilateral-arm-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "proprioception-from-ipsilateral-arm-0.png"; sourceTree = "<group>"; };
+		32782DB717B4A701008C072D /* pyramidal-decussation-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pyramidal-decussation-0.png"; sourceTree = "<group>"; };
+		32782DB817B4A701008C072D /* quadriplegia-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quadriplegia-0.png"; sourceTree = "<group>"; };
 		32782DB917B4A701008C072D /* quiz-background-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-0.png"; sourceTree = "<group>"; };
-		32782DBA17B4A701008C072D /* spinal-trigeminal-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus.png"; sourceTree = "<group>"; };
-		32782DBB17B4A701008C072D /* spinal-trigeminal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-tract.png"; sourceTree = "<group>"; };
-		32782DBC17B4A701008C072D /* spinocerebellar-tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinocerebellar-tracts.png"; sourceTree = "<group>"; };
-		32782DBE17B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782DBF17B4A701008C072D /* contralateral-hemiplegia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contralateral-hemiplegia.png"; sourceTree = "<group>"; };
-		32782DC017B4A701008C072D /* cuneate-fasciculus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cuneate-fasciculus.png"; sourceTree = "<group>"; };
-		32782DC117B4A701008C072D /* gracile-fasciculus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gracile-fasciculus.png"; sourceTree = "<group>"; };
-		32782DC217B4A701008C072D /* gracile-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gracile-nucleus.png"; sourceTree = "<group>"; };
-		32782DC317B4A701008C072D /* hypoglossal-nuclei-(CNXI).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hypoglossal-nuclei-(CNXI).png"; sourceTree = "<group>"; };
-		32782DC417B4A701008C072D /* internal-arcuate-fibers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "internal-arcuate-fibers.png"; sourceTree = "<group>"; };
-		32782DC517B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782DC617B4A701008C072D /* nucleus-ambiguus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-ambiguus.png"; sourceTree = "<group>"; };
-		32782DC717B4A701008C072D /* proprioception-vibration-&-fine-touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "proprioception-vibration-&-fine-touch.png"; sourceTree = "<group>"; };
+		32782DBA17B4A701008C072D /* spinal-trigeminal-nucleus-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus-0.png"; sourceTree = "<group>"; };
+		32782DBB17B4A701008C072D /* spinal-trigeminal-tract-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-tract-0.png"; sourceTree = "<group>"; };
+		32782DBC17B4A701008C072D /* spinocerebellar-tracts-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinocerebellar-tracts-0.png"; sourceTree = "<group>"; };
+		32782DBE17B4A701008C072D /* als-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-1.png"; sourceTree = "<group>"; };
+		32782DBF17B4A701008C072D /* contralateral-hemiplegia-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contralateral-hemiplegia-1.png"; sourceTree = "<group>"; };
+		32782DC017B4A701008C072D /* cuneate-fasciculus-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cuneate-fasciculus-1.png"; sourceTree = "<group>"; };
+		32782DC117B4A701008C072D /* gracile-fasciculus-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gracile-fasciculus-1.png"; sourceTree = "<group>"; };
+		32782DC217B4A701008C072D /* gracile-nucleus-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gracile-nucleus-1.png"; sourceTree = "<group>"; };
+		32782DC317B4A701008C072D /* hypoglossal-nuclei-(CNXI)-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hypoglossal-nuclei-(CNXI)-1.png"; sourceTree = "<group>"; };
+		32782DC417B4A701008C072D /* internal-arcuate-fibers-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "internal-arcuate-fibers-1.png"; sourceTree = "<group>"; };
+		32782DC517B4A701008C072D /* medial-lemniscus-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-1.png"; sourceTree = "<group>"; };
+		32782DC617B4A701008C072D /* nucleus-ambiguus-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-ambiguus-1.png"; sourceTree = "<group>"; };
+		32782DC717B4A701008C072D /* proprioception-vibration-&-fine-touch-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "proprioception-vibration-&-fine-touch-1.png"; sourceTree = "<group>"; };
 		32782DC817B4A701008C072D /* quiz-background-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-1.png"; sourceTree = "<group>"; };
-		32782DC917B4A701008C072D /* solitary-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-nucleus.png"; sourceTree = "<group>"; };
-		32782DCA17B4A701008C072D /* spinal-trigeminal-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus.png"; sourceTree = "<group>"; };
-		32782DCC17B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782DCD17B4A701008C072D /* anterior-spinocerebellar-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinocerebellar-tract.png"; sourceTree = "<group>"; };
-		32782DCE17B4A701008C072D /* clinical-wallenberg's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-wallenberg's.png"; sourceTree = "<group>"; };
-		32782DCF17B4A701008C072D /* corticospinal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract.png"; sourceTree = "<group>"; };
-		32782DD017B4A701008C072D /* hypoglossal-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hypoglossal-nucleus.png"; sourceTree = "<group>"; };
-		32782DD117B4A701008C072D /* inferior-cerebellar-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-cerebellar-peduncle.png"; sourceTree = "<group>"; };
-		32782DD217B4A701008C072D /* inferior-olivary-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-olivary-nucleus.png"; sourceTree = "<group>"; };
-		32782DD317B4A701008C072D /* inferior-vestibular-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-vestibular-nucleus.png"; sourceTree = "<group>"; };
-		32782DD417B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782DD517B4A701008C072D /* medial-medullary-syndrome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-medullary-syndrome.png"; sourceTree = "<group>"; };
-		32782DD617B4A701008C072D /* medial-vestibular-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-nucleus.png"; sourceTree = "<group>"; };
-		32782DD717B4A701008C072D /* mlf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlf.png; sourceTree = "<group>"; };
-		32782DD817B4A701008C072D /* motor-nucleus-of-vagus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "motor-nucleus-of-vagus.png"; sourceTree = "<group>"; };
-		32782DD917B4A701008C072D /* nucleus-ambiguus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-ambiguus.png"; sourceTree = "<group>"; };
+		32782DC917B4A701008C072D /* solitary-nucleus-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-nucleus-1.png"; sourceTree = "<group>"; };
+		32782DCA17B4A701008C072D /* spinal-trigeminal-nucleus-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus-1.png"; sourceTree = "<group>"; };
+		32782DCC17B4A701008C072D /* als-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-2.png"; sourceTree = "<group>"; };
+		32782DCD17B4A701008C072D /* anterior-spinocerebellar-tract-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinocerebellar-tract-2.png"; sourceTree = "<group>"; };
+		32782DCE17B4A701008C072D /* clinical-wallenberg's-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-wallenberg's-2.png"; sourceTree = "<group>"; };
+		32782DCF17B4A701008C072D /* corticospinal-tract-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract-2.png"; sourceTree = "<group>"; };
+		32782DD017B4A701008C072D /* hypoglossal-nucleus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hypoglossal-nucleus-2.png"; sourceTree = "<group>"; };
+		32782DD117B4A701008C072D /* inferior-cerebellar-peduncle-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-cerebellar-peduncle-2.png"; sourceTree = "<group>"; };
+		32782DD217B4A701008C072D /* inferior-olivary-nucleus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-olivary-nucleus-2.png"; sourceTree = "<group>"; };
+		32782DD317B4A701008C072D /* inferior-vestibular-nucleus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-vestibular-nucleus-2.png"; sourceTree = "<group>"; };
+		32782DD417B4A701008C072D /* medial-lemniscus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-2.png"; sourceTree = "<group>"; };
+		32782DD517B4A701008C072D /* medial-medullary-syndrome-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-medullary-syndrome-2.png"; sourceTree = "<group>"; };
+		32782DD617B4A701008C072D /* medial-vestibular-nucleus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-nucleus-2.png"; sourceTree = "<group>"; };
+		32782DD717B4A701008C072D /* mlf-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mlf-2.png"; sourceTree = "<group>"; };
+		32782DD817B4A701008C072D /* motor-nucleus-of-vagus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "motor-nucleus-of-vagus-2.png"; sourceTree = "<group>"; };
+		32782DD917B4A701008C072D /* nucleus-ambiguus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-ambiguus-2.png"; sourceTree = "<group>"; };
 		32782DDA17B4A701008C072D /* quiz-background-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-2.png"; sourceTree = "<group>"; };
-		32782DDB17B4A701008C072D /* solitary-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-tract.png"; sourceTree = "<group>"; };
-		32782DDC17B4A701008C072D /* spinal-trigeminal-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus.png"; sourceTree = "<group>"; };
-		32782DDD17B4A701008C072D /* spinal-trigeminal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-tract.png"; sourceTree = "<group>"; };
-		32782DDF17B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782DE017B4A701008C072D /* anterior-cochlear-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-cochlear-nucleus.png"; sourceTree = "<group>"; };
-		32782DE117B4A701008C072D /* central-tegmental-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract.png"; sourceTree = "<group>"; };
-		32782DE217B4A701008C072D /* corticospinal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract.png"; sourceTree = "<group>"; };
-		32782DE317B4A701008C072D /* inferior-cerebellar-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-cerebellar-peduncle.png"; sourceTree = "<group>"; };
-		32782DE417B4A701008C072D /* lateral-vestibular-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-vestibular-nucleus.png"; sourceTree = "<group>"; };
-		32782DE517B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782DE617B4A701008C072D /* medial-vestibular-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-nucleus.png"; sourceTree = "<group>"; };
-		32782DE717B4A701008C072D /* mlf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlf.png; sourceTree = "<group>"; };
-		32782DE817B4A701008C072D /* nucleus-raphe-magnus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-magnus.png"; sourceTree = "<group>"; };
-		32782DE917B4A701008C072D /* nucleus-raphe-palidus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-palidus.png"; sourceTree = "<group>"; };
-		32782DEA17B4A701008C072D /* posterior-cochlear-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cochlear-nucleus.png"; sourceTree = "<group>"; };
+		32782DDB17B4A701008C072D /* solitary-tract-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-tract-2.png"; sourceTree = "<group>"; };
+		32782DDC17B4A701008C072D /* spinal-trigeminal-nucleus-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus-2.png"; sourceTree = "<group>"; };
+		32782DDD17B4A701008C072D /* spinal-trigeminal-tract-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-tract-2.png"; sourceTree = "<group>"; };
+		32782DDF17B4A701008C072D /* als-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-3.png"; sourceTree = "<group>"; };
+		32782DE017B4A701008C072D /* anterior-cochlear-nucleus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-cochlear-nucleus-3.png"; sourceTree = "<group>"; };
+		32782DE117B4A701008C072D /* central-tegmental-tract-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract-3.png"; sourceTree = "<group>"; };
+		32782DE217B4A701008C072D /* corticospinal-tract-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract-3.png"; sourceTree = "<group>"; };
+		32782DE317B4A701008C072D /* inferior-cerebellar-peduncle-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-cerebellar-peduncle-3.png"; sourceTree = "<group>"; };
+		32782DE417B4A701008C072D /* lateral-vestibular-nucleus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-vestibular-nucleus-3.png"; sourceTree = "<group>"; };
+		32782DE517B4A701008C072D /* medial-lemniscus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-3.png"; sourceTree = "<group>"; };
+		32782DE617B4A701008C072D /* medial-vestibular-nucleus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-nucleus-3.png"; sourceTree = "<group>"; };
+		32782DE717B4A701008C072D /* mlf-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mlf-3.png"; sourceTree = "<group>"; };
+		32782DE817B4A701008C072D /* nucleus-raphe-magnus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-magnus-3.png"; sourceTree = "<group>"; };
+		32782DE917B4A701008C072D /* nucleus-raphe-palidus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-palidus-3.png"; sourceTree = "<group>"; };
+		32782DEA17B4A701008C072D /* posterior-cochlear-nucleus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cochlear-nucleus-3.png"; sourceTree = "<group>"; };
 		32782DEB17B4A701008C072D /* quiz-background-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-3.png"; sourceTree = "<group>"; };
-		32782DEC17B4A701008C072D /* solitary-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-nucleus.png"; sourceTree = "<group>"; };
-		32782DED17B4A701008C072D /* spinal-trigeminal-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus.png"; sourceTree = "<group>"; };
-		32782DEE17B4A701008C072D /* spinal-trigeminal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-tract.png"; sourceTree = "<group>"; };
-		32782DF017B4A701008C072D /* abducens-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abducens-nucleus.png"; sourceTree = "<group>"; };
-		32782DF117B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782DF217B4A701008C072D /* central-tegmental-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract.png"; sourceTree = "<group>"; };
-		32782DF317B4A701008C072D /* corticospinal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract.png"; sourceTree = "<group>"; };
-		32782DF417B4A701008C072D /* facial-motor-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facial-motor-nucleus.png"; sourceTree = "<group>"; };
-		32782DF517B4A701008C072D /* facial-nerve-(CNVII).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facial-nerve-(CNVII).png"; sourceTree = "<group>"; };
-		32782DF617B4A701008C072D /* fourth-ventricle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fourth-ventricle.png"; sourceTree = "<group>"; };
-		32782DF717B4A701008C072D /* lateral-rectus-&-stapedius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-rectus-&-stapedius.png"; sourceTree = "<group>"; };
-		32782DF817B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782DF917B4A701008C072D /* medial-vestibular-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-nucleus.png"; sourceTree = "<group>"; };
-		32782DFA17B4A701008C072D /* middle-cerebellar-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle.png"; sourceTree = "<group>"; };
-		32782DFB17B4A701008C072D /* mlf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlf.png; sourceTree = "<group>"; };
-		32782DFC17B4A701008C072D /* nucleus-raphe-magnus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-magnus.png"; sourceTree = "<group>"; };
-		32782DFD17B4A701008C072D /* pontine-tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pontine-tracts.png"; sourceTree = "<group>"; };
-		32782DFE17B4A701008C072D /* posterior-longitudinal-fasciculus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-longitudinal-fasciculus.png"; sourceTree = "<group>"; };
+		32782DEC17B4A701008C072D /* solitary-nucleus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-nucleus-3.png"; sourceTree = "<group>"; };
+		32782DED17B4A701008C072D /* spinal-trigeminal-nucleus-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus-3.png"; sourceTree = "<group>"; };
+		32782DEE17B4A701008C072D /* spinal-trigeminal-tract-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-tract-3.png"; sourceTree = "<group>"; };
+		32782DF017B4A701008C072D /* abducens-nucleus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abducens-nucleus-4.png"; sourceTree = "<group>"; };
+		32782DF117B4A701008C072D /* als-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-4.png"; sourceTree = "<group>"; };
+		32782DF217B4A701008C072D /* central-tegmental-tract-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract-4.png"; sourceTree = "<group>"; };
+		32782DF317B4A701008C072D /* corticospinal-tract-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract-4.png"; sourceTree = "<group>"; };
+		32782DF417B4A701008C072D /* facial-motor-nucleus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facial-motor-nucleus-4.png"; sourceTree = "<group>"; };
+		32782DF517B4A701008C072D /* facial-nerve-(CNVII)-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facial-nerve-(CNVII)-4.png"; sourceTree = "<group>"; };
+		32782DF617B4A701008C072D /* fourth-ventricle-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fourth-ventricle-4.png"; sourceTree = "<group>"; };
+		32782DF717B4A701008C072D /* lateral-rectus-&-stapedius-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-rectus-&-stapedius-4.png"; sourceTree = "<group>"; };
+		32782DF817B4A701008C072D /* medial-lemniscus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-4.png"; sourceTree = "<group>"; };
+		32782DF917B4A701008C072D /* medial-vestibular-nucleus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-nucleus-4.png"; sourceTree = "<group>"; };
+		32782DFA17B4A701008C072D /* middle-cerebellar-peduncle-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle-4.png"; sourceTree = "<group>"; };
+		32782DFB17B4A701008C072D /* mlf-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mlf-4.png"; sourceTree = "<group>"; };
+		32782DFC17B4A701008C072D /* nucleus-raphe-magnus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-magnus-4.png"; sourceTree = "<group>"; };
+		32782DFD17B4A701008C072D /* pontine-tracts-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pontine-tracts-4.png"; sourceTree = "<group>"; };
+		32782DFE17B4A701008C072D /* posterior-longitudinal-fasciculus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-longitudinal-fasciculus-4.png"; sourceTree = "<group>"; };
 		32782DFF17B4A701008C072D /* quiz-background-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-4.png"; sourceTree = "<group>"; };
-		32782E0017B4A701008C072D /* spinal-trigeminal-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus.png"; sourceTree = "<group>"; };
-		32782E0117B4A701008C072D /* superior-vestibular-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-vestibular-nucleus.png"; sourceTree = "<group>"; };
-		32782E0217B4A701008C072D /* ventral-pontine-syndrome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ventral-pontine-syndrome.png"; sourceTree = "<group>"; };
-		32782E0417B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782E0517B4A701008C072D /* central-tegmental-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract.png"; sourceTree = "<group>"; };
-		32782E0617B4A701008C072D /* locked-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in.png"; sourceTree = "<group>"; };
-		32782E0717B4A701008C072D /* locus-ceruleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locus-ceruleus.png"; sourceTree = "<group>"; };
-		32782E0817B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782E0917B4A701008C072D /* mesencephalic-nucleus-and-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus-and-tract.png"; sourceTree = "<group>"; };
-		32782E0A17B4A701008C072D /* middle-cerebellar-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle.png"; sourceTree = "<group>"; };
-		32782E0B17B4A701008C072D /* mlf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlf.png; sourceTree = "<group>"; };
-		32782E0C17B4A701008C072D /* nucleus-raphe-pontis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-pontis.png"; sourceTree = "<group>"; };
-		32782E0D17B4A701008C072D /* pontine-nuclei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pontine-nuclei.png"; sourceTree = "<group>"; };
-		32782E0E17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-and-motor-nuclei-of-trigeminal.png"; sourceTree = "<group>"; };
+		32782E0017B4A701008C072D /* spinal-trigeminal-nucleus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-nucleus-4.png"; sourceTree = "<group>"; };
+		32782E0117B4A701008C072D /* superior-vestibular-nucleus-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-vestibular-nucleus-4.png"; sourceTree = "<group>"; };
+		32782E0217B4A701008C072D /* ventral-pontine-syndrome-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ventral-pontine-syndrome-4.png"; sourceTree = "<group>"; };
+		32782E0417B4A701008C072D /* als-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-5.png"; sourceTree = "<group>"; };
+		32782E0517B4A701008C072D /* central-tegmental-tract-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract-5.png"; sourceTree = "<group>"; };
+		32782E0617B4A701008C072D /* locked-in-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-5.png"; sourceTree = "<group>"; };
+		32782E0717B4A701008C072D /* locus-ceruleus-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locus-ceruleus-5.png"; sourceTree = "<group>"; };
+		32782E0817B4A701008C072D /* medial-lemniscus-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-5.png"; sourceTree = "<group>"; };
+		32782E0917B4A701008C072D /* mesencephalic-nucleus-and-tract-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus-and-tract-5.png"; sourceTree = "<group>"; };
+		32782E0A17B4A701008C072D /* middle-cerebellar-peduncle-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle-5.png"; sourceTree = "<group>"; };
+		32782E0B17B4A701008C072D /* mlf-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mlf-5.png"; sourceTree = "<group>"; };
+		32782E0C17B4A701008C072D /* nucleus-raphe-pontis-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-raphe-pontis-5.png"; sourceTree = "<group>"; };
+		32782E0D17B4A701008C072D /* pontine-nuclei-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pontine-nuclei-5.png"; sourceTree = "<group>"; };
+		32782E0E17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-and-motor-nuclei-of-trigeminal-5.png"; sourceTree = "<group>"; };
 		32782E0F17B4A701008C072D /* quiz-background-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-5.png"; sourceTree = "<group>"; };
-		32782E1117B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782E1217B4A701008C072D /* aqueductal-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aqueductal-grey.png"; sourceTree = "<group>"; };
-		32782E1317B4A701008C072D /* central-tegmental-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract.png"; sourceTree = "<group>"; };
-		32782E1417B4A701008C072D /* cerebral-aqueduct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-aqueduct.png"; sourceTree = "<group>"; };
-		32782E1517B4A701008C072D /* lateral-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-lemniscus.png"; sourceTree = "<group>"; };
-		32782E1617B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782E1717B4A701008C072D /* mesencephalic-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus.png"; sourceTree = "<group>"; };
-		32782E1817B4A701008C072D /* middle-cerebellar-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle.png"; sourceTree = "<group>"; };
-		32782E1917B4A701008C072D /* mlf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlf.png; sourceTree = "<group>"; };
-		32782E1A17B4A701008C072D /* nucleus-centralis-superior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-centralis-superior.png"; sourceTree = "<group>"; };
+		32782E1117B4A701008C072D /* als-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-6.png"; sourceTree = "<group>"; };
+		32782E1217B4A701008C072D /* aqueductal-grey-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aqueductal-grey-6.png"; sourceTree = "<group>"; };
+		32782E1317B4A701008C072D /* central-tegmental-tract-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract-6.png"; sourceTree = "<group>"; };
+		32782E1417B4A701008C072D /* cerebral-aqueduct-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-aqueduct-6.png"; sourceTree = "<group>"; };
+		32782E1517B4A701008C072D /* lateral-lemniscus-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-lemniscus-6.png"; sourceTree = "<group>"; };
+		32782E1617B4A701008C072D /* medial-lemniscus-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-6.png"; sourceTree = "<group>"; };
+		32782E1717B4A701008C072D /* mesencephalic-nucleus-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus-6.png"; sourceTree = "<group>"; };
+		32782E1817B4A701008C072D /* middle-cerebellar-peduncle-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle-6.png"; sourceTree = "<group>"; };
+		32782E1917B4A701008C072D /* mlf-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mlf-6.png"; sourceTree = "<group>"; };
+		32782E1A17B4A701008C072D /* nucleus-centralis-superior-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-centralis-superior-6.png"; sourceTree = "<group>"; };
 		32782E1B17B4A701008C072D /* quiz-background-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-6.png"; sourceTree = "<group>"; };
-		32782E1C17B4A701008C072D /* superior-cerebellar-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar-peduncle.png"; sourceTree = "<group>"; };
-		32782E1E17B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782E1F17B4A701008C072D /* central-tegmental-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract.png"; sourceTree = "<group>"; };
-		32782E2017B4A701008C072D /* cerebral-aqueduct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-aqueduct.png"; sourceTree = "<group>"; };
-		32782E2117B4A701008C072D /* cerebral-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-peduncle.png"; sourceTree = "<group>"; };
-		32782E2217B4A701008C072D /* corticobulbar-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticobulbar-tract.png"; sourceTree = "<group>"; };
-		32782E2317B4A701008C072D /* corticospinal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract.png"; sourceTree = "<group>"; };
-		32782E2417B4A701008C072D /* inferior-colliculus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-colliculus.png"; sourceTree = "<group>"; };
-		32782E2517B4A701008C072D /* lateral-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-lemniscus.png"; sourceTree = "<group>"; };
-		32782E2617B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782E2717B4A701008C072D /* mlf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlf.png; sourceTree = "<group>"; };
-		32782E2817B4A701008C072D /* periaqueductal-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "periaqueductal-grey.png"; sourceTree = "<group>"; };
+		32782E1C17B4A701008C072D /* superior-cerebellar-peduncle-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar-peduncle-6.png"; sourceTree = "<group>"; };
+		32782E1E17B4A701008C072D /* als-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-7.png"; sourceTree = "<group>"; };
+		32782E1F17B4A701008C072D /* central-tegmental-tract-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract-7.png"; sourceTree = "<group>"; };
+		32782E2017B4A701008C072D /* cerebral-aqueduct-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-aqueduct-7.png"; sourceTree = "<group>"; };
+		32782E2117B4A701008C072D /* cerebral-peduncle-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-peduncle-7.png"; sourceTree = "<group>"; };
+		32782E2217B4A701008C072D /* corticobulbar-tract-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticobulbar-tract-7.png"; sourceTree = "<group>"; };
+		32782E2317B4A701008C072D /* corticospinal-tract-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract-7.png"; sourceTree = "<group>"; };
+		32782E2417B4A701008C072D /* inferior-colliculus-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-colliculus-7.png"; sourceTree = "<group>"; };
+		32782E2517B4A701008C072D /* lateral-lemniscus-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-lemniscus-7.png"; sourceTree = "<group>"; };
+		32782E2617B4A701008C072D /* medial-lemniscus-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-7.png"; sourceTree = "<group>"; };
+		32782E2717B4A701008C072D /* mlf-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mlf-7.png"; sourceTree = "<group>"; };
+		32782E2817B4A701008C072D /* periaqueductal-grey-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "periaqueductal-grey-7.png"; sourceTree = "<group>"; };
 		32782E2917B4A701008C072D /* quiz-background-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-7.png"; sourceTree = "<group>"; };
-		32782E2A17B4A701008C072D /* superior-cerebellar-peduncle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar-peduncle.png"; sourceTree = "<group>"; };
-		32782E2B17B4A701008C072D /* trochlear-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trochlear-nucleus.png"; sourceTree = "<group>"; };
-		32782E2C17B4A701008C072D /* ventral-trigeminothalamic-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ventral-trigeminothalamic-tract.png"; sourceTree = "<group>"; };
-		32782E2E17B4A701008C072D /* als.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = als.png; sourceTree = "<group>"; };
-		32782E2F17B4A701008C072D /* benedikt's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt's.png"; sourceTree = "<group>"; };
-		32782E3017B4A701008C072D /* central-tegmental-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract.png"; sourceTree = "<group>"; };
-		32782E3117B4A701008C072D /* cerebellothalamic-tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebellothalamic-tracts.png"; sourceTree = "<group>"; };
-		32782E3217B4A701008C072D /* cerebral-aqueduct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-aqueduct.png"; sourceTree = "<group>"; };
-		32782E3317B4A701008C072D /* claude's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude's.png"; sourceTree = "<group>"; };
-		32782E3417B4A701008C072D /* corticobulbar-tracts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticobulbar-tracts.png"; sourceTree = "<group>"; };
-		32782E3517B4A701008C072D /* corticospinal-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract.png"; sourceTree = "<group>"; };
-		32782E3617B4A701008C072D /* crus-cerebri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crus-cerebri.png"; sourceTree = "<group>"; };
-		32782E3717B4A701008C072D /* false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = false.png; sourceTree = "<group>"; };
-		32782E3817B4A701008C072D /* homonomous-hemianopia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homonomous-hemianopia.png"; sourceTree = "<group>"; };
-		32782E3917B4A701008C072D /* medial-geniculate-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-geniculate-nucleus.png"; sourceTree = "<group>"; };
-		32782E3A17B4A701008C072D /* medial-lemniscus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus.png"; sourceTree = "<group>"; };
-		32782E3B17B4A701008C072D /* mesencephalic-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus.png"; sourceTree = "<group>"; };
-		32782E3C17B4A701008C072D /* mlf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlf.png; sourceTree = "<group>"; };
-		32782E3D17B4A701008C072D /* obstructive-hydrocephalus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "obstructive-hydrocephalus.png"; sourceTree = "<group>"; };
-		32782E3E17B4A701008C072D /* oculomotor-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oculomotor-nucleus.png"; sourceTree = "<group>"; };
-		32782E3F17B4A701008C072D /* optic-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "optic-tract.png"; sourceTree = "<group>"; };
-		32782E4017B4A701008C072D /* paralysis-of-upgaze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paralysis-of-upgaze.png"; sourceTree = "<group>"; };
-		32782E4117B4A701008C072D /* parkinson's-disease.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkinson's-disease.png"; sourceTree = "<group>"; };
-		32782E4217B4A701008C072D /* periaqueductal-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "periaqueductal-grey.png"; sourceTree = "<group>"; };
+		32782E2A17B4A701008C072D /* superior-cerebellar-peduncle-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar-peduncle-7.png"; sourceTree = "<group>"; };
+		32782E2B17B4A701008C072D /* trochlear-nucleus-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trochlear-nucleus-7.png"; sourceTree = "<group>"; };
+		32782E2C17B4A701008C072D /* ventral-trigeminothalamic-tract-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ventral-trigeminothalamic-tract-7.png"; sourceTree = "<group>"; };
+		32782E2E17B4A701008C072D /* als-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "als-8.png"; sourceTree = "<group>"; };
+		32782E2F17B4A701008C072D /* benedikt's-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt's-8.png"; sourceTree = "<group>"; };
+		32782E3017B4A701008C072D /* central-tegmental-tract-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "central-tegmental-tract-8.png"; sourceTree = "<group>"; };
+		32782E3117B4A701008C072D /* cerebellothalamic-tracts-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebellothalamic-tracts-8.png"; sourceTree = "<group>"; };
+		32782E3217B4A701008C072D /* cerebral-aqueduct-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cerebral-aqueduct-8.png"; sourceTree = "<group>"; };
+		32782E3317B4A701008C072D /* claude's-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude's-8.png"; sourceTree = "<group>"; };
+		32782E3417B4A701008C072D /* corticobulbar-tracts-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticobulbar-tracts-8.png"; sourceTree = "<group>"; };
+		32782E3517B4A701008C072D /* corticospinal-tract-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-tract-8.png"; sourceTree = "<group>"; };
+		32782E3617B4A701008C072D /* crus-cerebri-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crus-cerebri-8.png"; sourceTree = "<group>"; };
+		32782E3717B4A701008C072D /* false-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "false-8.png"; sourceTree = "<group>"; };
+		32782E3817B4A701008C072D /* homonomous-hemianopia-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homonomous-hemianopia-8.png"; sourceTree = "<group>"; };
+		32782E3917B4A701008C072D /* medial-geniculate-nucleus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-geniculate-nucleus-8.png"; sourceTree = "<group>"; };
+		32782E3A17B4A701008C072D /* medial-lemniscus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-8.png"; sourceTree = "<group>"; };
+		32782E3B17B4A701008C072D /* mesencephalic-nucleus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus-8.png"; sourceTree = "<group>"; };
+		32782E3C17B4A701008C072D /* mlf-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mlf-8.png"; sourceTree = "<group>"; };
+		32782E3D17B4A701008C072D /* obstructive-hydrocephalus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "obstructive-hydrocephalus-8.png"; sourceTree = "<group>"; };
+		32782E3E17B4A701008C072D /* oculomotor-nucleus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oculomotor-nucleus-8.png"; sourceTree = "<group>"; };
+		32782E3F17B4A701008C072D /* optic-tract-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "optic-tract-8.png"; sourceTree = "<group>"; };
+		32782E4017B4A701008C072D /* paralysis-of-upgaze-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paralysis-of-upgaze-8.png"; sourceTree = "<group>"; };
+		32782E4117B4A701008C072D /* parkinson's-disease-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkinson's-disease-8.png"; sourceTree = "<group>"; };
+		32782E4217B4A701008C072D /* periaqueductal-grey-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "periaqueductal-grey-8.png"; sourceTree = "<group>"; };
 		32782E4317B4A701008C072D /* quiz-background-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-8.png"; sourceTree = "<group>"; };
-		32782E4417B4A701008C072D /* red-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-nucleus.png"; sourceTree = "<group>"; };
-		32782E4517B4A701008C072D /* superior-colliculus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-colliculus.png"; sourceTree = "<group>"; };
-		32782E4617B4A701008C072D /* weber's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber's.png"; sourceTree = "<group>"; };
+		32782E4417B4A701008C072D /* red-nucleus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-nucleus-8.png"; sourceTree = "<group>"; };
+		32782E4517B4A701008C072D /* superior-colliculus-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-colliculus-8.png"; sourceTree = "<group>"; };
+		32782E4617B4A701008C072D /* weber's-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber's-8.png"; sourceTree = "<group>"; };
 		32782E4717B4A701008C072D /* gen.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gen.py; sourceTree = "<group>"; };
-		32782E4917B4A701008C072D /* aica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aica.png; sourceTree = "<group>"; };
-		32782E4A17B4A701008C072D /* anterior-spinal-artery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-artery.png"; sourceTree = "<group>"; };
-		32782E4B17B4A701008C072D /* basilar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basilar.png; sourceTree = "<group>"; };
-		32782E4C17B4A701008C072D /* long-circumfrentials.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "long-circumfrentials.png"; sourceTree = "<group>"; };
-		32782E4D17B4A701008C072D /* pica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pica.png; sourceTree = "<group>"; };
-		32782E4E17B4A701008C072D /* posterior-cerebral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cerebral.png"; sourceTree = "<group>"; };
-		32782E4F17B4A701008C072D /* posterior-communicating-artery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-communicating-artery.png"; sourceTree = "<group>"; };
+		32782E4917B4A701008C072D /* aica-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aica-perfusion.png"; sourceTree = "<group>"; };
+		32782E4A17B4A701008C072D /* anterior-spinal-artery-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-artery-perfusion.png"; sourceTree = "<group>"; };
+		32782E4B17B4A701008C072D /* basilar-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-perfusion.png"; sourceTree = "<group>"; };
+		32782E4C17B4A701008C072D /* long-circumfrentials-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "long-circumfrentials-perfusion.png"; sourceTree = "<group>"; };
+		32782E4D17B4A701008C072D /* pica-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pica-perfusion.png"; sourceTree = "<group>"; };
+		32782E4E17B4A701008C072D /* posterior-cerebral-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cerebral-perfusion.png"; sourceTree = "<group>"; };
+		32782E4F17B4A701008C072D /* posterior-communicating-artery-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-communicating-artery-perfusion.png"; sourceTree = "<group>"; };
 		32782E5017B4A701008C072D /* quiz-background-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-perfusion.png"; sourceTree = "<group>"; };
-		32782E5117B4A701008C072D /* short-circumfrentials.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "short-circumfrentials.png"; sourceTree = "<group>"; };
-		32782E5217B4A701008C072D /* superior-cerebellar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar.png"; sourceTree = "<group>"; };
-		32782E5317B4A701008C072D /* vertebral-artery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-artery.png"; sourceTree = "<group>"; };
-		32782E5517B4A701008C072D /* (CNIII)-oculomotor-nerve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNIII)-oculomotor-nerve.png"; sourceTree = "<group>"; };
-		32782E5617B4A701008C072D /* (CNIV)-trochlear-nerve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNIV)-trochlear-nerve.png"; sourceTree = "<group>"; };
-		32782E5717B4A701008C072D /* (CNIX) glossopharengeal nerve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNIX) glossopharengeal nerve.png"; sourceTree = "<group>"; };
-		32782E5817B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNV)-spinal-trigeminal-nucleus-&-tract.png"; sourceTree = "<group>"; };
-		32782E5917B4A701008C072D /* (CNV)-trigeminal-nerve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNV)-trigeminal-nerve.png"; sourceTree = "<group>"; };
-		32782E5A17B4A701008C072D /* (CNVI)-abducens-nerve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNVI)-abducens-nerve.png"; sourceTree = "<group>"; };
-		32782E5B17B4A701008C072D /* (CNVII)facial-nerve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNVII)facial-nerve.png"; sourceTree = "<group>"; };
-		32782E5C17B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNVIII)-vestibulocochlear-nerve.png"; sourceTree = "<group>"; };
-		32782E5D17B4A701008C072D /* (CNX)-vagus-nerve-roots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNX)-vagus-nerve-roots.png"; sourceTree = "<group>"; };
-		32782E5E17B4A701008C072D /* (CNXI)-accessory-nerve-roots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNXI)-accessory-nerve-roots.png"; sourceTree = "<group>"; };
-		32782E5F17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNXII)-hypoglossal-nerve-roots.png"; sourceTree = "<group>"; };
-		32782E6017B4A701008C072D /* accessory-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-nucleus.png"; sourceTree = "<group>"; };
-		32782E6117B4A701008C072D /* mesencephalic-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus.png"; sourceTree = "<group>"; };
-		32782E6217B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oculomotor-&-edinger-westphal-nuclei.png"; sourceTree = "<group>"; };
-		32782E6317B4A701008C072D /* principal-sensory-nucleus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-sensory-nucleus.png"; sourceTree = "<group>"; };
+		32782E5117B4A701008C072D /* short-circumfrentials-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "short-circumfrentials-perfusion.png"; sourceTree = "<group>"; };
+		32782E5217B4A701008C072D /* superior-cerebellar-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar-perfusion.png"; sourceTree = "<group>"; };
+		32782E5317B4A701008C072D /* vertebral-artery-perfusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-artery-perfusion.png"; sourceTree = "<group>"; };
+		32782E5517B4A701008C072D /* (CNIII)-oculomotor-nerve-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNIII)-oculomotor-nerve-side.png"; sourceTree = "<group>"; };
+		32782E5617B4A701008C072D /* (CNIV)-trochlear-nerve-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNIV)-trochlear-nerve-side.png"; sourceTree = "<group>"; };
+		32782E5717B4A701008C072D /* (CNIX) glossopharengeal nerve-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNIX) glossopharengeal nerve-side.png"; sourceTree = "<group>"; };
+		32782E5817B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNV)-spinal-trigeminal-nucleus-&-tract-side.png"; sourceTree = "<group>"; };
+		32782E5917B4A701008C072D /* (CNV)-trigeminal-nerve-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNV)-trigeminal-nerve-side.png"; sourceTree = "<group>"; };
+		32782E5A17B4A701008C072D /* (CNVI)-abducens-nerve-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNVI)-abducens-nerve-side.png"; sourceTree = "<group>"; };
+		32782E5B17B4A701008C072D /* (CNVII)facial-nerve-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNVII)facial-nerve-side.png"; sourceTree = "<group>"; };
+		32782E5C17B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNVIII)-vestibulocochlear-nerve-side.png"; sourceTree = "<group>"; };
+		32782E5D17B4A701008C072D /* (CNX)-vagus-nerve-roots-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNX)-vagus-nerve-roots-side.png"; sourceTree = "<group>"; };
+		32782E5E17B4A701008C072D /* (CNXI)-accessory-nerve-roots-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNXI)-accessory-nerve-roots-side.png"; sourceTree = "<group>"; };
+		32782E5F17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "(CNXII)-hypoglossal-nerve-roots-side.png"; sourceTree = "<group>"; };
+		32782E6017B4A701008C072D /* accessory-nucleus-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-nucleus-side.png"; sourceTree = "<group>"; };
+		32782E6117B4A701008C072D /* mesencephalic-nucleus-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-nucleus-side.png"; sourceTree = "<group>"; };
+		32782E6217B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oculomotor-&-edinger-westphal-nuclei-side.png"; sourceTree = "<group>"; };
+		32782E6317B4A701008C072D /* principal-sensory-nucleus-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-sensory-nucleus-side.png"; sourceTree = "<group>"; };
 		32782E6417B4A701008C072D /* quiz-background-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-side.png"; sourceTree = "<group>"; };
-		32782E6517B4A701008C072D /* superior-&-inferior-colliculi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-&-inferior-colliculi.png"; sourceTree = "<group>"; };
+		32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-&-inferior-colliculi-side.png"; sourceTree = "<group>"; };
 		3278A65C16719CE50068EF48 /* BSDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDetailsView.h; sourceTree = "<group>"; };
 		3278A65D16719CE50068EF48 /* BSDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDetailsView.m; sourceTree = "<group>"; };
 		327CE456170ADE710020F918 /* foville-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-sec.png"; sourceTree = "<group>"; };
@@ -1023,7 +1043,6 @@
 		32BAE7AB17180F0900F04334 /* spinal-trigeminal-t-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-t-overlay-side.png"; sourceTree = "<group>"; };
 		32BAE7AF1718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-a-overlay-front.png"; sourceTree = "<group>"; };
 		32BAE7B01718175E00F04334 /* anterior-spinal-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-a-overlay-front.png"; sourceTree = "<group>"; };
-		32BAE7B11718175E00F04334 /* basilar-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-a-overlay-front.png"; sourceTree = "<group>"; };
 		32BAE7B21718175E00F04334 /* posterior-cerebral-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cerebral-a-overlay-front.png"; sourceTree = "<group>"; };
 		32BAE7B31718175E00F04334 /* posterior-communicating-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-communicating-a-overlay-front.png"; sourceTree = "<group>"; };
 		32BAE7B41718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-inferior-cerebellar-a-overlay-front.png"; sourceTree = "<group>"; };
@@ -1069,12 +1088,6 @@
 		32D3351E179E542100F95A7D /* anterior-spinal-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-0.png"; sourceTree = "<group>"; };
 		32D3351F179E542100F95A7D /* anterior-spinal-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-1.png"; sourceTree = "<group>"; };
 		32D33520179E542100F95A7D /* anterior-spinal-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-2.png"; sourceTree = "<group>"; };
-		32D33521179E542100F95A7D /* paramedian-basilar-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paramedian-basilar-3.png"; sourceTree = "<group>"; };
-		32D33522179E542100F95A7D /* paramedian-basilar-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paramedian-basilar-4.png"; sourceTree = "<group>"; };
-		32D33523179E542100F95A7D /* paramedian-basilar-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paramedian-basilar-5.png"; sourceTree = "<group>"; };
-		32D33524179E542100F95A7D /* paramedian-basilar-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paramedian-basilar-6.png"; sourceTree = "<group>"; };
-		32D33525179E542100F95A7D /* paramedian-basilar-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paramedian-basilar-7.png"; sourceTree = "<group>"; };
-		32D33526179E542100F95A7D /* paramedian-basilar-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paramedian-basilar-8.png"; sourceTree = "<group>"; };
 		32D33527179E542100F95A7D /* pica-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pica-1.png"; sourceTree = "<group>"; };
 		32D33528179E542100F95A7D /* pica-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pica-2.png"; sourceTree = "<group>"; };
 		32D33529179E542100F95A7D /* pica-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pica-3.png"; sourceTree = "<group>"; };
@@ -1096,6 +1109,9 @@
 		32DD437F16524FD3002AAE0F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		32E4D28F1651AACB0051AE2D /* BSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSModel.h; sourceTree = "<group>"; };
 		32E4D2901651AACB0051AE2D /* BSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSModel.m; sourceTree = "<group>"; };
+		32E51B7917B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-a-overlay-front.png"; sourceTree = "<group>"; };
+		32E51B7B17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-circumferential-a-overlay-front.png"; sourceTree = "<group>"; };
+		32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-circumferential-a-overlay-front.png"; sourceTree = "<group>"; };
 		32E77B4A16326B3A0077D0B4 /* BSStemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStemView.h; sourceTree = "<group>"; };
 		32E77B4B16326B3A0077D0B4 /* BSStemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStemView.m; sourceTree = "<group>"; };
 		32E90EDD176C339000948158 /* BSUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSUploader.m; sourceTree = "<group>"; };
@@ -1311,8 +1327,8 @@
 		32FB65BC171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tegmental-decussations-?-8.xml"; sourceTree = "<group>"; };
 		32FB65BD171FDF0B005E6DE6 /* trapezoid-body-?-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trapezoid-body-?-4.xml"; sourceTree = "<group>"; };
 		32FB65BE171FDF0B005E6DE6 /* trochlear-n-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trochlear-n-7.xml"; sourceTree = "<group>"; };
-		32FB65BF171FDF0B005E6DE6 /* v-trigeminal-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "v-trigeminal-cn-4.xml"; sourceTree = "<group>"; };
-		32FB65C0171FDF0B005E6DE6 /* v-trigeminal-cn-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "v-trigeminal-cn-5.xml"; sourceTree = "<group>"; };
+		32FB65BF171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trigeminal-motor-n-4.xml"; sourceTree = "<group>"; };
+		32FB65C0171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trigeminal-motor-n-5.xml"; sourceTree = "<group>"; };
 		32FB65C1171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-1.xml"; sourceTree = "<group>"; };
 		32FB65C2171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-2.xml"; sourceTree = "<group>"; };
 		32FB65C3171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-3.xml"; sourceTree = "<group>"; };
@@ -1438,12 +1454,6 @@
 				32D3351E179E542100F95A7D /* anterior-spinal-0.png */,
 				32D3351F179E542100F95A7D /* anterior-spinal-1.png */,
 				32D33520179E542100F95A7D /* anterior-spinal-2.png */,
-				32D33521179E542100F95A7D /* paramedian-basilar-3.png */,
-				32D33522179E542100F95A7D /* paramedian-basilar-4.png */,
-				32D33523179E542100F95A7D /* paramedian-basilar-5.png */,
-				32D33524179E542100F95A7D /* paramedian-basilar-6.png */,
-				32D33525179E542100F95A7D /* paramedian-basilar-7.png */,
-				32D33526179E542100F95A7D /* paramedian-basilar-8.png */,
 				32D33527179E542100F95A7D /* pica-1.png */,
 				32D33528179E542100F95A7D /* pica-2.png */,
 				32D33529179E542100F95A7D /* pica-3.png */,
@@ -1457,6 +1467,18 @@
 				32D33531179E542100F95A7D /* vertebral-0.png */,
 				32D33532179E542100F95A7D /* vertebral-1.png */,
 				32D33533179E542100F95A7D /* vertebral-2.png */,
+				322FBF3617B9ECA10056D964 /* basilar-long-4.png */,
+				322FBF3717B9ECA10056D964 /* basilar-long-5.png */,
+				322FBF3817B9ECA10056D964 /* basilar-long-6.png */,
+				322FBF3C17B9ECB50056D964 /* basilar-paramedian-3.png */,
+				322FBF3D17B9ECB50056D964 /* basilar-paramedian-4.png */,
+				322FBF3E17B9ECB50056D964 /* basilar-paramedian-5.png */,
+				322FBF3F17B9ECB50056D964 /* basilar-paramedian-6.png */,
+				322FBF4017B9ECB50056D964 /* basilar-paramedian-7.png */,
+				322FBF4117B9ECB50056D964 /* basilar-paramedian-8.png */,
+				322FBF4817B9ECBD0056D964 /* basilar-short-4.png */,
+				322FBF4917B9ECBD0056D964 /* basilar-short-5.png */,
+				322FBF4A17B9ECBD0056D964 /* basilar-short-6.png */,
 			);
 			name = ArteryImages;
 			path = Images/ArteryImages;
@@ -1532,18 +1554,18 @@
 		32782DB017B4A701008C072D /* 0 */ = {
 			isa = PBXGroup;
 			children = (
-				32782DB117B4A701008C072D /* accessory-nucleus-(CNXI).png */,
-				32782DB217B4A701008C072D /* anterior-corticospinal-tract.png */,
-				32782DB317B4A701008C072D /* cuneate-nucleus.png */,
-				32782DB417B4A701008C072D /* gracile-nucleus.png */,
-				32782DB517B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face.png */,
-				32782DB617B4A701008C072D /* proprioception-from-ipsilateral-arm.png */,
-				32782DB717B4A701008C072D /* pyramidal-decussation.png */,
-				32782DB817B4A701008C072D /* quadriplegia.png */,
+				32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */,
+				32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */,
+				32782DB317B4A701008C072D /* cuneate-nucleus-0.png */,
+				32782DB417B4A701008C072D /* gracile-nucleus-0.png */,
+				32782DB517B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png */,
+				32782DB617B4A701008C072D /* proprioception-from-ipsilateral-arm-0.png */,
+				32782DB717B4A701008C072D /* pyramidal-decussation-0.png */,
+				32782DB817B4A701008C072D /* quadriplegia-0.png */,
 				32782DB917B4A701008C072D /* quiz-background-0.png */,
-				32782DBA17B4A701008C072D /* spinal-trigeminal-nucleus.png */,
-				32782DBB17B4A701008C072D /* spinal-trigeminal-tract.png */,
-				32782DBC17B4A701008C072D /* spinocerebellar-tracts.png */,
+				32782DBA17B4A701008C072D /* spinal-trigeminal-nucleus-0.png */,
+				32782DBB17B4A701008C072D /* spinal-trigeminal-tract-0.png */,
+				32782DBC17B4A701008C072D /* spinocerebellar-tracts-0.png */,
 			);
 			path = 0;
 			sourceTree = "<group>";
@@ -1551,19 +1573,19 @@
 		32782DBD17B4A701008C072D /* 1 */ = {
 			isa = PBXGroup;
 			children = (
-				32782DBE17B4A701008C072D /* als.png */,
-				32782DBF17B4A701008C072D /* contralateral-hemiplegia.png */,
-				32782DC017B4A701008C072D /* cuneate-fasciculus.png */,
-				32782DC117B4A701008C072D /* gracile-fasciculus.png */,
-				32782DC217B4A701008C072D /* gracile-nucleus.png */,
-				32782DC317B4A701008C072D /* hypoglossal-nuclei-(CNXI).png */,
-				32782DC417B4A701008C072D /* internal-arcuate-fibers.png */,
-				32782DC517B4A701008C072D /* medial-lemniscus.png */,
-				32782DC617B4A701008C072D /* nucleus-ambiguus.png */,
-				32782DC717B4A701008C072D /* proprioception-vibration-&-fine-touch.png */,
+				32782DBE17B4A701008C072D /* als-1.png */,
+				32782DBF17B4A701008C072D /* contralateral-hemiplegia-1.png */,
+				32782DC017B4A701008C072D /* cuneate-fasciculus-1.png */,
+				32782DC117B4A701008C072D /* gracile-fasciculus-1.png */,
+				32782DC217B4A701008C072D /* gracile-nucleus-1.png */,
+				32782DC317B4A701008C072D /* hypoglossal-nuclei-(CNXI)-1.png */,
+				32782DC417B4A701008C072D /* internal-arcuate-fibers-1.png */,
+				32782DC517B4A701008C072D /* medial-lemniscus-1.png */,
+				32782DC617B4A701008C072D /* nucleus-ambiguus-1.png */,
+				32782DC717B4A701008C072D /* proprioception-vibration-&-fine-touch-1.png */,
 				32782DC817B4A701008C072D /* quiz-background-1.png */,
-				32782DC917B4A701008C072D /* solitary-nucleus.png */,
-				32782DCA17B4A701008C072D /* spinal-trigeminal-nucleus.png */,
+				32782DC917B4A701008C072D /* solitary-nucleus-1.png */,
+				32782DCA17B4A701008C072D /* spinal-trigeminal-nucleus-1.png */,
 			);
 			path = 1;
 			sourceTree = "<group>";
@@ -1571,24 +1593,24 @@
 		32782DCB17B4A701008C072D /* 2 */ = {
 			isa = PBXGroup;
 			children = (
-				32782DCC17B4A701008C072D /* als.png */,
-				32782DCD17B4A701008C072D /* anterior-spinocerebellar-tract.png */,
-				32782DCE17B4A701008C072D /* clinical-wallenberg's.png */,
-				32782DCF17B4A701008C072D /* corticospinal-tract.png */,
-				32782DD017B4A701008C072D /* hypoglossal-nucleus.png */,
-				32782DD117B4A701008C072D /* inferior-cerebellar-peduncle.png */,
-				32782DD217B4A701008C072D /* inferior-olivary-nucleus.png */,
-				32782DD317B4A701008C072D /* inferior-vestibular-nucleus.png */,
-				32782DD417B4A701008C072D /* medial-lemniscus.png */,
-				32782DD517B4A701008C072D /* medial-medullary-syndrome.png */,
-				32782DD617B4A701008C072D /* medial-vestibular-nucleus.png */,
-				32782DD717B4A701008C072D /* mlf.png */,
-				32782DD817B4A701008C072D /* motor-nucleus-of-vagus.png */,
-				32782DD917B4A701008C072D /* nucleus-ambiguus.png */,
+				32782DCC17B4A701008C072D /* als-2.png */,
+				32782DCD17B4A701008C072D /* anterior-spinocerebellar-tract-2.png */,
+				32782DCE17B4A701008C072D /* clinical-wallenberg's-2.png */,
+				32782DCF17B4A701008C072D /* corticospinal-tract-2.png */,
+				32782DD017B4A701008C072D /* hypoglossal-nucleus-2.png */,
+				32782DD117B4A701008C072D /* inferior-cerebellar-peduncle-2.png */,
+				32782DD217B4A701008C072D /* inferior-olivary-nucleus-2.png */,
+				32782DD317B4A701008C072D /* inferior-vestibular-nucleus-2.png */,
+				32782DD417B4A701008C072D /* medial-lemniscus-2.png */,
+				32782DD517B4A701008C072D /* medial-medullary-syndrome-2.png */,
+				32782DD617B4A701008C072D /* medial-vestibular-nucleus-2.png */,
+				32782DD717B4A701008C072D /* mlf-2.png */,
+				32782DD817B4A701008C072D /* motor-nucleus-of-vagus-2.png */,
+				32782DD917B4A701008C072D /* nucleus-ambiguus-2.png */,
 				32782DDA17B4A701008C072D /* quiz-background-2.png */,
-				32782DDB17B4A701008C072D /* solitary-tract.png */,
-				32782DDC17B4A701008C072D /* spinal-trigeminal-nucleus.png */,
-				32782DDD17B4A701008C072D /* spinal-trigeminal-tract.png */,
+				32782DDB17B4A701008C072D /* solitary-tract-2.png */,
+				32782DDC17B4A701008C072D /* spinal-trigeminal-nucleus-2.png */,
+				32782DDD17B4A701008C072D /* spinal-trigeminal-tract-2.png */,
 			);
 			path = 2;
 			sourceTree = "<group>";
@@ -1596,22 +1618,22 @@
 		32782DDE17B4A701008C072D /* 3 */ = {
 			isa = PBXGroup;
 			children = (
-				32782DDF17B4A701008C072D /* als.png */,
-				32782DE017B4A701008C072D /* anterior-cochlear-nucleus.png */,
-				32782DE117B4A701008C072D /* central-tegmental-tract.png */,
-				32782DE217B4A701008C072D /* corticospinal-tract.png */,
-				32782DE317B4A701008C072D /* inferior-cerebellar-peduncle.png */,
-				32782DE417B4A701008C072D /* lateral-vestibular-nucleus.png */,
-				32782DE517B4A701008C072D /* medial-lemniscus.png */,
-				32782DE617B4A701008C072D /* medial-vestibular-nucleus.png */,
-				32782DE717B4A701008C072D /* mlf.png */,
-				32782DE817B4A701008C072D /* nucleus-raphe-magnus.png */,
-				32782DE917B4A701008C072D /* nucleus-raphe-palidus.png */,
-				32782DEA17B4A701008C072D /* posterior-cochlear-nucleus.png */,
+				32782DDF17B4A701008C072D /* als-3.png */,
+				32782DE017B4A701008C072D /* anterior-cochlear-nucleus-3.png */,
+				32782DE117B4A701008C072D /* central-tegmental-tract-3.png */,
+				32782DE217B4A701008C072D /* corticospinal-tract-3.png */,
+				32782DE317B4A701008C072D /* inferior-cerebellar-peduncle-3.png */,
+				32782DE417B4A701008C072D /* lateral-vestibular-nucleus-3.png */,
+				32782DE517B4A701008C072D /* medial-lemniscus-3.png */,
+				32782DE617B4A701008C072D /* medial-vestibular-nucleus-3.png */,
+				32782DE717B4A701008C072D /* mlf-3.png */,
+				32782DE817B4A701008C072D /* nucleus-raphe-magnus-3.png */,
+				32782DE917B4A701008C072D /* nucleus-raphe-palidus-3.png */,
+				32782DEA17B4A701008C072D /* posterior-cochlear-nucleus-3.png */,
 				32782DEB17B4A701008C072D /* quiz-background-3.png */,
-				32782DEC17B4A701008C072D /* solitary-nucleus.png */,
-				32782DED17B4A701008C072D /* spinal-trigeminal-nucleus.png */,
-				32782DEE17B4A701008C072D /* spinal-trigeminal-tract.png */,
+				32782DEC17B4A701008C072D /* solitary-nucleus-3.png */,
+				32782DED17B4A701008C072D /* spinal-trigeminal-nucleus-3.png */,
+				32782DEE17B4A701008C072D /* spinal-trigeminal-tract-3.png */,
 			);
 			path = 3;
 			sourceTree = "<group>";
@@ -1619,25 +1641,25 @@
 		32782DEF17B4A701008C072D /* 4 */ = {
 			isa = PBXGroup;
 			children = (
-				32782DF017B4A701008C072D /* abducens-nucleus.png */,
-				32782DF117B4A701008C072D /* als.png */,
-				32782DF217B4A701008C072D /* central-tegmental-tract.png */,
-				32782DF317B4A701008C072D /* corticospinal-tract.png */,
-				32782DF417B4A701008C072D /* facial-motor-nucleus.png */,
-				32782DF517B4A701008C072D /* facial-nerve-(CNVII).png */,
-				32782DF617B4A701008C072D /* fourth-ventricle.png */,
-				32782DF717B4A701008C072D /* lateral-rectus-&-stapedius.png */,
-				32782DF817B4A701008C072D /* medial-lemniscus.png */,
-				32782DF917B4A701008C072D /* medial-vestibular-nucleus.png */,
-				32782DFA17B4A701008C072D /* middle-cerebellar-peduncle.png */,
-				32782DFB17B4A701008C072D /* mlf.png */,
-				32782DFC17B4A701008C072D /* nucleus-raphe-magnus.png */,
-				32782DFD17B4A701008C072D /* pontine-tracts.png */,
-				32782DFE17B4A701008C072D /* posterior-longitudinal-fasciculus.png */,
+				32782DF017B4A701008C072D /* abducens-nucleus-4.png */,
+				32782DF117B4A701008C072D /* als-4.png */,
+				32782DF217B4A701008C072D /* central-tegmental-tract-4.png */,
+				32782DF317B4A701008C072D /* corticospinal-tract-4.png */,
+				32782DF417B4A701008C072D /* facial-motor-nucleus-4.png */,
+				32782DF517B4A701008C072D /* facial-nerve-(CNVII)-4.png */,
+				32782DF617B4A701008C072D /* fourth-ventricle-4.png */,
+				32782DF717B4A701008C072D /* lateral-rectus-&-stapedius-4.png */,
+				32782DF817B4A701008C072D /* medial-lemniscus-4.png */,
+				32782DF917B4A701008C072D /* medial-vestibular-nucleus-4.png */,
+				32782DFA17B4A701008C072D /* middle-cerebellar-peduncle-4.png */,
+				32782DFB17B4A701008C072D /* mlf-4.png */,
+				32782DFC17B4A701008C072D /* nucleus-raphe-magnus-4.png */,
+				32782DFD17B4A701008C072D /* pontine-tracts-4.png */,
+				32782DFE17B4A701008C072D /* posterior-longitudinal-fasciculus-4.png */,
 				32782DFF17B4A701008C072D /* quiz-background-4.png */,
-				32782E0017B4A701008C072D /* spinal-trigeminal-nucleus.png */,
-				32782E0117B4A701008C072D /* superior-vestibular-nucleus.png */,
-				32782E0217B4A701008C072D /* ventral-pontine-syndrome.png */,
+				32782E0017B4A701008C072D /* spinal-trigeminal-nucleus-4.png */,
+				32782E0117B4A701008C072D /* superior-vestibular-nucleus-4.png */,
+				32782E0217B4A701008C072D /* ventral-pontine-syndrome-4.png */,
 			);
 			path = 4;
 			sourceTree = "<group>";
@@ -1645,17 +1667,17 @@
 		32782E0317B4A701008C072D /* 5 */ = {
 			isa = PBXGroup;
 			children = (
-				32782E0417B4A701008C072D /* als.png */,
-				32782E0517B4A701008C072D /* central-tegmental-tract.png */,
-				32782E0617B4A701008C072D /* locked-in.png */,
-				32782E0717B4A701008C072D /* locus-ceruleus.png */,
-				32782E0817B4A701008C072D /* medial-lemniscus.png */,
-				32782E0917B4A701008C072D /* mesencephalic-nucleus-and-tract.png */,
-				32782E0A17B4A701008C072D /* middle-cerebellar-peduncle.png */,
-				32782E0B17B4A701008C072D /* mlf.png */,
-				32782E0C17B4A701008C072D /* nucleus-raphe-pontis.png */,
-				32782E0D17B4A701008C072D /* pontine-nuclei.png */,
-				32782E0E17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal.png */,
+				32782E0417B4A701008C072D /* als-5.png */,
+				32782E0517B4A701008C072D /* central-tegmental-tract-5.png */,
+				32782E0617B4A701008C072D /* locked-in-5.png */,
+				32782E0717B4A701008C072D /* locus-ceruleus-5.png */,
+				32782E0817B4A701008C072D /* medial-lemniscus-5.png */,
+				32782E0917B4A701008C072D /* mesencephalic-nucleus-and-tract-5.png */,
+				32782E0A17B4A701008C072D /* middle-cerebellar-peduncle-5.png */,
+				32782E0B17B4A701008C072D /* mlf-5.png */,
+				32782E0C17B4A701008C072D /* nucleus-raphe-pontis-5.png */,
+				32782E0D17B4A701008C072D /* pontine-nuclei-5.png */,
+				32782E0E17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal-5.png */,
 				32782E0F17B4A701008C072D /* quiz-background-5.png */,
 			);
 			path = 5;
@@ -1664,18 +1686,18 @@
 		32782E1017B4A701008C072D /* 6 */ = {
 			isa = PBXGroup;
 			children = (
-				32782E1117B4A701008C072D /* als.png */,
-				32782E1217B4A701008C072D /* aqueductal-grey.png */,
-				32782E1317B4A701008C072D /* central-tegmental-tract.png */,
-				32782E1417B4A701008C072D /* cerebral-aqueduct.png */,
-				32782E1517B4A701008C072D /* lateral-lemniscus.png */,
-				32782E1617B4A701008C072D /* medial-lemniscus.png */,
-				32782E1717B4A701008C072D /* mesencephalic-nucleus.png */,
-				32782E1817B4A701008C072D /* middle-cerebellar-peduncle.png */,
-				32782E1917B4A701008C072D /* mlf.png */,
-				32782E1A17B4A701008C072D /* nucleus-centralis-superior.png */,
+				32782E1117B4A701008C072D /* als-6.png */,
+				32782E1217B4A701008C072D /* aqueductal-grey-6.png */,
+				32782E1317B4A701008C072D /* central-tegmental-tract-6.png */,
+				32782E1417B4A701008C072D /* cerebral-aqueduct-6.png */,
+				32782E1517B4A701008C072D /* lateral-lemniscus-6.png */,
+				32782E1617B4A701008C072D /* medial-lemniscus-6.png */,
+				32782E1717B4A701008C072D /* mesencephalic-nucleus-6.png */,
+				32782E1817B4A701008C072D /* middle-cerebellar-peduncle-6.png */,
+				32782E1917B4A701008C072D /* mlf-6.png */,
+				32782E1A17B4A701008C072D /* nucleus-centralis-superior-6.png */,
 				32782E1B17B4A701008C072D /* quiz-background-6.png */,
-				32782E1C17B4A701008C072D /* superior-cerebellar-peduncle.png */,
+				32782E1C17B4A701008C072D /* superior-cerebellar-peduncle-6.png */,
 			);
 			path = 6;
 			sourceTree = "<group>";
@@ -1683,21 +1705,21 @@
 		32782E1D17B4A701008C072D /* 7 */ = {
 			isa = PBXGroup;
 			children = (
-				32782E1E17B4A701008C072D /* als.png */,
-				32782E1F17B4A701008C072D /* central-tegmental-tract.png */,
-				32782E2017B4A701008C072D /* cerebral-aqueduct.png */,
-				32782E2117B4A701008C072D /* cerebral-peduncle.png */,
-				32782E2217B4A701008C072D /* corticobulbar-tract.png */,
-				32782E2317B4A701008C072D /* corticospinal-tract.png */,
-				32782E2417B4A701008C072D /* inferior-colliculus.png */,
-				32782E2517B4A701008C072D /* lateral-lemniscus.png */,
-				32782E2617B4A701008C072D /* medial-lemniscus.png */,
-				32782E2717B4A701008C072D /* mlf.png */,
-				32782E2817B4A701008C072D /* periaqueductal-grey.png */,
+				32782E1E17B4A701008C072D /* als-7.png */,
+				32782E1F17B4A701008C072D /* central-tegmental-tract-7.png */,
+				32782E2017B4A701008C072D /* cerebral-aqueduct-7.png */,
+				32782E2117B4A701008C072D /* cerebral-peduncle-7.png */,
+				32782E2217B4A701008C072D /* corticobulbar-tract-7.png */,
+				32782E2317B4A701008C072D /* corticospinal-tract-7.png */,
+				32782E2417B4A701008C072D /* inferior-colliculus-7.png */,
+				32782E2517B4A701008C072D /* lateral-lemniscus-7.png */,
+				32782E2617B4A701008C072D /* medial-lemniscus-7.png */,
+				32782E2717B4A701008C072D /* mlf-7.png */,
+				32782E2817B4A701008C072D /* periaqueductal-grey-7.png */,
 				32782E2917B4A701008C072D /* quiz-background-7.png */,
-				32782E2A17B4A701008C072D /* superior-cerebellar-peduncle.png */,
-				32782E2B17B4A701008C072D /* trochlear-nucleus.png */,
-				32782E2C17B4A701008C072D /* ventral-trigeminothalamic-tract.png */,
+				32782E2A17B4A701008C072D /* superior-cerebellar-peduncle-7.png */,
+				32782E2B17B4A701008C072D /* trochlear-nucleus-7.png */,
+				32782E2C17B4A701008C072D /* ventral-trigeminothalamic-tract-7.png */,
 			);
 			path = 7;
 			sourceTree = "<group>";
@@ -1705,31 +1727,31 @@
 		32782E2D17B4A701008C072D /* 8 */ = {
 			isa = PBXGroup;
 			children = (
-				32782E2E17B4A701008C072D /* als.png */,
-				32782E2F17B4A701008C072D /* benedikt's.png */,
-				32782E3017B4A701008C072D /* central-tegmental-tract.png */,
-				32782E3117B4A701008C072D /* cerebellothalamic-tracts.png */,
-				32782E3217B4A701008C072D /* cerebral-aqueduct.png */,
-				32782E3317B4A701008C072D /* claude's.png */,
-				32782E3417B4A701008C072D /* corticobulbar-tracts.png */,
-				32782E3517B4A701008C072D /* corticospinal-tract.png */,
-				32782E3617B4A701008C072D /* crus-cerebri.png */,
-				32782E3717B4A701008C072D /* false.png */,
-				32782E3817B4A701008C072D /* homonomous-hemianopia.png */,
-				32782E3917B4A701008C072D /* medial-geniculate-nucleus.png */,
-				32782E3A17B4A701008C072D /* medial-lemniscus.png */,
-				32782E3B17B4A701008C072D /* mesencephalic-nucleus.png */,
-				32782E3C17B4A701008C072D /* mlf.png */,
-				32782E3D17B4A701008C072D /* obstructive-hydrocephalus.png */,
-				32782E3E17B4A701008C072D /* oculomotor-nucleus.png */,
-				32782E3F17B4A701008C072D /* optic-tract.png */,
-				32782E4017B4A701008C072D /* paralysis-of-upgaze.png */,
-				32782E4117B4A701008C072D /* parkinson's-disease.png */,
-				32782E4217B4A701008C072D /* periaqueductal-grey.png */,
+				32782E2E17B4A701008C072D /* als-8.png */,
+				32782E2F17B4A701008C072D /* benedikt's-8.png */,
+				32782E3017B4A701008C072D /* central-tegmental-tract-8.png */,
+				32782E3117B4A701008C072D /* cerebellothalamic-tracts-8.png */,
+				32782E3217B4A701008C072D /* cerebral-aqueduct-8.png */,
+				32782E3317B4A701008C072D /* claude's-8.png */,
+				32782E3417B4A701008C072D /* corticobulbar-tracts-8.png */,
+				32782E3517B4A701008C072D /* corticospinal-tract-8.png */,
+				32782E3617B4A701008C072D /* crus-cerebri-8.png */,
+				32782E3717B4A701008C072D /* false-8.png */,
+				32782E3817B4A701008C072D /* homonomous-hemianopia-8.png */,
+				32782E3917B4A701008C072D /* medial-geniculate-nucleus-8.png */,
+				32782E3A17B4A701008C072D /* medial-lemniscus-8.png */,
+				32782E3B17B4A701008C072D /* mesencephalic-nucleus-8.png */,
+				32782E3C17B4A701008C072D /* mlf-8.png */,
+				32782E3D17B4A701008C072D /* obstructive-hydrocephalus-8.png */,
+				32782E3E17B4A701008C072D /* oculomotor-nucleus-8.png */,
+				32782E3F17B4A701008C072D /* optic-tract-8.png */,
+				32782E4017B4A701008C072D /* paralysis-of-upgaze-8.png */,
+				32782E4117B4A701008C072D /* parkinson's-disease-8.png */,
+				32782E4217B4A701008C072D /* periaqueductal-grey-8.png */,
 				32782E4317B4A701008C072D /* quiz-background-8.png */,
-				32782E4417B4A701008C072D /* red-nucleus.png */,
-				32782E4517B4A701008C072D /* superior-colliculus.png */,
-				32782E4617B4A701008C072D /* weber's.png */,
+				32782E4417B4A701008C072D /* red-nucleus-8.png */,
+				32782E4517B4A701008C072D /* superior-colliculus-8.png */,
+				32782E4617B4A701008C072D /* weber's-8.png */,
 			);
 			path = 8;
 			sourceTree = "<group>";
@@ -1737,17 +1759,17 @@
 		32782E4817B4A701008C072D /* perfusion */ = {
 			isa = PBXGroup;
 			children = (
-				32782E4917B4A701008C072D /* aica.png */,
-				32782E4A17B4A701008C072D /* anterior-spinal-artery.png */,
-				32782E4B17B4A701008C072D /* basilar.png */,
-				32782E4C17B4A701008C072D /* long-circumfrentials.png */,
-				32782E4D17B4A701008C072D /* pica.png */,
-				32782E4E17B4A701008C072D /* posterior-cerebral.png */,
-				32782E4F17B4A701008C072D /* posterior-communicating-artery.png */,
+				32782E4917B4A701008C072D /* aica-perfusion.png */,
+				32782E4A17B4A701008C072D /* anterior-spinal-artery-perfusion.png */,
+				32782E4B17B4A701008C072D /* basilar-perfusion.png */,
+				32782E4C17B4A701008C072D /* long-circumfrentials-perfusion.png */,
+				32782E4D17B4A701008C072D /* pica-perfusion.png */,
+				32782E4E17B4A701008C072D /* posterior-cerebral-perfusion.png */,
+				32782E4F17B4A701008C072D /* posterior-communicating-artery-perfusion.png */,
 				32782E5017B4A701008C072D /* quiz-background-perfusion.png */,
-				32782E5117B4A701008C072D /* short-circumfrentials.png */,
-				32782E5217B4A701008C072D /* superior-cerebellar.png */,
-				32782E5317B4A701008C072D /* vertebral-artery.png */,
+				32782E5117B4A701008C072D /* short-circumfrentials-perfusion.png */,
+				32782E5217B4A701008C072D /* superior-cerebellar-perfusion.png */,
+				32782E5317B4A701008C072D /* vertebral-artery-perfusion.png */,
 			);
 			path = perfusion;
 			sourceTree = "<group>";
@@ -1755,23 +1777,23 @@
 		32782E5417B4A701008C072D /* side */ = {
 			isa = PBXGroup;
 			children = (
-				32782E5517B4A701008C072D /* (CNIII)-oculomotor-nerve.png */,
-				32782E5617B4A701008C072D /* (CNIV)-trochlear-nerve.png */,
-				32782E5717B4A701008C072D /* (CNIX) glossopharengeal nerve.png */,
-				32782E5817B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract.png */,
-				32782E5917B4A701008C072D /* (CNV)-trigeminal-nerve.png */,
-				32782E5A17B4A701008C072D /* (CNVI)-abducens-nerve.png */,
-				32782E5B17B4A701008C072D /* (CNVII)facial-nerve.png */,
-				32782E5C17B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve.png */,
-				32782E5D17B4A701008C072D /* (CNX)-vagus-nerve-roots.png */,
-				32782E5E17B4A701008C072D /* (CNXI)-accessory-nerve-roots.png */,
-				32782E5F17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots.png */,
-				32782E6017B4A701008C072D /* accessory-nucleus.png */,
-				32782E6117B4A701008C072D /* mesencephalic-nucleus.png */,
-				32782E6217B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei.png */,
-				32782E6317B4A701008C072D /* principal-sensory-nucleus.png */,
+				32782E5517B4A701008C072D /* (CNIII)-oculomotor-nerve-side.png */,
+				32782E5617B4A701008C072D /* (CNIV)-trochlear-nerve-side.png */,
+				32782E5717B4A701008C072D /* (CNIX) glossopharengeal nerve-side.png */,
+				32782E5817B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract-side.png */,
+				32782E5917B4A701008C072D /* (CNV)-trigeminal-nerve-side.png */,
+				32782E5A17B4A701008C072D /* (CNVI)-abducens-nerve-side.png */,
+				32782E5B17B4A701008C072D /* (CNVII)facial-nerve-side.png */,
+				32782E5C17B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve-side.png */,
+				32782E5D17B4A701008C072D /* (CNX)-vagus-nerve-roots-side.png */,
+				32782E5E17B4A701008C072D /* (CNXI)-accessory-nerve-roots-side.png */,
+				32782E5F17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots-side.png */,
+				32782E6017B4A701008C072D /* accessory-nucleus-side.png */,
+				32782E6117B4A701008C072D /* mesencephalic-nucleus-side.png */,
+				32782E6217B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei-side.png */,
+				32782E6317B4A701008C072D /* principal-sensory-nucleus-side.png */,
 				32782E6417B4A701008C072D /* quiz-background-side.png */,
-				32782E6517B4A701008C072D /* superior-&-inferior-colliculi.png */,
+				32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */,
 			);
 			path = side;
 			sourceTree = "<group>";
@@ -1896,7 +1918,9 @@
 			children = (
 				32BAE7AF1718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png */,
 				32BAE7B01718175E00F04334 /* anterior-spinal-a-overlay-front.png */,
-				32BAE7B11718175E00F04334 /* basilar-a-overlay-front.png */,
+				32E51B7917B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png */,
+				32E51B7B17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png */,
+				32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */,
 				32BAE7B21718175E00F04334 /* posterior-cerebral-a-overlay-front.png */,
 				32BAE7B31718175E00F04334 /* posterior-communicating-a-overlay-front.png */,
 				32BAE7B41718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png */,
@@ -2107,8 +2131,8 @@
 				32FB65BC171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml */,
 				32FB65BD171FDF0B005E6DE6 /* trapezoid-body-?-4.xml */,
 				32FB65BE171FDF0B005E6DE6 /* trochlear-n-7.xml */,
-				32FB65BF171FDF0B005E6DE6 /* v-trigeminal-cn-4.xml */,
-				32FB65C0171FDF0B005E6DE6 /* v-trigeminal-cn-5.xml */,
+				32FB65BF171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml */,
+				32FB65C0171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml */,
 				32FB65C1171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml */,
 				32FB65C2171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml */,
 				32FB65C3171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml */,
@@ -2586,7 +2610,6 @@
 				32BAE7AD17180F0D00F04334 /* spinal-trigeminal-t-overlay-side.png in Resources */,
 				32BAE7B71718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png in Resources */,
 				32BAE7B81718175E00F04334 /* anterior-spinal-a-overlay-front.png in Resources */,
-				32BAE7B91718175E00F04334 /* basilar-a-overlay-front.png in Resources */,
 				32BAE7BA1718175E00F04334 /* posterior-cerebral-a-overlay-front.png in Resources */,
 				32BAE7BB1718175E00F04334 /* posterior-communicating-a-overlay-front.png in Resources */,
 				32BAE7BC1718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png in Resources */,
@@ -2790,8 +2813,8 @@
 				32FB6693171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml in Resources */,
 				32FB6694171FDF0B005E6DE6 /* trapezoid-body-?-4.xml in Resources */,
 				32FB6695171FDF0B005E6DE6 /* trochlear-n-7.xml in Resources */,
-				32FB6696171FDF0B005E6DE6 /* v-trigeminal-cn-4.xml in Resources */,
-				32FB6697171FDF0B005E6DE6 /* v-trigeminal-cn-5.xml in Resources */,
+				32FB6696171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml in Resources */,
+				32FB6697171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml in Resources */,
 				32FB6698171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml in Resources */,
 				32FB6699171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml in Resources */,
 				32FB669A171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml in Resources */,
@@ -2869,12 +2892,6 @@
 				32D33536179E542100F95A7D /* anterior-spinal-0.png in Resources */,
 				32D33537179E542100F95A7D /* anterior-spinal-1.png in Resources */,
 				32D33538179E542100F95A7D /* anterior-spinal-2.png in Resources */,
-				32D33539179E542100F95A7D /* paramedian-basilar-3.png in Resources */,
-				32D3353A179E542100F95A7D /* paramedian-basilar-4.png in Resources */,
-				32D3353B179E542100F95A7D /* paramedian-basilar-5.png in Resources */,
-				32D3353C179E542100F95A7D /* paramedian-basilar-6.png in Resources */,
-				32D3353D179E542100F95A7D /* paramedian-basilar-7.png in Resources */,
-				32D3353E179E542100F95A7D /* paramedian-basilar-8.png in Resources */,
 				32D3353F179E542100F95A7D /* pica-1.png in Resources */,
 				32D33540179E542100F95A7D /* pica-2.png in Resources */,
 				32D33541179E542100F95A7D /* pica-3.png in Resources */,
@@ -2895,177 +2912,192 @@
 				32F323F417AB8A0E007590F3 /* icon@2x~ipad.png in Resources */,
 				32F323F517AB8A0E007590F3 /* icon~ipad.png in Resources */,
 				32676F3D17AB8F680016116E /* page0-background-tag.png in Resources */,
-				32782E6617B4A701008C072D /* accessory-nucleus-(CNXI).png in Resources */,
-				32782E6717B4A701008C072D /* anterior-corticospinal-tract.png in Resources */,
-				32782E6817B4A701008C072D /* cuneate-nucleus.png in Resources */,
-				32782E6917B4A701008C072D /* gracile-nucleus.png in Resources */,
-				32782E6A17B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face.png in Resources */,
-				32782E6B17B4A701008C072D /* proprioception-from-ipsilateral-arm.png in Resources */,
-				32782E6C17B4A701008C072D /* pyramidal-decussation.png in Resources */,
-				32782E6D17B4A701008C072D /* quadriplegia.png in Resources */,
+				32782E6617B4A701008C072D /* accessory-nucleus-(CNXI)-0.png in Resources */,
+				32782E6717B4A701008C072D /* anterior-corticospinal-tract-0.png in Resources */,
+				32782E6817B4A701008C072D /* cuneate-nucleus-0.png in Resources */,
+				32782E6917B4A701008C072D /* gracile-nucleus-0.png in Resources */,
+				32782E6A17B4A701008C072D /* ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png in Resources */,
+				32782E6B17B4A701008C072D /* proprioception-from-ipsilateral-arm-0.png in Resources */,
+				32782E6C17B4A701008C072D /* pyramidal-decussation-0.png in Resources */,
+				32782E6D17B4A701008C072D /* quadriplegia-0.png in Resources */,
 				32782E6E17B4A701008C072D /* quiz-background-0.png in Resources */,
-				32782E6F17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */,
-				32782E7017B4A701008C072D /* spinal-trigeminal-tract.png in Resources */,
-				32782E7117B4A701008C072D /* spinocerebellar-tracts.png in Resources */,
-				32782E7217B4A701008C072D /* als.png in Resources */,
-				32782E7317B4A701008C072D /* contralateral-hemiplegia.png in Resources */,
-				32782E7417B4A701008C072D /* cuneate-fasciculus.png in Resources */,
-				32782E7517B4A701008C072D /* gracile-fasciculus.png in Resources */,
-				32782E7617B4A701008C072D /* gracile-nucleus.png in Resources */,
-				32782E7717B4A701008C072D /* hypoglossal-nuclei-(CNXI).png in Resources */,
-				32782E7817B4A701008C072D /* internal-arcuate-fibers.png in Resources */,
-				32782E7917B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782E7A17B4A701008C072D /* nucleus-ambiguus.png in Resources */,
-				32782E7B17B4A701008C072D /* proprioception-vibration-&-fine-touch.png in Resources */,
+				32782E6F17B4A701008C072D /* spinal-trigeminal-nucleus-0.png in Resources */,
+				32782E7017B4A701008C072D /* spinal-trigeminal-tract-0.png in Resources */,
+				32782E7117B4A701008C072D /* spinocerebellar-tracts-0.png in Resources */,
+				32782E7217B4A701008C072D /* als-1.png in Resources */,
+				32782E7317B4A701008C072D /* contralateral-hemiplegia-1.png in Resources */,
+				32782E7417B4A701008C072D /* cuneate-fasciculus-1.png in Resources */,
+				32782E7517B4A701008C072D /* gracile-fasciculus-1.png in Resources */,
+				32782E7617B4A701008C072D /* gracile-nucleus-1.png in Resources */,
+				32782E7717B4A701008C072D /* hypoglossal-nuclei-(CNXI)-1.png in Resources */,
+				32782E7817B4A701008C072D /* internal-arcuate-fibers-1.png in Resources */,
+				32782E7917B4A701008C072D /* medial-lemniscus-1.png in Resources */,
+				32782E7A17B4A701008C072D /* nucleus-ambiguus-1.png in Resources */,
+				32782E7B17B4A701008C072D /* proprioception-vibration-&-fine-touch-1.png in Resources */,
 				32782E7C17B4A701008C072D /* quiz-background-1.png in Resources */,
-				32782E7D17B4A701008C072D /* solitary-nucleus.png in Resources */,
-				32782E7E17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */,
-				32782E7F17B4A701008C072D /* als.png in Resources */,
-				32782E8017B4A701008C072D /* anterior-spinocerebellar-tract.png in Resources */,
-				32782E8117B4A701008C072D /* clinical-wallenberg's.png in Resources */,
-				32782E8217B4A701008C072D /* corticospinal-tract.png in Resources */,
-				32782E8317B4A701008C072D /* hypoglossal-nucleus.png in Resources */,
-				32782E8417B4A701008C072D /* inferior-cerebellar-peduncle.png in Resources */,
-				32782E8517B4A701008C072D /* inferior-olivary-nucleus.png in Resources */,
-				32782E8617B4A701008C072D /* inferior-vestibular-nucleus.png in Resources */,
-				32782E8717B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782E8817B4A701008C072D /* medial-medullary-syndrome.png in Resources */,
-				32782E8917B4A701008C072D /* medial-vestibular-nucleus.png in Resources */,
-				32782E8A17B4A701008C072D /* mlf.png in Resources */,
-				32782E8B17B4A701008C072D /* motor-nucleus-of-vagus.png in Resources */,
-				32782E8C17B4A701008C072D /* nucleus-ambiguus.png in Resources */,
+				32782E7D17B4A701008C072D /* solitary-nucleus-1.png in Resources */,
+				32782E7E17B4A701008C072D /* spinal-trigeminal-nucleus-1.png in Resources */,
+				32782E7F17B4A701008C072D /* als-2.png in Resources */,
+				32782E8017B4A701008C072D /* anterior-spinocerebellar-tract-2.png in Resources */,
+				32782E8117B4A701008C072D /* clinical-wallenberg's-2.png in Resources */,
+				32782E8217B4A701008C072D /* corticospinal-tract-2.png in Resources */,
+				32782E8317B4A701008C072D /* hypoglossal-nucleus-2.png in Resources */,
+				32782E8417B4A701008C072D /* inferior-cerebellar-peduncle-2.png in Resources */,
+				32782E8517B4A701008C072D /* inferior-olivary-nucleus-2.png in Resources */,
+				32782E8617B4A701008C072D /* inferior-vestibular-nucleus-2.png in Resources */,
+				32782E8717B4A701008C072D /* medial-lemniscus-2.png in Resources */,
+				32782E8817B4A701008C072D /* medial-medullary-syndrome-2.png in Resources */,
+				32782E8917B4A701008C072D /* medial-vestibular-nucleus-2.png in Resources */,
+				32782E8A17B4A701008C072D /* mlf-2.png in Resources */,
+				32782E8B17B4A701008C072D /* motor-nucleus-of-vagus-2.png in Resources */,
+				32782E8C17B4A701008C072D /* nucleus-ambiguus-2.png in Resources */,
 				32782E8D17B4A701008C072D /* quiz-background-2.png in Resources */,
-				32782E8E17B4A701008C072D /* solitary-tract.png in Resources */,
-				32782E8F17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */,
-				32782E9017B4A701008C072D /* spinal-trigeminal-tract.png in Resources */,
-				32782E9117B4A701008C072D /* als.png in Resources */,
-				32782E9217B4A701008C072D /* anterior-cochlear-nucleus.png in Resources */,
-				32782E9317B4A701008C072D /* central-tegmental-tract.png in Resources */,
-				32782E9417B4A701008C072D /* corticospinal-tract.png in Resources */,
-				32782E9517B4A701008C072D /* inferior-cerebellar-peduncle.png in Resources */,
-				32782E9617B4A701008C072D /* lateral-vestibular-nucleus.png in Resources */,
-				32782E9717B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782E9817B4A701008C072D /* medial-vestibular-nucleus.png in Resources */,
-				32782E9917B4A701008C072D /* mlf.png in Resources */,
-				32782E9A17B4A701008C072D /* nucleus-raphe-magnus.png in Resources */,
-				32782E9B17B4A701008C072D /* nucleus-raphe-palidus.png in Resources */,
-				32782E9C17B4A701008C072D /* posterior-cochlear-nucleus.png in Resources */,
+				32782E8E17B4A701008C072D /* solitary-tract-2.png in Resources */,
+				32782E8F17B4A701008C072D /* spinal-trigeminal-nucleus-2.png in Resources */,
+				32782E9017B4A701008C072D /* spinal-trigeminal-tract-2.png in Resources */,
+				32782E9117B4A701008C072D /* als-3.png in Resources */,
+				32782E9217B4A701008C072D /* anterior-cochlear-nucleus-3.png in Resources */,
+				32782E9317B4A701008C072D /* central-tegmental-tract-3.png in Resources */,
+				32782E9417B4A701008C072D /* corticospinal-tract-3.png in Resources */,
+				32782E9517B4A701008C072D /* inferior-cerebellar-peduncle-3.png in Resources */,
+				32782E9617B4A701008C072D /* lateral-vestibular-nucleus-3.png in Resources */,
+				32782E9717B4A701008C072D /* medial-lemniscus-3.png in Resources */,
+				32782E9817B4A701008C072D /* medial-vestibular-nucleus-3.png in Resources */,
+				32782E9917B4A701008C072D /* mlf-3.png in Resources */,
+				32782E9A17B4A701008C072D /* nucleus-raphe-magnus-3.png in Resources */,
+				32782E9B17B4A701008C072D /* nucleus-raphe-palidus-3.png in Resources */,
+				32782E9C17B4A701008C072D /* posterior-cochlear-nucleus-3.png in Resources */,
 				32782E9D17B4A701008C072D /* quiz-background-3.png in Resources */,
-				32782E9E17B4A701008C072D /* solitary-nucleus.png in Resources */,
-				32782E9F17B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */,
-				32782EA017B4A701008C072D /* spinal-trigeminal-tract.png in Resources */,
-				32782EA117B4A701008C072D /* abducens-nucleus.png in Resources */,
-				32782EA217B4A701008C072D /* als.png in Resources */,
-				32782EA317B4A701008C072D /* central-tegmental-tract.png in Resources */,
-				32782EA417B4A701008C072D /* corticospinal-tract.png in Resources */,
-				32782EA517B4A701008C072D /* facial-motor-nucleus.png in Resources */,
-				32782EA617B4A701008C072D /* facial-nerve-(CNVII).png in Resources */,
-				32782EA717B4A701008C072D /* fourth-ventricle.png in Resources */,
-				32782EA817B4A701008C072D /* lateral-rectus-&-stapedius.png in Resources */,
-				32782EA917B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782EAA17B4A701008C072D /* medial-vestibular-nucleus.png in Resources */,
-				32782EAB17B4A701008C072D /* middle-cerebellar-peduncle.png in Resources */,
-				32782EAC17B4A701008C072D /* mlf.png in Resources */,
-				32782EAD17B4A701008C072D /* nucleus-raphe-magnus.png in Resources */,
-				32782EAE17B4A701008C072D /* pontine-tracts.png in Resources */,
-				32782EAF17B4A701008C072D /* posterior-longitudinal-fasciculus.png in Resources */,
+				32782E9E17B4A701008C072D /* solitary-nucleus-3.png in Resources */,
+				32782E9F17B4A701008C072D /* spinal-trigeminal-nucleus-3.png in Resources */,
+				32782EA017B4A701008C072D /* spinal-trigeminal-tract-3.png in Resources */,
+				32782EA117B4A701008C072D /* abducens-nucleus-4.png in Resources */,
+				32782EA217B4A701008C072D /* als-4.png in Resources */,
+				32782EA317B4A701008C072D /* central-tegmental-tract-4.png in Resources */,
+				32782EA417B4A701008C072D /* corticospinal-tract-4.png in Resources */,
+				32782EA517B4A701008C072D /* facial-motor-nucleus-4.png in Resources */,
+				32782EA617B4A701008C072D /* facial-nerve-(CNVII)-4.png in Resources */,
+				32782EA717B4A701008C072D /* fourth-ventricle-4.png in Resources */,
+				32782EA817B4A701008C072D /* lateral-rectus-&-stapedius-4.png in Resources */,
+				32782EA917B4A701008C072D /* medial-lemniscus-4.png in Resources */,
+				32782EAA17B4A701008C072D /* medial-vestibular-nucleus-4.png in Resources */,
+				32782EAB17B4A701008C072D /* middle-cerebellar-peduncle-4.png in Resources */,
+				32782EAC17B4A701008C072D /* mlf-4.png in Resources */,
+				32782EAD17B4A701008C072D /* nucleus-raphe-magnus-4.png in Resources */,
+				32782EAE17B4A701008C072D /* pontine-tracts-4.png in Resources */,
+				32782EAF17B4A701008C072D /* posterior-longitudinal-fasciculus-4.png in Resources */,
 				32782EB017B4A701008C072D /* quiz-background-4.png in Resources */,
-				32782EB117B4A701008C072D /* spinal-trigeminal-nucleus.png in Resources */,
-				32782EB217B4A701008C072D /* superior-vestibular-nucleus.png in Resources */,
-				32782EB317B4A701008C072D /* ventral-pontine-syndrome.png in Resources */,
-				32782EB417B4A701008C072D /* als.png in Resources */,
-				32782EB517B4A701008C072D /* central-tegmental-tract.png in Resources */,
-				32782EB617B4A701008C072D /* locked-in.png in Resources */,
-				32782EB717B4A701008C072D /* locus-ceruleus.png in Resources */,
-				32782EB817B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782EB917B4A701008C072D /* mesencephalic-nucleus-and-tract.png in Resources */,
-				32782EBA17B4A701008C072D /* middle-cerebellar-peduncle.png in Resources */,
-				32782EBB17B4A701008C072D /* mlf.png in Resources */,
-				32782EBC17B4A701008C072D /* nucleus-raphe-pontis.png in Resources */,
-				32782EBD17B4A701008C072D /* pontine-nuclei.png in Resources */,
-				32782EBE17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal.png in Resources */,
+				32782EB117B4A701008C072D /* spinal-trigeminal-nucleus-4.png in Resources */,
+				32782EB217B4A701008C072D /* superior-vestibular-nucleus-4.png in Resources */,
+				32782EB317B4A701008C072D /* ventral-pontine-syndrome-4.png in Resources */,
+				32782EB417B4A701008C072D /* als-5.png in Resources */,
+				32782EB517B4A701008C072D /* central-tegmental-tract-5.png in Resources */,
+				32782EB617B4A701008C072D /* locked-in-5.png in Resources */,
+				32782EB717B4A701008C072D /* locus-ceruleus-5.png in Resources */,
+				32782EB817B4A701008C072D /* medial-lemniscus-5.png in Resources */,
+				32782EB917B4A701008C072D /* mesencephalic-nucleus-and-tract-5.png in Resources */,
+				32782EBA17B4A701008C072D /* middle-cerebellar-peduncle-5.png in Resources */,
+				32782EBB17B4A701008C072D /* mlf-5.png in Resources */,
+				32782EBC17B4A701008C072D /* nucleus-raphe-pontis-5.png in Resources */,
+				32782EBD17B4A701008C072D /* pontine-nuclei-5.png in Resources */,
+				32782EBE17B4A701008C072D /* principal-and-motor-nuclei-of-trigeminal-5.png in Resources */,
 				32782EBF17B4A701008C072D /* quiz-background-5.png in Resources */,
-				32782EC017B4A701008C072D /* als.png in Resources */,
-				32782EC117B4A701008C072D /* aqueductal-grey.png in Resources */,
-				32782EC217B4A701008C072D /* central-tegmental-tract.png in Resources */,
-				32782EC317B4A701008C072D /* cerebral-aqueduct.png in Resources */,
-				32782EC417B4A701008C072D /* lateral-lemniscus.png in Resources */,
-				32782EC517B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782EC617B4A701008C072D /* mesencephalic-nucleus.png in Resources */,
-				32782EC717B4A701008C072D /* middle-cerebellar-peduncle.png in Resources */,
-				32782EC817B4A701008C072D /* mlf.png in Resources */,
-				32782EC917B4A701008C072D /* nucleus-centralis-superior.png in Resources */,
+				32782EC017B4A701008C072D /* als-6.png in Resources */,
+				32782EC117B4A701008C072D /* aqueductal-grey-6.png in Resources */,
+				32782EC217B4A701008C072D /* central-tegmental-tract-6.png in Resources */,
+				32782EC317B4A701008C072D /* cerebral-aqueduct-6.png in Resources */,
+				32782EC417B4A701008C072D /* lateral-lemniscus-6.png in Resources */,
+				32782EC517B4A701008C072D /* medial-lemniscus-6.png in Resources */,
+				32782EC617B4A701008C072D /* mesencephalic-nucleus-6.png in Resources */,
+				32782EC717B4A701008C072D /* middle-cerebellar-peduncle-6.png in Resources */,
+				32782EC817B4A701008C072D /* mlf-6.png in Resources */,
+				32782EC917B4A701008C072D /* nucleus-centralis-superior-6.png in Resources */,
 				32782ECA17B4A701008C072D /* quiz-background-6.png in Resources */,
-				32782ECB17B4A701008C072D /* superior-cerebellar-peduncle.png in Resources */,
-				32782ECC17B4A701008C072D /* als.png in Resources */,
-				32782ECD17B4A701008C072D /* central-tegmental-tract.png in Resources */,
-				32782ECE17B4A701008C072D /* cerebral-aqueduct.png in Resources */,
-				32782ECF17B4A701008C072D /* cerebral-peduncle.png in Resources */,
-				32782ED017B4A701008C072D /* corticobulbar-tract.png in Resources */,
-				32782ED117B4A701008C072D /* corticospinal-tract.png in Resources */,
-				32782ED217B4A701008C072D /* inferior-colliculus.png in Resources */,
-				32782ED317B4A701008C072D /* lateral-lemniscus.png in Resources */,
-				32782ED417B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782ED517B4A701008C072D /* mlf.png in Resources */,
-				32782ED617B4A701008C072D /* periaqueductal-grey.png in Resources */,
+				32782ECB17B4A701008C072D /* superior-cerebellar-peduncle-6.png in Resources */,
+				32782ECC17B4A701008C072D /* als-7.png in Resources */,
+				32782ECD17B4A701008C072D /* central-tegmental-tract-7.png in Resources */,
+				32782ECE17B4A701008C072D /* cerebral-aqueduct-7.png in Resources */,
+				32782ECF17B4A701008C072D /* cerebral-peduncle-7.png in Resources */,
+				32782ED017B4A701008C072D /* corticobulbar-tract-7.png in Resources */,
+				32782ED117B4A701008C072D /* corticospinal-tract-7.png in Resources */,
+				32782ED217B4A701008C072D /* inferior-colliculus-7.png in Resources */,
+				32782ED317B4A701008C072D /* lateral-lemniscus-7.png in Resources */,
+				32782ED417B4A701008C072D /* medial-lemniscus-7.png in Resources */,
+				32782ED517B4A701008C072D /* mlf-7.png in Resources */,
+				32782ED617B4A701008C072D /* periaqueductal-grey-7.png in Resources */,
 				32782ED717B4A701008C072D /* quiz-background-7.png in Resources */,
-				32782ED817B4A701008C072D /* superior-cerebellar-peduncle.png in Resources */,
-				32782ED917B4A701008C072D /* trochlear-nucleus.png in Resources */,
-				32782EDA17B4A701008C072D /* ventral-trigeminothalamic-tract.png in Resources */,
-				32782EDB17B4A701008C072D /* als.png in Resources */,
-				32782EDC17B4A701008C072D /* benedikt's.png in Resources */,
-				32782EDD17B4A701008C072D /* central-tegmental-tract.png in Resources */,
-				32782EDE17B4A701008C072D /* cerebellothalamic-tracts.png in Resources */,
-				32782EDF17B4A701008C072D /* cerebral-aqueduct.png in Resources */,
-				32782EE017B4A701008C072D /* claude's.png in Resources */,
-				32782EE117B4A701008C072D /* corticobulbar-tracts.png in Resources */,
-				32782EE217B4A701008C072D /* corticospinal-tract.png in Resources */,
-				32782EE317B4A701008C072D /* crus-cerebri.png in Resources */,
-				32782EE417B4A701008C072D /* false.png in Resources */,
-				32782EE517B4A701008C072D /* homonomous-hemianopia.png in Resources */,
-				32782EE617B4A701008C072D /* medial-geniculate-nucleus.png in Resources */,
-				32782EE717B4A701008C072D /* medial-lemniscus.png in Resources */,
-				32782EE817B4A701008C072D /* mesencephalic-nucleus.png in Resources */,
-				32782EE917B4A701008C072D /* mlf.png in Resources */,
-				32782EEA17B4A701008C072D /* obstructive-hydrocephalus.png in Resources */,
-				32782EEB17B4A701008C072D /* oculomotor-nucleus.png in Resources */,
-				32782EEC17B4A701008C072D /* optic-tract.png in Resources */,
-				32782EED17B4A701008C072D /* paralysis-of-upgaze.png in Resources */,
-				32782EEE17B4A701008C072D /* parkinson's-disease.png in Resources */,
-				32782EEF17B4A701008C072D /* periaqueductal-grey.png in Resources */,
+				32782ED817B4A701008C072D /* superior-cerebellar-peduncle-7.png in Resources */,
+				32782ED917B4A701008C072D /* trochlear-nucleus-7.png in Resources */,
+				32782EDA17B4A701008C072D /* ventral-trigeminothalamic-tract-7.png in Resources */,
+				32782EDB17B4A701008C072D /* als-8.png in Resources */,
+				32782EDC17B4A701008C072D /* benedikt's-8.png in Resources */,
+				32782EDD17B4A701008C072D /* central-tegmental-tract-8.png in Resources */,
+				32782EDE17B4A701008C072D /* cerebellothalamic-tracts-8.png in Resources */,
+				32782EDF17B4A701008C072D /* cerebral-aqueduct-8.png in Resources */,
+				32782EE017B4A701008C072D /* claude's-8.png in Resources */,
+				32782EE117B4A701008C072D /* corticobulbar-tracts-8.png in Resources */,
+				32782EE217B4A701008C072D /* corticospinal-tract-8.png in Resources */,
+				32782EE317B4A701008C072D /* crus-cerebri-8.png in Resources */,
+				32782EE417B4A701008C072D /* false-8.png in Resources */,
+				32782EE517B4A701008C072D /* homonomous-hemianopia-8.png in Resources */,
+				32782EE617B4A701008C072D /* medial-geniculate-nucleus-8.png in Resources */,
+				32782EE717B4A701008C072D /* medial-lemniscus-8.png in Resources */,
+				32782EE817B4A701008C072D /* mesencephalic-nucleus-8.png in Resources */,
+				32782EE917B4A701008C072D /* mlf-8.png in Resources */,
+				32782EEA17B4A701008C072D /* obstructive-hydrocephalus-8.png in Resources */,
+				32782EEB17B4A701008C072D /* oculomotor-nucleus-8.png in Resources */,
+				32782EEC17B4A701008C072D /* optic-tract-8.png in Resources */,
+				32782EED17B4A701008C072D /* paralysis-of-upgaze-8.png in Resources */,
+				32782EEE17B4A701008C072D /* parkinson's-disease-8.png in Resources */,
+				32782EEF17B4A701008C072D /* periaqueductal-grey-8.png in Resources */,
 				32782EF017B4A701008C072D /* quiz-background-8.png in Resources */,
-				32782EF117B4A701008C072D /* red-nucleus.png in Resources */,
-				32782EF217B4A701008C072D /* superior-colliculus.png in Resources */,
-				32782EF317B4A701008C072D /* weber's.png in Resources */,
+				32782EF117B4A701008C072D /* red-nucleus-8.png in Resources */,
+				32782EF217B4A701008C072D /* superior-colliculus-8.png in Resources */,
+				32782EF317B4A701008C072D /* weber's-8.png in Resources */,
 				32782EF417B4A701008C072D /* gen.py in Resources */,
-				32782EF517B4A701008C072D /* aica.png in Resources */,
-				32782EF617B4A701008C072D /* anterior-spinal-artery.png in Resources */,
-				32782EF717B4A701008C072D /* basilar.png in Resources */,
-				32782EF817B4A701008C072D /* long-circumfrentials.png in Resources */,
-				32782EF917B4A701008C072D /* pica.png in Resources */,
-				32782EFA17B4A701008C072D /* posterior-cerebral.png in Resources */,
-				32782EFB17B4A701008C072D /* posterior-communicating-artery.png in Resources */,
+				32782EF517B4A701008C072D /* aica-perfusion.png in Resources */,
+				32782EF617B4A701008C072D /* anterior-spinal-artery-perfusion.png in Resources */,
+				32782EF717B4A701008C072D /* basilar-perfusion.png in Resources */,
+				32782EF817B4A701008C072D /* long-circumfrentials-perfusion.png in Resources */,
+				32782EF917B4A701008C072D /* pica-perfusion.png in Resources */,
+				32782EFA17B4A701008C072D /* posterior-cerebral-perfusion.png in Resources */,
+				32782EFB17B4A701008C072D /* posterior-communicating-artery-perfusion.png in Resources */,
 				32782EFC17B4A701008C072D /* quiz-background-perfusion.png in Resources */,
-				32782EFD17B4A701008C072D /* short-circumfrentials.png in Resources */,
-				32782EFE17B4A701008C072D /* superior-cerebellar.png in Resources */,
-				32782EFF17B4A701008C072D /* vertebral-artery.png in Resources */,
-				32782F0017B4A701008C072D /* (CNIII)-oculomotor-nerve.png in Resources */,
-				32782F0117B4A701008C072D /* (CNIV)-trochlear-nerve.png in Resources */,
-				32782F0217B4A701008C072D /* (CNIX) glossopharengeal nerve.png in Resources */,
-				32782F0317B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract.png in Resources */,
-				32782F0417B4A701008C072D /* (CNV)-trigeminal-nerve.png in Resources */,
-				32782F0517B4A701008C072D /* (CNVI)-abducens-nerve.png in Resources */,
-				32782F0617B4A701008C072D /* (CNVII)facial-nerve.png in Resources */,
-				32782F0717B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve.png in Resources */,
-				32782F0817B4A701008C072D /* (CNX)-vagus-nerve-roots.png in Resources */,
-				32782F0917B4A701008C072D /* (CNXI)-accessory-nerve-roots.png in Resources */,
-				32782F0A17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots.png in Resources */,
-				32782F0B17B4A701008C072D /* accessory-nucleus.png in Resources */,
-				32782F0C17B4A701008C072D /* mesencephalic-nucleus.png in Resources */,
-				32782F0D17B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei.png in Resources */,
-				32782F0E17B4A701008C072D /* principal-sensory-nucleus.png in Resources */,
+				32782EFD17B4A701008C072D /* short-circumfrentials-perfusion.png in Resources */,
+				32782EFE17B4A701008C072D /* superior-cerebellar-perfusion.png in Resources */,
+				32782EFF17B4A701008C072D /* vertebral-artery-perfusion.png in Resources */,
+				32782F0017B4A701008C072D /* (CNIII)-oculomotor-nerve-side.png in Resources */,
+				32782F0117B4A701008C072D /* (CNIV)-trochlear-nerve-side.png in Resources */,
+				32782F0217B4A701008C072D /* (CNIX) glossopharengeal nerve-side.png in Resources */,
+				32782F0317B4A701008C072D /* (CNV)-spinal-trigeminal-nucleus-&-tract-side.png in Resources */,
+				32782F0417B4A701008C072D /* (CNV)-trigeminal-nerve-side.png in Resources */,
+				32782F0517B4A701008C072D /* (CNVI)-abducens-nerve-side.png in Resources */,
+				32782F0617B4A701008C072D /* (CNVII)facial-nerve-side.png in Resources */,
+				32782F0717B4A701008C072D /* (CNVIII)-vestibulocochlear-nerve-side.png in Resources */,
+				32782F0817B4A701008C072D /* (CNX)-vagus-nerve-roots-side.png in Resources */,
+				32782F0917B4A701008C072D /* (CNXI)-accessory-nerve-roots-side.png in Resources */,
+				32782F0A17B4A701008C072D /* (CNXII)-hypoglossal-nerve-roots-side.png in Resources */,
+				32782F0B17B4A701008C072D /* accessory-nucleus-side.png in Resources */,
+				32782F0C17B4A701008C072D /* mesencephalic-nucleus-side.png in Resources */,
+				32782F0D17B4A701008C072D /* oculomotor-&-edinger-westphal-nuclei-side.png in Resources */,
+				32782F0E17B4A701008C072D /* principal-sensory-nucleus-side.png in Resources */,
 				32782F0F17B4A701008C072D /* quiz-background-side.png in Resources */,
-				32782F1017B4A701008C072D /* superior-&-inferior-colliculi.png in Resources */,
+				32782F1017B4A701008C072D /* superior-&-inferior-colliculi-side.png in Resources */,
+				322FBF3917B9ECA10056D964 /* basilar-long-4.png in Resources */,
+				322FBF3A17B9ECA10056D964 /* basilar-long-5.png in Resources */,
+				322FBF3B17B9ECA10056D964 /* basilar-long-6.png in Resources */,
+				322FBF4217B9ECB50056D964 /* basilar-paramedian-3.png in Resources */,
+				322FBF4317B9ECB50056D964 /* basilar-paramedian-4.png in Resources */,
+				322FBF4417B9ECB50056D964 /* basilar-paramedian-5.png in Resources */,
+				322FBF4517B9ECB50056D964 /* basilar-paramedian-6.png in Resources */,
+				322FBF4617B9ECB50056D964 /* basilar-paramedian-7.png in Resources */,
+				322FBF4717B9ECB50056D964 /* basilar-paramedian-8.png in Resources */,
+				322FBF4B17B9ECBD0056D964 /* basilar-short-4.png in Resources */,
+				322FBF4C17B9ECBD0056D964 /* basilar-short-5.png in Resources */,
+				322FBF4D17B9ECBD0056D964 /* basilar-short-6.png in Resources */,
+				32E51B7A17B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png in Resources */,
+				32E51B7D17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png in Resources */,
+				32E51B7E17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

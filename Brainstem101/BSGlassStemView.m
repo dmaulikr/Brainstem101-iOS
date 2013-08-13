@@ -15,6 +15,7 @@ const float sectionDistance = 80;
 @implementation BSGlassStemView{
     UIImageView *currentLayer;
     CGPoint selectedCenter;
+    CGPoint normalCenter;
 }
 
 -(id)initWithFrame:(CGRect)frame
@@ -24,17 +25,24 @@ const float sectionDistance = 80;
 
         _imageLayers = [NSMutableArray new];
         
+        normalCenter = self.center;
+        normalCenter.y -= 50;
+        normalCenter.x += 20;
+        
+        selectedCenter = CGPointMake(self.center.x - sectionDistance, self.center.y + sectionDistance);
+        
+        static float scaleFactor = 1.35;
+        
         for (int i = 0; i < 18; i++) {
 
-            UIImageView *tmp = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 500, 800)];
-            [tmp setCenter:self.center];
+            UIImageView *tmp = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 500*scaleFactor, 800*scaleFactor)];
+            [tmp setCenter:normalCenter];
             [tmp setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@-%d.png", baseFileName, i]]];
             [tmp setContentMode:UIViewContentModeScaleAspectFill];
             [_imageLayers addObject:tmp];
             [self addSubview:_imageLayers[i]];
         }
         
-        selectedCenter = CGPointMake(self.center.x - sectionDistance, self.center.y + sectionDistance);
         [self setAlpha:0.0];
         _hidden = YES;
         
@@ -45,18 +53,14 @@ const float sectionDistance = 80;
 -(void) show {
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:1.0];
-    } completion:^(BOOL finished) {
-        //
-    }];
+    } completion:nil];
 }
 
 -(void) hide {
     [self retractLayer:currentLayer];
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:0.0];
-    } completion:^(BOOL finished) {
-        //
-    }];
+    } completion:nil];
 }
 
 - (void) presentSection:(int)section{
@@ -73,7 +77,7 @@ const float sectionDistance = 80;
 
 -(void) retractLayer:(UIImageView *)layer{
     [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-        [layer setCenter:self.center];
+        [layer setCenter:normalCenter];
     } completion:nil];
 }
 
