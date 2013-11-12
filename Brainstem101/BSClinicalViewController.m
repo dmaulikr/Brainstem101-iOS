@@ -11,7 +11,7 @@
 #define DEFAULT_ANIMATION_SPEED 0.3
 #define CELLSPACING 15
 #define SECTION_COLLECTION_VIEW_CENTER_OFFSET 500
-#define SECTION_COLLECTION_VIEW_LEFT_EDGE_INSET 400
+#define SECTION_COLLECTION_VIEW_LEFT_EDGE_INSET 100
 
 @implementation BSClinicalViewController{
     BSSyndrome *currentSyndrome;
@@ -92,17 +92,15 @@
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [_sectionCollectionView setAlpha:0];
         [_sectionCollectionView setCenter:CGPointMake(_sectionCollectionView.center.x + SECTION_COLLECTION_VIEW_CENTER_OFFSET, _sectionCollectionView.center.y)];
-
+        
     } completion:^(BOOL finished) {
         
-        [_sectionCollectionView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 1)]];
-        [_sectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:2 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:NO];
+        [self.sectionCollectionView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 1)]];
+        [self.sectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:2 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            [_sectionCollectionView setAlpha:1];
-            [_sectionCollectionView setCenter:CGPointMake(self.view.center.x , _sectionCollectionView.center.y)];
-        } completion:^(BOOL finished) {
-            //do nothing
-        }];
+            [self.sectionCollectionView setAlpha:1];
+            [self.sectionCollectionView setCenter:CGPointMake(self.view.center.x , _sectionCollectionView.center.y)];
+        } completion:nil];
     }];
 }
 
@@ -181,11 +179,11 @@
 
 -(CGFloat) calculatedTableCellHeightForDeficit:(BSDeficit *)deficit {
 
-    float symptomsHeight = [[deficit symptoms] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(343, 101)].height;
-    float deficitHeight = [[deficit deficit] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(130, 101)].height;
+    float symptomsHeight = [[deficit symptoms] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(343, 105)].height;
+    float deficitHeight = [[deficit deficit] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(130, 105)].height;
     
     float finalHeight = MAX(symptomsHeight, deficitHeight);
-    finalHeight = MAX(finalHeight, 35);
+    finalHeight = MAX(finalHeight, 50);
     
     return finalHeight + CELLSPACING;
 }
@@ -252,9 +250,9 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (collectionView == _syndromeSelectionCollectionView) {
+    if (collectionView == self.syndromeSelectionCollectionView) {
         if ([[[BSModel sharedModel] Syndromes] objectAtIndex:indexPath.row] != currentSyndrome) {
-            [[(BSClinicalCollectionViewCell *)[_syndromeSelectionCollectionView cellForItemAtIndexPath:indexPath] syndromNameLabel] setTextColor:[UIColor whiteColor]];
+            [[(BSClinicalCollectionViewCell *)[self.syndromeSelectionCollectionView cellForItemAtIndexPath:indexPath] syndromNameLabel] setTextColor:[UIColor whiteColor]];
             [self switchToSyndrome:[[BSModel sharedModel] Syndromes][indexPath.row]];
         }
     }

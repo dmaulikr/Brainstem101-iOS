@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) IBOutlet BSQuizView *quizView;
 
+- (IBAction)backAction:(id)sender;
+
 @end

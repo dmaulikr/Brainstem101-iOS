@@ -19,6 +19,8 @@
 		320D70391831F3B4000F6AFA /* BSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D70381831F3B4000F6AFA /* BSAboutViewController.m */; };
 		320D703B1831F99A000F6AFA /* page0-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703A1831F99A000F6AFA /* page0-background.png */; };
 		320D703E18320122000F6AFA /* BSQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D703D18320122000F6AFA /* BSQuizViewController.m */; };
+		320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703F183219EB000F6AFA /* tutorial-clinical.png */; };
+		320D704218321C12000F6AFA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D704118321C12000F6AFA /* icon.png */; };
 		3213C92F170D61FB000DF667 /* stem-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92D170D61FB000DF667 /* stem-back.png */; };
 		3213C930170D61FB000DF667 /* stem-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92E170D61FB000DF667 /* stem-side.png */; };
 		3213C95A170D661D000DF667 /* abducens-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C931170D661C000DF667 /* abducens-n-overlay-back.png */; };
@@ -685,6 +687,8 @@
 		320D703A1831F99A000F6AFA /* page0-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background.png"; sourceTree = "<group>"; };
 		320D703C18320121000F6AFA /* BSQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSQuizViewController.h; path = ../BSQuizViewController.h; sourceTree = "<group>"; };
 		320D703D18320122000F6AFA /* BSQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSQuizViewController.m; path = ../BSQuizViewController.m; sourceTree = "<group>"; };
+		320D703F183219EB000F6AFA /* tutorial-clinical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-clinical.png"; sourceTree = "<group>"; };
+		320D704118321C12000F6AFA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3213C92D170D61FB000DF667 /* stem-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-back.png"; sourceTree = "<group>"; };
 		3213C92E170D61FB000DF667 /* stem-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-side.png"; sourceTree = "<group>"; };
 		3213C931170D661C000DF667 /* abducens-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abducens-n-overlay-back.png"; sourceTree = "<group>"; };
@@ -1417,6 +1421,7 @@
 		323A7231177735BA00222ECF /* Tutorial Images */ = {
 			isa = PBXGroup;
 			children = (
+				320D703F183219EB000F6AFA /* tutorial-clinical.png */,
 				324EFCE417AB6D7700BE93BC /* tutorial-ask.png */,
 				323A7232177735C500222ECF /* tutorial-atlas.png */,
 				32C384D61777E2DF00333310 /* tutorial-page0.png */,
@@ -2425,6 +2430,7 @@
 				32BAE7BF17181CFC00F04334 /* XML */,
 				32E90EDF176C3F1C00948158 /* Uploader */,
 				320D70351831F17D000F6AFA /* Images.xcassets */,
+				320D704118321C12000F6AFA /* icon.png */,
 				8179EAE6161D40CF0050D663 /* Supporting Files */,
 			);
 			path = Brainstem101;
@@ -2770,6 +2776,7 @@
 				32FB6654171FDF0B005E6DE6 /* periaqueductal-grey-?-6.xml in Resources */,
 				32FB6655171FDF0B005E6DE6 /* periaqueductal-grey-?-7.xml in Resources */,
 				32FB6656171FDF0B005E6DE6 /* periaqueductal-grey-?-8.xml in Resources */,
+				320D704218321C12000F6AFA /* icon.png in Resources */,
 				32FB6657171FDF0B005E6DE6 /* pontine-n-4.xml in Resources */,
 				32FB6658171FDF0B005E6DE6 /* pontine-n-5.xml in Resources */,
 				32FB6659171FDF0B005E6DE6 /* pontine-n-6.xml in Resources */,
@@ -2902,6 +2909,7 @@
 				32C384D91777F58D00333310 /* clinical-fading-eye.png in Resources */,
 				32C384DB177810BD00333310 /* jackson-sec.png in Resources */,
 				32C384DD1778119900333310 /* jackson-perf.png in Resources */,
+				320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */,
 				32D84798178D463400718C4C /* corticospinal-t-overlay-back.png in Resources */,
 				32D84799178D463400718C4C /* medial-lemniscus-t-overlay-back.png in Resources */,
 				3271C05F178D5C3C00C7F8BF /* page0-background~.png in Resources */,

@@ -20,12 +20,12 @@
         fileName = [fileName stringByReplacingOccurrencesOfString:@"\'s" withString:@""];
         fileName = [fileName stringByReplacingOccurrencesOfString:@" " withString:@"-"];
         
-        _sectionImageName = [NSString stringWithFormat:@"%@-sec.png", fileName] ;
-        _mugshotImageName = [NSString stringWithFormat:@"%@-mug.png", fileName];
-        _perfusionDiagramOverlay = [NSString stringWithFormat:@"%@-perf.png", fileName];
-        _perfusionDiagram = @"perfusion-background.png";
+        self.sectionImageName = [NSString stringWithFormat:@"%@-sec.png", fileName] ;
+        self.mugshotImageName = [NSString stringWithFormat:@"%@-mug.png", fileName];
+        self.perfusionDiagramOverlay = [NSString stringWithFormat:@"%@-perf.png", fileName];
+        self.perfusionDiagram = @"perfusion-background.png";
 
-        _deficits = [NSMutableArray new];
+        self.deficits = [NSMutableArray new];
         
     }
     return self;

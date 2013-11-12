@@ -11,7 +11,7 @@
 @implementation BSDetailsView
 
 -(void)awakeFromNib{
-    [_collectionView setContentInset:UIEdgeInsetsMake(5, 15, 0, 0)];
+    [self.collectionView setContentInset:UIEdgeInsetsMake(5, 15, 0, 0)];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -30,7 +30,7 @@
     
     switch (indexPath.row) {
         case 1:
-            [imageView setImage:[UIImage imageNamed:_data[@"image"]]];
+            [imageView setImage:[UIImage imageNamed:self.data[@"image"]]];
             [cell setBackgroundView:imageView];
             break;
         case 0:
@@ -39,7 +39,8 @@
             [textView setBackgroundColor:[UIColor clearColor]];
             [textView setText:_data[@"description"]];
             [textView setTextColor:[UIColor whiteColor]];
-            [textView setFont:[UIFont fontWithName:@"American Typewriter" size:18]];
+            [textView setFont:[UIFont fontWithName:@"American Typewriter" size:17]];
+            [textView setClipsToBounds:NO];
             
             [cell setBackgroundView:textView];
             break;
@@ -54,7 +55,7 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGSize newSize = self.collectionView.bounds.size;
-    newSize.height = newSize.height/2;
+    newSize.height = (newSize.height/2) + 30;
     newSize.width -= 60;
     return newSize;
 }

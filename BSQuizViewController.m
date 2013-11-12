@@ -27,7 +27,9 @@
     [super viewDidLoad];
     
     questionCount = 0;
+    
     [self setUpQuizViewFrames];
+    [self advanceQuestions];
 }
 
 - (IBAction)backAction:(id)sender
@@ -35,45 +37,47 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void) setUpQuizViewFrames{
+
+-(void)setUpQuizViewFrames{
     quizViewInitialFrame = quizviewLeftFrame = quizViewRightFrame = _quizView.frame;
-    quizViewRightFrame.origin.x += 500;
-    quizviewLeftFrame.origin.x -= 500;
+    quizViewRightFrame.origin.x += 800;
+    quizviewLeftFrame.origin.x -= 800;
 }
 
 - (void)advanceQuestions{
     
-    // lazy load questions
     if (!questionObject) {
         questionObject = [BSQuestionGenerator new];
     }
     
     if (questionCount %2 == 0) {
-        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            
             [_quizView setFrame:quizViewRightFrame];
-            [_quizView setAlpha:0.0];
+//            [self.quizView setAlpha:0];
             
         } completion:^(BOOL finished) {
             
-            [_quizView setFrame:quizviewLeftFrame];
-            [_quizView setAlpha:0.0];
-            [_quizView loadQuestionFromDictionary:[questionObject getNextQuestion]];
+            [self.quizView setFrame:quizviewLeftFrame];
             
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                
-                [_quizView setFrame:quizViewInitialFrame];
-                [_quizView setAlpha:1.0];
+            [self.quizView loadQuestionFromDictionary:[questionObject getNextQuestion]];
+            
+            [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+              
+//                [self.quizView setAlpha:1];
+                [self.quizView setFrame:quizViewInitialFrame];
                 
             } completion:nil];
         }];
-        
     }else{
-        [_quizView showAnswer];
+        [self.quizView showAnswer];
     }
     questionCount++;
 }
 
-- (IBAction)handleGestures:(UIGestureRecognizer *)sender{
+- (IBAction)handleGestures:(UIGestureRecognizer *)sender
+{
     if ([sender class] == [UITapGestureRecognizer class]) {
         if (questionCount % 2 == 1) {
             [self advanceQuestions];
@@ -89,6 +93,12 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self advanceQuestions];
+}
+
+#pragma mark System Methods
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
 
 
