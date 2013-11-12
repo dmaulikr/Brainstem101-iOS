@@ -10,13 +10,7 @@
 
 #define LOAD_TIME 5
 
-@implementation BSPage0ViewController{
-    BSQuestionGenerator *questionObject;
-    int questionCount;
-    CGRect quizViewInitialFrame;
-    CGRect quizViewRightFrame;
-    CGRect quizviewLeftFrame;
-}
+@implementation BSPage0ViewController
 
 - (void)viewDidLoad
 {
@@ -25,26 +19,22 @@
         [button setEnabled:NO];
     }
     [_atlasButton setEnabled:NO];
-    
 }
-
-
 
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
-    
-    _tagImageView = [[UIImageView alloc] init];
-    CGRect newFrame = _backgroundImageView.bounds;
-    newFrame.origin.x = newFrame.origin.x + 200;
-    [_tagImageView setFrame:newFrame];
-    [_tagImageView setImage:[UIImage imageNamed:@"page0-background-tag.png"]];
-    [_backgroundImageView addSubview:_tagImageView];
+    if (![self.view viewWithTag:(int)@"settingstag"]) {
+        _tagImageView = [[UIImageView alloc] init];
+        [_tagImageView setTag:(int)@"settingstag"];
+        CGRect newFrame = _backgroundImageView.bounds;
+        newFrame.origin.x = newFrame.origin.x + 200;
+        [_tagImageView setFrame:newFrame];
+        [_tagImageView setImage:[UIImage imageNamed:@"page0-background-tag.png"]];
+        [_backgroundImageView addSubview:_tagImageView];
+    }
     
     [self runFuckometer];
-    
-    questionCount = 0;
-    [self setUpQuizViewFrames];
     
     if ([[BSModel sharedModel] isFirstLaunch]) {
         
@@ -92,11 +82,7 @@
     }
 }
 
--(void) setUpQuizViewFrames{
-    quizViewInitialFrame = quizviewLeftFrame = quizViewRightFrame = _quizView.frame;
-    quizViewRightFrame.origin.x += 500;
-    quizviewLeftFrame.origin.x -= 500;
-}
+
 
 
 -(void)runFuckometer {
@@ -106,7 +92,6 @@
         }
         [_atlasButton setEnabled:YES];
         [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            [_backgroundCoverImageView setAlpha:0.0];
             [_tagImageView setFrame:_backgroundImageView.bounds];
         } completion:nil];
 
@@ -115,7 +100,6 @@
 
     [_fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            [_backgroundCoverImageView setAlpha:0];
             [_fuckometerView setAlpha:0];
             [_tagImageView setFrame:_backgroundImageView.bounds];
         } completion:^(BOOL finished) {
@@ -128,37 +112,6 @@
     }];
 }
 
-- (void)advanceQuestions{
-    
-    // lazy load questions
-    if (!questionObject) {
-        questionObject = [BSQuestionGenerator new];
-    }
-
-    if (questionCount %2 == 0) {
-        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            [_quizView setFrame:quizViewRightFrame];
-            [_quizView setAlpha:0.0];
-            
-        } completion:^(BOOL finished) {
-            
-            [_quizView setFrame:quizviewLeftFrame];
-            [_quizView setAlpha:0.0];
-            [_quizView loadQuestionFromDictionary:[questionObject getNextQuestion]];
-            
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                
-                [_quizView setFrame:quizViewInitialFrame];
-                [_quizView setAlpha:1.0];
-                
-            } completion:nil];
-        }];
-        
-    }else{
-        [_quizView showAnswer];
-    }
-    questionCount++;
-}
 
 
 - (IBAction)buttonPressed:(UIButton *)sender {
@@ -171,22 +124,17 @@
     }
 }
 
-- (IBAction)handleGestures:(UIGestureRecognizer *)sender{
-    if ([sender class] == [UITapGestureRecognizer class]) {
-        if (questionCount % 2 == 1) {
-            [self advanceQuestions];
-        }
-    }else if ([sender class] == [UISwipeGestureRecognizer class]){
-        [self advanceQuestions];
-        if (questionCount % 2 == 0) {
-            [self advanceQuestions];
-        }
-    }
+- (IBAction)quizAction:(id)sender
+{
+    [self performSegueWithIdentifier:@"page0-to-quiz" sender:self];
 }
 
-- (IBAction)dice:(id)sender {
-    [self advanceQuestions];
+
+- (IBAction)showAboutPage:(id)sender
+{
+    [self performSegueWithIdentifier:@"page0-to-about" sender:self];
 }
+
 
 #pragma mark BSTutorialImageViewDelegate
 

@@ -15,6 +15,10 @@
 		320D18561708FD22002D9E15 /* BSPage0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D18551708FD22002D9E15 /* BSPage0ViewController.m */; };
 		320D185B17090556002D9E15 /* BSQuestionGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D185A17090555002D9E15 /* BSQuestionGenerator.m */; };
 		320D186117094FBD002D9E15 /* BSClinicalDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D186017094FBC002D9E15 /* BSClinicalDetailsTableViewCell.m */; };
+		320D70361831F17D000F6AFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320D70351831F17D000F6AFA /* Images.xcassets */; };
+		320D70391831F3B4000F6AFA /* BSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D70381831F3B4000F6AFA /* BSAboutViewController.m */; };
+		320D703B1831F99A000F6AFA /* page0-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703A1831F99A000F6AFA /* page0-background.png */; };
+		320D703E18320122000F6AFA /* BSQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D703D18320122000F6AFA /* BSQuizViewController.m */; };
 		3213C92F170D61FB000DF667 /* stem-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92D170D61FB000DF667 /* stem-back.png */; };
 		3213C930170D61FB000DF667 /* stem-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92E170D61FB000DF667 /* stem-side.png */; };
 		3213C95A170D661D000DF667 /* abducens-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C931170D661C000DF667 /* abducens-n-overlay-back.png */; };
@@ -76,7 +80,6 @@
 		322FBF4D17B9ECBD0056D964 /* basilar-short-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4A17B9ECBD0056D964 /* basilar-short-6.png */; };
 		3230B659168062C3004A196E /* BSProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230B658168062C3004A196E /* BSProfileViewController.m */; };
 		323A7234177735C500222ECF /* tutorial-atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 323A7232177735C500222ECF /* tutorial-atlas.png */; };
-		323A7235177735C500222ECF /* tutorial-page0.png in Resources */ = {isa = PBXBuildFile; fileRef = 323A7233177735C500222ECF /* tutorial-page0.png */; };
 		323A723817773C2900222ECF /* BSTutorialImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 323A723717773C2900222ECF /* BSTutorialImageView.m */; };
 		323BCF01176C0395000F8D06 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 323BCEEF176C0395000F8D06 /* AFHTTPClient.m */; };
 		323BCF02176C0395000F8D06 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 323BCEF1176C0395000F8D06 /* AFHTTPRequestOperation.m */; };
@@ -118,7 +121,7 @@
 		326FB6A4170C15D5002CD59B /* locked-in-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A3170C15D5002CD59B /* locked-in-perf.png */; };
 		326FB6A6170C15E0002CD59B /* foville-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A5170C15E0002CD59B /* foville-perf.png */; };
 		326FB6A8170C15E7002CD59B /* claude-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A7170C15E7002CD59B /* claude-perf.png */; };
-		3271C05F178D5C3C00C7F8BF /* page0-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3271C05E178D5C3C00C7F8BF /* page0-background.png */; };
+		3271C05F178D5C3C00C7F8BF /* page0-background~.png in Resources */ = {isa = PBXBuildFile; fileRef = 3271C05E178D5C3C00C7F8BF /* page0-background~.png */; };
 		32782E6617B4A701008C072D /* accessory-nucleus-(CNXI)-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */; };
 		32782E6717B4A701008C072D /* anterior-corticospinal-tract-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */; };
 		32782E6817B4A701008C072D /* cuneate-nucleus-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB317B4A701008C072D /* cuneate-nucleus-0.png */; };
@@ -374,7 +377,7 @@
 		32C384D11777E1B400333310 /* profile-sxn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C81777E1B400333310 /* profile-sxn-7.png */; };
 		32C384D21777E1B400333310 /* profile-sxn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C91777E1B400333310 /* profile-sxn-6.png */; };
 		32C384D31777E1B400333310 /* profile-sxn-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384CA1777E1B400333310 /* profile-sxn-3.png */; };
-		32C384D71777E2DF00333310 /* tutorial-clinical.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384D61777E2DF00333310 /* tutorial-clinical.png */; };
+		32C384D71777E2DF00333310 /* tutorial-page0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384D61777E2DF00333310 /* tutorial-page0.png */; };
 		32C384D91777F58D00333310 /* clinical-fading-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384D81777F58D00333310 /* clinical-fading-eye.png */; };
 		32C384DB177810BD00333310 /* jackson-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DA177810BC00333310 /* jackson-sec.png */; };
 		32C384DD1778119900333310 /* jackson-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DC1778119700333310 /* jackson-perf.png */; };
@@ -676,6 +679,12 @@
 		320D185A17090555002D9E15 /* BSQuestionGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuestionGenerator.m; sourceTree = "<group>"; };
 		320D185F17094FBB002D9E15 /* BSClinicalDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalDetailsTableViewCell.h; sourceTree = "<group>"; };
 		320D186017094FBC002D9E15 /* BSClinicalDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalDetailsTableViewCell.m; sourceTree = "<group>"; };
+		320D70351831F17D000F6AFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		320D70371831F3B4000F6AFA /* BSAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAboutViewController.h; sourceTree = "<group>"; };
+		320D70381831F3B4000F6AFA /* BSAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAboutViewController.m; sourceTree = "<group>"; };
+		320D703A1831F99A000F6AFA /* page0-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background.png"; sourceTree = "<group>"; };
+		320D703C18320121000F6AFA /* BSQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSQuizViewController.h; path = ../BSQuizViewController.h; sourceTree = "<group>"; };
+		320D703D18320122000F6AFA /* BSQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSQuizViewController.m; path = ../BSQuizViewController.m; sourceTree = "<group>"; };
 		3213C92D170D61FB000DF667 /* stem-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-back.png"; sourceTree = "<group>"; };
 		3213C92E170D61FB000DF667 /* stem-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-side.png"; sourceTree = "<group>"; };
 		3213C931170D661C000DF667 /* abducens-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abducens-n-overlay-back.png"; sourceTree = "<group>"; };
@@ -740,7 +749,6 @@
 		3230B657168062C3004A196E /* BSProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSProfileViewController.h; sourceTree = "<group>"; };
 		3230B658168062C3004A196E /* BSProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileViewController.m; sourceTree = "<group>"; };
 		323A7232177735C500222ECF /* tutorial-atlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-atlas.png"; sourceTree = "<group>"; };
-		323A7233177735C500222ECF /* tutorial-page0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-page0.png"; sourceTree = "<group>"; };
 		323A723617773C2900222ECF /* BSTutorialImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTutorialImageView.h; sourceTree = "<group>"; };
 		323A723717773C2900222ECF /* BSTutorialImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTutorialImageView.m; sourceTree = "<group>"; };
 		323BCEEA176BFE59000F8D06 /* BSUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSUploader.h; sourceTree = "<group>"; };
@@ -796,7 +804,7 @@
 		326FB6A3170C15D5002CD59B /* locked-in-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-perf.png"; sourceTree = "<group>"; };
 		326FB6A5170C15E0002CD59B /* foville-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-perf.png"; sourceTree = "<group>"; };
 		326FB6A7170C15E7002CD59B /* claude-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-perf.png"; sourceTree = "<group>"; };
-		3271C05E178D5C3C00C7F8BF /* page0-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background.png"; sourceTree = "<group>"; };
+		3271C05E178D5C3C00C7F8BF /* page0-background~.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background~.png"; sourceTree = "<group>"; };
 		32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-nucleus-(CNXI)-0.png"; sourceTree = "<group>"; };
 		32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-corticospinal-tract-0.png"; sourceTree = "<group>"; };
 		32782DB317B4A701008C072D /* cuneate-nucleus-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cuneate-nucleus-0.png"; sourceTree = "<group>"; };
@@ -1059,7 +1067,7 @@
 		32C384C81777E1B400333310 /* profile-sxn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-7.png"; sourceTree = "<group>"; };
 		32C384C91777E1B400333310 /* profile-sxn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-6.png"; sourceTree = "<group>"; };
 		32C384CA1777E1B400333310 /* profile-sxn-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-3.png"; sourceTree = "<group>"; };
-		32C384D61777E2DF00333310 /* tutorial-clinical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-clinical.png"; sourceTree = "<group>"; };
+		32C384D61777E2DF00333310 /* tutorial-page0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-page0.png"; sourceTree = "<group>"; };
 		32C384D81777F58D00333310 /* clinical-fading-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-fading-eye.png"; sourceTree = "<group>"; };
 		32C384DA177810BC00333310 /* jackson-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-sec.png"; sourceTree = "<group>"; };
 		32C384DC1778119700333310 /* jackson-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-perf.png"; sourceTree = "<group>"; };
@@ -1411,8 +1419,7 @@
 			children = (
 				324EFCE417AB6D7700BE93BC /* tutorial-ask.png */,
 				323A7232177735C500222ECF /* tutorial-atlas.png */,
-				323A7233177735C500222ECF /* tutorial-page0.png */,
-				32C384D61777E2DF00333310 /* tutorial-clinical.png */,
+				32C384D61777E2DF00333310 /* tutorial-page0.png */,
 				324EFCE617AB7AF400BE93BC /* tutorial-profile.png */,
 			);
 			name = "Tutorial Images";
@@ -1487,7 +1494,8 @@
 		326CD45316D3684600E2800C /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				3271C05E178D5C3C00C7F8BF /* page0-background.png */,
+				3271C05E178D5C3C00C7F8BF /* page0-background~.png */,
+				320D703A1831F99A000F6AFA /* page0-background.png */,
 				324EFCE817AB841400BE93BC /* page0-background-cover.png */,
 				32676F3C17AB8F680016116E /* page0-background-tag.png */,
 				321C8EA21711224600517510 /* draw-mode-background.png */,
@@ -2312,6 +2320,10 @@
 			children = (
 				320D18541708FD22002D9E15 /* BSPage0ViewController.h */,
 				320D18551708FD22002D9E15 /* BSPage0ViewController.m */,
+				320D70371831F3B4000F6AFA /* BSAboutViewController.h */,
+				320D70381831F3B4000F6AFA /* BSAboutViewController.m */,
+				320D703C18320121000F6AFA /* BSQuizViewController.h */,
+				320D703D18320122000F6AFA /* BSQuizViewController.m */,
 				8179EAFA161D40CF0050D663 /* BSAtlasViewController.h */,
 				8179EAFB161D40CF0050D663 /* BSAtlasViewController.m */,
 				3230B657168062C3004A196E /* BSProfileViewController.h */,
@@ -2412,6 +2424,7 @@
 				32035531162C0C8E0079394F /* Images */,
 				32BAE7BF17181CFC00F04334 /* XML */,
 				32E90EDF176C3F1C00948158 /* Uploader */,
+				320D70351831F17D000F6AFA /* Images.xcassets */,
 				8179EAE6161D40CF0050D663 /* Supporting Files */,
 			);
 			path = Brainstem101;
@@ -2601,6 +2614,7 @@
 				321C8EA31711224600517510 /* draw-mode-background.png in Resources */,
 				321C8EA617115CD200517510 /* fuckometer-needle.png in Resources */,
 				321C8EA717115CD200517510 /* fuckometer-background.png in Resources */,
+				320D70361831F17D000F6AFA /* Images.xcassets in Resources */,
 				32BAE79E1718048200F04334 /* iii-oculomotor-cn-overlay-side.png in Resources */,
 				32BAE79F1718048200F04334 /* iv-trochlear-cn-overlay-side.png in Resources */,
 				32BAE7A01718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png in Resources */,
@@ -2871,7 +2885,6 @@
 				328C64F31776AD4700961EF0 /* atlas-main-panel-overlay.png in Resources */,
 				328C64F71776D11200961EF0 /* atlas-main-panel-shadow.png in Resources */,
 				323A7234177735C500222ECF /* tutorial-atlas.png in Resources */,
-				323A7235177735C500222ECF /* tutorial-page0.png in Resources */,
 				32857B521777836A005CC824 /* Default-Portrait@2x~ipad.png in Resources */,
 				32857B5417778385005CC824 /* Default-Portrait~ipad.png in Resources */,
 				32857B5717778A4A005CC824 /* profile-section-backdrop.png in Resources */,
@@ -2885,13 +2898,13 @@
 				32C384D11777E1B400333310 /* profile-sxn-7.png in Resources */,
 				32C384D21777E1B400333310 /* profile-sxn-6.png in Resources */,
 				32C384D31777E1B400333310 /* profile-sxn-3.png in Resources */,
-				32C384D71777E2DF00333310 /* tutorial-clinical.png in Resources */,
+				32C384D71777E2DF00333310 /* tutorial-page0.png in Resources */,
 				32C384D91777F58D00333310 /* clinical-fading-eye.png in Resources */,
 				32C384DB177810BD00333310 /* jackson-sec.png in Resources */,
 				32C384DD1778119900333310 /* jackson-perf.png in Resources */,
 				32D84798178D463400718C4C /* corticospinal-t-overlay-back.png in Resources */,
 				32D84799178D463400718C4C /* medial-lemniscus-t-overlay-back.png in Resources */,
-				3271C05F178D5C3C00C7F8BF /* page0-background.png in Resources */,
+				3271C05F178D5C3C00C7F8BF /* page0-background~.png in Resources */,
 				32D33534179E542100F95A7D /* anterior-inferior-cerebellar-4.png in Resources */,
 				32D33535179E542100F95A7D /* anterior-inferior-cerebellar-5.png in Resources */,
 				32D33536179E542100F95A7D /* anterior-spinal-0.png in Resources */,
@@ -2938,6 +2951,7 @@
 				32782E7817B4A701008C072D /* internal-arcuate-fibers-1.png in Resources */,
 				32782E7917B4A701008C072D /* medial-lemniscus-1.png in Resources */,
 				32782E7A17B4A701008C072D /* nucleus-ambiguus-1.png in Resources */,
+				320D703B1831F99A000F6AFA /* page0-background.png in Resources */,
 				32782E7B17B4A701008C072D /* proprioception-vibration-&-fine-touch-1.png in Resources */,
 				32782E7C17B4A701008C072D /* quiz-background-1.png in Resources */,
 				32782E7D17B4A701008C072D /* solitary-nucleus-1.png in Resources */,
@@ -3121,6 +3135,7 @@
 				111250F21622607800644DD6 /* BSStructureGenerator.m in Sources */,
 				32035459162C0C690079394F /* BSSectionView.m in Sources */,
 				32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */,
+				320D703E18320122000F6AFA /* BSQuizViewController.m in Sources */,
 				32E4D2911651AACB0051AE2D /* BSModel.m in Sources */,
 				328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */,
 				328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */,
@@ -3130,6 +3145,7 @@
 				327E13051707D0CC00C5D237 /* BSClinicalViewController.m in Sources */,
 				320D18561708FD22002D9E15 /* BSPage0ViewController.m in Sources */,
 				320D185B17090556002D9E15 /* BSQuestionGenerator.m in Sources */,
+				320D70391831F3B4000F6AFA /* BSAboutViewController.m in Sources */,
 				320D186117094FBD002D9E15 /* BSClinicalDetailsTableViewCell.m in Sources */,
 				32FF6F7617098CBF00B4FB0F /* BSDeficit.m in Sources */,
 				327CE468170AED3B0020F918 /* BSClinicalCollectionViewCell.m in Sources */,
@@ -3215,6 +3231,8 @@
 		8179EB00161D40CF0050D663 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -3232,6 +3250,8 @@
 		8179EB01161D40CF0050D663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

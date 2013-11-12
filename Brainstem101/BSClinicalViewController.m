@@ -151,6 +151,7 @@
     if (tableView == _deficitTableView) {
         static NSString *clinicalCellIdentifier = @"ClinicalCell";
         BSClinicalDetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:clinicalCellIdentifier forIndexPath:indexPath];
+        [cell setBackgroundColor:[UIColor clearColor]];
         [cell loadDeficit:(currentSyndrome.deficits)[indexPath.row]];
         return cell;
     }
