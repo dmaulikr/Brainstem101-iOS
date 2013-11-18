@@ -9,11 +9,12 @@
 @interface BSGlassStemView : UIView
 
 @property (nonatomic, strong) NSMutableArray *imageLayers;
+
 @property (assign) BOOL hidden;
 
-- (id)      initWithFrame:(CGRect)frame;
-- (void)    presentSection:(int)section;
-- (void)    show;
-- (void)    hide;
+-(id)initWithFrame:(CGRect)frame;
+-(void)presentSection:(int)section;
+-(void)show;
+-(void)hide;
 
 @end

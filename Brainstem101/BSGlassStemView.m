@@ -23,7 +23,7 @@ const float sectionDistance = 80;
     self = [super initWithFrame:frame];
     if (self){
 
-        _imageLayers = [NSMutableArray new];
+        self.imageLayers = [NSMutableArray new];
         
         normalCenter = self.center;
         normalCenter.y -= 50;
@@ -39,7 +39,7 @@ const float sectionDistance = 80;
             [tmp setCenter:normalCenter];
             [tmp setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@-%d.png", baseFileName, i]]];
             [tmp setContentMode:UIViewContentModeScaleAspectFill];
-            [_imageLayers addObject:tmp];
+            [self.imageLayers addObject:tmp];
             [self addSubview:_imageLayers[i]];
         }
         
@@ -50,20 +50,20 @@ const float sectionDistance = 80;
     return self;
 }
 
--(void) show {
-    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+-(void)show {
+    [UIView animateWithDuration:0.5 delay:0 options:nil animations:^{
         [self setAlpha:1.0];
     } completion:nil];
 }
 
--(void) hide {
+-(void)hide {
     [self retractLayer:currentLayer];
-    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:0.5 delay:0 options:nil animations:^{
         [self setAlpha:0.0];
     } completion:nil];
 }
 
-- (void) presentSection:(int)section{
+- (void)presentSection:(int)section{
     if (_hidden) {
         [self show];
     }
@@ -75,7 +75,7 @@ const float sectionDistance = 80;
     } completion:nil];
 }
 
--(void) retractLayer:(UIImageView *)layer{
+-(void)retractLayer:(UIImageView *)layer{
     [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [layer setCenter:normalCenter];
     } completion:nil];

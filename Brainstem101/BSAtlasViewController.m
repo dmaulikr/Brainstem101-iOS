@@ -43,11 +43,10 @@
     
     _stemView = [[BSStemView alloc] initWithFrame:self.view.bounds];
     [_stemView setContentMode:UIViewContentModeScaleToFill];
-    [_mainPanelShadow addSubview:_stemView];
+    [self.mainPanelOverlay addSubview:_stemView];
     
     _glassStemView = [[BSGlassStemView alloc] initWithFrame:self.view.bounds];
-    [_mainPanelShadow addSubview:_glassStemView];
-    
+    [self.mainPanelOverlay addSubview:_glassStemView];
     
 //    [_doorShadowImageView setAlpha:0.0];
     _stemViewStyle = STEMVIEW_STYLE_FRONT;

@@ -344,7 +344,6 @@
 		328C64F01776A23D00961EF0 /* atlas-door-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 328C64EE1776A23D00961EF0 /* atlas-door-shadow.png */; };
 		328C64F11776A23D00961EF0 /* atlas-door.png in Resources */ = {isa = PBXBuildFile; fileRef = 328C64EF1776A23D00961EF0 /* atlas-door.png */; };
 		328C64F31776AD4700961EF0 /* atlas-main-panel-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 328C64F21776AD4700961EF0 /* atlas-main-panel-overlay.png */; };
-		328C64F71776D11200961EF0 /* atlas-main-panel-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 328C64F61776D11200961EF0 /* atlas-main-panel-shadow.png */; };
 		328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A216717B8900B166CA /* BSSyndrome.m */; };
 		328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */; };
 		32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AFEDF816D9D183006A3101 /* BSDrawView.m */; };
@@ -1036,7 +1035,6 @@
 		328C64EE1776A23D00961EF0 /* atlas-door-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-door-shadow.png"; sourceTree = "<group>"; };
 		328C64EF1776A23D00961EF0 /* atlas-door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-door.png"; sourceTree = "<group>"; };
 		328C64F21776AD4700961EF0 /* atlas-main-panel-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-main-panel-overlay.png"; sourceTree = "<group>"; };
-		328C64F61776D11200961EF0 /* atlas-main-panel-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-main-panel-shadow.png"; sourceTree = "<group>"; };
 		328CC6A116717B8900B166CA /* BSSyndrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndrome.h; sourceTree = "<group>"; };
 		328CC6A216717B8900B166CA /* BSSyndrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndrome.m; sourceTree = "<group>"; };
 		328CC6A316717B8900B166CA /* BSSyndromeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndromeGenerator.h; sourceTree = "<group>"; };
@@ -1525,7 +1523,6 @@
 				32D5E10917769EF20083BFC3 /* atlas-orange.png */,
 				32D5E10B1776A17E0083BFC3 /* atlas-main-panel.png */,
 				328C64F21776AD4700961EF0 /* atlas-main-panel-overlay.png */,
-				328C64F61776D11200961EF0 /* atlas-main-panel-shadow.png */,
 				328C64EE1776A23D00961EF0 /* atlas-door-shadow.png */,
 				328C64EF1776A23D00961EF0 /* atlas-door.png */,
 				326CD45116D367AC00E2800C /* profile-background.png */,
@@ -2910,7 +2907,6 @@
 				328C64F01776A23D00961EF0 /* atlas-door-shadow.png in Resources */,
 				328C64F11776A23D00961EF0 /* atlas-door.png in Resources */,
 				328C64F31776AD4700961EF0 /* atlas-main-panel-overlay.png in Resources */,
-				328C64F71776D11200961EF0 /* atlas-main-panel-shadow.png in Resources */,
 				323A7234177735C500222ECF /* tutorial-atlas.png in Resources */,
 				32857B521777836A005CC824 /* Default-Portrait@2x~ipad.png in Resources */,
 				32857B5417778385005CC824 /* Default-Portrait~ipad.png in Resources */,

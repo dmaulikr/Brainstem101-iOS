@@ -8,7 +8,8 @@
 
 #import "BSProfileViewController.h"
 
-@implementation BSProfileViewController{
+@implementation BSProfileViewController
+{
     CGPoint originalCenter;
 }
 
@@ -60,7 +61,7 @@
         [_sectionView setAlpha:0];
         [_sectionView setCurrentSection:[BSSection profileSectionNumber:_sectionNumber]];
         
-        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [UIView animateWithDuration:0.5 delay:0 options:0 animations:^{
             [_sectionView setAlpha:1];
         } completion:nil];
         
