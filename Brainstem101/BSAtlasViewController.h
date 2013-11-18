@@ -16,9 +16,8 @@
 
 @property (weak, nonatomic)     IBOutlet UIImageView *orangeImageView;
 @property (weak, nonatomic)     IBOutlet UITableView *indexTable;
-@property (weak, nonatomic)     IBOutlet UIImageView *doorShadowImageView;
+//@property (weak, nonatomic)     IBOutlet UIImageView *doorShadowImageView;
 @property (weak, nonatomic)     IBOutlet UIImageView *doorImageView;
-//@property (weak, nonatomic)     IBOutlet UIImageView *doorDisguiseImageView;
 @property (weak, nonatomic)     IBOutlet UIImageView *mainPanel;
 @property (weak, nonatomic)     IBOutlet UIImageView *mainPanelOverlay;
 @property (weak, nonatomic)     IBOutlet UIImageView *mainPanelShadow;

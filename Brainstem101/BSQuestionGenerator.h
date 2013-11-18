@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BSQuizQuestion.h"
 
 @interface BSQuestionGenerator : NSObject
 
-@property (nonatomic, strong) NSMutableArray *questions;
++(NSArray *)questions;
 
--(NSDictionary *)getNextQuestion;
++(BSQuizQuestion *)questionWithAnswer:(NSString *) answer foregroundImageName:(NSString *) foreground andBackgroundImageName:(NSString *) background;
 
 @end

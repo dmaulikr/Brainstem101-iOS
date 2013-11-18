@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BSQuestionGenerator.h"
-#import "BSQuizView.h"
+#import "BSQuizQuestion.h"
 
-@interface BSQuizViewController : UIViewController
+@interface BSQuizViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
-@property (strong, nonatomic) IBOutlet BSQuizView *quizView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 - (IBAction)backAction:(id)sender;
 

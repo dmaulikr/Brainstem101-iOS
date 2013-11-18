@@ -20,7 +20,6 @@
 		320D703B1831F99A000F6AFA /* page0-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703A1831F99A000F6AFA /* page0-background.png */; };
 		320D703E18320122000F6AFA /* BSQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D703D18320122000F6AFA /* BSQuizViewController.m */; };
 		320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703F183219EB000F6AFA /* tutorial-clinical.png */; };
-		320D704218321C12000F6AFA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D704118321C12000F6AFA /* icon.png */; };
 		3213C92F170D61FB000DF667 /* stem-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92D170D61FB000DF667 /* stem-back.png */; };
 		3213C930170D61FB000DF667 /* stem-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92E170D61FB000DF667 /* stem-side.png */; };
 		3213C95A170D661D000DF667 /* abducens-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C931170D661C000DF667 /* abducens-n-overlay-back.png */; };
@@ -94,9 +93,10 @@
 		323BCF09176C0395000F8D06 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 323BCF00176C0395000F8D06 /* UIImageView+AFNetworking.m */; };
 		323BCF0B176C04A8000F8D06 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323BCF0A176C04A8000F8D06 /* MobileCoreServices.framework */; };
 		323BCF0D176C04AF000F8D06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323BCF0C176C04AF000F8D06 /* SystemConfiguration.framework */; };
+		32490A2A18398A030028876A /* BSQuizCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490A2918398A030028876A /* BSQuizCollectionViewCell.m */; };
+		32490A2D18398D850028876A /* BSQuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490A2C18398D850028876A /* BSQuizQuestion.m */; };
 		324EFCE517AB6D7700BE93BC /* tutorial-ask.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EFCE417AB6D7700BE93BC /* tutorial-ask.png */; };
 		324EFCE717AB7AF400BE93BC /* tutorial-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EFCE617AB7AF400BE93BC /* tutorial-profile.png */; };
-		324EFCE917AB841400BE93BC /* page0-background-cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EFCE817AB841400BE93BC /* page0-background-cover.png */; };
 		32523E991709D79E00D55ECA /* claude-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E931709D79E00D55ECA /* claude-sec.png */; };
 		32523E9A1709D79E00D55ECA /* medial-medullary-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E941709D79E00D55ECA /* medial-medullary-sec.png */; };
 		32523E9B1709D79E00D55ECA /* nothnagel-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E951709D79E00D55ECA /* nothnagel-sec.png */; };
@@ -123,7 +123,6 @@
 		326FB6A4170C15D5002CD59B /* locked-in-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A3170C15D5002CD59B /* locked-in-perf.png */; };
 		326FB6A6170C15E0002CD59B /* foville-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A5170C15E0002CD59B /* foville-perf.png */; };
 		326FB6A8170C15E7002CD59B /* claude-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A7170C15E7002CD59B /* claude-perf.png */; };
-		3271C05F178D5C3C00C7F8BF /* page0-background~.png in Resources */ = {isa = PBXBuildFile; fileRef = 3271C05E178D5C3C00C7F8BF /* page0-background~.png */; };
 		32782E6617B4A701008C072D /* accessory-nucleus-(CNXI)-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */; };
 		32782E6717B4A701008C072D /* anterior-corticospinal-tract-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */; };
 		32782E6817B4A701008C072D /* cuneate-nucleus-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB317B4A701008C072D /* cuneate-nucleus-0.png */; };
@@ -402,6 +401,9 @@
 		32C46230176CE0FF00B55189 /* glass-stem-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621D176CE0FF00B55189 /* glass-stem-8.png */; };
 		32C46231176CE0FF00B55189 /* glass-stem-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621E176CE0FF00B55189 /* glass-stem-9.png */; };
 		32CC33B9176C609600000F07 /* BSQuizView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC33B8176C609600000F07 /* BSQuizView.m */; };
+		32CEEFF21839774B00CF3035 /* page0-background-paralax.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CEEFF11839774B00CF3035 /* page0-background-paralax.png */; };
+		32CEEFF41839779500CF3035 /* page0-background-paralax-cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CEEFF31839779500CF3035 /* page0-background-paralax-cover.png */; };
+		32CEEFF6183986A800CF3035 /* quiz-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CEEFF5183986A800CF3035 /* quiz-background.png */; };
 		32D33534179E542100F95A7D /* anterior-inferior-cerebellar-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351C179E542100F95A7D /* anterior-inferior-cerebellar-4.png */; };
 		32D33535179E542100F95A7D /* anterior-inferior-cerebellar-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351D179E542100F95A7D /* anterior-inferior-cerebellar-5.png */; };
 		32D33536179E542100F95A7D /* anterior-spinal-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351E179E542100F95A7D /* anterior-spinal-0.png */; };
@@ -688,7 +690,6 @@
 		320D703C18320121000F6AFA /* BSQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSQuizViewController.h; path = ../BSQuizViewController.h; sourceTree = "<group>"; };
 		320D703D18320122000F6AFA /* BSQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSQuizViewController.m; path = ../BSQuizViewController.m; sourceTree = "<group>"; };
 		320D703F183219EB000F6AFA /* tutorial-clinical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-clinical.png"; sourceTree = "<group>"; };
-		320D704118321C12000F6AFA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3213C92D170D61FB000DF667 /* stem-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-back.png"; sourceTree = "<group>"; };
 		3213C92E170D61FB000DF667 /* stem-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-side.png"; sourceTree = "<group>"; };
 		3213C931170D661C000DF667 /* abducens-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abducens-n-overlay-back.png"; sourceTree = "<group>"; };
@@ -777,9 +778,12 @@
 		323BCF00176C0395000F8D06 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		323BCF0A176C04A8000F8D06 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		323BCF0C176C04AF000F8D06 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		32490A2818398A030028876A /* BSQuizCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizCollectionViewCell.h; sourceTree = "<group>"; };
+		32490A2918398A030028876A /* BSQuizCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizCollectionViewCell.m; sourceTree = "<group>"; };
+		32490A2B18398D850028876A /* BSQuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizQuestion.h; sourceTree = "<group>"; };
+		32490A2C18398D850028876A /* BSQuizQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizQuestion.m; sourceTree = "<group>"; };
 		324EFCE417AB6D7700BE93BC /* tutorial-ask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-ask.png"; sourceTree = "<group>"; };
 		324EFCE617AB7AF400BE93BC /* tutorial-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-profile.png"; sourceTree = "<group>"; };
-		324EFCE817AB841400BE93BC /* page0-background-cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background-cover.png"; sourceTree = "<group>"; };
 		32523E931709D79E00D55ECA /* claude-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-sec.png"; sourceTree = "<group>"; };
 		32523E941709D79E00D55ECA /* medial-medullary-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-medullary-sec.png"; sourceTree = "<group>"; };
 		32523E951709D79E00D55ECA /* nothnagel-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nothnagel-sec.png"; sourceTree = "<group>"; };
@@ -808,7 +812,6 @@
 		326FB6A3170C15D5002CD59B /* locked-in-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-perf.png"; sourceTree = "<group>"; };
 		326FB6A5170C15E0002CD59B /* foville-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-perf.png"; sourceTree = "<group>"; };
 		326FB6A7170C15E7002CD59B /* claude-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-perf.png"; sourceTree = "<group>"; };
-		3271C05E178D5C3C00C7F8BF /* page0-background~.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background~.png"; sourceTree = "<group>"; };
 		32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-nucleus-(CNXI)-0.png"; sourceTree = "<group>"; };
 		32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-corticospinal-tract-0.png"; sourceTree = "<group>"; };
 		32782DB317B4A701008C072D /* cuneate-nucleus-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cuneate-nucleus-0.png"; sourceTree = "<group>"; };
@@ -1095,6 +1098,9 @@
 		32C4621E176CE0FF00B55189 /* glass-stem-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-9.png"; sourceTree = "<group>"; };
 		32CC33B7176C609600000F07 /* BSQuizView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizView.h; sourceTree = "<group>"; };
 		32CC33B8176C609600000F07 /* BSQuizView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizView.m; sourceTree = "<group>"; };
+		32CEEFF11839774B00CF3035 /* page0-background-paralax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background-paralax.png"; sourceTree = "<group>"; };
+		32CEEFF31839779500CF3035 /* page0-background-paralax-cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background-paralax-cover.png"; sourceTree = "<group>"; };
+		32CEEFF5183986A800CF3035 /* quiz-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background.png"; sourceTree = "<group>"; };
 		32D3351C179E542100F95A7D /* anterior-inferior-cerebellar-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-4.png"; sourceTree = "<group>"; };
 		32D3351D179E542100F95A7D /* anterior-inferior-cerebellar-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-5.png"; sourceTree = "<group>"; };
 		32D3351E179E542100F95A7D /* anterior-spinal-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-0.png"; sourceTree = "<group>"; };
@@ -1458,6 +1464,17 @@
 			path = ../AFNetworking;
 			sourceTree = "<group>";
 		};
+		32490A2E183991280028876A /* Quiz Objects */ = {
+			isa = PBXGroup;
+			children = (
+				320D185917090555002D9E15 /* BSQuestionGenerator.h */,
+				320D185A17090555002D9E15 /* BSQuestionGenerator.m */,
+				32490A2B18398D850028876A /* BSQuizQuestion.h */,
+				32490A2C18398D850028876A /* BSQuizQuestion.m */,
+			);
+			name = "Quiz Objects";
+			sourceTree = "<group>";
+		};
 		326386B8176CC37C00AAA785 /* ArteryImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -1499,10 +1516,11 @@
 		326CD45316D3684600E2800C /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				3271C05E178D5C3C00C7F8BF /* page0-background~.png */,
+				32CEEFF11839774B00CF3035 /* page0-background-paralax.png */,
+				32CEEFF31839779500CF3035 /* page0-background-paralax-cover.png */,
 				320D703A1831F99A000F6AFA /* page0-background.png */,
-				324EFCE817AB841400BE93BC /* page0-background-cover.png */,
 				32676F3C17AB8F680016116E /* page0-background-tag.png */,
+				32CEEFF5183986A800CF3035 /* quiz-background.png */,
 				321C8EA21711224600517510 /* draw-mode-background.png */,
 				32D5E10917769EF20083BFC3 /* atlas-orange.png */,
 				32D5E10B1776A17E0083BFC3 /* atlas-main-panel.png */,
@@ -1534,6 +1552,8 @@
 				320D186017094FBC002D9E15 /* BSClinicalDetailsTableViewCell.m */,
 				327CE466170AED3B0020F918 /* BSClinicalCollectionViewCell.h */,
 				327CE467170AED3B0020F918 /* BSClinicalCollectionViewCell.m */,
+				32490A2818398A030028876A /* BSQuizCollectionViewCell.h */,
+				32490A2918398A030028876A /* BSQuizCollectionViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -2312,8 +2332,7 @@
 				32E4D2901651AACB0051AE2D /* BSModel.m */,
 				32F5A890176EF9DB00646E64 /* BSSection.h */,
 				32F5A891176EF9DB00646E64 /* BSSection.m */,
-				320D185917090555002D9E15 /* BSQuestionGenerator.h */,
-				320D185A17090555002D9E15 /* BSQuestionGenerator.m */,
+				32490A2E183991280028876A /* Quiz Objects */,
 				326FB68A170BDF24002CD59B /* Structure Objects */,
 				326FB68B170BDF46002CD59B /* Syndrome Objects */,
 			);
@@ -2325,12 +2344,12 @@
 			children = (
 				320D18541708FD22002D9E15 /* BSPage0ViewController.h */,
 				320D18551708FD22002D9E15 /* BSPage0ViewController.m */,
+				8179EAFA161D40CF0050D663 /* BSAtlasViewController.h */,
+				8179EAFB161D40CF0050D663 /* BSAtlasViewController.m */,
 				320D70371831F3B4000F6AFA /* BSAboutViewController.h */,
 				320D70381831F3B4000F6AFA /* BSAboutViewController.m */,
 				320D703C18320121000F6AFA /* BSQuizViewController.h */,
 				320D703D18320122000F6AFA /* BSQuizViewController.m */,
-				8179EAFA161D40CF0050D663 /* BSAtlasViewController.h */,
-				8179EAFB161D40CF0050D663 /* BSAtlasViewController.m */,
 				3230B657168062C3004A196E /* BSProfileViewController.h */,
 				3230B658168062C3004A196E /* BSProfileViewController.m */,
 				327E13031707D0CA00C5D237 /* BSClinicalViewController.h */,
@@ -2430,7 +2449,6 @@
 				32BAE7BF17181CFC00F04334 /* XML */,
 				32E90EDF176C3F1C00948158 /* Uploader */,
 				320D70351831F17D000F6AFA /* Images.xcassets */,
-				320D704118321C12000F6AFA /* icon.png */,
 				8179EAE6161D40CF0050D663 /* Supporting Files */,
 			);
 			path = Brainstem101;
@@ -2768,6 +2786,7 @@
 				32FB664C171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-7.xml in Resources */,
 				32FB664D171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-3.xml in Resources */,
 				32FB664E171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-4.xml in Resources */,
+				32CEEFF6183986A800CF3035 /* quiz-background.png in Resources */,
 				32FB664F171FDF0B005E6DE6 /* nucleus-raphe-obscurus-n-2.xml in Resources */,
 				32FB6650171FDF0B005E6DE6 /* nucleus-raphe-pallidus-n-3.xml in Resources */,
 				32FB6651171FDF0B005E6DE6 /* nucleus-raphe-pontis-n-5.xml in Resources */,
@@ -2776,7 +2795,6 @@
 				32FB6654171FDF0B005E6DE6 /* periaqueductal-grey-?-6.xml in Resources */,
 				32FB6655171FDF0B005E6DE6 /* periaqueductal-grey-?-7.xml in Resources */,
 				32FB6656171FDF0B005E6DE6 /* periaqueductal-grey-?-8.xml in Resources */,
-				320D704218321C12000F6AFA /* icon.png in Resources */,
 				32FB6657171FDF0B005E6DE6 /* pontine-n-4.xml in Resources */,
 				32FB6658171FDF0B005E6DE6 /* pontine-n-5.xml in Resources */,
 				32FB6659171FDF0B005E6DE6 /* pontine-n-6.xml in Resources */,
@@ -2841,6 +2859,7 @@
 				32FB6695171FDF0B005E6DE6 /* trochlear-n-7.xml in Resources */,
 				32FB6696171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml in Resources */,
 				32FB6697171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml in Resources */,
+				32CEEFF21839774B00CF3035 /* page0-background-paralax.png in Resources */,
 				32FB6698171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml in Resources */,
 				32FB6699171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml in Resources */,
 				32FB669A171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml in Resources */,
@@ -2855,6 +2874,7 @@
 				32FB66A4171FE584005E6DE6 /* clinical-hole-overlay.png in Resources */,
 				326F878F17212522008E923E /* locked-in-mug.png in Resources */,
 				326F87931721360F008E923E /* middle-cerebellar-peduncle-m-4.xml in Resources */,
+				32CEEFF41839779500CF3035 /* page0-background-paralax-cover.png in Resources */,
 				326F87941721360F008E923E /* middle-cerebellar-peduncle-m-5.xml in Resources */,
 				326F87951721360F008E923E /* middle-cerebellar-peduncle-m-6.xml in Resources */,
 				326F879717213702008E923E /* superior-cerebellar-peduncle-m-7.xml in Resources */,
@@ -2912,7 +2932,6 @@
 				320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */,
 				32D84798178D463400718C4C /* corticospinal-t-overlay-back.png in Resources */,
 				32D84799178D463400718C4C /* medial-lemniscus-t-overlay-back.png in Resources */,
-				3271C05F178D5C3C00C7F8BF /* page0-background~.png in Resources */,
 				32D33534179E542100F95A7D /* anterior-inferior-cerebellar-4.png in Resources */,
 				32D33535179E542100F95A7D /* anterior-inferior-cerebellar-5.png in Resources */,
 				32D33536179E542100F95A7D /* anterior-spinal-0.png in Resources */,
@@ -2934,7 +2953,6 @@
 				32D3354E179E57F600F95A7D /* dice-button.png in Resources */,
 				324EFCE517AB6D7700BE93BC /* tutorial-ask.png in Resources */,
 				324EFCE717AB7AF400BE93BC /* tutorial-profile.png in Resources */,
-				324EFCE917AB841400BE93BC /* page0-background-cover.png in Resources */,
 				32F323F417AB8A0E007590F3 /* icon@2x~ipad.png in Resources */,
 				32F323F517AB8A0E007590F3 /* icon~ipad.png in Resources */,
 				32676F3D17AB8F680016116E /* page0-background-tag.png in Resources */,
@@ -3137,6 +3155,7 @@
 			files = (
 				8179EAEC161D40CF0050D663 /* main.m in Sources */,
 				8179EAF0161D40CF0050D663 /* BSAppDelegate.m in Sources */,
+				32490A2A18398A030028876A /* BSQuizCollectionViewCell.m in Sources */,
 				8179EAFC161D40CF0050D663 /* BSAtlasViewController.m in Sources */,
 				8179EB09161D41A50050D663 /* BSStructure.m in Sources */,
 				11A9932B162170610016CE48 /* BSStructurePath.m in Sources */,
@@ -3176,6 +3195,7 @@
 				32F5A892176EF9DB00646E64 /* BSSection.m in Sources */,
 				323A723817773C2900222ECF /* BSTutorialImageView.m in Sources */,
 				32C384C01777A45400333310 /* BSProfileSectionView.m in Sources */,
+				32490A2D18398D850028876A /* BSQuizQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

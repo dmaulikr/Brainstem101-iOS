@@ -897,17 +897,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="page0-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="6dw-di-H81" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="page0-background-paralax.png" translatesAutoresizingMaskIntoConstraints="NO" id="6dw-di-H81" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfV-r8-wYO" userLabel="Dice Button">
-                                <rect key="frame" x="20" y="908" width="97" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="lwf-mv-5Kb"/>
-                                    <constraint firstAttribute="width" constant="97" id="r8F-5a-RL8"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="page0-background-paralax-cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="49o-Rh-GNw" userLabel="Background Cover">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="page0-background-tag.png" translatesAutoresizingMaskIntoConstraints="NO" id="U2M-h0-Kuo" userLabel="Tag">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfV-r8-wYO" userLabel="Dice Button">
+                                <rect key="frame" x="20" y="874" width="130" height="130"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
+                                <state key="normal" image="dice-button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -919,11 +921,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRp-0a-NrB" customClass="BSFuckometerView">
-                                <rect key="frame" x="156" y="282" width="430" height="306"/>
+                                <rect key="frame" x="20" y="20" width="728" height="269"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhF-f8-wfz" userLabel="Atlas Button">
-                                <rect key="frame" x="211" y="206" width="339" height="68"/>
+                                <rect key="frame" x="211" y="250" width="339" height="336"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -937,7 +939,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE9-MD-God" userLabel="Clinical Button Dude">
-                                <rect key="frame" x="211" y="707" width="339" height="103"/>
+                                <rect key="frame" x="211" y="594" width="339" height="264"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -950,12 +952,8 @@
                                     <action selector="buttonPressed:" destination="CAJ-Nt-qWE" eventType="touchUpInside" id="tZE-6T-qhy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fL-RT-kYy" userLabel="Tutorial Button">
-                                <rect key="frame" x="607" y="726" width="161" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="161" id="a32-Ao-uR5"/>
-                                    <constraint firstAttribute="height" constant="46" id="gEP-q2-Chb"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fL-RT-kYy" userLabel="Tutorial Button">
+                                <rect key="frame" x="622" y="726" width="146" height="46"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -969,7 +967,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAt-xY-ype">
-                                <rect key="frame" x="629" y="780" width="119" height="30"/>
+                                <rect key="frame" x="622" y="768" width="146" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -982,13 +980,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6dw-di-H81" firstAttribute="trailing" secondItem="EtD-Nw-XI1" secondAttribute="trailing" id="01M-jx-yww"/>
-                            <constraint firstAttribute="bottom" secondItem="3fL-RT-kYy" secondAttribute="bottom" constant="252" id="5bm-jn-t1n"/>
-                            <constraint firstItem="3fL-RT-kYy" firstAttribute="trailing" secondItem="EtD-Nw-XI1" secondAttribute="trailing" id="5xB-Je-Ahu"/>
                             <constraint firstItem="6dw-di-H81" firstAttribute="bottom" secondItem="EtD-Nw-XI1" secondAttribute="bottom" id="PnC-hj-ReP"/>
-                            <constraint firstAttribute="bottom" secondItem="xfV-r8-wYO" secondAttribute="bottom" constant="20" symbolic="YES" id="blz-RW-bNX"/>
                             <constraint firstItem="6dw-di-H81" firstAttribute="leading" secondItem="EtD-Nw-XI1" secondAttribute="leading" id="lFJ-dW-Mea"/>
                             <constraint firstItem="6dw-di-H81" firstAttribute="top" secondItem="EtD-Nw-XI1" secondAttribute="top" id="uhv-f0-uOX"/>
-                            <constraint firstItem="xfV-r8-wYO" firstAttribute="leading" secondItem="EtD-Nw-XI1" secondAttribute="leading" constant="20" symbolic="YES" id="wzb-82-yfA"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -997,11 +991,12 @@
                         <outlet property="atlasButton" destination="AhF-f8-wfz" id="OfT-cQ-KNM"/>
                         <outlet property="backgroundImageView" destination="6dw-di-H81" id="zkU-FX-1eu"/>
                         <outlet property="fuckometerView" destination="vRp-0a-NrB" id="kyM-z5-j6r"/>
+                        <outlet property="tagImageView" destination="U2M-h0-Kuo" id="TcH-Zr-ccw"/>
                         <outletCollection property="clinicalButtons" destination="cE9-MD-God" id="Ypm-XN-XPK"/>
                         <segue destination="2" kind="modal" identifier="page0-to-atlas" modalTransitionStyle="crossDissolve" id="nTF-2h-ddk"/>
                         <segue destination="Jnh-9j-gp5" kind="modal" identifier="page0-to-clinical" modalTransitionStyle="crossDissolve" id="XRa-fF-QAG"/>
                         <segue destination="Dt7-ee-s9Q" kind="modal" identifier="page0-to-about" id="mfh-9M-pYf"/>
-                        <segue destination="Psu-J9-jx0" kind="modal" identifier="page0-to-quiz" id="Uvo-UJ-1J8"/>
+                        <segue destination="Psu-J9-jx0" kind="modal" identifier="page0-to-quiz" modalTransitionStyle="crossDissolve" id="Uvo-UJ-1J8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbC-HW-M2L" sceneMemberID="firstResponder"/>
@@ -1035,44 +1030,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-lg-GKb" customClass="BSQuizView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQI-b2-cjL" userLabel="Background Image">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTE-kd-MXn" userLabel="Background">
-                                        <rect key="frame" x="20" y="57" width="728" height="909"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-Jb-V2I" userLabel="Forground">
-                                        <rect key="frame" x="20" y="57" width="728" height="909"/>
-                                    </imageView>
-                                    <textField autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="ANSWER" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="aXk-2p-U5P" userLabel="Answer Box">
-                                        <rect key="frame" x="20" y="974" width="728" height="30"/>
-                                        <color key="backgroundColor" red="0.48127547549999999" green="0.48127547549999999" blue="0.48127547549999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxA-gu-dcb">
-                                        <rect key="frame" x="20" y="20" width="75" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Back">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <collectionView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-LZ-2ah">
+                                <rect key="frame" x="20" y="20" width="728" height="984"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="qcc-9w-JAh">
+                                    <size key="itemSize" width="728" height="946"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="1" verticalHuggingPriority="1" reuseIdentifier="QuizCell" id="hmP-Ed-4bK" customClass="BSQuizCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="19" width="728" height="946"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="946"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTE-kd-MXn" userLabel="Background">
+                                                    <rect key="frame" x="41" y="20" width="687" height="863"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-Jb-V2I" userLabel="Forground">
+                                                    <rect key="frame" x="41" y="20" width="687" height="863"/>
+                                                </imageView>
+                                                <textField autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="ANSWER" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aXk-2p-U5P" userLabel="Answer Box">
+                                                    <rect key="frame" x="41" y="891" width="667" height="35"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <size key="customSize" width="728" height="946"/>
                                         <connections>
-                                            <action selector="backAction:" destination="Psu-J9-jx0" eventType="touchUpInside" id="k2W-2e-jaA"/>
+                                            <outlet property="answerBox" destination="aXk-2p-U5P" id="6vt-hz-hOz"/>
+                                            <outlet property="background" destination="pTE-kd-MXn" id="hlW-Ne-02e"/>
+                                            <outlet property="foreground" destination="ObU-Jb-V2I" id="2Ab-qA-Z6T"/>
                                         </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
-                                    <outlet property="answerBoxView" destination="aXk-2p-U5P" id="zjN-aj-cCk"/>
-                                    <outlet property="backgroundImageView" destination="pTE-kd-MXn" id="EVT-av-Av8"/>
-                                    <outlet property="forgroundImageView" destination="ObU-Jb-V2I" id="w8K-E5-zlG"/>
+                                    <outlet property="dataSource" destination="Psu-J9-jx0" id="OPv-Bg-cnq"/>
+                                    <outlet property="delegate" destination="Psu-J9-jx0" id="RiT-s5-N3V"/>
                                 </connections>
-                            </view>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxA-gu-dcb" userLabel="Done Button">
+                                <rect key="frame" x="650" y="20" width="98" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="28"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="Psu-J9-jx0" eventType="touchUpInside" id="k2W-2e-jaA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="D5z-LZ-2ah" id="wkS-rc-IBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwv-F8-Hhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1120,12 +1147,16 @@
         <image name="clinical-box-overlay.png" width="1536" height="2048"/>
         <image name="clinical-fading-eye.png" width="1536" height="2048"/>
         <image name="clinical-hole-overlay.png" width="1536" height="2048"/>
+        <image name="dice-button.png" width="143" height="154"/>
         <image name="draw-mode-background.png" width="1433" height="1075"/>
-        <image name="page0-background.png" width="1536" height="2048"/>
+        <image name="page0-background-paralax-cover.png" width="1536" height="2048"/>
+        <image name="page0-background-paralax.png" width="1536" height="2048"/>
+        <image name="page0-background-tag.png" width="1536" height="2048"/>
         <image name="pencil.png" width="117" height="121"/>
         <image name="profile-background.png" width="1536" height="2048"/>
         <image name="profile-section-backdrop.png" width="1536" height="2048"/>
         <image name="profile-text-backdrop.png" width="1536" height="2048"/>
+        <image name="quiz-background.png" width="1536" height="2048"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

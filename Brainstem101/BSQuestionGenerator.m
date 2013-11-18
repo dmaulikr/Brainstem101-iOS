@@ -8,207 +8,199 @@
 
 #import "BSQuestionGenerator.h"
 
-@implementation BSQuestionGenerator{
-    int currentQuestionIndex;
-}
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        _questions = [NSMutableArray new];
-        
-        // generated using gen.py in Images/Quiz
-        
-        [self addQuestionWithAnswer:@"ACCESSORY NUCLEUS (CNXI)" imageName:@"accessory-nucleus-(CNXI)-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"ANTERIOR CORTICOSPINAL TRACT" imageName:@"anterior-corticospinal-tract-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"CUNEATE NUCLEUS" imageName:@"cuneate-nucleus-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"GRACILE NUCLEUS" imageName:@"gracile-nucleus-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"IPSILATERAL LOSS OF PAIN AND TEMPERATURE OF THE FACE" imageName:@"ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"PROPRIOCEPTION FROM IPSILATERAL ARM" imageName:@"proprioception-from-ipsilateral-arm-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"PYRAMIDAL DECUSSATION" imageName:@"pyramidal-decussation-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"QUADRIPLEGIA" imageName:@"quadriplegia-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" imageName:@"spinal-trigeminal-nucleus-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL TRACT" imageName:@"spinal-trigeminal-tract-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"SPINOCEREBELLAR TRACTS" imageName:@"spinocerebellar-tracts-0.png" andBackgroundImageName:@"quiz-background-0.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"CONTRALATERAL HEMIPLEGIA" imageName:@"contralateral-hemiplegia-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"CUNEATE FASCICULUS" imageName:@"cuneate-fasciculus-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"GRACILE FASCICULUS" imageName:@"gracile-fasciculus-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"GRACILE NUCLEUS" imageName:@"gracile-nucleus-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"HYPOGLOSSAL NUCLEI (CNXI)" imageName:@"hypoglossal-nuclei-(CNXI)-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"INTERNAL ARCUATE FIBERS" imageName:@"internal-arcuate-fibers-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"NUCLEUS AMBIGUUS" imageName:@"nucleus-ambiguus-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"PROPRIOCEPTION VIBRATION & FINE TOUCH" imageName:@"proprioception-vibration-&-fine-touch-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"SOLITARY NUCLEUS" imageName:@"solitary-nucleus-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" imageName:@"spinal-trigeminal-nucleus-1.png" andBackgroundImageName:@"quiz-background-1.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"ANTERIOR SPINOCEREBELLAR TRACT" imageName:@"anterior-spinocerebellar-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"CLINICAL WALLENBERG'S" imageName:@"clinical-wallenberg's-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"CORTICOSPINAL TRACT" imageName:@"corticospinal-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"HYPOGLOSSAL NUCLEUS" imageName:@"hypoglossal-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"INFERIOR CEREBELLAR PEDUNCLE" imageName:@"inferior-cerebellar-peduncle-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"INFERIOR OLIVARY NUCLEUS" imageName:@"inferior-olivary-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"INFERIOR VESTIBULAR NUCLEUS" imageName:@"inferior-vestibular-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"MEDIAL MEDULLARY SYNDROME" imageName:@"medial-medullary-syndrome-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"MEDIAL VESTIBULAR NUCLEUS" imageName:@"medial-vestibular-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"MLF" imageName:@"mlf-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"MOTOR NUCLEUS OF VAGUS" imageName:@"motor-nucleus-of-vagus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"NUCLEUS AMBIGUUS" imageName:@"nucleus-ambiguus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"SOLITARY TRACT" imageName:@"solitary-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" imageName:@"spinal-trigeminal-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL TRACT" imageName:@"spinal-trigeminal-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"ANTERIOR COCHLEAR NUCLEUS" imageName:@"anterior-cochlear-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"CENTRAL TEGMENTAL TRACT" imageName:@"central-tegmental-tract-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"CORTICOSPINAL TRACT" imageName:@"corticospinal-tract-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"INFERIOR CEREBELLAR PEDUNCLE" imageName:@"inferior-cerebellar-peduncle-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"LATERAL VESTIBULAR NUCLEUS" imageName:@"lateral-vestibular-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"MEDIAL VESTIBULAR NUCLEUS" imageName:@"medial-vestibular-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"MLF" imageName:@"mlf-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"NUCLEUS RAPHE MAGNUS" imageName:@"nucleus-raphe-magnus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"NUCLEUS RAPHE PALIDUS" imageName:@"nucleus-raphe-palidus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"POSTERIOR COCHLEAR NUCLEUS" imageName:@"posterior-cochlear-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"SOLITARY NUCLEUS" imageName:@"solitary-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" imageName:@"spinal-trigeminal-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL TRACT" imageName:@"spinal-trigeminal-tract-3.png" andBackgroundImageName:@"quiz-background-3.png"];
-        [self addQuestionWithAnswer:@"ABDUCENS NUCLEUS" imageName:@"abducens-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"CENTRAL TEGMENTAL TRACT" imageName:@"central-tegmental-tract-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"CORTICOSPINAL TRACT" imageName:@"corticospinal-tract-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"FACIAL MOTOR NUCLEUS" imageName:@"facial-motor-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"FACIAL NERVE (CNVII)" imageName:@"facial-nerve-(CNVII)-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"FOURTH VENTRICLE" imageName:@"fourth-ventricle-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"LATERAL RECTUS & STAPEDIUS" imageName:@"lateral-rectus-&-stapedius-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"MEDIAL VESTIBULAR NUCLEUS" imageName:@"medial-vestibular-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"MIDDLE CEREBELLAR PEDUNCLE" imageName:@"middle-cerebellar-peduncle-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"MLF" imageName:@"mlf-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"NUCLEUS RAPHE MAGNUS" imageName:@"nucleus-raphe-magnus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"PONTINE TRACTS" imageName:@"pontine-tracts-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"POSTERIOR LONGITUDINAL FASCICULUS" imageName:@"posterior-longitudinal-fasciculus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" imageName:@"spinal-trigeminal-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"SUPERIOR VESTIBULAR NUCLEUS" imageName:@"superior-vestibular-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"VENTRAL PONTINE SYNDROME" imageName:@"ventral-pontine-syndrome-4.png" andBackgroundImageName:@"quiz-background-4.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"CENTRAL TEGMENTAL TRACT" imageName:@"central-tegmental-tract-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"LOCKED IN" imageName:@"locked-in-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"LOCUS CERULEUS" imageName:@"locus-ceruleus-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"MESENCEPHALIC NUCLEUS AND TRACT" imageName:@"mesencephalic-nucleus-and-tract-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"MIDDLE CEREBELLAR PEDUNCLE" imageName:@"middle-cerebellar-peduncle-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"MLF" imageName:@"mlf-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"NUCLEUS RAPHE PONTIS" imageName:@"nucleus-raphe-pontis-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"PONTINE NUCLEI" imageName:@"pontine-nuclei-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"PRINCIPAL AND MOTOR NUCLEI OF TRIGEMINAL" imageName:@"principal-and-motor-nuclei-of-trigeminal-5.png" andBackgroundImageName:@"quiz-background-5.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"AQUEDUCTAL GREY" imageName:@"aqueductal-grey-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"CENTRAL TEGMENTAL TRACT" imageName:@"central-tegmental-tract-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"CEREBRAL AQUEDUCT" imageName:@"cerebral-aqueduct-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"LATERAL LEMNISCUS" imageName:@"lateral-lemniscus-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"MESENCEPHALIC NUCLEUS" imageName:@"mesencephalic-nucleus-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"MIDDLE CEREBELLAR PEDUNCLE" imageName:@"middle-cerebellar-peduncle-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"MLF" imageName:@"mlf-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"NUCLEUS CENTRALIS SUPERIOR" imageName:@"nucleus-centralis-superior-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"SUPERIOR CEREBELLAR PEDUNCLE" imageName:@"superior-cerebellar-peduncle-6.png" andBackgroundImageName:@"quiz-background-6.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"CENTRAL TEGMENTAL TRACT" imageName:@"central-tegmental-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"CEREBRAL AQUEDUCT" imageName:@"cerebral-aqueduct-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"CEREBRAL PEDUNCLE" imageName:@"cerebral-peduncle-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"CORTICOBULBAR TRACT" imageName:@"corticobulbar-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"CORTICOSPINAL TRACT" imageName:@"corticospinal-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"INFERIOR COLLICULUS" imageName:@"inferior-colliculus-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"LATERAL LEMNISCUS" imageName:@"lateral-lemniscus-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"MLF" imageName:@"mlf-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"PERIAQUEDUCTAL GREY" imageName:@"periaqueductal-grey-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"SUPERIOR CEREBELLAR PEDUNCLE" imageName:@"superior-cerebellar-peduncle-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"TROCHLEAR NUCLEUS" imageName:@"trochlear-nucleus-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"VENTRAL TRIGEMINOTHALAMIC TRACT" imageName:@"ventral-trigeminothalamic-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"];
-        [self addQuestionWithAnswer:@"ALS" imageName:@"als-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"BENEDIKT'S" imageName:@"benedikt's-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"CENTRAL TEGMENTAL TRACT" imageName:@"central-tegmental-tract-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"CEREBELLOTHALAMIC TRACTS" imageName:@"cerebellothalamic-tracts-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"CEREBRAL AQUEDUCT" imageName:@"cerebral-aqueduct-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"CLAUDE'S" imageName:@"claude's-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"CORTICOBULBAR TRACTS" imageName:@"corticobulbar-tracts-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"CORTICOSPINAL TRACT" imageName:@"corticospinal-tract-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"CRUS CEREBRI" imageName:@"crus-cerebri-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"FALSE" imageName:@"false-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"HOMONOMOUS HEMIANOPIA" imageName:@"homonomous-hemianopia-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"MEDIAL GENICULATE NUCLEUS" imageName:@"medial-geniculate-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"MEDIAL LEMNISCUS" imageName:@"medial-lemniscus-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"MESENCEPHALIC NUCLEUS" imageName:@"mesencephalic-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"MLF" imageName:@"mlf-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"OBSTRUCTIVE HYDROCEPHALUS" imageName:@"obstructive-hydrocephalus-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"OCULOMOTOR NUCLEUS" imageName:@"oculomotor-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"OPTIC TRACT" imageName:@"optic-tract-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"PARALYSIS OF UPGAZE" imageName:@"paralysis-of-upgaze-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"PARKINSON'S DISEASE" imageName:@"parkinson's-disease-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"PERIAQUEDUCTAL GREY" imageName:@"periaqueductal-grey-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"RED NUCLEUS" imageName:@"red-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"SUPERIOR COLLICULUS" imageName:@"superior-colliculus-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"WEBER'S" imageName:@"weber's-8.png" andBackgroundImageName:@"quiz-background-8.png"];
-        [self addQuestionWithAnswer:@"AICA" imageName:@"aica-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"ANTERIOR SPINAL ARTERY" imageName:@"anterior-spinal-artery-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"BASILAR" imageName:@"basilar-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"LONG CIRCUMFRENTIALS" imageName:@"long-circumfrentials-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"PICA" imageName:@"pica-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"POSTERIOR CEREBRAL" imageName:@"posterior-cerebral-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"POSTERIOR COMMUNICATING ARTERY" imageName:@"posterior-communicating-artery-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"SHORT CIRCUMFRENTIALS" imageName:@"short-circumfrentials-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"SUPERIOR CEREBELLAR" imageName:@"superior-cerebellar-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"VERTEBRAL ARTERY" imageName:@"vertebral-artery-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"];
-        [self addQuestionWithAnswer:@"(CNIII) OCULOMOTOR NERVE" imageName:@"(CNIII)-oculomotor-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNIV) TROCHLEAR NERVE" imageName:@"(CNIV)-trochlear-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNIX) GLOSSOPHARENGEAL NERVE" imageName:@"(CNIX) glossopharengeal nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNV) SPINAL TRIGEMINAL NUCLEUS & TRACT" imageName:@"(CNV)-spinal-trigeminal-nucleus-&-tract-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNV) TRIGEMINAL NERVE" imageName:@"(CNV)-trigeminal-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNVI) ABDUCENS NERVE" imageName:@"(CNVI)-abducens-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNVII)FACIAL NERVE" imageName:@"(CNVII)facial-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNVIII) VESTIBULOCOCHLEAR NERVE" imageName:@"(CNVIII)-vestibulocochlear-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNX) VAGUS NERVE ROOTS" imageName:@"(CNX)-vagus-nerve-roots-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNXI) ACCESSORY NERVE ROOTS" imageName:@"(CNXI)-accessory-nerve-roots-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"(CNXII) HYPOGLOSSAL NERVE ROOTS" imageName:@"(CNXII)-hypoglossal-nerve-roots-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"ACCESSORY NUCLEUS" imageName:@"accessory-nucleus-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"MESENCEPHALIC NUCLEUS" imageName:@"mesencephalic-nucleus-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"OCULOMOTOR & EDINGER WESTPHAL NUCLEI" imageName:@"oculomotor-&-edinger-westphal-nuclei-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"PRINCIPAL SENSORY NUCLEUS" imageName:@"principal-sensory-nucleus-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        [self addQuestionWithAnswer:@"SUPERIOR & INFERIOR COLLICULI" imageName:@"superior-&-inferior-colliculi-side.png" andBackgroundImageName:@"quiz-background-side.png"];
-        
-    }
-    _questions = [self shuffleArray:_questions];
-    return self;
-}
+@implementation BSQuestionGenerator
 
-
--(void) addQuestionWithAnswer:(NSString *) answer imageName:(NSString *) image andBackgroundImageName:(NSString *) background {
-   [_questions addObject:@{@"answer": answer, @"background" : background, @"image" : image}];
-}
-
-
-
--(NSDictionary *)getNextQuestion{
-    currentQuestionIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentQuestionIndex"];
-    currentQuestionIndex++;
-    [[NSUserDefaults standardUserDefaults] setInteger:currentQuestionIndex forKey:@"currentQuestionIndex"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    return _questions[currentQuestionIndex % _questions.count];
-}
-
-- (NSMutableArray*)shuffleArray:(NSMutableArray*)array {
++ (NSArray *) questions {
+    NSMutableArray *tmp = [NSMutableArray new];
+    // generated using gen.py in Images/Quiz
+    [tmp addObject:[self questionWithAnswer:@"ACCESSORY NUCLEUS (CNXI)" foregroundImageName:@"accessory-nucleus-(CNXI)-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ANTERIOR CORTICOSPINAL TRACT" foregroundImageName:@"anterior-corticospinal-tract-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CUNEATE NUCLEUS" foregroundImageName:@"cuneate-nucleus-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"GRACILE NUCLEUS" foregroundImageName:@"gracile-nucleus-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"IPSILATERAL LOSS OF PAIN AND TEMPERATURE OF THE FACE" foregroundImageName:@"ipsilateral-loss-of-pain-and-temperature-of-the-face-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PROPRIOCEPTION FROM IPSILATERAL ARM" foregroundImageName:@"proprioception-from-ipsilateral-arm-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PYRAMIDAL DECUSSATION" foregroundImageName:@"pyramidal-decussation-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"QUADRIPLEGIA" foregroundImageName:@"quadriplegia-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" foregroundImageName:@"spinal-trigeminal-nucleus-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL TRACT" foregroundImageName:@"spinal-trigeminal-tract-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINOCEREBELLAR TRACTS" foregroundImageName:@"spinocerebellar-tracts-0.png" andBackgroundImageName:@"quiz-background-0.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CONTRALATERAL HEMIPLEGIA" foregroundImageName:@"contralateral-hemiplegia-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CUNEATE FASCICULUS" foregroundImageName:@"cuneate-fasciculus-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"GRACILE FASCICULUS" foregroundImageName:@"gracile-fasciculus-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"GRACILE NUCLEUS" foregroundImageName:@"gracile-nucleus-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"HYPOGLOSSAL NUCLEI (CNXI)" foregroundImageName:@"hypoglossal-nuclei-(CNXI)-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"INTERNAL ARCUATE FIBERS" foregroundImageName:@"internal-arcuate-fibers-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"NUCLEUS AMBIGUUS" foregroundImageName:@"nucleus-ambiguus-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PROPRIOCEPTION VIBRATION & FINE TOUCH" foregroundImageName:@"proprioception-vibration-&-fine-touch-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SOLITARY NUCLEUS" foregroundImageName:@"solitary-nucleus-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" foregroundImageName:@"spinal-trigeminal-nucleus-1.png" andBackgroundImageName:@"quiz-background-1.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ANTERIOR SPINOCEREBELLAR TRACT" foregroundImageName:@"anterior-spinocerebellar-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CLINICAL WALLENBERG'S" foregroundImageName:@"clinical-wallenberg's-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CORTICOSPINAL TRACT" foregroundImageName:@"corticospinal-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"HYPOGLOSSAL NUCLEUS" foregroundImageName:@"hypoglossal-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"INFERIOR CEREBELLAR PEDUNCLE" foregroundImageName:@"inferior-cerebellar-peduncle-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"INFERIOR OLIVARY NUCLEUS" foregroundImageName:@"inferior-olivary-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"INFERIOR VESTIBULAR NUCLEUS" foregroundImageName:@"inferior-vestibular-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL MEDULLARY SYNDROME" foregroundImageName:@"medial-medullary-syndrome-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL VESTIBULAR NUCLEUS" foregroundImageName:@"medial-vestibular-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MLF" foregroundImageName:@"mlf-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MOTOR NUCLEUS OF VAGUS" foregroundImageName:@"motor-nucleus-of-vagus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"NUCLEUS AMBIGUUS" foregroundImageName:@"nucleus-ambiguus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SOLITARY TRACT" foregroundImageName:@"solitary-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" foregroundImageName:@"spinal-trigeminal-nucleus-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL TRACT" foregroundImageName:@"spinal-trigeminal-tract-2.png" andBackgroundImageName:@"quiz-background-2.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ANTERIOR COCHLEAR NUCLEUS" foregroundImageName:@"anterior-cochlear-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CENTRAL TEGMENTAL TRACT" foregroundImageName:@"central-tegmental-tract-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CORTICOSPINAL TRACT" foregroundImageName:@"corticospinal-tract-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"INFERIOR CEREBELLAR PEDUNCLE" foregroundImageName:@"inferior-cerebellar-peduncle-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"LATERAL VESTIBULAR NUCLEUS" foregroundImageName:@"lateral-vestibular-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL VESTIBULAR NUCLEUS" foregroundImageName:@"medial-vestibular-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MLF" foregroundImageName:@"mlf-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"NUCLEUS RAPHE MAGNUS" foregroundImageName:@"nucleus-raphe-magnus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"NUCLEUS RAPHE PALIDUS" foregroundImageName:@"nucleus-raphe-palidus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"POSTERIOR COCHLEAR NUCLEUS" foregroundImageName:@"posterior-cochlear-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SOLITARY NUCLEUS" foregroundImageName:@"solitary-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" foregroundImageName:@"spinal-trigeminal-nucleus-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL TRACT" foregroundImageName:@"spinal-trigeminal-tract-3.png" andBackgroundImageName:@"quiz-background-3.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ABDUCENS NUCLEUS" foregroundImageName:@"abducens-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CENTRAL TEGMENTAL TRACT" foregroundImageName:@"central-tegmental-tract-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CORTICOSPINAL TRACT" foregroundImageName:@"corticospinal-tract-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"FACIAL MOTOR NUCLEUS" foregroundImageName:@"facial-motor-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"FACIAL NERVE (CNVII)" foregroundImageName:@"facial-nerve-(CNVII)-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"FOURTH VENTRICLE" foregroundImageName:@"fourth-ventricle-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"LATERAL RECTUS & STAPEDIUS" foregroundImageName:@"lateral-rectus-&-stapedius-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL VESTIBULAR NUCLEUS" foregroundImageName:@"medial-vestibular-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MIDDLE CEREBELLAR PEDUNCLE" foregroundImageName:@"middle-cerebellar-peduncle-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MLF" foregroundImageName:@"mlf-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"NUCLEUS RAPHE MAGNUS" foregroundImageName:@"nucleus-raphe-magnus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PONTINE TRACTS" foregroundImageName:@"pontine-tracts-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"POSTERIOR LONGITUDINAL FASCICULUS" foregroundImageName:@"posterior-longitudinal-fasciculus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SPINAL TRIGEMINAL NUCLEUS" foregroundImageName:@"spinal-trigeminal-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SUPERIOR VESTIBULAR NUCLEUS" foregroundImageName:@"superior-vestibular-nucleus-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"VENTRAL PONTINE SYNDROME" foregroundImageName:@"ventral-pontine-syndrome-4.png" andBackgroundImageName:@"quiz-background-4.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CENTRAL TEGMENTAL TRACT" foregroundImageName:@"central-tegmental-tract-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"LOCKED IN" foregroundImageName:@"locked-in-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"LOCUS CERULEUS" foregroundImageName:@"locus-ceruleus-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MESENCEPHALIC NUCLEUS AND TRACT" foregroundImageName:@"mesencephalic-nucleus-and-tract-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MIDDLE CEREBELLAR PEDUNCLE" foregroundImageName:@"middle-cerebellar-peduncle-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MLF" foregroundImageName:@"mlf-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"NUCLEUS RAPHE PONTIS" foregroundImageName:@"nucleus-raphe-pontis-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PONTINE NUCLEI" foregroundImageName:@"pontine-nuclei-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PRINCIPAL AND MOTOR NUCLEI OF TRIGEMINAL" foregroundImageName:@"principal-and-motor-nuclei-of-trigeminal-5.png" andBackgroundImageName:@"quiz-background-5.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"AQUEDUCTAL GREY" foregroundImageName:@"aqueductal-grey-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CENTRAL TEGMENTAL TRACT" foregroundImageName:@"central-tegmental-tract-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CEREBRAL AQUEDUCT" foregroundImageName:@"cerebral-aqueduct-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"LATERAL LEMNISCUS" foregroundImageName:@"lateral-lemniscus-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MESENCEPHALIC NUCLEUS" foregroundImageName:@"mesencephalic-nucleus-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MIDDLE CEREBELLAR PEDUNCLE" foregroundImageName:@"middle-cerebellar-peduncle-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MLF" foregroundImageName:@"mlf-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"NUCLEUS CENTRALIS SUPERIOR" foregroundImageName:@"nucleus-centralis-superior-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SUPERIOR CEREBELLAR PEDUNCLE" foregroundImageName:@"superior-cerebellar-peduncle-6.png" andBackgroundImageName:@"quiz-background-6.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CENTRAL TEGMENTAL TRACT" foregroundImageName:@"central-tegmental-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CEREBRAL AQUEDUCT" foregroundImageName:@"cerebral-aqueduct-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CEREBRAL PEDUNCLE" foregroundImageName:@"cerebral-peduncle-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CORTICOBULBAR TRACT" foregroundImageName:@"corticobulbar-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CORTICOSPINAL TRACT" foregroundImageName:@"corticospinal-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"INFERIOR COLLICULUS" foregroundImageName:@"inferior-colliculus-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"LATERAL LEMNISCUS" foregroundImageName:@"lateral-lemniscus-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MLF" foregroundImageName:@"mlf-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PERIAQUEDUCTAL GREY" foregroundImageName:@"periaqueductal-grey-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SUPERIOR CEREBELLAR PEDUNCLE" foregroundImageName:@"superior-cerebellar-peduncle-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"TROCHLEAR NUCLEUS" foregroundImageName:@"trochlear-nucleus-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"VENTRAL TRIGEMINOTHALAMIC TRACT" foregroundImageName:@"ventral-trigeminothalamic-tract-7.png" andBackgroundImageName:@"quiz-background-7.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ALS" foregroundImageName:@"als-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"BENEDIKT'S" foregroundImageName:@"benedikt's-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CENTRAL TEGMENTAL TRACT" foregroundImageName:@"central-tegmental-tract-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CEREBELLOTHALAMIC TRACTS" foregroundImageName:@"cerebellothalamic-tracts-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CEREBRAL AQUEDUCT" foregroundImageName:@"cerebral-aqueduct-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CLAUDE'S" foregroundImageName:@"claude's-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CORTICOBULBAR TRACTS" foregroundImageName:@"corticobulbar-tracts-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CORTICOSPINAL TRACT" foregroundImageName:@"corticospinal-tract-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"CRUS CEREBRI" foregroundImageName:@"crus-cerebri-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"FALSE" foregroundImageName:@"false-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"HOMONOMOUS HEMIANOPIA" foregroundImageName:@"homonomous-hemianopia-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL GENICULATE NUCLEUS" foregroundImageName:@"medial-geniculate-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MEDIAL LEMNISCUS" foregroundImageName:@"medial-lemniscus-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MESENCEPHALIC NUCLEUS" foregroundImageName:@"mesencephalic-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MLF" foregroundImageName:@"mlf-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"OBSTRUCTIVE HYDROCEPHALUS" foregroundImageName:@"obstructive-hydrocephalus-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"OCULOMOTOR NUCLEUS" foregroundImageName:@"oculomotor-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"OPTIC TRACT" foregroundImageName:@"optic-tract-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PARALYSIS OF UPGAZE" foregroundImageName:@"paralysis-of-upgaze-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PARKINSON'S DISEASE" foregroundImageName:@"parkinson's-disease-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PERIAQUEDUCTAL GREY" foregroundImageName:@"periaqueductal-grey-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"RED NUCLEUS" foregroundImageName:@"red-nucleus-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SUPERIOR COLLICULUS" foregroundImageName:@"superior-colliculus-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"WEBER'S" foregroundImageName:@"weber's-8.png" andBackgroundImageName:@"quiz-background-8.png"]];
+    [tmp addObject:[self questionWithAnswer:@"AICA" foregroundImageName:@"aica-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ANTERIOR SPINAL ARTERY" foregroundImageName:@"anterior-spinal-artery-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"BASILAR" foregroundImageName:@"basilar-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"LONG CIRCUMFRENTIALS" foregroundImageName:@"long-circumfrentials-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PICA" foregroundImageName:@"pica-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"POSTERIOR CEREBRAL" foregroundImageName:@"posterior-cerebral-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"POSTERIOR COMMUNICATING ARTERY" foregroundImageName:@"posterior-communicating-artery-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SHORT CIRCUMFRENTIALS" foregroundImageName:@"short-circumfrentials-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SUPERIOR CEREBELLAR" foregroundImageName:@"superior-cerebellar-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"VERTEBRAL ARTERY" foregroundImageName:@"vertebral-artery-perfusion.png" andBackgroundImageName:@"quiz-background-perfusion.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNIII) OCULOMOTOR NERVE" foregroundImageName:@"(CNIII)-oculomotor-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNIV) TROCHLEAR NERVE" foregroundImageName:@"(CNIV)-trochlear-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNIX) GLOSSOPHARENGEAL NERVE" foregroundImageName:@"(CNIX) glossopharengeal nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNV) SPINAL TRIGEMINAL NUCLEUS & TRACT" foregroundImageName:@"(CNV)-spinal-trigeminal-nucleus-&-tract-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNV) TRIGEMINAL NERVE" foregroundImageName:@"(CNV)-trigeminal-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNVI) ABDUCENS NERVE" foregroundImageName:@"(CNVI)-abducens-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNVII)FACIAL NERVE" foregroundImageName:@"(CNVII)facial-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNVIII) VESTIBULOCOCHLEAR NERVE" foregroundImageName:@"(CNVIII)-vestibulocochlear-nerve-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNX) VAGUS NERVE ROOTS" foregroundImageName:@"(CNX)-vagus-nerve-roots-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNXI) ACCESSORY NERVE ROOTS" foregroundImageName:@"(CNXI)-accessory-nerve-roots-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"(CNXII) HYPOGLOSSAL NERVE ROOTS" foregroundImageName:@"(CNXII)-hypoglossal-nerve-roots-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"ACCESSORY NUCLEUS" foregroundImageName:@"accessory-nucleus-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"MESENCEPHALIC NUCLEUS" foregroundImageName:@"mesencephalic-nucleus-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"OCULOMOTOR & EDINGER WESTPHAL NUCLEI" foregroundImageName:@"oculomotor-&-edinger-westphal-nuclei-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"PRINCIPAL SENSORY NUCLEUS" foregroundImageName:@"principal-sensory-nucleus-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
+    [tmp addObject:[self questionWithAnswer:@"SUPERIOR & INFERIOR COLLICULI" foregroundImageName:@"superior-&-inferior-colliculi-side.png" andBackgroundImageName:@"quiz-background-side.png"]];
     
-    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:array];
-    
-    for(NSUInteger i = [array count]; i > 1; i--) {
+    // Shuffle array
+    for(NSUInteger i = [tmp count]; i > 1; i--) {
         NSUInteger j = arc4random_uniform(i);
-        [temp exchangeObjectAtIndex:i-1 withObjectAtIndex:j];
+        [tmp exchangeObjectAtIndex:i-1 withObjectAtIndex:j];
     }
     
-    return temp;
+    return [tmp copy];
 }
+
+
++(BSQuizQuestion *)questionWithAnswer:(NSString *) answer foregroundImageName:(NSString *) foreground andBackgroundImageName:(NSString *) background
+{
+    
+    BSQuizQuestion *question = [[BSQuizQuestion alloc] init];
+    [question setAnswer:answer];
+    [question setBackgroundImageName:background];
+    [question setForegroundImageName:foreground];
+    
+    return question;
+}
+
+
+//-(NSDictionary *)getNextQuestion{
+//    currentQuestionIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentQuestionIndex"];
+//    currentQuestionIndex++;
+//    [[NSUserDefaults standardUserDefaults] setInteger:currentQuestionIndex forKey:@"currentQuestionIndex"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+//    return _questions[currentQuestionIndex % _questions.count];
+//}
 
 @end

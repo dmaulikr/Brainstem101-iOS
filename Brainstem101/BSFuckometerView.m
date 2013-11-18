@@ -14,36 +14,39 @@
 
 -(void)beginLoadingWithDuration:(int)duration andCallback:(void (^)(void))completionBlock{
     
-    _backgroundView = [[UIImageView alloc] initWithFrame:self.bounds];
-    [_backgroundView setContentMode:UIViewContentModeScaleAspectFit];
-    [_backgroundView setImage:[UIImage imageNamed:@"fuckometer-background.png"]];
-//    [_backgroundView setAlpha:0.0];
+    self.backgroundView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [self.backgroundView setContentMode:UIViewContentModeScaleAspectFit];
+    [self.backgroundView setImage:[UIImage imageNamed:@"fuckometer-background.png"]];
+    [self.backgroundView setAlpha:0.0];
     
-    _needleView = [[UIImageView alloc] initWithFrame:self.bounds];
-    [_needleView setContentMode:UIViewContentModeScaleAspectFit];
-    [_needleView setImage:[UIImage imageNamed:@"fuckometer-needle.png"]];
-//    [_needleView setAlpha:0.0];
+    self.needleView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [self.needleView setContentMode:UIViewContentModeScaleAspectFit];
+    [self.needleView setImage:[UIImage imageNamed:@"fuckometer-needle.png"]];
     
-    [self addSubview:_backgroundView];
-    [self addSubview:_needleView];
-    
-    
-    
-    [UIView animateWithDuration:duration/2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [_backgroundView setAlpha:1];
-        [_needleView setAlpha:1];
+    [self addSubview:self.backgroundView];
+    [self.backgroundView addSubview:self.needleView];
         
-        self.needleView.transform = CGAffineTransformMakeRotation(DegreesToRadians(AMOUNT/2));
+    
+    [UIView animateWithDuration:0.5 delay:0 options:nil animations:^{
+        
+        [self.backgroundView setAlpha:1];
         
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:duration/2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:duration/2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             
-            self.needleView.transform = CGAffineTransformMakeRotation(DegreesToRadians(AMOUNT));
+            self.needleView.transform = CGAffineTransformMakeRotation(DegreesToRadians(AMOUNT/2));
             
         } completion:^(BOOL finished) {
-            completionBlock();
+            [UIView animateWithDuration:duration/2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                
+                self.needleView.transform = CGAffineTransformMakeRotation(DegreesToRadians(AMOUNT));
+                
+            } completion:^(BOOL finished) {
+                completionBlock();
+            }];
         }];
     }];
+
 }
 
 @end

@@ -19,6 +19,9 @@
         [button setEnabled:NO];
     }
     [_atlasButton setEnabled:NO];
+    
+    [self setupParalax];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -101,7 +104,6 @@
     [_fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             [_fuckometerView setAlpha:0];
-            [_tagImageView setFrame:_backgroundImageView.bounds];
         } completion:^(BOOL finished) {
             for (UIButton *button in _clinicalButtons) {
                 [button setEnabled:YES];
@@ -133,6 +135,34 @@
 - (IBAction)showAboutPage:(id)sender
 {
     [self performSegueWithIdentifier:@"page0-to-about" sender:self];
+}
+
+#pragma mark - MotionEffects
+
+-(void)setupParalax
+{
+    // Set vertical effect
+    UIInterpolatingMotionEffect *verticalMotionEffect =
+    [[UIInterpolatingMotionEffect alloc]
+     initWithKeyPath:@"center.y"
+     type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+    verticalMotionEffect.minimumRelativeValue = @(30);
+    verticalMotionEffect.maximumRelativeValue = @(-30);
+    
+    // Set horizontal effect
+    UIInterpolatingMotionEffect *horizontalMotionEffect =
+    [[UIInterpolatingMotionEffect alloc]
+     initWithKeyPath:@"center.x"
+     type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+    horizontalMotionEffect.minimumRelativeValue = @(30);
+    horizontalMotionEffect.maximumRelativeValue = @(-30);
+    
+    // Create group to combine both
+    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
+    group.motionEffects = @[horizontalMotionEffect, verticalMotionEffect];
+    
+    // Add both effects to your view
+    [self.backgroundImageView addMotionEffect:group];
 }
 
 

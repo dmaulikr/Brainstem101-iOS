@@ -49,7 +49,7 @@
     [_mainPanelShadow addSubview:_glassStemView];
     
     
-    [_doorShadowImageView setAlpha:0.0];
+//    [_doorShadowImageView setAlpha:0.0];
     _stemViewStyle = STEMVIEW_STYLE_FRONT;
     [_indexTable setAlpha:0];
     [self resetEverything];
@@ -66,7 +66,7 @@
     [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         // slide open door
         [_doorImageView setCenter:CGPointMake( - 200 , _doorImageView.center.y)];
-        [_doorShadowImageView setAlpha:1.0];
+//        [_doorShadowImageView setAlpha:1.0];
     } completion:^(BOOL finished) {
         [_doorImageView setAlpha:0];
         [_doorImageView setImage:nil];

@@ -7,29 +7,17 @@
 //
 
 #import "BSQuizViewController.h"
-
-@interface BSQuizViewController ()
-
-@end
+#import "BSQuizCollectionViewCell.h"
 
 @implementation BSQuizViewController
 {
-    BSQuestionGenerator *questionObject;
-    int questionCount;
-    CGRect quizViewInitialFrame;
-    CGRect quizViewRightFrame;
-    CGRect quizviewLeftFrame;
+    NSArray *questions;
 }
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    questionCount = 0;
-    
-    [self setUpQuizViewFrames];
-    [self advanceQuestions];
+    questions = [BSQuestionGenerator questions];
 }
 
 - (IBAction)backAction:(id)sender
@@ -37,62 +25,34 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - UICollectionViewCellDelegate and Datasource
 
--(void)setUpQuizViewFrames{
-    quizViewInitialFrame = quizviewLeftFrame = quizViewRightFrame = _quizView.frame;
-    quizViewRightFrame.origin.x += 800;
-    quizviewLeftFrame.origin.x -= 800;
-}
-
-- (void)advanceQuestions{
-    
-    if (!questionObject) {
-        questionObject = [BSQuestionGenerator new];
-    }
-    
-    if (questionCount %2 == 0) {
-        
-        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            
-            [_quizView setFrame:quizViewRightFrame];
-//            [self.quizView setAlpha:0];
-            
-        } completion:^(BOOL finished) {
-            
-            [self.quizView setFrame:quizviewLeftFrame];
-            
-            [self.quizView loadQuestionFromDictionary:[questionObject getNextQuestion]];
-            
-            [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-              
-//                [self.quizView setAlpha:1];
-                [self.quizView setFrame:quizViewInitialFrame];
-                
-            } completion:nil];
-        }];
-    }else{
-        [self.quizView showAnswer];
-    }
-    questionCount++;
-}
-
-- (IBAction)handleGestures:(UIGestureRecognizer *)sender
+-(BSQuizCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([sender class] == [UITapGestureRecognizer class]) {
-        if (questionCount % 2 == 1) {
-            [self advanceQuestions];
-        }
-    }else if ([sender class] == [UISwipeGestureRecognizer class]){
-        [self advanceQuestions];
-        if (questionCount % 2 == 0) {
-            [self advanceQuestions];
-        }
-    }
+    static NSString *identifier = @"QuizCell";
+    
+    BSQuizCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    BSQuizQuestion *question = [questions objectAtIndex:indexPath.row];
+    [cell.background setImage:[UIImage imageNamed:question.backgroundImageName]];
+    [cell.foreground setImage:[UIImage imageNamed:question.foregroundImageName]];
+    [cell.answerBox setText:question.answer];
+    [cell.answerBox setHidden:YES];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:cell action:@selector(receivedTap:)];
+    tapGesture.numberOfTouchesRequired = 1;
+    [cell addGestureRecognizer:tapGesture];
+    
+    return cell;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    [self advanceQuestions];
+    return questions.count;
+}
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
 }
 
 #pragma mark System Methods
