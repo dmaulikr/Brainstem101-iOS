@@ -18,7 +18,8 @@
 
 @implementation BSSectionView
 
-- (id) initWithFrame:(CGRect)frame andSectionNumber:(int) num{
+- (id) initWithFrame:(CGRect)frame andSectionNumber:(int) num
+{
     self = [super initWithFrame:frame];
     if (self) {
         [self setNewSectionNumber:num];
@@ -28,58 +29,61 @@
     return self;
 }
 
--(void)setNewSectionNumber:(int)num{
-    _sxnNumber = num;
+-(void)setNewSectionNumber:(int)num
+{
+    self.sxnNumber = num;
     
-    if (_backgroundLayer == nil) {
-        _backgroundLayer = [CALayer new];
-        [_backgroundLayer setFrame:self.bounds];
-        [_backgroundLayer setContentsGravity:kCAGravityResizeAspect];
+    if (self.backgroundLayer == nil) {
+        self.backgroundLayer = [CALayer new];
+        [self.backgroundLayer setFrame:self.bounds];
+        [self.backgroundLayer setContentsGravity:kCAGravityResizeAspect];
         [self.layer addSublayer:_backgroundLayer];
     }
     
-    if (_arteryLayer == nil) {
-        _arteryLayer = [CALayer new];
-        [_arteryLayer setFrame:self.bounds];
-        [_arteryLayer setContentsGravity:kCAGravityResizeAspect];
-        [_backgroundLayer addSublayer:_arteryLayer];
+    if (self.arteryLayer == nil) {
+        self.arteryLayer = [CALayer new];
+        [self.arteryLayer setFrame:self.bounds];
+        [self.arteryLayer setContentsGravity:kCAGravityResizeAspect];
+        [self.backgroundLayer addSublayer:_arteryLayer];
     }
     
-    if (_pathLayer == nil) {
-        _pathLayer = [CALayer new];
-        [_pathLayer setFrame:self.bounds];
-        [_pathLayer setContentsGravity:kCAGravityResizeAspect];
-        [_backgroundLayer addSublayer:_pathLayer];
+    if (self.pathLayer == nil) {
+        self.pathLayer = [CALayer new];
+        [self.pathLayer setFrame:self.bounds];
+        [self.pathLayer setContentsGravity:kCAGravityResizeAspect];
+        [self.backgroundLayer addSublayer:_pathLayer];
     }
     
-    if (_selectionLayer == nil) {
-        _selectionLayer  = [CALayer new];
-        [_selectionLayer setFrame:self.bounds];
-        [_selectionLayer setContentsGravity:kCAGravityResizeAspect];
-        [_pathLayer addSublayer:_selectionLayer];
+    if (self.selectionLayer == nil) {
+        self.selectionLayer  = [CALayer new];
+        [self.selectionLayer setFrame:self.bounds];
+        [self.selectionLayer setContentsGravity:kCAGravityResizeAspect];
+        [self.pathLayer addSublayer:_selectionLayer];
     }
     
-    [_backgroundLayer setContents:(id)[UIImage imageNamed:[NSString stringWithFormat:@"sxn-%d.png",num]].CGImage];
-    [_arteryLayer setContents:nil];
-    [_pathLayer setContents:nil];
-    [_selectionLayer setContents:nil];
+    [self.backgroundLayer setContents:(id)[UIImage imageNamed:[NSString stringWithFormat:@"sxn-%d.png",num]].CGImage];
+    [self.arteryLayer setContents:nil];
+    [self.pathLayer setContents:nil];
+    [self.selectionLayer setContents:nil];
 }
 
-- (void) arteryImageNamed:(NSString *)imageName{
+- (void) arteryImageNamed:(NSString *)imageName
+{
     if (imageName) {
-        [_arteryLayer setOpacity:0];
-        [_arteryLayer setContents:(id)[UIImage imageNamed:imageName].CGImage];
+        [self.arteryLayer setOpacity:0];
+        [self.arteryLayer setContents:(id)[UIImage imageNamed:imageName].CGImage];
 
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            [_arteryLayer setOpacity:0.75];
+            [self.arteryLayer setOpacity:0.75];
         } completion:nil];
         
     }else{
-        [_arteryLayer setContents:nil];
+        [self.arteryLayer setContents:nil];
     }
 }
 
--(BOOL)isPoint:(CGPoint)point inPath:(BSStructurePath*) path{
+-(BOOL)isPoint:(CGPoint)point inPath:(BSStructurePath*)path
+{
     CGPoint scaledPoint = [self scaledPoint:point];
     
     if ([path.pathData containsPoint:scaledPoint]) {
@@ -88,11 +92,12 @@
     return NO;
 }
 
-- (CGPoint) scaledPoint:(CGPoint)point {
-    float x = point.x*(CAPTURE_DEVICE_WIDTH/_selectionLayer.frame.size.width);
-    float y = point.y*(CAPTURE_DEVICE_HEIGHT/_selectionLayer.frame.size.height);
-    if (_isRotated) {
-        y = _selectionLayer.frame.size.height*(CAPTURE_DEVICE_HEIGHT/_selectionLayer.frame.size.height) - y;
+- (CGPoint) scaledPoint:(CGPoint)point
+{
+    float x = point.x*(CAPTURE_DEVICE_WIDTH/self.selectionLayer.frame.size.width);
+    float y = point.y*(CAPTURE_DEVICE_HEIGHT/self.selectionLayer.frame.size.height);
+    if (self.isRotated) {
+        y = self.selectionLayer.frame.size.height*(CAPTURE_DEVICE_HEIGHT/self.selectionLayer.frame.size.height) - y;
     }
     CGPoint scaledPoint =  CGPointMake(x, y);
     return scaledPoint;
@@ -110,12 +115,13 @@
     [[UIColor clearColor] setStroke];
     CGContextDrawPath(currentContext, kCGPathFillStroke);
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    [_selectionLayer setContents:(id)[img CGImage]];
+    [self.selectionLayer setContents:(id)[img CGImage]];
     UIGraphicsEndImageContext();
 }
 
 
-- (void) drawPathsForProfile:(NSMutableArray *)inputPaths{
+- (void) drawPathsForProfile:(NSMutableArray *)inputPaths
+{
 
     // replace these with image dimensions somehow
     UIGraphicsBeginImageContext(CGSizeMake(CAPTURE_DEVICE_WIDTH, CAPTURE_DEVICE_HEIGHT));
@@ -141,41 +147,47 @@
     
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    [_pathLayer setContents:(id)[img CGImage]];
+    [self.pathLayer setContents:(id)[img CGImage]];
 }
 
-- (void) fade{
+- (void) fade
+{
     [[self backgroundLayer] setOpacity:0.5];
 }
-- (void) unfade{
+- (void) unfade
+{
     [[self backgroundLayer] setOpacity:1.0];
 }
-- (void) clearPaths{
+- (void) clearPaths
+{
     [[self pathLayer] setContents:nil];
 }
-- (void) hidePathsToggle{
-    [_pathLayer setHidden:!_pathLayer.hidden];
+- (void) hidePathsToggle
+{
+    [self.pathLayer setHidden:!self.pathLayer.hidden];
 }
 
-- (void)rotateView{
+- (void)rotateView
+{
     [UIView animateWithDuration:ROTATION_SPEED delay:0 options: UIViewAnimationOptionBeginFromCurrentState animations:
      ^{
-         if (!_isRotated) {
-             _backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(180));
+         if (!self.isRotated) {
+             self.backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(180));
          }else{
-             _backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(0));
+             self.backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(0));
          }
          
      } completion:^(BOOL finished){
-         _isRotated = !_isRotated;
+         self.isRotated = !self.isRotated;
      }];
 }
 
 
-- (void)rotateViewRight{
+- (void)rotateViewRight
+{
     int a;
     int b;
-    if (_isRotated) {
+    if (self.isRotated) {
         a = 270;
         b = 0;
     }else{
@@ -184,25 +196,24 @@
     }
     
     [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        _backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(a));
+        self.backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(a));
         
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             
-            _backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(b));
+            self.backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(b));
             
         } completion:^(BOOL finished) {
-            _isRotated = !_isRotated;
+            self.isRotated = !self.isRotated;
         }];
     }];
 
 }
 
-- (void)rotateViewLeft{
-    
-    int a;
-    int b;
-    if (_isRotated) {
+- (void)rotateViewLeft
+{
+    int a, b;
+    if (self.isRotated) {
         a = 90;
         b = 0;
     }else{
@@ -211,17 +222,18 @@
     }
     
     [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        _backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(a));
+        self.backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(a));
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            _backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(b));
+            self.backgroundLayer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(b));
         } completion:^(BOOL finished) {
-            _isRotated = !_isRotated;
+            self.isRotated = !self.isRotated;
         }];
     }];
 }
 
-+(CGRect)getFrameForSection:(int)num{
++(CGRect)getFrameForSection:(int)num
+{
     
     float scaleFactor = 0;
 
@@ -264,7 +276,8 @@
     return rFrame;
 }
 
-+(CGPoint)getCenterForSection:(int)num{
++(CGPoint)getCenterForSection:(int)num
+{
     CGPoint newCenter;    
     
     switch (num) {
@@ -304,7 +317,8 @@
     return newCenter;
 }
 
-+(CGRect)getFrameForClinicalSection{
++(CGRect)getFrameForClinicalSection
+{
     float newWidth = CAPTURE_DEVICE_WIDTH*0.25;
     float newHeight = CAPTURE_DEVICE_HEIGHT*0.25;
     CGRect rFrame = CGRectMake(0, 0, newWidth, newHeight);
