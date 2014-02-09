@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 #import "BSModel.h"
 #import "BSStructure.h"
 #import "BSSyndrome.h"
@@ -15,10 +15,10 @@
 
 @interface BSUploader : NSObject
 
-+ (void) uploadAllFromModel;
-
-+ (void) uploadStructure:(BSStructure *) structure;
-
-+ (void) uploadSyndrome:(BSSyndrome *) syndrome;
+//+ (void) uploadAllFromModel;
+//
+//+ (void) uploadStructure:(BSStructure *) structure;
+//
+//+ (void) uploadSyndrome:(BSSyndrome *) syndrome;
 
 @end
