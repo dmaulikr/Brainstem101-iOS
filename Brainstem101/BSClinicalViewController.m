@@ -13,20 +13,22 @@
 #define SECTION_COLLECTION_VIEW_CENTER_OFFSET 500
 #define SECTION_COLLECTION_VIEW_LEFT_EDGE_INSET 100
 
-@implementation BSClinicalViewController{
+@implementation BSClinicalViewController
+{
     BSSyndrome *currentSyndrome;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_syndromeSelectionCollectionView setAllowsMultipleSelection:NO];
-    [_descriptionView setText:@""];
-    [_descriptionView addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:nil];
-    [_sectionCollectionView setContentInset:UIEdgeInsetsMake(0, -200, 0, 0)];
+    [self.syndromeSelectionCollectionView setAllowsMultipleSelection:NO];
+    [self.descriptionView setText:@""];
+    [self.descriptionView addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:nil];
+    [self.sectionCollectionView setContentInset:UIEdgeInsetsMake(0, -200, 0, 0)];
 }
 
--(void)viewDidAppear:(BOOL)animated{
+-(void)viewDidAppear:(BOOL)animated
+{
     [super viewDidAppear:animated];
     //tutorial
     if ([[BSModel sharedModel] inTutorialMode]) {
@@ -43,17 +45,19 @@
     }
     
     [UIView animateWithDuration:3 delay:0 options:UIViewAnimationCurveLinear animations:^{
-        [_fadingEyeView setAlpha:0];
+        [self.fadingEyeView setAlpha:0];
     } completion:nil];
 
 }
 #pragma mark BSTutorialImageViewDelegate
 
--(void)dissmissTutorialImageView:(id)tutorialView{
+-(void)dissmissTutorialImageView:(id)tutorialView
+{
     tutorialView = nil;
 }
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
     UITextView *tv = object;
     CGFloat topCorrect = ([tv bounds].size.height - [tv contentSize].height * [tv zoomScale])/2.0;
     topCorrect = ( topCorrect < 0.0 ? 0.0 : topCorrect );
@@ -63,7 +67,8 @@
     }];
 }
 
--(void)switchToSyndrome:(BSSyndrome *)syn{
+-(void)switchToSyndrome:(BSSyndrome *)syn
+{
     currentSyndrome = syn;
     
     [self updateDescription];
@@ -73,25 +78,25 @@
     [self updateDeficitTableView];
 }
 
--(void)updateDescription{
+-(void)updateDescription
+{
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [_descriptionView setAlpha:0];
+        [self.descriptionView setAlpha:0];
     } completion:^(BOOL finished) {
-        [_descriptionView setContentOffset:CGPointMake(0, -200)];
-        [_descriptionView setText:[currentSyndrome description]];
+        [self.descriptionView setText:[currentSyndrome description]];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            [_descriptionView setAlpha:1];
+            [self.descriptionView setAlpha:1];
         } completion:^(BOOL finished) {
             //do nothing
         }];
     }];
 }
 
--(void)updateSectionCollectionView{
-    
+-(void)updateSectionCollectionView
+{
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [_sectionCollectionView setAlpha:0];
-        [_sectionCollectionView setCenter:CGPointMake(_sectionCollectionView.center.x + SECTION_COLLECTION_VIEW_CENTER_OFFSET, _sectionCollectionView.center.y)];
+        [self.sectionCollectionView setAlpha:0];
+        [self.sectionCollectionView setCenter:CGPointMake(_sectionCollectionView.center.x + SECTION_COLLECTION_VIEW_CENTER_OFFSET, _sectionCollectionView.center.y)];
         
     } completion:^(BOOL finished) {
         
@@ -99,30 +104,33 @@
         [self.sectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:2 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             [self.sectionCollectionView setAlpha:1];
-            [self.sectionCollectionView setCenter:CGPointMake(self.view.center.x , _sectionCollectionView.center.y)];
+            [self.sectionCollectionView setCenter:CGPointMake(self.view.center.x , self.sectionCollectionView.center.y)];
         } completion:nil];
     }];
 }
 
-- (void)updateMugshots {
+- (void)updateMugshots
+{
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [_mugshotView setAlpha:0];
+        [self.mugshotView setAlpha:0];
     } completion:^(BOOL finished) {
-        [_mugshotView setImage:[UIImage imageNamed:currentSyndrome.mugshotImageName]];
+        [self.mugshotView setImage:[UIImage imageNamed:currentSyndrome.mugshotImageName]];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            [_mugshotView setAlpha:1];
+            [self.mugshotView setAlpha:1];
         } completion:nil];
     }];
 }
 
--(void)updateSyndromeSelectionCollectionView {
-    [_syndromeSelectionCollectionView reloadData];
-    [_syndromeSelectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:[[[BSModel sharedModel] Syndromes] indexOfObject:currentSyndrome] inSection:0]
+-(void)updateSyndromeSelectionCollectionView
+{
+    [self.syndromeSelectionCollectionView reloadData];
+    [self.syndromeSelectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:[[[BSModel sharedModel] Syndromes] indexOfObject:currentSyndrome] inSection:0]
                                              atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
                                                      animated:YES];
 }
 
-- (void)updateDeficitTableView{
+- (void)updateDeficitTableView
+{
     //Dynamic Sizing of deficits table
     int totalCellHeight = 0;
     for (BSDeficit *def in currentSyndrome.deficits) {
@@ -132,20 +140,21 @@
     
     if (heightDelta != 0) {
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED animations:^{
-            [_deficitTableView setContentInset:UIEdgeInsetsMake((heightDelta / 2), 0, 0, 0)];
+            [self.deficitTableView setContentInset:UIEdgeInsetsMake((heightDelta / 2), 0, 0, 0)];
         }];
     }else{
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED animations:^{
-            [_deficitTableView setContentInset:UIEdgeInsetsMake(CELLSPACING, 0, 0, 0)];
+            [self.deficitTableView setContentInset:UIEdgeInsetsMake(CELLSPACING, 0, 0, 0)];
         }];
     }
     
-    [_deficitTableView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 1)] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.deficitTableView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 1)] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark UITableViewDelegate 
 
-- (BSClinicalDetailsTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (BSClinicalDetailsTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (tableView == _deficitTableView) {
         static NSString *clinicalCellIdentifier = @"ClinicalCell";
         BSClinicalDetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:clinicalCellIdentifier forIndexPath:indexPath];
@@ -156,7 +165,8 @@
     return nil;
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     if (tableView == _deficitTableView) {
         return 1;
     }
@@ -164,7 +174,8 @@
     return 0;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     if (tableView == _deficitTableView) {
         return currentSyndrome.deficits.count;
     }
@@ -173,12 +184,13 @@
     return 0;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return [self calculatedTableCellHeightForDeficit:[[currentSyndrome deficits] objectAtIndex:indexPath.row]];
 }
 
--(CGFloat) calculatedTableCellHeightForDeficit:(BSDeficit *)deficit {
-
+-(CGFloat) calculatedTableCellHeightForDeficit:(BSDeficit *)deficit
+{
     float symptomsHeight = [[deficit symptoms] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(343, 105)].height;
     float deficitHeight = [[deficit deficit] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(130, 105)].height;
     
@@ -190,7 +202,8 @@
 
 #pragma mark UICollectionView
 
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
     
     if (collectionView == _syndromeSelectionCollectionView) {
         static NSString *syndromCellIdentifier = @"SyndromeCell";
@@ -227,10 +240,11 @@
     return nil;
 }
 
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    if (collectionView == _syndromeSelectionCollectionView) {
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    if (collectionView == self.syndromeSelectionCollectionView) {
         return 1;
-    }else if (collectionView == _sectionCollectionView){
+    }else if (collectionView == self.sectionCollectionView){
         return 1;
     }else{
         NSLog(@"Collection view # of sections failed");
@@ -238,10 +252,11 @@
     }
 }
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if (collectionView == _syndromeSelectionCollectionView) {
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    if (collectionView == self.syndromeSelectionCollectionView) {
         return [[[BSModel sharedModel] Syndromes] count];
-    }else if (collectionView == _sectionCollectionView){
+    }else if (collectionView == self.sectionCollectionView){
         return 5;
     }else{
         NSLog(@"Collection view # of sections failed");
@@ -249,7 +264,8 @@
     }
 }
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
     if (collectionView == self.syndromeSelectionCollectionView) {
         if ([[[BSModel sharedModel] Syndromes] objectAtIndex:indexPath.row] != currentSyndrome) {
             [[(BSClinicalCollectionViewCell *)[self.syndromeSelectionCollectionView cellForItemAtIndexPath:indexPath] syndromNameLabel] setTextColor:[UIColor whiteColor]];

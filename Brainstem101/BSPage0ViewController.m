@@ -18,23 +18,23 @@
     for (UIButton *button in _clinicalButtons) {
         [button setEnabled:NO];
     }
-    [_atlasButton setEnabled:NO];
+    [self.atlasButton setEnabled:NO];
     
     [self setupParalax];
     
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    
+-(void)viewDidAppear:(BOOL)animated
+{
     [super viewDidAppear:animated];
     if (![self.view viewWithTag:(int)@"settingstag"]) {
-        _tagImageView = [[UIImageView alloc] init];
-        [_tagImageView setTag:(int)@"settingstag"];
+        self.tagImageView = [[UIImageView alloc] init];
+        [self.tagImageView setTag:(int)@"settingstag"];
         CGRect newFrame = _backgroundImageView.bounds;
         newFrame.origin.x = newFrame.origin.x + 200;
-        [_tagImageView setFrame:newFrame];
-        [_tagImageView setImage:[UIImage imageNamed:@"page0-background-tag.png"]];
-        [_backgroundImageView addSubview:_tagImageView];
+        [self.tagImageView setFrame:newFrame];
+        [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag.png"]];
+        [self.backgroundImageView addSubview:_tagImageView];
     }
     
     [self runFuckometer];
@@ -48,7 +48,6 @@
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLaunched"];
         });
     }else{
-        
         if ([[BSModel sharedModel] inTutorialMode]) {
             double delayInSeconds = LOAD_TIME;
             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
@@ -59,7 +58,8 @@
     }
 }
 
--(void)askUserIfTheyWantToSeeTheTutorial{
+-(void)askUserIfTheyWantToSeeTheTutorial
+{
     if (![self.view viewWithTag:8008]) {
         BSTutorialImageView *tutorialView = [BSTutorialImageView askTutorial];
         [tutorialView setDelegate:self];
@@ -72,7 +72,8 @@
     }
 }
 
--(IBAction) enterTutorial:(id)sender {
+-(IBAction) enterTutorial:(id)sender
+{
     if (![self.view viewWithTag:8008]) {
         BSTutorialImageView *tutorialView = [BSTutorialImageView page0Tutorial];
         [tutorialView setDelegate:self];
@@ -86,14 +87,13 @@
 }
 
 
-
-
--(void)runFuckometer {
+-(void)runFuckometer
+{
     if ([[BSModel sharedModel] hasSeenFuckometer]) {
         for (UIButton *button in _clinicalButtons) {
             [button setEnabled:YES];
         }
-        [_atlasButton setEnabled:YES];
+        [self.atlasButton setEnabled:YES];
         [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [_tagImageView setFrame:_backgroundImageView.bounds];
         } completion:nil];
@@ -101,14 +101,14 @@
         return;
     }
 
-    [_fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
+    [self.fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             [_fuckometerView setAlpha:0];
         } completion:^(BOOL finished) {
             for (UIButton *button in _clinicalButtons) {
                 [button setEnabled:YES];
             }
-            [_atlasButton setEnabled:YES];
+            [self.atlasButton setEnabled:YES];
             [[BSModel sharedModel] setHasSeenFuckometer:YES];
         }];
     }];
@@ -130,7 +130,6 @@
 {
     [self performSegueWithIdentifier:@"page0-to-quiz" sender:self];
 }
-
 
 - (IBAction)showAboutPage:(id)sender
 {
@@ -168,7 +167,8 @@
 
 #pragma mark BSTutorialImageViewDelegate
 
--(void)dissmissTutorialImageView:(id)tutorialView{
+-(void)dissmissTutorialImageView:(id)tutorialView
+{
     tutorialView = nil;
 }
 

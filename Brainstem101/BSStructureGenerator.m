@@ -47,7 +47,8 @@
     return self;
 }
 
--(void)addNuclei{
+-(void)addNuclei
+{
     
     BSStructure *n0 = [[BSStructure alloc] initWithName:@"Abducens Nucleus" andType:BSStructureTypeNucleus];
     [n0 setStructureDescription:@"Controls Lateral Rectus muscle --an intrinsic muscle of the eye that pulls the eye laterally. An isolated lesion of this nucleus causes Lateral Rectus Palsy. A lack of muscle tone in the temporal aspect results in a nasal deviation of the orbit --affected eye rests in a more medial position."];
@@ -97,11 +98,6 @@
     [n30 setStructureDescription:@"Involved in learning of specialized motor skills. Think figure skating! It receives sensory feedback from the Spino-olivary tracts, and projects to the cerebellum, via climbing fibers traveling through the Inferior Cerebellar Peduncle."];
     [self.Nuclei addObject:n30];
     
-    BSStructure *n12 = [[BSStructure alloc] initWithName:@"Inferior Vestibular Nucleus" andType:BSStructureTypeNucleus];
-    [n12 setStructureDescription:@"Responsible for integrating vestibular signals. Receives input from the semicircular canals, utricle, saccule, and vermis of cerebellum. Efferent fibers project to the reticular nn, as the vestibuloreticular tract, or travel down through the spinal cord as the vestibulospinal tract."];
-    [self.Nuclei addObject:n12];
-    
-    
     
     
     BSStructure *n13 = [[BSStructure alloc] initWithName:@"Interpeduncular Nucleus" andType:BSStructureTypeNucleus];
@@ -112,8 +108,7 @@
     [n14 setStructureDescription:@"Composed of three subnn.  (Parvocellular, Magnocellular, Subtrigeminal) that send signals to the cerebellum. Parvo and Magno receive information mostly from ipsiateral dorsal horn of the spinal cord and project ipsilaterally to cerebellar vermis. The Subtrigeminal receives input mostly from the cortex and projects to the ipsilateral flocconodular lobe. "];
     [self.Nuclei addObject:n14];
     
-    BSStructure *n15 = [[BSStructure alloc] initWithName:@"Lateral Vestibular Nucleus" andType:BSStructureTypeNucleus];
-    [self.Nuclei addObject:n15];
+
     
     BSStructure *n21 = [[BSStructure alloc] initWithName:@"Locus Ceruleus" andType:BSStructureTypeNucleus];
     [n21 setStructureDescription:@"Major site for synthesis of Norepinephrin. Receives input from many regions of the brain -- hypothalamus (regulation of autonomic functions), cyngulate gyrus/amygdala (arousal by emotional distress), Raphe nn. , cerebellum, etc -- and, similarly, projects to many different regions -- hypothalamus, cortex, amygdala, cerebellum, thalamus, etc. -- to enable stress response, arousal, neuroplasticity, attention, memory, balance and more. Decreased activity is associated with: Alzheimer’s, Parkinson’s and depression. Increased activity is associated with: anxiety, panic disorder, Opiod withdrawal."];
@@ -127,9 +122,7 @@
     [self.Nuclei addObject:n17];
     
     
-    BSStructure *n18 = [[BSStructure alloc] initWithName:@"Medial Vestibular Nucleus" andType:BSStructureTypeNucleus];
-    [n18 setStructureDescription:@"Receives input from the semicircular canals and projects to the cervical spinal cord to innervate neck muscles to help stabilize the head in space. "];
-    [self.Nuclei addObject:n18];
+
     
     //TODO: add the tract of this
     BSStructure *t21 = [[BSStructure alloc] initWithName:@"Mesencephalic Nucleus" andType:BSStructureTypeNucleus];
@@ -209,6 +202,20 @@
     
     BSStructure *n36 = [[BSStructure alloc] initWithName:@"Trochlear Nucleus" andType:BSStructureTypeNucleus];
     [self.Nuclei addObject:n36];
+    
+    BSStructure *n12 = [[BSStructure alloc] initWithName:@"Inferior Vestibular Nucleus" andType:BSStructureTypeNucleus];
+    [n12 setStructureDescription:@"Responsible for integrating vestibular signals. Receives input from the semicircular canals, utricle, saccule, and vermis of cerebellum. Efferent fibers project to the reticular nn, as the vestibuloreticular tract, or travel down through the spinal cord as the vestibulospinal tract."];
+    [n12 setStructureName:@"Vestibular Nucleus (Inferior)"];
+    [self.Nuclei addObject:n12];
+    
+    BSStructure *n15 = [[BSStructure alloc] initWithName:@"Lateral Vestibular Nucleus" andType:BSStructureTypeNucleus];
+    [n15 setStructureName:@"Vestibular Nucleus (Lateral)"];
+    [self.Nuclei addObject:n15];
+    
+    BSStructure *n18 = [[BSStructure alloc] initWithName:@"Medial Vestibular Nucleus" andType:BSStructureTypeNucleus];
+    [n18 setStructureName:@"Vestibular Nucleus (Medial)"];
+    [n18 setStructureDescription:@"Receives input from the semicircular canals and projects to the cervical spinal cord to innervate neck muscles to help stabilize the head in space. "];
+    [self.Nuclei addObject:n18];
     
 }
 

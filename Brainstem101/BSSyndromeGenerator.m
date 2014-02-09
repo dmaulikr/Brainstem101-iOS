@@ -1,10 +1,9 @@
-    //
-    //  BSSyndromeGenerator.m
-    //  Brainstem101
-    //
-    //  Created by Brian Freese on 12/5/12.
-    //  Copyright (c) 2012 Brainstem101. All rights reserved.
-    //
+//  BSSyndromeGenerator.m
+//  Brainstem101
+//
+//  Created by Brian Freese on 12/5/12.
+//  Copyright (c) 2012 Brainstem101. All rights reserved.
+//
 
 #import "BSSyndromeGenerator.h"
 
@@ -17,133 +16,128 @@
     // Wallenberg
     BSSyndrome *wallenberg = [[BSSyndrome alloc] initWithName:@"Wallenberg's"];
     
-    [wallenberg setDescription:@"AKA Latteral Medullary Syndrome. Occlusion of Vertabral Artery or PICA causes deficit in lateral part of the medulla."];
+    [wallenberg setDescription:@"AKA Lateral Medullary Syndrome. Occlusion of Vertabral a. or PICA  lateral medullary infaction."];
     
-    [wallenberg addSymptoms:@"Nystagmus, Diplopia, Nausea, Vertigo"
-               andDeficit:@"Vestibular Nuclei"];
+    [wallenberg addSymptoms:@"Nystagmus, Diplopia, Nausea, Vertigo" andDeficit:@"Vestibular Nuc."];
     
-    [wallenberg addSymptoms:@"Ipsilateral cerebellar signs -- dystaxia (a mild form of ataxia), dysmetria (fail past pointing), dysdiadokokinesia (unable to perform rapid alternating motions)"
-               andDeficit: @"Inferior Cerebellar Peduncle"];
+    [wallenberg addSymptoms:@"Ipsilateral cerebellar signs – dystaxia, dysmetria, dysdiadokokinesia"
+                 andDeficit: @"Inferior Cerebellar Peduncle"];
     
-    [wallenberg addSymptoms:@"Palatal myoclonus (Rapid spasms of palatal roof resulting in clicking noise in the ear)"
-               andDeficit:@"Central Tegmental Tract"];
+    [wallenberg addSymptoms:@"Palatal myoclonus (rapid spasms of palatal roof produces a clicking sound)"
+                 andDeficit:@"Central Tegmental Tract"];
     
-    [wallenberg addSymptoms:@"Contralateral Body Hemianalgesia (loss of sensation of pain and temperature)"
-               andDeficit:@"ALS"];
+    [wallenberg addSymptoms:@"Contralateral hemianalgesia of body"
+                 andDeficit:@"ALS"];
     
-    [wallenberg addSymptoms:@"Ipsilateral Facial Hemianalgesia (loss of sensation of pain and temperature) -- Clinical sign: absence of corneal reflex"
-               andDeficit:@"Spinal Trigeminal Nucleus and Tract"];
-
-    [wallenberg addSymptoms:@"Ipsilateral laryngeal, pharyngeal, and palatal hemiparalysis. Presents as dysarthria (difficulty with articulation of speech), hoarseness, dysphagia (Laryngeal muscles), diminished gag reflex (efferent limb of CN X)"
-               andDeficit:@"Nucleus Ambiguus (CN IX, X)"];
+    [wallenberg addSymptoms:@"Ipsilateral hemianalgesia of face and absent corneal reflex"
+                 andDeficit:@"Spinal Trigeminal Nuc."];
     
-    [wallenberg addSymptoms:@"Diminished gag reflex (Afferent limb of CN X)" // TODO
-               andDeficit:@"CN IX (Glossopharyngeal Nerve) Roots"]; 
+    [wallenberg addSymptoms:@"Paralysis of laryngeal, pharyngeal, and palatal muscles results in dysarthria (difficulty with articulation of speech), hoarseness, dysphagia, and diminished gag reflex."
+                 andDeficit:@"Nuc. Ambiguus (CN IX, X)"];
     
-    [wallenberg addSymptoms:@"Ipsilateral Horner's Syndrome -- ptosis (Drooping of eyelid), miosis (Constriction of pupil), anhydrosis (Lack of sweating), facial flushing"
-               andDeficit:@"Hypothalamospinal (Sympathetic) Tract"];
-    
+    [wallenberg addSymptoms:@"Ipsilateral Horner's Syndrome (ptosis, miosis, anhydrosis) with facial flushing."
+                 andDeficit:@"Sympathetic (Hypothalamo-spinal) Tracts"];
     
     //Medial Medullary
     BSSyndrome *medialMedullary = [[BSSyndrome alloc] initWithName:@"Medial Medullary"];
-    [medialMedullary setDescription:@"Occlusion of the anterior spinal artery orparamedian braches of the basilar artery causes deficit in medial part of the medulla."];
+    [medialMedullary setDescription:@"Occlusion of ASA or Basilar’s Paramedian branches  medial medullary infarction"];
     
-    [medialMedullary addSymptoms:@"Ipsilateral flaccid hemiparalysis and atrophy of the tongue (tongue deviates towards lesion upon protrusion)"
-                      andDeficit:@"CN XII Nucleus and/or Fibers"];
+    [medialMedullary addSymptoms:@"Paresis (and possible atrophy) of ipsilateral tongue muscles; protruded tongue points towards lesion)"
+                      andDeficit:@"CN XII Nuc."];
     
-    [medialMedullary addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia of upper and lower extremeties"
+    [medialMedullary addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia"
                       andDeficit:@"Corticospinal Tract"];
     
-    [medialMedullary addSymptoms:@"Contralateral loss of conscious proprioception, discriminative touch, vibratory sensation from trunk and extremities"
+    [medialMedullary addSymptoms:@"Contralateral loss of conscious proprioception, discriminative touch, and vibratory sensation from trunk and extremities"
                       andDeficit:@"Medial Lemniscus"];
-   
+    
     
     //Jackson's
     BSSyndrome *jacksons = [[BSSyndrome alloc] initWithName:@"Jackson's"];
-    [jacksons setDescription:@"AKA MacKenzie's Syndrome. Occlusion of the vertebral artery resulting in deficit in the tegmentum of the medulla."];
+    [jacksons setDescription:@"Occlusion of Vertebral a. infarction of tegmental medulla"];
     
-    [jacksons addSymptoms:@"Ipsilateral paralysis of tongue, soft palate, and vocal chords." 
-             andDeficit:@"Motor Nucleus of Vegus"];
+    [jacksons addSymptoms:@"Ipsilateral paralysis of tongue, soft palate, and vocal chords."
+               andDeficit:@"Motor Nucleus of Vagus"];
     
-    [jacksons addSymptoms:@"Palatal myoclonus (Rapid spasms of palatal roof resulting in clicking noise in the ear)"
-             andDeficit:@"Central Tegmental Tract"];
+    [jacksons addSymptoms:@"Palatal myoclonus (rapid spasms of palatal roof that produce a clicking sound)"
+               andDeficit:@"Central Tegmental Tract"];
     
-    [jacksons addSymptoms:@"Contralateral Body Hemianalgesia (loss of sensation of pain and temperature)"
-             andDeficit:@"ALS"];
+    [jacksons addSymptoms:@"Contralateral Body Hemianalgesia"
+               andDeficit:@"ALS"];
     
-    [jacksons addSymptoms:@"Unilateral paralysis of sternocleidomastoid and trapezius muscle"
-             andDeficit:@"Spinal Accesory Nucleus"];
-
+    [jacksons addSymptoms:@"Ipsilateral paralysis of trapezius and SCM muscles inability to shrug the affected side shoulder or turn head, to opposite side, against resistance"
+               andDeficit:@"Spinal Accesory Nuc."];
+    
     
     // Millard Gubler
     BSSyndrome *millardGubler = [[BSSyndrome alloc] initWithName:@"Millard Gubler's"];
     
-    [millardGubler setDescription:@"AKA Ventral Pontine Syndrome.  Occlusion of perforating branches of Basilar Artery resulting in deficits in ventrocaudal pons."];
+    [millardGubler setDescription:@" AKA Ventral Pontine Syndrome. Occlusion of perforating branches of Basilar a.infarction of ventro-caudal pons"];
     
-    [millardGubler addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia of upper and lower extremeties"
+    [millardGubler addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia"
                     andDeficit:@"Corticospinal Tract"];
     
-    [millardGubler addSymptoms:@"Internal Strabismus (eye deviated inwards) due to Ipsilateral Lateral Rectus Palsy or Paresis (results in diplopia)"
+    [millardGubler addSymptoms:@"Diplopia due to Lateral Rectus Palsy"
                     andDeficit:@"CN VI"];
     
-    [millardGubler addSymptoms:@"Ipsilateral hemiparesis or flaccid paralysis of facial muscles; loss of corneal reflex (efferent component)"
+    [millardGubler addSymptoms:@"Ipsilateral facial droop and loss of corneal and stapedial reflex (efferent component)"
                     andDeficit:@"CN VII"];
-
+    
     
     //Foville's
     BSSyndrome *foville = [[BSSyndrome alloc]initWithName:@"Foville's"];
-    [foville setDescription:@"Occlusion of perforating branches of Basilar Artery resulting in deficits of dorsocaudal pons."];
+    [foville setDescription:@"Occlusion of perforating branches of Basilar Artery  infarction of dorso-caudal pons."];
     
-    [foville addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia of upper and lower extremeties"
+    [foville addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia"
               andDeficit:@"Corticospinal Tract"];
     
-    [foville addSymptoms:@"Internal Strabismus due to Ipsilateral Lateral Rectus Palsy or Paresis (results in diplopia)"
+    [foville addSymptoms:@"Diplopia due to Lateral Rectus Palsy"
               andDeficit:@"CN VI"];
     
     [foville addSymptoms:@"Internuclear Opthalmoplegia (INO)"
               andDeficit:@"MLF"];
     
-    [foville addSymptoms:@"Contrallatral loss of conscious proprioception, discriminative touch, and vibratory sensation in trunk and extremeties"
+    [foville addSymptoms:@"Contralateral loss of conscious proprioception, discriminative touch, and vibratory sensation from trunk and extremities"
               andDeficit:@"Medial Lemniscus"];
     
-    [foville addSymptoms:@"Ipsilateral hemiparesis or flaccid paralysis of facial muscles; Ipsilateral loss of corneal and stapedial reflex (efferent component)"
-              andDeficit:@"Motor nucleus of CN VII (SVE)"];
+    [foville addSymptoms:@" Ipsilateral facial droop and loss of corneal and stapedial reflex (efferent component)"
+              andDeficit:@"Motor Nuc. of CN VII"];
     
-    [foville addSymptoms:@"Ipsilateral loss of taste (anterior 2/3 of tongue)"
-              andDeficit:@"Solitary Nucleus of CN VII (SVA)"];
+    [foville addSymptoms:@"Ipsilateral loss of taste sensation from the anterior 2/3 of tongue"
+              andDeficit:@"Solitary Nuc."];
     
-    [foville addSymptoms:@"Reduced lacrimation and salivation"
-              andDeficit:@"Superior Salivatory Nucleus of CN VII (GVE)"];
+    [foville addSymptoms:@"Problem with lacrimation and salivation"
+              andDeficit:@"Superior Salivary Nuc."];
     
-
+    
     //Raymond-Cestan's
     BSSyndrome *raymondCestan = [[BSSyndrome alloc] initWithName:@"Raymond-Cestan's"];
     
-    [raymondCestan setDescription:@"Occlusion of Circumfrencial Branch of Basilar Artery resulting in deficits of Dorsorostral Pons:"];
+    [raymondCestan setDescription:@"Occlusion of Circumferential Branches of Basilar Artery  Infarction of Dorso-rostral Pons:"];
     
     [raymondCestan addSymptoms:@"Ipsilateral ataxia with coarse intention tremors"
                     andDeficit:@"Middle Cerebellar Peduncle"];
     
     [raymondCestan addSymptoms:@"Contralateral Hemisensory Loss (all modalities from both face and body)"
-                    andDeficit:@"ML+TTT"]; // TODO: Possible ALS
+                    andDeficit:@"ALS, Medial Lemniscus, Trigeminothalamic Tract"];
     
-    [raymondCestan addSymptoms:@"Contralateral Hemiparesis of face and body"
-                    andDeficit:@"Corticospinal, Corticobulbar tracts"];
+    [raymondCestan addSymptoms:@"Contralateral Hemiparesis (face and body)"
+                    andDeficit:@"Corticobulbar & Corticospinal tracts"];
     
     [raymondCestan addSymptoms: @"Ipsilateral paralysis of muscls of mastication"
-                    andDeficit:@"Trigeminal Motor"];
+                    andDeficit:@"Trigeminal Motor Nuc."];
     
-    [raymondCestan addSymptoms:@"Ipsilateral loss of sensation of the face to light touch and proprioception of jaw muscles."
-                    andDeficit:@"Principal Sensory Nucleus"];
+    [raymondCestan addSymptoms:@"Ipsilateral loss of light touch sensation face to light touch and proprioception of jaw muscles."
+                    andDeficit:@"Principal Sensory Nuc."];
     
     [raymondCestan addSymptoms:@"Internal Strabismus due to Ipsilateral Lateral Rectus Palsy or Paresis (results in diplopia)"
                     andDeficit:@"CN VI"];
     
-
+    
     // Weber's
     BSSyndrome *webers = [[BSSyndrome alloc] initWithName:@"Weber's"];
     
-    [webers setDescription:@"AKA Medial Midbrain Syndrome.  Occlusion of Posterior Cerebral Artery (PCA) resulting in deficit of ventral midbrain."];
+    [webers setDescription:@"AKA Medial Midbrain Syndrome.  Occlusion of Posterior Cerebral Artery (PCA)  Infarction of ventral midbrain area."];
     
     [webers addSymptoms:@"Contralateral spastic hemiparesis or Hemiplegia of upper and lower extremeties"
              andDeficit:@"Corticospinal Tract"];
@@ -151,7 +145,7 @@
     [webers addSymptoms:@"Contralateral hemiparesis or hemiplegia of lower face (CN VII), tongue (CN XII) and palate (CN X). Tongue points towards lesion, uvula, away from."
              andDeficit:@"Corticobulbar Tract"];
     
-    [webers addSymptoms:@"Ipsilateral Oculomotor Palsy: dialated pupil, diplopia (due to ipsilateral eye pointing down and out), and ptosis"
+    [webers addSymptoms:@"Ipsilateral Oculomotor Palsy: dialated pupil, diplopia (secondary to ipsilateral eye pointing down and out), and ptosis"
              andDeficit:@"CN III Fibers"];
     
     [webers addSymptoms:@"Contralateral Parkinsonism (tremor, hypokinesia, rigidity, postural instability)"
@@ -161,9 +155,9 @@
     // Benedikt's
     BSSyndrome *benedikts = [[BSSyndrome alloc] initWithName:@"Benedikt's"];
     
-    [benedikts setDescription:@"AKA Paramedian Midbrain Syndrome.  Occlusion of PCA or paramedian branches of Basilar Artery causes deficits in Tegmental Midbrain and Cerebellum."];
+    [benedikts setDescription:@" Occlusion of PCA or paramedian branches of Basilar a.  Infaction of Tegmental Midbrain and Cerebellum. AKA Paramedian Midbrain Syndrome.  "];
     
-    [benedikts addSymptoms:@"Ipsilateral Oculomotor Palsy: dialated pupil, diplopia (due to ipsilateral eye pointing down and out), and ptosis (paralysis of levator palpebrae superioris)"
+    [benedikts addSymptoms:@"Ipsilateral Oculomotor Palsy: dialated pupil, diplopia (ipsilateral eye points down and out), and ptosis (paralysis of levator palpebrae superioris)"
                 andDeficit:@"CN III Fibers"];
     
     [benedikts addSymptoms:@"Contralateral cerebellar dystaxia with intention tremor, hemichorea, hemiathetosis"
@@ -172,74 +166,71 @@
     [benedikts addSymptoms:@"Contrallatral loss of sensation to discriminative touch, vibration, and conscious proprioception of trunk and extremeties"
                 andDeficit:@"Medial Lemniscus"];
     
-    [benedikts addSymptoms:@"Contralateral hemiparesis or hemiplegia of upper and lower extremeties"
+    [benedikts addSymptoms:@"Contralateral hemiparesis or hemiplegia"
                 andDeficit:@"Corticospinal Tract"];
-    
     
     // Nothnagel's
     
     BSSyndrome *nothnagels = [[BSSyndrome alloc]initWithName:@"Nothnagel's"];
     
-    [nothnagels setDescription:@"Dorsal aspect of Rostral Midbrain.  Occlusion of Medial Posterior choroidal Artery (branch of Posterior Cerebral Artery."];
+    [nothnagels setDescription:@"Occlusion of Medial Posterior Choroidal Artery (branch of PCA)  infarction within Dorso-rostral Midbrain."];
     
+    [nothnagels addSymptoms:@"Ipsilateral Oculomotor Palsy: Mydriasis, strabismus (eye points down and out), ptosis (Levator Palpebrae Superioris)"
+                 andDeficit:@"CN III Fibers"];
     
-    [nothnagels addSymptoms:@"Ipsilateral Oculomotor Palsy: dialated pupil, diplopia (due to ipsilateral eye pointing down and out), and ptosis (paralysis of levator palpebrae superioris)"
-                andDeficit:@"CN III Fibers"];
-    
-    [nothnagels addSymptoms:@"Cerebellar Ataxia (inability to coordinate balance, gait, extremity and eye movements.)"
+    [nothnagels addSymptoms:@"Cerebellar Ataxia"
                  andDeficit:@"Dentatorubral Fibers"];
     
     [nothnagels setPerfusionDiagram:@"perfusion-background-nothnagel.png"]; // special case
-
+    
     
     // Claude's
     BSSyndrome *claudes = [[BSSyndrome alloc]initWithName:@"Claude's"];
     
-    [claudes setDescription:@"Occlusion in branch of the Posterior Cerebral Artery (PCA) resulting in deficit of ventral midbrain. In contrast to Weber's Syndrome, the cerebral peduncle is less commonly affected."];
+    [claudes setDescription:@"Occlusion of a branch of the PCA  infarction of ventral midbrain. Note: The cerebral peduncle is less involved in comparison to Weber’s."];
     
     
-    [claudes addSymptoms:@"Ipsilateral Oculomotor Palsy: Mydriasis (dialated pupil), strabismus (eye pointing down and out) causing diplopia (double vision) , ptosis (eyelid droops due to paralysis of Levator Palpebrae Superioris)"
+    [claudes addSymptoms:@"Ipsilateral Oculomotor Palsy: Mydriasis, strabismus (eye points down and out), ptosis (Levator Palpebrae Superioris)"
               andDeficit:@"CN III Fibers"];
     
-    [claudes addSymptoms:@"Ipsilateral cerebellar signs -- dystaxia (a mild form of ataxia), dysmetria (fail past pointing), dysdiadokokinesia (unable to perform rapid alternating motions)"
-              andDeficit:@"Red Nucleus and Cerebello-thalamic Fibers"]; // TODO: Check on the Red Nucleus
-
+    [claudes addSymptoms:@"Ipsilateral cerebellar signs -- dystaxia, dysmetria, dysdiadokokinesia"
+              andDeficit:@"Red Nuc. & Cerebello-thalamic Fibers"];
+    
     
     // Parinaud's
     BSSyndrome *parinauds = [[BSSyndrome alloc]initWithName:@"Parinaud's"];
     
-    [parinauds setDescription:@"AKA Dorsal Midbrain Syndrome. Often due to the compression of the Dorsal Midbrain area by a mass in pineal region."];
+    [parinauds setDescription:@"Usually due to compression of the Dorsal Midbrain area by a pineal mass. AKA Dorsal Midbrain Syndrome. "];
     
-    [parinauds addSymptoms:@"Supranuclear Upgaze Palsy (unable to look up). Upgaze attempt causes convergence-retraction nystagmus. Collier's sign (retracted eyelids, sclera is exposed above iris). Lid lag."
-                andDeficit:@"Superior Colliculi and postectal area"];
+    [parinauds addSymptoms:@"Supranuclear Upgaze Palsy (Upgaze attempt causes convergence-retraction nystagmus). Collier's sign (eyelids are retracted, sclera is visible above the iris)."
+                andDeficit:@"Superior Colliculi & post-tectal area"];
     
-    [parinauds addSymptoms:@"Mydriasis (Dialated Pupil). Light-Near Dissociation (loss of pupilary light reflex, but intact accomodation)."
-                andDeficit:@"CN III Nucleus (Edinger Westphal and Oculomotor Nuclei)"];
+    [parinauds addSymptoms:@"Mydriasis and Light-Near Dissociation (loss of pupilary light reflex, with intact accomodation)."
+                andDeficit:@"CN III Nucleus (Edinger-Westphal & Oculomotor Nuc.)"];
     
     [parinauds addSymptoms:@"Non-communicating hydrocephalus and cerebral edema."
-                andDeficit:@"Obstruction of Cerebral Aqueduct"];
-
+                andDeficit:@"Cerebral Aqueduct (obstructed)"];
+    
     
     //Locked-In
     BSSyndrome *lockedIn = [[BSSyndrome alloc]initWithName:@"Locked-In"];
     
-    [lockedIn setDescription:@"Caused by occlusion of the basilar artery or its major branches resulting in bilateral deficit of ventral pons.  Ability to blink may be preserved if CN III is spared."];
+    [lockedIn setDescription:@"Occlusion of Basilar a. (or major branches of) results in extensive damage in the pons"];
     
-    [lockedIn addSymptoms:@"Complete loss of all sensory modalities along with quardiplegia (bilateral paralysis of extremeties)."
-               andDeficit:@"Extensive damage of Ventral Pons"];
-    
+    [lockedIn addSymptoms:@"Complete paralysis of all voluntary muscles and sensory modalities. Some patients retain the ability to blink; this is because the oculomotor nuclei continues to receive blood from "
+               andDeficit:@"Various Pontine Nuclei/Tracts"];
     
     //Raymond's
     BSSyndrome *raymonds = [[BSSyndrome alloc]initWithName:@"Raymond's"];
-    [raymonds setDescription:@"AKA Ventral Pontine Syndrome.  Occlusion of perforating branches of Basilar Artery resulting in deficits in ventrocaudal pons. (In contrast to Millard-Gubler's Syndrome, CN VII is not involved.)"];
+    [raymonds setDescription:@"AKA Ventral Pontine Syndrome.  Occlusion of perforating branches of Basilar Artery causes deficits in ventro-caudal pons. (unlike Millard-Gubler's Syndrome, CN VII is not involved.)"];
     
-    [raymonds addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia of upper and lower extremeties"
-                    andDeficit:@"Corticospinal Tract"];
+    [raymonds addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia"
+               andDeficit:@"Corticospinal Tract"];
     
-    [raymonds addSymptoms:@"Internal Strabismus (eye deviated inwards) due to Ipsilateral Lateral Rectus Palsy or Paresis (results in diplopia)"
-                    andDeficit:@"CN VI"];
-
-
+    [raymonds addSymptoms:@"Diplopia due to Lateral Rectus Palsy"
+               andDeficit:@"CN VI"];
+    
+    
     //Configure order of syndromes
     [allSyndromes addObject:webers];
     [allSyndromes addObject:claudes];
@@ -256,7 +247,6 @@
     [allSyndromes addObject:lockedIn];
     
     return allSyndromes;
-        
 }
 
 @end

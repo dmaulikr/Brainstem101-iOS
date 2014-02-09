@@ -38,8 +38,6 @@
 		3213C967170D661D000DF667 /* hypoglossal-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93E170D661D000DF667 /* hypoglossal-n-overlay-side.png */; };
 		3213C968170D661D000DF667 /* inferior-colliculus-m-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93F170D661D000DF667 /* inferior-colliculus-m-overlay-back.png */; };
 		3213C969170D661D000DF667 /* inferior-colliculus-m-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C940170D661D000DF667 /* inferior-colliculus-m-overlay-side.png */; };
-		3213C96A170D661D000DF667 /* lateral-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C941170D661D000DF667 /* lateral-vestibular-n-overlay-back.png */; };
-		3213C96B170D661D000DF667 /* medial-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C942170D661D000DF667 /* medial-vestibular-n-overlay-back.png */; };
 		3213C96C170D661D000DF667 /* mesencephalic-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C943170D661D000DF667 /* mesencephalic-n-overlay-back.png */; };
 		3213C96D170D661D000DF667 /* mesencephalic-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C944170D661D000DF667 /* mesencephalic-n-overlay-side.png */; };
 		3213C96E170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C945170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png */; };
@@ -348,6 +346,10 @@
 		328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */; };
 		32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AFEDF816D9D183006A3101 /* BSDrawView.m */; };
 		32B54D92171875AA0064654C /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B54D91171875AA0064654C /* pencil.png */; };
+		32B9A84818A7471A0027805F /* inferior-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */; };
+		32B9A84918A7471A0027805F /* lateral-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */; };
+		32B9A84A18A7471A0027805F /* medial-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */; };
+		32B9A84B18A7471A0027805F /* superior-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84718A7471A0027805F /* superior-vestibular-n-overlay-back.png */; };
 		32BAE79E1718048200F04334 /* iii-oculomotor-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7941718048200F04334 /* iii-oculomotor-cn-overlay-side.png */; };
 		32BAE79F1718048200F04334 /* iv-trochlear-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7951718048200F04334 /* iv-trochlear-cn-overlay-side.png */; };
 		32BAE7A01718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7961718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png */; };
@@ -707,8 +709,6 @@
 		3213C93E170D661D000DF667 /* hypoglossal-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hypoglossal-n-overlay-side.png"; sourceTree = "<group>"; };
 		3213C93F170D661D000DF667 /* inferior-colliculus-m-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-colliculus-m-overlay-back.png"; sourceTree = "<group>"; };
 		3213C940170D661D000DF667 /* inferior-colliculus-m-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-colliculus-m-overlay-side.png"; sourceTree = "<group>"; };
-		3213C941170D661D000DF667 /* lateral-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C942170D661D000DF667 /* medial-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
 		3213C943170D661D000DF667 /* mesencephalic-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-n-overlay-back.png"; sourceTree = "<group>"; };
 		3213C944170D661D000DF667 /* mesencephalic-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-n-overlay-side.png"; sourceTree = "<group>"; };
 		3213C945170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle-m-overlay-back.png"; sourceTree = "<group>"; };
@@ -1042,6 +1042,10 @@
 		32AFEDF716D9D183006A3101 /* BSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawView.h; sourceTree = "<group>"; };
 		32AFEDF816D9D183006A3101 /* BSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawView.m; sourceTree = "<group>"; };
 		32B54D91171875AA0064654C /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
+		32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
+		32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
+		32B9A84718A7471A0027805F /* superior-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
 		32BAE7941718048200F04334 /* iii-oculomotor-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iii-oculomotor-cn-overlay-side.png"; sourceTree = "<group>"; };
 		32BAE7951718048200F04334 /* iv-trochlear-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iv-trochlear-cn-overlay-side.png"; sourceTree = "<group>"; };
 		32BAE7961718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ix-glossopharyngeal-cn-overlay-side.png"; sourceTree = "<group>"; };
@@ -2261,8 +2265,6 @@
 				3213C93E170D661D000DF667 /* hypoglossal-n-overlay-side.png */,
 				3213C93F170D661D000DF667 /* inferior-colliculus-m-overlay-back.png */,
 				3213C940170D661D000DF667 /* inferior-colliculus-m-overlay-side.png */,
-				3213C941170D661D000DF667 /* lateral-vestibular-n-overlay-back.png */,
-				3213C942170D661D000DF667 /* medial-vestibular-n-overlay-back.png */,
 				3213C943170D661D000DF667 /* mesencephalic-n-overlay-back.png */,
 				3213C944170D661D000DF667 /* mesencephalic-n-overlay-side.png */,
 				32D84797178D463400718C4C /* medial-lemniscus-t-overlay-back.png */,
@@ -2288,6 +2290,10 @@
 				3213C956170D661D000DF667 /* trigeminal-motor-n-overlay-side.png */,
 				3213C957170D661D000DF667 /* trochlear-n-overlay-back.png */,
 				3213C958170D661D000DF667 /* trochlear-n-overlay-side.png */,
+				32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */,
+				32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */,
+				32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */,
+				32B9A84718A7471A0027805F /* superior-vestibular-n-overlay-back.png */,
 			);
 			path = "Nuclei Tracts Misc";
 			sourceTree = "<group>";
@@ -2608,8 +2614,6 @@
 				3213C967170D661D000DF667 /* hypoglossal-n-overlay-side.png in Resources */,
 				3213C968170D661D000DF667 /* inferior-colliculus-m-overlay-back.png in Resources */,
 				3213C969170D661D000DF667 /* inferior-colliculus-m-overlay-side.png in Resources */,
-				3213C96A170D661D000DF667 /* lateral-vestibular-n-overlay-back.png in Resources */,
-				3213C96B170D661D000DF667 /* medial-vestibular-n-overlay-back.png in Resources */,
 				3213C96C170D661D000DF667 /* mesencephalic-n-overlay-back.png in Resources */,
 				3213C96D170D661D000DF667 /* mesencephalic-n-overlay-side.png in Resources */,
 				3213C96E170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png in Resources */,
@@ -2700,6 +2704,7 @@
 				32FB65F4171FDF0B005E6DE6 /* corticospinal-t-4.xml in Resources */,
 				32FB65F5171FDF0B005E6DE6 /* corticospinal-t-5.xml in Resources */,
 				32FB65F6171FDF0B005E6DE6 /* corticospinal-t-6.xml in Resources */,
+				32B9A84818A7471A0027805F /* inferior-vestibular-n-overlay-back.png in Resources */,
 				32FB65F7171FDF0B005E6DE6 /* corticospinal-t-7.xml in Resources */,
 				32FB65F8171FDF0B005E6DE6 /* corticospinal-t-8.xml in Resources */,
 				32FB65F9171FDF0B005E6DE6 /* crus-cerebri-?-7.xml in Resources */,
@@ -2778,6 +2783,7 @@
 				32FB6644171FDF0B005E6DE6 /* mesencephalic-n-8.xml in Resources */,
 				32FB6648171FDF0B005E6DE6 /* nucleus-ambiguus-n-1.xml in Resources */,
 				32FB6649171FDF0B005E6DE6 /* nucleus-ambiguus-n-2.xml in Resources */,
+				32B9A84B18A7471A0027805F /* superior-vestibular-n-overlay-back.png in Resources */,
 				32FB664A171FDF0B005E6DE6 /* nucleus-centralis-superior-n-6.xml in Resources */,
 				32FB664B171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-6.xml in Resources */,
 				32FB664C171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-7.xml in Resources */,
@@ -3033,6 +3039,7 @@
 				32782EB317B4A701008C072D /* ventral-pontine-syndrome-4.png in Resources */,
 				32782EB417B4A701008C072D /* als-5.png in Resources */,
 				32782EB517B4A701008C072D /* central-tegmental-tract-5.png in Resources */,
+				32B9A84918A7471A0027805F /* lateral-vestibular-n-overlay-back.png in Resources */,
 				32782EB617B4A701008C072D /* locked-in-5.png in Resources */,
 				32782EB717B4A701008C072D /* locus-ceruleus-5.png in Resources */,
 				32782EB817B4A701008C072D /* medial-lemniscus-5.png in Resources */,
@@ -3066,6 +3073,7 @@
 				32782ED417B4A701008C072D /* medial-lemniscus-7.png in Resources */,
 				32782ED517B4A701008C072D /* mlf-7.png in Resources */,
 				32782ED617B4A701008C072D /* periaqueductal-grey-7.png in Resources */,
+				32B9A84A18A7471A0027805F /* medial-vestibular-n-overlay-back.png in Resources */,
 				32782ED717B4A701008C072D /* quiz-background-7.png in Resources */,
 				32782ED817B4A701008C072D /* superior-cerebellar-peduncle-7.png in Resources */,
 				32782ED917B4A701008C072D /* trochlear-nucleus-7.png in Resources */,

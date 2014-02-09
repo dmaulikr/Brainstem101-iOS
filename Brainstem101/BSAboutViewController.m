@@ -8,10 +8,6 @@
 
 #import "BSAboutViewController.h"
 
-@interface BSAboutViewController ()
-
-@end
-
 @implementation BSAboutViewController
 
 - (void)viewDidLoad
@@ -30,6 +26,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
 
 @end

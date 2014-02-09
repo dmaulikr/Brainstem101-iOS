@@ -10,7 +10,8 @@
 
 @implementation BSQuestionGenerator
 
-+ (NSArray *) questions {
++ (NSArray *) questions
+{
     NSMutableArray *tmp = [NSMutableArray new];
     // generated using gen.py in Images/Quiz
     [tmp addObject:[self questionWithAnswer:@"ACCESSORY NUCLEUS (CNXI)" foregroundImageName:@"accessory-nucleus-(CNXI)-0.png" andBackgroundImageName:@"quiz-background-0.png"]];

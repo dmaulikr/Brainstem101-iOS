@@ -20,19 +20,23 @@
     return self;
 }
 
-+ (BSSection *) atlasSectionNumber:(int)num{
++ (BSSection *)atlasSectionNumber:(int)num
+{
     return [[BSSection alloc] initWithSectionNumber:num];
 }
 
-+ (BSSection *) profileSectionNumber:(int)num{
++ (BSSection *) profileSectionNumber:(int)num
+{
     return [[BSSection alloc] initWithSectionNumber:num];
 }
 
-- (UIImage *) atlasImage{
+- (UIImage *)atlasImage
+{
     return [UIImage imageNamed:[NSString stringWithFormat:@"atlas-sxn-%d.png", _sectionNumber]];
 }
 
-- (UIImage *) profileImage{
+- (UIImage *)profileImage
+{
     return [UIImage imageNamed:[NSString stringWithFormat:@"profile-sxn-%d.png", _sectionNumber]];
 }
 
