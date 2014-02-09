@@ -23,6 +23,7 @@
 + (BSTutorialImageView *) atlasTutorial;
 + (BSTutorialImageView *) clinicalTutorial;
 + (BSTutorialImageView *) profileTutorial;
++ (BSTutorialImageView *) quizTutorial;
 
 @end
 

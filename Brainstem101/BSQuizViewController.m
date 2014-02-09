@@ -20,6 +20,31 @@
     questions = [BSQuestionGenerator questions];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    if ([[BSModel sharedModel] inTutorialMode]) {
+        if (![self.view viewWithTag:8008]) {
+            BSTutorialImageView *tutorialView = [BSTutorialImageView quizTutorial];
+            [tutorialView setDelegate:self];
+            [tutorialView setTag:8008];
+            [tutorialView setAlpha:0.0];
+            [self.view addSubview:tutorialView];
+            [UIView animateWithDuration:0.5     delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                [tutorialView setAlpha:1.0];
+            } completion:nil];
+        }
+    }
+}
+
+#pragma mark BSTutorialImageViewDelegate
+
+-(void)dissmissTutorialImageView:(id)tutorialView
+{
+    tutorialView = nil;
+}
+
 - (IBAction)backAction:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];

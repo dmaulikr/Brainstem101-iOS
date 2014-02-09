@@ -10,8 +10,8 @@
 
 const static int exitButtonWidthHeight = 150;
 
-
-@implementation BSTutorialImageView{
+@implementation BSTutorialImageView
+{
     CGRect yesButtonFrame;
     CGRect noButtonFrame;
 }
@@ -27,9 +27,9 @@ const static int exitButtonWidthHeight = 150;
         noButtonFrame = CGRectMake(410, 485, 90, 90);
         
         [self setUserInteractionEnabled:YES];
-        _exitButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_exitButton addTarget:self action:@selector(quitTutorial:) forControlEvents:UIControlEventTouchUpInside];
-        [_exitButton setFrame: CGRectMake(tutorialFrame.size.width - exitButtonWidthHeight , tutorialFrame.size.height - exitButtonWidthHeight, exitButtonWidthHeight, exitButtonWidthHeight)];
+        self.exitButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self.exitButton addTarget:self action:@selector(quitTutorial:) forControlEvents:UIControlEventTouchUpInside];
+        [self.exitButton setFrame: CGRectMake(tutorialFrame.size.width - exitButtonWidthHeight , tutorialFrame.size.height - exitButtonWidthHeight, exitButtonWidthHeight, exitButtonWidthHeight)];
         [self addSubview:_exitButton];
         
         [[BSModel sharedModel] setInTutorialMode:YES];
@@ -38,38 +38,50 @@ const static int exitButtonWidthHeight = 150;
 }
 
 
-+ (BSTutorialImageView *) askTutorial {
++ (BSTutorialImageView *)askTutorial
+{
     BSTutorialImageView *tutorialView = [[BSTutorialImageView alloc] init];
     [tutorialView askTutorial];
     return tutorialView;
 }
 
-+ (BSTutorialImageView *) page0Tutorial {
++(BSTutorialImageView *)page0Tutorial
+{
     BSTutorialImageView *tutorialView = [[BSTutorialImageView alloc] init];
     [tutorialView page0Tutorial];
     return tutorialView;
 }
 
-+ (BSTutorialImageView *) atlasTutorial {
++(BSTutorialImageView *)atlasTutorial
+{
     BSTutorialImageView *tutorialView = [[BSTutorialImageView alloc] init];
     [tutorialView atlasTutorial];
     return tutorialView;
 }
 
-+ (BSTutorialImageView *) clinicalTutorial {
++(BSTutorialImageView *)clinicalTutorial
+{
     BSTutorialImageView *tutorialView = [[BSTutorialImageView alloc] init];
     [tutorialView clinicalTutorial];
     return tutorialView;
 }
 
-+ (BSTutorialImageView *) profileTutorial {
++(BSTutorialImageView *)profileTutorial
+{
     BSTutorialImageView *tutorialView = [[BSTutorialImageView alloc] init];
     [tutorialView profileTutorial];
     return tutorialView;
 }
 
++(BSTutorialImageView *)quizTutorial
+{
+    BSTutorialImageView *tutorialView = [[BSTutorialImageView alloc] init];
+    [tutorialView quizTutorial];
+    return tutorialView;
+}
 
-- (void)quitTutorial:(UIButton *) sender{
+-(void)quitTutorial:(UIButton *)sender
+{
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
         [self setAlpha:0.0];
     } completion:^(BOOL finished) {
@@ -80,8 +92,8 @@ const static int exitButtonWidthHeight = 150;
     }];
 }
 
--(void) askTutorial {
-    
+-(void)askTutorial
+{
     [self setImage:[UIImage imageNamed:@"tutorial-ask.png"]];
     
     UIButton *yesButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -95,7 +107,8 @@ const static int exitButtonWidthHeight = 150;
     [self addSubview:noButton];
 }
 
-- (void) userRespondedYes {
+-(void)userRespondedYes
+{
     for (UIView *view in self.subviews) {
         if (view != _exitButton) {
             [view removeFromSuperview];
@@ -111,27 +124,38 @@ const static int exitButtonWidthHeight = 150;
     }];
 }
 
-- (void) userRespondedNo {
+-(void)userRespondedNo
+{
     [self quitTutorial:nil];
 }
 
--(void) page0Tutorial {
+-(void)page0Tutorial
+{
     [self setImage:[UIImage imageNamed:@"tutorial-page0.png"]];
 }
 
--(void) atlasTutorial{
+-(void)atlasTutorial
+{
     [self setImage:[UIImage imageNamed:@"tutorial-atlas.png"]];
 }
 
--(void) clinicalTutorial{
+-(void)clinicalTutorial
+{
     [self setImage:[UIImage imageNamed:@"tutorial-clinical.png"]];
 }
 
--(void) profileTutorial{
+-(void)profileTutorial
+{
     [self setImage:[UIImage imageNamed:@"tutorial-profile.png"]];
 }
 
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+-(void)quizTutorial
+{
+    [self setImage:[UIImage imageNamed:@"tutorial-quiz.png"]];
+}
+
+-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
     if (CGRectContainsPoint(_exitButton.frame, point) || CGRectContainsPoint(yesButtonFrame, point) || CGRectContainsPoint(noButtonFrame, point)){
         return YES;
     }

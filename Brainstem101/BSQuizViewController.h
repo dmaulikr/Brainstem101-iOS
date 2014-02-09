@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "BSQuestionGenerator.h"
 #import "BSQuizQuestion.h"
+#import "BSTutorialImageView.h"
 
-@interface BSQuizViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@interface BSQuizViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, BSTutorialImageViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
