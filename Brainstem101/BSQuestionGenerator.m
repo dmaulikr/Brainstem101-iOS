@@ -176,7 +176,7 @@
     
     // Shuffle array
     for(NSUInteger i = [tmp count]; i > 1; i--) {
-        NSUInteger j = arc4random_uniform(i);
+        NSUInteger j = arc4random() % tmp.count;
         [tmp exchangeObjectAtIndex:i-1 withObjectAtIndex:j];
     }
     

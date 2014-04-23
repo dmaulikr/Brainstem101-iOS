@@ -9,15 +9,13 @@
 #ifndef Brainstem101_Constants_h
 #define Brainstem101_Constants_h
 
-enum BSStructureType {
+typedef NS_ENUM(NSUInteger, BSStructureType) {
     BSStructureTypeNucleus = 0,
-    BSStructureTypeTract = 1,
-    BSStructureTypeArtery = 2,
-    BSStructureTypeMiscellaneous = 3,
-    BSStructureTypeCranialNerve = 4
+    BSStructureTypeTract,
+    BSStructureTypeArtery,
+    BSStructureTypeMiscellaneous,
+    BSStructureTypeCranialNerve,
 };
-typedef enum BSStructureType BSStructureType;
-
 
 #define DegreesToRadians(x) ((x) * M_PI / 180.0)
 

@@ -175,7 +175,7 @@
             [header setText:@"Cranial Nerves"];
             break;
         default:
-            NSLog(@"Error : something went wrong in Atlas -> view for header in section \n --> secionOffset equals %d", section);
+            NSLog(@"Error : something went wrong in Atlas -> view for header in section \n --> secionOffset equals %ld", (long)section);
             break;
     }
     [background addSubview:header];

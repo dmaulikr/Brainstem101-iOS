@@ -23,7 +23,7 @@
 @property (strong, nonatomic)   BSStemView *stemView;
 @property (strong, nonatomic)   BSGlassStemView *glassStemView;
 @property (strong, nonatomic)   BSStructure *currentStructure;
-@property (assign)              int stemViewStyle;
+@property (assign)              NSInteger stemViewStyle;
 
 - (IBAction)handleSingleTap:(UITapGestureRecognizer*)sender;
 - (IBAction)handleSwipe:(UISwipeGestureRecognizer *)sender;
