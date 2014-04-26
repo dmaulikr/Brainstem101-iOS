@@ -12,14 +12,16 @@
 
 @interface BSPage0ViewController : UIViewController <BSTutorialImageViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (strong, nonatomic) IBOutlet UIImageView *tagImageView;
-@property (strong, nonatomic) IBOutlet UIButton *atlasButton;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *clinicalButtons;
-@property (strong, nonatomic) IBOutlet BSFuckometerView *fuckometerView;
+@property (strong, nonatomic) UIImageView *backgroundImageView;
+@property (strong, nonatomic) UIImageView *backgroundOverlayImageView;
+@property (strong, nonatomic) UIImageView *tagImageView;
 
-- (IBAction)enterTutorial:(id)sender;
-- (IBAction)buttonPressed:(id)sender;
-- (IBAction)quizAction:(id)sender;
+@property (strong, nonatomic) BSFuckometerView *fuckometerView;
+
+@property (strong, nonatomic) UIButton *atlasButton;
+@property (strong, nonatomic) UIButton *clinicalButton;
+@property (strong, nonatomic) UIButton *quizButton;
+@property (strong, nonatomic) UIButton *tutorialButton;
+@property (strong, nonatomic) UIButton *aboutButton;
 
 @end

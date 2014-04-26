@@ -18,7 +18,6 @@
 		320D186117094FBD002D9E15 /* BSClinicalDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D186017094FBC002D9E15 /* BSClinicalDetailsTableViewCell.m */; };
 		320D70361831F17D000F6AFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320D70351831F17D000F6AFA /* Images.xcassets */; };
 		320D70391831F3B4000F6AFA /* BSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D70381831F3B4000F6AFA /* BSAboutViewController.m */; };
-		320D703B1831F99A000F6AFA /* page0-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703A1831F99A000F6AFA /* page0-background.png */; };
 		320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703F183219EB000F6AFA /* tutorial-clinical.png */; };
 		3213C92F170D61FB000DF667 /* stem-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92D170D61FB000DF667 /* stem-back.png */; };
 		3213C930170D61FB000DF667 /* stem-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92E170D61FB000DF667 /* stem-side.png */; };
@@ -395,8 +394,6 @@
 		32C46230176CE0FF00B55189 /* glass-stem-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621D176CE0FF00B55189 /* glass-stem-8.png */; };
 		32C46231176CE0FF00B55189 /* glass-stem-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621E176CE0FF00B55189 /* glass-stem-9.png */; };
 		32CC33B9176C609600000F07 /* BSQuizView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC33B8176C609600000F07 /* BSQuizView.m */; };
-		32CEEFF21839774B00CF3035 /* page0-background-paralax.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CEEFF11839774B00CF3035 /* page0-background-paralax.png */; };
-		32CEEFF41839779500CF3035 /* page0-background-paralax-cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CEEFF31839779500CF3035 /* page0-background-paralax-cover.png */; };
 		32CEEFF6183986A800CF3035 /* quiz-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CEEFF5183986A800CF3035 /* quiz-background.png */; };
 		32D33534179E542100F95A7D /* anterior-inferior-cerebellar-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351C179E542100F95A7D /* anterior-inferior-cerebellar-4.png */; };
 		32D33535179E542100F95A7D /* anterior-inferior-cerebellar-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351D179E542100F95A7D /* anterior-inferior-cerebellar-5.png */; };
@@ -680,7 +677,6 @@
 		320D70351831F17D000F6AFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		320D70371831F3B4000F6AFA /* BSAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAboutViewController.h; sourceTree = "<group>"; };
 		320D70381831F3B4000F6AFA /* BSAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAboutViewController.m; sourceTree = "<group>"; };
-		320D703A1831F99A000F6AFA /* page0-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background.png"; sourceTree = "<group>"; };
 		320D703F183219EB000F6AFA /* tutorial-clinical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-clinical.png"; sourceTree = "<group>"; };
 		3213C92D170D61FB000DF667 /* stem-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-back.png"; sourceTree = "<group>"; };
 		3213C92E170D61FB000DF667 /* stem-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-side.png"; sourceTree = "<group>"; };
@@ -1075,8 +1071,6 @@
 		32C4621E176CE0FF00B55189 /* glass-stem-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-9.png"; sourceTree = "<group>"; };
 		32CC33B7176C609600000F07 /* BSQuizView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizView.h; sourceTree = "<group>"; };
 		32CC33B8176C609600000F07 /* BSQuizView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizView.m; sourceTree = "<group>"; };
-		32CEEFF11839774B00CF3035 /* page0-background-paralax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background-paralax.png"; sourceTree = "<group>"; };
-		32CEEFF31839779500CF3035 /* page0-background-paralax-cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0-background-paralax-cover.png"; sourceTree = "<group>"; };
 		32CEEFF5183986A800CF3035 /* quiz-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background.png"; sourceTree = "<group>"; };
 		32D3351C179E542100F95A7D /* anterior-inferior-cerebellar-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-4.png"; sourceTree = "<group>"; };
 		32D3351D179E542100F95A7D /* anterior-inferior-cerebellar-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-5.png"; sourceTree = "<group>"; };
@@ -1470,9 +1464,6 @@
 		326CD45316D3684600E2800C /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				32CEEFF11839774B00CF3035 /* page0-background-paralax.png */,
-				32CEEFF31839779500CF3035 /* page0-background-paralax-cover.png */,
-				320D703A1831F99A000F6AFA /* page0-background.png */,
 				3253620118A7726100017864 /* page0-background-tag.png */,
 				32CEEFF5183986A800CF3035 /* quiz-background.png */,
 				321C8EA21711224600517510 /* draw-mode-background.png */,
@@ -2820,7 +2811,6 @@
 				32FB6695171FDF0B005E6DE6 /* trochlear-n-7.xml in Resources */,
 				32FB6696171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml in Resources */,
 				32FB6697171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml in Resources */,
-				32CEEFF21839774B00CF3035 /* page0-background-paralax.png in Resources */,
 				32FB6698171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml in Resources */,
 				32FB6699171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml in Resources */,
 				32FB669A171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml in Resources */,
@@ -2835,7 +2825,6 @@
 				32FB66A4171FE584005E6DE6 /* clinical-hole-overlay.png in Resources */,
 				326F878F17212522008E923E /* locked-in-mug.png in Resources */,
 				326F87931721360F008E923E /* middle-cerebellar-peduncle-m-4.xml in Resources */,
-				32CEEFF41839779500CF3035 /* page0-background-paralax-cover.png in Resources */,
 				326F87941721360F008E923E /* middle-cerebellar-peduncle-m-5.xml in Resources */,
 				326F87951721360F008E923E /* middle-cerebellar-peduncle-m-6.xml in Resources */,
 				326F879717213702008E923E /* superior-cerebellar-peduncle-m-7.xml in Resources */,
@@ -2934,7 +2923,6 @@
 				32782E7817B4A701008C072D /* internal-arcuate-fibers-1.png in Resources */,
 				32782E7917B4A701008C072D /* medial-lemniscus-1.png in Resources */,
 				32782E7A17B4A701008C072D /* nucleus-ambiguus-1.png in Resources */,
-				320D703B1831F99A000F6AFA /* page0-background.png in Resources */,
 				32782E7B17B4A701008C072D /* proprioception-vibration-&-fine-touch-1.png in Resources */,
 				32782E7C17B4A701008C072D /* quiz-background-1.png in Resources */,
 				32782E7D17B4A701008C072D /* solitary-nucleus-1.png in Resources */,

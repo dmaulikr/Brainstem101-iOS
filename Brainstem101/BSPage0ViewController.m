@@ -7,6 +7,7 @@
 //
 
 #import "BSPage0ViewController.h"
+#import <UIView+Positioning.h>
 
 #define LOAD_TIME 5
 
@@ -15,30 +16,59 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    for (UIButton *button in _clinicalButtons) {
-        [button setEnabled:NO];
-    }
-    [self.atlasButton setEnabled:NO];
-    
-    [self setupParalax];
+    self.backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [self.backgroundImageView setImage:[UIImage imageNamed:@"master-background"]];
+    [self.view addSubview:self.backgroundImageView];
     
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if (![self.view viewWithTag:(int)@"settingstag"]) {
-        self.tagImageView = [[UIImageView alloc] init];
-        [self.tagImageView setTag:(int)@"settingstag"];
-        CGRect newFrame = _backgroundImageView.bounds;
-        newFrame.origin.x = newFrame.origin.x + 200;
-        [self.tagImageView setFrame:newFrame];
-        [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag.png"]];
-        [self.backgroundImageView addSubview:_tagImageView];
+    
+    if (self.fuckometerView) {
+        return;
     }
     
-    [self runFuckometer];
+    // add fuckometer
+    CGRect fuckometerFrame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/3.5);
+    self.fuckometerView = [[BSFuckometerView alloc] initWithFrame:fuckometerFrame];
+    self.fuckometerView.centerY += 270;
+    self.fuckometerView.centerX -= 10;
+    [self.backgroundImageView addSubview:self.fuckometerView];
     
+    [self.fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
+        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [self.fuckometerView setAlpha:0];
+        } completion:^(BOOL finished) {
+            
+            // add overlay
+            self.backgroundOverlayImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+            [self.backgroundOverlayImageView setImage:[UIImage imageNamed:@"zero-overlay"]];
+            [self.backgroundOverlayImageView setAlpha:0.0];
+            [self.backgroundImageView addSubview:self.backgroundOverlayImageView];
+            
+            //add tag
+            CGFloat amoutToMoveTag = 200.0;
+            self.tagImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+            [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag"]];
+            self.tagImageView.centerX += amoutToMoveTag;
+            [self.backgroundImageView addSubview:self.tagImageView];
+            
+            [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                [self.backgroundOverlayImageView setAlpha:1];
+                self.tagImageView.centerX -= amoutToMoveTag;
+            } completion:^(BOOL finished) {
+                
+                [self setupButtons];
+                
+            }];
+            
+            
+        }];
+    }];
+
+    // Tutorial
     if ([[BSModel sharedModel] isFirstLaunch]) {
         
         double delayInSeconds = LOAD_TIME;
@@ -47,15 +77,62 @@
             [self askUserIfTheyWantToSeeTheTutorial];
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLaunched"];
         });
-    }else{
+    } else {
         if ([[BSModel sharedModel] inTutorialMode]) {
             double delayInSeconds = LOAD_TIME;
             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
             dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-                [self enterTutorial:nil];
+                [self enterTutorial];
             });
         }
     }
+}
+
+- (void)setupButtons
+{
+    // atlas button
+    self.atlasButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.atlasButton.frame = CGRectMake(0, 0, 260, 260);
+    self.atlasButton.centerX = (self.view.bounds.size.width/2) - 10;
+    self.atlasButton.centerY += 280;
+    [self.atlasButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.atlasButton];
+    
+    // clinical button
+    self.clinicalButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.clinicalButton.frame = CGRectMake(0, 0, 260, 260);
+    self.clinicalButton.centerX = (self.view.bounds.size.width/2) - 10;
+    self.clinicalButton.centerY += 600;
+    [self.clinicalButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.clinicalButton];
+    
+    // quiz button
+    self.quizButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.quizButton.frame = CGRectMake(0, 0, 180, 45);
+//    self.quizButton.backgroundColor = [UIColor redColor];
+    self.quizButton.right = self.view.bounds.size.width;
+    self.quizButton.centerY += 440;
+    [self.quizButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.quizButton];
+    
+    // tutorial button
+    self.tutorialButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.tutorialButton.frame = CGRectMake(0, 0, 180, 45);
+//    self.tutorialButton.backgroundColor = [UIColor greenColor];
+    self.tutorialButton.right = self.view.bounds.size.width;
+    self.tutorialButton.centerY = self.quizButton.centerY + self.quizButton.size.height;
+    [self.tutorialButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.tutorialButton];
+    
+    // about button
+    self.aboutButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.aboutButton.frame = CGRectMake(0, 0, 180, 45);
+//    self.aboutButton.backgroundColor = [UIColor yellowColor];
+    self.aboutButton.right = self.view.bounds.size.width;
+    self.aboutButton.centerY = self.tutorialButton.centerY + self.tutorialButton.size.height;
+    [self.aboutButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.aboutButton];
+    
 }
 
 -(void)askUserIfTheyWantToSeeTheTutorial
@@ -72,7 +149,7 @@
     }
 }
 
--(IBAction) enterTutorial:(id)sender
+-(void)enterTutorial
 {
     if (![self.view viewWithTag:8008]) {
         BSTutorialImageView *tutorialView = [BSTutorialImageView page0Tutorial];
@@ -86,92 +163,28 @@
     }
 }
 
-
--(void)runFuckometer
+-(void)buttonPressed:(UIButton *)sender
 {
-    if ([[BSModel sharedModel] hasSeenFuckometer]) {
-        for (UIButton *button in _clinicalButtons) {
-            [button setEnabled:YES];
-        }
-        [self.atlasButton setEnabled:YES];
-        [UIView animateWithDuration:1.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            [_tagImageView setFrame:_backgroundImageView.bounds];
-        } completion:nil];
-
-        return;
-    }
-
-    [self.fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
-        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            [_fuckometerView setAlpha:0];
-        } completion:^(BOOL finished) {
-            for (UIButton *button in _clinicalButtons) {
-                [button setEnabled:YES];
-            }
-            [self.atlasButton setEnabled:YES];
-            [[BSModel sharedModel] setHasSeenFuckometer:YES];
-        }];
-    }];
-}
-
-
-
-- (IBAction)buttonPressed:(UIButton *)sender {
-    if (sender == _atlasButton) {
+    if (sender == self.atlasButton) {
         [self performSegueWithIdentifier:@"page0-to-atlas" sender:self];
-    }else if ([_clinicalButtons containsObject: sender] ){
+    }else if (sender == self.clinicalButton){
         [self performSegueWithIdentifier:@"page0-to-clinical" sender:self];
+    }else if (sender == self.quizButton){
+        [self performSegueWithIdentifier:@"page0-to-quiz" sender:self];
+    }else if (sender == self.tutorialButton){
+        [self enterTutorial];
+    }else if (sender == self.aboutButton){
+        [self performSegueWithIdentifier:@"page0-to-about" sender:self];
     }else{
         NSLog(@"Button action not defined");
     }
 }
 
-- (IBAction)quizAction:(id)sender
-{
-    [self performSegueWithIdentifier:@"page0-to-quiz" sender:self];
-}
-
-- (IBAction)showAboutPage:(id)sender
-{
-    [self performSegueWithIdentifier:@"page0-to-about" sender:self];
-}
-
-#pragma mark - MotionEffects
-
--(void)setupParalax
-{
-    // Set vertical effect
-    UIInterpolatingMotionEffect *verticalMotionEffect =
-    [[UIInterpolatingMotionEffect alloc]
-     initWithKeyPath:@"center.y"
-     type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-    verticalMotionEffect.minimumRelativeValue = @(30);
-    verticalMotionEffect.maximumRelativeValue = @(-30);
-    
-    // Set horizontal effect
-    UIInterpolatingMotionEffect *horizontalMotionEffect =
-    [[UIInterpolatingMotionEffect alloc]
-     initWithKeyPath:@"center.x"
-     type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-    horizontalMotionEffect.minimumRelativeValue = @(30);
-    horizontalMotionEffect.maximumRelativeValue = @(-30);
-    
-    // Create group to combine both
-    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
-    group.motionEffects = @[horizontalMotionEffect, verticalMotionEffect];
-    
-    // Add both effects to your view
-    [self.backgroundImageView addMotionEffect:group];
-}
-
-
 #pragma mark BSTutorialImageViewDelegate
-
 -(void)dissmissTutorialImageView:(id)tutorialView
 {
     tutorialView = nil;
 }
-
 
 #pragma mark System Methods
 -(NSUInteger)supportedInterfaceOrientations
