@@ -10,9 +10,19 @@
 
 @implementation BSQuizCollectionViewCell
 
+- (void)awakeFromNib
+{
+    self.background.contentMode = UIViewContentModeScaleAspectFit;
+    self.foreground = [[UIImageView alloc] initWithFrame:self.background.bounds];
+    self.foreground.contentMode = UIViewContentModeScaleAspectFit;
+    [self.background addSubview:self.foreground];
+    
+}
+
 
 -(void)receivedTap:(UIGestureRecognizer *)recognizer
 {
+    
     [self.answerBox setHidden:!self.answerBox.isHidden];
 }
 

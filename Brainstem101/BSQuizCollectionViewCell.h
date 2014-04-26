@@ -10,9 +10,10 @@
 
 @interface BSQuizCollectionViewCell : UICollectionViewCell<UIGestureRecognizerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIImageView *background;
-@property (weak, nonatomic) IBOutlet UIImageView *foreground;
-@property (weak, nonatomic) IBOutlet UITextField *answerBox;
+@property (strong, nonatomic) IBOutlet UIImageView *background;
+@property (strong, nonatomic) IBOutlet UITextField *answerBox;
+
+@property (strong, nonatomic) UIImageView *foreground;
 
 -(void)receivedTap:(UIGestureRecognizer *)recognizer;
 
