@@ -30,6 +30,7 @@
                     <connections>
                         <segue destination="cR3-q1-nUX" kind="modal" identifier="atlas-to-profile" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="EJX-JH-32v"/>
                         <segue destination="Jnh-9j-gp5" kind="modal" identifier="atlas-to-clinical" modalTransitionStyle="crossDissolve" id="EV6-W9-HeD"/>
+                        <segue destination="CAJ-Nt-qWE" kind="modal" identifier="atlas-to-page0" modalTransitionStyle="crossDissolve" id="73Z-HW-UwJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -64,7 +65,7 @@
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="242" y="-361"/>
+            <point key="canvasLocation" x="227" y="-356"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Gvq-9k-HKM">
@@ -249,7 +250,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="draw-mode-background" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-gX-Lfl" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFill" image="draw-mode-background" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-gX-Lfl" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.68000000000000005" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -385,6 +386,7 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="HWE-gX-Lfl" id="bsg-9H-7wd"/>
                         <outlet property="drawView" destination="kPB-e8-hdd" id="o1G-pa-dhc"/>
                         <outlet property="sectionView" destination="jUc-F6-2Ek" id="1jN-cn-Vkt"/>
                     </connections>
@@ -658,6 +660,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DYo-yE-BpR"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
@@ -808,7 +811,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="mqe-Fz-bnB"/>
+        <segue reference="nTF-2h-ddk"/>
         <segue reference="EV6-W9-HeD"/>
     </inferredMetricsTieBreakers>
 </document>

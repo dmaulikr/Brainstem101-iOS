@@ -31,7 +31,4 @@
 - (IBAction)handleSwipe:(UISwipeGestureRecognizer *)sender;
 - (IBAction)handleRotation:(UIRotationGestureRecognizer *)sender;
 
-- (IBAction)searchButtonPressed:(id)sender;
-- (IBAction)rotateAllSections:(id)sender;
-
 @end

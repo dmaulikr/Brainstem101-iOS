@@ -135,7 +135,7 @@
 
 -(void)backToPage0
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSegueWithIdentifier:@"atlas-to-page0" sender:self];
 }
 
 
@@ -403,45 +403,6 @@
     return YES;
 }
 
-#pragma mark - IBActions
-- (IBAction)rotateAllSections:(id)sender
-{
-    for (BSAtlasSectionView *s in allSectionViews){
-        [s rotateView];
-    }
-}
-
-- (IBAction)minusButton:(id)sender
-{
-    if (selectedSxnView == -1) {
-        [self selectSectionView:8];
-    }else{
-        NSInteger nextSecNum = selectedSxnView - 1;
-        if (nextSecNum <= -1) {
-            nextSecNum = 8;
-        }
-        [self selectSectionView:nextSecNum];
-    }
-}
-
-- (IBAction)plusButton:(id)sender
-{
-    if (selectedSxnView == -1) {
-        [self selectSectionView:0];
-    }else{
-        NSInteger nextSecNum = selectedSxnView + 1;
-        if (nextSecNum >= 9) {
-            nextSecNum = 0;
-        }
-        [self selectSectionView:nextSecNum];
-    }
-}
-
-- (IBAction)searchButtonPressed:(id)sender
-{
-
-}
-
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
     [UIView animateWithDuration:0.3 animations:^{
@@ -475,7 +436,7 @@
 {
     if (query.length == 0) {
         [self reloadStructresIntoLocalVariables];
-        [_indexTable reloadData];
+        [self.indexTable reloadData];
     }else{
         NSMutableArray *tmpNucs = [NSMutableArray new];
         for (BSStructure *nuc in [[BSModel sharedModel] Nuclei]) {

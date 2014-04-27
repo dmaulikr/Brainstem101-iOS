@@ -8,25 +8,28 @@
 
 #import "BSQuizView.h"
 
-@implementation BSQuizView {
+@implementation BSQuizView
+{
     NSDictionary *currentQuestion;
 }
 
--(void)awakeFromNib{
-//    [self setBackgroundColor:[UIColor clearColor]];
-    [_answerBoxView setBackgroundColor:[UIColor clearColor]];
-    [_answerBoxView setText:nil];
+-(void)awakeFromNib
+{
+    [self.answerBoxView setBackgroundColor:[UIColor clearColor]];
+    [self.answerBoxView setText:nil];
 }
 
--(void) loadQuestionFromDictionary:(NSDictionary *) dict{
+-(void)loadQuestionFromDictionary:(NSDictionary *) dict
+{
     currentQuestion = dict;
-    [_answerBoxView setText:@""];
-    [_backgroundImageView setImage:[UIImage imageNamed:currentQuestion[@"background"]]];
-    [_forgroundImageView setImage:[UIImage imageNamed:currentQuestion[@"image"]]];
+    [self.answerBoxView setText:@""];
+    [self.backgroundImageView setImage:[UIImage imageNamed:currentQuestion[@"background"]]];
+    [self.forgroundImageView setImage:[UIImage imageNamed:currentQuestion[@"image"]]];
 }
 
--(void) showAnswer{
-    [_answerBoxView setText:currentQuestion[@"answer"]];
+-(void)showAnswer
+{
+    [self.answerBoxView setText:currentQuestion[@"answer"]];
 }
 
 @end
