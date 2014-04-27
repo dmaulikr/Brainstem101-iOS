@@ -23,9 +23,9 @@
 @property (strong, nonatomic) IBOutlet BSDetailsView *detailView;
 @property (assign, nonatomic) int sectionNumber;
 
-- (void)        didSelectStructure:(BSStructure *) str;
-- (IBAction)    handleRotation:(id)sender;
-- (IBAction)    handeSwipe:(UISwipeGestureRecognizer *)sender;
-- (IBAction)    goBackToAtlas:(id)sender;
+- (void)didSelectStructure:(BSStructure *) str;
+- (IBAction)handleRotation:(id)sender;
+- (IBAction)handeSwipe:(UISwipeGestureRecognizer *)sender;
+- (IBAction)goBackToAtlas:(id)sender;
 
 @end

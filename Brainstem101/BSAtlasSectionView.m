@@ -11,7 +11,8 @@
 #define ATLAS_SECTION_VIEW_LINE_WIDTH 2
 #define ATLAS_SECTION_VIEW_PATH_COLOR [UIColor yellowColor]
 
-@implementation BSAtlasSectionView {
+@implementation BSAtlasSectionView
+{
     NSMutableArray *currentStructures;
     NSMutableDictionary *structureLayersCache;
     NSOperationQueue *operationQueue;
@@ -21,10 +22,10 @@
     self = [super initWithFrame:frame];
     if (self) {
         _section = section;
-        _backingView = [[UIImageView alloc] initWithFrame:self.bounds];
-        _backingView.image = [_section atlasImage];
+        self.backingView = [[UIImageView alloc] initWithFrame:self.bounds];
+        self.backingView.image = [self.section atlasImage];
         
-        _arteryView = [[UIImageView alloc] initWithFrame:self.bounds];
+        self.arteryView = [[UIImageView alloc] initWithFrame:self.bounds];
 
         operationQueue = [NSOperationQueue new];
         structureLayersCache = [NSMutableDictionary new];
@@ -36,12 +37,14 @@
     return self;
 }
 
-+ (BSAtlasSectionView *) atlasSectionViewForSection:(int) number {
++ (BSAtlasSectionView *) atlasSectionViewForSection:(int) number
+{
     BSAtlasSectionView *theView = [[BSAtlasSectionView alloc] initWithFrame:[self frameForSectionNumber:number] andSection:[BSSection atlasSectionNumber:number]];
     return theView;
 }
 
--(void)setStructures:(NSArray *)structures {
+-(void)setStructures:(NSArray *)structures
+{
     
     [operationQueue cancelAllOperations];
     
@@ -57,14 +60,15 @@
 
 - (void) arteryImageNamed:(NSString *)imageName{
     if (imageName) {
-        [_arteryView setImage:[UIImage imageNamed:imageName]];
-        [_arteryView setAlpha:1];
+        [self.arteryView setImage:[UIImage imageNamed:imageName]];
+        [self.arteryView setAlpha:1];
     }else{
-        [_arteryView setAlpha:0];
-    }
+        [self.arteryView setAlpha:0];
+     }
 }
 
-- (void) showStructure:(BSStructure *) structure{
+- (void) showStructure:(BSStructure *) structure
+{
     UIImageView *structureImageView = structureLayersCache[structure.structureName];
     if (structureImageView) {
         [structureImageView setHidden:NO];
@@ -84,7 +88,8 @@
 }
 
 
-- (UIImage *) drawStructure:(BSStructure *)structure {
+- (UIImage *) drawStructure:(BSStructure *)structure
+{
 
     CGSize retinaSize = self.backingView.bounds.size;
     retinaSize.height = retinaSize.height * 2;
@@ -114,10 +119,10 @@
 }
 
 - (void) fade{
-    [_backingView setAlpha:0.3];
+    [self.backingView setAlpha:0.3];
 }
 - (void) unfade{
-    [_backingView setAlpha:1.0];
+    [self.backingView setAlpha:1.0];
 }
 
 #pragma mark Rotation Methods
@@ -129,7 +134,7 @@
 }
 
 - (void)rotateViewRight{
-    if (_isRotated) {
+    if (self.isRotated) {
         [self rotateViewFromDegree:270 toDegree:0];
     }else{
         [self rotateViewFromDegree:90 toDegree:180];
@@ -263,7 +268,8 @@
     return newCenter;
 }
      
-- (CGPathRef)newScaledPath:(CGPathRef)path toRect:(CGRect) rect {
+- (CGPathRef)newScaledPath:(CGPathRef)path toRect:(CGRect) rect
+{
     
     CGFloat individualFrameFactor = (rect.size.height*2)/CAPTURE_DEVICE_HEIGHT;
     CGFloat scaleFactor = individualFrameFactor;
@@ -276,7 +282,8 @@
     return scaledPath;
 }
 
-- (void)purgeCache{
+- (void)purgeCache
+{
     [structureLayersCache removeAllObjects];
 }
 

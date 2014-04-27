@@ -32,7 +32,7 @@
             [tutorialView setTag:8008];
             [tutorialView setAlpha:0.0];
             [self.view addSubview:tutorialView];
-            [UIView animateWithDuration:0.5     delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 [tutorialView setAlpha:1.0];
             } completion:nil];
         }

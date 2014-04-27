@@ -8,23 +8,28 @@
 
 #import "BSAtlasViewController.h"
 #import "BSProfileViewController.h"
+#import <UIView+Positioning.h>
 
 #define STEMVIEW_STYLE_FRONT 0
 #define STEMVIEW_STYLE_SIDE 1
 #define STEMVIEW_STYLE_FAN 2
 
-@implementation BSAtlasViewController{
+@implementation BSAtlasViewController
+{
     NSArray *allSectionViews;
     NSArray *currentNuclei;
     NSArray *currentTracts;
     NSArray *currentArteries;
     NSArray *currentMiscellaneous;
     NSArray *currentCranialNerves;
-    int selectedSxnView;
+    NSInteger selectedSxnView;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
+    self.stemViewStyle = STEMVIEW_STYLE_FRONT;
     
     allSectionViews = @[
                         [BSAtlasSectionView atlasSectionViewForSection:0],
@@ -35,54 +40,117 @@
                         [BSAtlasSectionView atlasSectionViewForSection:5],
                         [BSAtlasSectionView atlasSectionViewForSection:6],
                         [BSAtlasSectionView atlasSectionViewForSection:7],
-                        [BSAtlasSectionView atlasSectionViewForSection:8]];
+                        [BSAtlasSectionView atlasSectionViewForSection:8]
+                        ];
     
-    for (BSAtlasSectionView *view in allSectionViews) {
-        [self.mainPanelOverlay addSubview:view];
-    }
+    self.backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    [self.backgroundImageView setImage:[UIImage imageNamed:@"atlas-background"]];
+    [self.view addSubview:self.backgroundImageView];
     
     self.stemView = [[BSStemView alloc] initWithFrame:self.view.bounds];
     [self.stemView setContentMode:UIViewContentModeScaleToFill];
-    [self.mainPanelOverlay addSubview:_stemView];
+    [self.view addSubview:self.stemView];
     
     self.glassStemView = [[BSGlassStemView alloc] initWithFrame:self.view.bounds];
-    [self.mainPanelOverlay addSubview:_glassStemView];
+    [self.view addSubview:self.glassStemView];
     
-    self.stemViewStyle = STEMVIEW_STYLE_FRONT;
+    self.searchImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, (625/2), (635/2))];
+    self.searchImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.searchImageView setImage:[UIImage imageNamed:@"search-image"]];
+    [self.searchImageView setAlpha:0];
+    [self.view addSubview:self.searchImageView];
+    
+    self.searchBox = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 411/2, 83/2)];
+    [self.searchBox setDelegate:self];
+    [self.searchBox setBackground:[UIImage imageNamed:@"search-blur-image"]];
+    [self.searchBox setAlpha:0.1];
+    [self.searchBox setSpellCheckingType:UITextSpellCheckingTypeNo];
+    [self.searchBox setAutocapitalizationType:UITextAutocapitalizationTypeNone];
+    [self.searchBox setAutocorrectionType:UITextAutocorrectionTypeNo];
+    [self.searchBox setTextColor:[UIColor lightTextColor]];
+    [self.searchBox setTextAlignment:NSTextAlignmentCenter];
+    [self.searchBox setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:20]];
+    [self.view insertSubview:self.searchBox aboveSubview:self.searchImageView];
+    
+    self.indexTable = [[UITableView alloc] initWithFrame:CGRectMake(7, 0, 208, 930) style:UITableViewStylePlain];
+    self.indexTable.bottom = self.view.bounds.size.height;
+    [self.indexTable setDelegate:self];
+    [self.indexTable setDataSource:self];
     [self.indexTable setAlpha:0];
-    [self resetEverything];
+    [self.indexTable setBackgroundColor:[UIColor clearColor]];
+    [self.indexTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [self.indexTable setSeparatorColor:[UIColor clearColor]];
+    [self.indexTable setShowsVerticalScrollIndicator:NO];
+    [self.view addSubview:self.indexTable];
+    
+    self.clinicalButton  = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.clinicalButton setFrame:CGRectMake(0, 0, 300, 100)];
+    self.clinicalButton.centerX = self.view.center.x;
+    self.clinicalButton.centerY = 770;
+    [self.clinicalButton addTarget:self action:@selector(clinicalButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.clinicalButton];
+    
+    for (BSAtlasSectionView *view in allSectionViews) {
+        [view setAlpha:0];
+        [self.view addSubview:view];
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self performSelector:@selector(presentationAnimations) withObject:nil afterDelay:0.1];
+
+    [self resetEverything];
+    
+    [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [self updateFadedCells];
+        [self.indexTable setAlpha:1];
+        [self.searchImageView setAlpha:1];
+        for (BSAtlasSectionView *view in allSectionViews) {
+            [view setAlpha:1];
+        }
+    } completion:^(BOOL finished) {
+        
+    }];
+  
+    if ([[BSModel sharedModel] inTutorialMode]) {
+        if (![self.view viewWithTag:8008]) {
+            BSTutorialImageView *tutorialView = [BSTutorialImageView atlasTutorial];
+            [tutorialView setDelegate:self];
+            [tutorialView setTag:8008];
+            [tutorialView setAlpha:0.0];
+            [self.view addSubview:tutorialView];
+            [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                [tutorialView setAlpha:1.0];
+            } completion:nil];
+        }
+    }
 }
 
--(void)presentationAnimations
-{
-    [self.indexTable setAlpha:1];
+#pragma mark UIScrollViewDelegate
 
-    [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        
-        [self.doorImageView setCenter:CGPointMake( - 200 , _doorImageView.center.y)];
-    } completion:^(BOOL finished) {
-        [self.doorImageView setAlpha:0];
-        [self.doorImageView setImage:nil];
-        //tutorial
-        if ([[BSModel sharedModel] inTutorialMode]) {
-            if (![self.view viewWithTag:8008]) {
-                BSTutorialImageView *tutorialView = [BSTutorialImageView atlasTutorial];
-                [tutorialView setDelegate:self];
-                [tutorialView setTag:8008];
-                [tutorialView setAlpha:0.0];
-                [self.view addSubview:tutorialView];
-                [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    [tutorialView setAlpha:1.0];
-                } completion:nil];
-            }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self updateFadedCells];
+}
+
+-(void)updateFadedCells
+{
+    NSArray *visibleCells = [self.indexTable visibleCells];
+    
+    for (UITableViewCell *cell in visibleCells) {
+        if ( [cell isEqual:visibleCells.firstObject] || [cell isEqual:visibleCells.lastObject]) {
+            [cell setAlpha:0.2];
+        }else if ([cell isEqual:visibleCells[1]] || [cell isEqual:visibleCells[visibleCells.count - 2]]){
+            [cell setAlpha:0.3];
+        }else if ([cell isEqual:visibleCells[2]] || [cell isEqual:visibleCells[visibleCells.count - 3]]) {
+            [cell setAlpha:0.5];
+        }else if ([cell isEqual:visibleCells[3]] || [cell isEqual:visibleCells[visibleCells.count - 4]]) {
+            [cell setAlpha:0.7];
+        }else{
+            [cell setAlpha:1];
         }
-    }];
+    }
 }
 
 - (NSArray *)currentSectionForType:(BSStructureType)type
@@ -106,9 +174,9 @@
 
 -(void)reloadStructresIntoLocalVariables
 {
-    currentNuclei = [[BSModel sharedModel] Nuclei];
-    currentTracts = [[BSModel sharedModel] Tracts];
-    currentArteries = [[BSModel sharedModel] Arteries];
+    currentNuclei        = [[BSModel sharedModel] Nuclei];
+    currentTracts        = [[BSModel sharedModel] Tracts];
+    currentArteries      = [[BSModel sharedModel] Arteries];
     currentMiscellaneous = [[BSModel sharedModel] Miscellaneous];
     currentCranialNerves = [[BSModel sharedModel] CranialNerves];
 }
@@ -118,7 +186,7 @@
 {
     static NSString *cellIdentifier = @"AtlasCell";
     NSString *structureName = [[self currentSectionForType:indexPath.section][indexPath.row] structureName];
-
+    
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     [cell setBackgroundColor:[UIColor clearColor]];
@@ -128,10 +196,10 @@
     [cell.textLabel setText:structureName];
     
     [cell.textLabel setTextColor:[UIColor whiteColor]];
-    if ([structureName isEqualToString:_currentStructure.structureName]){
+    if ([structureName isEqualToString:self.currentStructure.structureName]){
         [cell.textLabel setTextColor:[UIColor yellowColor]];
     }
-
+    
     return cell;
 }
 
@@ -157,7 +225,7 @@
     [header setTextAlignment:NSTextAlignmentCenter];
     [header setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:18]];
     [header setTextColor:[UIColor whiteColor]];
-
+    
     switch (section) {
         case BSStructureTypeNucleus:
             [header setText:@"Nuclei"];
@@ -194,15 +262,15 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     self.currentStructure = [self currentSectionForType:indexPath.section][indexPath.row];
     [self.stemView show];
     [self.glassStemView hide];
     [self.stemView loadStructure:_currentStructure];
     
     [self.searchBox resignFirstResponder];
-    [self.searchBox setAlpha:0];
-    [self.searchBox setHidden:YES];
+    [self.searchBox setAlpha:0.1];
+    [self.searchBox setText:@""];
     
     selectedSxnView = -1;
     int secNum = 0;
@@ -211,7 +279,7 @@
         [view fade];
         [view setStructures:@[]];
         [view arteryImageNamed:nil];
-
+        
         if (self.currentStructure.structureType == BSStructureTypeArtery) {
             if ([self.currentStructure hasArteryInSectionNumber:secNum]) {
                 [view arteryImageNamed:[_currentStructure arteryImages][secNum]];
@@ -290,11 +358,8 @@
     }else if ([sender direction] == UISwipeGestureRecognizerDirectionLeft){
         [self.stemView stemViewMovePrevious];
         [self.glassStemView hide];
-    }else if ([sender direction] == UISwipeGestureRecognizerDirectionUp){
-        //Disableing swipe up gesture
-//        if (selectedSxnView != -1) {
-//            [self performSegueWithIdentifier:@"atlas-to-profile" sender:self];
-//        }
+    }else {
+        
     }
 }
 
@@ -313,7 +378,7 @@
     }
 }
 
-- (IBAction)clinicalButtonAction:(id)sender
+- (void)clinicalButtonAction:(id)sender
 {
     [self performSegueWithIdentifier:@"atlas-to-clinical" sender:self];
 }
@@ -362,7 +427,11 @@
 
 - (IBAction)searchButtonPressed:(id)sender
 {
-    [self.searchBox setHidden:NO];
+
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
     [UIView animateWithDuration:0.3 animations:^{
         [self.searchBox setAlpha:1];
     }];
@@ -437,7 +506,7 @@
         currentMiscellaneous    = tmpMisc;
         currentCranialNerves    = tmpCranialNerves;
         
-        [_indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, NUMBER_OF_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, NUMBER_OF_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 
@@ -452,10 +521,8 @@
     [self.searchBox resignFirstResponder];
     
     [UIView animateWithDuration:0.3 animations:^{
-        [self.searchBox setAlpha:0];
-    } completion:^(BOOL finished) {
-        [self.searchBox setHidden:YES];
-    }];
+        [self.searchBox setAlpha:0.1];
+    } completion:nil];
     
     [self.glassStemView hide];
     [self.stemView show];
@@ -476,8 +543,8 @@
         [self reloadStructresIntoLocalVariables];
         [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, NUMBER_OF_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
-
-    for(NSIndexPath *path in [_indexTable indexPathsForVisibleRows]){
+    
+    for (NSIndexPath *path in [self.indexTable indexPathsForVisibleRows]){
         [self.indexTable deselectRowAtIndexPath:path animated:YES];
     }
     
@@ -501,7 +568,8 @@
 }
 
 #pragma mark - System Methods
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     // maybe close door here
     if ([segue.identifier isEqualToString:@"atlas-to-profile"]) {
         [(BSProfileViewController *)[segue destinationViewController] setSectionNumber:selectedSxnView];

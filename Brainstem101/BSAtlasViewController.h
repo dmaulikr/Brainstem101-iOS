@@ -12,28 +12,24 @@
 #import "BSAtlasSectionView.h"
 #import "BSTutorialImageView.h"
 
-@interface BSAtlasViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate, UITextFieldDelegate, BSTutorialImageViewDelegate>
+@interface BSAtlasViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate, UITextFieldDelegate, BSTutorialImageViewDelegate, UIScrollViewDelegate>
 
-@property (weak, nonatomic)     IBOutlet UIImageView *orangeImageView;
-@property (weak, nonatomic)     IBOutlet UITableView *indexTable;
-@property (weak, nonatomic)     IBOutlet UIImageView *doorImageView;
-@property (weak, nonatomic)     IBOutlet UIImageView *mainPanel;
-@property (weak, nonatomic)     IBOutlet UIImageView *mainPanelOverlay;
-@property (weak, nonatomic)     IBOutlet UITextField *searchBox;
-@property (strong, nonatomic)   BSStemView *stemView;
-@property (strong, nonatomic)   BSGlassStemView *glassStemView;
-@property (strong, nonatomic)   BSStructure *currentStructure;
-@property (assign)              NSInteger stemViewStyle;
+@property (strong, nonatomic) UIImageView *backgroundImageView;
+@property (strong, nonatomic) UITableView *indexTable;
+@property (strong, nonatomic) UITextField *searchBox;
+@property (strong, nonatomic) BSStemView *stemView;
+@property (strong, nonatomic) BSGlassStemView *glassStemView;
+@property (strong, nonatomic) UIImageView *searchImageView;
+@property (strong, nonatomic) UIButton *clinicalButton;
+
+@property (strong, nonatomic) BSStructure *currentStructure;
+@property (assign, nonatomic) NSInteger stemViewStyle;
 
 - (IBAction)handleSingleTap:(UITapGestureRecognizer*)sender;
 - (IBAction)handleSwipe:(UISwipeGestureRecognizer *)sender;
 - (IBAction)handleRotation:(UIRotationGestureRecognizer *)sender;
 
-- (IBAction)clinicalButtonAction:(id)sender;
-
 - (IBAction)searchButtonPressed:(id)sender;
 - (IBAction)rotateAllSections:(id)sender;
-- (IBAction)minusButton:(id)sender;
-- (IBAction)plusButton:(id)sender;
 
 @end

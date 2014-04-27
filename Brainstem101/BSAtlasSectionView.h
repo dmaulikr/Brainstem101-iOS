@@ -15,8 +15,8 @@
 
 @property (nonatomic, strong) UIImageView *backingView;
 @property (nonatomic, strong) UIImageView *arteryView;
-@property (nonatomic, strong) BSSection *section;
-@property (assign) bool isRotated;
+@property (nonatomic, strong) BSSection   *section;
+@property (assign           ) bool        isRotated;
 
 
 + (BSAtlasSectionView *) atlasSectionViewForSection:(int) number;

@@ -10,4 +10,8 @@
 
 @interface BSAboutViewController : UIViewController
 
+@property (nonatomic, strong) UIImageView *linesImageView;
+@property (nonatomic, strong) UIImageView *squaresImageView;
+@property (nonatomic, strong) UIImageView *picturesImageView;
+
 @end
