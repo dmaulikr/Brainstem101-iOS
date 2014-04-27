@@ -8,6 +8,7 @@
 
 #import "BSPage0ViewController.h"
 #import <UIView+Positioning.h>
+#import <SVProgressHUD.h>
 
 #define LOAD_TIME 5
 
@@ -48,26 +49,31 @@
             [self.backgroundOverlayImageView setAlpha:0.0];
             [self.backgroundImageView addSubview:self.backgroundOverlayImageView];
             
-            //add tag
-            CGFloat amoutToMoveTag = 200.0;
-            self.tagImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-            [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag"]];
-            self.tagImageView.centerX += amoutToMoveTag;
-            [self.backgroundImageView addSubview:self.tagImageView];
-            
-            [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [UIView animateWithDuration:0.75 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 [self.backgroundOverlayImageView setAlpha:1];
-                self.tagImageView.centerX -= amoutToMoveTag;
+                
             } completion:^(BOOL finished) {
                 
-                [self setupButtons];
+                //add tag
+                CGFloat amoutToMoveTag = 200.0;
+                self.tagImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+                [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag"]];
+                self.tagImageView.centerX += amoutToMoveTag;
+                [self.backgroundImageView addSubview:self.tagImageView];
                 
+                [UIView animateWithDuration:0.75 delay:0 usingSpringWithDamping:1 initialSpringVelocity:0.1 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+                    
+                    self.tagImageView.centerX -= amoutToMoveTag;
+                    
+                } completion:^(BOOL finished) {
+                    
+                    [self setupButtons];
+                    
+                }];
             }];
-            
-            
         }];
     }];
-
+    
     // Tutorial
     if ([[BSModel sharedModel] isFirstLaunch]) {
         
@@ -109,7 +115,7 @@
     // quiz button
     self.quizButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.quizButton.frame = CGRectMake(0, 0, 180, 45);
-//    self.quizButton.backgroundColor = [UIColor redColor];
+    //    self.quizButton.backgroundColor = [UIColor redColor];
     self.quizButton.right = self.view.bounds.size.width;
     self.quizButton.centerY += 440;
     [self.quizButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -118,7 +124,7 @@
     // tutorial button
     self.tutorialButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.tutorialButton.frame = CGRectMake(0, 0, 180, 45);
-//    self.tutorialButton.backgroundColor = [UIColor greenColor];
+    //    self.tutorialButton.backgroundColor = [UIColor greenColor];
     self.tutorialButton.right = self.view.bounds.size.width;
     self.tutorialButton.centerY = self.quizButton.centerY + self.quizButton.size.height;
     [self.tutorialButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -127,7 +133,7 @@
     // about button
     self.aboutButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.aboutButton.frame = CGRectMake(0, 0, 180, 45);
-//    self.aboutButton.backgroundColor = [UIColor yellowColor];
+    //    self.aboutButton.backgroundColor = [UIColor yellowColor];
     self.aboutButton.right = self.view.bounds.size.width;
     self.aboutButton.centerY = self.tutorialButton.centerY + self.tutorialButton.size.height;
     [self.aboutButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -166,8 +172,10 @@
 -(void)buttonPressed:(UIButton *)sender
 {
     if (sender == self.atlasButton) {
+        [SVProgressHUD show];
         [self performSegueWithIdentifier:@"page0-to-atlas" sender:self];
     }else if (sender == self.clinicalButton){
+        [SVProgressHUD show];
         [self performSegueWithIdentifier:@"page0-to-clinical" sender:self];
     }else if (sender == self.quizButton){
         [self performSegueWithIdentifier:@"page0-to-quiz" sender:self];
@@ -178,6 +186,12 @@
     }else{
         NSLog(@"Button action not defined");
     }
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [SVProgressHUD dismiss];
 }
 
 #pragma mark BSTutorialImageViewDelegate
