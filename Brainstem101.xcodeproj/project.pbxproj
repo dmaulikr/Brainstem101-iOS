@@ -60,7 +60,6 @@
 		3213C981170D661D000DF667 /* trochlear-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C958170D661D000DF667 /* trochlear-n-overlay-side.png */; };
 		3213C985170D708A000DF667 /* BSFuckometerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3213C984170D708A000DF667 /* BSFuckometerView.m */; };
 		321C8EA11711194000517510 /* BSDrawModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321C8EA01711194000517510 /* BSDrawModeViewController.m */; };
-		321C8EA31711224600517510 /* draw-mode-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA21711224600517510 /* draw-mode-background.png */; };
 		321C8EA617115CD200517510 /* fuckometer-needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA417115CD200517510 /* fuckometer-needle.png */; };
 		321C8EA717115CD200517510 /* fuckometer-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA517115CD200517510 /* fuckometer-background.png */; };
 		322FBF3917B9ECA10056D964 /* basilar-long-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3617B9ECA10056D964 /* basilar-long-4.png */; };
@@ -304,15 +303,15 @@
 		327E13021707BF8900C5D237 /* jackson-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E13011707BF8900C5D237 /* jackson-mug.png */; };
 		327E13051707D0CC00C5D237 /* BSClinicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327E13041707D0CB00C5D237 /* BSClinicalViewController.m */; };
 		327E130A1707FC9700C5D237 /* stem-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E13071707FC9700C5D237 /* stem-front.png */; };
-		327E131917081F5300C5D237 /* MRI0.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131017081F5300C5D237 /* MRI0.JPG */; };
-		327E131A17081F5300C5D237 /* MRI1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131117081F5300C5D237 /* MRI1.JPG */; };
-		327E131B17081F5300C5D237 /* MRI2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131217081F5300C5D237 /* MRI2.JPG */; };
-		327E131C17081F5300C5D237 /* MRI3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131317081F5300C5D237 /* MRI3.JPG */; };
-		327E131D17081F5300C5D237 /* MRI4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131417081F5300C5D237 /* MRI4.JPG */; };
-		327E131E17081F5300C5D237 /* MRI5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131517081F5300C5D237 /* MRI5.JPG */; };
-		327E131F17081F5300C5D237 /* MRI6.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131617081F5300C5D237 /* MRI6.JPG */; };
-		327E132017081F5300C5D237 /* MRI7.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131717081F5300C5D237 /* MRI7.JPG */; };
-		327E132117081F5300C5D237 /* MRI8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 327E131817081F5300C5D237 /* MRI8.JPG */; };
+		327E131917081F5300C5D237 /* MRI0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131017081F5300C5D237 /* MRI0.jpg */; };
+		327E131A17081F5300C5D237 /* MRI1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131117081F5300C5D237 /* MRI1.jpg */; };
+		327E131B17081F5300C5D237 /* MRI2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131217081F5300C5D237 /* MRI2.jpg */; };
+		327E131C17081F5300C5D237 /* MRI3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131317081F5300C5D237 /* MRI3.jpg */; };
+		327E131D17081F5300C5D237 /* MRI4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131417081F5300C5D237 /* MRI4.jpg */; };
+		327E131E17081F5300C5D237 /* MRI5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131517081F5300C5D237 /* MRI5.jpg */; };
+		327E131F17081F5300C5D237 /* MRI6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131617081F5300C5D237 /* MRI6.jpg */; };
+		327E132017081F5300C5D237 /* MRI7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131717081F5300C5D237 /* MRI7.jpg */; };
+		327E132117081F5300C5D237 /* MRI8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131817081F5300C5D237 /* MRI8.jpg */; };
 		327E1324170842EA00C5D237 /* claude-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E1322170842E900C5D237 /* claude-mug.png */; };
 		327E132B17085DBD00C5D237 /* weber-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E132A17085DBD00C5D237 /* weber-mug.png */; };
 		32857B521777836A005CC824 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 32857B511777835D005CC824 /* Default-Portrait@2x~ipad.png */; };
@@ -328,8 +327,8 @@
 		328848B916B111EC005FA824 /* sxn-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848B816B111EC005FA824 /* sxn-0.png */; };
 		328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A216717B8900B166CA /* BSSyndrome.m */; };
 		328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */; };
+		32948468190CC1E600B145F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32948467190CC1E600B145F1 /* Images.xcassets */; };
 		32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AFEDF816D9D183006A3101 /* BSDrawView.m */; };
-		32B4B40A190C8FAD000DE83E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B4B409190C8FAD000DE83E /* Images.xcassets */; };
 		32B54D92171875AA0064654C /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B54D91171875AA0064654C /* pencil.png */; };
 		32B9A84818A7471A0027805F /* inferior-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */; };
 		32B9A84918A7471A0027805F /* lateral-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */; };
@@ -405,7 +404,6 @@
 		32D33549179E542100F95A7D /* vertebral-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33531179E542100F95A7D /* vertebral-0.png */; };
 		32D3354A179E542100F95A7D /* vertebral-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33532179E542100F95A7D /* vertebral-1.png */; };
 		32D3354B179E542100F95A7D /* vertebral-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33533179E542100F95A7D /* vertebral-2.png */; };
-		32D3354E179E57F600F95A7D /* dice-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3354D179E57F600F95A7D /* dice-button.png */; };
 		32D84798178D463400718C4C /* corticospinal-t-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D84796178D463400718C4C /* corticospinal-t-overlay-back.png */; };
 		32D84799178D463400718C4C /* medial-lemniscus-t-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D84797178D463400718C4C /* medial-lemniscus-t-overlay-back.png */; };
 		32E4D2911651AACB0051AE2D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E4D2901651AACB0051AE2D /* BSModel.m */; };
@@ -711,7 +709,6 @@
 		3213C984170D708A000DF667 /* BSFuckometerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFuckometerView.m; sourceTree = "<group>"; };
 		321C8E9F1711194000517510 /* BSDrawModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawModeViewController.h; sourceTree = "<group>"; };
 		321C8EA01711194000517510 /* BSDrawModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawModeViewController.m; sourceTree = "<group>"; };
-		321C8EA21711224600517510 /* draw-mode-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "draw-mode-background.png"; sourceTree = "<group>"; };
 		321C8EA417115CD200517510 /* fuckometer-needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuckometer-needle.png"; sourceTree = "<group>"; };
 		321C8EA517115CD200517510 /* fuckometer-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuckometer-background.png"; sourceTree = "<group>"; };
 		322FBF3617B9ECA10056D964 /* basilar-long-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-4.png"; sourceTree = "<group>"; };
@@ -965,15 +962,15 @@
 		327E13031707D0CA00C5D237 /* BSClinicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalViewController.h; sourceTree = "<group>"; };
 		327E13041707D0CB00C5D237 /* BSClinicalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalViewController.m; sourceTree = "<group>"; };
 		327E13071707FC9700C5D237 /* stem-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-front.png"; sourceTree = "<group>"; };
-		327E131017081F5300C5D237 /* MRI0.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI0.JPG; sourceTree = "<group>"; };
-		327E131117081F5300C5D237 /* MRI1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI1.JPG; sourceTree = "<group>"; };
-		327E131217081F5300C5D237 /* MRI2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI2.JPG; sourceTree = "<group>"; };
-		327E131317081F5300C5D237 /* MRI3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI3.JPG; sourceTree = "<group>"; };
-		327E131417081F5300C5D237 /* MRI4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI4.JPG; sourceTree = "<group>"; };
-		327E131517081F5300C5D237 /* MRI5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI5.JPG; sourceTree = "<group>"; };
-		327E131617081F5300C5D237 /* MRI6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI6.JPG; sourceTree = "<group>"; };
-		327E131717081F5300C5D237 /* MRI7.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI7.JPG; sourceTree = "<group>"; };
-		327E131817081F5300C5D237 /* MRI8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI8.JPG; sourceTree = "<group>"; };
+		327E131017081F5300C5D237 /* MRI0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI0.jpg; sourceTree = "<group>"; };
+		327E131117081F5300C5D237 /* MRI1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI1.jpg; sourceTree = "<group>"; };
+		327E131217081F5300C5D237 /* MRI2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI2.jpg; sourceTree = "<group>"; };
+		327E131317081F5300C5D237 /* MRI3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI3.jpg; sourceTree = "<group>"; };
+		327E131417081F5300C5D237 /* MRI4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI4.jpg; sourceTree = "<group>"; };
+		327E131517081F5300C5D237 /* MRI5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI5.jpg; sourceTree = "<group>"; };
+		327E131617081F5300C5D237 /* MRI6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI6.jpg; sourceTree = "<group>"; };
+		327E131717081F5300C5D237 /* MRI7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI7.jpg; sourceTree = "<group>"; };
+		327E131817081F5300C5D237 /* MRI8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI8.jpg; sourceTree = "<group>"; };
 		327E1322170842E900C5D237 /* claude-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-mug.png"; sourceTree = "<group>"; };
 		327E132A17085DBD00C5D237 /* weber-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-mug.png"; sourceTree = "<group>"; };
 		32857B511777835D005CC824 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -991,9 +988,9 @@
 		328CC6A216717B8900B166CA /* BSSyndrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndrome.m; sourceTree = "<group>"; };
 		328CC6A316717B8900B166CA /* BSSyndromeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndromeGenerator.h; sourceTree = "<group>"; };
 		328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndromeGenerator.m; sourceTree = "<group>"; };
+		32948467190CC1E600B145F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32AFEDF716D9D183006A3101 /* BSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawView.h; sourceTree = "<group>"; };
 		32AFEDF816D9D183006A3101 /* BSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawView.m; sourceTree = "<group>"; };
-		32B4B409190C8FAD000DE83E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32B54D91171875AA0064654C /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
 		32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
 		32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
@@ -1072,7 +1069,6 @@
 		32D33531179E542100F95A7D /* vertebral-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-0.png"; sourceTree = "<group>"; };
 		32D33532179E542100F95A7D /* vertebral-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-1.png"; sourceTree = "<group>"; };
 		32D33533179E542100F95A7D /* vertebral-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-2.png"; sourceTree = "<group>"; };
-		32D3354D179E57F600F95A7D /* dice-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dice-button.png"; sourceTree = "<group>"; };
 		32D84796178D463400718C4C /* corticospinal-t-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-t-overlay-back.png"; sourceTree = "<group>"; };
 		32D84797178D463400718C4C /* medial-lemniscus-t-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-t-overlay-back.png"; sourceTree = "<group>"; };
 		32DD437F16524FD3002AAE0F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -1444,7 +1440,6 @@
 		326CD45316D3684600E2800C /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				321C8EA21711224600517510 /* draw-mode-background.png */,
 				327E12EF1707BC9800C5D237 /* clinical-background.png */,
 				32FB64F3171FDB42005E6DE6 /* clinical-box-overlay.png */,
 				327CE462170ADFCB0020F918 /* clinical-overlay.png */,
@@ -1762,15 +1757,15 @@
 		327E130F17081F5200C5D237 /* MRI Images */ = {
 			isa = PBXGroup;
 			children = (
-				327E131017081F5300C5D237 /* MRI0.JPG */,
-				327E131117081F5300C5D237 /* MRI1.JPG */,
-				327E131217081F5300C5D237 /* MRI2.JPG */,
-				327E131317081F5300C5D237 /* MRI3.JPG */,
-				327E131417081F5300C5D237 /* MRI4.JPG */,
-				327E131517081F5300C5D237 /* MRI5.JPG */,
-				327E131617081F5300C5D237 /* MRI6.JPG */,
-				327E131717081F5300C5D237 /* MRI7.JPG */,
-				327E131817081F5300C5D237 /* MRI8.JPG */,
+				327E131017081F5300C5D237 /* MRI0.jpg */,
+				327E131117081F5300C5D237 /* MRI1.jpg */,
+				327E131217081F5300C5D237 /* MRI2.jpg */,
+				327E131317081F5300C5D237 /* MRI3.jpg */,
+				327E131417081F5300C5D237 /* MRI4.jpg */,
+				327E131517081F5300C5D237 /* MRI5.jpg */,
+				327E131617081F5300C5D237 /* MRI6.jpg */,
+				327E131717081F5300C5D237 /* MRI7.jpg */,
+				327E131817081F5300C5D237 /* MRI8.jpg */,
 			);
 			name = "MRI Images";
 			path = "Images/MRI Images";
@@ -1824,7 +1819,6 @@
 		328848C916B12227005FA824 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				32D3354D179E57F600F95A7D /* dice-button.png */,
 				32B54D91171875AA0064654C /* pencil.png */,
 			);
 			name = Buttons;
@@ -2326,9 +2320,9 @@
 			isa = PBXGroup;
 			children = (
 				8179EAE5161D40CF0050D663 /* Brainstem101 */,
-				32B4B409190C8FAD000DE83E /* Images.xcassets */,
 				8179EADE161D40CF0050D663 /* Frameworks */,
 				8179EADC161D40CF0050D663 /* Products */,
+				32948467190CC1E600B145F1 /* Images.xcassets */,
 				5DC1BD8E21A94A439B661DA7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -2473,15 +2467,15 @@
 				327E13001707BF3D00C5D237 /* foville-mug.png in Resources */,
 				327E13021707BF8900C5D237 /* jackson-mug.png in Resources */,
 				327E130A1707FC9700C5D237 /* stem-front.png in Resources */,
-				327E131917081F5300C5D237 /* MRI0.JPG in Resources */,
-				327E131A17081F5300C5D237 /* MRI1.JPG in Resources */,
-				327E131B17081F5300C5D237 /* MRI2.JPG in Resources */,
-				327E131C17081F5300C5D237 /* MRI3.JPG in Resources */,
-				327E131D17081F5300C5D237 /* MRI4.JPG in Resources */,
-				327E131E17081F5300C5D237 /* MRI5.JPG in Resources */,
-				327E131F17081F5300C5D237 /* MRI6.JPG in Resources */,
-				327E132017081F5300C5D237 /* MRI7.JPG in Resources */,
-				327E132117081F5300C5D237 /* MRI8.JPG in Resources */,
+				327E131917081F5300C5D237 /* MRI0.jpg in Resources */,
+				327E131A17081F5300C5D237 /* MRI1.jpg in Resources */,
+				327E131B17081F5300C5D237 /* MRI2.jpg in Resources */,
+				327E131C17081F5300C5D237 /* MRI3.jpg in Resources */,
+				327E131D17081F5300C5D237 /* MRI4.jpg in Resources */,
+				327E131E17081F5300C5D237 /* MRI5.jpg in Resources */,
+				327E131F17081F5300C5D237 /* MRI6.jpg in Resources */,
+				327E132017081F5300C5D237 /* MRI7.jpg in Resources */,
+				327E132117081F5300C5D237 /* MRI8.jpg in Resources */,
 				327E1324170842EA00C5D237 /* claude-mug.png in Resources */,
 				327E132B17085DBD00C5D237 /* weber-mug.png in Resources */,
 				32523E991709D79E00D55ECA /* claude-sec.png in Resources */,
@@ -2552,7 +2546,6 @@
 				3213C97F170D661D000DF667 /* trigeminal-motor-n-overlay-side.png in Resources */,
 				3213C980170D661D000DF667 /* trochlear-n-overlay-back.png in Resources */,
 				3213C981170D661D000DF667 /* trochlear-n-overlay-side.png in Resources */,
-				321C8EA31711224600517510 /* draw-mode-background.png in Resources */,
 				321C8EA617115CD200517510 /* fuckometer-needle.png in Resources */,
 				321C8EA717115CD200517510 /* fuckometer-background.png in Resources */,
 				32BAE79E1718048200F04334 /* iii-oculomotor-cn-overlay-side.png in Resources */,
@@ -2654,7 +2647,6 @@
 				32FB6616171FDF0B005E6DE6 /* inferior-cerebellar-peduncle-m-3.xml in Resources */,
 				32FB6617171FDF0B005E6DE6 /* inferior-colliculus-m-7.xml in Resources */,
 				3253620818A791B400017864 /* tutorial-quiz.png in Resources */,
-				32B4B40A190C8FAD000DE83E /* Images.xcassets in Resources */,
 				32FB6618171FDF0B005E6DE6 /* inferior-olivary-n-1.xml in Resources */,
 				32FB6619171FDF0B005E6DE6 /* inferior-olivary-n-2.xml in Resources */,
 				32FB661A171FDF0B005E6DE6 /* inferior-olivary-n-3.xml in Resources */,
@@ -2856,8 +2848,8 @@
 				32D33548179E542100F95A7D /* superior-cerebeller-7.png in Resources */,
 				32D33549179E542100F95A7D /* vertebral-0.png in Resources */,
 				32D3354A179E542100F95A7D /* vertebral-1.png in Resources */,
+				32948468190CC1E600B145F1 /* Images.xcassets in Resources */,
 				32D3354B179E542100F95A7D /* vertebral-2.png in Resources */,
-				32D3354E179E57F600F95A7D /* dice-button.png in Resources */,
 				324EFCE517AB6D7700BE93BC /* tutorial-ask.png in Resources */,
 				324EFCE717AB7AF400BE93BC /* tutorial-profile.png in Resources */,
 				32F323F417AB8A0E007590F3 /* icon@2x~ipad.png in Resources */,

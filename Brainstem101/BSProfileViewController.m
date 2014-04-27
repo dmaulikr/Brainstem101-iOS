@@ -48,12 +48,12 @@
         desc = @"";
     }
     
-    [self.detailView setData:@{@"image":[NSString stringWithFormat:@"MRI%d.JPG", self.sectionNumber], @"description": desc}];
+    [self.detailView setData:@{@"image":[NSString stringWithFormat:@"MRI%ld.jpg", (long)self.sectionNumber], @"description": desc}];
     [self.detailView.collectionView reloadData];
     [self.detailView.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 }
 
--(void)switchToSectionNumber:(int)num animationStyle:(NSString *)animation
+-(void)switchToSectionNumber:(NSInteger)num animationStyle:(NSString *)animation
 {
     originalCenter = self.sectionView.center;
     _sectionNumber = num;
@@ -107,7 +107,7 @@
     }
 }
 
--(void)setSectionNumber:(int)sxnNumber
+-(void)setSectionNumber:(NSInteger)sxnNumber
 {
     _sectionNumber = sxnNumber;
     [self switchToSectionNumber:sxnNumber animationStyle:@"fade"];
@@ -127,7 +127,7 @@
 - (IBAction)handeSwipe:(UISwipeGestureRecognizer *)sender
 {
     if ([sender direction] == UISwipeGestureRecognizerDirectionRight){
-        int nextSecNum;
+        NSInteger nextSecNum;
         if (self.sectionNumber == 8) {
             nextSecNum = 0;
         }else{
@@ -137,7 +137,7 @@
         
     }else if ([sender direction] == UISwipeGestureRecognizerDirectionLeft){
         
-        int nextSecNum;
+        NSInteger nextSecNum;
         if (self.sectionNumber == 0) {
             nextSecNum = 8;
         }else{

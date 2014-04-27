@@ -45,7 +45,7 @@ static BSModel *modelSingleton = nil;
     return _Syndromes;
 }
 
--(NSArray *)getType:(BSStructureType)type inSection:(int)section{
+-(NSArray *)getType:(BSStructureType)type inSection:(NSInteger)section{
     NSArray *tmpType;
     
     switch (type) {

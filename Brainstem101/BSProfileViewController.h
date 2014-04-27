@@ -21,7 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundView;
 @property (strong, nonatomic) IBOutlet BSProfileSectionView *sectionView;
 @property (strong, nonatomic) IBOutlet BSDetailsView *detailView;
-@property (assign, nonatomic) int sectionNumber;
+@property (assign, nonatomic) NSInteger sectionNumber;
 
 - (void)didSelectStructure:(BSStructure *) str;
 - (IBAction)handleRotation:(id)sender;

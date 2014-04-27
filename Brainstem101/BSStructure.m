@@ -140,11 +140,11 @@
     }
 }
 
--(BOOL)isInSectionNumber:(int)num{
+-(BOOL)isInSectionNumber:(NSInteger)num{
     return ![_structurePaths[num] isKindOfClass:[NSString class]];
 }
 
--(BOOL)hasArteryInSectionNumber:(int)num{
+-(BOOL)hasArteryInSectionNumber:(NSInteger)num{
     return [_arteryImages[num] length] != 0;
 }
 

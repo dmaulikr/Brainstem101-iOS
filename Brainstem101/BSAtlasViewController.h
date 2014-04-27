@@ -22,6 +22,8 @@
 @property (strong, nonatomic) UIImageView *searchImageView;
 @property (strong, nonatomic) UIButton *clinicalButton;
 
+@property (strong, nonatomic) UIButton *backButton;
+
 @property (strong, nonatomic) BSStructure *currentStructure;
 @property (assign, nonatomic) NSInteger stemViewStyle;
 

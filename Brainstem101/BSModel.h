@@ -22,7 +22,7 @@
 
 + (id)sharedModel;
 
-- (NSMutableArray*)getType:(BSStructureType)type inSection:(int)section;
+- (NSMutableArray*)getType:(BSStructureType)type inSection:(NSInteger)section;
 
 - (BOOL) isFirstLaunch;
 

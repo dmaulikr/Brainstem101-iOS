@@ -54,13 +54,13 @@
     self.glassStemView = [[BSGlassStemView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.glassStemView];
     
-    self.searchImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, (625/2), (635/2))];
+    self.searchImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     self.searchImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.searchImageView setImage:[UIImage imageNamed:@"search-image"]];
     [self.searchImageView setAlpha:0];
     [self.view addSubview:self.searchImageView];
     
-    self.searchBox = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 411/2, 83/2)];
+    self.searchBox = [[UITextField alloc] initWithFrame:CGRectMake(0, 45, 411/2, 83/2)];
     [self.searchBox setDelegate:self];
     [self.searchBox setBackground:[UIImage imageNamed:@"search-blur-image"]];
     [self.searchBox setAlpha:0.1];
@@ -71,6 +71,12 @@
     [self.searchBox setTextAlignment:NSTextAlignmentCenter];
     [self.searchBox setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:20]];
     [self.view insertSubview:self.searchBox aboveSubview:self.searchImageView];
+    
+    
+    self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.backButton.frame = CGRectMake(0, 0, 75, 40);
+    [self.backButton addTarget:self action:@selector(backToPage0) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.backButton];
     
     self.indexTable = [[UITableView alloc] initWithFrame:CGRectMake(7, 0, 208, 930) style:UITableViewStylePlain];
     self.indexTable.bottom = self.view.bounds.size.height;
@@ -126,6 +132,12 @@
         }
     }
 }
+
+-(void)backToPage0
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 #pragma mark UIScrollViewDelegate
 
@@ -300,7 +312,7 @@
     [[[self.indexTable cellForRowAtIndexPath:indexPath] textLabel] setTextColor:[UIColor whiteColor]];
 }
 
--(void)selectSectionView:(int)sxnNum
+-(void)selectSectionView:(NSInteger)sxnNum
 {
     selectedSxnView = sxnNum;
     
@@ -404,7 +416,7 @@
     if (selectedSxnView == -1) {
         [self selectSectionView:8];
     }else{
-        int nextSecNum = selectedSxnView - 1;
+        NSInteger nextSecNum = selectedSxnView - 1;
         if (nextSecNum <= -1) {
             nextSecNum = 8;
         }
@@ -417,7 +429,7 @@
     if (selectedSxnView == -1) {
         [self selectSectionView:0];
     }else{
-        int nextSecNum = selectedSxnView + 1;
+        NSInteger nextSecNum = selectedSxnView + 1;
         if (nextSecNum >= 9) {
             nextSecNum = 0;
         }

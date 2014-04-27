@@ -17,7 +17,7 @@
 
 @property (strong, nonatomic) IBOutlet BSSectionView *sectionView;
 @property (strong, nonatomic) IBOutlet BSDrawView *drawView;
-@property (assign) int sectionNumber;
+@property (assign) NSInteger sectionNumber;
 
 - (IBAction)goBackToProfile:(id)sender;
 - (IBAction)undo:(id)sender;

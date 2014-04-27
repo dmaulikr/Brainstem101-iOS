@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brainstem101/BSAtlasViewController.m"
-            timestampString = "420263867.346244"
+            timestampString = "420267605.67229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "286"
-            endingLineNumber = "286"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brainstem101/BSAtlasViewController.m"
-            timestampString = "420263867.346244"
+            timestampString = "420267605.67229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
             landmarkName = "-handleSingleTap:"
             landmarkType = "5">
          </BreakpointContent>
@@ -168,11 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brainstem101/BSAtlasViewController.m"
-            timestampString = "420263867.346244"
+            timestampString = "420267605.67229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "378"
-            endingLineNumber = "378"
+            startingLineNumber = "390"
+            endingLineNumber = "390"
             landmarkName = "-handleRotation:"
             landmarkType = "5">
          </BreakpointContent>
@@ -184,11 +184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brainstem101/BSAtlasViewController.m"
-            timestampString = "420263867.346244"
+            timestampString = "420267605.67229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "406"
-            endingLineNumber = "406"
+            startingLineNumber = "418"
+            endingLineNumber = "418"
             landmarkName = "-minusButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -200,11 +200,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brainstem101/BSAtlasViewController.m"
-            timestampString = "420263867.346244"
+            timestampString = "420267605.67229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "320"
-            endingLineNumber = "320"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
             landmarkName = "-selectSectionView:"
             landmarkType = "5">
          </BreakpointContent>

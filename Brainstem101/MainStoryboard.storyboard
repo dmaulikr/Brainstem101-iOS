@@ -249,7 +249,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="draw-mode-background.png" highlightedImage="draw-mode-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-gX-Lfl" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="draw-mode-background" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-gX-Lfl" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.68000000000000005" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -797,7 +797,7 @@
         <image name="clinical-box-overlay.png" width="1536" height="2048"/>
         <image name="clinical-fading-eye.png" width="1536" height="2048"/>
         <image name="clinical-hole-overlay.png" width="1536" height="2048"/>
-        <image name="draw-mode-background.png" width="1433" height="1075"/>
+        <image name="draw-mode-background" width="2048" height="1536"/>
         <image name="master-background" width="1536" height="2048"/>
         <image name="pencil.png" width="117" height="121"/>
         <image name="profile-background" width="1536" height="2048"/>

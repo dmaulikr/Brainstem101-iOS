@@ -63,7 +63,7 @@ const float sectionDistance = 80;
     } completion:nil];
 }
 
-- (void)presentSection:(int)section{
+- (void)presentSection:(NSInteger)section{
     if (_hidden) {
         [self show];
     }
@@ -81,7 +81,7 @@ const float sectionDistance = 80;
     } completion:nil];
 }
 
-- (int) layerIndexForSection:(int)number {
+- (NSInteger)layerIndexForSection:(NSInteger)number {
     switch (number) {
         case 0:
             return 1;

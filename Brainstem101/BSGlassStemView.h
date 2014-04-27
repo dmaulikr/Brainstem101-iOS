@@ -13,7 +13,7 @@
 @property (assign) BOOL hidden;
 
 -(id)initWithFrame:(CGRect)frame;
--(void)presentSection:(int)section;
+-(void)presentSection:(NSInteger)section;
 -(void)show;
 -(void)hide;
 

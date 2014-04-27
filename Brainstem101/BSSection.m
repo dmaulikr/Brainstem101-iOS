@@ -11,7 +11,7 @@
 @implementation BSSection
 
 
-- (id)initWithSectionNumber:(int)number
+- (id)initWithSectionNumber:(NSInteger)number
 {
     self = [super init];
     if (self) {
@@ -20,24 +20,24 @@
     return self;
 }
 
-+ (BSSection *)atlasSectionNumber:(int)num
++ (BSSection *)atlasSectionNumber:(NSInteger)num
 {
     return [[BSSection alloc] initWithSectionNumber:num];
 }
 
-+ (BSSection *) profileSectionNumber:(int)num
++ (BSSection *) profileSectionNumber:(NSInteger)num
 {
     return [[BSSection alloc] initWithSectionNumber:num];
 }
 
 - (UIImage *)atlasImage
 {
-    return [UIImage imageNamed:[NSString stringWithFormat:@"atlas-sxn-%d.png", _sectionNumber]];
+    return [UIImage imageNamed:[NSString stringWithFormat:@"atlas-sxn-%ld.png", (long)_sectionNumber]];
 }
 
 - (UIImage *)profileImage
 {
-    return [UIImage imageNamed:[NSString stringWithFormat:@"profile-sxn-%d.png", _sectionNumber]];
+    return [UIImage imageNamed:[NSString stringWithFormat:@"profile-sxn-%ld.png", (long)_sectionNumber]];
 }
 
 @end

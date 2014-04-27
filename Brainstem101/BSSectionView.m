@@ -29,7 +29,7 @@
     return self;
 }
 
--(void)setNewSectionNumber:(int)num
+-(void)setNewSectionNumber:(NSInteger)num
 {
     self.sxnNumber = num;
     
@@ -61,7 +61,7 @@
         [self.pathLayer addSublayer:_selectionLayer];
     }
     
-    [self.backgroundLayer setContents:(id)[UIImage imageNamed:[NSString stringWithFormat:@"sxn-%d.png",num]].CGImage];
+    [self.backgroundLayer setContents:(id)[UIImage imageNamed:[NSString stringWithFormat:@"sxn-%ld.png",(long)num]].CGImage];
     [self.arteryLayer setContents:nil];
     [self.pathLayer setContents:nil];
     [self.selectionLayer setContents:nil];
@@ -232,7 +232,7 @@
     }];
 }
 
-+(CGRect)getFrameForSection:(int)num
++(CGRect)getFrameForSection:(NSInteger)num
 {
     
     float scaleFactor = 0;
@@ -276,7 +276,7 @@
     return rFrame;
 }
 
-+(CGPoint)getCenterForSection:(int)num
++(CGPoint)getCenterForSection:(NSInteger)num
 {
     CGPoint newCenter;    
     

@@ -10,15 +10,15 @@
 
 @interface BSSection : NSObject
 
-@property (assign) int sectionNumber;
+@property (assign, nonatomic) NSInteger sectionNumber;
 @property (strong, nonatomic) UIImage *image;
 
-- (id)initWithSectionNumber:(int) number;
+- (id)initWithSectionNumber:(NSInteger) number;
 
 - (UIImage *) atlasImage;
 - (UIImage *) profileImage;
 
-+ (BSSection *) atlasSectionNumber:(int)num;
-+ (BSSection *) profileSectionNumber:(int)num;
++ (BSSection *) atlasSectionNumber:(NSInteger)num;
++ (BSSection *) profileSectionNumber:(NSInteger)num;
 
 @end

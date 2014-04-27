@@ -10,14 +10,14 @@
 
 @interface BSStructure : NSObject <NSXMLParserDelegate>
 
-@property (strong, nonatomic)   NSString *structureName;
-@property (strong, nonatomic)   NSString *structureDescription;
-@property (strong, nonatomic)   NSMutableArray *structurePaths;
-@property (strong, nonatomic)   NSMutableArray *arteryImages;
-@property (strong, nonatomic)   NSMutableDictionary *stemViewOverlays;
-@property (strong, nonatomic)   NSString *conventionalName;
-@property (strong, nonatomic)   BSStructurePath *currentStructurePath;
-@property (nonatomic)           BSStructureType structureType;
+@property (strong, nonatomic) NSString            *structureName;
+@property (strong, nonatomic) NSString            *structureDescription;
+@property (strong, nonatomic) NSMutableArray      *structurePaths;
+@property (strong, nonatomic) NSMutableArray      *arteryImages;
+@property (strong, nonatomic) NSMutableDictionary *stemViewOverlays;
+@property (strong, nonatomic) NSString            *conventionalName;
+@property (strong, nonatomic) BSStructurePath     *currentStructurePath;
+@property (assign, nonatomic) BSStructureType     structureType;
 
 - (id)          initWithName:(NSString *)name andType:(BSStructureType)type;
 
@@ -27,7 +27,7 @@
 - (void)        addArteryNamed:(NSString *) name forIndecies:(NSArray *) indicies;
 - (void)        generateStructurePaths;
 
-- (BOOL)        isInSectionNumber:(int)num;
-- (BOOL)        hasArteryInSectionNumber:(int)num;
+- (BOOL)        isInSectionNumber:(NSInteger)num;
+- (BOOL)        hasArteryInSectionNumber:(NSInteger)num;
 
 @end
