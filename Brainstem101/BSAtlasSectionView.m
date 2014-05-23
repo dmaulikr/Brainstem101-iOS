@@ -21,17 +21,17 @@
 - (id)initWithFrame:(CGRect)frame andSection:(BSSection *)section{
     self = [super initWithFrame:frame];
     if (self) {
-        _section = section;
-        self.backingView = [[UIImageView alloc] initWithFrame:self.bounds];
+        self.section           = section;
+        self.backingView       = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         self.backingView.image = [self.section atlasImage];
-        
-        self.arteryView = [[UIImageView alloc] initWithFrame:self.bounds];
 
-        operationQueue = [NSOperationQueue new];
-        structureLayersCache = [NSMutableDictionary new];
+        self.arteryView        = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+
+        operationQueue         = [NSOperationQueue new];
+        structureLayersCache   = [NSMutableDictionary new];
         
-        [self addSubview:_backingView];
-        [self addSubview:_arteryView];
+        [self addSubview:self.backingView];
+        [self addSubview:self.arteryView];
         
     }
     return self;
@@ -58,7 +58,8 @@
     
 }
 
-- (void) arteryImageNamed:(NSString *)imageName{
+- (void)arteryImageNamed:(NSString *)imageName
+{
     if (imageName) {
         [self.arteryView setImage:[UIImage imageNamed:imageName]];
         [self.arteryView setAlpha:1];
@@ -75,22 +76,18 @@
     }else if (structureImageView == nil) {
         [operationQueue addOperationWithBlock:^{
             UIImage *newStructure = [self drawStructure:structure];
-            // add to view
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            dispatch_async(dispatch_get_main_queue(), ^{
                 UIImageView *newStructureView = [[UIImageView alloc] initWithFrame:self.bounds];
                 [newStructureView setImage:newStructure];
-                [_backingView addSubview:newStructureView];
+                [self.backingView addSubview:newStructureView];
                 structureLayersCache[structure.structureName] = newStructureView;
-            }];
+            });
         }];
     }
-    
 }
-
 
 - (UIImage *) drawStructure:(BSStructure *)structure
 {
-
     CGSize retinaSize = self.backingView.bounds.size;
     retinaSize.height = retinaSize.height * 2;
     retinaSize.width = retinaSize.width * 2;
@@ -118,10 +115,12 @@
     return img;
 }
 
-- (void) fade{
+- (void)fade
+{
     [self.backingView setAlpha:0.3];
 }
-- (void) unfade{
+- (void)unfade
+{
     [self.backingView setAlpha:1.0];
 }
 
@@ -129,11 +128,13 @@
 #define ROTATION_SPEED 0.4
 #define SECTION_3_Y_ROTATION_OFFSET 35
 
-- (void)rotateView{
+- (void)rotateView
+{
     [self rotateViewRight];
 }
 
-- (void)rotateViewRight{
+- (void)rotateViewRight
+{
     if (self.isRotated) {
         [self rotateViewFromDegree:270 toDegree:0];
     }else{
@@ -141,18 +142,20 @@
     }
 }
 
-- (void)rotateViewLeft{
-    if (_isRotated) {
+- (void)rotateViewLeft
+{
+    if (self.isRotated) {
         [self rotateViewFromDegree:90 toDegree:0];
     }else{
         [self rotateViewFromDegree:270 toDegree:180];
     }
 }
 
-- (void) rotateViewFromDegree:(int)a toDegree:(int)b{
+- (void)rotateViewFromDegree:(int)a toDegree:(int)b
+{
     [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        if (_section.sectionNumber == 3) {
-            if (_isRotated) {
+        if (self.section.sectionNumber == 3) {
+            if (self.isRotated) {
                 [self setCenter:CGPointMake(self.center.x, self.center.y - (SECTION_3_Y_ROTATION_OFFSET/2))];
             }else{
                 [self setCenter:CGPointMake(self.center.x, self.center.y + (SECTION_3_Y_ROTATION_OFFSET/2))];
@@ -161,8 +164,8 @@
         self.layer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(a));
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            if (_section.sectionNumber == 3) {
-                if (_isRotated) {
+            if (self.section.sectionNumber == 3) {
+                if (self.isRotated) {
                     [self setCenter:CGPointMake(self.center.x, self.center.y - (SECTION_3_Y_ROTATION_OFFSET/2))];
                 }else{
                     [self setCenter:CGPointMake(self.center.x, self.center.y + (SECTION_3_Y_ROTATION_OFFSET/2))];
@@ -170,12 +173,13 @@
             }
             self.layer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(b));
         } completion:^(BOOL finished) {
-            _isRotated = !_isRotated;
+            self.isRotated = !self.isRotated;
         }];
     }];
 }
 
-+ (CGRect)frameForSectionNumber:(int)num{
++ (CGRect)frameForSectionNumber:(int)num
+{
     CGRect bounds = [self getBoundsForSection:num];
     CGPoint desiredCenter = [self getCenterForSection:num];
     float initialCenterX = CGRectGetMidX(bounds);
@@ -184,8 +188,8 @@
     return finalFrame;
 }
 
-+ (CGRect)getBoundsForSection:(int)num{
-    
++ (CGRect)getBoundsForSection:(int)num
+{
     float scaleFactor = 0;
     
     switch (num) {
@@ -228,7 +232,8 @@
     return rFrame;
 }
 
-+ (CGPoint)getCenterForSection:(int)num{
++ (CGPoint)getCenterForSection:(int)num
+{
     CGPoint newCenter;
     
     switch (num) {
@@ -264,13 +269,11 @@
             NSLog(@"Error switching in section view frame creation");
             break;
     }
-    
     return newCenter;
 }
      
 - (CGPathRef)newScaledPath:(CGPathRef)path toRect:(CGRect) rect
 {
-    
     CGFloat individualFrameFactor = (rect.size.height*2)/CAPTURE_DEVICE_HEIGHT;
     CGFloat scaleFactor = individualFrameFactor;
     

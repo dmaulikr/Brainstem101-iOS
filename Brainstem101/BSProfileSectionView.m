@@ -37,7 +37,8 @@
     }
 }
 
--(void)didSelectLayer:(CAShapeLayer *)layer{
+- (void)didSelectLayer:(CAShapeLayer *)layer
+{
     [self unHighlightLayers];
     
     [layer setFillColor:UIColorFromRGBWithAlpha(0x7a2804, 0.5).CGColor];
@@ -49,8 +50,9 @@
     }
 }
 
--(void)unHighlightLayers{
-    for (BSShapeLayerWrap *slw in _currentStructures) {
+-(void)unHighlightLayers
+{
+    for (BSShapeLayerWrap *slw in self.currentStructures) {
         [[slw shapeLayer] setFillColor:[UIColor clearColor].CGColor];
     }
 }
@@ -58,21 +60,21 @@
 -(void)setCurrentSection:(BSSection *)section{
     _currentSection = section;
     ///animate out and in here
-    if (!_backingView) {
+    if (!self.backingView) {
         CGFloat scaleFactor = self.bounds.size.height / CAPTURE_DEVICE_HEIGHT;
         CGRect newFrame = CGRectMake(0, 0, CAPTURE_DEVICE_WIDTH * scaleFactor, CAPTURE_DEVICE_HEIGHT * scaleFactor);
-        _backingView = [[UIImageView alloc] initWithFrame:newFrame];
-        [_backingView setCenter:CGPointMake(self.center.x, _backingView.center.y)];
+        self.backingView = [[UIImageView alloc] initWithFrame:newFrame];
+        [self.backingView setCenter:CGPointMake(self.center.x, _backingView.center.y)];
         
         [self addSubview:_backingView];
     }
     
-    _backingView.image = [_currentSection profileImage];
+    self.backingView.image = [self.currentSection profileImage];
     
-    NSArray *currentNuclei          = [[BSModel sharedModel] getType:BSStructureTypeNucleus inSection:_currentSection.sectionNumber];
-    NSArray *currentTracts          = [[BSModel sharedModel] getType:BSStructureTypeTract inSection:_currentSection.sectionNumber];
-    NSArray *currentMiscellaneous   = [[BSModel sharedModel] getType:BSStructureTypeMiscellaneous inSection:_currentSection.sectionNumber];
-    NSArray *currentCranialNerves   = [[BSModel sharedModel] getType:BSStructureTypeCranialNerve inSection:_currentSection.sectionNumber];
+    NSArray *currentNuclei          = [[BSModel sharedModel] getType:BSStructureTypeNucleus inSection:self.currentSection.sectionNumber];
+    NSArray *currentTracts          = [[BSModel sharedModel] getType:BSStructureTypeTract inSection:self.currentSection.sectionNumber];
+    NSArray *currentMiscellaneous   = [[BSModel sharedModel] getType:BSStructureTypeMiscellaneous inSection:self.currentSection.sectionNumber];
+    NSArray *currentCranialNerves   = [[BSModel sharedModel] getType:BSStructureTypeCranialNerve inSection:self.currentSection.sectionNumber];
     
     NSArray *allStructures = [[[currentNuclei arrayByAddingObjectsFromArray:currentTracts] arrayByAddingObjectsFromArray:currentMiscellaneous] arrayByAddingObjectsFromArray:currentCranialNerves];
 
@@ -80,15 +82,16 @@
         [[slw shapeLayer] removeFromSuperlayer];
     }
     
-    _currentStructures = [NSMutableArray new];
+    self.currentStructures = [NSMutableArray new];
 
     for (BSStructure *s in allStructures) {
-        [_currentStructures addObject:[self wrappedObjectForStructure:s]];
+        [self.currentStructures addObject:[self wrappedObjectForStructure:s]];
     }
     [self presentStructures];
 }
 
--(BSShapeLayerWrap *) wrappedObjectForStructure:(BSStructure *) str {
+-(BSShapeLayerWrap *)wrappedObjectForStructure:(BSStructure *)str
+{
     BSShapeLayerWrap *shapeLayerWrap = [[BSShapeLayerWrap alloc] init];
     [shapeLayerWrap setStructure:str];
     
@@ -102,12 +105,8 @@
     [tmpLayer setStrokeColor:UIColorFromRGBWithAlpha(0xdcbc76, 1).CGColor];
     [tmpLayer setFillColor:[UIColor clearColor].CGColor];
     [tmpLayer setLineWidth:2];
-//    [tmpLayer setLineJoin:kCALineJoinMiter];
-//    [tmpLayer setMiterLimit:1];
     [tmpLayer setLineCap:kCALineCapRound];
-    
-    // done rendering
-    
+
     [shapeLayerWrap setShapeLayer:tmpLayer];
     return shapeLayerWrap;
 }
@@ -164,26 +163,29 @@
     [self rotateViewRight];
 }
 
-- (void)rotateViewRight{
-    if (_isRotated) {
+- (void)rotateViewRight
+{
+    if (self.isRotated) {
         [self rotateViewFromDegree:270 toDegree:0];
     }else{
         [self rotateViewFromDegree:90 toDegree:180];
     }
 }
 
-- (void)rotateViewLeft{
-    if (_isRotated) {
+- (void)rotateViewLeft
+{
+    if (self.isRotated) {
         [self rotateViewFromDegree:90 toDegree:0];
     }else{
         [self rotateViewFromDegree:270 toDegree:180];
     }
 }
 
-- (void) rotateViewFromDegree:(int)a toDegree:(int)b{
+- (void)rotateViewFromDegree:(int)a toDegree:(int)b
+{
     [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        if (_currentSection.sectionNumber == 3) {
-            if (_isRotated) {
+        if (self.currentSection.sectionNumber == 3) {
+            if (self.isRotated) {
                 [self setCenter:CGPointMake(self.center.x, self.center.y - (SECTION_3_Y_ROTATION_OFFSET/2))];
             }else{
                 [self setCenter:CGPointMake(self.center.x, self.center.y + (SECTION_3_Y_ROTATION_OFFSET/2))];
@@ -192,8 +194,8 @@
         self.layer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(a));
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:ROTATION_SPEED/2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            if (_currentSection.sectionNumber == 3) {
-                if (_isRotated) {
+            if (self.currentSection.sectionNumber == 3) {
+                if (self.isRotated) {
                     [self setCenter:CGPointMake(self.center.x, self.center.y - (SECTION_3_Y_ROTATION_OFFSET/2))];
                 }else{
                     [self setCenter:CGPointMake(self.center.x, self.center.y + (SECTION_3_Y_ROTATION_OFFSET/2))];
@@ -201,11 +203,9 @@
             }
             self.layer.affineTransform = CGAffineTransformMakeRotation(DegreesToRadians(b));
         } completion:^(BOOL finished) {
-            _isRotated = !_isRotated;
+            self.isRotated = !self.isRotated;
         }];
     }];
 }
-
-
 
 @end

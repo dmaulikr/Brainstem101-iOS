@@ -15,7 +15,6 @@
 
 @interface BSDrawModeViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (strong, nonatomic) IBOutlet BSSectionView *sectionView;
 @property (strong, nonatomic) IBOutlet BSDrawView *drawView;
 @property (assign) NSInteger sectionNumber;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D45a" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="CAJ-Nt-qWE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="CAJ-Nt-qWE">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -152,7 +152,7 @@
                                     <constraint firstAttribute="height" constant="43" id="QzZ-9L-9PM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="pencil.png">
+                                <state key="normal" image="pencil">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -250,10 +250,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFill" image="draw-mode-background" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-gX-Lfl" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.68000000000000005" colorSpace="calibratedWhite"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUc-F6-2Ek" customClass="BSSectionView">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -370,15 +366,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kPB-e8-hdd" firstAttribute="trailing" secondItem="mtX-cb-n87" secondAttribute="trailing" id="BJa-Et-yyx"/>
-                            <constraint firstItem="HWE-gX-Lfl" firstAttribute="top" secondItem="mtX-cb-n87" secondAttribute="top" id="I1o-Pu-0vW"/>
                             <constraint firstItem="jUc-F6-2Ek" firstAttribute="bottom" secondItem="mtX-cb-n87" secondAttribute="bottom" id="Pkz-2a-C1B"/>
-                            <constraint firstItem="HWE-gX-Lfl" firstAttribute="bottom" secondItem="mtX-cb-n87" secondAttribute="bottom" id="V8p-du-vGt"/>
                             <constraint firstItem="jUc-F6-2Ek" firstAttribute="top" secondItem="mtX-cb-n87" secondAttribute="top" id="Xtt-Ub-dhJ"/>
-                            <constraint firstItem="HWE-gX-Lfl" firstAttribute="leading" secondItem="mtX-cb-n87" secondAttribute="leading" id="YZP-cb-JO3"/>
                             <constraint firstItem="kPB-e8-hdd" firstAttribute="bottom" secondItem="mtX-cb-n87" secondAttribute="bottom" id="bfc-JY-n0F"/>
                             <constraint firstItem="kPB-e8-hdd" firstAttribute="leading" secondItem="mtX-cb-n87" secondAttribute="leading" id="gDk-Ge-Sov"/>
                             <constraint firstItem="jUc-F6-2Ek" firstAttribute="leading" secondItem="mtX-cb-n87" secondAttribute="leading" id="jRz-tD-EHA"/>
-                            <constraint firstItem="HWE-gX-Lfl" firstAttribute="trailing" secondItem="mtX-cb-n87" secondAttribute="trailing" id="lbw-f6-uoa"/>
                             <constraint firstItem="jUc-F6-2Ek" firstAttribute="trailing" secondItem="mtX-cb-n87" secondAttribute="trailing" id="rBh-xf-KC6"/>
                             <constraint firstItem="kPB-e8-hdd" firstAttribute="top" secondItem="mtX-cb-n87" secondAttribute="top" id="zc2-s2-xxA"/>
                         </constraints>
@@ -386,7 +378,6 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="backgroundImageView" destination="HWE-gX-Lfl" id="bsg-9H-7wd"/>
                         <outlet property="drawView" destination="kPB-e8-hdd" id="o1G-pa-dhc"/>
                         <outlet property="sectionView" destination="jUc-F6-2Ek" id="1jN-cn-Vkt"/>
                     </connections>
@@ -407,23 +398,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clinical-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="KQR-Gl-W7w" userLabel="Background View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clinical-background" translatesAutoresizingMaskIntoConstraints="NO" id="KQR-Gl-W7w" userLabel="Background View">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <tableView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="102" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rjE-o1-qSV">
-                                <rect key="frame" x="56" y="116" width="481" height="287"/>
+                            <tableView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="102" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rjE-o1-qSV">
+                                <rect key="frame" x="85" y="116" width="452" height="287"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="481" id="OjK-Wr-r7n"/>
-                                    <constraint firstAttribute="height" constant="287" id="yP6-C5-uMy"/>
-                                </constraints>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell autoresizesSubviews="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="ClinicalCell" rowHeight="102" id="4ZF-6z-Ov2" customClass="BSClinicalDetailsTableViewCell">
-                                        <rect key="frame" x="0.0" y="22" width="481" height="102"/>
+                                        <rect key="frame" x="0.0" y="22" width="452" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4ZF-6z-Ov2" id="ZAa-SD-QKC">
-                                            <rect key="frame" x="0.0" y="0.0" width="481" height="102"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="452" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Structure and other stuff we need to show" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="MTu-oH-wLC" userLabel="Deficit Text View">
@@ -438,7 +425,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhB-kX-3s6" userLabel="Symptoms Text View">
-                                                    <rect key="frame" x="138" y="0.0" width="323" height="101"/>
+                                                    <rect key="frame" x="138" y="0.0" width="294" height="101"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <string key="text">Ipsilateral laryngeal, pharyngeal, and palatal hemiparalysis. Presents as dysarthria (difficulty with articulation of speech), hoarseness, dysphagia (Laryngeal muscles), diminished gag reflex (efferent limb of CN X)</string>
                                                     <color key="textColor" white="0.88651916060000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -468,9 +455,6 @@
                                     <outlet property="delegate" destination="Jnh-9j-gp5" id="gd4-Tj-CC7"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clinical-box-overlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-Fq-n83" userLabel="Box Overlay">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                            </imageView>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lQ8-Lv-zkP" userLabel="Syndrom Collection View">
                                 <rect key="frame" x="97" y="12" width="651" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -519,7 +503,7 @@
                                     <outlet property="delegate" destination="Jnh-9j-gp5" id="m0c-4F-wDH"/>
                                 </connections>
                             </collectionView>
-                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clinical-hole-overlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="J4S-ar-8Az" userLabel="Hole overlay">
+                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clinical-hole-overlay" translatesAutoresizingMaskIntoConstraints="NO" id="J4S-ar-8Az" userLabel="Hole overlay">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -527,7 +511,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clinical-fading-eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Fh-h1-LNV" userLabel="Fading Eye">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="clinical-fading-eye" translatesAutoresizingMaskIntoConstraints="NO" id="6Fh-h1-LNV" userLabel="Fading Eye">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -606,8 +590,6 @@
                             <constraint firstItem="KQR-Gl-W7w" firstAttribute="trailing" secondItem="WJ4-Ll-2id" secondAttribute="trailing" id="3pz-Z9-vHd"/>
                             <constraint firstItem="KQR-Gl-W7w" firstAttribute="bottom" secondItem="WJ4-Ll-2id" secondAttribute="bottom" id="9A3-gg-7ds"/>
                             <constraint firstItem="KQR-Gl-W7w" firstAttribute="top" secondItem="WJ4-Ll-2id" secondAttribute="top" id="H1h-W4-WrL"/>
-                            <constraint firstItem="rjE-o1-qSV" firstAttribute="leading" secondItem="WJ4-Ll-2id" secondAttribute="leading" constant="56" id="Hxn-K0-ZJA"/>
-                            <constraint firstItem="rjE-o1-qSV" firstAttribute="top" secondItem="WJ4-Ll-2id" secondAttribute="top" constant="116" id="Ias-Fe-VTd"/>
                             <constraint firstItem="J4S-ar-8Az" firstAttribute="trailing" secondItem="WJ4-Ll-2id" secondAttribute="trailing" id="Jn3-7l-U2P"/>
                             <constraint firstItem="6Fh-h1-LNV" firstAttribute="leading" secondItem="WJ4-Ll-2id" secondAttribute="leading" id="Mj1-be-rZL"/>
                             <constraint firstItem="J4S-ar-8Az" firstAttribute="top" secondItem="WJ4-Ll-2id" secondAttribute="top" id="NF6-xW-uv3"/>
@@ -617,15 +599,11 @@
                             <constraint firstItem="Yry-pO-m9h" firstAttribute="leading" secondItem="WJ4-Ll-2id" secondAttribute="leading" id="WIk-kz-okS"/>
                             <constraint firstItem="KQR-Gl-W7w" firstAttribute="leading" secondItem="WJ4-Ll-2id" secondAttribute="leading" id="XqQ-zt-U0N"/>
                             <constraint firstItem="6Fh-h1-LNV" firstAttribute="bottom" secondItem="WJ4-Ll-2id" secondAttribute="bottom" id="bsR-F3-JvB"/>
-                            <constraint firstItem="Vzg-Fq-n83" firstAttribute="trailing" secondItem="WJ4-Ll-2id" secondAttribute="trailing" id="d5x-Iz-KgP"/>
                             <constraint firstItem="Yry-pO-m9h" firstAttribute="bottom" secondItem="WJ4-Ll-2id" secondAttribute="bottom" id="lhH-7U-qhZ"/>
                             <constraint firstItem="N5J-b8-5fB" firstAttribute="leading" secondItem="WJ4-Ll-2id" secondAttribute="leading" id="li2-GZ-UyY"/>
-                            <constraint firstItem="Vzg-Fq-n83" firstAttribute="leading" secondItem="WJ4-Ll-2id" secondAttribute="leading" id="lko-fp-D5Q"/>
                             <constraint firstItem="J4S-ar-8Az" firstAttribute="leading" secondItem="WJ4-Ll-2id" secondAttribute="leading" id="mUN-gz-dUh"/>
-                            <constraint firstItem="Vzg-Fq-n83" firstAttribute="top" secondItem="WJ4-Ll-2id" secondAttribute="top" id="okV-26-Dvl"/>
                             <constraint firstItem="Yry-pO-m9h" firstAttribute="trailing" secondItem="WJ4-Ll-2id" secondAttribute="trailing" id="p1K-0F-m2g"/>
                             <constraint firstAttribute="trailing" secondItem="lQ8-Lv-zkP" secondAttribute="trailing" constant="20" symbolic="YES" id="tGY-kM-O8U"/>
-                            <constraint firstItem="Vzg-Fq-n83" firstAttribute="bottom" secondItem="WJ4-Ll-2id" secondAttribute="bottom" id="wuj-qb-Qqo"/>
                             <constraint firstItem="lQ8-Lv-zkP" firstAttribute="leading" secondItem="N5J-b8-5fB" secondAttribute="trailing" constant="8" symbolic="YES" id="xex-pU-Lfu"/>
                             <constraint firstItem="J4S-ar-8Az" firstAttribute="bottom" secondItem="WJ4-Ll-2id" secondAttribute="bottom" id="zig-Ce-099"/>
                             <constraint firstItem="6Fh-h1-LNV" firstAttribute="top" secondItem="WJ4-Ll-2id" secondAttribute="top" id="zkz-PY-Rmu"/>
@@ -634,7 +612,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="backgroundView" destination="KQR-Gl-W7w" id="ykD-gz-hPQ"/>
-                        <outlet property="boxViewOverlay" destination="Vzg-Fq-n83" id="j7a-5y-kPa"/>
                         <outlet property="deficitTableView" destination="rjE-o1-qSV" id="QVn-dL-Mxe"/>
                         <outlet property="descriptionView" destination="FaC-z9-FFb" id="LnO-E7-alM"/>
                         <outlet property="fadingEyeView" destination="6Fh-h1-LNV" id="FkD-X8-kKa"/>
@@ -796,14 +773,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clinical-background.png" width="1536" height="2048"/>
-        <image name="clinical-box-overlay.png" width="1536" height="2048"/>
-        <image name="clinical-fading-eye.png" width="1536" height="2048"/>
-        <image name="clinical-hole-overlay.png" width="1536" height="2048"/>
-        <image name="draw-mode-background" width="2048" height="1536"/>
+        <image name="clinical-background" width="768" height="1024"/>
+        <image name="clinical-fading-eye" width="1536" height="2048"/>
+        <image name="clinical-hole-overlay" width="1536" height="2048"/>
         <image name="master-background" width="1536" height="2048"/>
-        <image name="pencil.png" width="117" height="121"/>
-        <image name="profile-background" width="1536" height="2048"/>
+        <image name="pencil" width="117" height="121"/>
+        <image name="profile-background" width="768" height="1024"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -811,7 +786,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nTF-2h-ddk"/>
+        <segue reference="mqe-Fz-bnB"/>
         <segue reference="EV6-W9-HeD"/>
     </inferredMetricsTieBreakers>
 </document>

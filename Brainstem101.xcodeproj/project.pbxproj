@@ -97,8 +97,6 @@
 		326F87951721360F008E923E /* middle-cerebellar-peduncle-m-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 326F87921721360F008E923E /* middle-cerebellar-peduncle-m-6.xml */; };
 		326F879717213702008E923E /* superior-cerebellar-peduncle-m-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 326F879617213702008E923E /* superior-cerebellar-peduncle-m-7.xml */; };
 		326FB690170BFFA4002CD59B /* BSClinicalCollectionViewSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326FB68F170BFFA2002CD59B /* BSClinicalCollectionViewSectionCell.m */; };
-		326FB692170C129F002CD59B /* perfusion-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB691170C129F002CD59B /* perfusion-background.png */; };
-		326FB694170C1408002CD59B /* perfusion-background-nothnagel.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB693170C1408002CD59B /* perfusion-background-nothnagel.png */; };
 		326FB696170C1562002CD59B /* benedikt-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB695170C1562002CD59B /* benedikt-perf.png */; };
 		326FB698170C156E002CD59B /* weber-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB697170C156E002CD59B /* weber-perf.png */; };
 		326FB69A170C1580002CD59B /* wallenberg-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB699170C1580002CD59B /* wallenberg-perf.png */; };
@@ -287,12 +285,10 @@
 		327CE45E170ADE710020F918 /* raymond-cestan-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE459170ADE710020F918 /* raymond-cestan-sec.png */; };
 		327CE45F170ADE710020F918 /* raymond-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE45A170ADE710020F918 /* raymond-sec.png */; };
 		327CE461170ADFAA0020F918 /* benedikt-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE460170ADFAA0020F918 /* benedikt-mug.png */; };
-		327CE464170ADFCB0020F918 /* clinical-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE462170ADFCB0020F918 /* clinical-overlay.png */; };
 		327CE465170ADFCB0020F918 /* nothnagel-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE463170ADFCB0020F918 /* nothnagel-mug.png */; };
 		327CE468170AED3B0020F918 /* BSClinicalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CE467170AED3B0020F918 /* BSClinicalCollectionViewCell.m */; };
 		327CE46B170AF8B70020F918 /* benedikt-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE469170AF8B70020F918 /* benedikt-sec.png */; };
 		327CE46C170AF8B70020F918 /* parinaud-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE46A170AF8B70020F918 /* parinaud-sec.png */; };
-		327E12F01707BC9800C5D237 /* clinical-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12EF1707BC9800C5D237 /* clinical-background.png */; };
 		327E12F21707BD6400C5D237 /* wallenberg-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F11707BD6400C5D237 /* wallenberg-mug.png */; };
 		327E12F41707BD7C00C5D237 /* millard-gubler-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F31707BD7C00C5D237 /* millard-gubler-mug.png */; };
 		327E12F61707BD9600C5D237 /* raymond-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F51707BD9600C5D237 /* raymond-mug.png */; };
@@ -314,8 +310,6 @@
 		327E132117081F5300C5D237 /* MRI8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131817081F5300C5D237 /* MRI8.jpg */; };
 		327E1324170842EA00C5D237 /* claude-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E1322170842E900C5D237 /* claude-mug.png */; };
 		327E132B17085DBD00C5D237 /* weber-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E132A17085DBD00C5D237 /* weber-mug.png */; };
-		32857B521777836A005CC824 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 32857B511777835D005CC824 /* Default-Portrait@2x~ipad.png */; };
-		32857B5417778385005CC824 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 32857B5317778384005CC824 /* Default-Portrait~ipad.png */; };
 		328848AE16B10DD4005FA824 /* sxn-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848A616B10DD4005FA824 /* sxn-8.png */; };
 		328848AF16B10DD4005FA824 /* sxn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848A716B10DD4005FA824 /* sxn-7.png */; };
 		328848B016B10DD4005FA824 /* sxn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848A816B10DD4005FA824 /* sxn-6.png */; };
@@ -329,7 +323,6 @@
 		328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */; };
 		32948468190CC1E600B145F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32948467190CC1E600B145F1 /* Images.xcassets */; };
 		32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AFEDF816D9D183006A3101 /* BSDrawView.m */; };
-		32B54D92171875AA0064654C /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B54D91171875AA0064654C /* pencil.png */; };
 		32B9A84818A7471A0027805F /* inferior-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */; };
 		32B9A84918A7471A0027805F /* lateral-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */; };
 		32B9A84A18A7471A0027805F /* medial-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */; };
@@ -364,7 +357,6 @@
 		32C384D11777E1B400333310 /* profile-sxn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C81777E1B400333310 /* profile-sxn-7.png */; };
 		32C384D21777E1B400333310 /* profile-sxn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C91777E1B400333310 /* profile-sxn-6.png */; };
 		32C384D31777E1B400333310 /* profile-sxn-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384CA1777E1B400333310 /* profile-sxn-3.png */; };
-		32C384D91777F58D00333310 /* clinical-fading-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384D81777F58D00333310 /* clinical-fading-eye.png */; };
 		32C384DB177810BD00333310 /* jackson-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DA177810BC00333310 /* jackson-sec.png */; };
 		32C384DD1778119900333310 /* jackson-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DC1778119700333310 /* jackson-perf.png */; };
 		32C46220176CE0FF00B55189 /* glass-stem-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4620D176CE0FF00B55189 /* glass-stem-0.png */; };
@@ -421,11 +413,8 @@
 		32EDE7AD177102DC006434A5 /* atlas-sxn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A4177102DC006434A5 /* atlas-sxn-6.png */; };
 		32EDE7AE177102DC006434A5 /* atlas-sxn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A5177102DC006434A5 /* atlas-sxn-7.png */; };
 		32EDE7AF177102DC006434A5 /* atlas-sxn-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A6177102DC006434A5 /* atlas-sxn-8.png */; };
-		32F323F417AB8A0E007590F3 /* icon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F323F217AB8A0E007590F3 /* icon@2x~ipad.png */; };
-		32F323F517AB8A0E007590F3 /* icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F323F317AB8A0E007590F3 /* icon~ipad.png */; };
 		32F5A88F176EF24000646E64 /* BSAtlasSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */; };
 		32F5A892176EF9DB00646E64 /* BSSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5A891176EF9DB00646E64 /* BSSection.m */; };
-		32FB64F4171FDB42005E6DE6 /* clinical-box-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F3171FDB42005E6DE6 /* clinical-box-overlay.png */; };
 		32FB65CC171FDF0B005E6DE6 /* abducens-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F5171FDF0A005E6DE6 /* abducens-n-4.xml */; };
 		32FB65CD171FDF0B005E6DE6 /* accessory-cuneate-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F6171FDF0A005E6DE6 /* accessory-cuneate-n-1.xml */; };
 		32FB65CE171FDF0B005E6DE6 /* accessory-cuneate-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F7171FDF0A005E6DE6 /* accessory-cuneate-n-2.xml */; };
@@ -635,7 +624,6 @@
 		32FB66A0171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C9171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml */; };
 		32FB66A1171FDF0B005E6DE6 /* vi-abducens-cn-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65CA171FDF0B005E6DE6 /* vi-abducens-cn-4.xml */; };
 		32FB66A2171FDF0B005E6DE6 /* vii-facial-cn-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */; };
-		32FB66A4171FE584005E6DE6 /* clinical-hole-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FB66A3171FE584005E6DE6 /* clinical-hole-overlay.png */; };
 		32FF6F7617098CBF00B4FB0F /* BSDeficit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF6F7517098CBE00B4FB0F /* BSDeficit.m */; };
 		8179EAE0161D40CF0050D663 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EADF161D40CF0050D663 /* UIKit.framework */; };
 		8179EAE2161D40CF0050D663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EAE1161D40CF0050D663 /* Foundation.framework */; };
@@ -753,8 +741,6 @@
 		326F879617213702008E923E /* superior-cerebellar-peduncle-m-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "superior-cerebellar-peduncle-m-7.xml"; sourceTree = "<group>"; };
 		326FB68E170BFFA1002CD59B /* BSClinicalCollectionViewSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalCollectionViewSectionCell.h; sourceTree = "<group>"; };
 		326FB68F170BFFA2002CD59B /* BSClinicalCollectionViewSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalCollectionViewSectionCell.m; sourceTree = "<group>"; };
-		326FB691170C129F002CD59B /* perfusion-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perfusion-background.png"; sourceTree = "<group>"; };
-		326FB693170C1408002CD59B /* perfusion-background-nothnagel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perfusion-background-nothnagel.png"; sourceTree = "<group>"; };
 		326FB695170C1562002CD59B /* benedikt-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt-perf.png"; sourceTree = "<group>"; };
 		326FB697170C156E002CD59B /* weber-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-perf.png"; sourceTree = "<group>"; };
 		326FB699170C1580002CD59B /* wallenberg-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallenberg-perf.png"; sourceTree = "<group>"; };
@@ -944,13 +930,11 @@
 		327CE459170ADE710020F918 /* raymond-cestan-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-cestan-sec.png"; sourceTree = "<group>"; };
 		327CE45A170ADE710020F918 /* raymond-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-sec.png"; sourceTree = "<group>"; };
 		327CE460170ADFAA0020F918 /* benedikt-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt-mug.png"; sourceTree = "<group>"; };
-		327CE462170ADFCB0020F918 /* clinical-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-overlay.png"; sourceTree = "<group>"; };
 		327CE463170ADFCB0020F918 /* nothnagel-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nothnagel-mug.png"; sourceTree = "<group>"; };
 		327CE466170AED3B0020F918 /* BSClinicalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalCollectionViewCell.h; sourceTree = "<group>"; };
 		327CE467170AED3B0020F918 /* BSClinicalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalCollectionViewCell.m; sourceTree = "<group>"; };
 		327CE469170AF8B70020F918 /* benedikt-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt-sec.png"; sourceTree = "<group>"; };
 		327CE46A170AF8B70020F918 /* parinaud-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parinaud-sec.png"; sourceTree = "<group>"; };
-		327E12EF1707BC9800C5D237 /* clinical-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-background.png"; sourceTree = "<group>"; };
 		327E12F11707BD6400C5D237 /* wallenberg-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallenberg-mug.png"; sourceTree = "<group>"; };
 		327E12F31707BD7C00C5D237 /* millard-gubler-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "millard-gubler-mug.png"; sourceTree = "<group>"; };
 		327E12F51707BD9600C5D237 /* raymond-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-mug.png"; sourceTree = "<group>"; };
@@ -973,8 +957,6 @@
 		327E131817081F5300C5D237 /* MRI8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI8.jpg; sourceTree = "<group>"; };
 		327E1322170842E900C5D237 /* claude-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-mug.png"; sourceTree = "<group>"; };
 		327E132A17085DBD00C5D237 /* weber-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-mug.png"; sourceTree = "<group>"; };
-		32857B511777835D005CC824 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
-		32857B5317778384005CC824 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		328848A616B10DD4005FA824 /* sxn-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-8.png"; sourceTree = "<group>"; };
 		328848A716B10DD4005FA824 /* sxn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-7.png"; sourceTree = "<group>"; };
 		328848A816B10DD4005FA824 /* sxn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-6.png"; sourceTree = "<group>"; };
@@ -991,7 +973,6 @@
 		32948467190CC1E600B145F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32AFEDF716D9D183006A3101 /* BSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawView.h; sourceTree = "<group>"; };
 		32AFEDF816D9D183006A3101 /* BSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawView.m; sourceTree = "<group>"; };
-		32B54D91171875AA0064654C /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
 		32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
 		32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
 		32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
@@ -1028,7 +1009,6 @@
 		32C384C81777E1B400333310 /* profile-sxn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-7.png"; sourceTree = "<group>"; };
 		32C384C91777E1B400333310 /* profile-sxn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-6.png"; sourceTree = "<group>"; };
 		32C384CA1777E1B400333310 /* profile-sxn-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-3.png"; sourceTree = "<group>"; };
-		32C384D81777F58D00333310 /* clinical-fading-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-fading-eye.png"; sourceTree = "<group>"; };
 		32C384DA177810BC00333310 /* jackson-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-sec.png"; sourceTree = "<group>"; };
 		32C384DC1778119700333310 /* jackson-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-perf.png"; sourceTree = "<group>"; };
 		32C4620D176CE0FF00B55189 /* glass-stem-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-0.png"; sourceTree = "<group>"; };
@@ -1089,13 +1069,10 @@
 		32EDE7A4177102DC006434A5 /* atlas-sxn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-6.png"; sourceTree = "<group>"; };
 		32EDE7A5177102DC006434A5 /* atlas-sxn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-7.png"; sourceTree = "<group>"; };
 		32EDE7A6177102DC006434A5 /* atlas-sxn-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-8.png"; sourceTree = "<group>"; };
-		32F323F217AB8A0E007590F3 /* icon@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x~ipad.png"; sourceTree = "<group>"; };
-		32F323F317AB8A0E007590F3 /* icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon~ipad.png"; sourceTree = "<group>"; };
 		32F5A88D176EF24000646E64 /* BSAtlasSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAtlasSectionView.h; sourceTree = "<group>"; };
 		32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAtlasSectionView.m; sourceTree = "<group>"; };
 		32F5A890176EF9DB00646E64 /* BSSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSection.h; sourceTree = "<group>"; };
 		32F5A891176EF9DB00646E64 /* BSSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSection.m; sourceTree = "<group>"; };
-		32FB64F3171FDB42005E6DE6 /* clinical-box-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-box-overlay.png"; sourceTree = "<group>"; };
 		32FB64F5171FDF0A005E6DE6 /* abducens-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "abducens-n-4.xml"; sourceTree = "<group>"; };
 		32FB64F6171FDF0A005E6DE6 /* accessory-cuneate-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "accessory-cuneate-n-1.xml"; sourceTree = "<group>"; };
 		32FB64F7171FDF0A005E6DE6 /* accessory-cuneate-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "accessory-cuneate-n-2.xml"; sourceTree = "<group>"; };
@@ -1305,7 +1282,6 @@
 		32FB65C9171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vestibulospinal-and-reticulospinal-t-0.xml"; sourceTree = "<group>"; };
 		32FB65CA171FDF0B005E6DE6 /* vi-abducens-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vi-abducens-cn-4.xml"; sourceTree = "<group>"; };
 		32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vii-facial-cn-4.xml"; sourceTree = "<group>"; };
-		32FB66A3171FE584005E6DE6 /* clinical-hole-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clinical-hole-overlay.png"; sourceTree = "<group>"; };
 		32FF6F7417098CBE00B4FB0F /* BSDeficit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeficit.h; sourceTree = "<group>"; };
 		32FF6F7517098CBE00B4FB0F /* BSDeficit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeficit.m; sourceTree = "<group>"; };
 		5DC1BD8E21A94A439B661DA7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -1354,11 +1330,9 @@
 				32FB66A517200146005E6DE6 /* Quiz */,
 				3213C98A170D72A5000DF667 /* Fuckometer */,
 				327E13061707FC7E00C5D237 /* Stem Views */,
-				326CD45316D3684600E2800C /* Backgrounds */,
 				328848C816B12200005FA824 /* Syndrome Images */,
 				8179EB1C161D41BB0050D663 /* Sxn Images */,
 				327E130F17081F5200C5D237 /* MRI Images */,
-				328848C916B12227005FA824 /* Buttons */,
 			);
 			name = Images;
 			path = ..;
@@ -1435,21 +1409,6 @@
 			);
 			name = ArteryImages;
 			path = Images/ArteryImages;
-			sourceTree = "<group>";
-		};
-		326CD45316D3684600E2800C /* Backgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				327E12EF1707BC9800C5D237 /* clinical-background.png */,
-				32FB64F3171FDB42005E6DE6 /* clinical-box-overlay.png */,
-				327CE462170ADFCB0020F918 /* clinical-overlay.png */,
-				32FB66A3171FE584005E6DE6 /* clinical-hole-overlay.png */,
-				32C384D81777F58D00333310 /* clinical-fading-eye.png */,
-				326FB691170C129F002CD59B /* perfusion-background.png */,
-				326FB693170C1408002CD59B /* perfusion-background-nothnagel.png */,
-			);
-			name = Backgrounds;
-			path = Images/Backgrounds;
 			sourceTree = "<group>";
 		};
 		326FB689170BDCC1002CD59B /* Cells */ = {
@@ -1814,27 +1773,6 @@
 			);
 			name = "Syndrome Images";
 			path = "Images/Syndrome Images";
-			sourceTree = "<group>";
-		};
-		328848C916B12227005FA824 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				32B54D91171875AA0064654C /* pencil.png */,
-			);
-			name = Buttons;
-			path = Images/Buttons;
-			sourceTree = "<group>";
-		};
-		328848CA16B1226B005FA824 /* Essential Images */ = {
-			isa = PBXGroup;
-			children = (
-				32F323F317AB8A0E007590F3 /* icon~ipad.png */,
-				32F323F217AB8A0E007590F3 /* icon@2x~ipad.png */,
-				32857B5317778384005CC824 /* Default-Portrait~ipad.png */,
-				32857B511777835D005CC824 /* Default-Portrait@2x~ipad.png */,
-			);
-			name = "Essential Images";
-			path = "../Images/Essential Images";
 			sourceTree = "<group>";
 		};
 		32BAE7931718048200F04334 /* CN */ = {
@@ -2236,8 +2174,6 @@
 		32DD438116526771002AAE0F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8179EAEE161D40CF0050D663 /* BSAppDelegate.h */,
-				8179EAEF161D40CF0050D663 /* BSAppDelegate.m */,
 				32E4D28F1651AACB0051AE2D /* BSModel.h */,
 				32E4D2901651AACB0051AE2D /* BSModel.m */,
 				32F5A890176EF9DB00646E64 /* BSSection.h */,
@@ -2353,6 +2289,8 @@
 		8179EAE5161D40CF0050D663 /* Brainstem101 */ = {
 			isa = PBXGroup;
 			children = (
+				8179EAEE161D40CF0050D663 /* BSAppDelegate.h */,
+				8179EAEF161D40CF0050D663 /* BSAppDelegate.m */,
 				32035532162C0CC60079394F /* MainStoryboard.storyboard */,
 				32DEFF5E1692439900B24F81 /* Controllers */,
 				32DD438016525569002AAE0F /* Views */,
@@ -2368,7 +2306,6 @@
 		8179EAE6161D40CF0050D663 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				328848CA16B1226B005FA824 /* Essential Images */,
 				8179EAE7161D40CF0050D663 /* Brainstem101-Info.plist */,
 				8179EAEB161D40CF0050D663 /* main.m */,
 				32DD437F16524FD3002AAE0F /* Constants.h */,
@@ -2457,7 +2394,6 @@
 				328848B416B10DD4005FA824 /* sxn-2.png in Resources */,
 				328848B516B10DD4005FA824 /* sxn-1.png in Resources */,
 				328848B916B111EC005FA824 /* sxn-0.png in Resources */,
-				327E12F01707BC9800C5D237 /* clinical-background.png in Resources */,
 				327E12F21707BD6400C5D237 /* wallenberg-mug.png in Resources */,
 				327E12F41707BD7C00C5D237 /* millard-gubler-mug.png in Resources */,
 				327E12F61707BD9600C5D237 /* raymond-mug.png in Resources */,
@@ -2489,12 +2425,9 @@
 				327CE45E170ADE710020F918 /* raymond-cestan-sec.png in Resources */,
 				327CE45F170ADE710020F918 /* raymond-sec.png in Resources */,
 				327CE461170ADFAA0020F918 /* benedikt-mug.png in Resources */,
-				327CE464170ADFCB0020F918 /* clinical-overlay.png in Resources */,
 				327CE465170ADFCB0020F918 /* nothnagel-mug.png in Resources */,
 				327CE46B170AF8B70020F918 /* benedikt-sec.png in Resources */,
 				327CE46C170AF8B70020F918 /* parinaud-sec.png in Resources */,
-				326FB692170C129F002CD59B /* perfusion-background.png in Resources */,
-				326FB694170C1408002CD59B /* perfusion-background-nothnagel.png in Resources */,
 				326FB696170C1562002CD59B /* benedikt-perf.png in Resources */,
 				326FB698170C156E002CD59B /* weber-perf.png in Resources */,
 				326FB69A170C1580002CD59B /* wallenberg-perf.png in Resources */,
@@ -2567,8 +2500,6 @@
 				32BAE7BC1718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png in Resources */,
 				32BAE7BD1718175E00F04334 /* superior-cerebellar-a-overlay-front.png in Resources */,
 				32BAE7BE1718175E00F04334 /* vertebral-a-overlay-front.png in Resources */,
-				32B54D92171875AA0064654C /* pencil.png in Resources */,
-				32FB64F4171FDB42005E6DE6 /* clinical-box-overlay.png in Resources */,
 				32FB65CC171FDF0B005E6DE6 /* abducens-n-4.xml in Resources */,
 				32FB65CD171FDF0B005E6DE6 /* accessory-cuneate-n-1.xml in Resources */,
 				32FB65CE171FDF0B005E6DE6 /* accessory-cuneate-n-2.xml in Resources */,
@@ -2781,7 +2712,6 @@
 				32FB66A0171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml in Resources */,
 				32FB66A1171FDF0B005E6DE6 /* vi-abducens-cn-4.xml in Resources */,
 				32FB66A2171FDF0B005E6DE6 /* vii-facial-cn-4.xml in Resources */,
-				32FB66A4171FE584005E6DE6 /* clinical-hole-overlay.png in Resources */,
 				326F878F17212522008E923E /* locked-in-mug.png in Resources */,
 				326F87931721360F008E923E /* middle-cerebellar-peduncle-m-4.xml in Resources */,
 				326F87941721360F008E923E /* middle-cerebellar-peduncle-m-5.xml in Resources */,
@@ -2814,8 +2744,6 @@
 				32EDE7AD177102DC006434A5 /* atlas-sxn-6.png in Resources */,
 				32EDE7AE177102DC006434A5 /* atlas-sxn-7.png in Resources */,
 				32EDE7AF177102DC006434A5 /* atlas-sxn-8.png in Resources */,
-				32857B521777836A005CC824 /* Default-Portrait@2x~ipad.png in Resources */,
-				32857B5417778385005CC824 /* Default-Portrait~ipad.png in Resources */,
 				32C384CB1777E1B400333310 /* profile-sxn-2.png in Resources */,
 				32C384CC1777E1B400333310 /* profile-sxn-5.png in Resources */,
 				32C384CD1777E1B400333310 /* profile-sxn-4.png in Resources */,
@@ -2825,7 +2753,6 @@
 				32C384D11777E1B400333310 /* profile-sxn-7.png in Resources */,
 				32C384D21777E1B400333310 /* profile-sxn-6.png in Resources */,
 				32C384D31777E1B400333310 /* profile-sxn-3.png in Resources */,
-				32C384D91777F58D00333310 /* clinical-fading-eye.png in Resources */,
 				32C384DB177810BD00333310 /* jackson-sec.png in Resources */,
 				32C384DD1778119900333310 /* jackson-perf.png in Resources */,
 				320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */,
@@ -2852,8 +2779,6 @@
 				32D3354B179E542100F95A7D /* vertebral-2.png in Resources */,
 				324EFCE517AB6D7700BE93BC /* tutorial-ask.png in Resources */,
 				324EFCE717AB7AF400BE93BC /* tutorial-profile.png in Resources */,
-				32F323F417AB8A0E007590F3 /* icon@2x~ipad.png in Resources */,
-				32F323F517AB8A0E007590F3 /* icon~ipad.png in Resources */,
 				32782E6617B4A701008C072D /* accessory-nucleus-(CNXI)-0.png in Resources */,
 				32782E6717B4A701008C072D /* anterior-corticospinal-tract-0.png in Resources */,
 				32782E6817B4A701008C072D /* cuneate-nucleus-0.png in Resources */,
@@ -3135,7 +3060,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Omid Zebarjadi (3XBLJGYJBU)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3150,7 +3075,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "A7F053BA-0E9A-4474-AA9C-9317CD7F0818";
+				PROVISIONING_PROFILE = "9DC16373-2A1E-4F3F-B0E1-A82843E5E86F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -3165,7 +3090,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Omid Zebarjadi (3XBLJGYJBU)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -3173,7 +3098,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "A7F053BA-0E9A-4474-AA9C-9317CD7F0818";
+				PROVISIONING_PROFILE = "9DC16373-2A1E-4F3F-B0E1-A82843E5E86F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = NO;

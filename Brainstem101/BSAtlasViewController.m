@@ -51,7 +51,8 @@
     [self.stemView setContentMode:UIViewContentModeScaleToFill];
     [self.view addSubview:self.stemView];
     
-    self.glassStemView = [[BSGlassStemView alloc] initWithFrame:self.view.bounds];
+    self.glassStemView = [[BSGlassStemView alloc] initWithFrame:CGRectMake(0, 0, 250, 350)];
+    [self.glassStemView setCenter:self.view.center];
     [self.view addSubview:self.glassStemView];
     
     self.searchImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
@@ -71,7 +72,6 @@
     [self.searchBox setTextAlignment:NSTextAlignmentCenter];
     [self.searchBox setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:20]];
     [self.view insertSubview:self.searchBox aboveSubview:self.searchImageView];
-    
     
     self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.backButton.frame = CGRectMake(0, 0, 75, 40);
@@ -552,15 +552,6 @@
 -(NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    NSLog(@"Received Memory Warning!");
-    for (BSAtlasSectionView *view in allSectionViews) {
-        [view purgeCache];
-    }
 }
 
 @end

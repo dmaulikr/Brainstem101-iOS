@@ -23,35 +23,39 @@
         currentViewMode = BACK_VIEW_MODE;
         imageArray = @[[UIImage imageNamed:@"stem-back.png"],[UIImage imageNamed:@"stem-side.png"], [UIImage imageNamed:@"stem-front.png"]];
         
-        _mainView = [[UIImageView alloc] initWithFrame:self.bounds];
-        [self addSubview:_mainView];
-        _overlayView = [[UIImageView alloc] initWithFrame:self.bounds];
-        [_mainView addSubview:_overlayView];
+        self.mainView = [[UIImageView alloc] initWithFrame:self.bounds];
+        [self addSubview:self.mainView];
+        self.overlayView = [[UIImageView alloc] initWithFrame:self.bounds];
+        [self.mainView addSubview:self.overlayView];
         
         [self removeOverlays];
     }
     return self;
 }
 
--(void) show {
+-(void)show
+{
     [UIView animateWithDuration:STEM_TRANSITION_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:1.0];
     } completion:nil];
 }
 
--(void) hide {
+-(void)hide
+{
     [UIView animateWithDuration:STEM_TRANSITION_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:0.0];
     } completion:nil];
 }
 
--(void)removeOverlays{
-    [_overlayView setImage:nil];
-    [_mainView setImage:imageArray[currentViewMode]];
+-(void)removeOverlays
+{
+    [self.overlayView setImage:nil];
+    [self.mainView setImage:imageArray[currentViewMode]];
 }
 
--(void)loadStructure:(BSStructure *) structure{
-    _currentStructure = structure;
+-(void)loadStructure:(BSStructure *) structure
+{
+    self.currentStructure = structure;
     
     bool hasFront   = ((_currentStructure.stemViewOverlays)[@"front"] ==  nil) ? false : true;
     bool hasBack    = ((_currentStructure.stemViewOverlays)[@"back"] ==  nil) ? false : true;
@@ -59,7 +63,7 @@
     bool hasOverlay =  (hasFront || hasSide || hasBack) ? YES : NO;
     
     if (!hasOverlay) {
-        [_overlayView setImage:nil];
+        [self.overlayView setImage:nil];
         return;
     }
     if (currentViewMode == FRONT_VIEW_MODE && hasFront) {
@@ -81,7 +85,8 @@
     }
 }
 
--(void)changeCurrentImageToViewMode:(int)viewmode{
+-(void)changeCurrentImageToViewMode:(int)viewmode
+{
     currentViewMode = viewmode;
     // TODO :  this animation could use a little work
     [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -96,7 +101,8 @@
     }];
 }
 
--(NSString *)getStringOfCurrentViewMode{
+-(NSString *)getStringOfCurrentViewMode
+{
     switch (currentViewMode) {
         case FRONT_VIEW_MODE:
             return @"front";
@@ -110,7 +116,8 @@
     }
 }
 
--(void)stemViewModeNext{
+-(void)stemViewModeNext
+{
     currentViewMode++;
     if (currentViewMode == 3) {
         currentViewMode = 0;
@@ -118,7 +125,8 @@
     [self changeCurrentImageToViewMode:currentViewMode];
 }
 
--(void)stemViewMovePrevious{
+-(void)stemViewMovePrevious
+{
     currentViewMode--;
     if (currentViewMode == -1) {
         currentViewMode = 2;

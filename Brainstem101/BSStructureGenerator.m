@@ -214,7 +214,7 @@
     
     BSStructure *n18 = [[BSStructure alloc] initWithName:@"Medial Vestibular Nucleus" andType:BSStructureTypeNucleus];
     [n18 setStructureName:@"Vestibular Nucleus (Medial)"];
-    [n18 setStructureDescription:@"Receives input from the semicircular canals and projects to the cervical spinal cord to innervate neck muscles to help stabilize the head in space. "];
+    [n18 setStructureDescription:@"Receives input from the semicircular canals and projects to the cervical spinal cord to innervate neck muscles to help stabilize the head in space."];
     [self.Nuclei addObject:n18];
     
 }
@@ -584,7 +584,7 @@
     
 }
 
--(UIColor *)getColor
+- (UIColor *)getColor
 {
     UIColor *color;
     color = [UIColor colorWithRed:210/255 green:200/255 blue:124/255 alpha:.55];

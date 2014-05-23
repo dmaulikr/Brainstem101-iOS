@@ -7,77 +7,74 @@
 //
 
 #import "BSGlassStemView.h"
+#import <UIView+Positioning.h>
 
 const NSString *baseFileName = @"glass-stem";
 const float sectionSpeed = 0.5;
-const float sectionDistance = 80;
+const float sectionDistance = 100;
 
-@implementation BSGlassStemView{
+@implementation BSGlassStemView
+{
     UIImageView *currentLayer;
-    CGPoint selectedCenter;
-    CGPoint normalCenter;
 }
 
--(id)initWithFrame:(CGRect)frame
+-(instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self){
 
         self.imageLayers = [NSMutableArray new];
-        
-        normalCenter = self.center;
-        normalCenter.y -= 50;
-        normalCenter.x += 20;
-        
-        selectedCenter = CGPointMake(self.center.x - sectionDistance, self.center.y + sectionDistance);
-        
-        static float scaleFactor = 1.35;
-        
+                
         for (int i = 0; i < 18; i++) {
 
-            UIImageView *tmp = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 500*scaleFactor, 800*scaleFactor)];
-            [tmp setCenter:normalCenter];
+            UIImageView *tmp = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
             [tmp setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@-%d.png", baseFileName, i]]];
-            [tmp setContentMode:UIViewContentModeScaleAspectFill];
+            [tmp setContentMode:UIViewContentModeScaleAspectFit];
             [self.imageLayers addObject:tmp];
-            [self addSubview:_imageLayers[i]];
+            [self addSubview:self.imageLayers[i]];
         }
         
         [self setAlpha:0.0];
-        _hidden = YES;
+        self.hidden = YES;
         
     }
     return self;
 }
 
--(void)show {
-    [UIView animateWithDuration:0.5 delay:0 options:nil animations:^{
+-(void)show
+{
+    [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:1.0];
     } completion:nil];
 }
 
--(void)hide {
+-(void)hide
+{
     [self retractLayer:currentLayer];
-    [UIView animateWithDuration:0.5 delay:0 options:nil animations:^{
+    [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:0.0];
     } completion:nil];
 }
 
-- (void)presentSection:(NSInteger)section{
-    if (_hidden) {
+- (void)presentSection:(NSInteger)section
+{
+    if (self.hidden) {
         [self show];
     }
     [self retractLayer:currentLayer];
      
-    currentLayer = _imageLayers[[self layerIndexForSection:section]];
+    currentLayer = self.imageLayers[[self layerIndexForSection:section]];
     [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-        [currentLayer setCenter:selectedCenter];
+        [currentLayer setY:sectionDistance];
+        [currentLayer setX: -1 * sectionDistance];
     } completion:nil];
 }
 
--(void)retractLayer:(UIImageView *)layer{
+-(void)retractLayer:(UIImageView *)layer
+{
     [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-        [layer setCenter:normalCenter];
+        [currentLayer setY:0];
+        [currentLayer setX:0];
     } completion:nil];
 }
 

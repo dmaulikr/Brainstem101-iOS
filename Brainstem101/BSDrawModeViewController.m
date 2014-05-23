@@ -17,7 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.backgroundImageView setAlpha:0.5];
     hintState = NO;
     paths = [NSMutableArray new];
     
@@ -145,12 +144,5 @@
 {
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    NSLog(@"Received Memory Warning!");
-}
-
 
 @end

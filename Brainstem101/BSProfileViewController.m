@@ -39,7 +39,7 @@
     }
 }
 
-- (void) didSelectStructure:(BSStructure *)str
+- (void)didSelectStructure:(BSStructure *)str
 {
     [self.detailView.title setText:[str structureName]];
     
@@ -145,7 +145,6 @@
         }
         [self switchToSectionNumber:nextSecNum animationStyle:@"left"];
     }
-    
 }
 
 
@@ -178,12 +177,5 @@
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    NSLog(@"Received Memory Warning!");
-}
-
 
 @end
