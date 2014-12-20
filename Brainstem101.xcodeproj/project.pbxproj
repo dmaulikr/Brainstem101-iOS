@@ -1284,7 +1284,7 @@
 		32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vii-facial-cn-4.xml"; sourceTree = "<group>"; };
 		32FF6F7417098CBE00B4FB0F /* BSDeficit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeficit.h; sourceTree = "<group>"; };
 		32FF6F7517098CBE00B4FB0F /* BSDeficit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeficit.m; sourceTree = "<group>"; };
-		5DC1BD8E21A94A439B661DA7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		64E05366A86D73DF4163D457 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8179EADB161D40CF0050D663 /* Brainstem101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainstem101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8179EADF161D40CF0050D663 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8179EAE1161D40CF0050D663 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1299,6 +1299,7 @@
 		8179EB02161D41020050D663 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8179EB07161D41A50050D663 /* BSStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStructure.h; sourceTree = "<group>"; };
 		8179EB08161D41A50050D663 /* BSStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStructure.m; sourceTree = "<group>"; };
+		9E7D217AB448727CE6B569E8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F1CCC9CE4FF44ACD9FD7B29B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -2259,7 +2260,7 @@
 				8179EADE161D40CF0050D663 /* Frameworks */,
 				8179EADC161D40CF0050D663 /* Products */,
 				32948467190CC1E600B145F1 /* Images.xcassets */,
-				5DC1BD8E21A94A439B661DA7 /* Pods.xcconfig */,
+				EE3B8F4AF201C52F44077D96 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2323,6 +2324,15 @@
 			);
 			name = "Sxn Images";
 			path = Brainstem101;
+			sourceTree = "<group>";
+		};
+		EE3B8F4AF201C52F44077D96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E7D217AB448727CE6B569E8 /* Pods.debug.xcconfig */,
+				64E05366A86D73DF4163D457 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3001,7 +3011,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3107,7 +3117,7 @@
 		};
 		8179EB00161D40CF0050D663 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DC1BD8E21A94A439B661DA7 /* Pods.xcconfig */;
+			baseConfigurationReference = 9E7D217AB448727CE6B569E8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -3126,7 +3136,7 @@
 		};
 		8179EB01161D40CF0050D663 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DC1BD8E21A94A439B661DA7 /* Pods.xcconfig */;
+			baseConfigurationReference = 64E05366A86D73DF4163D457 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
