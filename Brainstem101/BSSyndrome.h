@@ -11,7 +11,7 @@
 @interface BSSyndrome : NSObject
 
 @property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *description;
+@property (strong, nonatomic) NSString *desc;
 @property (strong, nonatomic) NSString *sectionImageName;
 @property (strong, nonatomic) NSString *mugshotImageName;
 @property (strong, nonatomic) NSString *perfusionDiagram;

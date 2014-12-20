@@ -16,7 +16,7 @@
     // Wallenberg
     BSSyndrome *wallenberg = [[BSSyndrome alloc] initWithName:@"Wallenberg's"];
     
-    [wallenberg setDescription:@"AKA Lateral Medullary Syndrome. Occlusion of Vertabral a. or PICA  lateral medullary infaction."];
+    [wallenberg setDesc:@"AKA Lateral Medullary Syndrome. Occlusion of Vertabral a. or PICA  lateral medullary infaction."];
     
     [wallenberg addSymptoms:@"Nystagmus, Diplopia, Nausea, Vertigo"
                  andDeficit:@"Vestibular Nuc."];
@@ -41,7 +41,7 @@
     
     //Medial Medullary
     BSSyndrome *medialMedullary = [[BSSyndrome alloc] initWithName:@"Medial Medullary"];
-    [medialMedullary setDescription:@"Occlusion of ASA or Basilar’s Paramedian branches  medial medullary infarction"];
+    [medialMedullary setDesc:@"Occlusion of ASA or Basilar’s Paramedian branches  medial medullary infarction"];
     
     [medialMedullary addSymptoms:@"Paresis (and possible atrophy) of ipsilateral tongue muscles; protruded tongue points towards lesion)"
                       andDeficit:@"CN XII Nuc."];
@@ -55,7 +55,7 @@
     
     //Jackson's
     BSSyndrome *jacksons = [[BSSyndrome alloc] initWithName:@"Jackson's"];
-    [jacksons setDescription:@"Occlusion of Vertebral a. infarction of tegmental medulla"];
+    [jacksons setDesc:@"Occlusion of Vertebral a. infarction of tegmental medulla"];
     
     [jacksons addSymptoms:@"Ipsilateral paralysis of tongue, soft palate, and vocal chords."
                andDeficit:@"Motor Nucleus of Vagus"];
@@ -73,7 +73,7 @@
     // Millard Gubler
     BSSyndrome *millardGubler = [[BSSyndrome alloc] initWithName:@"Millard Gubler's"];
     
-    [millardGubler setDescription:@" AKA Ventral Pontine Syndrome. Occlusion of perforating branches of Basilar a.infarction of ventro-caudal pons"];
+    [millardGubler setDesc:@" AKA Ventral Pontine Syndrome. Occlusion of perforating branches of Basilar a.infarction of ventro-caudal pons"];
     
     [millardGubler addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia"
                     andDeficit:@"Corticospinal Tract"];
@@ -87,7 +87,7 @@
     
     //Foville's
     BSSyndrome *foville = [[BSSyndrome alloc]initWithName:@"Foville's"];
-    [foville setDescription:@"Occlusion of perforating branches of Basilar Artery  infarction of dorso-caudal pons."];
+    [foville setDesc:@"Occlusion of perforating branches of Basilar Artery  infarction of dorso-caudal pons."];
     
     [foville addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia"
               andDeficit:@"Corticospinal Tract"];
@@ -114,7 +114,7 @@
      //Raymond-Cestan's
      BSSyndrome *raymondCestan = [[BSSyndrome alloc] initWithName:@"Raymond-Cestan's"];
      
-     [raymondCestan setDescription:@"Occlusion of Circumferential Branches of Basilar Artery  Infarction of Dorso-rostral Pons:"];
+     [raymondCestan setDesc:@"Occlusion of Circumferential Branches of Basilar Artery  Infarction of Dorso-rostral Pons:"];
      
      [raymondCestan addSymptoms:@"Ipsilateral ataxia with coarse intention tremors"
                      andDeficit:@"Middle Cerebellar Peduncle"];
@@ -138,7 +138,7 @@
      // Weber's
      BSSyndrome *webers = [[BSSyndrome alloc] initWithName:@"Weber's"];
      
-     [webers setDescription:@"AKA Medial Midbrain Syndrome.  Occlusion of Posterior Cerebral Artery (PCA) —> Infarction of ventral midbrain area."];
+     [webers setDesc:@"AKA Medial Midbrain Syndrome.  Occlusion of Posterior Cerebral Artery (PCA) —> Infarction of ventral midbrain area."];
      
      [webers addSymptoms:@"Contralateral spastic hemiparesis or Hemiplegia of upper and lower extremeties"
               andDeficit:@"Corticospinal Tract"];
@@ -156,7 +156,7 @@
      // Benedikt's
      BSSyndrome *benedikts = [[BSSyndrome alloc] initWithName:@"Benedikt's"];
      
-     [benedikts setDescription:@" Occlusion of PCA or paramedian branches of Basilar a.  Infaction of Tegmental Midbrain and Cerebellum. AKA Paramedian Midbrain Syndrome.  "];
+     [benedikts setDesc:@" Occlusion of PCA or paramedian branches of Basilar a.  Infaction of Tegmental Midbrain and Cerebellum. AKA Paramedian Midbrain Syndrome.  "];
      
      [benedikts addSymptoms:@"Ipsilateral Oculomotor Palsy: dialated pupil, diplopia (ipsilateral eye points down and out), and ptosis (paralysis of levator palpebrae superioris)"
                  andDeficit:@"CN III Fibers"];
@@ -174,7 +174,7 @@
      
      BSSyndrome *nothnagels = [[BSSyndrome alloc]initWithName:@"Nothnagel's"];
      
-     [nothnagels setDescription:@"Occlusion of Medial Posterior Choroidal Artery (branch of PCA)  infarction within Dorso-rostral Midbrain."];
+     [nothnagels setDesc:@"Occlusion of Medial Posterior Choroidal Artery (branch of PCA)  infarction within Dorso-rostral Midbrain."];
       
       [nothnagels addSymptoms:@"Ipsilateral Oculomotor Palsy: Mydriasis, strabismus (eye points down and out), ptosis (Levator Palpebrae Superioris)"
                    andDeficit:@"CN III Fibers"];
@@ -188,7 +188,7 @@
       // Claude's
       BSSyndrome *claudes = [[BSSyndrome alloc]initWithName:@"Claude's"];
       
-      [claudes setDescription:@"Occlusion of a branch of the PCA  infarction of ventral midbrain. Note: The cerebral peduncle is less involved in comparison to Weber’s."];
+      [claudes setDesc:@"Occlusion of a branch of the PCA  infarction of ventral midbrain. Note: The cerebral peduncle is less involved in comparison to Weber’s."];
       
       
       [claudes addSymptoms:@"Ipsilateral Oculomotor Palsy: Mydriasis, strabismus (eye points down and out), ptosis (Levator Palpebrae Superioris)"
@@ -201,7 +201,7 @@
       // Parinaud's
       BSSyndrome *parinauds = [[BSSyndrome alloc]initWithName:@"Parinaud's"];
       
-      [parinauds setDescription:@"Usually due to compression of the Dorsal Midbrain area by a pineal mass. AKA Dorsal Midbrain Syndrome. "];
+      [parinauds setDesc:@"Usually due to compression of the Dorsal Midbrain area by a pineal mass. AKA Dorsal Midbrain Syndrome. "];
        
        [parinauds addSymptoms:@"Supranuclear Upgaze Palsy (Upgaze attempt causes convergence-retraction nystagmus). Collier's sign (eyelids are retracted, sclera is visible above the iris)."
                    andDeficit:@"Superior Colliculi & post-tectal area"];
@@ -216,14 +216,14 @@
        //Locked-In
        BSSyndrome *lockedIn = [[BSSyndrome alloc]initWithName:@"Locked-In"];
        
-       [lockedIn setDescription:@"Occlusion of Basilar a. (or major branches of) results in extensive damage in the pons"];
+       [lockedIn setDesc:@"Occlusion of Basilar a. (or major branches of) results in extensive damage in the pons"];
        
        [lockedIn addSymptoms:@"Complete paralysis of all voluntary muscles and sensory modalities. Some patients retain the ability to blink; this is because the oculomotor nuclei continues to receive blood from "
                   andDeficit:@"Various Pontine Nuclei/Tracts"];
        
        //Raymond's
        BSSyndrome *raymonds = [[BSSyndrome alloc]initWithName:@"Raymond's"];
-       [raymonds setDescription:@"AKA Ventral Pontine Syndrome.  Occlusion of perforating branches of Basilar Artery causes deficits in ventro-caudal pons. (unlike Millard-Gubler's Syndrome, CN VII is not involved.)"];
+       [raymonds setDesc :@"AKA Ventral Pontine Syndrome.  Occlusion of perforating branches of Basilar Artery causes deficits in ventro-caudal pons. (unlike Millard-Gubler's Syndrome, CN VII is not involved.)"];
        
        [raymonds addSymptoms:@"Contralateral spastic hemiparesis or hemiplegia"
                   andDeficit:@"Corticospinal Tract"];
