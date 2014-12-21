@@ -9,7 +9,8 @@
 
 @implementation BSSyndromeGenerator
 
-+(NSMutableArray *)Syndromes {
++ (NSMutableArray *)Syndromes
+{
     
     NSMutableArray *allSyndromes = [NSMutableArray new];
     

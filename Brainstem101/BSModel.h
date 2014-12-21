@@ -5,6 +5,7 @@
 //  Created by Cameron Ehrlich on 11/12/12.
 //  Copyright (c) 2012 Brainstem101. All rights reserved.
 //
+
 #import "BSStructureGenerator.h"
 #import "BSSyndromeGenerator.h"
 #import "BSStructure.h"
@@ -17,13 +18,16 @@
 @property (strong, nonatomic) NSArray *Miscellaneous;
 @property (strong, nonatomic) NSArray *CranialNerves;
 @property (strong, nonatomic) NSArray *Syndromes;
+@property (strong, nonatomic, readonly) NSArray *allStructures;
+
 @property (assign, nonatomic) BOOL inTutorialMode;
 @property (assign, nonatomic) BOOL hasSeenFuckometer;
 
 + (instancetype)sharedModel;
 
 - (NSMutableArray*)getType:(BSStructureType)type inSection:(NSInteger)sectionNumber;
-
 - (BOOL)isFirstLaunch;
+
++ (void)exportPathDataForStructure:(BSStructure *)structure;
 
 @end

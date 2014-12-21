@@ -31,7 +31,7 @@
 {
     NSError *error;
     [aCoder encodeInteger:self.sectionNumber forKey:@"sectionNumber"];
-    [aCoder encodeObject:[UIBezierPathSerialization dataWithBezierPath:self.pathData options:0 error:&error] forKey:@"pathData"];
+    [aCoder encodeObject:self.jsonData forKey:@"pathData"];
     
     if (error) {
         NSLog(@"%@", error);

@@ -10,17 +10,13 @@
 #import "BSStructure.h"
 
 @implementation BSStructureGenerator
-{
-    NSOperationQueue *operationQueue;
-}
 
 - (instancetype)init
 {
     
     if (self = [super init])
     {
-        operationQueue = [[NSOperationQueue alloc] init];
-        [operationQueue setMaxConcurrentOperationCount:NSOperationQueueDefaultMaxConcurrentOperationCount];
+
         
         self.Nuclei          = [NSMutableArray new];
         self.Tracts          = [NSMutableArray new];
@@ -28,22 +24,12 @@
         self.Miscellaneous   = [NSMutableArray new];
         self.CranialNerves   = [NSMutableArray new];
         
-        [operationQueue addOperationWithBlock:^{
-            [self addNuclei];
-        }];
-        [operationQueue addOperationWithBlock:^{
-            [self addTracts];
-        }];
-        [operationQueue addOperationWithBlock:^{
-            [self addArteries];
-        }];
-        [operationQueue addOperationWithBlock:^{
-            [self addMiscelaneus];
-        }];
-        [operationQueue addOperationWithBlock:^{
-            [self addCranialNerves];
-        }];
-        
+        [self addNuclei];
+        [self addTracts];
+        [self addArteries];
+        [self addMiscelaneus];
+        [self addCranialNerves];
+
     }
     return self;
 }

@@ -37,7 +37,9 @@
         self.structurePaths = [[NSMutableArray alloc] init];
         self.arteryImages = [[NSMutableArray alloc] initWithArray:@[@"", @"", @"", @"", @"", @"", @"", @"", @""]];
 
-        [self generateStructurePaths];
+        
+//        [self generateStructurePathsFromXML];
+        [self generateStructurePathsFromJSON];
         [self generateImageDictionary];
     }
     return self;
@@ -45,9 +47,39 @@
 
 #pragma mark -
 #pragma mark NSCoder
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    if (self = [super init])
+    {
+        self.structureName = [coder decodeObjectForKey:@"structureName"];
+        self.structureDescription = [coder decodeObjectForKey:@"structureDescription"];
+        self.arteryImages = [coder decodeObjectForKey:@"arteryImages"];
+        self.structurePaths = [coder decodeObjectForKey:@"structurePaths"];
+        self.stemViewOverlayFront = [coder decodeObjectForKey:@"stemViewOverlayFront"];
+        self.stemViewOverlayBack = [coder decodeObjectForKey:@"stemViewOverlayBack"];
+        self.stemViewOverlaySide = [coder decodeObjectForKey:@"stemViewOverlaySide"];
+        self.conventionalName = [coder decodeObjectForKey:@"conventionalName"];
+        self.structureType = (BSStructureType)[coder decodeIntegerForKey:@"structureType"];
 
-// TODO : Implement!
+    }
+    return self;
+}
 
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.structureName forKey:@"structureName"];
+    [aCoder encodeObject:self.structureDescription forKey:@"structureDescription"];
+    [aCoder encodeObject:self.arteryImages forKey:@"arteryImages"];
+    [aCoder encodeObject:self.structurePaths forKey:@"structurePaths"];
+    [aCoder encodeObject:self.stemViewOverlayFront forKey:@"stemViewOverlayFront"];
+    [aCoder encodeObject:self.stemViewOverlayBack forKey:@"stemViewOverlayBack"];
+    [aCoder encodeObject:self.stemViewOverlaySide forKey:@"stemViewOverlaySide"];
+    [aCoder encodeObject:self.conventionalName forKey:@"conventionalName"];
+    [aCoder encodeInteger:self.structureType forKey:@"structureType"];
+}
+
+#pragma mark -
+#pragma mark
 + (NSString *)getConventionalNameWithName:(NSString *)name andType:(BSStructureType)type
 {
     NSString *cName = [name lowercaseString];
@@ -117,13 +149,33 @@
     }
 }
 
-- (void)generateStructurePaths
+- (void)generateStructurePathsFromXML
 {
-    for (NSInteger i = 0; i < 9; i++) {
+    for (NSInteger i = 0; i <= NUMBER_OF_SECTIONS; i++) {
         currentSectionNumber = i;
         NSString *xmlPath = [NSString stringWithFormat:@"%@-%ld.xml", _conventionalName, (long)i];
         if ([self doesFileExsist:xmlPath]) {
             [self addXMLFilePath:[NSString stringWithFormat:@"%@/%@",[[NSBundle mainBundle] resourcePath], xmlPath]];
+        }
+    }
+}
+
+- (void)generateStructurePathsFromJSON
+{
+    NSError *error;
+    
+    for (NSInteger sectionNumber = 0; sectionNumber <= NUMBER_OF_SECTIONS; sectionNumber++) {
+        NSString *jsonPath = [NSString stringWithFormat:@"%@-%ld.json", self.conventionalName, (long)sectionNumber];
+        NSString *fileToFind = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], jsonPath];
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:fileToFind]) {
+
+            UIBezierPath *loadedPathData = [UIBezierPathSerialization bezierPathWithData:[NSData dataWithContentsOfFile:fileToFind] options:0 error:nil];
+            if (error) {NSLog(@"%@", error.debugDescription);}
+            BSStructurePath *newStructurePath = [[BSStructurePath alloc] init];
+            [newStructurePath setPathData:loadedPathData];
+            [newStructurePath setSectionNumber:sectionNumber];
+            [self.structurePaths addObject:newStructurePath];
         }
     }
 }
@@ -159,7 +211,7 @@
     return nil;
 }
 
-// TODO : Change this
+// TODO : Change this eventually
 - (BOOL)hasArteryInSectionNumber:(NSInteger)num
 {
     return [self.arteryImages[num] length] != 0;
@@ -268,6 +320,11 @@
     CGPathRef scaledPath = CGPathCreateCopyByTransformingPath(path, &scaleTransform);
     
     return scaledPath;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"BSStructure %@ (%@), type: %u, paths: %lu", self.structureName, self.conventionalName, self.structureType, (unsigned long)self.structurePaths.count];
 }
 
 @end

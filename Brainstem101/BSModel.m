@@ -41,6 +41,18 @@
     return self;
 }
 
+- (NSArray *)allStructures
+{
+    NSArray *allStructures = [[[[[@[]
+                                  arrayByAddingObjectsFromArray:self.Nuclei]
+                                 arrayByAddingObjectsFromArray:self.Tracts]
+                                arrayByAddingObjectsFromArray:self.Arteries]
+                               arrayByAddingObjectsFromArray:self.Miscellaneous]
+                              arrayByAddingObjectsFromArray:self.CranialNerves];
+    
+    return allStructures;
+}
+
 - (NSArray *)Syndromes
 {
     if (!_Syndromes) {
@@ -74,15 +86,15 @@
             break;
     }
     
-     // Asking for all of them
+    // Asking for all of them
     if (section == -1) {
         return allOfType;
-    
+        
     }
     // Asking for all in given section
     else{
         NSMutableArray *allOfTypeFromSection = [NSMutableArray new];
-
+        
         if (type == BSStructureTypeArtery) {
             for (BSStructure *structure in allOfType) {
                 if ([structure hasArteryInSectionNumber:section]) {
@@ -108,5 +120,25 @@
     }
     return NO;
 }
+
++ (void)exportPathDataForStructure:(BSStructure *)structure
+{
+    // Used to dump .json of the paths for each structure in each section
+    // The "path-json" folder must exsist on the desktop already
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    // Put in your whoami
+    NSString *dataPath = [NSString stringWithFormat:@"/Users/%@/Desktop/path-json", @"Cam"];
+    
+    for (BSStructurePath *path in structure.structurePaths) {
+        BOOL success = [fileManager createFileAtPath:[NSString stringWithFormat:@"%@/%@-%ld.json", dataPath, structure.conventionalName, (long)path.sectionNumber]
+                                            contents:path.jsonData
+                                          attributes:nil];
+        if (!success) {
+            NSLog(@"Failed to save %@", structure);
+        }
+    }
+}
+
 
 @end
