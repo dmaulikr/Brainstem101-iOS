@@ -27,7 +27,7 @@
     [self.sectionCollectionView setContentInset:UIEdgeInsetsMake(0, -200, 0, 0)];
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     //tutorial
@@ -51,7 +51,7 @@
 }
 #pragma mark BSTutorialImageViewDelegate
 
--(void)dissmissTutorialImageView:(id)tutorialView
+- (void)dissmissTutorialImageView:(id)tutorialView
 {
     tutorialView = nil;
 }
@@ -78,7 +78,7 @@
     [self updateDeficitTableView];
 }
 
--(void)updateDescription
+- (void)updateDescription
 {
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.descriptionView setAlpha:0];

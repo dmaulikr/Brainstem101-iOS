@@ -150,15 +150,15 @@
     [self.pathLayer setContents:(id)[img CGImage]];
 }
 
-- (void) fade
+- (void)fade
 {
     [[self backgroundLayer] setOpacity:0.5];
 }
-- (void) unfade
+- (void)unfade
 {
     [[self backgroundLayer] setOpacity:1.0];
 }
-- (void) clearPaths
+- (void)clearPaths
 {
     [[self pathLayer] setContents:nil];
 }

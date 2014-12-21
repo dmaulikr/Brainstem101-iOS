@@ -12,13 +12,15 @@
 #define DEFAULT_WIDTH 5.0f
 #define kPointMinDistance 0
 
-@implementation BSDrawView{
+@implementation BSDrawView
+{
     CGPoint currentPoint;
     CGPoint previousPoint1;
     CGPoint previousPoint2;
 }
 
--(void)awakeFromNib{
+- (void)awakeFromNib
+{
     self.backgroundColor = [UIColor clearColor];
     _lineWidth = DEFAULT_WIDTH;
     _lineColor = DEFAULT_COLOR;
@@ -27,26 +29,30 @@
     _constuctionPath = CGPathCreateMutable();
 }
 
--(void)dealloc{
+- (void)dealloc{
     CFRelease(_constuctionPath);
 }
 
--(CGPoint) midPointOf: (CGPoint) p1 and:(CGPoint) p2 {
+- (CGPoint)midPointOf:(CGPoint)p1 and:(CGPoint)p2
+{
     return CGPointMake((p1.x + p2.x) * 0.5, (p1.y + p2.y) * 0.5);
 }
 
--(void) undo{
+- (void)undo
+{
     [_drawingPaths removeLastObject];
     [self setNeedsDisplayInRect:self.bounds];
 }
 
--(void) clear{
+- (void)clear
+{
     [_drawingPaths removeAllObjects];
     _constuctionPath = CGPathCreateMutable();
     [self setNeedsDisplayInRect:self.bounds];
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     UITouch *touch = [touches anyObject];
     
     previousPoint1 = [touch previousLocationInView:self];
@@ -56,7 +62,8 @@
     [self touchesMoved:touches withEvent:event];
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
     UITouch *touch = [touches anyObject];
 	
 	CGPoint point = [touch locationInView:self];
@@ -93,16 +100,19 @@
     [self setNeedsDisplayInRect:drawBox];
 }
 
--(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
     [self touchesEnded:touches withEvent:event];
 }
 
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
     [_drawingPaths addObject:[UIBezierPath bezierPathWithCGPath:_constuctionPath]];
     _constuctionPath = CGPathCreateMutable();
 }
 
-- (void)drawRect:(CGRect)rect {    
+- (void)drawRect:(CGRect)rect
+{
     [[UIColor clearColor] set];
     UIRectFill(rect);
     
@@ -129,4 +139,3 @@
 }
 
 @end
-

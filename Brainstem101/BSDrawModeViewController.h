@@ -16,12 +16,15 @@
 
 @property (strong, nonatomic) IBOutlet BSSectionView *sectionView;
 @property (strong, nonatomic) IBOutlet BSDrawView *drawView;
-@property (assign) NSInteger sectionNumber;
+@property (assign, nonatomic) NSInteger sectionNumber;
+@property (strong, nonatomic) NSMutableSet *currentPaths;
+@property (strong, nonatomic) IBOutlet UIButton *hintButton;
 
 - (IBAction)goBackToProfile:(id)sender;
 - (IBAction)undo:(id)sender;
 - (IBAction)clear:(id)sender;
 - (IBAction)saveAsImage:(id)sender;
-- (IBAction)hintButtonAction:(id)sender;
+- (IBAction)previousSectionAction:(id)sender;
+- (IBAction)nextSectionAction:(id)sender;
 
 @end

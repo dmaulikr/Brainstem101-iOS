@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Atlas View Controller-->
@@ -271,6 +272,56 @@
                                             <action selector="undo:" destination="itK-qS-Ygh" eventType="touchUpInside" id="AaU-hF-RLH"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bq-DK-7VY" userLabel="Hint">
+                                        <rect key="frame" x="20" y="228" width="54" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="bhZ-vt-y9U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
+                                        <state key="normal" title="Hint">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQN-dD-gLd" userLabel="Hint">
+                                        <rect key="frame" x="8" y="716" width="54" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="54" id="IWf-iK-E9O"/>
+                                            <constraint firstAttribute="height" constant="44" id="PxT-Yv-csE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previousSectionAction:" destination="itK-qS-Ygh" eventType="touchUpInside" id="DRa-26-aHt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0K-03-0Yd" userLabel="Hint">
+                                        <rect key="frame" x="962" y="716" width="54" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="3fk-6H-Kpd"/>
+                                            <constraint firstAttribute="width" constant="54" id="RRJ-AL-Oo4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
+                                        <state key="normal" title="&gt;">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextSectionAction:" destination="itK-qS-Ygh" eventType="touchUpInside" id="9SC-tK-Oar"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXO-pS-mAo" userLabel="Save">
                                         <rect key="frame" x="20" y="176" width="54" height="44"/>
                                         <constraints>
@@ -288,23 +339,6 @@
                                             <action selector="saveAsImage:" destination="itK-qS-Ygh" eventType="touchUpInside" id="jKP-cF-DO1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bq-DK-7VY" userLabel="Hint">
-                                        <rect key="frame" x="20" y="228" width="54" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="bhZ-vt-y9U"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
-                                        <state key="normal" title="Hint">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="hintButtonAction:" destination="itK-qS-Ygh" eventType="touchUpInside" id="6Tf-qL-6Ju"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -312,15 +346,19 @@
                                     <constraint firstItem="FKU-Hs-EQc" firstAttribute="top" secondItem="G8e-gZ-vin" secondAttribute="bottom" constant="8" symbolic="YES" id="4lM-Fp-FXv"/>
                                     <constraint firstItem="CXO-pS-mAo" firstAttribute="trailing" secondItem="7Bq-DK-7VY" secondAttribute="trailing" id="5yU-1h-Rtb"/>
                                     <constraint firstItem="G8e-gZ-vin" firstAttribute="leading" secondItem="kPB-e8-hdd" secondAttribute="leading" constant="20" symbolic="YES" id="GPl-OL-5Ga"/>
+                                    <constraint firstItem="q0K-03-0Yd" firstAttribute="bottom" secondItem="kPB-e8-hdd" secondAttribute="bottomMargin" id="KUK-k6-MHw"/>
                                     <constraint firstItem="CXO-pS-mAo" firstAttribute="leading" secondItem="kPB-e8-hdd" secondAttribute="leading" constant="20" symbolic="YES" id="Q6U-k3-j90"/>
                                     <constraint firstItem="FKU-Hs-EQc" firstAttribute="leading" secondItem="kPB-e8-hdd" secondAttribute="leading" constant="20" symbolic="YES" id="R9D-Sw-BCk"/>
                                     <constraint firstItem="a43-Fj-1Qd" firstAttribute="trailing" secondItem="G8e-gZ-vin" secondAttribute="trailing" id="bh2-Rg-lvo"/>
+                                    <constraint firstItem="OQN-dD-gLd" firstAttribute="leading" secondItem="kPB-e8-hdd" secondAttribute="leadingMargin" id="dgg-o5-Hx0"/>
                                     <constraint firstItem="7Bq-DK-7VY" firstAttribute="top" secondItem="CXO-pS-mAo" secondAttribute="bottom" constant="8" symbolic="YES" id="f83-rj-oQo"/>
+                                    <constraint firstItem="q0K-03-0Yd" firstAttribute="baseline" secondItem="OQN-dD-gLd" secondAttribute="baseline" id="i1E-EF-omb"/>
                                     <constraint firstItem="G8e-gZ-vin" firstAttribute="trailing" secondItem="FKU-Hs-EQc" secondAttribute="trailing" id="kab-Ey-jjn"/>
                                     <constraint firstItem="a43-Fj-1Qd" firstAttribute="leading" secondItem="kPB-e8-hdd" secondAttribute="leading" constant="20" symbolic="YES" id="ksq-Wp-dix"/>
                                     <constraint firstItem="a43-Fj-1Qd" firstAttribute="top" secondItem="kPB-e8-hdd" secondAttribute="top" constant="20" symbolic="YES" id="qzR-7B-wFb"/>
                                     <constraint firstItem="7Bq-DK-7VY" firstAttribute="leading" secondItem="kPB-e8-hdd" secondAttribute="leading" constant="20" symbolic="YES" id="sJ8-tO-jOf"/>
                                     <constraint firstItem="CXO-pS-mAo" firstAttribute="top" secondItem="FKU-Hs-EQc" secondAttribute="bottom" constant="8" symbolic="YES" id="sgS-wM-n9c"/>
+                                    <constraint firstItem="q0K-03-0Yd" firstAttribute="trailing" secondItem="kPB-e8-hdd" secondAttribute="trailingMargin" id="u0W-Zl-2Ds"/>
                                     <constraint firstItem="CXO-pS-mAo" firstAttribute="trailing" secondItem="FKU-Hs-EQc" secondAttribute="trailing" id="xG3-5I-bBk"/>
                                 </constraints>
                             </view>
@@ -340,6 +378,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="drawView" destination="kPB-e8-hdd" id="o1G-pa-dhc"/>
+                        <outlet property="hintButton" destination="7Bq-DK-7VY" id="t5r-pq-sqx"/>
                         <outlet property="sectionView" destination="jUc-F6-2Ek" id="1jN-cn-Vkt"/>
                     </connections>
                 </viewController>
@@ -742,7 +781,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="mqe-Fz-bnB"/>
-        <segue reference="EV6-W9-HeD"/>
+        <segue reference="nTF-2h-ddk"/>
+        <segue reference="XRa-fF-QAG"/>
     </inferredMetricsTieBreakers>
 </document>

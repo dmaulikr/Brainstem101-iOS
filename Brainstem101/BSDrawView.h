@@ -10,13 +10,13 @@
 
 @interface BSDrawView : UIView
 
-@property (nonatomic, strong)   NSMutableArray *drawingPaths;
-@property (nonatomic, strong)   UIColor *lineColor;
-@property (nonatomic)           CGFloat lineWidth;
-@property (nonatomic)           CGMutablePathRef constuctionPath;
-@property (nonatomic)           BOOL empty;
+@property (nonatomic, strong) NSMutableArray   *drawingPaths;
+@property (nonatomic, strong) UIColor          *lineColor;
+@property (nonatomic, assign) CGFloat          lineWidth;
+@property (nonatomic, assign) CGMutablePathRef constuctionPath;
+@property (nonatomic, assign) BOOL             empty;
 
--(void) undo;
--(void) clear;
+- (void)undo;
+- (void)clear;
 
 @end

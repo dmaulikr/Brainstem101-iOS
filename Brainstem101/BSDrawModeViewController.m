@@ -9,60 +9,53 @@
 #import "BSDrawModeViewController.h"
 
 @implementation BSDrawModeViewController
-{
-    NSMutableArray *paths;
-    BOOL hintState;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    hintState = NO;
-    paths = [NSMutableArray new];
+    [self.hintButton addTarget:self action:@selector(hintButtonCallback:event:) forControlEvents:UIControlEventAllEvents];
     
-    for (int i = 0; i < [[[BSModel sharedModel] Nuclei] count]; i++) {
-        if ([[[BSModel sharedModel] Nuclei][i] isInSectionNumber:_sectionNumber]) {
-            [paths addObject:[[[BSModel sharedModel] Nuclei][i] structurePaths][_sectionNumber]];
-        }
-    }
-    
-    for (int i = 0; i < [[[BSModel sharedModel] Tracts] count]; i++) {
-        if ([[[BSModel sharedModel] Tracts][i] isInSectionNumber:_sectionNumber]) {
-            [paths addObject:[[[BSModel sharedModel] Tracts][i] structurePaths][_sectionNumber]];            
-        }
-    }
-    
-    for (int i = 0; i < [[[BSModel sharedModel] Arteries] count]; i++) {
-        if ([[[BSModel sharedModel] Arteries][i] isInSectionNumber:_sectionNumber]) {
-            [paths addObject:[[[BSModel sharedModel] Arteries][i] structurePaths][_sectionNumber]];            
-        }
-    }
-    
-    for (int i = 0; i < [[[BSModel sharedModel] Miscellaneous] count]; i++) {
-        if ([[[BSModel sharedModel] Miscellaneous][i] isInSectionNumber:_sectionNumber]) {
-            [paths addObject:[[[BSModel sharedModel] Miscellaneous][i] structurePaths][_sectionNumber]];            
-        }
-    }
-    
-    for (int i = 0; i < [[[BSModel sharedModel] CranialNerves] count]; i++) {
-        if ([[[BSModel sharedModel] CranialNerves][i] isInSectionNumber:_sectionNumber]) {
-            //check if its been drawn before
-            if (![paths containsObject:[[[BSModel sharedModel] CranialNerves][i] structurePaths][_sectionNumber]]) {
-                [paths addObject:[[[BSModel sharedModel] CranialNerves][i] structurePaths][_sectionNumber]];
-            }
-        }
-    }
+    self.currentPaths = [NSMutableSet new];
+    [self.sectionView setAlpha:0.5];
+    [self switchToSectionNumber:self.sectionNumber];
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)switchToSectionNumber:(NSInteger)sectionNumber
 {
-    [super viewDidAppear:animated];
+    _sectionNumber = sectionNumber;
+    [self.sectionView setNewSectionNumber:sectionNumber];
     
-    [self.sectionView setAlpha:0];
-    [self.sectionView setNewSectionNumber:self.sectionNumber];
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        [self.sectionView setAlpha:0.25];
-    } completion:nil];
+    [self.currentPaths removeAllObjects];
+    
+    for (NSInteger i = 0; i < [[[BSModel sharedModel] Nuclei] count]; i++) {
+        if ([[[BSModel sharedModel] Nuclei][i] isInSectionNumber:_sectionNumber]) {
+            [self.currentPaths addObject:[[[BSModel sharedModel] Nuclei][i] structurePaths][_sectionNumber]];
+        }
+    }
+    
+    for (NSInteger i = 0; i < [[[BSModel sharedModel] Tracts] count]; i++) {
+        if ([[[BSModel sharedModel] Tracts][i] isInSectionNumber:_sectionNumber]) {
+            [self.currentPaths addObject:[[[BSModel sharedModel] Tracts][i] structurePaths][_sectionNumber]];
+        }
+    }
+    
+    for (NSInteger i = 0; i < [[[BSModel sharedModel] Arteries] count]; i++) {
+        if ([[[BSModel sharedModel] Arteries][i] isInSectionNumber:_sectionNumber]) {
+            [self.currentPaths addObject:[[[BSModel sharedModel] Arteries][i] structurePaths][_sectionNumber]];
+        }
+    }
+    
+    for (NSInteger i = 0; i < [[[BSModel sharedModel] Miscellaneous] count]; i++) {
+        if ([[[BSModel sharedModel] Miscellaneous][i] isInSectionNumber:_sectionNumber]) {
+            [self.currentPaths addObject:[[[BSModel sharedModel] Miscellaneous][i] structurePaths][_sectionNumber]];
+        }
+    }
+    
+    for (NSInteger i = 0; i < [[[BSModel sharedModel] CranialNerves] count]; i++) {
+        if ([[[BSModel sharedModel] CranialNerves][i] isInSectionNumber:_sectionNumber]) {
+                [self.currentPaths addObject:[[[BSModel sharedModel] CranialNerves][i] structurePaths][_sectionNumber]];
+        }
+    }
 }
 
 - (UIImage *)imageWithView:(UIView *)view
@@ -96,14 +89,41 @@
     });
 }
 
-- (IBAction)hintButtonAction:(UIButton *)sender
+- (void)hintButtonCallback:(UIButton *)sender event:(UIEvent *)event
 {
-    if (!hintState) {
-        [self.sectionView drawPathsForProfile:paths];
-    }else{
-        [self.sectionView clearPaths];
+    UITouch *touch = [event.allTouches anyObject];
+    
+    switch (touch.phase) {
+        case UITouchPhaseBegan:
+            [self.sectionView drawPathsForProfile:[[self.currentPaths allObjects] mutableCopy]];
+            break;
+        case UITouchPhaseMoved:
+            //
+            break;
+        case UITouchPhaseStationary:
+            //
+            break;
+        case UITouchPhaseEnded:
+            [self.sectionView clearPaths];
+            break;
+        case UITouchPhaseCancelled:
+            [self.sectionView clearPaths];
+            break;
+        default:
+            break;
     }
-    hintState = !hintState;
+}
+
+- (IBAction)previousSectionAction:(id)sender
+{
+    [self clear:self];
+    [self switchToSectionNumber:MAX(self.sectionNumber - 1, 0)];
+}
+
+- (IBAction)nextSectionAction:(id)sender
+{
+    [self clear:self];
+    [self switchToSectionNumber:MIN(self.sectionNumber + 1, 8)];
 }
 
 #pragma mark Touch Methods
@@ -140,7 +160,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(NSUInteger)supportedInterfaceOrientations
+- (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }

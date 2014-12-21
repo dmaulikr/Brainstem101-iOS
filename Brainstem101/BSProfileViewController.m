@@ -45,7 +45,8 @@
 - (void)didSelectStructure:(BSStructure *)structure
 {
     if (structure == nil) {
-        [self.structureDetailView setText:@"Tap a structure above."];
+        [self.structureDetailView setText:@""];
+        return;
     }
     
     NSString *title = [structure structureName];
@@ -112,7 +113,7 @@
     }
 }
 
--(void)setSectionNumber:(NSInteger)sxnNumber
+- (void)setSectionNumber:(NSInteger)sxnNumber
 {
     _sectionNumber = sxnNumber;
     [self switchToSectionNumber:sxnNumber animationStyle:@"fade"];
@@ -168,7 +169,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqual: @"profile-to-draw"]) {
         [UIView animateWithDuration:0.5 animations:^{

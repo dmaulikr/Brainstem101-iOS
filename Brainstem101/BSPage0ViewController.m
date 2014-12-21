@@ -155,7 +155,7 @@
     }
 }
 
--(void)enterTutorial
+- (void)enterTutorial
 {
     if (![self.view viewWithTag:8008]) {
         BSTutorialImageView *tutorialView = [BSTutorialImageView page0Tutorial];
@@ -169,7 +169,7 @@
     }
 }
 
--(void)buttonPressed:(UIButton *)sender
+- (void)buttonPressed:(UIButton *)sender
 {
     if (sender == self.atlasButton) {
         [SVProgressHUD show];
@@ -201,7 +201,7 @@
 }
 
 #pragma mark System Methods
--(NSUInteger)supportedInterfaceOrientations
+- (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
