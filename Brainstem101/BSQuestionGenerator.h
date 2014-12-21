@@ -11,8 +11,8 @@
 
 @interface BSQuestionGenerator : NSObject
 
-+(NSArray *)questions;
++ (NSArray *)questions;
 
-+(BSQuizQuestion *)questionWithAnswer:(NSString *) answer foregroundImageName:(NSString *) foreground andBackgroundImageName:(NSString *) background;
++ (BSQuizQuestion *)questionWithAnswer:(NSString *) answer foregroundImageName:(NSString *) foreground andBackgroundImageName:(NSString *) background;
 
 @end

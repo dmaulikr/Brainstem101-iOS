@@ -10,7 +10,7 @@
 
 @implementation BSDeficit
 
-- (id)initWithSymptoms:(NSString *)sym andDeficit:(NSString *)def
+- (instancetype)initWithSymptoms:(NSString *)sym andDeficit:(NSString *)def
 {
     self = [super init];
     if (self) {

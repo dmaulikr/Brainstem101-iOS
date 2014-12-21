@@ -12,22 +12,24 @@
 
 @interface BSModel : NSObject
 
-@property (strong, nonatomic) NSArray *Nuclei;
-@property (strong, nonatomic) NSArray *Tracts;
-@property (strong, nonatomic) NSArray *Arteries;
-@property (strong, nonatomic) NSArray *Miscellaneous;
-@property (strong, nonatomic) NSArray *CranialNerves;
-@property (strong, nonatomic) NSArray *Syndromes;
+@property (strong, nonatomic, readonly) NSArray *Nuclei;
+@property (strong, nonatomic, readonly) NSArray *Tracts;
+@property (strong, nonatomic, readonly) NSArray *Arteries;
+@property (strong, nonatomic, readonly) NSArray *Miscellaneous;
+@property (strong, nonatomic, readonly) NSArray *CranialNerves;
 @property (strong, nonatomic, readonly) NSArray *allStructures;
 
+@property (strong, nonatomic) NSArray *Syndromes;
+
+
 @property (assign, nonatomic) BOOL inTutorialMode;
-@property (assign, nonatomic) BOOL hasSeenFuckometer;
 
 + (instancetype)sharedModel;
 
 - (NSMutableArray*)getType:(BSStructureType)type inSection:(NSInteger)sectionNumber;
 - (BOOL)isFirstLaunch;
 
++ (NSString *)filepathForStructureType:(BSStructureType)structureType;
 + (void)exportPathDataForStructure:(BSStructure *)structure;
 
 @end

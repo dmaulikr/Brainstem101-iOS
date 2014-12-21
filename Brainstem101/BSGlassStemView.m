@@ -10,14 +10,14 @@
 #import <UIView+Positioning.h>
 
 const NSString *baseFileName = @"glass-stem";
-const float sectionDistance = 100;
+const CGFloat sectionDistance = 100;
 
 @implementation BSGlassStemView
 {
     UIImageView *currentLayer;
 }
 
--(instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self){
@@ -40,14 +40,14 @@ const float sectionDistance = 100;
     return self;
 }
 
--(void)show
+- (void)show
 {
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:1.0];
     } completion:nil];
 }
 
--(void)hide
+- (void)hide
 {
     [self retractLayer:currentLayer];
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{

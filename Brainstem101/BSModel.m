@@ -7,6 +7,7 @@
 //
 
 #import "BSModel.h"
+#import <HRCoder.h>
 
 @implementation BSModel
 
@@ -24,16 +25,27 @@
 {
     if (self = [super init])
     {
-        //tutorial logic
-        self.inTutorialMode = NO;
-        self.hasSeenFuckometer = NO;
+        // Load in data from the local plists 
+        _Nuclei        = [HRCoder unarchiveObjectWithFile:[BSModel filepathForStructureType:BSStructureTypeNucleus]];
+        _Tracts        = [HRCoder unarchiveObjectWithFile:[BSModel filepathForStructureType:BSStructureTypeTract]];
+        _Arteries      = [HRCoder unarchiveObjectWithFile:[BSModel filepathForStructureType:BSStructureTypeArtery]];
+        _Miscellaneous = [HRCoder unarchiveObjectWithFile:[BSModel filepathForStructureType:BSStructureTypeMiscellaneous]];
+        _CranialNerves = [HRCoder unarchiveObjectWithFile:[BSModel filepathForStructureType:BSStructureTypeCranialNerve]];
         
-        BSStructureGenerator *structuresObject = [[BSStructureGenerator alloc] init];
-        self.Nuclei         = [structuresObject Nuclei];
-        self.Tracts         = [structuresObject Tracts];
-        self.Arteries       = [structuresObject Arteries];
-        self.Miscellaneous  = [structuresObject Miscellaneous];
-        self.CranialNerves  = [structuresObject CranialNerves];
+        _Syndromes     = [[BSSyndromeGenerator Syndromes] copy];
+        
+        // Tutorial logic
+        self.inTutorialMode = NO;
+        
+        //        BSStructureGenerator *structuresObject = [[BSStructureGenerator alloc] init];
+        //
+        //        _Nuclei        = [[structuresObject Nuclei] copy];
+        //        _Tracts        = [[structuresObject Tracts] copy];
+        //        _Arteries      = [[structuresObject Arteries] copy];
+        //        _Miscellaneous = [[structuresObject Miscellaneous] copy];
+        //        _CranialNerves = [[structuresObject CranialNerves] copy];
+        // Uncomment this to export
+        // [self exportStructureMetadataToDesktop];
         
     }
     return self;
@@ -47,16 +59,7 @@
                                 arrayByAddingObjectsFromArray:self.Arteries]
                                arrayByAddingObjectsFromArray:self.Miscellaneous]
                               arrayByAddingObjectsFromArray:self.CranialNerves];
-    
     return allStructures;
-}
-
-- (NSArray *)Syndromes
-{
-    if (!_Syndromes) {
-        _Syndromes = [BSSyndromeGenerator Syndromes];
-    }
-    return _Syndromes;
 }
 
 - (NSArray *)getType:(BSStructureType)type inSection:(NSInteger)section
@@ -113,7 +116,6 @@
 - (BOOL)isFirstLaunch
 {
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"hasLaunched"]){
-        NSLog(@"first launch");
         return YES;
     }
     return NO;
@@ -138,5 +140,51 @@
     }
 }
 
++ (NSString *)filepathForStructureType:(BSStructureType)structureType
+{
+    switch (structureType) {
+        case BSStructureTypeNucleus:
+            return [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"nuclei.plist"];
+        case BSStructureTypeTract:
+            return [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"tracts.plist"];
+        case BSStructureTypeArtery:
+            return [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"arteries.plist"];
+        case BSStructureTypeMiscellaneous:
+            return [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"miscellaneous.plist"];
+        case BSStructureTypeCranialNerve:
+            return [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"cranialnerves.plist"];
+        default:
+            break;
+    }
+}
+
+- (void)exportStructureMetadataToDesktop
+{
+    NSString *dataPath;
+    // Nuclei
+    dataPath = @"/Users/Cam/Desktop/nuclei.plist";
+    [HRCoder archiveRootObject:self.Nuclei toFile:dataPath];
+    
+    // Tracts
+   dataPath = @"/Users/Cam/Desktop/tracts.plist";
+    [HRCoder archiveRootObject:self.Tracts toFile:dataPath];
+    
+    // Arteries
+    dataPath = @"/Users/Cam/Desktop/arteries.plist";
+    [HRCoder archiveRootObject:self.Arteries toFile:dataPath];
+    
+    // Miscellaneous
+    dataPath = @"/Users/Cam/Desktop/miscellaneous.plist";
+    [HRCoder archiveRootObject:self.Miscellaneous toFile:dataPath];
+    
+    // CranialNerves
+    dataPath = @"/Users/Cam/Desktop/cranialnerves.plist";
+    [HRCoder archiveRootObject:self.CranialNerves toFile:dataPath];
+    
+    // TODO : Implement NSCoding on BSSyndrome and BSDeficit so we can export and serialize them!
+    // ****** Syndromes *******
+//    dataPath = @"/Users/Cam/Desktop/syndromes.plist";
+//    [HRCoder archiveRootObject:self.Syndromes toFile:dataPath];
+}
 
 @end

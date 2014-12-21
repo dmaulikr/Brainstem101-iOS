@@ -12,6 +12,6 @@
 @property (strong, nonatomic) NSString *symptoms;
 @property (strong, nonatomic) NSString *deficit;
 
-- (id)initWithSymptoms:(NSString *)sym andDeficit:(NSString *)def;
+- (instancetype)initWithSymptoms:(NSString *)sym andDeficit:(NSString *)def;
 
 @end

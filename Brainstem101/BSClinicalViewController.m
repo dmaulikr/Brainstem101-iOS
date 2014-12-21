@@ -83,7 +83,7 @@
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.descriptionView setAlpha:0];
     } completion:^(BOOL finished) {
-        [self.descriptionView setText:[currentSyndrome desc]];
+        [self.descriptionView setText:[currentSyndrome syndromeDescription]];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [self.descriptionView setAlpha:1];
         } completion:^(BOOL finished) {
@@ -92,7 +92,7 @@
     }];
 }
 
--(void)updateSectionCollectionView
+- (void)updateSectionCollectionView
 {
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.sectionCollectionView setAlpha:0];

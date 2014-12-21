@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>brachium-of-inferior-colliculus-m</string>
+		<key>structureDescription</key>
+		<string>Receives and integrates auditory input from cochlear nuclei (through Lateral Lemniscus), the auditory cortex, and the medial MGB of thalamus; Projects to the ventral MGB. Involved in sound lateralization, startle response, and Vestibulo-Ocular Reflex</string>
+		<key>structureName</key>
+		<string>Brachium of Inferior Colliculus</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>central-canal-m</string>
+		<key>structureName</key>
+		<string>Central Canal</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>cerebral-aqueduct-m</string>
+		<key>structureDescription</key>
+		<string>Drains CSF from Third Ventricle into the Fourth Ventricle. Runs between the tectal (dorsal) and tegmental (ventral) part of midbrain. Occlusion of the lumen (for example, by a tumor or stenosis) will result in a non-communicating hydrocephalus.</string>
+		<key>structureName</key>
+		<string>Cerebral Aqueduct</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>fourth-ventricle-m</string>
+		<key>structureDescription</key>
+		<string>The circulating CSF flows from the third ventricle, down through the Cerebral Aquaduct, and into the Fourth ventricle. The roof of the fourth ventricle is formed by the cerebellum (superior and inferior medullary vela), the floor by the rhomboid fossa, and the side 'walls' formed by the cerebellar peduncles. </string>
+		<key>structureName</key>
+		<string>Fourth Ventricle</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>inferior-cerebellar-peduncle-m</string>
+		<key>structureDescription</key>
+		<string>Integrates proprioception with vestibular functions: it is composed of afferent tracts that bring sensory information to the cerebellum (Posterior Spinocerebellar and Vestibulocerebellar fibers) and efferent tracts that carry signals from cerebellar (purkinje) cells to vestibular nn.</string>
+		<key>structureName</key>
+		<string>Inferior Cerebellar Peduncle</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>inferior-colliculus-m</string>
+		<key>structureDescription</key>
+		<string>Receives and integrates auditory input from cochlear nn.  (through Lateral Lemniscus), the auditory cortex, and the medial MGB of thalamus; Projects to the ventral MGB. Involved in sound lateralization, startle response and Vestibulo-Ocular Reflex.</string>
+		<key>structureName</key>
+		<string>Inferior Colliculus</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>internal-arcuate-fibers-m</string>
+		<key>structureDescription</key>
+		<string>The Internal Arcuate fibers mark the decussation of PC-ML within the caudal medulla. Once crossed they will form the Medial Lemniscus.</string>
+		<key>structureName</key>
+		<string>Internal Arcuate Fibers</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>middle-cerebellar-peduncle-m</string>
+		<key>structureDescription</key>
+		<string>Contains axons that project into and out of the cerebellum</string>
+		<key>structureName</key>
+		<string>Middle Cerebellar Peduncle</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>pyramidal-decussation-m</string>
+		<key>structureDescription</key>
+		<string>Majority of the descending fibers of the Corticospinal Tract decussate through thsi region to form the Lateral Corticospinal Tract. A lesion here would cause quadriplegia. </string>
+		<key>structureName</key>
+		<string>Pyramidal Decussation</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>superior-colliculus-m</string>
+		<key>structureDescription</key>
+		<string>Composed of two functionally distinct layers. 1. Superficial layers receive visual stimuli and 2. Deep layers direct eye movements towards the stimuli. This structure has a role in various forms of eye movements (e.g. saccades, smooth pursuit, vergence, and fixation).</string>
+		<key>structureName</key>
+		<string>Superior Colliculus</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>superior-cerebellar-peduncle-m</string>
+		<key>structureDescription</key>
+		<string>Houses the tracts that exit cerebellum to reach motor signal from deep cerebellar nn.  to contralateral Red nn.  and Thalamus. These fibers decussate within the midbrain. A cerebellar lesion will cause IPSILATERAL dystaxia. Although the ascending fibers decussate (pre-thalamus), the descending motor signal will cross back again (pyramidal decussation); the motor deficit will therefore be on the same side as the cerebellar lesion. </string>
+		<key>structureName</key>
+		<string>Superior Cerebellar Peduncle</string>
+		<key>structureType</key>
+		<integer>3</integer>
+	</dict>
+</array>
+</plist>

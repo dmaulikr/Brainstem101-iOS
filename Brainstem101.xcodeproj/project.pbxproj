@@ -605,6 +605,11 @@
 		32FF12AB1A46F57500CEAE55 /* vii-facial-cn-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FF11E71A46F57500CEAE55 /* vii-facial-cn-4.json */; };
 		32FF12AC1A46F57500CEAE55 /* xii-hypoglossal-cn-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FF11E81A46F57500CEAE55 /* xii-hypoglossal-cn-1.json */; };
 		32FF12AD1A46F57500CEAE55 /* xii-hypoglossal-cn-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FF11E91A46F57500CEAE55 /* xii-hypoglossal-cn-2.json */; };
+		32FF12B51A47195600CEAE55 /* cranialnerves.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B01A47195600CEAE55 /* cranialnerves.plist */; };
+		32FF12B61A47195600CEAE55 /* miscellaneous.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B11A47195600CEAE55 /* miscellaneous.plist */; };
+		32FF12B71A47195600CEAE55 /* nuclei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B21A47195600CEAE55 /* nuclei.plist */; };
+		32FF12B81A47195600CEAE55 /* tracts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B31A47195600CEAE55 /* tracts.plist */; };
+		32FF12BA1A47227E00CEAE55 /* arteries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B91A47227E00CEAE55 /* arteries.plist */; };
 		32FF6F7617098CBF00B4FB0F /* BSDeficit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF6F7517098CBE00B4FB0F /* BSDeficit.m */; };
 		8179EAE0161D40CF0050D663 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EADF161D40CF0050D663 /* UIKit.framework */; };
 		8179EAE2161D40CF0050D663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EAE1161D40CF0050D663 /* Foundation.framework */; };
@@ -1242,6 +1247,11 @@
 		32FF11E71A46F57500CEAE55 /* vii-facial-cn-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vii-facial-cn-4.json"; sourceTree = "<group>"; };
 		32FF11E81A46F57500CEAE55 /* xii-hypoglossal-cn-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "xii-hypoglossal-cn-1.json"; sourceTree = "<group>"; };
 		32FF11E91A46F57500CEAE55 /* xii-hypoglossal-cn-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "xii-hypoglossal-cn-2.json"; sourceTree = "<group>"; };
+		32FF12B01A47195600CEAE55 /* cranialnerves.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cranialnerves.plist; sourceTree = "<group>"; };
+		32FF12B11A47195600CEAE55 /* miscellaneous.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = miscellaneous.plist; sourceTree = "<group>"; };
+		32FF12B21A47195600CEAE55 /* nuclei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nuclei.plist; sourceTree = "<group>"; };
+		32FF12B31A47195600CEAE55 /* tracts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tracts.plist; sourceTree = "<group>"; };
+		32FF12B91A47227E00CEAE55 /* arteries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = arteries.plist; sourceTree = "<group>"; };
 		32FF6F7417098CBE00B4FB0F /* BSDeficit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeficit.h; sourceTree = "<group>"; };
 		32FF6F7517098CBE00B4FB0F /* BSDeficit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeficit.m; sourceTree = "<group>"; };
 		64E05366A86D73DF4163D457 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -2184,6 +2194,18 @@
 			path = "path-json";
 			sourceTree = "<group>";
 		};
+		32FF12AE1A47195600CEAE55 /* structure-data */ = {
+			isa = PBXGroup;
+			children = (
+				32FF12B21A47195600CEAE55 /* nuclei.plist */,
+				32FF12B31A47195600CEAE55 /* tracts.plist */,
+				32FF12B91A47227E00CEAE55 /* arteries.plist */,
+				32FF12B11A47195600CEAE55 /* miscellaneous.plist */,
+				32FF12B01A47195600CEAE55 /* cranialnerves.plist */,
+			);
+			path = "structure-data";
+			sourceTree = "<group>";
+		};
 		8179EAD0161D40CF0050D663 = {
 			isa = PBXGroup;
 			children = (
@@ -2228,6 +2250,7 @@
 				32DD438016525569002AAE0F /* Views */,
 				32DD438116526771002AAE0F /* Classes */,
 				32035531162C0C8E0079394F /* Images */,
+				32FF12AE1A47195600CEAE55 /* structure-data */,
 				32FF11251A46F57400CEAE55 /* path-json */,
 				8179EAE6161D40CF0050D663 /* Supporting Files */,
 			);
@@ -2371,9 +2394,11 @@
 				32523E991709D79E00D55ECA /* claude-sec.png in Resources */,
 				32523E9A1709D79E00D55ECA /* medial-medullary-sec.png in Resources */,
 				32523E9B1709D79E00D55ECA /* nothnagel-sec.png in Resources */,
+				32FF12B81A47195600CEAE55 /* tracts.plist in Resources */,
 				32523E9C1709D79E00D55ECA /* wallenberg-sec.png in Resources */,
 				32FF124A1A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-0.json in Resources */,
 				32523E9D1709D79E00D55ECA /* weber-sec.png in Resources */,
+				32FF12BA1A47227E00CEAE55 /* arteries.plist in Resources */,
 				327CE45B170ADE710020F918 /* foville-sec.png in Resources */,
 				327CE45C170ADE710020F918 /* locked-in-sec.png in Resources */,
 				32FF12801A46F57500CEAE55 /* rubrospinal-t-6.json in Resources */,
@@ -2540,6 +2565,7 @@
 				32FF12141A46F57500CEAE55 /* corticospinal-t-8.json in Resources */,
 				32FF11F21A46F57500CEAE55 /* anterior-spinocerebellar-t-2.json in Resources */,
 				32FF12811A46F57500CEAE55 /* rubrospinal-t-7.json in Resources */,
+				32FF12B61A47195600CEAE55 /* miscellaneous.plist in Resources */,
 				32FF12621A46F57500CEAE55 /* nucleus-raphe-dorsalis-n-7.json in Resources */,
 				326F878F17212522008E923E /* locked-in-mug.png in Resources */,
 				32FF126D1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-1.json in Resources */,
@@ -2567,6 +2593,7 @@
 				32C4622E176CE0FF00B55189 /* glass-stem-6.png in Resources */,
 				32FF121A1A46F57500CEAE55 /* dorsal-motor-of-vagus-n-1.json in Resources */,
 				32FF128E1A46F57500CEAE55 /* spinal-trigeminal-t-1.json in Resources */,
+				32FF12B71A47195600CEAE55 /* nuclei.plist in Resources */,
 				32FF126B1A46F57500CEAE55 /* pontine-n-6.json in Resources */,
 				32C4622F176CE0FF00B55189 /* glass-stem-7.png in Resources */,
 				32C46230176CE0FF00B55189 /* glass-stem-8.png in Resources */,
@@ -2770,6 +2797,7 @@
 				32FF12561A46F57500CEAE55 /* medial-vestibular-n-4.json in Resources */,
 				32FF12231A46F57500CEAE55 /* fourth-ventricle-m-4.json in Resources */,
 				32782EC717B4A701008C072D /* middle-cerebellar-peduncle-6.png in Resources */,
+				32FF12B51A47195600CEAE55 /* cranialnerves.plist in Resources */,
 				32782EC817B4A701008C072D /* mlf-6.png in Resources */,
 				32782EC917B4A701008C072D /* nucleus-centralis-superior-6.png in Resources */,
 				32782ECA17B4A701008C072D /* quiz-background-6.png in Resources */,

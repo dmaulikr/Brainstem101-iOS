@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>iii-oculomotor-cn</string>
+		<key>structureDescription</key>
+		<string>Carries motor signal from Oculomotor (GSE) and Edinger Westphal (GVE) nn. towards the orbit. Oculomotor palsy: Ipsilateral eye droops and points down and out.</string>
+		<key>structureName</key>
+		<string>CN III (Oculomotor)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>oculomotor-n</string>
+		<key>structureDescription</key>
+		<string>(GSE) Cell Bodies whose axons innervate  4 of the 6 intrinsic muscles of the eye (Superior Rectus, Medial Rectus, Inferior Rectus, Inerior Oblique) and regulates blinking by innervating the Levator palpebrae Superioris m.  Controls 4/6 intrinsic muscles of the eye: (Superior Rectus, Medial Rectus, Inferior Rectus, Inferior Oblique). Opens eyelid via Levator palpebrae Superioris innervation. Damage to this nucleus or the associated nerve will result in Oculomotor palsy -- Ipsilateral eyelid drooping + pupil that points down and out</string>
+		<key>structureName</key>
+		<string>- Oculomotor Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>edinger-westphal-n</string>
+		<key>structureDescription</key>
+		<string>(GVE) Cell bodies whose preganglionic parasympathetic axons project to the cilliary ganglion of the eye. Functions include pupillary constriction (Sphincter Pupillae) acommodation (Cilliary muscles of the lens), and convergence.</string>
+		<key>structureName</key>
+		<string>- Edinger-Westphal Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>iv-trochlear-cn</string>
+		<key>structureDescription</key>
+		<string>Controls Superior Oblique (an intrinsic eye muscle capable of intorsion and depression of the orbit). If damaged, the affected eye will be extorted and unable to look down. Patient will sidebend head to contralateral side to keep the 'good eye' in an intorted state, and therefore in alignment with the fixed extorted eye on opposite side. Patient may report difficulty with tasks that require looking down such as walking down stairs or navigating a cluttered room.</string>
+		<key>structureName</key>
+		<string>CN IV (Trochlear)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>trochlear-n</string>
+		<key>structureName</key>
+		<string>- Trochlear Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>v-trigeminal-cn</string>
+		<key>structureName</key>
+		<string>CN V (Trigeminal)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>trigeminal-motor-n</string>
+		<key>structureDescription</key>
+		<string> The motor component of  of the trigeminal system controls all muscles arising from the first branchial arch. These include: muscles of mastication (masseter, temporalis, medial and lateral pterygoids), tensor tympany, tensor veli palatini, mylohyoid, and the anterior belly of digastic. The Trigeminal motor n. sends axons out through foramen ovale as the mandibular branch of the trigeminal nerve (V3).</string>
+		<key>structureName</key>
+		<string>- Trigeminal Motor Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>principal-n</string>
+		<key>structureName</key>
+		<string>- Principal Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>spinal-trigeminal-n</string>
+		<key>structureName</key>
+		<string>- Spinal Trigeminal Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>mesencephalic-n</string>
+		<key>structureDescription</key>
+		<string>This group of cells carry proprioception sensation from the jaw directly to the motor trigeminal nn. , thus they can be thoguht of as the afferent component of the Jaw Jerk Reflex. Lesion to this structure will result in loss of Jaw Jerk Reflex (dysfunction of afferent component)</string>
+		<key>structureName</key>
+		<string>- Mesencephalic Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>vi-abducens-cn</string>
+		<key>structureName</key>
+		<string>CN VI (Abducens)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>abducens-n</string>
+		<key>structureDescription</key>
+		<string>Controls the Lateral Rectus muscle, an intrinsic muscle of the eye, that pulls the eye laterally. An isolated lesion of this nerve  is called 'Lateral Rectus Palsy'. The absence of tone in the lateral aspect will leave the eye in mediosuperior position.</string>
+		<key>structureName</key>
+		<string>- Abducens Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>vii-facial-cn</string>
+		<key>structureDescription</key>
+		<string>Somatic component is involved in control of the muscles of facial expression and the stapedius. Parasympathetic component forms the preganglionic fibers of Submandibular/Sublingual salivary glands (synapse at sublingual ganglion) and lacrimal glands (synapse at cilliary ganglion). The sensory aspect of CNVII conveys taste sensation from anterior 2/3 of tongue to the solitary n. . The facial nerve exits the skull though the stylomastoid foramen. The extracranial part of the facial nerve gives rise to several somatic branches: posterior auricular, temporal, zygomatic, buccal, marginal, and cervical branch. </string>
+		<key>structureName</key>
+		<string>CN VII (Facial)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>facial-motor-n</string>
+		<key>structureDescription</key>
+		<string>Controls movement of facial muscles</string>
+		<key>structureName</key>
+		<string>- Facial Motor Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>salivatory-n</string>
+		<key>structureDescription</key>
+		<string>(GVE) Parasympathetic preganglionic cell bodies whose axons synapse on the otic ganglia whose axons will stimulate secretion of saliva by the parotid gland.</string>
+		<key>structureName</key>
+		<string>- Salivatory Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>solitary-n</string>
+		<key>structureDescription</key>
+		<string>Cell bodies that receive taste sensation (Via CN VII and IX), and visceral sensation from Heart, Lungs, GI and Liver (via CN IX and CN X) -- Noteworthy: signal from chemoreceptors of Carotid Bodies associate with CN IX, whereas, signals picked up by Aortic Body chemoreceptors use CN X to reach the brainstem. Send projections to Hypothalamus (paraventricular nuclei) and Amygdala (central Nuclei). Axons centered within the Solitary nucleus; it carries both afferent and efferent fibers</string>
+		<key>structureName</key>
+		<string>- Solitary Nucleus and Tract</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>viii-vestibulocochlear-cn</string>
+		<key>structureName</key>
+		<string>CN VIII (Vestibulocochlear)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>inferior-vestibular-n</string>
+		<key>structureDescription</key>
+		<string>Responsible for integrating vestibular signals. Receives input from the semicircular canals, utricle, saccule, and vermis of cerebellum. Efferent fibers project to the reticular nn, as the vestibuloreticular tract, or travel down through the spinal cord as the vestibulospinal tract.</string>
+		<key>structureName</key>
+		<string>- Inferior Vestibular Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>medial-vestibular-n</string>
+		<key>structureDescription</key>
+		<string>Receives input from the semicircular canals and projects to the cervical spinal cord to innervate neck muscles to help stabilize the head in space. </string>
+		<key>structureName</key>
+		<string>- Medial Vestibular Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>lateral-vestibular-n</string>
+		<key>structureName</key>
+		<string>- Lateral Vestibular Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>anterior-cochlear-n</string>
+		<key>structureDescription</key>
+		<string>Can be further divided into anteroventral and posterovental nuclei. These nuclei receive auditory signal from the cochlea, through the Auditory Nerve). The incoming signal reaches the Spiral Ganglion, passes through the ventral acoustic striae, and through Trapezoid Body to reach contarlateral Superior Olivary Complex.</string>
+		<key>structureName</key>
+		<string>- Anterior Cochlear Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>posterior-cochlear-n</string>
+		<key>structureDescription</key>
+		<string>Cell bodies that receive signals from the cochlea, through the 'Auditory Nerve'. The axons project as the Intermediate Acoustic Striae which joins the ascending fibers in the contralateral lateral lemniscus (traveling to Inferior Colliculus)</string>
+		<key>structureName</key>
+		<string>- Posterior Cochlear Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>ix-glossopharyngeal-cn</string>
+		<key>structureName</key>
+		<string>CN IX (Glossopharyngeal)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>x-vagus-cn</string>
+		<key>structureName</key>
+		<string>CN X (Vagus)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>xi-accessory-cn</string>
+		<key>structureName</key>
+		<string>CN XI (Accessory)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>xii-hypoglossal-cn</string>
+		<key>structureName</key>
+		<string>CN XII (Hypoglossal)</string>
+		<key>structureType</key>
+		<integer>4</integer>
+	</dict>
+</array>
+</plist>

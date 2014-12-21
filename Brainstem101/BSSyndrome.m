@@ -10,19 +10,20 @@
 
 @implementation BSSyndrome
 
--(id)initWithName:(NSString *) syndromeName{
+- (instancetype)initWithName:(NSString *) syndromeName
+{
     self = [super init];
     if (self) {
-        self.name = syndromeName;
+        self.syndromeName = syndromeName;
         
-        NSString *fileName = syndromeName;
-        fileName = [fileName lowercaseString];
-        fileName = [fileName stringByReplacingOccurrencesOfString:@"\'s" withString:@""];
-        fileName = [fileName stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+        self.conventionalName = syndromeName;
+        self.conventionalName = [self.conventionalName lowercaseString];
+        self.conventionalName = [self.conventionalName stringByReplacingOccurrencesOfString:@"\'s" withString:@""];
+        self.conventionalName = [self.conventionalName stringByReplacingOccurrencesOfString:@" " withString:@"-"];
         
-        self.sectionImageName = [NSString stringWithFormat:@"%@-sec.png", fileName] ;
-        self.mugshotImageName = [NSString stringWithFormat:@"%@-mug.png", fileName];
-        self.perfusionDiagramOverlay = [NSString stringWithFormat:@"%@-perf.png", fileName];
+        self.sectionImageName = [NSString stringWithFormat:@"%@-sec.png", self.conventionalName] ;
+        self.mugshotImageName = [NSString stringWithFormat:@"%@-mug.png", self.conventionalName];
+        self.perfusionDiagramOverlay = [NSString stringWithFormat:@"%@-perf.png", self.conventionalName];
         self.perfusionDiagram = @"perfusion-background.png";
 
         self.deficits = [NSMutableArray new];
@@ -31,8 +32,15 @@
     return self;
 }
 
--(void)addSymptoms:(NSString *)symptoms andDeficit:(NSString *)deficit {
-    [[self deficits] addObject:[[BSDeficit alloc] initWithSymptoms:symptoms andDeficit:deficit]];
+- (void)addSymptoms:(NSString *)symptoms andDeficit:(NSString *)deficit
+{
+    [self.deficits addObject:[[BSDeficit alloc] initWithSymptoms:symptoms andDeficit:deficit]];
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"BSSyndrome %@ (%@), deficits: %lu, (%@, %@)",
+            self.syndromeName, self.conventionalName, (unsigned long)self.deficits.count, self.mugshotImageName, self.sectionImageName];
 }
 
 @end

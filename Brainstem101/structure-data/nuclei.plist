@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>abducens-n</string>
+		<key>structureDescription</key>
+		<string>Controls Lateral Rectus muscle --an intrinsic muscle of the eye that pulls the eye laterally. An isolated lesion of this nucleus causes Lateral Rectus Palsy. A lack of muscle tone in the temporal aspect results in a nasal deviation of the orbit --affected eye rests in a more medial position.</string>
+		<key>structureName</key>
+		<string>Abducens Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>accessory-cuneate-n</string>
+		<key>structureDescription</key>
+		<string>Located lateral to the cuneate nucleus in the medulla, it receives sensation from the upper extremities and trunk and forwards it to the cerebellum (via cuneocerebellar tracts).  Large diameter fibers from the cuneate fasiculus synapse at this point and project ipsilaterally through the inferior cerebellar peduncle to the cerebellum, forming the cuneatocerebellar tract. </string>
+		<key>structureName</key>
+		<string>Accessory Cuneate Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>accessory-n</string>
+		<key>structureName</key>
+		<string>Accessory Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>anterior-cochlear-n</string>
+		<key>structureDescription</key>
+		<string>Cell bodies that consists of anteroventral and posterovental cochlear nuclei. Receives input from the cochlea (through the Auditory Nerve). The axonsof the ventral cochlear nucleus project as  the ventral acoustic striae , through trapezoid body to contralateral superior olivary complex.</string>
+		<key>structureName</key>
+		<string>Anterior Cochlear Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>cuneate-n</string>
+		<key>structureDescription</key>
+		<string>Second order cell bodies of the PC-ML pathway; the cuneate fasciculus synapses onto --&gt; cuneate n. --&gt; projects its axons across, through the arcuate fibers, to the contralateral medial lemniscus</string>
+		<key>structureName</key>
+		<string>Cuneate Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>dorsal-motor-of-vagus-n</string>
+		<key>structureDescription</key>
+		<string>A component of the auditory pathway; projects axons to the primary auditory cortex (transverse temporal gyrus/ Heschl&apos;s gyrus).</string>
+		<key>structureName</key>
+		<string>Dorsal Motor Nucleus of Vagus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>facial-motor-n</string>
+		<key>structureDescription</key>
+		<string>Cell bodies whose axons generate motor signals to animate facial muscles.</string>
+		<key>structureName</key>
+		<string>Facial Motor Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>edinger-westphal-n</string>
+		<key>structureDescription</key>
+		<string>Controls pupillary constriction (Sphincter Pupillae), accommodation (Cilliary muscles of the lens), and convergence. These nn. give rise to the preganglionic parasympathetic fibers that synapse with the cilliary ganglion of the eye. .</string>
+		<key>structureName</key>
+		<string>Edinger-Westphal Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>gracile-n</string>
+		<key>structureDescription</key>
+		<string>Second order cell bodies of the PC-ML pathway.  The gracile fasciculus synapses upon the gracile n. whose axons decussate as the Internal Arcuate Fibers and ascends as the contralateral medial lemniscus</string>
+		<key>structureName</key>
+		<string>Gracile Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>hypoglossal-n</string>
+		<key>structureDescription</key>
+		<string>Cell bodies whose axons innervate all intrinsic and extrinsic muscles of the tongue (EXCEPT palatoglossus)</string>
+		<key>structureName</key>
+		<string>Hypoglossal Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>inferior-olivary-n</string>
+		<key>structureDescription</key>
+		<string>Involved in learning of specialized motor skills. Think figure skating! It receives sensory feedback from the Spino-olivary tracts, and projects to the cerebellum, via climbing fibers traveling through the Inferior Cerebellar Peduncle.</string>
+		<key>structureName</key>
+		<string>Inferior Olivary Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>interpeduncular-n</string>
+		<key>structureDescription</key>
+		<string>Imposes inhibitory effect on many other brain regions (dampens dopamine effects).  More specifically, receives excitatory input from medial Habenula, the diagonal band, the dorsal tegmentum, Raphe nn., the Central Grey and the Locus Ceruleus. Outputs inhibitory signal to dorsal tegmental structures.</string>
+		<key>structureName</key>
+		<string>Interpeduncular Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>lateral-reticular-n</string>
+		<key>structureDescription</key>
+		<string>Composed of three subnn.  (Parvocellular, Magnocellular, Subtrigeminal) that send signals to the cerebellum. Parvo and Magno receive information mostly from ipsiateral dorsal horn of the spinal cord and project ipsilaterally to cerebellar vermis. The Subtrigeminal receives input mostly from the cortex and projects to the ipsilateral flocconodular lobe. </string>
+		<key>structureName</key>
+		<string>Lateral Reticular Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>locus-ceruleus-n</string>
+		<key>structureDescription</key>
+		<string>Major site for synthesis of Norepinephrin. Receives input from many regions of the brain -- hypothalamus (regulation of autonomic functions), cyngulate gyrus/amygdala (arousal by emotional distress), Raphe nn. , cerebellum, etc -- and, similarly, projects to many different regions -- hypothalamus, cortex, amygdala, cerebellum, thalamus, etc. -- to enable stress response, arousal, neuroplasticity, attention, memory, balance and more. Decreased activity is associated with: Alzheimer’s, Parkinson’s and depression. Increased activity is associated with: anxiety, panic disorder, Opiod withdrawal.</string>
+		<key>structureName</key>
+		<string>Locus Ceruleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>medial-geniculate-n</string>
+		<key>structureName</key>
+		<string>Medial Geniculate Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>medial-motor-n</string>
+		<key>structureName</key>
+		<string>Medial Motor Nuclei</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>mesencephalic-n</string>
+		<key>structureDescription</key>
+		<string>This group of cells carries proprioception sensation from the jaw directly to the motor trigeminal nn. , thus they can be thoguht of as the afferent component of the Jaw Jerk Reflex. Lesion to this structure will result in loss of Jaw Jerk Reflex (dysfunction of afferent component).</string>
+		<key>structureName</key>
+		<string>Mesencephalic Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>nucleus-ambiguus-n</string>
+		<key>structureDescription</key>
+		<string>Gives rise to the motor (brachial) fibers of Vagus Nerve that innervate laryngeal and pharyngeal muscles, as well as motor fibers of Glossopharyngeal Nerve (CN IX) that innervate stylopharyngeus </string>
+		<key>structureName</key>
+		<string>Nucleus Ambiguus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>nucleus-centralis-superior-n</string>
+		<key>structureDescription</key>
+		<string>Project towards higher brain regions.</string>
+		<key>structureName</key>
+		<string>Nucleus Centralis Superior</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>nucleus-raphe-dorsalis-n</string>
+		<key>structureDescription</key>
+		<string>Project towards higher brain regions and release serotonin.</string>
+		<key>structureName</key>
+		<string>Nucleus Raphe Dorsalis</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>nucleus-raphe-magnus-n</string>
+		<key>structureDescription</key>
+		<string>Receives input from Periaqueductal Grey, paraventricular nn.  of hypothalamus, and amygdala. It projects within the brainstem and along the spinal chord (dorsal horns) where it releases enkephalin -- endogenous analgesic.</string>
+		<key>structureName</key>
+		<string>Nucleus Raphe Magnus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>nucleus-raphe-obscurus-n</string>
+		<key>structureDescription</key>
+		<string>Projects to the cerebellum. Experimental abalation of this region suggests functional link to Hypoglossal nerve. Experimental microinjection of 5-HT into this region is followed by increased GI motility.</string>
+		<key>structureName</key>
+		<string>Nucleus Raphe Obscurus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>nucleus-raphe-pallidus-n</string>
+		<key>structureDescription</key>
+		<string>Receives axons from  the periaquaductal gray, hypothalamic nn. , and amygdala. This n.  is involved in fever activation and tachycardic response to emotional or psychological stress.</string>
+		<key>structureName</key>
+		<string>Nucleus Raphe Pallidus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>nucleus-raphe-pontis-n</string>
+		<key>structureDescription</key>
+		<string>Cell bodies whose axons project to the cerebellum.</string>
+		<key>structureName</key>
+		<string>Nucleus Raphe Pontis</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>oculomotor-n</string>
+		<key>structureDescription</key>
+		<string>(GSE) Cell Bodies whose axons innervate  4 of the 6 intrinsic muscles of the eye (Superior Rectus, Medial Rectus, Inferior Rectus, Inerior Oblique) and regulates blinking by innervating the Levator palpebrae Superioris m.</string>
+		<key>structureName</key>
+		<string>Oculomotor Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>principal-n</string>
+		<key>structureDescription</key>
+		<string>Perceives sensation of light touch on face, and proprioception of jaw muscles. Transfers MOST of this input to contralateral VPM (via ventral trigeminothalamic tract). The sensory information from the oral cavity is sent to ipsilateral VPM via the Dosrsal Trigeminothalamic Tract.</string>
+		<key>structureName</key>
+		<string>Principal Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>pontine-n</string>
+		<key>structureDescription</key>
+		<string>Receive motor signal from ipsilateral motor cortex and send it to contralateral cerebellum (through Middle cerebellar peduncle)</string>
+		<key>structureName</key>
+		<string>Pontine Nuclei</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>posterior-cochlear-n</string>
+		<key>structureDescription</key>
+		<string>Cell bodies that receive signals from the cochlea, through the &apos;Auditory Nerve&apos;. The axons project as the Intermediate Acoustic Striae which joins the ascending fibers in the contralateral lateral lemniscus (traveling to Inferior Colliculus)</string>
+		<key>structureName</key>
+		<string>Posterior Cochlear Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>reticulotegmental-n</string>
+		<key>structureName</key>
+		<string>Reticulotegmental Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>red-n</string>
+		<key>structureDescription</key>
+		<string>Neurons of this center project to  the cerebellum (as the inferior olivary complex) and the spinal cord (as the rubrospinal tracts). They are associated with minor motor functions -- arm flexion during gait and in infant crawling. Palatal myoclonus .</string>
+		<key>structureName</key>
+		<string>Red Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>salivatory-n</string>
+		<key>structureDescription</key>
+		<string>(GVE) Parasympathetic preganglionic cell bodies whose axons synapse on the otic ganglia whose axons will stimulate secretion of saliva by the parotid gland.</string>
+		<key>structureName</key>
+		<string>Salivatory Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>solitary-n</string>
+		<key>structureDescription</key>
+		<string>The Solitary n.  receives many types of visceral sensory information -- Gustatory information: via CN VII and CN IX; Heart, Lungs and GI visceral sensation: via CN IX and CN X; Carotid Body chemoreceptors: via CN IX; Aortic Body chemoreceptors: via CN X -- The solitary nuclei receive and forward the signals to the paraventricular nuclei of Hypothalamus and Central nuclei of Amygdala.</string>
+		<key>structureName</key>
+		<string>Solitary Nucleus and Tract</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>spinal-trigeminal-n</string>
+		<key>structureName</key>
+		<string>Spinal Trigeminal Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>trigeminal-motor-n</string>
+		<key>structureName</key>
+		<string>Trigeminal Motor Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>trochlear-n</string>
+		<key>structureName</key>
+		<string>Trochlear Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>inferior-vestibular-n</string>
+		<key>structureDescription</key>
+		<string>Responsible for integrating vestibular signals. Receives input from the semicircular canals, utricle, saccule, and vermis of cerebellum. Efferent fibers project to the reticular nn, as the vestibuloreticular tract, or travel down through the spinal cord as the vestibulospinal tract.</string>
+		<key>structureName</key>
+		<string>Vestibular Nucleus (Inferior)</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>lateral-vestibular-n</string>
+		<key>structureName</key>
+		<string>Vestibular Nucleus (Lateral)</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>medial-vestibular-n</string>
+		<key>structureDescription</key>
+		<string>Receives input from the semicircular canals and projects to the cervical spinal cord to innervate neck muscles to help stabilize the head in space.</string>
+		<key>structureName</key>
+		<string>Vestibular Nucleus (Medial)</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>

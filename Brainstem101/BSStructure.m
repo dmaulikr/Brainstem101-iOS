@@ -19,7 +19,7 @@
         self.conventionalName = [BSStructure getConventionalNameWithName:name andType:type];
 
         // [self generateStructurePathsFromXML];
-        if (type == BSStructureTypeArtery) {
+        if (self.structureType == BSStructureTypeArtery) {
             // Arteries are the only ones who have artery images
             self.arteryImages = [[NSMutableArray alloc] initWithArray:@[@"", @"", @"", @"", @"", @"", @"", @"", @""]];
         }else{
@@ -42,7 +42,17 @@
         self.structureName = [coder decodeObjectForKey:@"structureName"];
         self.structureDescription = [coder decodeObjectForKey:@"structureDescription"];
         self.conventionalName = [coder decodeObjectForKey:@"conventionalName"];
+        self.arteryImages = [coder decodeObjectForKey:@"arteryImages"];
         self.structureType = (BSStructureType)[coder decodeIntegerForKey:@"structureType"];
+        
+        // [self generateStructurePathsFromXML];
+        if (self.structureType != BSStructureTypeArtery) {
+            // Arteries don't have structurePaths, so only look for path data from non-arteries
+            self.structurePaths = [[NSMutableArray alloc] init];
+            [self generateStructurePathsFromJSON];
+        }
+        
+        [self generateImageDictionary];
 
     }
     return self;
@@ -53,6 +63,7 @@
     [aCoder encodeObject:self.structureName forKey:@"structureName"];
     [aCoder encodeObject:self.structureDescription forKey:@"structureDescription"];
     [aCoder encodeObject:self.conventionalName forKey:@"conventionalName"];
+    [aCoder encodeObject:self.arteryImages forKey:@"arteryImages"];
     [aCoder encodeInteger:self.structureType forKey:@"structureType"];
 }
 

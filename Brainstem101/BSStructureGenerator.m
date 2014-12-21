@@ -8,6 +8,8 @@
 
 #import "BSStructureGenerator.h"
 #import "BSStructure.h"
+#import <HRCoder.h>
+
 
 @implementation BSStructureGenerator
 
@@ -22,11 +24,13 @@
         self.Miscellaneous   = [NSMutableArray new];
         self.CranialNerves   = [NSMutableArray new];
         
-        [self addNuclei];
-        [self addTracts];
-        [self addArteries];
-        [self addMiscelaneus];
-        [self addCranialNerves];
+        @autoreleasepool {
+            [self addNuclei];
+            [self addTracts];
+            [self addArteries];
+            [self addMiscelaneus];
+            [self addCranialNerves];            
+        }
 
     }
     return self;
@@ -34,7 +38,6 @@
 
 - (void)addNuclei
 {
-    
     BSStructure *n0 = [[BSStructure alloc] initWithName:@"Abducens Nucleus" andType:BSStructureTypeNucleus];
     [n0 setStructureDescription:@"Controls Lateral Rectus muscle --an intrinsic muscle of the eye that pulls the eye laterally. An isolated lesion of this nucleus causes Lateral Rectus Palsy. A lack of muscle tone in the temporal aspect results in a nasal deviation of the orbit --affected eye rests in a more medial position."];
     [self.Nuclei addObject:n0];
