@@ -91,10 +91,6 @@
 		3253620818A791B400017864 /* tutorial-quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 3253620718A791B400017864 /* tutorial-quiz.png */; };
 		32638705176CDE2100AAA785 /* BSGlassStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32638704176CDE2100AAA785 /* BSGlassStemView.m */; };
 		326F878F17212522008E923E /* locked-in-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 326F878E17212522008E923E /* locked-in-mug.png */; };
-		326F87931721360F008E923E /* middle-cerebellar-peduncle-m-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 326F87901721360F008E923E /* middle-cerebellar-peduncle-m-4.xml */; };
-		326F87941721360F008E923E /* middle-cerebellar-peduncle-m-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 326F87911721360F008E923E /* middle-cerebellar-peduncle-m-5.xml */; };
-		326F87951721360F008E923E /* middle-cerebellar-peduncle-m-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 326F87921721360F008E923E /* middle-cerebellar-peduncle-m-6.xml */; };
-		326F879717213702008E923E /* superior-cerebellar-peduncle-m-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 326F879617213702008E923E /* superior-cerebellar-peduncle-m-7.xml */; };
 		326FB690170BFFA4002CD59B /* BSClinicalCollectionViewSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326FB68F170BFFA2002CD59B /* BSClinicalCollectionViewSectionCell.m */; };
 		326FB696170C1562002CD59B /* benedikt-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB695170C1562002CD59B /* benedikt-perf.png */; };
 		326FB698170C156E002CD59B /* weber-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB697170C156E002CD59B /* weber-perf.png */; };
@@ -412,215 +408,6 @@
 		32EDE7AF177102DC006434A5 /* atlas-sxn-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A6177102DC006434A5 /* atlas-sxn-8.png */; };
 		32F5A88F176EF24000646E64 /* BSAtlasSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */; };
 		32F5A892176EF9DB00646E64 /* BSSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5A891176EF9DB00646E64 /* BSSection.m */; };
-		32FB65CC171FDF0B005E6DE6 /* abducens-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F5171FDF0A005E6DE6 /* abducens-n-4.xml */; };
-		32FB65CD171FDF0B005E6DE6 /* accessory-cuneate-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F6171FDF0A005E6DE6 /* accessory-cuneate-n-1.xml */; };
-		32FB65CE171FDF0B005E6DE6 /* accessory-cuneate-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F7171FDF0A005E6DE6 /* accessory-cuneate-n-2.xml */; };
-		32FB65CF171FDF0B005E6DE6 /* accessory-n-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F8171FDF0A005E6DE6 /* accessory-n-0.xml */; };
-		32FB65D0171FDF0B005E6DE6 /* anterior-cochlear-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64F9171FDF0A005E6DE6 /* anterior-cochlear-n-3.xml */; };
-		32FB65D1171FDF0B005E6DE6 /* anterior-corticospinal-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64FA171FDF0A005E6DE6 /* anterior-corticospinal-t-0.xml */; };
-		32FB65D2171FDF0B005E6DE6 /* anterior-spinocerebellar-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64FB171FDF0A005E6DE6 /* anterior-spinocerebellar-t-0.xml */; };
-		32FB65D3171FDF0B005E6DE6 /* anterior-spinocerebellar-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64FC171FDF0A005E6DE6 /* anterior-spinocerebellar-t-1.xml */; };
-		32FB65D4171FDF0B005E6DE6 /* anterior-spinocerebellar-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64FD171FDF0A005E6DE6 /* anterior-spinocerebellar-t-2.xml */; };
-		32FB65D5171FDF0B005E6DE6 /* anterior-spinocerebellar-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64FE171FDF0A005E6DE6 /* anterior-spinocerebellar-t-3.xml */; };
-		32FB65D6171FDF0B005E6DE6 /* anterior-spinocerebellar-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB64FF171FDF0A005E6DE6 /* anterior-spinocerebellar-t-5.xml */; };
-		32FB65D7171FDF0B005E6DE6 /* anterolateral-system-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6500171FDF0A005E6DE6 /* anterolateral-system-t-0.xml */; };
-		32FB65D8171FDF0B005E6DE6 /* anterolateral-system-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6501171FDF0A005E6DE6 /* anterolateral-system-t-1.xml */; };
-		32FB65D9171FDF0B005E6DE6 /* anterolateral-system-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6502171FDF0A005E6DE6 /* anterolateral-system-t-2.xml */; };
-		32FB65DA171FDF0B005E6DE6 /* anterolateral-system-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6503171FDF0A005E6DE6 /* anterolateral-system-t-3.xml */; };
-		32FB65DB171FDF0B005E6DE6 /* anterolateral-system-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6504171FDF0A005E6DE6 /* anterolateral-system-t-4.xml */; };
-		32FB65DC171FDF0B005E6DE6 /* anterolateral-system-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6505171FDF0A005E6DE6 /* anterolateral-system-t-5.xml */; };
-		32FB65DD171FDF0B005E6DE6 /* anterolateral-system-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6506171FDF0A005E6DE6 /* anterolateral-system-t-6.xml */; };
-		32FB65DE171FDF0B005E6DE6 /* anterolateral-system-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6507171FDF0A005E6DE6 /* anterolateral-system-t-7.xml */; };
-		32FB65DF171FDF0B005E6DE6 /* anterolateral-system-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6508171FDF0A005E6DE6 /* anterolateral-system-t-8.xml */; };
-		32FB65E0171FDF0B005E6DE6 /* brachium-of-inferior-colliculus-m-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6509171FDF0A005E6DE6 /* brachium-of-inferior-colliculus-m-8.xml */; };
-		32FB65E1171FDF0B005E6DE6 /* central-canal-m-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB650A171FDF0A005E6DE6 /* central-canal-m-0.xml */; };
-		32FB65E2171FDF0B005E6DE6 /* central-canal-m-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB650B171FDF0A005E6DE6 /* central-canal-m-1.xml */; };
-		32FB65E3171FDF0B005E6DE6 /* central-grey-m-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB650C171FDF0A005E6DE6 /* central-grey-m-0.xml */; };
-		32FB65E4171FDF0B005E6DE6 /* central-grey-m-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB650D171FDF0A005E6DE6 /* central-grey-m-1.xml */; };
-		32FB65E5171FDF0B005E6DE6 /* central-tegmental-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB650E171FDF0A005E6DE6 /* central-tegmental-t-3.xml */; };
-		32FB65E6171FDF0B005E6DE6 /* central-tegmental-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB650F171FDF0A005E6DE6 /* central-tegmental-t-4.xml */; };
-		32FB65E7171FDF0B005E6DE6 /* central-tegmental-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6510171FDF0A005E6DE6 /* central-tegmental-t-5.xml */; };
-		32FB65E8171FDF0B005E6DE6 /* central-tegmental-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6511171FDF0A005E6DE6 /* central-tegmental-t-6.xml */; };
-		32FB65E9171FDF0B005E6DE6 /* central-tegmental-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6512171FDF0A005E6DE6 /* central-tegmental-t-7.xml */; };
-		32FB65EA171FDF0B005E6DE6 /* central-tegmental-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6513171FDF0A005E6DE6 /* central-tegmental-t-8.xml */; };
-		32FB65EB171FDF0B005E6DE6 /* cerebellothalamic-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6514171FDF0A005E6DE6 /* cerebellothalamic-t-8.xml */; };
-		32FB65EC171FDF0B005E6DE6 /* cerebral-aqueduct-m-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6515171FDF0A005E6DE6 /* cerebral-aqueduct-m-6.xml */; };
-		32FB65ED171FDF0B005E6DE6 /* cerebral-aqueduct-m-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6516171FDF0A005E6DE6 /* cerebral-aqueduct-m-7.xml */; };
-		32FB65EE171FDF0B005E6DE6 /* cerebral-aqueduct-m-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6517171FDF0A005E6DE6 /* cerebral-aqueduct-m-8.xml */; };
-		32FB65EF171FDF0B005E6DE6 /* corticobulbars-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6518171FDF0A005E6DE6 /* corticobulbars-t-7.xml */; };
-		32FB65F0171FDF0B005E6DE6 /* corticobulbars-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6519171FDF0A005E6DE6 /* corticobulbars-t-8.xml */; };
-		32FB65F1171FDF0B005E6DE6 /* corticospinal-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB651A171FDF0A005E6DE6 /* corticospinal-t-1.xml */; };
-		32FB65F2171FDF0B005E6DE6 /* corticospinal-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB651B171FDF0A005E6DE6 /* corticospinal-t-2.xml */; };
-		32FB65F3171FDF0B005E6DE6 /* corticospinal-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB651C171FDF0A005E6DE6 /* corticospinal-t-3.xml */; };
-		32FB65F4171FDF0B005E6DE6 /* corticospinal-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB651D171FDF0A005E6DE6 /* corticospinal-t-4.xml */; };
-		32FB65F5171FDF0B005E6DE6 /* corticospinal-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB651E171FDF0A005E6DE6 /* corticospinal-t-5.xml */; };
-		32FB65F6171FDF0B005E6DE6 /* corticospinal-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB651F171FDF0A005E6DE6 /* corticospinal-t-6.xml */; };
-		32FB65F7171FDF0B005E6DE6 /* corticospinal-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6520171FDF0A005E6DE6 /* corticospinal-t-7.xml */; };
-		32FB65F8171FDF0B005E6DE6 /* corticospinal-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6521171FDF0A005E6DE6 /* corticospinal-t-8.xml */; };
-		32FB65F9171FDF0B005E6DE6 /* crus-cerebri-?-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6522171FDF0A005E6DE6 /* crus-cerebri-?-7.xml */; };
-		32FB65FA171FDF0B005E6DE6 /* crus-cerebri-?-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6523171FDF0A005E6DE6 /* crus-cerebri-?-8.xml */; };
-		32FB65FB171FDF0B005E6DE6 /* cuneate-fasciculus-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6524171FDF0A005E6DE6 /* cuneate-fasciculus-t-0.xml */; };
-		32FB65FC171FDF0B005E6DE6 /* cuneate-fasciculus-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6525171FDF0A005E6DE6 /* cuneate-fasciculus-t-1.xml */; };
-		32FB65FD171FDF0B005E6DE6 /* cuneate-n-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6526171FDF0A005E6DE6 /* cuneate-n-0.xml */; };
-		32FB65FE171FDF0B005E6DE6 /* cuneate-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6527171FDF0A005E6DE6 /* cuneate-n-1.xml */; };
-		32FB65FF171FDF0B005E6DE6 /* dorsal-motor-of-vagus-n-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6528171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-0.xml */; };
-		32FB6600171FDF0B005E6DE6 /* dorsal-motor-of-vagus-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6529171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-1.xml */; };
-		32FB6601171FDF0B005E6DE6 /* dorsal-motor-of-vagus-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB652A171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-2.xml */; };
-		32FB6602171FDF0B005E6DE6 /* dorsal-trigeminothalamic-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB652B171FDF0A005E6DE6 /* dorsal-trigeminothalamic-t-7.xml */; };
-		32FB6603171FDF0B005E6DE6 /* dorsal-trigeminothalamic-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB652C171FDF0A005E6DE6 /* dorsal-trigeminothalamic-t-8.xml */; };
-		32FB6604171FDF0B005E6DE6 /* edinger-westphal-n-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB652D171FDF0A005E6DE6 /* edinger-westphal-n-8.xml */; };
-		32FB6605171FDF0B005E6DE6 /* facial-motor-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB652E171FDF0A005E6DE6 /* facial-motor-n-3.xml */; };
-		32FB6606171FDF0B005E6DE6 /* facial-motor-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB652F171FDF0A005E6DE6 /* facial-motor-n-4.xml */; };
-		32FB6607171FDF0B005E6DE6 /* fourth-ventricle-m-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6530171FDF0A005E6DE6 /* fourth-ventricle-m-2.xml */; };
-		32FB6608171FDF0B005E6DE6 /* fourth-ventricle-m-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6531171FDF0A005E6DE6 /* fourth-ventricle-m-3.xml */; };
-		32FB6609171FDF0B005E6DE6 /* fourth-ventricle-m-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6532171FDF0A005E6DE6 /* fourth-ventricle-m-4.xml */; };
-		32FB660A171FDF0B005E6DE6 /* fourth-ventricle-m-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6533171FDF0A005E6DE6 /* fourth-ventricle-m-5.xml */; };
-		32FB660B171FDF0B005E6DE6 /* gracile-fasciculus-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6534171FDF0A005E6DE6 /* gracile-fasciculus-t-0.xml */; };
-		32FB660C171FDF0B005E6DE6 /* gracile-fasciculus-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6535171FDF0A005E6DE6 /* gracile-fasciculus-t-1.xml */; };
-		32FB660D171FDF0B005E6DE6 /* gracile-n-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6536171FDF0A005E6DE6 /* gracile-n-0.xml */; };
-		32FB660E171FDF0B005E6DE6 /* gracile-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6537171FDF0A005E6DE6 /* gracile-n-1.xml */; };
-		32FB660F171FDF0B005E6DE6 /* hypoglossal-n-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6538171FDF0A005E6DE6 /* hypoglossal-n-0.xml */; };
-		32FB6610171FDF0B005E6DE6 /* hypoglossal-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6539171FDF0A005E6DE6 /* hypoglossal-n-1.xml */; };
-		32FB6611171FDF0B005E6DE6 /* hypoglossal-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB653A171FDF0A005E6DE6 /* hypoglossal-n-2.xml */; };
-		32FB6612171FDF0B005E6DE6 /* xii-hypoglossal-cn-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB653B171FDF0A005E6DE6 /* xii-hypoglossal-cn-1.xml */; };
-		32FB6613171FDF0B005E6DE6 /* xii-hypoglossal-cn-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB653C171FDF0A005E6DE6 /* xii-hypoglossal-cn-2.xml */; };
-		32FB6614171FDF0B005E6DE6 /* iii-oculomotor-cn-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB653D171FDF0A005E6DE6 /* iii-oculomotor-cn-8.xml */; };
-		32FB6615171FDF0B005E6DE6 /* inferior-cerebellar-peduncle-m-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB653E171FDF0A005E6DE6 /* inferior-cerebellar-peduncle-m-2.xml */; };
-		32FB6616171FDF0B005E6DE6 /* inferior-cerebellar-peduncle-m-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB653F171FDF0A005E6DE6 /* inferior-cerebellar-peduncle-m-3.xml */; };
-		32FB6617171FDF0B005E6DE6 /* inferior-colliculus-m-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6540171FDF0A005E6DE6 /* inferior-colliculus-m-7.xml */; };
-		32FB6618171FDF0B005E6DE6 /* inferior-olivary-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6541171FDF0A005E6DE6 /* inferior-olivary-n-1.xml */; };
-		32FB6619171FDF0B005E6DE6 /* inferior-olivary-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6542171FDF0A005E6DE6 /* inferior-olivary-n-2.xml */; };
-		32FB661A171FDF0B005E6DE6 /* inferior-olivary-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6543171FDF0A005E6DE6 /* inferior-olivary-n-3.xml */; };
-		32FB661B171FDF0B005E6DE6 /* inferior-vestibular-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6544171FDF0A005E6DE6 /* inferior-vestibular-n-2.xml */; };
-		32FB661C171FDF0B005E6DE6 /* internal-arcuate-fibers-m-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6545171FDF0A005E6DE6 /* internal-arcuate-fibers-m-1.xml */; };
-		32FB661D171FDF0B005E6DE6 /* interpeduncular-n-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6546171FDF0A005E6DE6 /* interpeduncular-n-7.xml */; };
-		32FB661E171FDF0B005E6DE6 /* interpeduncular-n-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6547171FDF0A005E6DE6 /* interpeduncular-n-8.xml */; };
-		32FB6620171FDF0B005E6DE6 /* lateral-lemniscus-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6549171FDF0A005E6DE6 /* lateral-lemniscus-t-4.xml */; };
-		32FB6621171FDF0B005E6DE6 /* lateral-lemniscus-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB654A171FDF0A005E6DE6 /* lateral-lemniscus-t-5.xml */; };
-		32FB6622171FDF0B005E6DE6 /* lateral-lemniscus-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB654B171FDF0A005E6DE6 /* lateral-lemniscus-t-6.xml */; };
-		32FB6623171FDF0B005E6DE6 /* lateral-lemniscus-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB654C171FDF0A005E6DE6 /* lateral-lemniscus-t-7.xml */; };
-		32FB6624171FDF0B005E6DE6 /* lateral-reticular-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB654D171FDF0A005E6DE6 /* lateral-reticular-n-1.xml */; };
-		32FB6625171FDF0B005E6DE6 /* lateral-reticular-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB654E171FDF0A005E6DE6 /* lateral-reticular-n-2.xml */; };
-		32FB6626171FDF0B005E6DE6 /* lateral-vestibular-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB654F171FDF0A005E6DE6 /* lateral-vestibular-n-3.xml */; };
-		32FB6627171FDF0B005E6DE6 /* lateral-vestibular-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6550171FDF0A005E6DE6 /* lateral-vestibular-n-4.xml */; };
-		32FB6628171FDF0B005E6DE6 /* locus-ceruleus-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6551171FDF0A005E6DE6 /* locus-ceruleus-n-5.xml */; };
-		32FB6629171FDF0B005E6DE6 /* locus-ceruleus-n-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6552171FDF0A005E6DE6 /* locus-ceruleus-n-6.xml */; };
-		32FB662B171FDF0B005E6DE6 /* medial-geniculate-n-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6554171FDF0A005E6DE6 /* medial-geniculate-n-8.xml */; };
-		32FB662C171FDF0B005E6DE6 /* medial-lemniscus-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6555171FDF0A005E6DE6 /* medial-lemniscus-t-1.xml */; };
-		32FB662D171FDF0B005E6DE6 /* medial-lemniscus-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6556171FDF0A005E6DE6 /* medial-lemniscus-t-2.xml */; };
-		32FB662E171FDF0B005E6DE6 /* medial-lemniscus-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6557171FDF0A005E6DE6 /* medial-lemniscus-t-3.xml */; };
-		32FB662F171FDF0B005E6DE6 /* medial-lemniscus-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6558171FDF0A005E6DE6 /* medial-lemniscus-t-4.xml */; };
-		32FB6630171FDF0B005E6DE6 /* medial-lemniscus-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6559171FDF0A005E6DE6 /* medial-lemniscus-t-5.xml */; };
-		32FB6631171FDF0B005E6DE6 /* medial-lemniscus-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB655A171FDF0A005E6DE6 /* medial-lemniscus-t-6.xml */; };
-		32FB6632171FDF0B005E6DE6 /* medial-lemniscus-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB655B171FDF0B005E6DE6 /* medial-lemniscus-t-7.xml */; };
-		32FB6633171FDF0B005E6DE6 /* medial-lemniscus-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB655C171FDF0B005E6DE6 /* medial-lemniscus-t-8.xml */; };
-		32FB6634171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB655D171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-0.xml */; };
-		32FB6635171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB655E171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-1.xml */; };
-		32FB6636171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB655F171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-2.xml */; };
-		32FB6637171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6560171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-3.xml */; };
-		32FB6638171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6561171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-4.xml */; };
-		32FB6639171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6562171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-5.xml */; };
-		32FB663A171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6563171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-6.xml */; };
-		32FB663B171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6564171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-7.xml */; };
-		32FB663C171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6565171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-8.xml */; };
-		32FB663D171FDF0B005E6DE6 /* medial-motor-n-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6566171FDF0B005E6DE6 /* medial-motor-n-0.xml */; };
-		32FB663E171FDF0B005E6DE6 /* medial-vestibular-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6567171FDF0B005E6DE6 /* medial-vestibular-n-2.xml */; };
-		32FB663F171FDF0B005E6DE6 /* medial-vestibular-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6568171FDF0B005E6DE6 /* medial-vestibular-n-3.xml */; };
-		32FB6640171FDF0B005E6DE6 /* medial-vestibular-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6569171FDF0B005E6DE6 /* medial-vestibular-n-4.xml */; };
-		32FB6641171FDF0B005E6DE6 /* mesencephalic-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB656A171FDF0B005E6DE6 /* mesencephalic-n-5.xml */; };
-		32FB6642171FDF0B005E6DE6 /* mesencephalic-n-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB656B171FDF0B005E6DE6 /* mesencephalic-n-6.xml */; };
-		32FB6643171FDF0B005E6DE6 /* mesencephalic-n-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB656C171FDF0B005E6DE6 /* mesencephalic-n-7.xml */; };
-		32FB6644171FDF0B005E6DE6 /* mesencephalic-n-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB656D171FDF0B005E6DE6 /* mesencephalic-n-8.xml */; };
-		32FB6648171FDF0B005E6DE6 /* nucleus-ambiguus-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6571171FDF0B005E6DE6 /* nucleus-ambiguus-n-1.xml */; };
-		32FB6649171FDF0B005E6DE6 /* nucleus-ambiguus-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6572171FDF0B005E6DE6 /* nucleus-ambiguus-n-2.xml */; };
-		32FB664A171FDF0B005E6DE6 /* nucleus-centralis-superior-n-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6573171FDF0B005E6DE6 /* nucleus-centralis-superior-n-6.xml */; };
-		32FB664B171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6574171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-6.xml */; };
-		32FB664C171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6575171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-7.xml */; };
-		32FB664D171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6576171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-3.xml */; };
-		32FB664E171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6577171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-4.xml */; };
-		32FB664F171FDF0B005E6DE6 /* nucleus-raphe-obscurus-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6578171FDF0B005E6DE6 /* nucleus-raphe-obscurus-n-2.xml */; };
-		32FB6650171FDF0B005E6DE6 /* nucleus-raphe-pallidus-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6579171FDF0B005E6DE6 /* nucleus-raphe-pallidus-n-3.xml */; };
-		32FB6651171FDF0B005E6DE6 /* nucleus-raphe-pontis-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB657A171FDF0B005E6DE6 /* nucleus-raphe-pontis-n-5.xml */; };
-		32FB6652171FDF0B005E6DE6 /* oculomotor-n-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB657B171FDF0B005E6DE6 /* oculomotor-n-8.xml */; };
-		32FB6653171FDF0B005E6DE6 /* optic-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB657C171FDF0B005E6DE6 /* optic-t-8.xml */; };
-		32FB6654171FDF0B005E6DE6 /* periaqueductal-grey-?-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB657D171FDF0B005E6DE6 /* periaqueductal-grey-?-6.xml */; };
-		32FB6655171FDF0B005E6DE6 /* periaqueductal-grey-?-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB657E171FDF0B005E6DE6 /* periaqueductal-grey-?-7.xml */; };
-		32FB6656171FDF0B005E6DE6 /* periaqueductal-grey-?-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB657F171FDF0B005E6DE6 /* periaqueductal-grey-?-8.xml */; };
-		32FB6657171FDF0B005E6DE6 /* pontine-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6580171FDF0B005E6DE6 /* pontine-n-4.xml */; };
-		32FB6658171FDF0B005E6DE6 /* pontine-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6581171FDF0B005E6DE6 /* pontine-n-5.xml */; };
-		32FB6659171FDF0B005E6DE6 /* pontine-n-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6582171FDF0B005E6DE6 /* pontine-n-6.xml */; };
-		32FB665A171FDF0B005E6DE6 /* pontocerebellar-fibers-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6583171FDF0B005E6DE6 /* pontocerebellar-fibers-t-6.xml */; };
-		32FB665B171FDF0B005E6DE6 /* posterior-cochlear-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6584171FDF0B005E6DE6 /* posterior-cochlear-n-3.xml */; };
-		32FB665C171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6585171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-1.xml */; };
-		32FB665D171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6586171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-2.xml */; };
-		32FB665E171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6587171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-3.xml */; };
-		32FB665F171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6588171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-4.xml */; };
-		32FB6660171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6589171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-5.xml */; };
-		32FB6661171FDF0B005E6DE6 /* posterior-spinocerebellar-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB658A171FDF0B005E6DE6 /* posterior-spinocerebellar-t-0.xml */; };
-		32FB6662171FDF0B005E6DE6 /* posterior-spinocerebellar-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB658B171FDF0B005E6DE6 /* posterior-spinocerebellar-t-1.xml */; };
-		32FB6663171FDF0B005E6DE6 /* principal-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB658C171FDF0B005E6DE6 /* principal-n-4.xml */; };
-		32FB6664171FDF0B005E6DE6 /* principal-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB658D171FDF0B005E6DE6 /* principal-n-5.xml */; };
-		32FB6665171FDF0B005E6DE6 /* pyramidal-decussation-m-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB658E171FDF0B005E6DE6 /* pyramidal-decussation-m-0.xml */; };
-		32FB6666171FDF0B005E6DE6 /* red-n-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB658F171FDF0B005E6DE6 /* red-n-8.xml */; };
-		32FB6667171FDF0B005E6DE6 /* reticulospinal-fibers-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6590171FDF0B005E6DE6 /* reticulospinal-fibers-t-0.xml */; };
-		32FB6668171FDF0B005E6DE6 /* reticulotegmental-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6591171FDF0B005E6DE6 /* reticulotegmental-n-5.xml */; };
-		32FB6669171FDF0B005E6DE6 /* rubrospinal-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6592171FDF0B005E6DE6 /* rubrospinal-t-0.xml */; };
-		32FB666A171FDF0B005E6DE6 /* rubrospinal-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6593171FDF0B005E6DE6 /* rubrospinal-t-1.xml */; };
-		32FB666B171FDF0B005E6DE6 /* rubrospinal-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6594171FDF0B005E6DE6 /* rubrospinal-t-2.xml */; };
-		32FB666C171FDF0B005E6DE6 /* rubrospinal-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6595171FDF0B005E6DE6 /* rubrospinal-t-3.xml */; };
-		32FB666D171FDF0B005E6DE6 /* rubrospinal-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6596171FDF0B005E6DE6 /* rubrospinal-t-4.xml */; };
-		32FB666E171FDF0B005E6DE6 /* rubrospinal-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6597171FDF0B005E6DE6 /* rubrospinal-t-5.xml */; };
-		32FB666F171FDF0B005E6DE6 /* rubrospinal-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6598171FDF0B005E6DE6 /* rubrospinal-t-6.xml */; };
-		32FB6670171FDF0B005E6DE6 /* rubrospinal-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6599171FDF0B005E6DE6 /* rubrospinal-t-7.xml */; };
-		32FB6671171FDF0B005E6DE6 /* rubrospinal-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB659A171FDF0B005E6DE6 /* rubrospinal-t-8.xml */; };
-		32FB6672171FDF0B005E6DE6 /* salivatory-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB659B171FDF0B005E6DE6 /* salivatory-n-4.xml */; };
-		32FB6673171FDF0B005E6DE6 /* solitary-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB659C171FDF0B005E6DE6 /* solitary-n-1.xml */; };
-		32FB6674171FDF0B005E6DE6 /* solitary-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB659D171FDF0B005E6DE6 /* solitary-n-2.xml */; };
-		32FB6675171FDF0B005E6DE6 /* solitary-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB659E171FDF0B005E6DE6 /* solitary-n-3.xml */; };
-		32FB6676171FDF0B005E6DE6 /* solitary-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB659F171FDF0B005E6DE6 /* solitary-n-4.xml */; };
-		32FB6677171FDF0B005E6DE6 /* spinal-trigeminal-n-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A0171FDF0B005E6DE6 /* spinal-trigeminal-n-0.xml */; };
-		32FB6678171FDF0B005E6DE6 /* spinal-trigeminal-n-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A1171FDF0B005E6DE6 /* spinal-trigeminal-n-1.xml */; };
-		32FB6679171FDF0B005E6DE6 /* spinal-trigeminal-n-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A2171FDF0B005E6DE6 /* spinal-trigeminal-n-2.xml */; };
-		32FB667A171FDF0B005E6DE6 /* spinal-trigeminal-n-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A3171FDF0B005E6DE6 /* spinal-trigeminal-n-3.xml */; };
-		32FB667B171FDF0B005E6DE6 /* spinal-trigeminal-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A4171FDF0B005E6DE6 /* spinal-trigeminal-n-4.xml */; };
-		32FB667C171FDF0B005E6DE6 /* spinal-trigeminal-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A5171FDF0B005E6DE6 /* spinal-trigeminal-t-0.xml */; };
-		32FB667D171FDF0B005E6DE6 /* spinal-trigeminal-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A6171FDF0B005E6DE6 /* spinal-trigeminal-t-1.xml */; };
-		32FB667E171FDF0B005E6DE6 /* spinal-trigeminal-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A7171FDF0B005E6DE6 /* spinal-trigeminal-t-2.xml */; };
-		32FB667F171FDF0B005E6DE6 /* spinal-trigeminal-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A8171FDF0B005E6DE6 /* spinal-trigeminal-t-3.xml */; };
-		32FB6680171FDF0B005E6DE6 /* spinal-trigeminal-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65A9171FDF0B005E6DE6 /* spinal-trigeminal-t-4.xml */; };
-		32FB6681171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65AA171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-7.xml */; };
-		32FB6682171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65AB171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-8.xml */; };
-		32FB6683171FDF0B005E6DE6 /* substantia-nigra:-pars-reticulata-?-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65AC171FDF0B005E6DE6 /* substantia-nigra:-pars-reticulata-?-8.xml */; };
-		32FB6684171FDF0B005E6DE6 /* superior-cerebellar-peduncle-m-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65AD171FDF0B005E6DE6 /* superior-cerebellar-peduncle-m-6.xml */; };
-		32FB6686171FDF0B005E6DE6 /* superior-colliculus-m-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65AF171FDF0B005E6DE6 /* superior-colliculus-m-8.xml */; };
-		32FB6687171FDF0B005E6DE6 /* superior-olive-?-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B0171FDF0B005E6DE6 /* superior-olive-?-4.xml */; };
-		32FB6688171FDF0B005E6DE6 /* superior-olive-?-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B1171FDF0B005E6DE6 /* superior-olive-?-5.xml */; };
-		32FB6689171FDF0B005E6DE6 /* superior-vestibular-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B2171FDF0B005E6DE6 /* superior-vestibular-n-4.xml */; };
-		32FB668A171FDF0B005E6DE6 /* tectospinal-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B3171FDF0B005E6DE6 /* tectospinal-t-0.xml */; };
-		32FB668B171FDF0B005E6DE6 /* tectospinal-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B4171FDF0B005E6DE6 /* tectospinal-t-1.xml */; };
-		32FB668C171FDF0B005E6DE6 /* tectospinal-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B5171FDF0B005E6DE6 /* tectospinal-t-2.xml */; };
-		32FB668D171FDF0B005E6DE6 /* tectospinal-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B6171FDF0B005E6DE6 /* tectospinal-t-3.xml */; };
-		32FB668E171FDF0B005E6DE6 /* tectospinal-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B7171FDF0B005E6DE6 /* tectospinal-t-4.xml */; };
-		32FB668F171FDF0B005E6DE6 /* tectospinal-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B8171FDF0B005E6DE6 /* tectospinal-t-5.xml */; };
-		32FB6690171FDF0B005E6DE6 /* tectospinal-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65B9171FDF0B005E6DE6 /* tectospinal-t-6.xml */; };
-		32FB6691171FDF0B005E6DE6 /* tectospinal-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BA171FDF0B005E6DE6 /* tectospinal-t-7.xml */; };
-		32FB6692171FDF0B005E6DE6 /* tectospinal-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BB171FDF0B005E6DE6 /* tectospinal-t-8.xml */; };
-		32FB6693171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BC171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml */; };
-		32FB6694171FDF0B005E6DE6 /* trapezoid-body-?-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BD171FDF0B005E6DE6 /* trapezoid-body-?-4.xml */; };
-		32FB6695171FDF0B005E6DE6 /* trochlear-n-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BE171FDF0B005E6DE6 /* trochlear-n-7.xml */; };
-		32FB6696171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65BF171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml */; };
-		32FB6697171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C0171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml */; };
-		32FB6698171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C1171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml */; };
-		32FB6699171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C2171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml */; };
-		32FB669A171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C3171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml */; };
-		32FB669B171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C4171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-4.xml */; };
-		32FB669C171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-5.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C5171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-5.xml */; };
-		32FB669D171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-6.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C6171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-6.xml */; };
-		32FB669E171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-7.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C7171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-7.xml */; };
-		32FB669F171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-8.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C8171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-8.xml */; };
-		32FB66A0171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C9171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml */; };
-		32FB66A1171FDF0B005E6DE6 /* vi-abducens-cn-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65CA171FDF0B005E6DE6 /* vi-abducens-cn-4.xml */; };
-		32FB66A2171FDF0B005E6DE6 /* vii-facial-cn-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */; };
 		32FF11241A46A5B100CEAE55 /* BSDrawSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF11221A46A5B100CEAE55 /* BSDrawSectionView.m */; };
 		32FF11EA1A46F57500CEAE55 /* abducens-n-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FF11261A46F57400CEAE55 /* abducens-n-4.json */; };
 		32FF11EB1A46F57500CEAE55 /* accessory-cuneate-n-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FF11271A46F57400CEAE55 /* accessory-cuneate-n-1.json */; };
@@ -926,10 +713,6 @@
 		32638703176CDE2100AAA785 /* BSGlassStemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGlassStemView.h; sourceTree = "<group>"; };
 		32638704176CDE2100AAA785 /* BSGlassStemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGlassStemView.m; sourceTree = "<group>"; };
 		326F878E17212522008E923E /* locked-in-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-mug.png"; sourceTree = "<group>"; };
-		326F87901721360F008E923E /* middle-cerebellar-peduncle-m-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "middle-cerebellar-peduncle-m-4.xml"; sourceTree = "<group>"; };
-		326F87911721360F008E923E /* middle-cerebellar-peduncle-m-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "middle-cerebellar-peduncle-m-5.xml"; sourceTree = "<group>"; };
-		326F87921721360F008E923E /* middle-cerebellar-peduncle-m-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "middle-cerebellar-peduncle-m-6.xml"; sourceTree = "<group>"; };
-		326F879617213702008E923E /* superior-cerebellar-peduncle-m-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "superior-cerebellar-peduncle-m-7.xml"; sourceTree = "<group>"; };
 		326FB68E170BFFA1002CD59B /* BSClinicalCollectionViewSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalCollectionViewSectionCell.h; sourceTree = "<group>"; };
 		326FB68F170BFFA2002CD59B /* BSClinicalCollectionViewSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalCollectionViewSectionCell.m; sourceTree = "<group>"; };
 		326FB695170C1562002CD59B /* benedikt-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt-perf.png"; sourceTree = "<group>"; };
@@ -1261,215 +1044,6 @@
 		32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAtlasSectionView.m; sourceTree = "<group>"; };
 		32F5A890176EF9DB00646E64 /* BSSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSection.h; sourceTree = "<group>"; };
 		32F5A891176EF9DB00646E64 /* BSSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSection.m; sourceTree = "<group>"; };
-		32FB64F5171FDF0A005E6DE6 /* abducens-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "abducens-n-4.xml"; sourceTree = "<group>"; };
-		32FB64F6171FDF0A005E6DE6 /* accessory-cuneate-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "accessory-cuneate-n-1.xml"; sourceTree = "<group>"; };
-		32FB64F7171FDF0A005E6DE6 /* accessory-cuneate-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "accessory-cuneate-n-2.xml"; sourceTree = "<group>"; };
-		32FB64F8171FDF0A005E6DE6 /* accessory-n-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "accessory-n-0.xml"; sourceTree = "<group>"; };
-		32FB64F9171FDF0A005E6DE6 /* anterior-cochlear-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterior-cochlear-n-3.xml"; sourceTree = "<group>"; };
-		32FB64FA171FDF0A005E6DE6 /* anterior-corticospinal-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterior-corticospinal-t-0.xml"; sourceTree = "<group>"; };
-		32FB64FB171FDF0A005E6DE6 /* anterior-spinocerebellar-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterior-spinocerebellar-t-0.xml"; sourceTree = "<group>"; };
-		32FB64FC171FDF0A005E6DE6 /* anterior-spinocerebellar-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterior-spinocerebellar-t-1.xml"; sourceTree = "<group>"; };
-		32FB64FD171FDF0A005E6DE6 /* anterior-spinocerebellar-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterior-spinocerebellar-t-2.xml"; sourceTree = "<group>"; };
-		32FB64FE171FDF0A005E6DE6 /* anterior-spinocerebellar-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterior-spinocerebellar-t-3.xml"; sourceTree = "<group>"; };
-		32FB64FF171FDF0A005E6DE6 /* anterior-spinocerebellar-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterior-spinocerebellar-t-5.xml"; sourceTree = "<group>"; };
-		32FB6500171FDF0A005E6DE6 /* anterolateral-system-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-0.xml"; sourceTree = "<group>"; };
-		32FB6501171FDF0A005E6DE6 /* anterolateral-system-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-1.xml"; sourceTree = "<group>"; };
-		32FB6502171FDF0A005E6DE6 /* anterolateral-system-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-2.xml"; sourceTree = "<group>"; };
-		32FB6503171FDF0A005E6DE6 /* anterolateral-system-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-3.xml"; sourceTree = "<group>"; };
-		32FB6504171FDF0A005E6DE6 /* anterolateral-system-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-4.xml"; sourceTree = "<group>"; };
-		32FB6505171FDF0A005E6DE6 /* anterolateral-system-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-5.xml"; sourceTree = "<group>"; };
-		32FB6506171FDF0A005E6DE6 /* anterolateral-system-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-6.xml"; sourceTree = "<group>"; };
-		32FB6507171FDF0A005E6DE6 /* anterolateral-system-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-7.xml"; sourceTree = "<group>"; };
-		32FB6508171FDF0A005E6DE6 /* anterolateral-system-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "anterolateral-system-t-8.xml"; sourceTree = "<group>"; };
-		32FB6509171FDF0A005E6DE6 /* brachium-of-inferior-colliculus-m-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "brachium-of-inferior-colliculus-m-8.xml"; sourceTree = "<group>"; };
-		32FB650A171FDF0A005E6DE6 /* central-canal-m-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-canal-m-0.xml"; sourceTree = "<group>"; };
-		32FB650B171FDF0A005E6DE6 /* central-canal-m-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-canal-m-1.xml"; sourceTree = "<group>"; };
-		32FB650C171FDF0A005E6DE6 /* central-grey-m-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-grey-m-0.xml"; sourceTree = "<group>"; };
-		32FB650D171FDF0A005E6DE6 /* central-grey-m-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-grey-m-1.xml"; sourceTree = "<group>"; };
-		32FB650E171FDF0A005E6DE6 /* central-tegmental-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-tegmental-t-3.xml"; sourceTree = "<group>"; };
-		32FB650F171FDF0A005E6DE6 /* central-tegmental-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-tegmental-t-4.xml"; sourceTree = "<group>"; };
-		32FB6510171FDF0A005E6DE6 /* central-tegmental-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-tegmental-t-5.xml"; sourceTree = "<group>"; };
-		32FB6511171FDF0A005E6DE6 /* central-tegmental-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-tegmental-t-6.xml"; sourceTree = "<group>"; };
-		32FB6512171FDF0A005E6DE6 /* central-tegmental-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-tegmental-t-7.xml"; sourceTree = "<group>"; };
-		32FB6513171FDF0A005E6DE6 /* central-tegmental-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "central-tegmental-t-8.xml"; sourceTree = "<group>"; };
-		32FB6514171FDF0A005E6DE6 /* cerebellothalamic-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cerebellothalamic-t-8.xml"; sourceTree = "<group>"; };
-		32FB6515171FDF0A005E6DE6 /* cerebral-aqueduct-m-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cerebral-aqueduct-m-6.xml"; sourceTree = "<group>"; };
-		32FB6516171FDF0A005E6DE6 /* cerebral-aqueduct-m-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cerebral-aqueduct-m-7.xml"; sourceTree = "<group>"; };
-		32FB6517171FDF0A005E6DE6 /* cerebral-aqueduct-m-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cerebral-aqueduct-m-8.xml"; sourceTree = "<group>"; };
-		32FB6518171FDF0A005E6DE6 /* corticobulbars-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticobulbars-t-7.xml"; sourceTree = "<group>"; };
-		32FB6519171FDF0A005E6DE6 /* corticobulbars-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticobulbars-t-8.xml"; sourceTree = "<group>"; };
-		32FB651A171FDF0A005E6DE6 /* corticospinal-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-1.xml"; sourceTree = "<group>"; };
-		32FB651B171FDF0A005E6DE6 /* corticospinal-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-2.xml"; sourceTree = "<group>"; };
-		32FB651C171FDF0A005E6DE6 /* corticospinal-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-3.xml"; sourceTree = "<group>"; };
-		32FB651D171FDF0A005E6DE6 /* corticospinal-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-4.xml"; sourceTree = "<group>"; };
-		32FB651E171FDF0A005E6DE6 /* corticospinal-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-5.xml"; sourceTree = "<group>"; };
-		32FB651F171FDF0A005E6DE6 /* corticospinal-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-6.xml"; sourceTree = "<group>"; };
-		32FB6520171FDF0A005E6DE6 /* corticospinal-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-7.xml"; sourceTree = "<group>"; };
-		32FB6521171FDF0A005E6DE6 /* corticospinal-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "corticospinal-t-8.xml"; sourceTree = "<group>"; };
-		32FB6522171FDF0A005E6DE6 /* crus-cerebri-?-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crus-cerebri-?-7.xml"; sourceTree = "<group>"; };
-		32FB6523171FDF0A005E6DE6 /* crus-cerebri-?-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "crus-cerebri-?-8.xml"; sourceTree = "<group>"; };
-		32FB6524171FDF0A005E6DE6 /* cuneate-fasciculus-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cuneate-fasciculus-t-0.xml"; sourceTree = "<group>"; };
-		32FB6525171FDF0A005E6DE6 /* cuneate-fasciculus-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cuneate-fasciculus-t-1.xml"; sourceTree = "<group>"; };
-		32FB6526171FDF0A005E6DE6 /* cuneate-n-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cuneate-n-0.xml"; sourceTree = "<group>"; };
-		32FB6527171FDF0A005E6DE6 /* cuneate-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "cuneate-n-1.xml"; sourceTree = "<group>"; };
-		32FB6528171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "dorsal-motor-of-vagus-n-0.xml"; sourceTree = "<group>"; };
-		32FB6529171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "dorsal-motor-of-vagus-n-1.xml"; sourceTree = "<group>"; };
-		32FB652A171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "dorsal-motor-of-vagus-n-2.xml"; sourceTree = "<group>"; };
-		32FB652B171FDF0A005E6DE6 /* dorsal-trigeminothalamic-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "dorsal-trigeminothalamic-t-7.xml"; sourceTree = "<group>"; };
-		32FB652C171FDF0A005E6DE6 /* dorsal-trigeminothalamic-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "dorsal-trigeminothalamic-t-8.xml"; sourceTree = "<group>"; };
-		32FB652D171FDF0A005E6DE6 /* edinger-westphal-n-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "edinger-westphal-n-8.xml"; sourceTree = "<group>"; };
-		32FB652E171FDF0A005E6DE6 /* facial-motor-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "facial-motor-n-3.xml"; sourceTree = "<group>"; };
-		32FB652F171FDF0A005E6DE6 /* facial-motor-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "facial-motor-n-4.xml"; sourceTree = "<group>"; };
-		32FB6530171FDF0A005E6DE6 /* fourth-ventricle-m-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "fourth-ventricle-m-2.xml"; sourceTree = "<group>"; };
-		32FB6531171FDF0A005E6DE6 /* fourth-ventricle-m-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "fourth-ventricle-m-3.xml"; sourceTree = "<group>"; };
-		32FB6532171FDF0A005E6DE6 /* fourth-ventricle-m-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "fourth-ventricle-m-4.xml"; sourceTree = "<group>"; };
-		32FB6533171FDF0A005E6DE6 /* fourth-ventricle-m-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "fourth-ventricle-m-5.xml"; sourceTree = "<group>"; };
-		32FB6534171FDF0A005E6DE6 /* gracile-fasciculus-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gracile-fasciculus-t-0.xml"; sourceTree = "<group>"; };
-		32FB6535171FDF0A005E6DE6 /* gracile-fasciculus-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gracile-fasciculus-t-1.xml"; sourceTree = "<group>"; };
-		32FB6536171FDF0A005E6DE6 /* gracile-n-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gracile-n-0.xml"; sourceTree = "<group>"; };
-		32FB6537171FDF0A005E6DE6 /* gracile-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "gracile-n-1.xml"; sourceTree = "<group>"; };
-		32FB6538171FDF0A005E6DE6 /* hypoglossal-n-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "hypoglossal-n-0.xml"; sourceTree = "<group>"; };
-		32FB6539171FDF0A005E6DE6 /* hypoglossal-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "hypoglossal-n-1.xml"; sourceTree = "<group>"; };
-		32FB653A171FDF0A005E6DE6 /* hypoglossal-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "hypoglossal-n-2.xml"; sourceTree = "<group>"; };
-		32FB653B171FDF0A005E6DE6 /* xii-hypoglossal-cn-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "xii-hypoglossal-cn-1.xml"; sourceTree = "<group>"; };
-		32FB653C171FDF0A005E6DE6 /* xii-hypoglossal-cn-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "xii-hypoglossal-cn-2.xml"; sourceTree = "<group>"; };
-		32FB653D171FDF0A005E6DE6 /* iii-oculomotor-cn-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iii-oculomotor-cn-8.xml"; sourceTree = "<group>"; };
-		32FB653E171FDF0A005E6DE6 /* inferior-cerebellar-peduncle-m-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "inferior-cerebellar-peduncle-m-2.xml"; sourceTree = "<group>"; };
-		32FB653F171FDF0A005E6DE6 /* inferior-cerebellar-peduncle-m-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "inferior-cerebellar-peduncle-m-3.xml"; sourceTree = "<group>"; };
-		32FB6540171FDF0A005E6DE6 /* inferior-colliculus-m-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "inferior-colliculus-m-7.xml"; sourceTree = "<group>"; };
-		32FB6541171FDF0A005E6DE6 /* inferior-olivary-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "inferior-olivary-n-1.xml"; sourceTree = "<group>"; };
-		32FB6542171FDF0A005E6DE6 /* inferior-olivary-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "inferior-olivary-n-2.xml"; sourceTree = "<group>"; };
-		32FB6543171FDF0A005E6DE6 /* inferior-olivary-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "inferior-olivary-n-3.xml"; sourceTree = "<group>"; };
-		32FB6544171FDF0A005E6DE6 /* inferior-vestibular-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "inferior-vestibular-n-2.xml"; sourceTree = "<group>"; };
-		32FB6545171FDF0A005E6DE6 /* internal-arcuate-fibers-m-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "internal-arcuate-fibers-m-1.xml"; sourceTree = "<group>"; };
-		32FB6546171FDF0A005E6DE6 /* interpeduncular-n-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "interpeduncular-n-7.xml"; sourceTree = "<group>"; };
-		32FB6547171FDF0A005E6DE6 /* interpeduncular-n-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "interpeduncular-n-8.xml"; sourceTree = "<group>"; };
-		32FB6549171FDF0A005E6DE6 /* lateral-lemniscus-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-lemniscus-t-4.xml"; sourceTree = "<group>"; };
-		32FB654A171FDF0A005E6DE6 /* lateral-lemniscus-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-lemniscus-t-5.xml"; sourceTree = "<group>"; };
-		32FB654B171FDF0A005E6DE6 /* lateral-lemniscus-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-lemniscus-t-6.xml"; sourceTree = "<group>"; };
-		32FB654C171FDF0A005E6DE6 /* lateral-lemniscus-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-lemniscus-t-7.xml"; sourceTree = "<group>"; };
-		32FB654D171FDF0A005E6DE6 /* lateral-reticular-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-reticular-n-1.xml"; sourceTree = "<group>"; };
-		32FB654E171FDF0A005E6DE6 /* lateral-reticular-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-reticular-n-2.xml"; sourceTree = "<group>"; };
-		32FB654F171FDF0A005E6DE6 /* lateral-vestibular-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-vestibular-n-3.xml"; sourceTree = "<group>"; };
-		32FB6550171FDF0A005E6DE6 /* lateral-vestibular-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "lateral-vestibular-n-4.xml"; sourceTree = "<group>"; };
-		32FB6551171FDF0A005E6DE6 /* locus-ceruleus-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "locus-ceruleus-n-5.xml"; sourceTree = "<group>"; };
-		32FB6552171FDF0A005E6DE6 /* locus-ceruleus-n-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "locus-ceruleus-n-6.xml"; sourceTree = "<group>"; };
-		32FB6554171FDF0A005E6DE6 /* medial-geniculate-n-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-geniculate-n-8.xml"; sourceTree = "<group>"; };
-		32FB6555171FDF0A005E6DE6 /* medial-lemniscus-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-1.xml"; sourceTree = "<group>"; };
-		32FB6556171FDF0A005E6DE6 /* medial-lemniscus-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-2.xml"; sourceTree = "<group>"; };
-		32FB6557171FDF0A005E6DE6 /* medial-lemniscus-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-3.xml"; sourceTree = "<group>"; };
-		32FB6558171FDF0A005E6DE6 /* medial-lemniscus-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-4.xml"; sourceTree = "<group>"; };
-		32FB6559171FDF0A005E6DE6 /* medial-lemniscus-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-5.xml"; sourceTree = "<group>"; };
-		32FB655A171FDF0A005E6DE6 /* medial-lemniscus-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-6.xml"; sourceTree = "<group>"; };
-		32FB655B171FDF0B005E6DE6 /* medial-lemniscus-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-7.xml"; sourceTree = "<group>"; };
-		32FB655C171FDF0B005E6DE6 /* medial-lemniscus-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-lemniscus-t-8.xml"; sourceTree = "<group>"; };
-		32FB655D171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-0.xml"; sourceTree = "<group>"; };
-		32FB655E171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-1.xml"; sourceTree = "<group>"; };
-		32FB655F171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-2.xml"; sourceTree = "<group>"; };
-		32FB6560171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-3.xml"; sourceTree = "<group>"; };
-		32FB6561171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-4.xml"; sourceTree = "<group>"; };
-		32FB6562171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-5.xml"; sourceTree = "<group>"; };
-		32FB6563171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-6.xml"; sourceTree = "<group>"; };
-		32FB6564171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-7.xml"; sourceTree = "<group>"; };
-		32FB6565171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-longitudinal-fasciculus-t-8.xml"; sourceTree = "<group>"; };
-		32FB6566171FDF0B005E6DE6 /* medial-motor-n-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-motor-n-0.xml"; sourceTree = "<group>"; };
-		32FB6567171FDF0B005E6DE6 /* medial-vestibular-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-vestibular-n-2.xml"; sourceTree = "<group>"; };
-		32FB6568171FDF0B005E6DE6 /* medial-vestibular-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-vestibular-n-3.xml"; sourceTree = "<group>"; };
-		32FB6569171FDF0B005E6DE6 /* medial-vestibular-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "medial-vestibular-n-4.xml"; sourceTree = "<group>"; };
-		32FB656A171FDF0B005E6DE6 /* mesencephalic-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mesencephalic-n-5.xml"; sourceTree = "<group>"; };
-		32FB656B171FDF0B005E6DE6 /* mesencephalic-n-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mesencephalic-n-6.xml"; sourceTree = "<group>"; };
-		32FB656C171FDF0B005E6DE6 /* mesencephalic-n-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mesencephalic-n-7.xml"; sourceTree = "<group>"; };
-		32FB656D171FDF0B005E6DE6 /* mesencephalic-n-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mesencephalic-n-8.xml"; sourceTree = "<group>"; };
-		32FB6571171FDF0B005E6DE6 /* nucleus-ambiguus-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-ambiguus-n-1.xml"; sourceTree = "<group>"; };
-		32FB6572171FDF0B005E6DE6 /* nucleus-ambiguus-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-ambiguus-n-2.xml"; sourceTree = "<group>"; };
-		32FB6573171FDF0B005E6DE6 /* nucleus-centralis-superior-n-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-centralis-superior-n-6.xml"; sourceTree = "<group>"; };
-		32FB6574171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-raphe-dorsalis-n-6.xml"; sourceTree = "<group>"; };
-		32FB6575171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-raphe-dorsalis-n-7.xml"; sourceTree = "<group>"; };
-		32FB6576171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-raphe-magnus-n-3.xml"; sourceTree = "<group>"; };
-		32FB6577171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-raphe-magnus-n-4.xml"; sourceTree = "<group>"; };
-		32FB6578171FDF0B005E6DE6 /* nucleus-raphe-obscurus-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-raphe-obscurus-n-2.xml"; sourceTree = "<group>"; };
-		32FB6579171FDF0B005E6DE6 /* nucleus-raphe-pallidus-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-raphe-pallidus-n-3.xml"; sourceTree = "<group>"; };
-		32FB657A171FDF0B005E6DE6 /* nucleus-raphe-pontis-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "nucleus-raphe-pontis-n-5.xml"; sourceTree = "<group>"; };
-		32FB657B171FDF0B005E6DE6 /* oculomotor-n-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "oculomotor-n-8.xml"; sourceTree = "<group>"; };
-		32FB657C171FDF0B005E6DE6 /* optic-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "optic-t-8.xml"; sourceTree = "<group>"; };
-		32FB657D171FDF0B005E6DE6 /* periaqueductal-grey-?-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "periaqueductal-grey-?-6.xml"; sourceTree = "<group>"; };
-		32FB657E171FDF0B005E6DE6 /* periaqueductal-grey-?-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "periaqueductal-grey-?-7.xml"; sourceTree = "<group>"; };
-		32FB657F171FDF0B005E6DE6 /* periaqueductal-grey-?-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "periaqueductal-grey-?-8.xml"; sourceTree = "<group>"; };
-		32FB6580171FDF0B005E6DE6 /* pontine-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pontine-n-4.xml"; sourceTree = "<group>"; };
-		32FB6581171FDF0B005E6DE6 /* pontine-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pontine-n-5.xml"; sourceTree = "<group>"; };
-		32FB6582171FDF0B005E6DE6 /* pontine-n-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pontine-n-6.xml"; sourceTree = "<group>"; };
-		32FB6583171FDF0B005E6DE6 /* pontocerebellar-fibers-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pontocerebellar-fibers-t-6.xml"; sourceTree = "<group>"; };
-		32FB6584171FDF0B005E6DE6 /* posterior-cochlear-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-cochlear-n-3.xml"; sourceTree = "<group>"; };
-		32FB6585171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-longitudinal-fasciculus-t-1.xml"; sourceTree = "<group>"; };
-		32FB6586171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-longitudinal-fasciculus-t-2.xml"; sourceTree = "<group>"; };
-		32FB6587171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-longitudinal-fasciculus-t-3.xml"; sourceTree = "<group>"; };
-		32FB6588171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-longitudinal-fasciculus-t-4.xml"; sourceTree = "<group>"; };
-		32FB6589171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-longitudinal-fasciculus-t-5.xml"; sourceTree = "<group>"; };
-		32FB658A171FDF0B005E6DE6 /* posterior-spinocerebellar-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-spinocerebellar-t-0.xml"; sourceTree = "<group>"; };
-		32FB658B171FDF0B005E6DE6 /* posterior-spinocerebellar-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "posterior-spinocerebellar-t-1.xml"; sourceTree = "<group>"; };
-		32FB658C171FDF0B005E6DE6 /* principal-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "principal-n-4.xml"; sourceTree = "<group>"; };
-		32FB658D171FDF0B005E6DE6 /* principal-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "principal-n-5.xml"; sourceTree = "<group>"; };
-		32FB658E171FDF0B005E6DE6 /* pyramidal-decussation-m-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "pyramidal-decussation-m-0.xml"; sourceTree = "<group>"; };
-		32FB658F171FDF0B005E6DE6 /* red-n-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "red-n-8.xml"; sourceTree = "<group>"; };
-		32FB6590171FDF0B005E6DE6 /* reticulospinal-fibers-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "reticulospinal-fibers-t-0.xml"; sourceTree = "<group>"; };
-		32FB6591171FDF0B005E6DE6 /* reticulotegmental-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "reticulotegmental-n-5.xml"; sourceTree = "<group>"; };
-		32FB6592171FDF0B005E6DE6 /* rubrospinal-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-0.xml"; sourceTree = "<group>"; };
-		32FB6593171FDF0B005E6DE6 /* rubrospinal-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-1.xml"; sourceTree = "<group>"; };
-		32FB6594171FDF0B005E6DE6 /* rubrospinal-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-2.xml"; sourceTree = "<group>"; };
-		32FB6595171FDF0B005E6DE6 /* rubrospinal-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-3.xml"; sourceTree = "<group>"; };
-		32FB6596171FDF0B005E6DE6 /* rubrospinal-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-4.xml"; sourceTree = "<group>"; };
-		32FB6597171FDF0B005E6DE6 /* rubrospinal-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-5.xml"; sourceTree = "<group>"; };
-		32FB6598171FDF0B005E6DE6 /* rubrospinal-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-6.xml"; sourceTree = "<group>"; };
-		32FB6599171FDF0B005E6DE6 /* rubrospinal-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-7.xml"; sourceTree = "<group>"; };
-		32FB659A171FDF0B005E6DE6 /* rubrospinal-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rubrospinal-t-8.xml"; sourceTree = "<group>"; };
-		32FB659B171FDF0B005E6DE6 /* salivatory-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "salivatory-n-4.xml"; sourceTree = "<group>"; };
-		32FB659C171FDF0B005E6DE6 /* solitary-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "solitary-n-1.xml"; sourceTree = "<group>"; };
-		32FB659D171FDF0B005E6DE6 /* solitary-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "solitary-n-2.xml"; sourceTree = "<group>"; };
-		32FB659E171FDF0B005E6DE6 /* solitary-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "solitary-n-3.xml"; sourceTree = "<group>"; };
-		32FB659F171FDF0B005E6DE6 /* solitary-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "solitary-n-4.xml"; sourceTree = "<group>"; };
-		32FB65A0171FDF0B005E6DE6 /* spinal-trigeminal-n-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-n-0.xml"; sourceTree = "<group>"; };
-		32FB65A1171FDF0B005E6DE6 /* spinal-trigeminal-n-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-n-1.xml"; sourceTree = "<group>"; };
-		32FB65A2171FDF0B005E6DE6 /* spinal-trigeminal-n-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-n-2.xml"; sourceTree = "<group>"; };
-		32FB65A3171FDF0B005E6DE6 /* spinal-trigeminal-n-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-n-3.xml"; sourceTree = "<group>"; };
-		32FB65A4171FDF0B005E6DE6 /* spinal-trigeminal-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-n-4.xml"; sourceTree = "<group>"; };
-		32FB65A5171FDF0B005E6DE6 /* spinal-trigeminal-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-t-0.xml"; sourceTree = "<group>"; };
-		32FB65A6171FDF0B005E6DE6 /* spinal-trigeminal-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-t-1.xml"; sourceTree = "<group>"; };
-		32FB65A7171FDF0B005E6DE6 /* spinal-trigeminal-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-t-2.xml"; sourceTree = "<group>"; };
-		32FB65A8171FDF0B005E6DE6 /* spinal-trigeminal-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-t-3.xml"; sourceTree = "<group>"; };
-		32FB65A9171FDF0B005E6DE6 /* spinal-trigeminal-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "spinal-trigeminal-t-4.xml"; sourceTree = "<group>"; };
-		32FB65AA171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "substantia-nigra:-pars-compacta-?-7.xml"; sourceTree = "<group>"; };
-		32FB65AB171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "substantia-nigra:-pars-compacta-?-8.xml"; sourceTree = "<group>"; };
-		32FB65AC171FDF0B005E6DE6 /* substantia-nigra:-pars-reticulata-?-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "substantia-nigra:-pars-reticulata-?-8.xml"; sourceTree = "<group>"; };
-		32FB65AD171FDF0B005E6DE6 /* superior-cerebellar-peduncle-m-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "superior-cerebellar-peduncle-m-6.xml"; sourceTree = "<group>"; };
-		32FB65AF171FDF0B005E6DE6 /* superior-colliculus-m-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "superior-colliculus-m-8.xml"; sourceTree = "<group>"; };
-		32FB65B0171FDF0B005E6DE6 /* superior-olive-?-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "superior-olive-?-4.xml"; sourceTree = "<group>"; };
-		32FB65B1171FDF0B005E6DE6 /* superior-olive-?-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "superior-olive-?-5.xml"; sourceTree = "<group>"; };
-		32FB65B2171FDF0B005E6DE6 /* superior-vestibular-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "superior-vestibular-n-4.xml"; sourceTree = "<group>"; };
-		32FB65B3171FDF0B005E6DE6 /* tectospinal-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-0.xml"; sourceTree = "<group>"; };
-		32FB65B4171FDF0B005E6DE6 /* tectospinal-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-1.xml"; sourceTree = "<group>"; };
-		32FB65B5171FDF0B005E6DE6 /* tectospinal-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-2.xml"; sourceTree = "<group>"; };
-		32FB65B6171FDF0B005E6DE6 /* tectospinal-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-3.xml"; sourceTree = "<group>"; };
-		32FB65B7171FDF0B005E6DE6 /* tectospinal-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-4.xml"; sourceTree = "<group>"; };
-		32FB65B8171FDF0B005E6DE6 /* tectospinal-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-5.xml"; sourceTree = "<group>"; };
-		32FB65B9171FDF0B005E6DE6 /* tectospinal-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-6.xml"; sourceTree = "<group>"; };
-		32FB65BA171FDF0B005E6DE6 /* tectospinal-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-7.xml"; sourceTree = "<group>"; };
-		32FB65BB171FDF0B005E6DE6 /* tectospinal-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tectospinal-t-8.xml"; sourceTree = "<group>"; };
-		32FB65BC171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "tegmental-decussations-?-8.xml"; sourceTree = "<group>"; };
-		32FB65BD171FDF0B005E6DE6 /* trapezoid-body-?-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trapezoid-body-?-4.xml"; sourceTree = "<group>"; };
-		32FB65BE171FDF0B005E6DE6 /* trochlear-n-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trochlear-n-7.xml"; sourceTree = "<group>"; };
-		32FB65BF171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trigeminal-motor-n-4.xml"; sourceTree = "<group>"; };
-		32FB65C0171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "trigeminal-motor-n-5.xml"; sourceTree = "<group>"; };
-		32FB65C1171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-1.xml"; sourceTree = "<group>"; };
-		32FB65C2171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-2.xml"; sourceTree = "<group>"; };
-		32FB65C3171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-3.xml"; sourceTree = "<group>"; };
-		32FB65C4171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-4.xml"; sourceTree = "<group>"; };
-		32FB65C5171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-5.xml"; sourceTree = "<group>"; };
-		32FB65C6171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-6.xml"; sourceTree = "<group>"; };
-		32FB65C7171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-7.xml"; sourceTree = "<group>"; };
-		32FB65C8171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ventral-trigeminothalamic-t-8.xml"; sourceTree = "<group>"; };
-		32FB65C9171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vestibulospinal-and-reticulospinal-t-0.xml"; sourceTree = "<group>"; };
-		32FB65CA171FDF0B005E6DE6 /* vi-abducens-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vi-abducens-cn-4.xml"; sourceTree = "<group>"; };
-		32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vii-facial-cn-4.xml"; sourceTree = "<group>"; };
 		32FF11221A46A5B100CEAE55 /* BSDrawSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawSectionView.m; sourceTree = "<group>"; };
 		32FF11231A46A5B100CEAE55 /* BSDrawSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawSectionView.h; sourceTree = "<group>"; };
 		32FF11261A46F57400CEAE55 /* abducens-n-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "abducens-n-4.json"; sourceTree = "<group>"; };
@@ -2196,227 +1770,6 @@
 			path = Arteries;
 			sourceTree = "<group>";
 		};
-		32BAE7BF17181CFC00F04334 /* path-xml */ = {
-			isa = PBXGroup;
-			children = (
-				32FB64F5171FDF0A005E6DE6 /* abducens-n-4.xml */,
-				32FB64F6171FDF0A005E6DE6 /* accessory-cuneate-n-1.xml */,
-				32FB64F7171FDF0A005E6DE6 /* accessory-cuneate-n-2.xml */,
-				32FB64F8171FDF0A005E6DE6 /* accessory-n-0.xml */,
-				32FB64F9171FDF0A005E6DE6 /* anterior-cochlear-n-3.xml */,
-				32FB64FA171FDF0A005E6DE6 /* anterior-corticospinal-t-0.xml */,
-				32FB64FB171FDF0A005E6DE6 /* anterior-spinocerebellar-t-0.xml */,
-				32FB64FC171FDF0A005E6DE6 /* anterior-spinocerebellar-t-1.xml */,
-				32FB64FD171FDF0A005E6DE6 /* anterior-spinocerebellar-t-2.xml */,
-				32FB64FE171FDF0A005E6DE6 /* anterior-spinocerebellar-t-3.xml */,
-				32FB64FF171FDF0A005E6DE6 /* anterior-spinocerebellar-t-5.xml */,
-				32FB6500171FDF0A005E6DE6 /* anterolateral-system-t-0.xml */,
-				32FB6501171FDF0A005E6DE6 /* anterolateral-system-t-1.xml */,
-				32FB6502171FDF0A005E6DE6 /* anterolateral-system-t-2.xml */,
-				32FB6503171FDF0A005E6DE6 /* anterolateral-system-t-3.xml */,
-				32FB6504171FDF0A005E6DE6 /* anterolateral-system-t-4.xml */,
-				32FB6505171FDF0A005E6DE6 /* anterolateral-system-t-5.xml */,
-				32FB6506171FDF0A005E6DE6 /* anterolateral-system-t-6.xml */,
-				32FB6507171FDF0A005E6DE6 /* anterolateral-system-t-7.xml */,
-				32FB6508171FDF0A005E6DE6 /* anterolateral-system-t-8.xml */,
-				32FB6509171FDF0A005E6DE6 /* brachium-of-inferior-colliculus-m-8.xml */,
-				32FB650A171FDF0A005E6DE6 /* central-canal-m-0.xml */,
-				32FB650B171FDF0A005E6DE6 /* central-canal-m-1.xml */,
-				32FB650C171FDF0A005E6DE6 /* central-grey-m-0.xml */,
-				32FB650D171FDF0A005E6DE6 /* central-grey-m-1.xml */,
-				32FB650E171FDF0A005E6DE6 /* central-tegmental-t-3.xml */,
-				32FB650F171FDF0A005E6DE6 /* central-tegmental-t-4.xml */,
-				32FB6510171FDF0A005E6DE6 /* central-tegmental-t-5.xml */,
-				32FB6511171FDF0A005E6DE6 /* central-tegmental-t-6.xml */,
-				32FB6512171FDF0A005E6DE6 /* central-tegmental-t-7.xml */,
-				32FB6513171FDF0A005E6DE6 /* central-tegmental-t-8.xml */,
-				32FB6514171FDF0A005E6DE6 /* cerebellothalamic-t-8.xml */,
-				32FB6515171FDF0A005E6DE6 /* cerebral-aqueduct-m-6.xml */,
-				32FB6516171FDF0A005E6DE6 /* cerebral-aqueduct-m-7.xml */,
-				32FB6517171FDF0A005E6DE6 /* cerebral-aqueduct-m-8.xml */,
-				32FB6518171FDF0A005E6DE6 /* corticobulbars-t-7.xml */,
-				32FB6519171FDF0A005E6DE6 /* corticobulbars-t-8.xml */,
-				32FB651A171FDF0A005E6DE6 /* corticospinal-t-1.xml */,
-				32FB651B171FDF0A005E6DE6 /* corticospinal-t-2.xml */,
-				32FB651C171FDF0A005E6DE6 /* corticospinal-t-3.xml */,
-				32FB651D171FDF0A005E6DE6 /* corticospinal-t-4.xml */,
-				32FB651E171FDF0A005E6DE6 /* corticospinal-t-5.xml */,
-				32FB651F171FDF0A005E6DE6 /* corticospinal-t-6.xml */,
-				32FB6520171FDF0A005E6DE6 /* corticospinal-t-7.xml */,
-				32FB6521171FDF0A005E6DE6 /* corticospinal-t-8.xml */,
-				32FB6522171FDF0A005E6DE6 /* crus-cerebri-?-7.xml */,
-				32FB6523171FDF0A005E6DE6 /* crus-cerebri-?-8.xml */,
-				32FB6524171FDF0A005E6DE6 /* cuneate-fasciculus-t-0.xml */,
-				32FB6525171FDF0A005E6DE6 /* cuneate-fasciculus-t-1.xml */,
-				32FB6526171FDF0A005E6DE6 /* cuneate-n-0.xml */,
-				32FB6527171FDF0A005E6DE6 /* cuneate-n-1.xml */,
-				32FB6528171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-0.xml */,
-				32FB6529171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-1.xml */,
-				32FB652A171FDF0A005E6DE6 /* dorsal-motor-of-vagus-n-2.xml */,
-				32FB652B171FDF0A005E6DE6 /* dorsal-trigeminothalamic-t-7.xml */,
-				32FB652C171FDF0A005E6DE6 /* dorsal-trigeminothalamic-t-8.xml */,
-				32FB652D171FDF0A005E6DE6 /* edinger-westphal-n-8.xml */,
-				32FB652E171FDF0A005E6DE6 /* facial-motor-n-3.xml */,
-				32FB652F171FDF0A005E6DE6 /* facial-motor-n-4.xml */,
-				32FB6530171FDF0A005E6DE6 /* fourth-ventricle-m-2.xml */,
-				32FB6531171FDF0A005E6DE6 /* fourth-ventricle-m-3.xml */,
-				32FB6532171FDF0A005E6DE6 /* fourth-ventricle-m-4.xml */,
-				32FB6533171FDF0A005E6DE6 /* fourth-ventricle-m-5.xml */,
-				32FB6534171FDF0A005E6DE6 /* gracile-fasciculus-t-0.xml */,
-				32FB6535171FDF0A005E6DE6 /* gracile-fasciculus-t-1.xml */,
-				32FB6536171FDF0A005E6DE6 /* gracile-n-0.xml */,
-				32FB6537171FDF0A005E6DE6 /* gracile-n-1.xml */,
-				32FB6538171FDF0A005E6DE6 /* hypoglossal-n-0.xml */,
-				32FB6539171FDF0A005E6DE6 /* hypoglossal-n-1.xml */,
-				32FB653A171FDF0A005E6DE6 /* hypoglossal-n-2.xml */,
-				32FB653D171FDF0A005E6DE6 /* iii-oculomotor-cn-8.xml */,
-				32FB653E171FDF0A005E6DE6 /* inferior-cerebellar-peduncle-m-2.xml */,
-				32FB653F171FDF0A005E6DE6 /* inferior-cerebellar-peduncle-m-3.xml */,
-				32FB6540171FDF0A005E6DE6 /* inferior-colliculus-m-7.xml */,
-				32FB6541171FDF0A005E6DE6 /* inferior-olivary-n-1.xml */,
-				32FB6542171FDF0A005E6DE6 /* inferior-olivary-n-2.xml */,
-				32FB6543171FDF0A005E6DE6 /* inferior-olivary-n-3.xml */,
-				32FB6544171FDF0A005E6DE6 /* inferior-vestibular-n-2.xml */,
-				32FB6545171FDF0A005E6DE6 /* internal-arcuate-fibers-m-1.xml */,
-				32FB6546171FDF0A005E6DE6 /* interpeduncular-n-7.xml */,
-				32FB6547171FDF0A005E6DE6 /* interpeduncular-n-8.xml */,
-				32FB6549171FDF0A005E6DE6 /* lateral-lemniscus-t-4.xml */,
-				32FB654A171FDF0A005E6DE6 /* lateral-lemniscus-t-5.xml */,
-				32FB654B171FDF0A005E6DE6 /* lateral-lemniscus-t-6.xml */,
-				32FB654C171FDF0A005E6DE6 /* lateral-lemniscus-t-7.xml */,
-				32FB654D171FDF0A005E6DE6 /* lateral-reticular-n-1.xml */,
-				32FB654E171FDF0A005E6DE6 /* lateral-reticular-n-2.xml */,
-				32FB654F171FDF0A005E6DE6 /* lateral-vestibular-n-3.xml */,
-				32FB6550171FDF0A005E6DE6 /* lateral-vestibular-n-4.xml */,
-				32FB6551171FDF0A005E6DE6 /* locus-ceruleus-n-5.xml */,
-				32FB6552171FDF0A005E6DE6 /* locus-ceruleus-n-6.xml */,
-				32FB6554171FDF0A005E6DE6 /* medial-geniculate-n-8.xml */,
-				32FB6555171FDF0A005E6DE6 /* medial-lemniscus-t-1.xml */,
-				32FB6556171FDF0A005E6DE6 /* medial-lemniscus-t-2.xml */,
-				32FB6557171FDF0A005E6DE6 /* medial-lemniscus-t-3.xml */,
-				32FB6558171FDF0A005E6DE6 /* medial-lemniscus-t-4.xml */,
-				32FB6559171FDF0A005E6DE6 /* medial-lemniscus-t-5.xml */,
-				32FB655A171FDF0A005E6DE6 /* medial-lemniscus-t-6.xml */,
-				32FB655B171FDF0B005E6DE6 /* medial-lemniscus-t-7.xml */,
-				32FB655C171FDF0B005E6DE6 /* medial-lemniscus-t-8.xml */,
-				32FB655D171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-0.xml */,
-				32FB655E171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-1.xml */,
-				32FB655F171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-2.xml */,
-				32FB6560171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-3.xml */,
-				32FB6561171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-4.xml */,
-				32FB6562171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-5.xml */,
-				32FB6563171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-6.xml */,
-				32FB6564171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-7.xml */,
-				32FB6565171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-8.xml */,
-				32FB6566171FDF0B005E6DE6 /* medial-motor-n-0.xml */,
-				32FB6567171FDF0B005E6DE6 /* medial-vestibular-n-2.xml */,
-				32FB6568171FDF0B005E6DE6 /* medial-vestibular-n-3.xml */,
-				32FB6569171FDF0B005E6DE6 /* medial-vestibular-n-4.xml */,
-				32FB656A171FDF0B005E6DE6 /* mesencephalic-n-5.xml */,
-				32FB656B171FDF0B005E6DE6 /* mesencephalic-n-6.xml */,
-				32FB656C171FDF0B005E6DE6 /* mesencephalic-n-7.xml */,
-				32FB656D171FDF0B005E6DE6 /* mesencephalic-n-8.xml */,
-				326F87901721360F008E923E /* middle-cerebellar-peduncle-m-4.xml */,
-				326F87911721360F008E923E /* middle-cerebellar-peduncle-m-5.xml */,
-				326F87921721360F008E923E /* middle-cerebellar-peduncle-m-6.xml */,
-				32FB6571171FDF0B005E6DE6 /* nucleus-ambiguus-n-1.xml */,
-				32FB6572171FDF0B005E6DE6 /* nucleus-ambiguus-n-2.xml */,
-				32FB6573171FDF0B005E6DE6 /* nucleus-centralis-superior-n-6.xml */,
-				32FB6574171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-6.xml */,
-				32FB6575171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-7.xml */,
-				32FB6576171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-3.xml */,
-				32FB6577171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-4.xml */,
-				32FB6578171FDF0B005E6DE6 /* nucleus-raphe-obscurus-n-2.xml */,
-				32FB6579171FDF0B005E6DE6 /* nucleus-raphe-pallidus-n-3.xml */,
-				32FB657A171FDF0B005E6DE6 /* nucleus-raphe-pontis-n-5.xml */,
-				32FB657B171FDF0B005E6DE6 /* oculomotor-n-8.xml */,
-				32FB657C171FDF0B005E6DE6 /* optic-t-8.xml */,
-				32FB657D171FDF0B005E6DE6 /* periaqueductal-grey-?-6.xml */,
-				32FB657E171FDF0B005E6DE6 /* periaqueductal-grey-?-7.xml */,
-				32FB657F171FDF0B005E6DE6 /* periaqueductal-grey-?-8.xml */,
-				32FB6580171FDF0B005E6DE6 /* pontine-n-4.xml */,
-				32FB6581171FDF0B005E6DE6 /* pontine-n-5.xml */,
-				32FB6582171FDF0B005E6DE6 /* pontine-n-6.xml */,
-				32FB6583171FDF0B005E6DE6 /* pontocerebellar-fibers-t-6.xml */,
-				32FB6584171FDF0B005E6DE6 /* posterior-cochlear-n-3.xml */,
-				32FB6585171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-1.xml */,
-				32FB6586171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-2.xml */,
-				32FB6587171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-3.xml */,
-				32FB6588171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-4.xml */,
-				32FB6589171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-5.xml */,
-				32FB658A171FDF0B005E6DE6 /* posterior-spinocerebellar-t-0.xml */,
-				32FB658B171FDF0B005E6DE6 /* posterior-spinocerebellar-t-1.xml */,
-				32FB658C171FDF0B005E6DE6 /* principal-n-4.xml */,
-				32FB658D171FDF0B005E6DE6 /* principal-n-5.xml */,
-				32FB658E171FDF0B005E6DE6 /* pyramidal-decussation-m-0.xml */,
-				32FB658F171FDF0B005E6DE6 /* red-n-8.xml */,
-				32FB6590171FDF0B005E6DE6 /* reticulospinal-fibers-t-0.xml */,
-				32FB6591171FDF0B005E6DE6 /* reticulotegmental-n-5.xml */,
-				32FB6592171FDF0B005E6DE6 /* rubrospinal-t-0.xml */,
-				32FB6593171FDF0B005E6DE6 /* rubrospinal-t-1.xml */,
-				32FB6594171FDF0B005E6DE6 /* rubrospinal-t-2.xml */,
-				32FB6595171FDF0B005E6DE6 /* rubrospinal-t-3.xml */,
-				32FB6596171FDF0B005E6DE6 /* rubrospinal-t-4.xml */,
-				32FB6597171FDF0B005E6DE6 /* rubrospinal-t-5.xml */,
-				32FB6598171FDF0B005E6DE6 /* rubrospinal-t-6.xml */,
-				32FB6599171FDF0B005E6DE6 /* rubrospinal-t-7.xml */,
-				32FB659A171FDF0B005E6DE6 /* rubrospinal-t-8.xml */,
-				32FB659B171FDF0B005E6DE6 /* salivatory-n-4.xml */,
-				32FB659C171FDF0B005E6DE6 /* solitary-n-1.xml */,
-				32FB659D171FDF0B005E6DE6 /* solitary-n-2.xml */,
-				32FB659E171FDF0B005E6DE6 /* solitary-n-3.xml */,
-				32FB659F171FDF0B005E6DE6 /* solitary-n-4.xml */,
-				32FB65A0171FDF0B005E6DE6 /* spinal-trigeminal-n-0.xml */,
-				32FB65A1171FDF0B005E6DE6 /* spinal-trigeminal-n-1.xml */,
-				32FB65A2171FDF0B005E6DE6 /* spinal-trigeminal-n-2.xml */,
-				32FB65A3171FDF0B005E6DE6 /* spinal-trigeminal-n-3.xml */,
-				32FB65A4171FDF0B005E6DE6 /* spinal-trigeminal-n-4.xml */,
-				32FB65A5171FDF0B005E6DE6 /* spinal-trigeminal-t-0.xml */,
-				32FB65A6171FDF0B005E6DE6 /* spinal-trigeminal-t-1.xml */,
-				32FB65A7171FDF0B005E6DE6 /* spinal-trigeminal-t-2.xml */,
-				32FB65A8171FDF0B005E6DE6 /* spinal-trigeminal-t-3.xml */,
-				32FB65A9171FDF0B005E6DE6 /* spinal-trigeminal-t-4.xml */,
-				32FB65AA171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-7.xml */,
-				32FB65AB171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-8.xml */,
-				32FB65AC171FDF0B005E6DE6 /* substantia-nigra:-pars-reticulata-?-8.xml */,
-				32FB65AD171FDF0B005E6DE6 /* superior-cerebellar-peduncle-m-6.xml */,
-				326F879617213702008E923E /* superior-cerebellar-peduncle-m-7.xml */,
-				32FB65AF171FDF0B005E6DE6 /* superior-colliculus-m-8.xml */,
-				32FB65B0171FDF0B005E6DE6 /* superior-olive-?-4.xml */,
-				32FB65B1171FDF0B005E6DE6 /* superior-olive-?-5.xml */,
-				32FB65B2171FDF0B005E6DE6 /* superior-vestibular-n-4.xml */,
-				32FB65B3171FDF0B005E6DE6 /* tectospinal-t-0.xml */,
-				32FB65B4171FDF0B005E6DE6 /* tectospinal-t-1.xml */,
-				32FB65B5171FDF0B005E6DE6 /* tectospinal-t-2.xml */,
-				32FB65B6171FDF0B005E6DE6 /* tectospinal-t-3.xml */,
-				32FB65B7171FDF0B005E6DE6 /* tectospinal-t-4.xml */,
-				32FB65B8171FDF0B005E6DE6 /* tectospinal-t-5.xml */,
-				32FB65B9171FDF0B005E6DE6 /* tectospinal-t-6.xml */,
-				32FB65BA171FDF0B005E6DE6 /* tectospinal-t-7.xml */,
-				32FB65BB171FDF0B005E6DE6 /* tectospinal-t-8.xml */,
-				32FB65BC171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml */,
-				32FB65BD171FDF0B005E6DE6 /* trapezoid-body-?-4.xml */,
-				32FB65BE171FDF0B005E6DE6 /* trochlear-n-7.xml */,
-				32FB65BF171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml */,
-				32FB65C0171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml */,
-				32FB65C1171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml */,
-				32FB65C2171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml */,
-				32FB65C3171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml */,
-				32FB65C4171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-4.xml */,
-				32FB65C5171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-5.xml */,
-				32FB65C6171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-6.xml */,
-				32FB65C7171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-7.xml */,
-				32FB65C8171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-8.xml */,
-				32FB65C9171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml */,
-				32FB65CA171FDF0B005E6DE6 /* vi-abducens-cn-4.xml */,
-				32FB653B171FDF0A005E6DE6 /* xii-hypoglossal-cn-1.xml */,
-				32FB653C171FDF0A005E6DE6 /* xii-hypoglossal-cn-2.xml */,
-				32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */,
-			);
-			name = "path-xml";
-			path = ../XML;
-			sourceTree = "<group>";
-		};
 		32C384C11777E18600333310 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -2876,7 +2229,6 @@
 				32DD438116526771002AAE0F /* Classes */,
 				32035531162C0C8E0079394F /* Images */,
 				32FF11251A46F57400CEAE55 /* path-json */,
-				32BAE7BF17181CFC00F04334 /* path-xml */,
 				8179EAE6161D40CF0050D663 /* Supporting Files */,
 			);
 			path = Brainstem101;
@@ -3125,285 +2477,72 @@
 				32BAE7BC1718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png in Resources */,
 				32BAE7BD1718175E00F04334 /* superior-cerebellar-a-overlay-front.png in Resources */,
 				32BAE7BE1718175E00F04334 /* vertebral-a-overlay-front.png in Resources */,
-				32FB65CC171FDF0B005E6DE6 /* abducens-n-4.xml in Resources */,
 				32FF12A21A46F57500CEAE55 /* ventral-trigeminothalamic-t-2.json in Resources */,
 				32FF12291A46F57500CEAE55 /* hypoglossal-n-0.json in Resources */,
-				32FB65CD171FDF0B005E6DE6 /* accessory-cuneate-n-1.xml in Resources */,
-				32FB65CE171FDF0B005E6DE6 /* accessory-cuneate-n-2.xml in Resources */,
-				32FB65CF171FDF0B005E6DE6 /* accessory-n-0.xml in Resources */,
-				32FB65D0171FDF0B005E6DE6 /* anterior-cochlear-n-3.xml in Resources */,
-				32FB65D1171FDF0B005E6DE6 /* anterior-corticospinal-t-0.xml in Resources */,
-				32FB65D2171FDF0B005E6DE6 /* anterior-spinocerebellar-t-0.xml in Resources */,
-				32FB65D3171FDF0B005E6DE6 /* anterior-spinocerebellar-t-1.xml in Resources */,
-				32FB65D4171FDF0B005E6DE6 /* anterior-spinocerebellar-t-2.xml in Resources */,
-				32FB65D5171FDF0B005E6DE6 /* anterior-spinocerebellar-t-3.xml in Resources */,
 				32FF12521A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-8.json in Resources */,
-				32FB65D6171FDF0B005E6DE6 /* anterior-spinocerebellar-t-5.xml in Resources */,
-				32FB65D7171FDF0B005E6DE6 /* anterolateral-system-t-0.xml in Resources */,
-				32FB65D8171FDF0B005E6DE6 /* anterolateral-system-t-1.xml in Resources */,
-				32FB65D9171FDF0B005E6DE6 /* anterolateral-system-t-2.xml in Resources */,
-				32FB65DA171FDF0B005E6DE6 /* anterolateral-system-t-3.xml in Resources */,
-				32FB65DB171FDF0B005E6DE6 /* anterolateral-system-t-4.xml in Resources */,
-				32FB65DC171FDF0B005E6DE6 /* anterolateral-system-t-5.xml in Resources */,
-				32FB65DD171FDF0B005E6DE6 /* anterolateral-system-t-6.xml in Resources */,
 				32FF12631A46F57500CEAE55 /* nucleus-raphe-magnus-n-3.json in Resources */,
-				32FB65DE171FDF0B005E6DE6 /* anterolateral-system-t-7.xml in Resources */,
-				32FB65DF171FDF0B005E6DE6 /* anterolateral-system-t-8.xml in Resources */,
-				32FB65E0171FDF0B005E6DE6 /* brachium-of-inferior-colliculus-m-8.xml in Resources */,
 				32FF12841A46F57500CEAE55 /* solitary-n-1.json in Resources */,
-				32FB65E1171FDF0B005E6DE6 /* central-canal-m-0.xml in Resources */,
-				32FB65E2171FDF0B005E6DE6 /* central-canal-m-1.xml in Resources */,
-				32FB65E3171FDF0B005E6DE6 /* central-grey-m-0.xml in Resources */,
 				32FF12AD1A46F57500CEAE55 /* xii-hypoglossal-cn-2.json in Resources */,
-				32FB65E4171FDF0B005E6DE6 /* central-grey-m-1.xml in Resources */,
-				32FB65E5171FDF0B005E6DE6 /* central-tegmental-t-3.xml in Resources */,
-				32FB65E6171FDF0B005E6DE6 /* central-tegmental-t-4.xml in Resources */,
-				32FB65E7171FDF0B005E6DE6 /* central-tegmental-t-5.xml in Resources */,
 				32FF12501A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-6.json in Resources */,
 				32FF12911A46F57500CEAE55 /* spinal-trigeminal-t-4.json in Resources */,
-				32FB65E8171FDF0B005E6DE6 /* central-tegmental-t-6.xml in Resources */,
-				32FB65E9171FDF0B005E6DE6 /* central-tegmental-t-7.xml in Resources */,
-				32FB65EA171FDF0B005E6DE6 /* central-tegmental-t-8.xml in Resources */,
-				32FB65EB171FDF0B005E6DE6 /* cerebellothalamic-t-8.xml in Resources */,
 				32FF12011A46F57500CEAE55 /* central-tegmental-t-3.json in Resources */,
 				32FF122B1A46F57500CEAE55 /* hypoglossal-n-2.json in Resources */,
-				32FB65EC171FDF0B005E6DE6 /* cerebral-aqueduct-m-6.xml in Resources */,
-				32FB65ED171FDF0B005E6DE6 /* cerebral-aqueduct-m-7.xml in Resources */,
-				32FB65EE171FDF0B005E6DE6 /* cerebral-aqueduct-m-8.xml in Resources */,
 				32FF12261A46F57500CEAE55 /* gracile-fasciculus-t-1.json in Resources */,
-				32FB65EF171FDF0B005E6DE6 /* corticobulbars-t-7.xml in Resources */,
-				32FB65F0171FDF0B005E6DE6 /* corticobulbars-t-8.xml in Resources */,
-				32FB65F1171FDF0B005E6DE6 /* corticospinal-t-1.xml in Resources */,
-				32FB65F2171FDF0B005E6DE6 /* corticospinal-t-2.xml in Resources */,
-				32FB65F3171FDF0B005E6DE6 /* corticospinal-t-3.xml in Resources */,
 				32FF11FA1A46F57500CEAE55 /* anterolateral-system-t-5.json in Resources */,
 				32FF12101A46F57500CEAE55 /* corticospinal-t-4.json in Resources */,
-				32FB65F4171FDF0B005E6DE6 /* corticospinal-t-4.xml in Resources */,
-				32FB65F5171FDF0B005E6DE6 /* corticospinal-t-5.xml in Resources */,
-				32FB65F6171FDF0B005E6DE6 /* corticospinal-t-6.xml in Resources */,
 				32B9A84818A7471A0027805F /* inferior-vestibular-n-overlay-back.png in Resources */,
 				32FF12381A46F57500CEAE55 /* lateral-lemniscus-t-5.json in Resources */,
 				32FF12481A46F57500CEAE55 /* medial-lemniscus-t-7.json in Resources */,
-				32FB65F7171FDF0B005E6DE6 /* corticospinal-t-7.xml in Resources */,
 				32FF12091A46F57500CEAE55 /* cerebral-aqueduct-m-7.json in Resources */,
-				32FB65F8171FDF0B005E6DE6 /* corticospinal-t-8.xml in Resources */,
 				32FF12001A46F57500CEAE55 /* central-canal-m-1.json in Resources */,
-				32FB65F9171FDF0B005E6DE6 /* crus-cerebri-?-7.xml in Resources */,
 				32FF12451A46F57500CEAE55 /* medial-lemniscus-t-4.json in Resources */,
-				32FB65FA171FDF0B005E6DE6 /* crus-cerebri-?-8.xml in Resources */,
 				32FF12571A46F57500CEAE55 /* mesencephalic-n-5.json in Resources */,
-				32FB65FB171FDF0B005E6DE6 /* cuneate-fasciculus-t-0.xml in Resources */,
-				32FB65FC171FDF0B005E6DE6 /* cuneate-fasciculus-t-1.xml in Resources */,
-				32FB65FD171FDF0B005E6DE6 /* cuneate-n-0.xml in Resources */,
 				32FF12161A46F57500CEAE55 /* cuneate-fasciculus-t-1.json in Resources */,
-				32FB65FE171FDF0B005E6DE6 /* cuneate-n-1.xml in Resources */,
-				32FB65FF171FDF0B005E6DE6 /* dorsal-motor-of-vagus-n-0.xml in Resources */,
-				32FB6600171FDF0B005E6DE6 /* dorsal-motor-of-vagus-n-1.xml in Resources */,
-				32FB6601171FDF0B005E6DE6 /* dorsal-motor-of-vagus-n-2.xml in Resources */,
-				32FB6602171FDF0B005E6DE6 /* dorsal-trigeminothalamic-t-7.xml in Resources */,
-				32FB6603171FDF0B005E6DE6 /* dorsal-trigeminothalamic-t-8.xml in Resources */,
 				32FF12A41A46F57500CEAE55 /* ventral-trigeminothalamic-t-4.json in Resources */,
-				32FB6604171FDF0B005E6DE6 /* edinger-westphal-n-8.xml in Resources */,
-				32FB6605171FDF0B005E6DE6 /* facial-motor-n-3.xml in Resources */,
-				32FB6606171FDF0B005E6DE6 /* facial-motor-n-4.xml in Resources */,
-				32FB6607171FDF0B005E6DE6 /* fourth-ventricle-m-2.xml in Resources */,
-				32FB6608171FDF0B005E6DE6 /* fourth-ventricle-m-3.xml in Resources */,
-				32FB6609171FDF0B005E6DE6 /* fourth-ventricle-m-4.xml in Resources */,
-				32FB660A171FDF0B005E6DE6 /* fourth-ventricle-m-5.xml in Resources */,
-				32FB660B171FDF0B005E6DE6 /* gracile-fasciculus-t-0.xml in Resources */,
-				32FB660C171FDF0B005E6DE6 /* gracile-fasciculus-t-1.xml in Resources */,
-				32FB660D171FDF0B005E6DE6 /* gracile-n-0.xml in Resources */,
-				32FB660E171FDF0B005E6DE6 /* gracile-n-1.xml in Resources */,
 				32FF128F1A46F57500CEAE55 /* spinal-trigeminal-t-2.json in Resources */,
-				32FB660F171FDF0B005E6DE6 /* hypoglossal-n-0.xml in Resources */,
 				32FF12251A46F57500CEAE55 /* gracile-fasciculus-t-0.json in Resources */,
-				32FB6610171FDF0B005E6DE6 /* hypoglossal-n-1.xml in Resources */,
-				32FB6611171FDF0B005E6DE6 /* hypoglossal-n-2.xml in Resources */,
-				32FB6612171FDF0B005E6DE6 /* xii-hypoglossal-cn-1.xml in Resources */,
-				32FB6613171FDF0B005E6DE6 /* xii-hypoglossal-cn-2.xml in Resources */,
-				32FB6614171FDF0B005E6DE6 /* iii-oculomotor-cn-8.xml in Resources */,
-				32FB6615171FDF0B005E6DE6 /* inferior-cerebellar-peduncle-m-2.xml in Resources */,
 				32FF124F1A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-5.json in Resources */,
 				32FF12071A46F57500CEAE55 /* cerebellothalamic-t-8.json in Resources */,
-				32FB6616171FDF0B005E6DE6 /* inferior-cerebellar-peduncle-m-3.xml in Resources */,
-				32FB6617171FDF0B005E6DE6 /* inferior-colliculus-m-7.xml in Resources */,
 				3253620818A791B400017864 /* tutorial-quiz.png in Resources */,
-				32FB6618171FDF0B005E6DE6 /* inferior-olivary-n-1.xml in Resources */,
-				32FB6619171FDF0B005E6DE6 /* inferior-olivary-n-2.xml in Resources */,
-				32FB661A171FDF0B005E6DE6 /* inferior-olivary-n-3.xml in Resources */,
-				32FB661B171FDF0B005E6DE6 /* inferior-vestibular-n-2.xml in Resources */,
-				32FB661C171FDF0B005E6DE6 /* internal-arcuate-fibers-m-1.xml in Resources */,
-				32FB661D171FDF0B005E6DE6 /* interpeduncular-n-7.xml in Resources */,
-				32FB661E171FDF0B005E6DE6 /* interpeduncular-n-8.xml in Resources */,
-				32FB6620171FDF0B005E6DE6 /* lateral-lemniscus-t-4.xml in Resources */,
-				32FB6621171FDF0B005E6DE6 /* lateral-lemniscus-t-5.xml in Resources */,
-				32FB6622171FDF0B005E6DE6 /* lateral-lemniscus-t-6.xml in Resources */,
-				32FB6623171FDF0B005E6DE6 /* lateral-lemniscus-t-7.xml in Resources */,
-				32FB6624171FDF0B005E6DE6 /* lateral-reticular-n-1.xml in Resources */,
-				32FB6625171FDF0B005E6DE6 /* lateral-reticular-n-2.xml in Resources */,
 				32FF12391A46F57500CEAE55 /* lateral-lemniscus-t-6.json in Resources */,
-				32FB6626171FDF0B005E6DE6 /* lateral-vestibular-n-3.xml in Resources */,
-				32FB6627171FDF0B005E6DE6 /* lateral-vestibular-n-4.xml in Resources */,
-				32FB6628171FDF0B005E6DE6 /* locus-ceruleus-n-5.xml in Resources */,
-				32FB6629171FDF0B005E6DE6 /* locus-ceruleus-n-6.xml in Resources */,
 				32FF128B1A46F57500CEAE55 /* spinal-trigeminal-n-3.json in Resources */,
 				32FF11F71A46F57500CEAE55 /* anterolateral-system-t-2.json in Resources */,
-				32FB662B171FDF0B005E6DE6 /* medial-geniculate-n-8.xml in Resources */,
 				32FF12741A46F57500CEAE55 /* principal-n-4.json in Resources */,
-				32FB662C171FDF0B005E6DE6 /* medial-lemniscus-t-1.xml in Resources */,
-				32FB662D171FDF0B005E6DE6 /* medial-lemniscus-t-2.xml in Resources */,
-				32FB662E171FDF0B005E6DE6 /* medial-lemniscus-t-3.xml in Resources */,
-				32FB662F171FDF0B005E6DE6 /* medial-lemniscus-t-4.xml in Resources */,
 				32FF12731A46F57500CEAE55 /* posterior-spinocerebellar-t-1.json in Resources */,
-				32FB6630171FDF0B005E6DE6 /* medial-lemniscus-t-5.xml in Resources */,
-				32FB6631171FDF0B005E6DE6 /* medial-lemniscus-t-6.xml in Resources */,
-				32FB6632171FDF0B005E6DE6 /* medial-lemniscus-t-7.xml in Resources */,
-				32FB6633171FDF0B005E6DE6 /* medial-lemniscus-t-8.xml in Resources */,
-				32FB6634171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-0.xml in Resources */,
-				32FB6635171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-1.xml in Resources */,
 				32FF120D1A46F57500CEAE55 /* corticospinal-t-1.json in Resources */,
-				32FB6636171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-2.xml in Resources */,
-				32FB6637171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-3.xml in Resources */,
-				32FB6638171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-4.xml in Resources */,
 				32FF11EF1A46F57500CEAE55 /* anterior-corticospinal-t-0.json in Resources */,
-				32FB6639171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-5.xml in Resources */,
 				32FF123E1A46F57500CEAE55 /* lateral-vestibular-n-4.json in Resources */,
-				32FB663A171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-6.xml in Resources */,
-				32FB663B171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-7.xml in Resources */,
-				32FB663C171FDF0B005E6DE6 /* medial-longitudinal-fasciculus-t-8.xml in Resources */,
-				32FB663D171FDF0B005E6DE6 /* medial-motor-n-0.xml in Resources */,
 				32FF127B1A46F57500CEAE55 /* rubrospinal-t-1.json in Resources */,
-				32FB663E171FDF0B005E6DE6 /* medial-vestibular-n-2.xml in Resources */,
-				32FB663F171FDF0B005E6DE6 /* medial-vestibular-n-3.xml in Resources */,
 				32FF125D1A46F57500CEAE55 /* middle-cerebellar-peduncle-m-6.json in Resources */,
-				32FB6640171FDF0B005E6DE6 /* medial-vestibular-n-4.xml in Resources */,
-				32FB6641171FDF0B005E6DE6 /* mesencephalic-n-5.xml in Resources */,
-				32FB6642171FDF0B005E6DE6 /* mesencephalic-n-6.xml in Resources */,
 				32FF12A31A46F57500CEAE55 /* ventral-trigeminothalamic-t-3.json in Resources */,
-				32FB6643171FDF0B005E6DE6 /* mesencephalic-n-7.xml in Resources */,
-				32FB6644171FDF0B005E6DE6 /* mesencephalic-n-8.xml in Resources */,
-				32FB6648171FDF0B005E6DE6 /* nucleus-ambiguus-n-1.xml in Resources */,
-				32FB6649171FDF0B005E6DE6 /* nucleus-ambiguus-n-2.xml in Resources */,
 				32FF12701A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-4.json in Resources */,
 				32B9A84B18A7471A0027805F /* superior-vestibular-n-overlay-back.png in Resources */,
-				32FB664A171FDF0B005E6DE6 /* nucleus-centralis-superior-n-6.xml in Resources */,
-				32FB664B171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-6.xml in Resources */,
-				32FB664C171FDF0B005E6DE6 /* nucleus-raphe-dorsalis-n-7.xml in Resources */,
-				32FB664D171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-3.xml in Resources */,
-				32FB664E171FDF0B005E6DE6 /* nucleus-raphe-magnus-n-4.xml in Resources */,
-				32FB664F171FDF0B005E6DE6 /* nucleus-raphe-obscurus-n-2.xml in Resources */,
-				32FB6650171FDF0B005E6DE6 /* nucleus-raphe-pallidus-n-3.xml in Resources */,
 				32FF126F1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-3.json in Resources */,
-				32FB6651171FDF0B005E6DE6 /* nucleus-raphe-pontis-n-5.xml in Resources */,
-				32FB6652171FDF0B005E6DE6 /* oculomotor-n-8.xml in Resources */,
-				32FB6653171FDF0B005E6DE6 /* optic-t-8.xml in Resources */,
-				32FB6654171FDF0B005E6DE6 /* periaqueductal-grey-?-6.xml in Resources */,
-				32FB6655171FDF0B005E6DE6 /* periaqueductal-grey-?-7.xml in Resources */,
-				32FB6656171FDF0B005E6DE6 /* periaqueductal-grey-?-8.xml in Resources */,
 				32FF12821A46F57500CEAE55 /* rubrospinal-t-8.json in Resources */,
-				32FB6657171FDF0B005E6DE6 /* pontine-n-4.xml in Resources */,
-				32FB6658171FDF0B005E6DE6 /* pontine-n-5.xml in Resources */,
-				32FB6659171FDF0B005E6DE6 /* pontine-n-6.xml in Resources */,
-				32FB665A171FDF0B005E6DE6 /* pontocerebellar-fibers-t-6.xml in Resources */,
-				32FB665B171FDF0B005E6DE6 /* posterior-cochlear-n-3.xml in Resources */,
 				32FF126E1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-2.json in Resources */,
 				32FF12081A46F57500CEAE55 /* cerebral-aqueduct-m-6.json in Resources */,
-				32FB665C171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-1.xml in Resources */,
-				32FB665D171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-2.xml in Resources */,
-				32FB665E171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-3.xml in Resources */,
 				32FF12761A46F57500CEAE55 /* pyramidal-decussation-m-0.json in Resources */,
-				32FB665F171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-4.xml in Resources */,
 				32FF12A11A46F57500CEAE55 /* ventral-trigeminothalamic-t-1.json in Resources */,
-				32FB6660171FDF0B005E6DE6 /* posterior-longitudinal-fasciculus-t-5.xml in Resources */,
-				32FB6661171FDF0B005E6DE6 /* posterior-spinocerebellar-t-0.xml in Resources */,
 				32FF12401A46F57500CEAE55 /* locus-ceruleus-n-6.json in Resources */,
-				32FB6662171FDF0B005E6DE6 /* posterior-spinocerebellar-t-1.xml in Resources */,
-				32FB6663171FDF0B005E6DE6 /* principal-n-4.xml in Resources */,
-				32FB6664171FDF0B005E6DE6 /* principal-n-5.xml in Resources */,
-				32FB6665171FDF0B005E6DE6 /* pyramidal-decussation-m-0.xml in Resources */,
-				32FB6666171FDF0B005E6DE6 /* red-n-8.xml in Resources */,
-				32FB6667171FDF0B005E6DE6 /* reticulospinal-fibers-t-0.xml in Resources */,
-				32FB6668171FDF0B005E6DE6 /* reticulotegmental-n-5.xml in Resources */,
-				32FB6669171FDF0B005E6DE6 /* rubrospinal-t-0.xml in Resources */,
 				32FF11F31A46F57500CEAE55 /* anterior-spinocerebellar-t-3.json in Resources */,
 				32FF12951A46F57500CEAE55 /* tectospinal-t-0.json in Resources */,
-				32FB666A171FDF0B005E6DE6 /* rubrospinal-t-1.xml in Resources */,
-				32FB666B171FDF0B005E6DE6 /* rubrospinal-t-2.xml in Resources */,
-				32FB666C171FDF0B005E6DE6 /* rubrospinal-t-3.xml in Resources */,
-				32FB666D171FDF0B005E6DE6 /* rubrospinal-t-4.xml in Resources */,
 				32FF129D1A46F57500CEAE55 /* tectospinal-t-8.json in Resources */,
-				32FB666E171FDF0B005E6DE6 /* rubrospinal-t-5.xml in Resources */,
 				32FF12551A46F57500CEAE55 /* medial-vestibular-n-3.json in Resources */,
-				32FB666F171FDF0B005E6DE6 /* rubrospinal-t-6.xml in Resources */,
-				32FB6670171FDF0B005E6DE6 /* rubrospinal-t-7.xml in Resources */,
-				32FB6671171FDF0B005E6DE6 /* rubrospinal-t-8.xml in Resources */,
-				32FB6672171FDF0B005E6DE6 /* salivatory-n-4.xml in Resources */,
-				32FB6673171FDF0B005E6DE6 /* solitary-n-1.xml in Resources */,
-				32FB6674171FDF0B005E6DE6 /* solitary-n-2.xml in Resources */,
-				32FB6675171FDF0B005E6DE6 /* solitary-n-3.xml in Resources */,
-				32FB6676171FDF0B005E6DE6 /* solitary-n-4.xml in Resources */,
-				32FB6677171FDF0B005E6DE6 /* spinal-trigeminal-n-0.xml in Resources */,
 				32FF123F1A46F57500CEAE55 /* locus-ceruleus-n-5.json in Resources */,
 				32FF12311A46F57500CEAE55 /* inferior-olivary-n-2.json in Resources */,
 				32FF12031A46F57500CEAE55 /* central-tegmental-t-5.json in Resources */,
-				32FB6678171FDF0B005E6DE6 /* spinal-trigeminal-n-1.xml in Resources */,
 				32FF12641A46F57500CEAE55 /* nucleus-raphe-magnus-n-4.json in Resources */,
-				32FB6679171FDF0B005E6DE6 /* spinal-trigeminal-n-2.xml in Resources */,
-				32FB667A171FDF0B005E6DE6 /* spinal-trigeminal-n-3.xml in Resources */,
-				32FB667B171FDF0B005E6DE6 /* spinal-trigeminal-n-4.xml in Resources */,
-				32FB667C171FDF0B005E6DE6 /* spinal-trigeminal-t-0.xml in Resources */,
 				32FF12061A46F57500CEAE55 /* central-tegmental-t-8.json in Resources */,
-				32FB667D171FDF0B005E6DE6 /* spinal-trigeminal-t-1.xml in Resources */,
-				32FB667E171FDF0B005E6DE6 /* spinal-trigeminal-t-2.xml in Resources */,
 				32FF12691A46F57500CEAE55 /* pontine-n-4.json in Resources */,
-				32FB667F171FDF0B005E6DE6 /* spinal-trigeminal-t-3.xml in Resources */,
-				32FB6680171FDF0B005E6DE6 /* spinal-trigeminal-t-4.xml in Resources */,
-				32FB6681171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-7.xml in Resources */,
-				32FB6682171FDF0B005E6DE6 /* substantia-nigra:-pars-compacta-?-8.xml in Resources */,
-				32FB6683171FDF0B005E6DE6 /* substantia-nigra:-pars-reticulata-?-8.xml in Resources */,
-				32FB6684171FDF0B005E6DE6 /* superior-cerebellar-peduncle-m-6.xml in Resources */,
-				32FB6686171FDF0B005E6DE6 /* superior-colliculus-m-8.xml in Resources */,
-				32FB6687171FDF0B005E6DE6 /* superior-olive-?-4.xml in Resources */,
-				32FB6688171FDF0B005E6DE6 /* superior-olive-?-5.xml in Resources */,
-				32FB6689171FDF0B005E6DE6 /* superior-vestibular-n-4.xml in Resources */,
-				32FB668A171FDF0B005E6DE6 /* tectospinal-t-0.xml in Resources */,
 				32FF127A1A46F57500CEAE55 /* rubrospinal-t-0.json in Resources */,
 				32FF127E1A46F57500CEAE55 /* rubrospinal-t-4.json in Resources */,
-				32FB668B171FDF0B005E6DE6 /* tectospinal-t-1.xml in Resources */,
-				32FB668C171FDF0B005E6DE6 /* tectospinal-t-2.xml in Resources */,
-				32FB668D171FDF0B005E6DE6 /* tectospinal-t-3.xml in Resources */,
-				32FB668E171FDF0B005E6DE6 /* tectospinal-t-4.xml in Resources */,
-				32FB668F171FDF0B005E6DE6 /* tectospinal-t-5.xml in Resources */,
-				32FB6690171FDF0B005E6DE6 /* tectospinal-t-6.xml in Resources */,
-				32FB6691171FDF0B005E6DE6 /* tectospinal-t-7.xml in Resources */,
-				32FB6692171FDF0B005E6DE6 /* tectospinal-t-8.xml in Resources */,
-				32FB6693171FDF0B005E6DE6 /* tegmental-decussations-?-8.xml in Resources */,
-				32FB6694171FDF0B005E6DE6 /* trapezoid-body-?-4.xml in Resources */,
-				32FB6695171FDF0B005E6DE6 /* trochlear-n-7.xml in Resources */,
-				32FB6696171FDF0B005E6DE6 /* trigeminal-motor-n-4.xml in Resources */,
-				32FB6697171FDF0B005E6DE6 /* trigeminal-motor-n-5.xml in Resources */,
-				32FB6698171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-1.xml in Resources */,
 				32FF12221A46F57500CEAE55 /* fourth-ventricle-m-3.json in Resources */,
-				32FB6699171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-2.xml in Resources */,
-				32FB669A171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-3.xml in Resources */,
-				32FB669B171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-4.xml in Resources */,
 				32FF12141A46F57500CEAE55 /* corticospinal-t-8.json in Resources */,
-				32FB669C171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-5.xml in Resources */,
-				32FB669D171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-6.xml in Resources */,
-				32FB669E171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-7.xml in Resources */,
-				32FB669F171FDF0B005E6DE6 /* ventral-trigeminothalamic-t-8.xml in Resources */,
-				32FB66A0171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml in Resources */,
-				32FB66A1171FDF0B005E6DE6 /* vi-abducens-cn-4.xml in Resources */,
 				32FF11F21A46F57500CEAE55 /* anterior-spinocerebellar-t-2.json in Resources */,
 				32FF12811A46F57500CEAE55 /* rubrospinal-t-7.json in Resources */,
-				32FB66A2171FDF0B005E6DE6 /* vii-facial-cn-4.xml in Resources */,
 				32FF12621A46F57500CEAE55 /* nucleus-raphe-dorsalis-n-7.json in Resources */,
 				326F878F17212522008E923E /* locked-in-mug.png in Resources */,
 				32FF126D1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-1.json in Resources */,
-				326F87931721360F008E923E /* middle-cerebellar-peduncle-m-4.xml in Resources */,
-				326F87941721360F008E923E /* middle-cerebellar-peduncle-m-5.xml in Resources */,
-				326F87951721360F008E923E /* middle-cerebellar-peduncle-m-6.xml in Resources */,
-				326F879717213702008E923E /* superior-cerebellar-peduncle-m-7.xml in Resources */,
 				32FF12371A46F57500CEAE55 /* lateral-lemniscus-t-4.json in Resources */,
 				32C46220176CE0FF00B55189 /* glass-stem-0.png in Resources */,
 				32FF12361A46F57500CEAE55 /* interpeduncular-n-8.json in Resources */,

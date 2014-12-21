@@ -10,7 +10,7 @@
 #import <UIView+Positioning.h>
 #import <SVProgressHUD.h>
 
-#define LOAD_TIME 5
+#define LOAD_TIME 2
 
 @implementation BSPage0ViewController
 
@@ -39,7 +39,7 @@
     [self.backgroundImageView addSubview:self.fuckometerView];
     
     [self.fuckometerView beginLoadingWithDuration:LOAD_TIME andCallback:^{
-        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [UIView animateWithDuration:LOAD_TIME/2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [self.fuckometerView setAlpha:0];
         } completion:^(BOOL finished) {
             
@@ -49,7 +49,7 @@
             [self.backgroundOverlayImageView setAlpha:0.0];
             [self.backgroundImageView addSubview:self.backgroundOverlayImageView];
             
-            [UIView animateWithDuration:0.75 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [UIView animateWithDuration:LOAD_TIME/2 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 [self.backgroundOverlayImageView setAlpha:1];
                 
             } completion:^(BOOL finished) {
@@ -61,7 +61,7 @@
                 self.tagImageView.centerX += amoutToMoveTag;
                 [self.backgroundImageView addSubview:self.tagImageView];
                 
-                [UIView animateWithDuration:0.75 delay:0 usingSpringWithDamping:1 initialSpringVelocity:0.1 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+                [UIView animateWithDuration:LOAD_TIME/2 delay:0 usingSpringWithDamping:1 initialSpringVelocity:0.1 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
                     
                     self.tagImageView.centerX -= amoutToMoveTag;
                     
@@ -141,7 +141,7 @@
     
 }
 
--(void)askUserIfTheyWantToSeeTheTutorial
+- (void)askUserIfTheyWantToSeeTheTutorial
 {
     if (![self.view viewWithTag:8008]) {
         BSTutorialImageView *tutorialView = [BSTutorialImageView askTutorial];
@@ -188,7 +188,7 @@
     }
 }
 
--(void)viewDidDisappear:(BOOL)animated
+- (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
     [SVProgressHUD dismiss];

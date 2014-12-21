@@ -9,37 +9,25 @@
 #import "BSStructure.h"
 
 @implementation BSStructure
-{
-    NSXMLParser *parser;
-    NSMutableString *constructionString;
-    NSMutableArray *currentPoints;
-    NSMutableArray *currentPaths;
-    
-    NSInteger currentSectionNumber;
-    CGFloat currentX;
-    CGFloat currentY;
-    BOOL isParsingStuctureName;
-    BOOL isParsingSection;
-    BOOL isParsingPath;
-    BOOL isParsingPoint;
-    BOOL isParsingX;
-    BOOL isParsingY;
-}
 
 - (instancetype)initWithName:(NSString *)name andType:(BSStructureType)type
 {
-    
-    if (self = [super init]) {
+    if (self = [super init])
+    {
         self.structureName = name;
         self.structureType = type;
         self.conventionalName = [BSStructure getConventionalNameWithName:name andType:type];
 
-        self.structurePaths = [[NSMutableArray alloc] init];
-        self.arteryImages = [[NSMutableArray alloc] initWithArray:@[@"", @"", @"", @"", @"", @"", @"", @"", @""]];
-
+        // [self generateStructurePathsFromXML];
+        if (type == BSStructureTypeArtery) {
+            // Arteries are the only ones who have artery images
+            self.arteryImages = [[NSMutableArray alloc] initWithArray:@[@"", @"", @"", @"", @"", @"", @"", @"", @""]];
+        }else{
+            // Arteries don't have structurePaths, so only look for path data from non-arteries
+            self.structurePaths = [[NSMutableArray alloc] init];
+            [self generateStructurePathsFromJSON];
+        }
         
-//        [self generateStructurePathsFromXML];
-        [self generateStructurePathsFromJSON];
         [self generateImageDictionary];
     }
     return self;
@@ -53,11 +41,6 @@
     {
         self.structureName = [coder decodeObjectForKey:@"structureName"];
         self.structureDescription = [coder decodeObjectForKey:@"structureDescription"];
-        self.arteryImages = [coder decodeObjectForKey:@"arteryImages"];
-        self.structurePaths = [coder decodeObjectForKey:@"structurePaths"];
-        self.stemViewOverlayFront = [coder decodeObjectForKey:@"stemViewOverlayFront"];
-        self.stemViewOverlayBack = [coder decodeObjectForKey:@"stemViewOverlayBack"];
-        self.stemViewOverlaySide = [coder decodeObjectForKey:@"stemViewOverlaySide"];
         self.conventionalName = [coder decodeObjectForKey:@"conventionalName"];
         self.structureType = (BSStructureType)[coder decodeIntegerForKey:@"structureType"];
 
@@ -69,11 +52,6 @@
 {
     [aCoder encodeObject:self.structureName forKey:@"structureName"];
     [aCoder encodeObject:self.structureDescription forKey:@"structureDescription"];
-    [aCoder encodeObject:self.arteryImages forKey:@"arteryImages"];
-    [aCoder encodeObject:self.structurePaths forKey:@"structurePaths"];
-    [aCoder encodeObject:self.stemViewOverlayFront forKey:@"stemViewOverlayFront"];
-    [aCoder encodeObject:self.stemViewOverlayBack forKey:@"stemViewOverlayBack"];
-    [aCoder encodeObject:self.stemViewOverlaySide forKey:@"stemViewOverlaySide"];
     [aCoder encodeObject:self.conventionalName forKey:@"conventionalName"];
     [aCoder encodeInteger:self.structureType forKey:@"structureType"];
 }
@@ -145,18 +123,7 @@
 {
     for (NSNumber *number in indicies) {
         NSString *tmp = [NSString stringWithFormat:@"%@-%d.png",name, number.integerValue];
-        _arteryImages[number.integerValue] = tmp;
-    }
-}
-
-- (void)generateStructurePathsFromXML
-{
-    for (NSInteger i = 0; i <= NUMBER_OF_SECTIONS; i++) {
-        currentSectionNumber = i;
-        NSString *xmlPath = [NSString stringWithFormat:@"%@-%ld.xml", _conventionalName, (long)i];
-        if ([self doesFileExsist:xmlPath]) {
-            [self addXMLFilePath:[NSString stringWithFormat:@"%@/%@",[[NSBundle mainBundle] resourcePath], xmlPath]];
-        }
+        self.arteryImages[number.integerValue] = [tmp copy];
     }
 }
 
@@ -166,12 +133,13 @@
     
     for (NSInteger sectionNumber = 0; sectionNumber <= NUMBER_OF_SECTIONS; sectionNumber++) {
         NSString *jsonPath = [NSString stringWithFormat:@"%@-%ld.json", self.conventionalName, (long)sectionNumber];
-        NSString *fileToFind = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], jsonPath];
         
-        if ([[NSFileManager defaultManager] fileExistsAtPath:fileToFind]) {
-
-            UIBezierPath *loadedPathData = [UIBezierPathSerialization bezierPathWithData:[NSData dataWithContentsOfFile:fileToFind] options:0 error:nil];
+        if ([self doesFileExsist:jsonPath]) {
+            
+            NSString *fileFound = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], jsonPath];
+            UIBezierPath *loadedPathData = [UIBezierPathSerialization bezierPathWithData:[NSData dataWithContentsOfFile:fileFound] options:0 error:&error];
             if (error) {NSLog(@"%@", error.debugDescription);}
+            
             BSStructurePath *newStructurePath = [[BSStructurePath alloc] init];
             [newStructurePath setPathData:loadedPathData];
             [newStructurePath setSectionNumber:sectionNumber];
@@ -187,15 +155,15 @@
 
 - (void)generateImageDictionary
 {
-    NSString *tmpStr = [NSString stringWithFormat:@"%@-overlay-back.png", _conventionalName];
+    NSString *tmpStr = [NSString stringWithFormat:@"%@-overlay-back.png", self.conventionalName];
     if ([self doesFileExsist:tmpStr]) {
         self.stemViewOverlayBack = tmpStr;
     }
-    tmpStr = [NSString stringWithFormat:@"%@-overlay-side.png", _conventionalName];
+    tmpStr = [NSString stringWithFormat:@"%@-overlay-side.png", self.conventionalName];
     if ([self doesFileExsist:tmpStr]) {
         self.stemViewOverlaySide = tmpStr;
     }
-    tmpStr = [NSString stringWithFormat:@"%@-overlay-front.png", _conventionalName];
+    tmpStr = [NSString stringWithFormat:@"%@-overlay-front.png", self.conventionalName];
     if ([self doesFileExsist:tmpStr]) {
         self.stemViewOverlayFront = tmpStr;
     }
@@ -215,80 +183,6 @@
 - (BOOL)hasArteryInSectionNumber:(NSInteger)num
 {
     return [self.arteryImages[num] length] != 0;
-}
-
-#pragma mark NSXMLParser Methods
-
-- (void)addXMLFilePath:(NSString *)xmlFilePath
-{
-    constructionString    = [NSMutableString new];
-    currentPoints         = [NSMutableArray new];
-    currentPaths          = [NSMutableArray new];
-
-    isParsingStuctureName = isParsingSection = isParsingPath = isParsingPoint = isParsingX = isParsingY = NO;
-
-    parser = [[NSXMLParser alloc] initWithData:[NSData dataWithContentsOfFile:xmlFilePath]];
-    [parser setDelegate:self];
-    [parser parse];
-}
-
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict {
-    if ([elementName isEqualToString:@"section"]) {
-        isParsingSection = YES;
-    }else if ([elementName isEqualToString:@"path"]) {
-        isParsingPath = YES;
-    }else if ([elementName isEqualToString:@"point"]) {
-        isParsingPoint = YES;
-    }else if([elementName isEqualToString:@"x"]){
-        isParsingX = YES;
-    }else if([elementName isEqualToString:@"y"]){
-        isParsingY = YES;
-    }
-}
-
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)character{
-    if (isParsingSection) {
-        [constructionString appendString:character];
-    }else if (isParsingPath && isParsingPoint) {
-        if (isParsingX) {
-            [constructionString appendString:character];
-        }else if (isParsingY){
-            [constructionString appendString:character];
-        }
-    }
-}
-
-- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
-{
-    if ([elementName isEqualToString:@"structure"]) {
-        // Finished parsing a BSStructurePath
-        BSStructurePath *newStructurePath = [[BSStructurePath alloc] init];
-        [newStructurePath setPath:[currentPaths copy]];
-        [newStructurePath setSectionNumber:currentSectionNumber];
-        [self.structurePaths addObject:newStructurePath];
-        
-    }else if ([elementName isEqualToString:@"section"]) {
-        [constructionString setString:@""];
-        isParsingSection = NO;
-    }else if ([elementName isEqualToString:@"path"]) {
-        [currentPaths addObject:[currentPoints copy]];
-        [currentPoints removeAllObjects];
-        [constructionString setString:@""];
-        isParsingPath = NO;
-    }else if ([elementName isEqualToString:@"point"]) {
-        NSValue *point = [NSValue valueWithCGPoint:CGPointMake(currentX, currentY)];
-        [currentPoints addObject:point];
-        [constructionString setString:@""];
-        isParsingPoint = NO;
-    }else if([elementName isEqualToString:@"x"]){
-        currentX = [constructionString floatValue]/CAPTUREDEVICESCALEFACTOR;
-        [constructionString setString:@""];
-        isParsingX = NO;
-    }else if([elementName isEqualToString:@"y"]){
-        currentY = [constructionString floatValue]/CAPTUREDEVICESCALEFACTOR;
-        [constructionString setString:@""];
-        isParsingY = NO;
-    }
 }
 
 - (CAShapeLayer *)shapeLayerForSectionNumber:(NSInteger)sectionNumber andBounds:(CGRect)bounds

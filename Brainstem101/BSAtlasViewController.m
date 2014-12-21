@@ -101,7 +101,7 @@
 
     [self resetEverything];
     
-    [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self updateFadedCells];
         [self.indexTable setAlpha:1];
         [self.searchImageView setAlpha:1];

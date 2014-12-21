@@ -9,7 +9,7 @@
 #import "BSStructurePath.h"
 #import <UIBezierPathSerialization.h>
 
-@interface BSStructure : NSObject <NSCoding, NSXMLParserDelegate>
+@interface BSStructure : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSString            *structureName;
 @property (strong, nonatomic) NSString            *structureDescription;
@@ -32,9 +32,7 @@
 
 - (CAShapeLayer *)shapeLayerForSectionNumber:(NSInteger)sectionNumber andBounds:(CGRect)bounds;
 
-- (void)addXMLFilePath:(NSString *)xmlFilePath;
 - (void)addArteryNamed:(NSString *)name forIndecies:(NSArray *)indicies;
-- (void)generateStructurePaths;
 
 - (BSStructurePath *)structurePathInSection:(NSInteger)sectionNumber;
 - (BOOL)hasArteryInSectionNumber:(NSInteger)num;

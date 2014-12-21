@@ -16,8 +16,6 @@
     
     if (self = [super init])
     {
-
-        
         self.Nuclei          = [NSMutableArray new];
         self.Tracts          = [NSMutableArray new];
         self.Arteries        = [NSMutableArray new];
@@ -34,7 +32,7 @@
     return self;
 }
 
--(void)addNuclei
+- (void)addNuclei
 {
     
     BSStructure *n0 = [[BSStructure alloc] initWithName:@"Abducens Nucleus" andType:BSStructureTypeNucleus];
@@ -206,7 +204,7 @@
     
 }
 
--(void) addTracts{
+-(void)addTracts{
     
     BSStructure *t1 = [[BSStructure alloc] initWithName:@"Anterior Corticospinal Tract" andType:BSStructureTypeTract];
     [t1 setStructureDescription:@"Part of the medial motor system, is responsible for motor control from primary motor cortex and supplementry motor area.  ACST fibers control cervical and thoracic trunk muscles. While most of the fibers of the corticospinal tract decussate at the medullary pyramidal decussation, forming the LATERAL Corticospinal Tract, The ANTERIOR Corticospinal Tract descends uncrossed until it reaches the spinal cord level of innervation."];

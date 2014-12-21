@@ -8,8 +8,6 @@
 
 #import "BSModel.h"
 
-
-
 @implementation BSModel
 
 + (instancetype)sharedModel
