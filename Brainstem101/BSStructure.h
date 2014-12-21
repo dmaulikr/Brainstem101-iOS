@@ -18,10 +18,14 @@
 @property (strong, nonatomic) NSString            *conventionalName;
 @property (strong, nonatomic) BSStructurePath     *currentStructurePath;
 @property (assign, nonatomic) BSStructureType     structureType;
+@property (strong, nonatomic) CAShapeLayer        *shapeLayer;
 
-- (id)          initWithName:(NSString *)name andType:(BSStructureType)type;
+- (instancetype)initWithName:(NSString *)name andType:(BSStructureType)type;
 
-+ (NSString *)  getConventionalNameWithName:(NSString *)name andType:(BSStructureType)type;
++ (CGPathRef)newScaledPath:(CGPathRef)path toRect:(CGRect)rect;
++ (NSString *)getConventionalNameWithName:(NSString *)name andType:(BSStructureType)type;
+
+- (CAShapeLayer *)shapeLayerForSectionNumber:(NSInteger)sectionNumber andBounds:(CGRect)bounds;
 
 - (void)        addXMLFilePath:(NSString *)xmlFilePath;
 - (void)        addArteryNamed:(NSString *) name forIndecies:(NSArray *) indicies;

@@ -278,7 +278,6 @@
 		32782F0E17B4A701008C072D /* principal-sensory-nucleus-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6317B4A701008C072D /* principal-sensory-nucleus-side.png */; };
 		32782F0F17B4A701008C072D /* quiz-background-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6417B4A701008C072D /* quiz-background-side.png */; };
 		32782F1017B4A701008C072D /* superior-&-inferior-colliculi-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */; };
-		3278A65E16719CE50068EF48 /* BSDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3278A65D16719CE50068EF48 /* BSDetailsView.m */; };
 		327CE45B170ADE710020F918 /* foville-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE456170ADE710020F918 /* foville-sec.png */; };
 		327CE45C170ADE710020F918 /* locked-in-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE457170ADE710020F918 /* locked-in-sec.png */; };
 		327CE45D170ADE710020F918 /* millard-gubler-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE458170ADE710020F918 /* millard-gubler-sec.png */; };
@@ -922,8 +921,6 @@
 		32782E6317B4A701008C072D /* principal-sensory-nucleus-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-sensory-nucleus-side.png"; sourceTree = "<group>"; };
 		32782E6417B4A701008C072D /* quiz-background-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-side.png"; sourceTree = "<group>"; };
 		32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-&-inferior-colliculi-side.png"; sourceTree = "<group>"; };
-		3278A65C16719CE50068EF48 /* BSDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDetailsView.h; sourceTree = "<group>"; };
-		3278A65D16719CE50068EF48 /* BSDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDetailsView.m; sourceTree = "<group>"; };
 		327CE456170ADE710020F918 /* foville-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-sec.png"; sourceTree = "<group>"; };
 		327CE457170ADE710020F918 /* locked-in-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-sec.png"; sourceTree = "<group>"; };
 		327CE458170ADE710020F918 /* millard-gubler-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "millard-gubler-sec.png"; sourceTree = "<group>"; };
@@ -2157,8 +2154,6 @@
 				32E77B4B16326B3A0077D0B4 /* BSStemView.m */,
 				32638703176CDE2100AAA785 /* BSGlassStemView.h */,
 				32638704176CDE2100AAA785 /* BSGlassStemView.m */,
-				3278A65C16719CE50068EF48 /* BSDetailsView.h */,
-				3278A65D16719CE50068EF48 /* BSDetailsView.m */,
 				32AFEDF716D9D183006A3101 /* BSDrawView.h */,
 				32AFEDF816D9D183006A3101 /* BSDrawView.m */,
 				3213C983170D708A000DF667 /* BSFuckometerView.h */,
@@ -3033,7 +3028,6 @@
 				32E4D2911651AACB0051AE2D /* BSModel.m in Sources */,
 				328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */,
 				328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */,
-				3278A65E16719CE50068EF48 /* BSDetailsView.m in Sources */,
 				32B9A84E18A768EA0027805F /* BSQuizViewController.m in Sources */,
 				3230B659168062C3004A196E /* BSProfileViewController.m in Sources */,
 				32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */,

@@ -346,7 +346,8 @@
     CGPoint point = [sender locationInView:self.view];
     BOOL touchedSectionView = NO;
     
-    for(BSAtlasSectionView *view in allSectionViews){
+    for (BSAtlasSectionView *view in allSectionViews){
+        // If tapped again while already being selected, launch into the profile page
         if (CGRectContainsPoint(view.frame, point)) {
             if (view.section.sectionNumber == selectedSxnView) {
                 [self performSegueWithIdentifier:@"atlas-to-profile" sender:self];

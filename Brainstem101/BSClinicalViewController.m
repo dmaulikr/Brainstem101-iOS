@@ -83,7 +83,7 @@
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.descriptionView setAlpha:0];
     } completion:^(BOOL finished) {
-        [self.descriptionView setText:[currentSyndrome description]];
+        [self.descriptionView setText:[currentSyndrome desc]];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [self.descriptionView setAlpha:1];
         } completion:^(BOOL finished) {

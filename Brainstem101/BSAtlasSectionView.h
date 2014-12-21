@@ -19,9 +19,9 @@
 @property (assign           ) bool        isRotated;
 
 
-+ (BSAtlasSectionView *) atlasSectionViewForSection:(int) number;
++ (BSAtlasSectionView *) atlasSectionViewForSection:(NSInteger)number;
 
-- (id)      initWithFrame:(CGRect)frame andSection:(BSSection *)section;
+- (instancetype)      initWithFrame:(CGRect)frame andSection:(BSSection *)section;
 - (void)    setStructures:(NSArray *)structures;
 - (void)    arteryImageNamed:(NSString *)imageName;
 - (void)    purgeCache;

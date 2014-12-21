@@ -584,13 +584,6 @@
     
 }
 
-- (UIColor *)getColor
-{
-    UIColor *color;
-    color = [UIColor colorWithRed:210/255 green:200/255 blue:124/255 alpha:.55];
-    return color;
-}
-
 @end
 
 

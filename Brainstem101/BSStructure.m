@@ -218,4 +218,35 @@
     }
 }
 
+- (CAShapeLayer *)shapeLayerForSectionNumber:(NSInteger)sectionNumber andBounds:(CGRect)bounds
+{
+    // Shape Rendering
+    CAShapeLayer *tmpLayer = [CAShapeLayer layer];
+    [tmpLayer setFrame:bounds];
+    
+    UIBezierPath *path = [[[self structurePaths] objectAtIndex:sectionNumber] pathData];
+    
+    [tmpLayer setPath:[BSStructure newScaledPath:path.CGPath toRect:bounds]];
+    [tmpLayer setStrokeColor:UIColorFromRGBWithAlpha(0xdcbc76, 1).CGColor];
+    [tmpLayer setFillColor:[UIColor clearColor].CGColor];
+    [tmpLayer setLineWidth:2];
+    [tmpLayer setLineCap:kCALineCapRound];
+    
+
+    return tmpLayer;
+}
+
++ (CGPathRef)newScaledPath:(CGPathRef)path toRect:(CGRect)rect
+{
+    CGFloat individualFrameFactor = (rect.size.height)/CAPTURE_DEVICE_HEIGHT;
+    CGFloat scaleFactor = individualFrameFactor;
+    
+    CGAffineTransform scaleTransform = CGAffineTransformIdentity;
+    scaleTransform = CGAffineTransformScale(scaleTransform, scaleFactor, scaleFactor);
+    
+    CGPathRef scaledPath = CGPathCreateCopyByTransformingPath(path, &scaleTransform);
+    
+    return scaledPath;
+}
+
 @end

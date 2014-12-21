@@ -16,11 +16,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.detailView.title setText:@""];
     [self.sectionView setDelegate:self];
+    [self.structureDetailView setAlwaysBounceVertical:YES];
+    [self didSelectStructure:nil];
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     [self switchToSectionNumber:self.sectionNumber animationStyle:@"fade"];
@@ -39,21 +40,25 @@
     }
 }
 
-- (void)didSelectStructure:(BSStructure *)str
+
+#pragma mark BSSectionViewDelegate
+- (void)didSelectStructure:(BSStructure *)structure
 {
-    [self.detailView.title setText:[str structureName]];
-    
-    NSString *desc = [str structureDescription];
-    if (!desc) {
-        desc = @"";
+    if (structure == nil) {
+        [self.structureDetailView setText:@"Tap a structure above."];
     }
     
-    [self.detailView setData:@{@"image":[NSString stringWithFormat:@"MRI%ld.jpg", (long)self.sectionNumber], @"description": desc}];
-    [self.detailView.collectionView reloadData];
-    [self.detailView.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    NSString *title = [structure structureName];
+    NSString *desc = [structure structureDescription];
+    if (!desc) {
+        desc = @"Description not yet available.";
+    }
+    
+    [self.structureNameLabel setText:title];
+    [self.structureDetailView setText:desc];
 }
 
--(void)switchToSectionNumber:(NSInteger)num animationStyle:(NSString *)animation
+- (void)switchToSectionNumber:(NSInteger)num animationStyle:(NSString *)animation
 {
     originalCenter = self.sectionView.center;
     _sectionNumber = num;
@@ -173,7 +178,7 @@
     }
 }
 
--(NSUInteger)supportedInterfaceOrientations
+- (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }

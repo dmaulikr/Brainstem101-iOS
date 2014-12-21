@@ -18,7 +18,8 @@
     NSOperationQueue *operationQueue;
 }
 
-- (id)initWithFrame:(CGRect)frame andSection:(BSSection *)section{
+- (instancetype)initWithFrame:(CGRect)frame andSection:(BSSection *)section
+{
     self = [super initWithFrame:frame];
     if (self) {
         self.section           = section;
@@ -43,9 +44,8 @@
     return theView;
 }
 
--(void)setStructures:(NSArray *)structures
+- (void)setStructures:(NSArray *)structures
 {
-    
     [operationQueue cancelAllOperations];
     
     for (UIView *subview in _backingView.subviews) {
@@ -68,7 +68,7 @@
      }
 }
 
-- (void) showStructure:(BSStructure *) structure
+- (void)showStructure:(BSStructure *) structure
 {
     UIImageView *structureImageView = structureLayersCache[structure.structureName];
     if (structureImageView) {
@@ -86,13 +86,11 @@
     }
 }
 
-- (UIImage *) drawStructure:(BSStructure *)structure
+- (UIImage *)drawStructure:(BSStructure *)structure
 {
     CGSize retinaSize = self.backingView.bounds.size;
-    retinaSize.height = retinaSize.height * 2;
-    retinaSize.width = retinaSize.width * 2;
     
-    UIGraphicsBeginImageContext(retinaSize);
+    UIGraphicsBeginImageContextWithOptions(retinaSize, NO, 0.0);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
     BSStructurePath *currPath = (structure.structurePaths)[_section.sectionNumber];
@@ -103,7 +101,7 @@
     CGContextSetLineJoin(currentContext, kCGLineJoinRound);
     CGContextSetFlatness(currentContext, 0);
  
-    CGPathRef scaledPath = [self newScaledPath:currPath.pathData.CGPath toRect:self.backingView.bounds];
+    CGPathRef scaledPath = [BSStructure newScaledPath:currPath.pathData.CGPath toRect:self.bounds];
     CGContextAddPath(currentContext, scaledPath);
     CGContextDrawPath(currentContext, kCGPathStroke);
 
@@ -270,19 +268,6 @@
             break;
     }
     return newCenter;
-}
-     
-- (CGPathRef)newScaledPath:(CGPathRef)path toRect:(CGRect) rect
-{
-    CGFloat individualFrameFactor = (rect.size.height*2)/CAPTURE_DEVICE_HEIGHT;
-    CGFloat scaleFactor = individualFrameFactor;
-    
-    CGAffineTransform scaleTransform = CGAffineTransformIdentity;
-    scaleTransform = CGAffineTransformScale(scaleTransform, scaleFactor, scaleFactor);
-    
-    CGPathRef scaledPath = CGPathCreateCopyByTransformingPath(path, &scaleTransform);
-    
-    return scaledPath;
 }
 
 - (void)purgeCache

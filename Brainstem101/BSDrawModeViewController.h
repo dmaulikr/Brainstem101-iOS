@@ -10,7 +10,6 @@
 #import "BSSectionView.h"
 #import "BSStructure.h"
 #import "BSStructurePath.h"
-#import "BSDetailsView.h"
 #import "BSDrawView.h"
 
 @interface BSDrawModeViewController : UIViewController

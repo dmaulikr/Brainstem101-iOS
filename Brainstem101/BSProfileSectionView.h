@@ -11,13 +11,19 @@
 #import "BSStructure.h"
 #import "BSStructurePath.h"
 
+@protocol BSProfileSectionViewDelegate <NSObject>
+
+- (void)didSelectStructure:(BSStructure *)structure;
+
+@end
+
 @interface BSProfileSectionView : UIView
 
-@property (weak, nonatomic) id delegate;
+@property (nonatomic, strong) id<BSProfileSectionViewDelegate> delegate;
 @property (nonatomic, strong) UIImageView *backingView;
-@property (nonatomic, strong) NSMutableArray *currentStructures;
+@property (nonatomic, strong) NSArray *currentStructures;
 @property (nonatomic, strong) BSSection *currentSection;
-@property (assign) BOOL isRotated;
+@property (nonatomic, assign) BOOL isRotated;
 
 - (void) rotateView;
 - (void) rotateViewRight;

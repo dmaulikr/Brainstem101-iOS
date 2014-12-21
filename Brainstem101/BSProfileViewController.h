@@ -13,17 +13,16 @@
 #import "BSSection.h"
 #import "BSStructure.h"
 #import "BSStructurePath.h"
-#import "BSDetailsView.h"
 #import "BSTutorialImageView.h"
 
-@interface BSProfileViewController : UIViewController <UIGestureRecognizerDelegate, BSTutorialImageViewDelegate>
+@interface BSProfileViewController : UIViewController <UIGestureRecognizerDelegate, BSTutorialImageViewDelegate, BSProfileSectionViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundView;
 @property (strong, nonatomic) IBOutlet BSProfileSectionView *sectionView;
-@property (strong, nonatomic) IBOutlet BSDetailsView *detailView;
+@property (strong, nonatomic) IBOutlet UILabel *structureNameLabel;
+@property (strong, nonatomic) IBOutlet UITextView *structureDetailView;
 @property (assign, nonatomic) NSInteger sectionNumber;
 
-- (void)didSelectStructure:(BSStructure *) str;
 - (IBAction)handleRotation:(id)sender;
 - (IBAction)handeSwipe:(UISwipeGestureRecognizer *)sender;
 - (IBAction)goBackToAtlas:(id)sender;
