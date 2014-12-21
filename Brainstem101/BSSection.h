@@ -13,12 +13,12 @@
 @property (assign, nonatomic) NSInteger sectionNumber;
 @property (strong, nonatomic) UIImage *image;
 
-- (id)initWithSectionNumber:(NSInteger) number;
+- (instancetype)initWithSectionNumber:(NSInteger)number;
 
-- (UIImage *) atlasImage;
-- (UIImage *) profileImage;
+- (UIImage *)atlasImage;
+- (UIImage *)profileImage;
 
-+ (BSSection *) atlasSectionNumber:(NSInteger)num;
-+ (BSSection *) profileSectionNumber:(NSInteger)num;
++ (BSSection *)atlasSectionNumber:(NSInteger)num;
++ (BSSection *)profileSectionNumber:(NSInteger)num;
 
 @end

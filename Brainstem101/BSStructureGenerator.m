@@ -14,10 +14,11 @@
     NSOperationQueue *operationQueue;
 }
 
-- (id)init{
-    self = [super init];
-    if (self) {
-        
+- (instancetype)init
+{
+    
+    if (self = [super init])
+    {
         operationQueue = [[NSOperationQueue alloc] init];
         [operationQueue setMaxConcurrentOperationCount:NSOperationQueueDefaultMaxConcurrentOperationCount];
         

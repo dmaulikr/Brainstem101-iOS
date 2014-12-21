@@ -20,12 +20,11 @@
 @property (strong, nonatomic) BSStemView *stemView;
 @property (strong, nonatomic) BSGlassStemView *glassStemView;
 @property (strong, nonatomic) UIImageView *searchImageView;
-@property (strong, nonatomic) UIButton *clinicalButton;
-
-@property (strong, nonatomic) UIButton *backButton;
-
 @property (strong, nonatomic) BSStructure *currentStructure;
-@property (assign, nonatomic) NSInteger stemViewStyle;
+@property (assign, nonatomic) NSInteger selectedSectionNumber;
+
+@property (strong, nonatomic) UIButton *clinicalButton;
+@property (strong, nonatomic) UIButton *backButton;
 
 - (IBAction)handleSingleTap:(UITapGestureRecognizer*)sender;
 - (IBAction)handleSwipe:(UISwipeGestureRecognizer *)sender;

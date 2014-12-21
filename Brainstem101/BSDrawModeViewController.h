@@ -7,14 +7,14 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import "BSSectionView.h"
+#import "BSDrawSectionView.h"
 #import "BSStructure.h"
 #import "BSStructurePath.h"
 #import "BSDrawView.h"
 
 @interface BSDrawModeViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet BSSectionView *sectionView;
+@property (strong, nonatomic) IBOutlet BSDrawSectionView *sectionView;
 @property (strong, nonatomic) IBOutlet BSDrawView *drawView;
 @property (assign, nonatomic) NSInteger sectionNumber;
 @property (strong, nonatomic) NSMutableSet *currentPaths;

@@ -6,21 +6,26 @@
 //  Copyright (c) 2012 Cameron Ehrlich. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
 #import "BSStructure.h"
+
+typedef NS_ENUM(NSUInteger, BSStemViewMode) {
+    BSStemViewModeBack = 0,
+    BSStemViewModeSide,
+    BSStemViewModeFront,
+};
 
 @interface BSStemView : UIView
 
-@property (strong, nonatomic) UIImageView *mainView;
+@property (strong, nonatomic) UIImageView *backgroundView;
 @property (strong, nonatomic) UIImageView *overlayView;
 @property (strong, nonatomic) BSStructure *currentStructure;
+@property (assign, nonatomic, readonly) BSStemViewMode currentViewMode;
+@property (strong, nonatomic) NSDictionary *backgroundImages;
 
--(void) show;
--(void) hide;
+- (void)show;
+- (void)hide;
 
--(void) loadStructure:(BSStructure *) structure;
--(void) stemViewModeNext;
--(void) stemViewMovePrevious;
--(void) removeOverlays;
+- (void)stemViewModeNext;
+- (void)stemViewMovePrevious;
 
 @end

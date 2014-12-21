@@ -10,8 +10,7 @@
 
 @implementation BSSection
 
-
-- (id)initWithSectionNumber:(NSInteger)number
+- (instancetype)initWithSectionNumber:(NSInteger)number
 {
     self = [super init];
     if (self) {

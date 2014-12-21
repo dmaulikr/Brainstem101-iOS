@@ -11,7 +11,6 @@
 		11A9932B162170610016CE48 /* BSStructurePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9932A162170610016CE48 /* BSStructurePath.m */; };
 		12171D7A1EEA42DE9166C7C8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CCC9CE4FF44ACD9FD7B29B /* libPods.a */; };
 		25D18ABD1622CAA600417FBC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D18ABC1622CAA600417FBC /* CoreImage.framework */; };
-		32035459162C0C690079394F /* BSSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203537D162C0C690079394F /* BSSectionView.m */; };
 		32035533162C0CC60079394F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32035532162C0CC60079394F /* MainStoryboard.storyboard */; };
 		320D18561708FD22002D9E15 /* BSPage0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D18551708FD22002D9E15 /* BSPage0ViewController.m */; };
 		320D185B17090556002D9E15 /* BSQuestionGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D185A17090555002D9E15 /* BSQuestionGenerator.m */; };
@@ -402,7 +401,6 @@
 		32E51B7D17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7B17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png */; };
 		32E51B7E17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */; };
 		32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E77B4B16326B3A0077D0B4 /* BSStemView.m */; };
-		32E90EDE176C339000948158 /* BSUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E90EDD176C339000948158 /* BSUploader.m */; };
 		32EDE7A7177102DC006434A5 /* atlas-sxn-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE79E177102DC006434A5 /* atlas-sxn-0.png */; };
 		32EDE7A8177102DC006434A5 /* atlas-sxn-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE79F177102DC006434A5 /* atlas-sxn-1.png */; };
 		32EDE7A9177102DC006434A5 /* atlas-sxn-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A0177102DC006434A5 /* atlas-sxn-2.png */; };
@@ -623,6 +621,7 @@
 		32FB66A0171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65C9171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml */; };
 		32FB66A1171FDF0B005E6DE6 /* vi-abducens-cn-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65CA171FDF0B005E6DE6 /* vi-abducens-cn-4.xml */; };
 		32FB66A2171FDF0B005E6DE6 /* vii-facial-cn-4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */; };
+		32FF11241A46A5B100CEAE55 /* BSDrawSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF11221A46A5B100CEAE55 /* BSDrawSectionView.m */; };
 		32FF6F7617098CBF00B4FB0F /* BSDeficit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF6F7517098CBE00B4FB0F /* BSDeficit.m */; };
 		8179EAE0161D40CF0050D663 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EADF161D40CF0050D663 /* UIKit.framework */; };
 		8179EAE2161D40CF0050D663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EAE1161D40CF0050D663 /* Foundation.framework */; };
@@ -640,8 +639,6 @@
 		11A99329162170610016CE48 /* BSStructurePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStructurePath.h; sourceTree = "<group>"; };
 		11A9932A162170610016CE48 /* BSStructurePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStructurePath.m; sourceTree = "<group>"; };
 		25D18ABC1622CAA600417FBC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		3203537C162C0C690079394F /* BSSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSectionView.h; sourceTree = "<group>"; };
-		3203537D162C0C690079394F /* BSSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSectionView.m; sourceTree = "<group>"; };
 		32035532162C0CC60079394F /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		320D18541708FD22002D9E15 /* BSPage0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPage0ViewController.h; sourceTree = "<group>"; };
 		320D18551708FD22002D9E15 /* BSPage0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPage0ViewController.m; sourceTree = "<group>"; };
@@ -714,7 +711,6 @@
 		3230B658168062C3004A196E /* BSProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileViewController.m; sourceTree = "<group>"; };
 		323A723617773C2900222ECF /* BSTutorialImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTutorialImageView.h; sourceTree = "<group>"; };
 		323A723717773C2900222ECF /* BSTutorialImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTutorialImageView.m; sourceTree = "<group>"; };
-		323BCEEA176BFE59000F8D06 /* BSUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSUploader.h; sourceTree = "<group>"; };
 		323BCF0A176C04A8000F8D06 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		323BCF0C176C04AF000F8D06 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		32490A2818398A030028876A /* BSQuizCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1056,7 +1052,6 @@
 		32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-circumferential-a-overlay-front.png"; sourceTree = "<group>"; };
 		32E77B4A16326B3A0077D0B4 /* BSStemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStemView.h; sourceTree = "<group>"; };
 		32E77B4B16326B3A0077D0B4 /* BSStemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStemView.m; sourceTree = "<group>"; };
-		32E90EDD176C339000948158 /* BSUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSUploader.m; sourceTree = "<group>"; };
 		32EDE79E177102DC006434A5 /* atlas-sxn-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-0.png"; sourceTree = "<group>"; };
 		32EDE79F177102DC006434A5 /* atlas-sxn-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-1.png"; sourceTree = "<group>"; };
 		32EDE7A0177102DC006434A5 /* atlas-sxn-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-2.png"; sourceTree = "<group>"; };
@@ -1279,6 +1274,8 @@
 		32FB65C9171FDF0B005E6DE6 /* vestibulospinal-and-reticulospinal-t-0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vestibulospinal-and-reticulospinal-t-0.xml"; sourceTree = "<group>"; };
 		32FB65CA171FDF0B005E6DE6 /* vi-abducens-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vi-abducens-cn-4.xml"; sourceTree = "<group>"; };
 		32FB65CB171FDF0B005E6DE6 /* vii-facial-cn-4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vii-facial-cn-4.xml"; sourceTree = "<group>"; };
+		32FF11221A46A5B100CEAE55 /* BSDrawSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawSectionView.m; sourceTree = "<group>"; };
+		32FF11231A46A5B100CEAE55 /* BSDrawSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawSectionView.h; sourceTree = "<group>"; };
 		32FF6F7417098CBE00B4FB0F /* BSDeficit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeficit.h; sourceTree = "<group>"; };
 		32FF6F7517098CBE00B4FB0F /* BSDeficit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeficit.m; sourceTree = "<group>"; };
 		64E05366A86D73DF4163D457 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -2144,12 +2141,12 @@
 		32DD438016525569002AAE0F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32FF11231A46A5B100CEAE55 /* BSDrawSectionView.h */,
+				32FF11221A46A5B100CEAE55 /* BSDrawSectionView.m */,
 				32F5A88D176EF24000646E64 /* BSAtlasSectionView.h */,
 				32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */,
 				32C384BE1777A45400333310 /* BSProfileSectionView.h */,
 				32C384BF1777A45400333310 /* BSProfileSectionView.m */,
-				3203537C162C0C690079394F /* BSSectionView.h */,
-				3203537D162C0C690079394F /* BSSectionView.m */,
 				32E77B4A16326B3A0077D0B4 /* BSStemView.h */,
 				32E77B4B16326B3A0077D0B4 /* BSStemView.m */,
 				32638703176CDE2100AAA785 /* BSGlassStemView.h */,
@@ -2200,15 +2197,6 @@
 				321C8EA01711194000517510 /* BSDrawModeViewController.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		32E90EDF176C3F1C00948158 /* Uploader */ = {
-			isa = PBXGroup;
-			children = (
-				323BCEEA176BFE59000F8D06 /* BSUploader.h */,
-				32E90EDD176C339000948158 /* BSUploader.m */,
-			);
-			name = Uploader;
 			sourceTree = "<group>";
 		};
 		32EDE79D177102DC006434A5 /* Atlas */ = {
@@ -2293,7 +2281,6 @@
 				32DD438116526771002AAE0F /* Classes */,
 				32035531162C0C8E0079394F /* Images */,
 				32BAE7BF17181CFC00F04334 /* XML */,
-				32E90EDF176C3F1C00948158 /* Uploader */,
 				8179EAE6161D40CF0050D663 /* Supporting Files */,
 			);
 			path = Brainstem101;
@@ -3023,7 +3010,6 @@
 				8179EB09161D41A50050D663 /* BSStructure.m in Sources */,
 				11A9932B162170610016CE48 /* BSStructurePath.m in Sources */,
 				111250F21622607800644DD6 /* BSStructureGenerator.m in Sources */,
-				32035459162C0C690079394F /* BSSectionView.m in Sources */,
 				32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */,
 				32E4D2911651AACB0051AE2D /* BSModel.m in Sources */,
 				328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */,
@@ -3032,6 +3018,7 @@
 				3230B659168062C3004A196E /* BSProfileViewController.m in Sources */,
 				32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */,
 				327E13051707D0CC00C5D237 /* BSClinicalViewController.m in Sources */,
+				32FF11241A46A5B100CEAE55 /* BSDrawSectionView.m in Sources */,
 				320D18561708FD22002D9E15 /* BSPage0ViewController.m in Sources */,
 				320D185B17090556002D9E15 /* BSQuestionGenerator.m in Sources */,
 				320D70391831F3B4000F6AFA /* BSAboutViewController.m in Sources */,
@@ -3041,7 +3028,6 @@
 				326FB690170BFFA4002CD59B /* BSClinicalCollectionViewSectionCell.m in Sources */,
 				3213C985170D708A000DF667 /* BSFuckometerView.m in Sources */,
 				321C8EA11711194000517510 /* BSDrawModeViewController.m in Sources */,
-				32E90EDE176C339000948158 /* BSUploader.m in Sources */,
 				32CC33B9176C609600000F07 /* BSQuizView.m in Sources */,
 				32638705176CDE2100AAA785 /* BSGlassStemView.m in Sources */,
 				32F5A88F176EF24000646E64 /* BSAtlasSectionView.m in Sources */,

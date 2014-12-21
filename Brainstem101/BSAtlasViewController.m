@@ -10,10 +10,6 @@
 #import "BSProfileViewController.h"
 #import <UIView+Positioning.h>
 
-#define STEMVIEW_STYLE_FRONT 0
-#define STEMVIEW_STYLE_SIDE 1
-#define STEMVIEW_STYLE_FAN 2
-
 @implementation BSAtlasViewController
 {
     NSArray *allSectionViews;
@@ -22,14 +18,11 @@
     NSArray *currentArteries;
     NSArray *currentMiscellaneous;
     NSArray *currentCranialNerves;
-    NSInteger selectedSxnView;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.stemViewStyle = STEMVIEW_STYLE_FRONT;
     
     allSectionViews = @[
                         [BSAtlasSectionView atlasSectionViewForSection:0],
@@ -102,7 +95,7 @@
     }
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 
@@ -133,7 +126,7 @@
     }
 }
 
--(void)backToPage0
+- (void)backToPage0
 {
     [self performSegueWithIdentifier:@"atlas-to-page0" sender:self];
 }
@@ -184,7 +177,7 @@
     }
 }
 
--(void)reloadStructresIntoLocalVariables
+- (void)reloadStructresIntoLocalVariables
 {
     currentNuclei        = [[BSModel sharedModel] Nuclei];
     currentTracts        = [[BSModel sharedModel] Tracts];
@@ -194,7 +187,7 @@
 }
 
 #pragma mark UITableViewDelegates
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"AtlasCell";
     NSString *structureName = [[self currentSectionForType:indexPath.section][indexPath.row] structureName];
@@ -215,19 +208,18 @@
     return cell;
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return NUMBER_OF_SECTIONS;
+    return ATLAS_TABLE_SECTIONS;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [[self currentSectionForType:section] count];
 }
 
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    
     CGRect frame = CGRectMake(0, 0, self.indexTable.frame.size.width, 30);
     UIView *background = [[UIView alloc] initWithFrame:frame];
     [background setBackgroundColor:[UIColor clearColor]];
@@ -262,30 +254,29 @@
     return background;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 23;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 30;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     self.currentStructure = [self currentSectionForType:indexPath.section][indexPath.row];
     [self.stemView show];
     [self.glassStemView hide];
-    [self.stemView loadStructure:_currentStructure];
+    [self.stemView setCurrentStructure:self.currentStructure];
     
     [self.searchBox resignFirstResponder];
     [self.searchBox setAlpha:0.1];
     [self.searchBox setText:@""];
     
-    selectedSxnView = -1;
-    int secNum = 0;
+    self.selectedSectionNumber = -1;
+    NSInteger secNum = 0;
     
     for (BSAtlasSectionView *view in allSectionViews) {
         [view fade];
@@ -294,12 +285,12 @@
         
         if (self.currentStructure.structureType == BSStructureTypeArtery) {
             if ([self.currentStructure hasArteryInSectionNumber:secNum]) {
-                [view arteryImageNamed:[_currentStructure arteryImages][secNum]];
+                [view arteryImageNamed:[self.currentStructure arteryImages][secNum]];
                 [view unfade];
             }
-        }else if ([_currentStructure isInSectionNumber:secNum]) {
+        }else if ([self.currentStructure structurePathInSection:secNum]) {
             [view unfade];
-            [view setStructures:@[_currentStructure]];
+            [view setStructures:@[self.currentStructure]];
         }
         secNum++;
     }
@@ -307,16 +298,16 @@
     [[[self.indexTable cellForRowAtIndexPath:indexPath] textLabel] setTextColor:[UIColor yellowColor]];
 }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [[[self.indexTable cellForRowAtIndexPath:indexPath] textLabel] setTextColor:[UIColor whiteColor]];
 }
 
--(void)selectSectionView:(NSInteger)sxnNum
+- (void)selectSectionView:(NSInteger)sxnNum
 {
-    selectedSxnView = sxnNum;
+    self.selectedSectionNumber = sxnNum;
     
-    [self.glassStemView presentSection:selectedSxnView];
+    [self.glassStemView presentSection:self.selectedSectionNumber];
     [self.stemView hide];
     
     for (BSAtlasSectionView *view in allSectionViews) {
@@ -325,31 +316,31 @@
         [view arteryImageNamed:nil];
     }
     
-    currentNuclei           = [[BSModel sharedModel] getType:BSStructureTypeNucleus inSection:selectedSxnView];
-    currentTracts           = [[BSModel sharedModel] getType:BSStructureTypeTract inSection:selectedSxnView];
-    currentArteries         = [[BSModel sharedModel] getType:BSStructureTypeArtery inSection:selectedSxnView];
-    currentMiscellaneous    = [[BSModel sharedModel] getType:BSStructureTypeMiscellaneous inSection:selectedSxnView];
-    currentCranialNerves    = [[BSModel sharedModel] getType:BSStructureTypeCranialNerve inSection:selectedSxnView];
+    currentNuclei           = [[BSModel sharedModel] getType:BSStructureTypeNucleus inSection:self.selectedSectionNumber];
+    currentTracts           = [[BSModel sharedModel] getType:BSStructureTypeTract inSection:self.selectedSectionNumber];
+    currentArteries         = [[BSModel sharedModel] getType:BSStructureTypeArtery inSection:self.selectedSectionNumber];
+    currentMiscellaneous    = [[BSModel sharedModel] getType:BSStructureTypeMiscellaneous inSection:self.selectedSectionNumber];
+    currentCranialNerves    = [[BSModel sharedModel] getType:BSStructureTypeCranialNerve inSection:self.selectedSectionNumber];
     
     NSArray *tmpArray = [[[currentNuclei arrayByAddingObjectsFromArray:currentTracts] arrayByAddingObjectsFromArray:currentMiscellaneous] arrayByAddingObjectsFromArray:currentCranialNerves];
     
-    [allSectionViews[selectedSxnView] setStructures:tmpArray];
-    [allSectionViews[selectedSxnView] unfade];
+    [allSectionViews[self.selectedSectionNumber] setStructures:tmpArray];
+    [allSectionViews[self.selectedSectionNumber] unfade];
     
-    [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, NUMBER_OF_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, ATLAS_TABLE_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 
 #pragma mark UIGestutureRecognizer Methods
-- (IBAction)handleSingleTap:(UITapGestureRecognizer*)sender {
-    
+- (IBAction)handleSingleTap:(UITapGestureRecognizer*)sender
+{
     CGPoint point = [sender locationInView:self.view];
     BOOL touchedSectionView = NO;
     
     for (BSAtlasSectionView *view in allSectionViews){
         // If tapped again while already being selected, launch into the profile page
         if (CGRectContainsPoint(view.frame, point)) {
-            if (view.section.sectionNumber == selectedSxnView) {
+            if (view.section.sectionNumber == self.selectedSectionNumber) {
                 [self performSegueWithIdentifier:@"atlas-to-profile" sender:self];
                 return;
             }
@@ -480,7 +471,7 @@
         currentMiscellaneous    = tmpMisc;
         currentCranialNerves    = tmpCranialNerves;
         
-        [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, NUMBER_OF_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, ATLAS_TABLE_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 
@@ -488,7 +479,7 @@
 
 -(void)resetEverything
 {
-    selectedSxnView = -1;
+    self.selectedSectionNumber = -1;
     self.currentStructure = nil;
     
     [self.searchBox setText:@""];
@@ -499,8 +490,8 @@
     } completion:nil];
     
     [self.glassStemView hide];
+    [self.stemView setCurrentStructure:nil];
     [self.stemView show];
-    [self.stemView removeOverlays];
     
     for (BSAtlasSectionView *view in allSectionViews) {
         [view unfade];
@@ -515,7 +506,7 @@
         currentCranialNerves.count != [[BSModel sharedModel] CranialNerves].count)
     {
         [self reloadStructresIntoLocalVariables];
-        [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, NUMBER_OF_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.indexTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, ATLAS_TABLE_SECTIONS)] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     
     for (NSIndexPath *path in [self.indexTable indexPathsForVisibleRows]){
@@ -536,7 +527,7 @@
 
 #pragma mark BSTutorialImageViewDelegate
 
--(void)dissmissTutorialImageView:(id)tutorialView
+- (void)dissmissTutorialImageView:(id)tutorialView
 {
     tutorialView = nil;
 }
@@ -544,9 +535,8 @@
 #pragma mark - System Methods
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // maybe close door here
     if ([segue.identifier isEqualToString:@"atlas-to-profile"]) {
-        [(BSProfileViewController *)[segue destinationViewController] setSectionNumber:selectedSxnView];
+        [(BSProfileViewController *)[segue destinationViewController] setSectionNumber:self.selectedSectionNumber];
     }
 }
 

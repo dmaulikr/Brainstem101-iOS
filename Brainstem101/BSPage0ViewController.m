@@ -23,7 +23,7 @@
     
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
@@ -195,7 +195,7 @@
 }
 
 #pragma mark BSTutorialImageViewDelegate
--(void)dissmissTutorialImageView:(id)tutorialView
+- (void)dissmissTutorialImageView:(id)tutorialView
 {
     tutorialView = nil;
 }

@@ -106,9 +106,6 @@
 }
 
 #pragma mark Rotation Methods
-#define ROTATION_SPEED 0.4
-#define SECTION_3_Y_ROTATION_OFFSET 35
-
 - (void)rotateView
 {
     [self rotateViewRight];

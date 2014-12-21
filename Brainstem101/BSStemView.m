@@ -8,130 +8,165 @@
 
 #import "BSStemView.h"
 
-#define BACK_VIEW_MODE 0
-#define SIDE_VIEW_MODE 1
-#define FRONT_VIEW_MODE 2
 
-@implementation BSStemView{
-    NSArray *imageArray;
-    int currentViewMode;
-}
+@implementation BSStemView
 
--(id)initWithFrame:(CGRect)frame{
+- (instancetype)initWithFrame:(CGRect)frame
+{
     self = [super initWithFrame:frame];
     if (self) {
-        currentViewMode = BACK_VIEW_MODE;
-        imageArray = @[[UIImage imageNamed:@"stem-back.png"],[UIImage imageNamed:@"stem-side.png"], [UIImage imageNamed:@"stem-front.png"]];
+
+        self.backgroundImages = @{
+                                  @(BSStemViewModeBack)     :[UIImage imageNamed:@"stem-back"],
+                                  @(BSStemViewModeSide)     :[UIImage imageNamed:@"stem-side"],
+                                  @(BSStemViewModeFront)    :[UIImage imageNamed:@"stem-front"]
+                                  };
         
-        self.mainView = [[UIImageView alloc] initWithFrame:self.bounds];
-        [self addSubview:self.mainView];
+        self.backgroundView = [[UIImageView alloc] initWithFrame:self.bounds];
+        [self addSubview:self.backgroundView];
+        
         self.overlayView = [[UIImageView alloc] initWithFrame:self.bounds];
-        [self.mainView addSubview:self.overlayView];
+        [self.backgroundView addSubview:self.overlayView];
         
-        [self removeOverlays];
+        // Defaults to the back view
+        [self setCurrentStructure:nil];
     }
     return self;
 }
 
--(void)show
+- (void)setCurrentStructure:(BSStructure *)currentStructure
 {
-    [UIView animateWithDuration:STEM_TRANSITION_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
-        [self setAlpha:1.0];
-    } completion:nil];
-}
-
--(void)hide
-{
-    [UIView animateWithDuration:STEM_TRANSITION_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
-        [self setAlpha:0.0];
-    } completion:nil];
-}
-
--(void)removeOverlays
-{
-    [self.overlayView setImage:nil];
-    [self.mainView setImage:imageArray[currentViewMode]];
-}
-
--(void)loadStructure:(BSStructure *) structure
-{
-    self.currentStructure = structure;
+    _currentStructure = currentStructure;
     
-    bool hasFront   = ((_currentStructure.stemViewOverlays)[@"front"] ==  nil) ? false : true;
-    bool hasBack    = ((_currentStructure.stemViewOverlays)[@"back"] ==  nil) ? false : true;
-    bool hasSide    = ((_currentStructure.stemViewOverlays)[@"side"] ==  nil) ? false : true;
-    bool hasOverlay =  (hasFront || hasSide || hasBack) ? YES : NO;
+    if (_currentStructure == nil) {
+        [self changeCurrentImageToViewMode:BSStemViewModeBack];
+        return;
+    }
+
+    BOOL hasBack  = self.currentStructure.stemViewOverlayBack ? YES : NO;
+    BOOL hasSide  = self.currentStructure.stemViewOverlaySide ? YES : NO;
+    BOOL hasFront = self.currentStructure.stemViewOverlayFront ? YES : NO;
     
-    if (!hasOverlay) {
+    // If current structure doesn't have any overlays
+    if ( !(hasFront | hasBack | hasSide) ) {
         [self.overlayView setImage:nil];
         return;
     }
-    if (currentViewMode == FRONT_VIEW_MODE && hasFront) {
-        [self changeCurrentImageToViewMode:FRONT_VIEW_MODE];
-    }else if (currentViewMode == SIDE_VIEW_MODE && hasSide){
-        [self changeCurrentImageToViewMode:SIDE_VIEW_MODE];
-    }else if (currentViewMode == BACK_VIEW_MODE && hasBack){
-        [self changeCurrentImageToViewMode:BACK_VIEW_MODE];
+    
+    // Try to match perfectly with the current view mode
+    switch (self.currentViewMode) {
+        case BSStemViewModeBack:
+            if (hasBack) {
+                [self changeCurrentImageToViewMode:BSStemViewModeBack];
+                return;
+            }
+            break;
+        case BSStemViewModeSide:
+            if (hasSide) {
+                [self changeCurrentImageToViewMode:BSStemViewModeSide];
+                return;
+            }
+            break;
+        case BSStemViewModeFront:
+            if (hasFront) {
+                [self changeCurrentImageToViewMode:BSStemViewModeFront];
+                return;
+            }
+            break;
+        default:
+            NSLog(@"Coudn't find an exact match!");
+            break;
+    }
+    
+    // If can't match with the current view mode, just follow this hard-coded order
+    if (hasBack) {
+        [self changeCurrentImageToViewMode:BSStemViewModeBack];
+    }else if (hasSide){
+        [self changeCurrentImageToViewMode:BSStemViewModeSide];
+    }else if (hasFront){
+        [self changeCurrentImageToViewMode:BSStemViewModeFront];
     }else{
-        if (hasBack) {
-            [self changeCurrentImageToViewMode:BACK_VIEW_MODE];
-        }else if (hasSide){
-            [self changeCurrentImageToViewMode:SIDE_VIEW_MODE];
-        }else if (hasFront){
-            [self changeCurrentImageToViewMode:FRONT_VIEW_MODE];
-        }else{
-            NSLog(@"Error in choosing sectionView configuration in BSStemView");
-        }
+        NSLog(@"ERROR : Should never reach here!");
     }
 }
 
--(void)changeCurrentImageToViewMode:(int)viewmode
+
+- (void)changeCurrentImageToViewMode:(BSStemViewMode)viewMode
 {
-    currentViewMode = viewmode;
-    // TODO :  this animation could use a little work
-    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    _currentViewMode = viewMode;
+
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self setAlpha:0];
     } completion:^(BOOL finished) {
-        [_mainView setImage:imageArray[currentViewMode]];
-        [_overlayView setImage:[UIImage imageNamed:(_currentStructure.stemViewOverlays)[[self getStringOfCurrentViewMode]]]];
+        [self.backgroundView setImage:[self.backgroundImages objectForKey:@(viewMode)]];
         
-        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        switch (self.currentViewMode) {
+            case BSStemViewModeBack:
+                [self.overlayView setImage:[UIImage imageNamed:self.currentStructure.stemViewOverlayBack]];
+                break;
+            case BSStemViewModeSide:
+                [self.overlayView setImage:[UIImage imageNamed:self.currentStructure.stemViewOverlaySide]];
+                break;
+            case BSStemViewModeFront:
+                [self.overlayView setImage:[UIImage imageNamed:self.currentStructure.stemViewOverlayFront]];
+                break;
+            default:
+                break;
+        }
+        
+        [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             [self setAlpha:1];
         } completion:nil];
     }];
 }
 
--(NSString *)getStringOfCurrentViewMode
+- (void)stemViewModeNext
 {
-    switch (currentViewMode) {
-        case FRONT_VIEW_MODE:
-            return @"front";
-        case SIDE_VIEW_MODE:
-            return @"side";
-        case BACK_VIEW_MODE:
-            return @"back";
+    switch (self.currentViewMode) {
+        case BSStemViewModeBack:
+            [self changeCurrentImageToViewMode:BSStemViewModeSide];
+            break;
+        case BSStemViewModeSide:
+            [self changeCurrentImageToViewMode:BSStemViewModeFront];
+            break;
+        case BSStemViewModeFront:
+            [self changeCurrentImageToViewMode:BSStemViewModeBack];
+            break;
         default:
-            NSLog(@"failed to find string for view mode");
-            return @"back";
+            break;
     }
 }
 
--(void)stemViewModeNext
+- (void)stemViewMovePrevious
 {
-    currentViewMode++;
-    if (currentViewMode == 3) {
-        currentViewMode = 0;
+    switch (self.currentViewMode) {
+        case BSStemViewModeBack:
+            [self changeCurrentImageToViewMode:BSStemViewModeFront];
+            break;
+        case BSStemViewModeSide:
+            [self changeCurrentImageToViewMode:BSStemViewModeBack];
+            break;
+        case BSStemViewModeFront:
+            [self changeCurrentImageToViewMode:BSStemViewModeSide];
+            break;
+        default:
+            break;
     }
-    [self changeCurrentImageToViewMode:currentViewMode];
 }
 
--(void)stemViewMovePrevious
+
+- (void)show
 {
-    currentViewMode--;
-    if (currentViewMode == -1) {
-        currentViewMode = 2;
-    }
-    [self changeCurrentImageToViewMode:currentViewMode];
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [self setAlpha:1.0];
+    } completion:nil];
+}
+
+- (void)hide
+{
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [self setAlpha:0.0];
+    } completion:nil];
 }
 
 @end

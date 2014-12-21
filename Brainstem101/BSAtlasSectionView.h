@@ -16,21 +16,21 @@
 @property (nonatomic, strong) UIImageView *backingView;
 @property (nonatomic, strong) UIImageView *arteryView;
 @property (nonatomic, strong) BSSection   *section;
-@property (assign           ) bool        isRotated;
+@property (nonatomic, assign) BOOL        isRotated;
 
 
 + (BSAtlasSectionView *) atlasSectionViewForSection:(NSInteger)number;
 
-- (instancetype)      initWithFrame:(CGRect)frame andSection:(BSSection *)section;
-- (void)    setStructures:(NSArray *)structures;
-- (void)    arteryImageNamed:(NSString *)imageName;
-- (void)    purgeCache;
+- (instancetype)initWithFrame:(CGRect)frame andSection:(BSSection *)section;
+- (void)setStructures:(NSArray *)structures;
+- (void)arteryImageNamed:(NSString *)imageName;
+- (void)purgeCache;
 
-- (void)    fade;
-- (void)    unfade;
+- (void)fade;
+- (void)unfade;
 
-- (void)    rotateView;
-- (void)    rotateViewRight;
-- (void)    rotateViewLeft;
+- (void)rotateView;
+- (void)rotateViewRight;
+- (void)rotateViewLeft;
 
 @end

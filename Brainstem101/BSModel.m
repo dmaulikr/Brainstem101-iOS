@@ -8,12 +8,13 @@
 
 #import "BSModel.h"
 
-static BSModel *modelSingleton = nil;
+
 
 @implementation BSModel
 
-+ (id)sharedModel {
-    
++ (instancetype)sharedModel
+{
+    static BSModel *modelSingleton = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         modelSingleton = [[self alloc] init];
@@ -21,80 +22,86 @@ static BSModel *modelSingleton = nil;
     return modelSingleton;
 }
 
-- (id)init {
-    if (self = [super init]) {        
+- (instancetype)init
+{
+    if (self = [super init])
+    {
         //tutorial logic
-        _inTutorialMode = NO;
-        _hasSeenFuckometer = NO;
+        self.inTutorialMode = NO;
+        self.hasSeenFuckometer = NO;
         
         BSStructureGenerator *structuresObject = [[BSStructureGenerator alloc] init];
-        _Nuclei         = [structuresObject Nuclei];
-        _Tracts         = [structuresObject Tracts];
-        _Arteries       = [structuresObject Arteries];
-        _Miscellaneous  = [structuresObject Miscellaneous];
-        _CranialNerves  = [structuresObject CranialNerves];
+        self.Nuclei         = [structuresObject Nuclei];
+        self.Tracts         = [structuresObject Tracts];
+        self.Arteries       = [structuresObject Arteries];
+        self.Miscellaneous  = [structuresObject Miscellaneous];
+        self.CranialNerves  = [structuresObject CranialNerves];
         
     }
     return self;
 }
 
--(NSArray *)Syndromes{
+- (NSArray *)Syndromes
+{
     if (!_Syndromes) {
         _Syndromes = [BSSyndromeGenerator Syndromes];
     }
     return _Syndromes;
 }
 
--(NSArray *)getType:(BSStructureType)type inSection:(NSInteger)section{
-    NSArray *tmpType;
+- (NSArray *)getType:(BSStructureType)type inSection:(NSInteger)section
+{
+    NSArray *allOfType;
     
     switch (type) {
         case BSStructureTypeNucleus:
-            tmpType = _Nuclei;
+            allOfType = self.Nuclei;
             break;
         case BSStructureTypeTract:
-            tmpType = _Tracts;
+            allOfType = self.Tracts;
             break;
         case BSStructureTypeArtery:
-            tmpType = _Arteries;
+            allOfType = self.Arteries;
             break;
         case BSStructureTypeMiscellaneous:
-            tmpType = _Miscellaneous;
+            allOfType = self.Miscellaneous;
             break;
         case BSStructureTypeCranialNerve:
-            tmpType = _CranialNerves;
+            allOfType = self.CranialNerves;
             break;
         default:
-            tmpType = _Nuclei;
             NSLog(@"Error: error in first switch in getTypeInSection in model");
             break;
     }
     
-    if (section == -1) { // asking for all of them
-        return tmpType;
-        
-    }else{ //asking for all in given section
-        NSMutableArray *tmpTypeInSection = [NSMutableArray new];
+     // Asking for all of them
+    if (section == -1) {
+        return allOfType;
+    
+    }
+    // Asking for all in given section
+    else{
+        NSMutableArray *allOfTypeFromSection = [NSMutableArray new];
 
         if (type == BSStructureTypeArtery) {
-            for (BSStructure* s in tmpType) {
-                if ([s hasArteryInSectionNumber:section]) {
-                    [tmpTypeInSection addObject:s];
+            for (BSStructure *structure in allOfType) {
+                if ([structure hasArteryInSectionNumber:section]) {
+                    [allOfTypeFromSection addObject:structure];
                 }
             }
         }else{
-            for (BSStructure* s in tmpType) {
-                if ([s isInSectionNumber:section]) {
-                    [tmpTypeInSection addObject:s];
+            for (BSStructure *structure in allOfType) {
+                if ([structure structurePathInSection:section]) {
+                    [allOfTypeFromSection addObject:structure];
                 }
             }
         }
-        return tmpTypeInSection;
+        return allOfTypeFromSection;
     }
 }
 
-
-- (BOOL) isFirstLaunch {
+- (BOOL)isFirstLaunch
+{
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"hasLaunched"]){
         NSLog(@"first launch");
         return YES;

@@ -8,34 +8,34 @@
 
 #import "BSStructure.h"
 
-@implementation BSStructure {
+@implementation BSStructure
+{
     NSXMLParser *parser;
     NSMutableString *constructionString;
     NSMutableArray *currentPoints;
     NSMutableArray *currentPaths;
     
-    int currentSectionNumber;
-    float currentX;
-    float currentY;
-    bool isParsingStuctureName;
-    bool isParsingSection;
-    bool isParsingPath;
-    bool isParsingPoint;
-    bool isParsingX;
-    bool isParsingY;
+    NSInteger currentSectionNumber;
+    CGFloat currentX;
+    CGFloat currentY;
+    BOOL isParsingStuctureName;
+    BOOL isParsingSection;
+    BOOL isParsingPath;
+    BOOL isParsingPoint;
+    BOOL isParsingX;
+    BOOL isParsingY;
 }
 
--(id)initWithName:(NSString *)name andType:(BSStructureType)type{
-    self = [super init];
-    if (self) {
-        _structureName = name;
-        _structureType = type;
-        _conventionalName = [BSStructure getConventionalNameWithName:name andType:type];
-        
-        // TODO : Fix this all!
-        _structurePaths     = [[NSMutableArray alloc] initWithArray:@[@"", @"", @"", @"", @"", @"", @"", @"", @""]];
-        _arteryImages       = [[NSMutableArray alloc] initWithArray:@[@"", @"", @"", @"", @"", @"", @"", @"", @""]];
-        _stemViewOverlays   = [NSMutableDictionary new];
+- (instancetype)initWithName:(NSString *)name andType:(BSStructureType)type
+{
+    
+    if (self = [super init]) {
+        self.structureName = name;
+        self.structureType = type;
+        self.conventionalName = [BSStructure getConventionalNameWithName:name andType:type];
+
+        self.structurePaths = [[NSMutableArray alloc] init];
+        self.arteryImages = [[NSMutableArray alloc] initWithArray:@[@"", @"", @"", @"", @"", @"", @"", @"", @""]];
 
         [self generateStructurePaths];
         [self generateImageDictionary];
@@ -43,7 +43,13 @@
     return self;
 }
 
-+ (NSString *)getConventionalNameWithName:(NSString *)name andType:(BSStructureType)type{
+#pragma mark -
+#pragma mark NSCoder
+
+// TODO : Implement!
+
++ (NSString *)getConventionalNameWithName:(NSString *)name andType:(BSStructureType)type
+{
     NSString *cName = [name lowercaseString];
     cName = [cName stringByReplacingOccurrencesOfString:@" " withString:@"-"];
     
@@ -103,59 +109,70 @@
     return cName;
 }
 
-- (void) addArteryNamed:(NSString *) name forIndecies:(NSArray *) indicies{
+- (void)addArteryNamed:(NSString *) name forIndecies:(NSArray *)indicies
+{
     for (NSNumber *number in indicies) {
-        NSString *tmp = [NSString stringWithFormat:@"%@-%d.png",name, number.intValue];
-        _arteryImages[number.intValue] = tmp;
+        NSString *tmp = [NSString stringWithFormat:@"%@-%d.png",name, number.integerValue];
+        _arteryImages[number.integerValue] = tmp;
     }
 }
 
--(void)generateStructurePaths{
-    for (int i = 0; i < 9; i++) {
+- (void)generateStructurePaths
+{
+    for (NSInteger i = 0; i < 9; i++) {
         currentSectionNumber = i;
-        NSString *xmlPath = [NSString stringWithFormat:@"%@-%d.xml",_conventionalName, i];
+        NSString *xmlPath = [NSString stringWithFormat:@"%@-%ld.xml", _conventionalName, (long)i];
         if ([self doesFileExsist:xmlPath]) {
             [self addXMLFilePath:[NSString stringWithFormat:@"%@/%@",[[NSBundle mainBundle] resourcePath], xmlPath]];
         }
     }
 }
 
--(BOOL) doesFileExsist:(NSString *) fileName{
+- (BOOL)doesFileExsist:(NSString *) fileName
+{
     return [[NSFileManager defaultManager] fileExistsAtPath:[NSString stringWithFormat:@"%@/%@",[[NSBundle mainBundle] resourcePath], fileName]];
 }
 
-//TODO: should also handle artery images
--(void)generateImageDictionary{
+- (void)generateImageDictionary
+{
     NSString *tmpStr = [NSString stringWithFormat:@"%@-overlay-back.png", _conventionalName];
     if ([self doesFileExsist:tmpStr]) {
-        _stemViewOverlays[@"back"] = tmpStr;
+        self.stemViewOverlayBack = tmpStr;
     }
     tmpStr = [NSString stringWithFormat:@"%@-overlay-side.png", _conventionalName];
     if ([self doesFileExsist:tmpStr]) {
-        _stemViewOverlays[@"side"] = tmpStr;
+        self.stemViewOverlaySide = tmpStr;
     }
     tmpStr = [NSString stringWithFormat:@"%@-overlay-front.png", _conventionalName];
     if ([self doesFileExsist:tmpStr]) {
-        _stemViewOverlays[@"front"] = tmpStr;
+        self.stemViewOverlayFront = tmpStr;
     }
 }
 
--(BOOL)isInSectionNumber:(NSInteger)num{
-    return ![_structurePaths[num] isKindOfClass:[NSString class]];
+- (BSStructurePath *)structurePathInSection:(NSInteger)sectionNumber
+{
+    for (BSStructurePath *path in self.structurePaths) {
+        if (path.sectionNumber == sectionNumber) {
+            return path;
+        }
+    }
+    return nil;
 }
 
--(BOOL)hasArteryInSectionNumber:(NSInteger)num{
-    return [_arteryImages[num] length] != 0;
+// TODO : Change this
+- (BOOL)hasArteryInSectionNumber:(NSInteger)num
+{
+    return [self.arteryImages[num] length] != 0;
 }
 
 #pragma mark NSXMLParser Methods
 
--(void) addXMLFilePath:(NSString *)xmlFilePath{
+- (void)addXMLFilePath:(NSString *)xmlFilePath
+{
+    constructionString    = [NSMutableString new];
+    currentPoints         = [NSMutableArray new];
+    currentPaths          = [NSMutableArray new];
 
-    constructionString = [NSMutableString new];
-    currentPoints = [NSMutableArray new];
-    currentPaths = [NSMutableArray new];
-    
     isParsingStuctureName = isParsingSection = isParsingPath = isParsingPoint = isParsingX = isParsingY = NO;
 
     parser = [[NSXMLParser alloc] initWithData:[NSData dataWithContentsOfFile:xmlFilePath]];
@@ -177,7 +194,7 @@
     }
 }
 
--(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)character{
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)character{
     if (isParsingSection) {
         [constructionString appendString:character];
     }else if (isParsingPath && isParsingPoint) {
@@ -189,11 +206,15 @@
     }
 }
 
--(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
     if ([elementName isEqualToString:@"structure"]) {
-        BSStructurePath *newStructurePath = [BSStructurePath new];
+        // Finished parsing a BSStructurePath
+        BSStructurePath *newStructurePath = [[BSStructurePath alloc] init];
         [newStructurePath setPath:[currentPaths copy]];
-        _structurePaths[currentSectionNumber] = newStructurePath;
+        [newStructurePath setSectionNumber:currentSectionNumber];
+        [self.structurePaths addObject:newStructurePath];
+        
     }else if ([elementName isEqualToString:@"section"]) {
         [constructionString setString:@""];
         isParsingSection = NO;
@@ -224,7 +245,7 @@
     CAShapeLayer *tmpLayer = [CAShapeLayer layer];
     [tmpLayer setFrame:bounds];
     
-    UIBezierPath *path = [[[self structurePaths] objectAtIndex:sectionNumber] pathData];
+    UIBezierPath *path = [[self structurePathInSection:sectionNumber] pathData];
     
     [tmpLayer setPath:[BSStructure newScaledPath:path.CGPath toRect:bounds]];
     [tmpLayer setStrokeColor:UIColorFromRGBWithAlpha(0xdcbc76, 1).CGColor];

@@ -10,7 +10,6 @@
 #import <UIView+Positioning.h>
 
 const NSString *baseFileName = @"glass-stem";
-const float sectionSpeed = 0.5;
 const float sectionDistance = 100;
 
 @implementation BSGlassStemView
@@ -43,7 +42,7 @@ const float sectionDistance = 100;
 
 -(void)show
 {
-    [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:1.0];
     } completion:nil];
 }
@@ -51,7 +50,7 @@ const float sectionDistance = 100;
 -(void)hide
 {
     [self retractLayer:currentLayer];
-    [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [self setAlpha:0.0];
     } completion:nil];
 }
@@ -64,7 +63,7 @@ const float sectionDistance = 100;
     [self retractLayer:currentLayer];
      
     currentLayer = self.imageLayers[[self layerIndexForSection:section]];
-    [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [currentLayer setY:sectionDistance];
         [currentLayer setX: -1 * sectionDistance];
     } completion:nil];
@@ -72,7 +71,7 @@ const float sectionDistance = 100;
 
 -(void)retractLayer:(UIImageView *)layer
 {
-    [UIView animateWithDuration:sectionSpeed delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [currentLayer setY:0];
         [currentLayer setX:0];
     } completion:nil];

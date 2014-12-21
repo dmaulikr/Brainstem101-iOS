@@ -38,7 +38,7 @@
     return self;
 }
 
-+ (BSAtlasSectionView *) atlasSectionViewForSection:(int) number
++ (BSAtlasSectionView *) atlasSectionViewForSection:(NSInteger)number
 {
     BSAtlasSectionView *theView = [[BSAtlasSectionView alloc] initWithFrame:[self frameForSectionNumber:number] andSection:[BSSection atlasSectionNumber:number]];
     return theView;
@@ -93,7 +93,8 @@
     UIGraphicsBeginImageContextWithOptions(retinaSize, NO, 0.0);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
-    BSStructurePath *currPath = (structure.structurePaths)[_section.sectionNumber];
+    // TODO : Double check this is right
+    BSStructurePath *currPath = [structure structurePathInSection:self.section.sectionNumber];
     [ATLAS_SECTION_VIEW_PATH_COLOR setStroke];
     CGContextSetLineWidth(currentContext, ATLAS_SECTION_VIEW_LINE_WIDTH);
 
@@ -176,19 +177,19 @@
     }];
 }
 
-+ (CGRect)frameForSectionNumber:(int)num
++ (CGRect)frameForSectionNumber:(NSInteger)num
 {
     CGRect bounds = [self getBoundsForSection:num];
     CGPoint desiredCenter = [self getCenterForSection:num];
-    float initialCenterX = CGRectGetMidX(bounds);
-    float initialCenterY = CGRectGetMidY(bounds);
+    CGFloat initialCenterX = CGRectGetMidX(bounds);
+    CGFloat initialCenterY = CGRectGetMidY(bounds);
     CGRect finalFrame = CGRectMake(desiredCenter.x - initialCenterX, desiredCenter.y - initialCenterY, bounds.size.width, bounds.size.height);
     return finalFrame;
 }
 
-+ (CGRect)getBoundsForSection:(int)num
++ (CGRect)getBoundsForSection:(NSInteger)num
 {
-    float scaleFactor = 0;
+    CGFloat scaleFactor = 0;
     
     switch (num) {
         case 0:
@@ -224,13 +225,13 @@
             break;
     }
     
-    float newWidth = CAPTURE_DEVICE_WIDTH*(scaleFactor/10);
-    float newHeight = CAPTURE_DEVICE_HEIGHT*(scaleFactor/10);
+    CGFloat newWidth = CAPTURE_DEVICE_WIDTH*(scaleFactor/10);
+    CGFloat newHeight = CAPTURE_DEVICE_HEIGHT*(scaleFactor/10);
     CGRect rFrame = CGRectMake(0, 0, newWidth, newHeight);
     return rFrame;
 }
 
-+ (CGPoint)getCenterForSection:(int)num
++ (CGPoint)getCenterForSection:(NSInteger)num
 {
     CGPoint newCenter;
     

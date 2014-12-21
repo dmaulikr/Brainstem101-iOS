@@ -46,6 +46,7 @@
 {
     if (structure == nil) {
         [self.structureDetailView setText:@""];
+        [self.structureNameLabel setText:@""];
         return;
     }
     
@@ -153,10 +154,9 @@
     }
 }
 
-
 #pragma mark BSTutorialImageViewDelegate
 
--(void)dissmissTutorialImageView:(id)tutorialView
+- (void)dissmissTutorialImageView:(id)tutorialView
 {
     tutorialView = nil;
 }

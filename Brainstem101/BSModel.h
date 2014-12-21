@@ -20,10 +20,10 @@
 @property (assign, nonatomic) BOOL inTutorialMode;
 @property (assign, nonatomic) BOOL hasSeenFuckometer;
 
-+ (id)sharedModel;
++ (instancetype)sharedModel;
 
-- (NSMutableArray*)getType:(BSStructureType)type inSection:(NSInteger)section;
+- (NSMutableArray*)getType:(BSStructureType)type inSection:(NSInteger)sectionNumber;
 
-- (BOOL) isFirstLaunch;
+- (BOOL)isFirstLaunch;
 
 @end

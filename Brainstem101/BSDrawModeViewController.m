@@ -27,35 +27,30 @@
     
     [self.currentPaths removeAllObjects];
     
-    for (NSInteger i = 0; i < [[[BSModel sharedModel] Nuclei] count]; i++) {
-        if ([[[BSModel sharedModel] Nuclei][i] isInSectionNumber:_sectionNumber]) {
-            [self.currentPaths addObject:[[[BSModel sharedModel] Nuclei][i] structurePaths][_sectionNumber]];
-        }
+
+    
+    NSArray *currentNuclei          = [[BSModel sharedModel] getType:BSStructureTypeNucleus inSection:self.sectionNumber];
+    NSArray *currentTracts          = [[BSModel sharedModel] getType:BSStructureTypeTract inSection:self.sectionNumber];
+    NSArray *currentMiscellaneous   = [[BSModel sharedModel] getType:BSStructureTypeMiscellaneous inSection:self.sectionNumber];
+    NSArray *currentCranialNerves   = [[BSModel sharedModel] getType:BSStructureTypeCranialNerve inSection:self.sectionNumber];
+    
+    NSArray *allStructures = [[[[@[]
+                                 arrayByAddingObjectsFromArray:currentNuclei]
+                                arrayByAddingObjectsFromArray:currentTracts]
+                               arrayByAddingObjectsFromArray:currentMiscellaneous]
+                              arrayByAddingObjectsFromArray:currentCranialNerves];
+
+    NSLog(@"Found %lu structures in section %ld to draw.", (unsigned long)allStructures.count, (long)self.sectionNumber);
+    
+    for (BSStructure *structure in allStructures) {
+        [self.currentPaths addObject:[structure structurePathInSection:self.sectionNumber]];
     }
     
-    for (NSInteger i = 0; i < [[[BSModel sharedModel] Tracts] count]; i++) {
-        if ([[[BSModel sharedModel] Tracts][i] isInSectionNumber:_sectionNumber]) {
-            [self.currentPaths addObject:[[[BSModel sharedModel] Tracts][i] structurePaths][_sectionNumber]];
-        }
-    }
     
-    for (NSInteger i = 0; i < [[[BSModel sharedModel] Arteries] count]; i++) {
-        if ([[[BSModel sharedModel] Arteries][i] isInSectionNumber:_sectionNumber]) {
-            [self.currentPaths addObject:[[[BSModel sharedModel] Arteries][i] structurePaths][_sectionNumber]];
-        }
-    }
-    
-    for (NSInteger i = 0; i < [[[BSModel sharedModel] Miscellaneous] count]; i++) {
-        if ([[[BSModel sharedModel] Miscellaneous][i] isInSectionNumber:_sectionNumber]) {
-            [self.currentPaths addObject:[[[BSModel sharedModel] Miscellaneous][i] structurePaths][_sectionNumber]];
-        }
-    }
-    
-    for (NSInteger i = 0; i < [[[BSModel sharedModel] CranialNerves] count]; i++) {
-        if ([[[BSModel sharedModel] CranialNerves][i] isInSectionNumber:_sectionNumber]) {
-                [self.currentPaths addObject:[[[BSModel sharedModel] CranialNerves][i] structurePaths][_sectionNumber]];
-        }
-    }
+    // Hide the hint layer but begin the bacground drawing operation so its ready when they press hint
+    [self.sectionView.pathLayer setHidden:YES];
+    [self.sectionView drawPaths:[[self.currentPaths allObjects] mutableCopy]];
+
 }
 
 - (UIImage *)imageWithView:(UIView *)view
@@ -95,7 +90,7 @@
     
     switch (touch.phase) {
         case UITouchPhaseBegan:
-            [self.sectionView drawPathsForProfile:[[self.currentPaths allObjects] mutableCopy]];
+            [self.sectionView.pathLayer setHidden:NO];
             break;
         case UITouchPhaseMoved:
             //
@@ -104,10 +99,10 @@
             //
             break;
         case UITouchPhaseEnded:
-            [self.sectionView clearPaths];
+            [self.sectionView.pathLayer setHidden:YES];
             break;
         case UITouchPhaseCancelled:
-            [self.sectionView clearPaths];
+            [self.sectionView.pathLayer setHidden:YES];
             break;
         default:
             break;
