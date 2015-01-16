@@ -86,9 +86,7 @@
         [self.descriptionView setText:[currentSyndrome syndromeDescription]];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [self.descriptionView setAlpha:1];
-        } completion:^(BOOL finished) {
-            //do nothing
-        }];
+        } completion:nil];
     }];
 }
 
@@ -96,15 +94,14 @@
 {
     [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.sectionCollectionView setAlpha:0];
-        [self.sectionCollectionView setCenter:CGPointMake(_sectionCollectionView.center.x + SECTION_COLLECTION_VIEW_CENTER_OFFSET, _sectionCollectionView.center.y)];
-        
+        [self.sectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+
     } completion:^(BOOL finished) {
         
         [self.sectionCollectionView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 1)]];
-        [self.sectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:2 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             [self.sectionCollectionView setAlpha:1];
-            [self.sectionCollectionView setCenter:CGPointMake(self.view.center.x , self.sectionCollectionView.center.y)];
+            [self.sectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:2 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
         } completion:nil];
     }];
 }
@@ -132,11 +129,11 @@
 - (void)updateDeficitTableView
 {
     //Dynamic Sizing of deficits table
-    int totalCellHeight = 0;
+    CGFloat totalCellHeight = 0;
     for (BSDeficit *def in currentSyndrome.deficits) {
         totalCellHeight += [self calculatedTableCellHeightForDeficit:def];
     }
-    int heightDelta = MAX(0, [_deficitTableView frame].size.height - totalCellHeight);
+    CGFloat heightDelta = MAX(0, [_deficitTableView frame].size.height - totalCellHeight);
     
     if (heightDelta != 0) {
         [UIView animateWithDuration:DEFAULT_ANIMATION_SPEED animations:^{

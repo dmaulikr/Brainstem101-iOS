@@ -40,7 +40,6 @@
                                arrayByAddingObjectsFromArray:currentMiscellaneous]
                               arrayByAddingObjectsFromArray:currentCranialNerves];
 
-//    NSLog(@"Found %lu structures in section %ld to draw.", (unsigned long)allStructures.count, (long)self.sectionNumber);
     
     for (BSStructure *structure in allStructures) {
         [self.currentPaths addObject:[structure structurePathInSection:self.sectionNumber]];

@@ -38,7 +38,7 @@
         [self.backgroundLayer addSublayer:_pathLayer];
     }
     
-    [self.backgroundLayer setContents:(id)[UIImage imageNamed:[NSString stringWithFormat:@"sxn-%ld.png",(long)self.currentSectionNumber]].CGImage];
+    [self.backgroundLayer setContents:(id)[UIImage imageNamed:[NSString stringWithFormat:@"profile-sxn-%d",(int)self.currentSectionNumber]].CGImage];
     [self.pathLayer setContents:nil];
 }
 
@@ -55,7 +55,6 @@
         CGContextClearRect(currentContext, self.frame);
         
         for (BSStructurePath *path in inputPaths) {
-            
             
             [PROFILE_SECTION_VIEW_PATH_COLOR setStroke];
             [PROFILE_SECTION_VIEW_PATH_FILL_COLOR setFill];
