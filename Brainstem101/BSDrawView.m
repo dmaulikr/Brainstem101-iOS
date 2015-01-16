@@ -9,7 +9,7 @@
 #import "BSDrawView.h"
 
 #define DEFAULT_COLOR [UIColor blackColor]
-#define DEFAULT_WIDTH 5.0f
+#define DEFAULT_WIDTH 3.0f
 #define kPointMinDistance 0
 
 @implementation BSDrawView
