@@ -80,6 +80,7 @@
     [self.indexTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self.indexTable setSeparatorColor:[UIColor clearColor]];
     [self.indexTable setShowsVerticalScrollIndicator:NO];
+    [self.indexTable setContentInset:UIEdgeInsetsMake(0, 0, 30, 0)];
     [self.view addSubview:self.indexTable];
     
     self.clinicalButton  = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -284,7 +285,7 @@
         
         if (self.currentStructure.structureType == BSStructureTypeArtery) {
             if ([self.currentStructure hasArteryInSectionNumber:secNum]) {
-                [view arteryImageNamed:[self.currentStructure arteryImages][secNum]];
+                [view arteryImageNamed:[[self.currentStructure arteryImages] objectAtIndex:secNum]];
                 [view unfade];
             }
         }else if ([self.currentStructure structurePathInSection:secNum]) {

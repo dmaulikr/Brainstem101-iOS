@@ -21,7 +21,6 @@
 
 @property (strong, nonatomic) NSArray *Syndromes;
 
-
 @property (assign, nonatomic) BOOL inTutorialMode;
 
 + (instancetype)sharedModel;

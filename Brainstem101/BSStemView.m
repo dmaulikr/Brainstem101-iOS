@@ -44,6 +44,7 @@
     // If current structure doesn't have any overlays
     if ( !(hasFront | hasBack | hasSide) ) {
         [self.overlayView setImage:nil];
+        [self changeCurrentImageToViewMode:self.currentViewMode];
         return;
     }
     
@@ -88,15 +89,30 @@
 - (void)changeCurrentImageToViewMode:(BSStemViewMode)viewMode
 {
     _currentViewMode = viewMode;
-
-    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    
+    // Set to default background if the current structure is nil
+    if (self.currentStructure == nil) {
+        [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-default"]];
+        return;
+    }
+    
+    [self setUserInteractionEnabled:NO];
+    
+    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self setAlpha:0];
     } completion:^(BOOL finished) {
         
         // Set appropriate stem backing image
         switch (viewMode) {
             case BSStemViewModeBack:
-                [self.backgroundView setImage:[UIImage imageNamed:@"stem-back"]];
+                switch (self.currentStructure.structureType) {
+                    case BSStructureTypeNucleus:
+                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-nuclei"]];
+                        break;
+                    default:
+                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-default"]];
+                        break;
+                }
                 break;
             case BSStemViewModeSide:
                 
@@ -142,9 +158,11 @@
                 break;
         }
         
-        [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             [self setAlpha:1];
-        } completion:nil];
+        } completion:^(BOOL finished) {
+            [self setUserInteractionEnabled:YES];
+        }];
     }];
 }
 
