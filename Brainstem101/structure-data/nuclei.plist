@@ -436,7 +436,7 @@
 		<key>$class</key>
 		<string>BSStructure</string>
 		<key>conventionalName</key>
-		<string>inferior-vestibular-n</string>
+		<string>vestibular-inferior-n</string>
 		<key>structureDescription</key>
 		<string>Responsible for integrating vestibular signals. Receives input from the semicircular canals, utricle, saccule, and vermis of cerebellum. Efferent fibers project to the reticular nuclei, as the Vestibuloreticular Tract, or travel down through the spinal cord as the Vestibulospinal Tract.</string>
 		<key>structureName</key>
@@ -448,7 +448,7 @@
 		<key>$class</key>
 		<string>BSStructure</string>
 		<key>conventionalName</key>
-		<string>lateral-vestibular-n</string>
+		<string>vestibular-lateral-n</string>
 		<key>structureDescription</key>
 		<string>These nuclei consist of large multipolar cells whose axons bifurcate to reach their proper destinations: the ascending axons ascend along MLF to reach and innervate nuclei that control eye movement (Oculomotor, Trochlear, and Abducens); they coordinate eye movement with head position. The descending branches travel as the vestibulospinal tract to reach motor nuclei of the anterior column</string>
 		<key>structureName</key>
@@ -460,7 +460,7 @@
 		<key>$class</key>
 		<string>BSStructure</string>
 		<key>conventionalName</key>
-		<string>medial-vestibular-n</string>
+		<string>vestibular-medial-n</string>
 		<key>structureDescription</key>
 		<string>Receives input from the semicircular canals and sends efferent fibers to the cervical spinal cord where it controls muscles of the neck to adjust and stabilize head movements.</string>
 		<key>structureName</key>
