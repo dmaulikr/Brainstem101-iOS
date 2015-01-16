@@ -8,7 +8,7 @@
 		<key>conventionalName</key>
 		<string>anterior-corticospinal-t</string>
 		<key>structureDescription</key>
-		<string>Part of the medial motor system, is responsible for motor control from primary motor cortex and supplementry motor area.  ACST fibers control cervical and thoracic trunk muscles. While most of the fibers of the corticospinal tract decussate at the medullary pyramidal decussation, forming the LATERAL Corticospinal Tract, The ANTERIOR Corticospinal Tract descends uncrossed until it reaches the spinal cord level of innervation.</string>
+		<string>Part of the MEDIAL motor system, this structure carries motor signal from primary motor cortex and supplementary motor area to control cervical and thoracic trunk muscles. While most of the corticospinal fibers cross at the pyramidal decussation to form the LATERAL Corticospinal Tract, a fraction continue uncrossed as the ANTERIOR Corticospinal Tract. These fibers cross later within the spinal cord, at their level of innervation.</string>
 		<key>structureName</key>
 		<string>Anterior Corticospinal Tract</string>
 		<key>structureType</key>
@@ -19,6 +19,8 @@
 		<string>BSStructure</string>
 		<key>conventionalName</key>
 		<string>anterior-spinocerebellar-t</string>
+		<key>structureDescription</key>
+		<string>The ventral spinocerebellar tract conveys proprioceptive information from the body to the cerebellum. Originates from ventral horn at lumbosacral spinal levels. Axons first cross midline in the spinal cord and ascend to the pons where they join the superior cerebellar peduncle to enter the cerebellum. The axons recross the midline within cerebellum, give off collaterals to the globose and emboliform nuclei, before terminating in the cortex of the anterior lobe and vermis of the posterior lobe.</string>
 		<key>structureName</key>
 		<string>Anterior Spinocerebellar Tract</string>
 		<key>structureType</key>
@@ -30,7 +32,7 @@
 		<key>conventionalName</key>
 		<string>anterolateral-system-t</string>
 		<key>structureDescription</key>
-		<string>Composed of secondary sensory neurons Involved in pain, temperature and crude touch sensory experience. This system is composed of three parts: (1) Spinothalamic tracts helps localize a stimulus by relaying information to thalamic VPL nucleus, (2) Spinotectal tracts mediate arousal in response to a stimulus (3) Spinoreticular tracts are involved in movement of the eyes towards a stimulus. (ALS fibers decussated at spinal level via anterior commissure). Lesion manifests as loss of Pain and Temperature sensation on the contralateral side of the body. </string>
+		<string>Senses pain, temperature and crude touch of body. This system is composed of three parts: (1) Spinothalamic tracts helps localize a stimulus by relaying information to thalamus (VPL) (2) Spinotectal tracts mediate arousal in response to a stimulus (3) Spinoreticular tracts are involved in movement of the eyes towards a stimulus. The ALS fibers decussated at their spinal level of entry, passing through the “Anterior Commissure”. An isolated lesion to this system will result in loss of pain and temperature sensation on the contralateral side of the body.</string>
 		<key>structureName</key>
 		<string>Anterolateral System</string>
 		<key>structureType</key>
@@ -42,7 +44,7 @@
 		<key>conventionalName</key>
 		<string>cerebellothalamic-t</string>
 		<key>structureDescription</key>
-		<string>aka Dentatothalamic Tract; Links the cerebellar (Dentate) nn.  to contralateral thalamus (VA/VL). Associated with hereditary dystonia.</string>
+		<string>aka Dentatothalamic Tract; Links the cerebellar (Dentate) nuclei to contralateral thalamus (VA &amp; VL). Associated with hereditary dystonia.</string>
 		<key>structureName</key>
 		<string>Cerebellothalamic Tract</string>
 		<key>structureType</key>
@@ -54,7 +56,7 @@
 		<key>conventionalName</key>
 		<string>central-tegmental-t</string>
 		<key>structureDescription</key>
-		<string>This pathway has two parts to it: 1) The ascending tracts connect Solitary n.  to VPM of thalamus. 2) The descending tracts connect Parvocellular Red n.  to contralateral cerebellum. Damage to this region can manifest as Palatal Myocolonus, as featured in medial superior pontine syndrome.</string>
+		<string>This pathway has two parts to it: 1) The ascending tracts which link the Solitary Nucleus to VPM of thalamus. 2) The descending tracts which connect Parvocellular Red Nucleus to contralateral cerebellum. Damage to this region can manifest as Palatal Myocolonus, as seen in Medial Superior Pontine Syndrome.</string>
 		<key>structureName</key>
 		<string>Central Tegmental Tract</string>
 		<key>structureType</key>
@@ -66,7 +68,7 @@
 		<key>conventionalName</key>
 		<string>corticobulbars-t</string>
 		<key>structureDescription</key>
-		<string>Also known as  corticonuclear tracts; they deliver motor signals from the motor cortex to various CN nuclei. Its fibers pass through the genu of internal capsule and descend through the cerebral peduncle, medial to the coticospinal tract. Nearly all CN nuclei receive input from both hemispheres, with the EXCEPTION of the Motor n. of CNVII: the lower division of the facial nerve nn. (the component that controls the lower face) receives innervation from the contralateral cortex ONLY. A cerebral stroke causes contralateral paralysis of the lower face, but the forehead, receiving additional innervation ipsilaterally, will be spared </string>
+		<string>These fibers deliver motor signal from the motor cortex to various CN nuclei. They converge to pass through the genu of internal capsule and descend through the cerebral peduncle, adjacent and medial to the cortico-spinal tract. Almost all CN nuclei receive signal from both hemispheres, with the EXCEPTION being the lower devision facial Motor nucleus which receives input from contralateral cortex only. A cerebral stroke causes contralateral paralysis of the lower face, but the forehead, receiving additional innervation ipsilaterally, will be spared. </string>
 		<key>structureName</key>
 		<string>Corticobulbar Tracts</string>
 		<key>structureType</key>
@@ -78,7 +80,7 @@
 		<key>conventionalName</key>
 		<string>corticospinal-t</string>
 		<key>structureDescription</key>
-		<string>Transmits motor signals generated by the motor cortex (precentral gyrus). Its fibers squeeze through the anterior limb of the internal capsule, down the cerebral penduncle (midbrain), and through ventro-medial pons and medulla. Most of the fibers decussate within the caudal medualla (pyramidal decussation) to form the LATERAL Conticospinal Tract. LCST provides motor innervation to contralateral body. A subgroup of fibers continue ipsilaterally as the Anterior Corticospinal Tract. Unilateral lesion of this tract (within the brainstem) will result in contralateral spastic paresis with UMN signs (increased DTR, increased muscle tone, (+) Babinsky sign)</string>
+		<string>Transmits motor signals generated by the motor cortex (precentral gyrus). The cortical fibers converge and pass through the anterior limb of the internal capsule, down the cerebral penduncle (midbrain), and through ventro-medial pons and medulla. Most of the fibers decussate within the caudal medulla (pyramidal decussation) to form the LATERAL Corticospinal Tract. LCST provides motor innervation to contralateral body. A subgroup of fibers continue ipsilaterally as the Anterior Corticospinal Tract. Hemisection of this pathway (proximal to the pyramidal decussation) will result in contralateral spastic paresis with UMN signs (increased DTR, increased muscle tone, and a positive Babinsky sign)</string>
 		<key>structureName</key>
 		<string>Corticospinal Tract</string>
 		<key>structureType</key>
@@ -90,7 +92,7 @@
 		<key>conventionalName</key>
 		<string>cuneate-fasciculus-t</string>
 		<key>structureDescription</key>
-		<string>The fibers of the dorsal columns synapse with their second order neurons at the Gracile and Cuneate nn. . These 2* neurons decussate as the arcuate fibers and continue up as the medial lemniscus.</string>
+		<string>Carries fine touch, vibratory, and proprioceptive sensory information from the upper body (T6 and above). Synapses with the second order neurons (i.e. Cuneate n. ) at the caudal medulla.</string>
 		<key>structureName</key>
 		<string>Cuneate Fasciculus</string>
 		<key>structureType</key>
@@ -101,6 +103,8 @@
 		<string>BSStructure</string>
 		<key>conventionalName</key>
 		<string>dorsal-trigeminothalamic-t</string>
+		<key>structureDescription</key>
+		<string>Carries general sensory information from the oral cavity to ipsilateral VPM.</string>
 		<key>structureName</key>
 		<string>Posterior Trigeminothalamic Tract</string>
 		<key>structureType</key>
@@ -112,7 +116,7 @@
 		<key>conventionalName</key>
 		<string>gracile-fasciculus-t</string>
 		<key>structureDescription</key>
-		<string>Axons that carry fine touch, vibratory, and proprioceptive sensory information from the lower body (T7 and below). Synapses with the second order neurons (i.e. Gracile n. ) at the caudal medulla. </string>
+		<string>Composed of axons that carry fine touch, vibratory, and proprioceptive sensory information from the lower body (T7 and below). Synapses with the second order neurons (ones that form the Gracile nucleus) at the caudal medulla.</string>
 		<key>structureName</key>
 		<string>Gracile Fasciculus</string>
 		<key>structureType</key>
@@ -124,7 +128,7 @@
 		<key>conventionalName</key>
 		<string>lateral-lemniscus-t</string>
 		<key>structureDescription</key>
-		<string>Carries auditory signals from the Cochlear Nuc. to various nn.  in the brainstem. Terminates at the Inferior Colliculus.</string>
+		<string>Carries auditory signals from the Cochlear Nucleus to various brainstem nuclei. Terminates at the Inferior Colliculus.</string>
 		<key>structureName</key>
 		<string>Lateral Lemniscus</string>
 		<key>structureType</key>
@@ -135,6 +139,8 @@
 		<string>BSStructure</string>
 		<key>conventionalName</key>
 		<string>medial-lemniscus-t</string>
+		<key>structureDescription</key>
+		<string>The fibers of the dorsal columns synapse with their second order neurons at the Gracile and Cuneate nuclei. The 2* neurons decussate and ascend as the Medial Lemniscus to reach the thalamus.</string>
 		<key>structureName</key>
 		<string>Medial Lemniscus</string>
 		<key>structureType</key>
@@ -146,7 +152,7 @@
 		<key>conventionalName</key>
 		<string>medial-longitudinal-fasciculus-t</string>
 		<key>structureDescription</key>
-		<string>Arising from the vestibular nn. , these fibers are part of a system that ensures synchronized contraction/relaxation of intrinsic muscles of the eye.  Lesion (e.g. demyelination due to Multiple Sclerosis) will result in Inter-nuclear Opthalmoplegia (nystagmus and diplopia). .</string>
+		<string>This structure originates from the vestibular nuclei and functions as part of a system that ensures synchronized contraction/relaxation of intrinsic muscles of the eye. A lesion within this structure will result in Inter-nuclear Opthalmoplegia (classically seen in association with Multiple Sclerosis)</string>
 		<key>structureName</key>
 		<string>Medial Longitudinal Fasciculus</string>
 		<key>structureType</key>
@@ -158,7 +164,7 @@
 		<key>conventionalName</key>
 		<string>posterior-longitudinal-fasciculus-t</string>
 		<key>structureDescription</key>
-		<string>1) Ascending fibers convey visceral sensation from Solitary n.  to the hypothalamus (posterior and periventricular nn. ). 2) Descending fibers project from the hypothalamus (paraventricular, periventricular, and supraoptic nn. ), through the periaqueductal grey, carrying autonomic signals to various locations (ventral tegmentum, Dorsal Motor n.  of Vagus, Salivatory n. , medullary autonomic centers, and preganglionic neurons located throughout the spinal cord).</string>
+		<string>Consists of ascending and descending tracts. 1) Ascending fibers convey visceral sensation from Solitary nucleus to hypothalamic (posterior and periventricular) nuclei. 2) Descending fibers project from the hypothalamus (paraventricular, periventricular, and supraoptic nn. ), through the periaqueductal grey, carrying autonomic signals to various locations (ventral tegmentum, Dorsal Motor n. of Vagus, Salivatory n., medullary autonomic centers, and preganglionic neurons located throughout the spinal cord)</string>
 		<key>structureName</key>
 		<string>Posterior Longitudinal Fasciculus</string>
 		<key>structureType</key>
@@ -169,6 +175,8 @@
 		<string>BSStructure</string>
 		<key>conventionalName</key>
 		<string>posterior-spinocerebellar-t</string>
+		<key>structureDescription</key>
+		<string>This structure conveys proprioceptive information from muscle spindles and Golgi organs of ipsilateral trunk and leg.</string>
 		<key>structureName</key>
 		<string>Posterior Spinocerebellar Tract</string>
 		<key>structureType</key>
@@ -179,6 +187,8 @@
 		<string>BSStructure</string>
 		<key>conventionalName</key>
 		<string>reticulospinal-fibers-t</string>
+		<key>structureDescription</key>
+		<string>This tract cosists of two parts: the medial component arises from pontine reticular nuclei; it activates anti-gravity, extensor muscles. The fibers of this tract The lateral tract arises from the medullary reticular formations and descends the length of the spinal cord in the anterior part of the lateral column. it inhibits axial extensor muscles. A lesions of reticular formations or their associated tracts at or bellow the level or red nuclei, are associated with decerebrate posturing --unopposed extension of the head and limbs.</string>
 		<key>structureName</key>
 		<string>Reticulospinal Fibers</string>
 		<key>structureType</key>
@@ -202,7 +212,7 @@
 		<key>conventionalName</key>
 		<string>spinal-trigeminal-t</string>
 		<key>structureDescription</key>
-		<string>Carries pain, temperature, and crude touch sensation from ipsilateral face to contralateral VPM of thalamus. </string>
+		<string>Conveys pain, temperature, and crude touch sensation from head. Cells of origin of spinal tract lie in the ipsilateral Trigeminal ganglion. Pain/Temp fibers in the spinal tract reach caudal spinal nuclei. The spinal nuclei project across and ascend via the trigeminothalamic tract to reach contralateral VPM. Lesion of the Spinal Tract causes ipsilateral loss of pain/temp sensation whereas lesion of the trigeminothalamic tract manifest as contralateral deficit.</string>
 		<key>structureName</key>
 		<string>Spinal Trigeminal Tract</string>
 		<key>structureType</key>
@@ -214,7 +224,7 @@
 		<key>conventionalName</key>
 		<string>tectospinal-t</string>
 		<key>structureDescription</key>
-		<string>Coordinates movements of head, neck and eye in response to visual and auditory stimuli. Fibers run from the tectal brainstem to the cervical spinal cord&apos;s Rexed Lamina (layers: VI, VII, VIII). .</string>
+		<string>Coordinates movements of head, neck and eye in response to visual and auditory stimuli. Fibers run from the tectal brainstem to the cervical spinal cord&apos;s Rexed Lamina (layers: VI, VII, VIII). </string>
 		<key>structureName</key>
 		<string>Tectospinal Tract</string>
 		<key>structureType</key>
@@ -226,7 +236,7 @@
 		<key>conventionalName</key>
 		<string>ventral-trigeminothalamic-t</string>
 		<key>structureDescription</key>
-		<string>Carries ascending pain, temperature, and crude touch sensations from face, head and neck (afferents of CN: V, VII, IX &amp; X). Travels from spinal trigeminal nucleus to the thalamic VPM nucleus.  Also referred to as the anterior trigeminothalamic tract.</string>
+		<string>Carries ascending pain, temperature, and crude touch sensations from face, head and neck (afferents of CN: V, VII, IX &amp; X). Travels from spinal trigeminal nucleus to the thalamic VPM nucleus. </string>
 		<key>structureName</key>
 		<string>Anterior Trigeminothalamic Tract</string>
 		<key>structureType</key>
@@ -237,6 +247,8 @@
 		<string>BSStructure</string>
 		<key>conventionalName</key>
 		<string>vestibulospinal-and-reticulospinal-t</string>
+		<key>structureDescription</key>
+		<string>The vestibulospinal tract consists of two pathways: (1) The medial vestibulospinal tract (projects bilaterally from the medial vestibular nucleus within the MLF) to the cervical cord. It promotes stabilization of head position by innervating the neck muscles, which helps with head coordination and eye movement. (2) The lateral vestibulospinal tract signal interneurons to activate  leg extensors (the antigravity muscles) to help maintain upright and balanced posture.</string>
 		<key>structureName</key>
 		<string>Vestibulospinal Tract</string>
 		<key>structureType</key>
