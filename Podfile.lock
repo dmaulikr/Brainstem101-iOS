@@ -1,42 +1,18 @@
 PODS:
-  - AFNetworking (2.2.3):
-    - AFNetworking/NSURLConnection (= 2.2.3)
-    - AFNetworking/NSURLSession (= 2.2.3)
-    - AFNetworking/Reachability (= 2.2.3)
-    - AFNetworking/Security (= 2.2.3)
-    - AFNetworking/Serialization (= 2.2.3)
-    - AFNetworking/UIKit (= 2.2.3)
-  - AFNetworking/NSURLConnection (2.2.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.2.3):
-    - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.2.3)
-  - AFNetworking/Security (2.2.3)
-  - AFNetworking/Serialization (2.2.3)
-  - AFNetworking/UIKit (2.2.3):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
   - HRCoder (1.3.2)
   - SVProgressHUD (1.0)
-  - TestFlightSDK (3.0.0)
   - UIBezierPathSerialization (1.0.0)
   - UIView+Positioning (1.0)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.2)
   - HRCoder (~> 1.3)
   - SVProgressHUD (~> 1.0)
-  - TestFlightSDK (~> 3.0)
   - UIBezierPathSerialization (~> 1.0)
   - UIView+Positioning (~> 1.0)
 
 SPEC CHECKSUMS:
-  AFNetworking: 47947303319594706f48a55185ea95a95159ab94
   HRCoder: 492f8e2e0b69b54842564d4bbeb1c0e151d4f95f
   SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
-  TestFlightSDK: 36b8a207c5a119a3144aa2e6d24973eb9d5e0d0a
   UIBezierPathSerialization: 2a790dd5e76848e0829cd064714deba263f76c6c
   UIView+Positioning: c0331b588a91e5868c8da73d6b57f26dcf0ee3a0
 

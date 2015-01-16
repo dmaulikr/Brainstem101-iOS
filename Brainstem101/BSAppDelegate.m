@@ -7,13 +7,11 @@
 //
 
 #import "BSAppDelegate.h"
-#import <TestFlightSDK/TestFlight.h>
 
 @implementation BSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [TestFlight takeOff:@"45885b29-29dc-4532-9753-6a5bd4345da1"];
     [BSModel sharedModel];
     return YES;
 }
