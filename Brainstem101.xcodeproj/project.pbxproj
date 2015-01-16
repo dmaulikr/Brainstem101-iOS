@@ -24,24 +24,8 @@
 		323BCF0D176C04AF000F8D06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323BCF0C176C04AF000F8D06 /* SystemConfiguration.framework */; };
 		32490A2A18398A030028876A /* BSQuizCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490A2918398A030028876A /* BSQuizCollectionViewCell.m */; };
 		32490A2D18398D850028876A /* BSQuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490A2C18398D850028876A /* BSQuizQuestion.m */; };
-		32523E991709D79E00D55ECA /* claude-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E931709D79E00D55ECA /* claude-sec.png */; };
-		32523E9A1709D79E00D55ECA /* medial-medullary-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E941709D79E00D55ECA /* medial-medullary-sec.png */; };
-		32523E9B1709D79E00D55ECA /* nothnagel-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E951709D79E00D55ECA /* nothnagel-sec.png */; };
-		32523E9C1709D79E00D55ECA /* wallenberg-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E961709D79E00D55ECA /* wallenberg-sec.png */; };
-		32523E9D1709D79E00D55ECA /* weber-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E971709D79E00D55ECA /* weber-sec.png */; };
 		32638705176CDE2100AAA785 /* BSGlassStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32638704176CDE2100AAA785 /* BSGlassStemView.m */; };
-		326F878F17212522008E923E /* locked-in-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 326F878E17212522008E923E /* locked-in-mug.png */; };
 		326FB690170BFFA4002CD59B /* BSClinicalCollectionViewSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326FB68F170BFFA2002CD59B /* BSClinicalCollectionViewSectionCell.m */; };
-		326FB696170C1562002CD59B /* benedikt-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB695170C1562002CD59B /* benedikt-perf.png */; };
-		326FB698170C156E002CD59B /* weber-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB697170C156E002CD59B /* weber-perf.png */; };
-		326FB69A170C1580002CD59B /* wallenberg-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB699170C1580002CD59B /* wallenberg-perf.png */; };
-		326FB69C170C158F002CD59B /* raymond-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB69B170C158F002CD59B /* raymond-perf.png */; };
-		326FB69E170C15AE002CD59B /* raymond-cestan-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB69D170C15AE002CD59B /* raymond-cestan-perf.png */; };
-		326FB6A0170C15BC002CD59B /* millard-gubler-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB69F170C15BC002CD59B /* millard-gubler-perf.png */; };
-		326FB6A2170C15CE002CD59B /* medial-medullary-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A1170C15CE002CD59B /* medial-medullary-perf.png */; };
-		326FB6A4170C15D5002CD59B /* locked-in-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A3170C15D5002CD59B /* locked-in-perf.png */; };
-		326FB6A6170C15E0002CD59B /* foville-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A5170C15E0002CD59B /* foville-perf.png */; };
-		326FB6A8170C15E7002CD59B /* claude-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 326FB6A7170C15E7002CD59B /* claude-perf.png */; };
 		32782E6617B4A701008C072D /* accessory-nucleus-(CNXI)-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */; };
 		32782E6717B4A701008C072D /* anterior-corticospinal-tract-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */; };
 		32782E6817B4A701008C072D /* cuneate-nucleus-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782DB317B4A701008C072D /* cuneate-nucleus-0.png */; };
@@ -213,27 +197,8 @@
 		32782F0E17B4A701008C072D /* principal-sensory-nucleus-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6317B4A701008C072D /* principal-sensory-nucleus-side.png */; };
 		32782F0F17B4A701008C072D /* quiz-background-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6417B4A701008C072D /* quiz-background-side.png */; };
 		32782F1017B4A701008C072D /* superior-&-inferior-colliculi-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */; };
-		327CE45B170ADE710020F918 /* foville-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE456170ADE710020F918 /* foville-sec.png */; };
-		327CE45C170ADE710020F918 /* locked-in-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE457170ADE710020F918 /* locked-in-sec.png */; };
-		327CE45D170ADE710020F918 /* millard-gubler-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE458170ADE710020F918 /* millard-gubler-sec.png */; };
-		327CE45E170ADE710020F918 /* raymond-cestan-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE459170ADE710020F918 /* raymond-cestan-sec.png */; };
-		327CE45F170ADE710020F918 /* raymond-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE45A170ADE710020F918 /* raymond-sec.png */; };
-		327CE461170ADFAA0020F918 /* benedikt-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE460170ADFAA0020F918 /* benedikt-mug.png */; };
-		327CE465170ADFCB0020F918 /* nothnagel-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE463170ADFCB0020F918 /* nothnagel-mug.png */; };
 		327CE468170AED3B0020F918 /* BSClinicalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CE467170AED3B0020F918 /* BSClinicalCollectionViewCell.m */; };
-		327CE46B170AF8B70020F918 /* benedikt-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE469170AF8B70020F918 /* benedikt-sec.png */; };
-		327CE46C170AF8B70020F918 /* parinaud-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 327CE46A170AF8B70020F918 /* parinaud-sec.png */; };
-		327E12F21707BD6400C5D237 /* wallenberg-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F11707BD6400C5D237 /* wallenberg-mug.png */; };
-		327E12F41707BD7C00C5D237 /* millard-gubler-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F31707BD7C00C5D237 /* millard-gubler-mug.png */; };
-		327E12F61707BD9600C5D237 /* raymond-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F51707BD9600C5D237 /* raymond-mug.png */; };
-		327E12F81707BDD700C5D237 /* raymond-cestan-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F71707BDD700C5D237 /* raymond-cestan-mug.png */; };
-		327E12FA1707BE0900C5D237 /* parinaud-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12F91707BE0900C5D237 /* parinaud-mug.png */; };
-		327E12FC1707BE1900C5D237 /* medial-medullary-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12FB1707BE1900C5D237 /* medial-medullary-mug.png */; };
-		327E13001707BF3D00C5D237 /* foville-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12FF1707BF3D00C5D237 /* foville-mug.png */; };
-		327E13021707BF8900C5D237 /* jackson-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E13011707BF8900C5D237 /* jackson-mug.png */; };
 		327E13051707D0CC00C5D237 /* BSClinicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327E13041707D0CB00C5D237 /* BSClinicalViewController.m */; };
-		327E1324170842EA00C5D237 /* claude-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E1322170842E900C5D237 /* claude-mug.png */; };
-		327E132B17085DBD00C5D237 /* weber-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E132A17085DBD00C5D237 /* weber-mug.png */; };
 		328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A216717B8900B166CA /* BSSyndrome.m */; };
 		328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */; };
 		329E1D7F1A68E6EA00E9AB37 /* SXN Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D7E1A68E6EA00E9AB37 /* SXN Images.xcassets */; };
@@ -243,11 +208,10 @@
 		329E1D901A68F3D900E9AB37 /* Stem View Backgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D8F1A68F3D900E9AB37 /* Stem View Backgrounds.xcassets */; };
 		329E1D921A68F4E800E9AB37 /* Stem View Overlays.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D911A68F4E800E9AB37 /* Stem View Overlays.xcassets */; };
 		329E1D941A68F6AB00E9AB37 /* Artery Section Overlays.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */; };
+		329E1D961A6901C600E9AB37 /* Syndrome Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D951A6901C600E9AB37 /* Syndrome Images.xcassets */; };
 		32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AFEDF816D9D183006A3101 /* BSDrawView.m */; };
 		32B9A84E18A768EA0027805F /* BSQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9A84D18A768EA0027805F /* BSQuizViewController.m */; };
 		32C384C01777A45400333310 /* BSProfileSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C384BF1777A45400333310 /* BSProfileSectionView.m */; };
-		32C384DB177810BD00333310 /* jackson-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DA177810BC00333310 /* jackson-sec.png */; };
-		32C384DD1778119900333310 /* jackson-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DC1778119700333310 /* jackson-perf.png */; };
 		32CC33B9176C609600000F07 /* BSQuizView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC33B8176C609600000F07 /* BSQuizView.m */; };
 		32E4D2911651AACB0051AE2D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E4D2901651AACB0051AE2D /* BSModel.m */; };
 		32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E77B4B16326B3A0077D0B4 /* BSStemView.m */; };
@@ -495,26 +459,10 @@
 		32490A2918398A030028876A /* BSQuizCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizCollectionViewCell.m; sourceTree = "<group>"; };
 		32490A2B18398D850028876A /* BSQuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizQuestion.h; sourceTree = "<group>"; };
 		32490A2C18398D850028876A /* BSQuizQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizQuestion.m; sourceTree = "<group>"; };
-		32523E931709D79E00D55ECA /* claude-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-sec.png"; sourceTree = "<group>"; };
-		32523E941709D79E00D55ECA /* medial-medullary-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-medullary-sec.png"; sourceTree = "<group>"; };
-		32523E951709D79E00D55ECA /* nothnagel-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nothnagel-sec.png"; sourceTree = "<group>"; };
-		32523E961709D79E00D55ECA /* wallenberg-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallenberg-sec.png"; sourceTree = "<group>"; };
-		32523E971709D79E00D55ECA /* weber-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-sec.png"; sourceTree = "<group>"; };
 		32638703176CDE2100AAA785 /* BSGlassStemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGlassStemView.h; sourceTree = "<group>"; };
 		32638704176CDE2100AAA785 /* BSGlassStemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGlassStemView.m; sourceTree = "<group>"; };
-		326F878E17212522008E923E /* locked-in-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-mug.png"; sourceTree = "<group>"; };
 		326FB68E170BFFA1002CD59B /* BSClinicalCollectionViewSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalCollectionViewSectionCell.h; sourceTree = "<group>"; };
 		326FB68F170BFFA2002CD59B /* BSClinicalCollectionViewSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalCollectionViewSectionCell.m; sourceTree = "<group>"; };
-		326FB695170C1562002CD59B /* benedikt-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt-perf.png"; sourceTree = "<group>"; };
-		326FB697170C156E002CD59B /* weber-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-perf.png"; sourceTree = "<group>"; };
-		326FB699170C1580002CD59B /* wallenberg-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallenberg-perf.png"; sourceTree = "<group>"; };
-		326FB69B170C158F002CD59B /* raymond-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-perf.png"; sourceTree = "<group>"; };
-		326FB69D170C15AE002CD59B /* raymond-cestan-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-cestan-perf.png"; sourceTree = "<group>"; };
-		326FB69F170C15BC002CD59B /* millard-gubler-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "millard-gubler-perf.png"; sourceTree = "<group>"; };
-		326FB6A1170C15CE002CD59B /* medial-medullary-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-medullary-perf.png"; sourceTree = "<group>"; };
-		326FB6A3170C15D5002CD59B /* locked-in-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-perf.png"; sourceTree = "<group>"; };
-		326FB6A5170C15E0002CD59B /* foville-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-perf.png"; sourceTree = "<group>"; };
-		326FB6A7170C15E7002CD59B /* claude-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-perf.png"; sourceTree = "<group>"; };
 		32782DB117B4A701008C072D /* accessory-nucleus-(CNXI)-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-nucleus-(CNXI)-0.png"; sourceTree = "<group>"; };
 		32782DB217B4A701008C072D /* anterior-corticospinal-tract-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-corticospinal-tract-0.png"; sourceTree = "<group>"; };
 		32782DB317B4A701008C072D /* cuneate-nucleus-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cuneate-nucleus-0.png"; sourceTree = "<group>"; };
@@ -686,29 +634,10 @@
 		32782E6317B4A701008C072D /* principal-sensory-nucleus-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-sensory-nucleus-side.png"; sourceTree = "<group>"; };
 		32782E6417B4A701008C072D /* quiz-background-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quiz-background-side.png"; sourceTree = "<group>"; };
 		32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-&-inferior-colliculi-side.png"; sourceTree = "<group>"; };
-		327CE456170ADE710020F918 /* foville-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-sec.png"; sourceTree = "<group>"; };
-		327CE457170ADE710020F918 /* locked-in-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-sec.png"; sourceTree = "<group>"; };
-		327CE458170ADE710020F918 /* millard-gubler-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "millard-gubler-sec.png"; sourceTree = "<group>"; };
-		327CE459170ADE710020F918 /* raymond-cestan-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-cestan-sec.png"; sourceTree = "<group>"; };
-		327CE45A170ADE710020F918 /* raymond-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-sec.png"; sourceTree = "<group>"; };
-		327CE460170ADFAA0020F918 /* benedikt-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt-mug.png"; sourceTree = "<group>"; };
-		327CE463170ADFCB0020F918 /* nothnagel-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nothnagel-mug.png"; sourceTree = "<group>"; };
 		327CE466170AED3B0020F918 /* BSClinicalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalCollectionViewCell.h; sourceTree = "<group>"; };
 		327CE467170AED3B0020F918 /* BSClinicalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalCollectionViewCell.m; sourceTree = "<group>"; };
-		327CE469170AF8B70020F918 /* benedikt-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "benedikt-sec.png"; sourceTree = "<group>"; };
-		327CE46A170AF8B70020F918 /* parinaud-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parinaud-sec.png"; sourceTree = "<group>"; };
-		327E12F11707BD6400C5D237 /* wallenberg-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallenberg-mug.png"; sourceTree = "<group>"; };
-		327E12F31707BD7C00C5D237 /* millard-gubler-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "millard-gubler-mug.png"; sourceTree = "<group>"; };
-		327E12F51707BD9600C5D237 /* raymond-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-mug.png"; sourceTree = "<group>"; };
-		327E12F71707BDD700C5D237 /* raymond-cestan-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "raymond-cestan-mug.png"; sourceTree = "<group>"; };
-		327E12F91707BE0900C5D237 /* parinaud-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parinaud-mug.png"; sourceTree = "<group>"; };
-		327E12FB1707BE1900C5D237 /* medial-medullary-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-medullary-mug.png"; sourceTree = "<group>"; };
-		327E12FF1707BF3D00C5D237 /* foville-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foville-mug.png"; sourceTree = "<group>"; };
-		327E13011707BF8900C5D237 /* jackson-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-mug.png"; sourceTree = "<group>"; };
 		327E13031707D0CA00C5D237 /* BSClinicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalViewController.h; sourceTree = "<group>"; };
 		327E13041707D0CB00C5D237 /* BSClinicalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalViewController.m; sourceTree = "<group>"; };
-		327E1322170842E900C5D237 /* claude-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-mug.png"; sourceTree = "<group>"; };
-		327E132A17085DBD00C5D237 /* weber-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-mug.png"; sourceTree = "<group>"; };
 		328CC6A116717B8900B166CA /* BSSyndrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndrome.h; sourceTree = "<group>"; };
 		328CC6A216717B8900B166CA /* BSSyndrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndrome.m; sourceTree = "<group>"; };
 		328CC6A316717B8900B166CA /* BSSyndromeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndromeGenerator.h; sourceTree = "<group>"; };
@@ -720,14 +649,13 @@
 		329E1D8F1A68F3D900E9AB37 /* Stem View Backgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Stem View Backgrounds.xcassets"; path = "Images/Stem View Backgrounds.xcassets"; sourceTree = "<group>"; };
 		329E1D911A68F4E800E9AB37 /* Stem View Overlays.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Stem View Overlays.xcassets"; path = "Images/Stem View Overlays.xcassets"; sourceTree = "<group>"; };
 		329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Artery Section Overlays.xcassets"; path = "Images/Artery Section Overlays.xcassets"; sourceTree = "<group>"; };
+		329E1D951A6901C600E9AB37 /* Syndrome Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Syndrome Images.xcassets"; path = "Images/Syndrome Images.xcassets"; sourceTree = "<group>"; };
 		32AFEDF716D9D183006A3101 /* BSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawView.h; sourceTree = "<group>"; };
 		32AFEDF816D9D183006A3101 /* BSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawView.m; sourceTree = "<group>"; };
 		32B9A84C18A768EA0027805F /* BSQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizViewController.h; sourceTree = "<group>"; };
 		32B9A84D18A768EA0027805F /* BSQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizViewController.m; sourceTree = "<group>"; };
 		32C384BE1777A45400333310 /* BSProfileSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSProfileSectionView.h; sourceTree = "<group>"; };
 		32C384BF1777A45400333310 /* BSProfileSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileSectionView.m; sourceTree = "<group>"; };
-		32C384DA177810BC00333310 /* jackson-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-sec.png"; sourceTree = "<group>"; };
-		32C384DC1778119700333310 /* jackson-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-perf.png"; sourceTree = "<group>"; };
 		32CC33B7176C609600000F07 /* BSQuizView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizView.h; sourceTree = "<group>"; };
 		32CC33B8176C609600000F07 /* BSQuizView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizView.m; sourceTree = "<group>"; };
 		32DD437F16524FD3002AAE0F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -992,8 +920,8 @@
 				329E1D8F1A68F3D900E9AB37 /* Stem View Backgrounds.xcassets */,
 				329E1D911A68F4E800E9AB37 /* Stem View Overlays.xcassets */,
 				329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */,
+				329E1D951A6901C600E9AB37 /* Syndrome Images.xcassets */,
 				32FB66A517200146005E6DE6 /* Quiz */,
-				328848C816B12200005FA824 /* Syndrome Images */,
 			);
 			name = Images;
 			path = ..;
@@ -1296,51 +1224,6 @@
 				32782E6517B4A701008C072D /* superior-&-inferior-colliculi-side.png */,
 			);
 			path = side;
-			sourceTree = "<group>";
-		};
-		328848C816B12200005FA824 /* Syndrome Images */ = {
-			isa = PBXGroup;
-			children = (
-				327E12F11707BD6400C5D237 /* wallenberg-mug.png */,
-				32523E961709D79E00D55ECA /* wallenberg-sec.png */,
-				326FB699170C1580002CD59B /* wallenberg-perf.png */,
-				32523E931709D79E00D55ECA /* claude-sec.png */,
-				327E1322170842E900C5D237 /* claude-mug.png */,
-				326FB6A7170C15E7002CD59B /* claude-perf.png */,
-				327E12FF1707BF3D00C5D237 /* foville-mug.png */,
-				327CE456170ADE710020F918 /* foville-sec.png */,
-				326FB6A5170C15E0002CD59B /* foville-perf.png */,
-				327CE457170ADE710020F918 /* locked-in-sec.png */,
-				326F878E17212522008E923E /* locked-in-mug.png */,
-				326FB6A3170C15D5002CD59B /* locked-in-perf.png */,
-				327E12FB1707BE1900C5D237 /* medial-medullary-mug.png */,
-				32523E941709D79E00D55ECA /* medial-medullary-sec.png */,
-				326FB6A1170C15CE002CD59B /* medial-medullary-perf.png */,
-				327CE45A170ADE710020F918 /* raymond-sec.png */,
-				327E12F51707BD9600C5D237 /* raymond-mug.png */,
-				326FB69B170C158F002CD59B /* raymond-perf.png */,
-				327CE459170ADE710020F918 /* raymond-cestan-sec.png */,
-				327E12F71707BDD700C5D237 /* raymond-cestan-mug.png */,
-				326FB69D170C15AE002CD59B /* raymond-cestan-perf.png */,
-				327E12F31707BD7C00C5D237 /* millard-gubler-mug.png */,
-				327CE458170ADE710020F918 /* millard-gubler-sec.png */,
-				326FB69F170C15BC002CD59B /* millard-gubler-perf.png */,
-				327E132A17085DBD00C5D237 /* weber-mug.png */,
-				32523E971709D79E00D55ECA /* weber-sec.png */,
-				326FB697170C156E002CD59B /* weber-perf.png */,
-				327CE460170ADFAA0020F918 /* benedikt-mug.png */,
-				327CE469170AF8B70020F918 /* benedikt-sec.png */,
-				326FB695170C1562002CD59B /* benedikt-perf.png */,
-				327CE463170ADFCB0020F918 /* nothnagel-mug.png */,
-				32523E951709D79E00D55ECA /* nothnagel-sec.png */,
-				327CE46A170AF8B70020F918 /* parinaud-sec.png */,
-				327E12F91707BE0900C5D237 /* parinaud-mug.png */,
-				327E13011707BF8900C5D237 /* jackson-mug.png */,
-				32C384DC1778119700333310 /* jackson-perf.png */,
-				32C384DA177810BC00333310 /* jackson-sec.png */,
-			);
-			name = "Syndrome Images";
-			path = "Images/Syndrome Images";
 			sourceTree = "<group>";
 		};
 		32DD438016525569002AAE0F /* Views */ = {
@@ -1775,56 +1658,22 @@
 				32FF12AA1A46F57500CEAE55 /* vi-abducens-cn-4.json in Resources */,
 				32FF12171A46F57500CEAE55 /* cuneate-n-0.json in Resources */,
 				32FF12111A46F57500CEAE55 /* corticospinal-t-5.json in Resources */,
-				327E12F21707BD6400C5D237 /* wallenberg-mug.png in Resources */,
-				327E12F41707BD7C00C5D237 /* millard-gubler-mug.png in Resources */,
-				327E12F61707BD9600C5D237 /* raymond-mug.png in Resources */,
 				32FF12351A46F57500CEAE55 /* interpeduncular-n-7.json in Resources */,
-				327E12F81707BDD700C5D237 /* raymond-cestan-mug.png in Resources */,
 				32FF11F51A46F57500CEAE55 /* anterolateral-system-t-0.json in Resources */,
-				327E12FA1707BE0900C5D237 /* parinaud-mug.png in Resources */,
-				327E12FC1707BE1900C5D237 /* medial-medullary-mug.png in Resources */,
-				327E13001707BF3D00C5D237 /* foville-mug.png in Resources */,
 				32FF12421A46F57500CEAE55 /* medial-lemniscus-t-1.json in Resources */,
-				327E13021707BF8900C5D237 /* jackson-mug.png in Resources */,
 				329E1D881A68E9BB00E9AB37 /* Tutorial.xcassets in Resources */,
 				32FF12AB1A46F57500CEAE55 /* vii-facial-cn-4.json in Resources */,
 				32FF11FB1A46F57500CEAE55 /* anterolateral-system-t-6.json in Resources */,
 				32FF12931A46F57500CEAE55 /* superior-cerebellar-peduncle-m-7.json in Resources */,
 				32FF12991A46F57500CEAE55 /* tectospinal-t-4.json in Resources */,
 				32FF11EB1A46F57500CEAE55 /* accessory-cuneate-n-1.json in Resources */,
-				327E1324170842EA00C5D237 /* claude-mug.png in Resources */,
-				327E132B17085DBD00C5D237 /* weber-mug.png in Resources */,
-				32523E991709D79E00D55ECA /* claude-sec.png in Resources */,
-				32523E9A1709D79E00D55ECA /* medial-medullary-sec.png in Resources */,
-				32523E9B1709D79E00D55ECA /* nothnagel-sec.png in Resources */,
 				32FF12B81A47195600CEAE55 /* tracts.plist in Resources */,
-				32523E9C1709D79E00D55ECA /* wallenberg-sec.png in Resources */,
 				32FF124A1A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-0.json in Resources */,
-				32523E9D1709D79E00D55ECA /* weber-sec.png in Resources */,
 				32FF12BA1A47227E00CEAE55 /* arteries.plist in Resources */,
-				327CE45B170ADE710020F918 /* foville-sec.png in Resources */,
-				327CE45C170ADE710020F918 /* locked-in-sec.png in Resources */,
 				32FF12801A46F57500CEAE55 /* rubrospinal-t-6.json in Resources */,
-				327CE45D170ADE710020F918 /* millard-gubler-sec.png in Resources */,
-				327CE45E170ADE710020F918 /* raymond-cestan-sec.png in Resources */,
-				327CE45F170ADE710020F918 /* raymond-sec.png in Resources */,
-				327CE461170ADFAA0020F918 /* benedikt-mug.png in Resources */,
-				327CE465170ADFCB0020F918 /* nothnagel-mug.png in Resources */,
-				327CE46B170AF8B70020F918 /* benedikt-sec.png in Resources */,
-				327CE46C170AF8B70020F918 /* parinaud-sec.png in Resources */,
-				326FB696170C1562002CD59B /* benedikt-perf.png in Resources */,
-				326FB698170C156E002CD59B /* weber-perf.png in Resources */,
 				32FF12831A46F57500CEAE55 /* salivatory-n-4.json in Resources */,
 				32FF12661A46F57500CEAE55 /* nucleus-raphe-pallidus-n-3.json in Resources */,
-				326FB69A170C1580002CD59B /* wallenberg-perf.png in Resources */,
-				326FB69C170C158F002CD59B /* raymond-perf.png in Resources */,
-				326FB69E170C15AE002CD59B /* raymond-cestan-perf.png in Resources */,
-				326FB6A0170C15BC002CD59B /* millard-gubler-perf.png in Resources */,
-				326FB6A2170C15CE002CD59B /* medial-medullary-perf.png in Resources */,
 				32FF125A1A46F57500CEAE55 /* mesencephalic-n-8.json in Resources */,
-				326FB6A4170C15D5002CD59B /* locked-in-perf.png in Resources */,
-				326FB6A6170C15E0002CD59B /* foville-perf.png in Resources */,
-				326FB6A8170C15E7002CD59B /* claude-perf.png in Resources */,
 				32FF11F11A46F57500CEAE55 /* anterior-spinocerebellar-t-1.json in Resources */,
 				32FF120F1A46F57500CEAE55 /* corticospinal-t-3.json in Resources */,
 				32FF122A1A46F57500CEAE55 /* hypoglossal-n-1.json in Resources */,
@@ -1906,7 +1755,6 @@
 				32FF12811A46F57500CEAE55 /* rubrospinal-t-7.json in Resources */,
 				32FF12B61A47195600CEAE55 /* miscellaneous.plist in Resources */,
 				32FF12621A46F57500CEAE55 /* nucleus-raphe-dorsalis-n-7.json in Resources */,
-				326F878F17212522008E923E /* locked-in-mug.png in Resources */,
 				32FF126D1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-1.json in Resources */,
 				32FF12371A46F57500CEAE55 /* lateral-lemniscus-t-4.json in Resources */,
 				32FF12361A46F57500CEAE55 /* interpeduncular-n-8.json in Resources */,
@@ -1925,8 +1773,6 @@
 				32FF12541A46F57500CEAE55 /* medial-vestibular-n-2.json in Resources */,
 				32FF126A1A46F57500CEAE55 /* pontine-n-5.json in Resources */,
 				32FF11F91A46F57500CEAE55 /* anterolateral-system-t-4.json in Resources */,
-				32C384DB177810BD00333310 /* jackson-sec.png in Resources */,
-				32C384DD1778119900333310 /* jackson-perf.png in Resources */,
 				32FF12711A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-5.json in Resources */,
 				32FF122C1A46F57500CEAE55 /* iii-oculomotor-cn-8.json in Resources */,
 				32FF12461A46F57500CEAE55 /* medial-lemniscus-t-5.json in Resources */,
@@ -2121,6 +1967,7 @@
 				32FF12721A46F57500CEAE55 /* posterior-spinocerebellar-t-0.json in Resources */,
 				32FF11EE1A46F57500CEAE55 /* anterior-cochlear-n-3.json in Resources */,
 				32782EE717B4A701008C072D /* medial-lemniscus-8.png in Resources */,
+				329E1D961A6901C600E9AB37 /* Syndrome Images.xcassets in Resources */,
 				32782EE817B4A701008C072D /* mesencephalic-nucleus-8.png in Resources */,
 				32782EE917B4A701008C072D /* mlf-8.png in Resources */,
 				32782EEA17B4A701008C072D /* obstructive-hydrocephalus-8.png in Resources */,
