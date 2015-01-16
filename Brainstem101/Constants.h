@@ -21,16 +21,10 @@ typedef NS_ENUM(NSUInteger, BSStructureType) {
 #define ROTATION_SPEED 0.4
 #define SECTION_3_Y_ROTATION_OFFSET 35
 
-#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
 #define UIColorFromRGBWithAlpha(rgbValue,a) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
-
-#define TICK   NSDate *startTime = [NSDate date]; NSLog(@"start");
-#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow])
-
 
 #define CAPTUREDEVICESCALEFACTOR 0.78
 #define CAPTURE_DEVICE_WIDTH 1314
@@ -45,10 +39,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #define PATH_COLOR_ALPHA .6
 #define PATH_COLOR_DIVISOR 255
 
-
 #define PROFILE_SECTION_VIEW_LINE_WIDTH 2
 #define PROFILE_SECTION_VIEW_PATH_COLOR [UIColor yellowColor]
 #define PROFILE_SECTION_VIEW_PATH_FILL_COLOR  [UIColor colorWithRed:1 green:1 blue:0 alpha:0.5]
-
 
 #endif

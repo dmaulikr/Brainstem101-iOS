@@ -33,6 +33,7 @@
     _currentStructure = currentStructure;
     
     if (self.currentStructure == nil) {
+        [[self overlayView] setImage:nil];
         [self changeCurrentImageToViewMode:BSStemViewModeBack];
         return;
     }
@@ -74,12 +75,12 @@
     }
     
     // If can't match with the current view mode, just follow this hard-coded order
-    if (hasBack) {
-        [self changeCurrentImageToViewMode:BSStemViewModeBack];
+    if (hasFront) {
+        [self changeCurrentImageToViewMode:BSStemViewModeFront];
     }else if (hasSide){
         [self changeCurrentImageToViewMode:BSStemViewModeSide];
-    }else if (hasFront){
-        [self changeCurrentImageToViewMode:BSStemViewModeFront];
+    }else if (hasBack){
+        [self changeCurrentImageToViewMode:BSStemViewModeBack];
     }else{
         NSLog(@"ERROR : Should never reach here!");
     }
@@ -91,7 +92,7 @@
     _currentViewMode = viewMode;
     
     // Set to default background if the current structure is nil
-    if (self.currentStructure == nil) {
+    if (!self.currentStructure) {
         [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-default"]];
         return;
     }
@@ -124,7 +125,6 @@
                         [self.backgroundView setImage:[UIImage imageNamed:@"stem-side-default"]];
                         break;
                 }
-                
                 break;
             case BSStemViewModeFront:
                 switch (self.currentStructure.structureType) {

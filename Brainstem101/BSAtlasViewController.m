@@ -132,7 +132,6 @@
     [self performSegueWithIdentifier:@"atlas-to-page0" sender:self];
 }
 
-
 #pragma mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -266,7 +265,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.currentStructure = [self currentSectionForType:indexPath.section][indexPath.row];
+    self.currentStructure = [[self currentSectionForType:indexPath.section] objectAtIndex:indexPath.row];
     [self.stemView show];
     [self.glassStemView hide];
     [self.stemView setCurrentStructure:self.currentStructure];
