@@ -31,12 +31,12 @@
 
 - (UIImage *)atlasImage
 {
-    return [UIImage imageNamed:[NSString stringWithFormat:@"atlas-sxn-%ld.png", (long)_sectionNumber]];
+    return [UIImage imageNamed:[NSString stringWithFormat:@"atlas-sxn-%d", (int)self.sectionNumber]];
 }
 
 - (UIImage *)profileImage
 {
-    return [UIImage imageNamed:[NSString stringWithFormat:@"profile-sxn-%ld.png", (long)_sectionNumber]];
+    return [UIImage imageNamed:[NSString stringWithFormat:@"profile-sxn-%d", (int)self.sectionNumber]];
 }
 
 @end

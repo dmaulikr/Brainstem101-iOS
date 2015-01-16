@@ -20,7 +20,6 @@ typedef NS_ENUM(NSUInteger, BSStemViewMode) {
 @property (strong, nonatomic) UIImageView *overlayView;
 @property (strong, nonatomic) BSStructure *currentStructure;
 @property (assign, nonatomic, readonly) BSStemViewMode currentViewMode;
-@property (strong, nonatomic) NSDictionary *backgroundImages;
 
 - (void)show;
 - (void)hide;

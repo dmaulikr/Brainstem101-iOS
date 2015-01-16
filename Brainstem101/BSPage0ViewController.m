@@ -54,8 +54,8 @@
                 
             } completion:^(BOOL finished) {
                 
-                //add tag
-                CGFloat amoutToMoveTag = 200.0;
+                // add tag
+                static CGFloat amoutToMoveTag = 200.0;
                 self.tagImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
                 [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag"]];
                 self.tagImageView.centerX += amoutToMoveTag;

@@ -15,12 +15,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-
-        self.backgroundImages = @{
-                                  @(BSStemViewModeBack)     :[UIImage imageNamed:@"stem-back"],
-                                  @(BSStemViewModeSide)     :[UIImage imageNamed:@"stem-side"],
-                                  @(BSStemViewModeFront)    :[UIImage imageNamed:@"stem-front"]
-                                  };
         
         self.backgroundView = [[UIImageView alloc] initWithFrame:self.bounds];
         [self addSubview:self.backgroundView];
@@ -38,7 +32,7 @@
 {
     _currentStructure = currentStructure;
     
-    if (_currentStructure == nil) {
+    if (self.currentStructure == nil) {
         [self changeCurrentImageToViewMode:BSStemViewModeBack];
         return;
     }
@@ -98,8 +92,42 @@
     [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self setAlpha:0];
     } completion:^(BOOL finished) {
-        [self.backgroundView setImage:[self.backgroundImages objectForKey:@(viewMode)]];
         
+        // Set appropriate stem backing image
+        switch (viewMode) {
+            case BSStemViewModeBack:
+                [self.backgroundView setImage:[UIImage imageNamed:@"stem-back"]];
+                break;
+            case BSStemViewModeSide:
+                
+                switch (self.currentStructure.structureType) {
+                    case BSStructureTypeCranialNerve:
+                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-side-cranial"]];
+                        break;
+                    default:
+                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-side-default"]];
+                        break;
+                }
+                
+                break;
+            case BSStemViewModeFront:
+                switch (self.currentStructure.structureType) {
+                    case BSStructureTypeArtery:
+                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-front-artery"]];
+                        break;
+                    case BSStructureTypeCranialNerve:
+                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-front-cranial"]];
+                        break;
+                    default:
+                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-front-default"]];
+                        break;
+                }
+                break;
+            default:
+                break;
+        }
+        
+        // Set the stem overlay image
         switch (self.currentViewMode) {
             case BSStemViewModeBack:
                 [self.overlayView setImage:[UIImage imageNamed:self.currentStructure.stemViewOverlayBack]];
@@ -153,7 +181,6 @@
             break;
     }
 }
-
 
 - (void)show
 {

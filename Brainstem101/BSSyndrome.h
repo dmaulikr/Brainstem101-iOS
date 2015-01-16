@@ -8,9 +8,9 @@
 
 #import "BSDeficit.h"
 
-@interface BSSyndrome : NSObject // <NSCoding>
+@interface BSSyndrome : NSObject
 
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *syndromeName;
 @property (strong, nonatomic) NSString *syndromeDescription;
 @property (strong, nonatomic) NSString *sectionImageName;
 @property (strong, nonatomic) NSString *mugshotImageName;

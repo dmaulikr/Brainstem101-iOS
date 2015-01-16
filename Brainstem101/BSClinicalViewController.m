@@ -56,7 +56,7 @@
     tutorialView = nil;
 }
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     UITextView *tv = object;
     CGFloat topCorrect = ([tv bounds].size.height - [tv contentSize].height * [tv zoomScale])/2.0;
@@ -67,7 +67,7 @@
     }];
 }
 
--(void)switchToSyndrome:(BSSyndrome *)syn
+- (void)switchToSyndrome:(BSSyndrome *)syn
 {
     currentSyndrome = syn;
     
@@ -121,7 +121,7 @@
     }];
 }
 
--(void)updateSyndromeSelectionCollectionView
+- (void)updateSyndromeSelectionCollectionView
 {
     [self.syndromeSelectionCollectionView reloadData];
     [self.syndromeSelectionCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:[[[BSModel sharedModel] Syndromes] indexOfObject:currentSyndrome] inSection:0]
@@ -165,7 +165,7 @@
     return nil;
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     if (tableView == _deficitTableView) {
         return 1;
@@ -174,7 +174,7 @@
     return 0;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (tableView == _deficitTableView) {
         return currentSyndrome.deficits.count;
@@ -184,17 +184,17 @@
     return 0;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [self calculatedTableCellHeightForDeficit:[[currentSyndrome deficits] objectAtIndex:indexPath.row]];
 }
 
--(CGFloat) calculatedTableCellHeightForDeficit:(BSDeficit *)deficit
+- (CGFloat) calculatedTableCellHeightForDeficit:(BSDeficit *)deficit
 {
-    float symptomsHeight = [[deficit symptoms] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(343, 105)].height;
-    float deficitHeight = [[deficit deficit] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(130, 105)].height;
+    CGFloat symptomsHeight = [[deficit symptoms] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(343, 105)].height;
+    CGFloat deficitHeight = [[deficit deficit] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(130, 105)].height;
     
-    float finalHeight = MAX(symptomsHeight, deficitHeight);
+    CGFloat finalHeight = MAX(symptomsHeight, deficitHeight);
     finalHeight = MAX(finalHeight, 50);
     
     return finalHeight + CELLSPACING;
@@ -202,16 +202,16 @@
 
 #pragma mark UICollectionView
 
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
     if (collectionView == _syndromeSelectionCollectionView) {
         static NSString *syndromCellIdentifier = @"SyndromeCell";
         BSClinicalCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:syndromCellIdentifier forIndexPath:indexPath];
         
-        [cell.syndromNameLabel setText:[[[BSModel sharedModel] Syndromes][indexPath.row] name]];
+        [cell.syndromNameLabel setText:[[[[BSModel sharedModel] Syndromes] objectAtIndex:indexPath.row] syndromeName]];
         
-        if (currentSyndrome == [[BSModel sharedModel] Syndromes][indexPath.row]) {
+        if (currentSyndrome == [[[BSModel sharedModel] Syndromes] objectAtIndex:indexPath.row]) {
             [cell.syndromNameLabel setTextColor:[UIColor whiteColor]];
         }else{
             [cell.syndromNameLabel setTextColor:[UIColor colorWithWhite:1 alpha:0.5]];
@@ -240,7 +240,7 @@
     return nil;
 }
 
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     if (collectionView == self.syndromeSelectionCollectionView) {
         return 1;
@@ -252,7 +252,7 @@
     }
 }
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     if (collectionView == self.syndromeSelectionCollectionView) {
         return [[[BSModel sharedModel] Syndromes] count];
@@ -264,12 +264,12 @@
     }
 }
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (collectionView == self.syndromeSelectionCollectionView) {
         if ([[[BSModel sharedModel] Syndromes] objectAtIndex:indexPath.row] != currentSyndrome) {
             [[(BSClinicalCollectionViewCell *)[self.syndromeSelectionCollectionView cellForItemAtIndexPath:indexPath] syndromNameLabel] setTextColor:[UIColor whiteColor]];
-            [self switchToSyndrome:[[BSModel sharedModel] Syndromes][indexPath.row]];
+            [self switchToSyndrome:[[[BSModel sharedModel] Syndromes] objectAtIndex:indexPath.row]];
         }
     }
 }
@@ -277,7 +277,7 @@
 
 #pragma mark - System Methods
 
--(NSUInteger)supportedInterfaceOrientations
+- (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }

@@ -133,24 +133,23 @@
 
 
 #pragma mark UIScrollViewDelegate
-
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self updateFadedCells];
 }
 
--(void)updateFadedCells
+- (void)updateFadedCells
 {
     NSArray *visibleCells = [self.indexTable visibleCells];
-    
+    static CGFloat offsetNotToFade = 10.0;
     for (UITableViewCell *cell in visibleCells) {
-        if ( [cell isEqual:visibleCells.firstObject] || [cell isEqual:visibleCells.lastObject]) {
+        if (([cell isEqual:visibleCells[0]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells.lastObject]) {
             [cell setAlpha:0.2];
-        }else if ([cell isEqual:visibleCells[1]] || [cell isEqual:visibleCells[visibleCells.count - 2]]){
+        }else if (([cell isEqual:visibleCells[1]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells[visibleCells.count - 2]]){
             [cell setAlpha:0.3];
-        }else if ([cell isEqual:visibleCells[2]] || [cell isEqual:visibleCells[visibleCells.count - 3]]) {
+        }else if (([cell isEqual:visibleCells[2]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells[visibleCells.count - 3]]) {
             [cell setAlpha:0.5];
-        }else if ([cell isEqual:visibleCells[3]] || [cell isEqual:visibleCells[visibleCells.count - 4]]) {
+        }else if (([cell isEqual:visibleCells[3]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells[visibleCells.count - 4]]) {
             [cell setAlpha:0.7];
         }else{
             [cell setAlpha:1];

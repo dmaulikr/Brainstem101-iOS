@@ -27,7 +27,7 @@ const CGFloat sectionDistance = 100;
         for (int i = 0; i < 18; i++) {
 
             UIImageView *tmp = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-            [tmp setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@-%d.png", baseFileName, i]]];
+            [tmp setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@-%d", baseFileName, i]]];
             [tmp setContentMode:UIViewContentModeScaleAspectFit];
             [self.imageLayers addObject:tmp];
             [self addSubview:self.imageLayers[i]];
@@ -69,7 +69,7 @@ const CGFloat sectionDistance = 100;
     } completion:nil];
 }
 
--(void)retractLayer:(UIImageView *)layer
+- (void)retractLayer:(UIImageView *)layer
 {
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         [currentLayer setY:0];

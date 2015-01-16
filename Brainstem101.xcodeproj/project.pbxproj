@@ -16,79 +16,19 @@
 		320D185B17090556002D9E15 /* BSQuestionGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D185A17090555002D9E15 /* BSQuestionGenerator.m */; };
 		320D186117094FBD002D9E15 /* BSClinicalDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D186017094FBC002D9E15 /* BSClinicalDetailsTableViewCell.m */; };
 		320D70391831F3B4000F6AFA /* BSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D70381831F3B4000F6AFA /* BSAboutViewController.m */; };
-		320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */ = {isa = PBXBuildFile; fileRef = 320D703F183219EB000F6AFA /* tutorial-clinical.png */; };
-		3213C92F170D61FB000DF667 /* stem-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92D170D61FB000DF667 /* stem-back.png */; };
-		3213C930170D61FB000DF667 /* stem-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C92E170D61FB000DF667 /* stem-side.png */; };
-		3213C95A170D661D000DF667 /* abducens-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C931170D661C000DF667 /* abducens-n-overlay-back.png */; };
-		3213C95B170D661D000DF667 /* abducens-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C932170D661C000DF667 /* abducens-n-overlay-side.png */; };
-		3213C95C170D661D000DF667 /* accessory-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C933170D661C000DF667 /* accessory-n-overlay-back.png */; };
-		3213C95D170D661D000DF667 /* accessory-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C934170D661C000DF667 /* accessory-n-overlay-side.png */; };
-		3213C95E170D661D000DF667 /* anterior-cochlear-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C935170D661C000DF667 /* anterior-cochlear-n-overlay-back.png */; };
-		3213C95F170D661D000DF667 /* dorsal-motor-of-vagus-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C936170D661C000DF667 /* dorsal-motor-of-vagus-n-overlay-back.png */; };
-		3213C960170D661D000DF667 /* dorsal-motor-of-vagus-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C937170D661C000DF667 /* dorsal-motor-of-vagus-n-overlay-side.png */; };
-		3213C961170D661D000DF667 /* edinger-westphal-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C938170D661C000DF667 /* edinger-westphal-n-overlay-back.png */; };
-		3213C962170D661D000DF667 /* edinger-westphal-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C939170D661C000DF667 /* edinger-westphal-n-overlay-side.png */; };
-		3213C963170D661D000DF667 /* facial-motor-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93A170D661C000DF667 /* facial-motor-n-overlay-back.png */; };
-		3213C964170D661D000DF667 /* facial-motor-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93B170D661D000DF667 /* facial-motor-n-overlay-side.png */; };
-		3213C965170D661D000DF667 /* fourth-ventricle-m-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93C170D661D000DF667 /* fourth-ventricle-m-overlay-back.png */; };
-		3213C966170D661D000DF667 /* hypoglossal-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93D170D661D000DF667 /* hypoglossal-n-overlay-back.png */; };
-		3213C967170D661D000DF667 /* hypoglossal-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93E170D661D000DF667 /* hypoglossal-n-overlay-side.png */; };
-		3213C968170D661D000DF667 /* inferior-colliculus-m-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C93F170D661D000DF667 /* inferior-colliculus-m-overlay-back.png */; };
-		3213C969170D661D000DF667 /* inferior-colliculus-m-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C940170D661D000DF667 /* inferior-colliculus-m-overlay-side.png */; };
-		3213C96C170D661D000DF667 /* mesencephalic-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C943170D661D000DF667 /* mesencephalic-n-overlay-back.png */; };
-		3213C96D170D661D000DF667 /* mesencephalic-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C944170D661D000DF667 /* mesencephalic-n-overlay-side.png */; };
-		3213C96E170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C945170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png */; };
-		3213C96F170D661D000DF667 /* nucleus-ambiguus-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C946170D661D000DF667 /* nucleus-ambiguus-n-overlay-back.png */; };
-		3213C970170D661D000DF667 /* nucleus-ambiguus-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C947170D661D000DF667 /* nucleus-ambiguus-n-overlay-side.png */; };
-		3213C971170D661D000DF667 /* oculomotor-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C948170D661D000DF667 /* oculomotor-n-overlay-back.png */; };
-		3213C972170D661D000DF667 /* posterior-cochlear-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C949170D661D000DF667 /* posterior-cochlear-n-overlay-back.png */; };
-		3213C973170D661D000DF667 /* principal-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C94A170D661D000DF667 /* principal-n-overlay-side.png */; };
-		3213C974170D661D000DF667 /* principal-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C94B170D661D000DF667 /* principal-n-overlay-back.png */; };
-		3213C975170D661D000DF667 /* red-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C94C170D661D000DF667 /* red-n-overlay-side.png */; };
-		3213C976170D661D000DF667 /* salivatory-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C94D170D661D000DF667 /* salivatory-n-overlay-back.png */; };
-		3213C977170D661D000DF667 /* solitary-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C94E170D661D000DF667 /* solitary-n-overlay-back.png */; };
-		3213C978170D661D000DF667 /* solitary-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C94F170D661D000DF667 /* solitary-n-overlay-side.png */; };
-		3213C979170D661D000DF667 /* spinal-trigeminal-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C950170D661D000DF667 /* spinal-trigeminal-n-overlay-back.png */; };
-		3213C97A170D661D000DF667 /* spinal-trigeminal-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C951170D661D000DF667 /* spinal-trigeminal-n-overlay-side.png */; };
-		3213C97B170D661D000DF667 /* superior-cerebellar-peduncle-m-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C952170D661D000DF667 /* superior-cerebellar-peduncle-m-overlay-back.png */; };
-		3213C97C170D661D000DF667 /* superior-colliculus-m-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C953170D661D000DF667 /* superior-colliculus-m-overlay-back.png */; };
-		3213C97D170D661D000DF667 /* superior-colliculus-m-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C954170D661D000DF667 /* superior-colliculus-m-overlay-side.png */; };
-		3213C97E170D661D000DF667 /* trigeminal-motor-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C955170D661D000DF667 /* trigeminal-motor-n-overlay-back.png */; };
-		3213C97F170D661D000DF667 /* trigeminal-motor-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C956170D661D000DF667 /* trigeminal-motor-n-overlay-side.png */; };
-		3213C980170D661D000DF667 /* trochlear-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C957170D661D000DF667 /* trochlear-n-overlay-back.png */; };
-		3213C981170D661D000DF667 /* trochlear-n-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3213C958170D661D000DF667 /* trochlear-n-overlay-side.png */; };
 		3213C985170D708A000DF667 /* BSFuckometerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3213C984170D708A000DF667 /* BSFuckometerView.m */; };
 		321C8EA11711194000517510 /* BSDrawModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 321C8EA01711194000517510 /* BSDrawModeViewController.m */; };
-		321C8EA617115CD200517510 /* fuckometer-needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA417115CD200517510 /* fuckometer-needle.png */; };
-		321C8EA717115CD200517510 /* fuckometer-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 321C8EA517115CD200517510 /* fuckometer-background.png */; };
-		322FBF3917B9ECA10056D964 /* basilar-long-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3617B9ECA10056D964 /* basilar-long-4.png */; };
-		322FBF3A17B9ECA10056D964 /* basilar-long-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3717B9ECA10056D964 /* basilar-long-5.png */; };
-		322FBF3B17B9ECA10056D964 /* basilar-long-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3817B9ECA10056D964 /* basilar-long-6.png */; };
-		322FBF4217B9ECB50056D964 /* basilar-paramedian-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3C17B9ECB50056D964 /* basilar-paramedian-3.png */; };
-		322FBF4317B9ECB50056D964 /* basilar-paramedian-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3D17B9ECB50056D964 /* basilar-paramedian-4.png */; };
-		322FBF4417B9ECB50056D964 /* basilar-paramedian-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3E17B9ECB50056D964 /* basilar-paramedian-5.png */; };
-		322FBF4517B9ECB50056D964 /* basilar-paramedian-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF3F17B9ECB50056D964 /* basilar-paramedian-6.png */; };
-		322FBF4617B9ECB50056D964 /* basilar-paramedian-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4017B9ECB50056D964 /* basilar-paramedian-7.png */; };
-		322FBF4717B9ECB50056D964 /* basilar-paramedian-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4117B9ECB50056D964 /* basilar-paramedian-8.png */; };
-		322FBF4B17B9ECBD0056D964 /* basilar-short-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4817B9ECBD0056D964 /* basilar-short-4.png */; };
-		322FBF4C17B9ECBD0056D964 /* basilar-short-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4917B9ECBD0056D964 /* basilar-short-5.png */; };
-		322FBF4D17B9ECBD0056D964 /* basilar-short-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 322FBF4A17B9ECBD0056D964 /* basilar-short-6.png */; };
 		3230B659168062C3004A196E /* BSProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230B658168062C3004A196E /* BSProfileViewController.m */; };
 		323A723817773C2900222ECF /* BSTutorialImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 323A723717773C2900222ECF /* BSTutorialImageView.m */; };
 		323BCF0B176C04A8000F8D06 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323BCF0A176C04A8000F8D06 /* MobileCoreServices.framework */; };
 		323BCF0D176C04AF000F8D06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323BCF0C176C04AF000F8D06 /* SystemConfiguration.framework */; };
 		32490A2A18398A030028876A /* BSQuizCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490A2918398A030028876A /* BSQuizCollectionViewCell.m */; };
 		32490A2D18398D850028876A /* BSQuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 32490A2C18398D850028876A /* BSQuizQuestion.m */; };
-		324EFCE517AB6D7700BE93BC /* tutorial-ask.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EFCE417AB6D7700BE93BC /* tutorial-ask.png */; };
-		324EFCE717AB7AF400BE93BC /* tutorial-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EFCE617AB7AF400BE93BC /* tutorial-profile.png */; };
 		32523E991709D79E00D55ECA /* claude-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E931709D79E00D55ECA /* claude-sec.png */; };
 		32523E9A1709D79E00D55ECA /* medial-medullary-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E941709D79E00D55ECA /* medial-medullary-sec.png */; };
 		32523E9B1709D79E00D55ECA /* nothnagel-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E951709D79E00D55ECA /* nothnagel-sec.png */; };
 		32523E9C1709D79E00D55ECA /* wallenberg-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E961709D79E00D55ECA /* wallenberg-sec.png */; };
 		32523E9D1709D79E00D55ECA /* weber-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32523E971709D79E00D55ECA /* weber-sec.png */; };
-		3253620518A78F4F00017864 /* tutorial-atlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 3253620318A78F4F00017864 /* tutorial-atlas.png */; };
-		3253620618A78F4F00017864 /* tutorial-page0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3253620418A78F4F00017864 /* tutorial-page0.png */; };
-		3253620818A791B400017864 /* tutorial-quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = 3253620718A791B400017864 /* tutorial-quiz.png */; };
 		32638705176CDE2100AAA785 /* BSGlassStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32638704176CDE2100AAA785 /* BSGlassStemView.m */; };
 		326F878F17212522008E923E /* locked-in-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 326F878E17212522008E923E /* locked-in-mug.png */; };
 		326FB690170BFFA4002CD59B /* BSClinicalCollectionViewSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326FB68F170BFFA2002CD59B /* BSClinicalCollectionViewSectionCell.m */; };
@@ -292,120 +232,25 @@
 		327E13001707BF3D00C5D237 /* foville-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E12FF1707BF3D00C5D237 /* foville-mug.png */; };
 		327E13021707BF8900C5D237 /* jackson-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E13011707BF8900C5D237 /* jackson-mug.png */; };
 		327E13051707D0CC00C5D237 /* BSClinicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327E13041707D0CB00C5D237 /* BSClinicalViewController.m */; };
-		327E130A1707FC9700C5D237 /* stem-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E13071707FC9700C5D237 /* stem-front.png */; };
-		327E131917081F5300C5D237 /* MRI0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131017081F5300C5D237 /* MRI0.jpg */; };
-		327E131A17081F5300C5D237 /* MRI1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131117081F5300C5D237 /* MRI1.jpg */; };
-		327E131B17081F5300C5D237 /* MRI2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131217081F5300C5D237 /* MRI2.jpg */; };
-		327E131C17081F5300C5D237 /* MRI3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131317081F5300C5D237 /* MRI3.jpg */; };
-		327E131D17081F5300C5D237 /* MRI4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131417081F5300C5D237 /* MRI4.jpg */; };
-		327E131E17081F5300C5D237 /* MRI5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131517081F5300C5D237 /* MRI5.jpg */; };
-		327E131F17081F5300C5D237 /* MRI6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131617081F5300C5D237 /* MRI6.jpg */; };
-		327E132017081F5300C5D237 /* MRI7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131717081F5300C5D237 /* MRI7.jpg */; };
-		327E132117081F5300C5D237 /* MRI8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327E131817081F5300C5D237 /* MRI8.jpg */; };
 		327E1324170842EA00C5D237 /* claude-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E1322170842E900C5D237 /* claude-mug.png */; };
 		327E132B17085DBD00C5D237 /* weber-mug.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E132A17085DBD00C5D237 /* weber-mug.png */; };
-		328848AE16B10DD4005FA824 /* sxn-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848A616B10DD4005FA824 /* sxn-8.png */; };
-		328848AF16B10DD4005FA824 /* sxn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848A716B10DD4005FA824 /* sxn-7.png */; };
-		328848B016B10DD4005FA824 /* sxn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848A816B10DD4005FA824 /* sxn-6.png */; };
-		328848B116B10DD4005FA824 /* sxn-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848A916B10DD4005FA824 /* sxn-5.png */; };
-		328848B216B10DD4005FA824 /* sxn-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848AA16B10DD4005FA824 /* sxn-4.png */; };
-		328848B316B10DD4005FA824 /* sxn-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848AB16B10DD4005FA824 /* sxn-3.png */; };
-		328848B416B10DD4005FA824 /* sxn-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848AC16B10DD4005FA824 /* sxn-2.png */; };
-		328848B516B10DD4005FA824 /* sxn-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848AD16B10DD4005FA824 /* sxn-1.png */; };
-		328848B916B111EC005FA824 /* sxn-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 328848B816B111EC005FA824 /* sxn-0.png */; };
 		328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A216717B8900B166CA /* BSSyndrome.m */; };
 		328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */; };
-		32948468190CC1E600B145F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32948467190CC1E600B145F1 /* Images.xcassets */; };
+		329E1D7F1A68E6EA00E9AB37 /* SXN Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D7E1A68E6EA00E9AB37 /* SXN Images.xcassets */; };
+		329E1D811A68E80F00E9AB37 /* General.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D801A68E80F00E9AB37 /* General.xcassets */; };
+		329E1D861A68E88900E9AB37 /* Glass Stem.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D851A68E88900E9AB37 /* Glass Stem.xcassets */; };
+		329E1D881A68E9BB00E9AB37 /* Tutorial.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D871A68E9BB00E9AB37 /* Tutorial.xcassets */; };
+		329E1D901A68F3D900E9AB37 /* Stem View Backgrounds.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D8F1A68F3D900E9AB37 /* Stem View Backgrounds.xcassets */; };
+		329E1D921A68F4E800E9AB37 /* Stem View Overlays.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D911A68F4E800E9AB37 /* Stem View Overlays.xcassets */; };
+		329E1D941A68F6AB00E9AB37 /* Artery Section Overlays.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */; };
 		32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AFEDF816D9D183006A3101 /* BSDrawView.m */; };
-		32B9A84818A7471A0027805F /* inferior-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */; };
-		32B9A84918A7471A0027805F /* lateral-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */; };
-		32B9A84A18A7471A0027805F /* medial-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */; };
-		32B9A84B18A7471A0027805F /* superior-vestibular-n-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B9A84718A7471A0027805F /* superior-vestibular-n-overlay-back.png */; };
 		32B9A84E18A768EA0027805F /* BSQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9A84D18A768EA0027805F /* BSQuizViewController.m */; };
-		32BAE79E1718048200F04334 /* iii-oculomotor-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7941718048200F04334 /* iii-oculomotor-cn-overlay-side.png */; };
-		32BAE79F1718048200F04334 /* iv-trochlear-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7951718048200F04334 /* iv-trochlear-cn-overlay-side.png */; };
-		32BAE7A01718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7961718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png */; };
-		32BAE7A11718048200F04334 /* v-trigeminal-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7971718048200F04334 /* v-trigeminal-cn-overlay-side.png */; };
-		32BAE7A21718048200F04334 /* vi-abducens-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7981718048200F04334 /* vi-abducens-cn-overlay-side.png */; };
-		32BAE7A31718048200F04334 /* vii-facial-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7991718048200F04334 /* vii-facial-cn-overlay-side.png */; };
-		32BAE7A41718048200F04334 /* viii-vestibulocochlear-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE79A1718048200F04334 /* viii-vestibulocochlear-cn-overlay-side.png */; };
-		32BAE7A51718048200F04334 /* x-vagus-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE79B1718048200F04334 /* x-vagus-cn-overlay-side.png */; };
-		32BAE7A61718048200F04334 /* xi-accessory-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE79C1718048200F04334 /* xi-accessory-cn-overlay-side.png */; };
-		32BAE7A71718048200F04334 /* xii-hypoglossal-cn-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE79D1718048200F04334 /* xii-hypoglossal-cn-overlay-side.png */; };
-		32BAE7AC17180F0D00F04334 /* spinal-trigeminal-t-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7AA17180F0600F04334 /* spinal-trigeminal-t-overlay-back.png */; };
-		32BAE7AD17180F0D00F04334 /* spinal-trigeminal-t-overlay-side.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7AB17180F0900F04334 /* spinal-trigeminal-t-overlay-side.png */; };
-		32BAE7B71718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7AF1718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png */; };
-		32BAE7B81718175E00F04334 /* anterior-spinal-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B01718175E00F04334 /* anterior-spinal-a-overlay-front.png */; };
-		32BAE7BA1718175E00F04334 /* posterior-cerebral-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B21718175E00F04334 /* posterior-cerebral-a-overlay-front.png */; };
-		32BAE7BB1718175E00F04334 /* posterior-communicating-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B31718175E00F04334 /* posterior-communicating-a-overlay-front.png */; };
-		32BAE7BC1718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B41718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png */; };
-		32BAE7BD1718175E00F04334 /* superior-cerebellar-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B51718175E00F04334 /* superior-cerebellar-a-overlay-front.png */; };
-		32BAE7BE1718175E00F04334 /* vertebral-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32BAE7B61718175E00F04334 /* vertebral-a-overlay-front.png */; };
 		32C384C01777A45400333310 /* BSProfileSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C384BF1777A45400333310 /* BSProfileSectionView.m */; };
-		32C384CB1777E1B400333310 /* profile-sxn-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C21777E1B400333310 /* profile-sxn-2.png */; };
-		32C384CC1777E1B400333310 /* profile-sxn-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C31777E1B400333310 /* profile-sxn-5.png */; };
-		32C384CD1777E1B400333310 /* profile-sxn-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C41777E1B400333310 /* profile-sxn-4.png */; };
-		32C384CE1777E1B400333310 /* profile-sxn-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C51777E1B400333310 /* profile-sxn-8.png */; };
-		32C384CF1777E1B400333310 /* profile-sxn-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C61777E1B400333310 /* profile-sxn-0.png */; };
-		32C384D01777E1B400333310 /* profile-sxn-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C71777E1B400333310 /* profile-sxn-1.png */; };
-		32C384D11777E1B400333310 /* profile-sxn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C81777E1B400333310 /* profile-sxn-7.png */; };
-		32C384D21777E1B400333310 /* profile-sxn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384C91777E1B400333310 /* profile-sxn-6.png */; };
-		32C384D31777E1B400333310 /* profile-sxn-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384CA1777E1B400333310 /* profile-sxn-3.png */; };
 		32C384DB177810BD00333310 /* jackson-sec.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DA177810BC00333310 /* jackson-sec.png */; };
 		32C384DD1778119900333310 /* jackson-perf.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C384DC1778119700333310 /* jackson-perf.png */; };
-		32C46220176CE0FF00B55189 /* glass-stem-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4620D176CE0FF00B55189 /* glass-stem-0.png */; };
-		32C46221176CE0FF00B55189 /* glass-stem-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4620E176CE0FF00B55189 /* glass-stem-1.png */; };
-		32C46222176CE0FF00B55189 /* glass-stem-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4620F176CE0FF00B55189 /* glass-stem-10.png */; };
-		32C46223176CE0FF00B55189 /* glass-stem-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46210176CE0FF00B55189 /* glass-stem-11.png */; };
-		32C46224176CE0FF00B55189 /* glass-stem-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46211176CE0FF00B55189 /* glass-stem-12.png */; };
-		32C46225176CE0FF00B55189 /* glass-stem-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46212176CE0FF00B55189 /* glass-stem-13.png */; };
-		32C46226176CE0FF00B55189 /* glass-stem-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46213176CE0FF00B55189 /* glass-stem-14.png */; };
-		32C46227176CE0FF00B55189 /* glass-stem-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46214176CE0FF00B55189 /* glass-stem-15.png */; };
-		32C46228176CE0FF00B55189 /* glass-stem-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46215176CE0FF00B55189 /* glass-stem-16.png */; };
-		32C46229176CE0FF00B55189 /* glass-stem-17.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46216176CE0FF00B55189 /* glass-stem-17.png */; };
-		32C4622A176CE0FF00B55189 /* glass-stem-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46217176CE0FF00B55189 /* glass-stem-2.png */; };
-		32C4622B176CE0FF00B55189 /* glass-stem-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46218176CE0FF00B55189 /* glass-stem-3.png */; };
-		32C4622C176CE0FF00B55189 /* glass-stem-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C46219176CE0FF00B55189 /* glass-stem-4.png */; };
-		32C4622D176CE0FF00B55189 /* glass-stem-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621A176CE0FF00B55189 /* glass-stem-5.png */; };
-		32C4622E176CE0FF00B55189 /* glass-stem-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621B176CE0FF00B55189 /* glass-stem-6.png */; };
-		32C4622F176CE0FF00B55189 /* glass-stem-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621C176CE0FF00B55189 /* glass-stem-7.png */; };
-		32C46230176CE0FF00B55189 /* glass-stem-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621D176CE0FF00B55189 /* glass-stem-8.png */; };
-		32C46231176CE0FF00B55189 /* glass-stem-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C4621E176CE0FF00B55189 /* glass-stem-9.png */; };
 		32CC33B9176C609600000F07 /* BSQuizView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC33B8176C609600000F07 /* BSQuizView.m */; };
-		32D33534179E542100F95A7D /* anterior-inferior-cerebellar-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351C179E542100F95A7D /* anterior-inferior-cerebellar-4.png */; };
-		32D33535179E542100F95A7D /* anterior-inferior-cerebellar-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351D179E542100F95A7D /* anterior-inferior-cerebellar-5.png */; };
-		32D33536179E542100F95A7D /* anterior-spinal-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351E179E542100F95A7D /* anterior-spinal-0.png */; };
-		32D33537179E542100F95A7D /* anterior-spinal-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3351F179E542100F95A7D /* anterior-spinal-1.png */; };
-		32D33538179E542100F95A7D /* anterior-spinal-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33520179E542100F95A7D /* anterior-spinal-2.png */; };
-		32D3353F179E542100F95A7D /* pica-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33527179E542100F95A7D /* pica-1.png */; };
-		32D33540179E542100F95A7D /* pica-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33528179E542100F95A7D /* pica-2.png */; };
-		32D33541179E542100F95A7D /* pica-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33529179E542100F95A7D /* pica-3.png */; };
-		32D33542179E542100F95A7D /* posterior-cerebral-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3352A179E542100F95A7D /* posterior-cerebral-7.png */; };
-		32D33543179E542100F95A7D /* posterior-cerebral-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3352B179E542100F95A7D /* posterior-cerebral-8.png */; };
-		32D33544179E542100F95A7D /* posterior-spinal-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3352C179E542100F95A7D /* posterior-spinal-0.png */; };
-		32D33545179E542100F95A7D /* posterior-spinal-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3352D179E542100F95A7D /* posterior-spinal-1.png */; };
-		32D33546179E542100F95A7D /* superior-cerebeller-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3352E179E542100F95A7D /* superior-cerebeller-5.png */; };
-		32D33547179E542100F95A7D /* superior-cerebeller-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D3352F179E542100F95A7D /* superior-cerebeller-6.png */; };
-		32D33548179E542100F95A7D /* superior-cerebeller-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33530179E542100F95A7D /* superior-cerebeller-7.png */; };
-		32D33549179E542100F95A7D /* vertebral-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33531179E542100F95A7D /* vertebral-0.png */; };
-		32D3354A179E542100F95A7D /* vertebral-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33532179E542100F95A7D /* vertebral-1.png */; };
-		32D3354B179E542100F95A7D /* vertebral-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D33533179E542100F95A7D /* vertebral-2.png */; };
-		32D84798178D463400718C4C /* corticospinal-t-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D84796178D463400718C4C /* corticospinal-t-overlay-back.png */; };
-		32D84799178D463400718C4C /* medial-lemniscus-t-overlay-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D84797178D463400718C4C /* medial-lemniscus-t-overlay-back.png */; };
 		32E4D2911651AACB0051AE2D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E4D2901651AACB0051AE2D /* BSModel.m */; };
-		32E51B7A17B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7917B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png */; };
-		32E51B7D17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7B17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png */; };
-		32E51B7E17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */; };
 		32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E77B4B16326B3A0077D0B4 /* BSStemView.m */; };
-		32EDE7A7177102DC006434A5 /* atlas-sxn-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE79E177102DC006434A5 /* atlas-sxn-0.png */; };
-		32EDE7A8177102DC006434A5 /* atlas-sxn-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE79F177102DC006434A5 /* atlas-sxn-1.png */; };
-		32EDE7A9177102DC006434A5 /* atlas-sxn-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A0177102DC006434A5 /* atlas-sxn-2.png */; };
-		32EDE7AA177102DC006434A5 /* atlas-sxn-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A1177102DC006434A5 /* atlas-sxn-3.png */; };
-		32EDE7AB177102DC006434A5 /* atlas-sxn-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A2177102DC006434A5 /* atlas-sxn-4.png */; };
-		32EDE7AC177102DC006434A5 /* atlas-sxn-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A3177102DC006434A5 /* atlas-sxn-5.png */; };
-		32EDE7AD177102DC006434A5 /* atlas-sxn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A4177102DC006434A5 /* atlas-sxn-6.png */; };
-		32EDE7AE177102DC006434A5 /* atlas-sxn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A5177102DC006434A5 /* atlas-sxn-7.png */; };
-		32EDE7AF177102DC006434A5 /* atlas-sxn-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EDE7A6177102DC006434A5 /* atlas-sxn-8.png */; };
 		32F5A88F176EF24000646E64 /* BSAtlasSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */; };
 		32F5A892176EF9DB00646E64 /* BSSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5A891176EF9DB00646E64 /* BSSection.m */; };
 		32FF11241A46A5B100CEAE55 /* BSDrawSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF11221A46A5B100CEAE55 /* BSDrawSectionView.m */; };
@@ -636,65 +481,10 @@
 		320D186017094FBC002D9E15 /* BSClinicalDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalDetailsTableViewCell.m; sourceTree = "<group>"; };
 		320D70371831F3B4000F6AFA /* BSAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAboutViewController.h; sourceTree = "<group>"; };
 		320D70381831F3B4000F6AFA /* BSAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAboutViewController.m; sourceTree = "<group>"; };
-		320D703F183219EB000F6AFA /* tutorial-clinical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-clinical.png"; sourceTree = "<group>"; };
-		3213C92D170D61FB000DF667 /* stem-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-back.png"; sourceTree = "<group>"; };
-		3213C92E170D61FB000DF667 /* stem-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-side.png"; sourceTree = "<group>"; };
-		3213C931170D661C000DF667 /* abducens-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abducens-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C932170D661C000DF667 /* abducens-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abducens-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C933170D661C000DF667 /* accessory-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C934170D661C000DF667 /* accessory-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C935170D661C000DF667 /* anterior-cochlear-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-cochlear-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C936170D661C000DF667 /* dorsal-motor-of-vagus-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dorsal-motor-of-vagus-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C937170D661C000DF667 /* dorsal-motor-of-vagus-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dorsal-motor-of-vagus-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C938170D661C000DF667 /* edinger-westphal-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edinger-westphal-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C939170D661C000DF667 /* edinger-westphal-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edinger-westphal-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C93A170D661C000DF667 /* facial-motor-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facial-motor-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C93B170D661D000DF667 /* facial-motor-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facial-motor-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C93C170D661D000DF667 /* fourth-ventricle-m-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fourth-ventricle-m-overlay-back.png"; sourceTree = "<group>"; };
-		3213C93D170D661D000DF667 /* hypoglossal-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hypoglossal-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C93E170D661D000DF667 /* hypoglossal-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hypoglossal-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C93F170D661D000DF667 /* inferior-colliculus-m-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-colliculus-m-overlay-back.png"; sourceTree = "<group>"; };
-		3213C940170D661D000DF667 /* inferior-colliculus-m-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-colliculus-m-overlay-side.png"; sourceTree = "<group>"; };
-		3213C943170D661D000DF667 /* mesencephalic-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C944170D661D000DF667 /* mesencephalic-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mesencephalic-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C945170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle-cerebellar-peduncle-m-overlay-back.png"; sourceTree = "<group>"; };
-		3213C946170D661D000DF667 /* nucleus-ambiguus-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-ambiguus-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C947170D661D000DF667 /* nucleus-ambiguus-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nucleus-ambiguus-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C948170D661D000DF667 /* oculomotor-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oculomotor-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C949170D661D000DF667 /* posterior-cochlear-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cochlear-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C94A170D661D000DF667 /* principal-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C94B170D661D000DF667 /* principal-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "principal-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C94C170D661D000DF667 /* red-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C94D170D661D000DF667 /* salivatory-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "salivatory-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C94E170D661D000DF667 /* solitary-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C94F170D661D000DF667 /* solitary-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solitary-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C950170D661D000DF667 /* spinal-trigeminal-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C951170D661D000DF667 /* spinal-trigeminal-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C952170D661D000DF667 /* superior-cerebellar-peduncle-m-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar-peduncle-m-overlay-back.png"; sourceTree = "<group>"; };
-		3213C953170D661D000DF667 /* superior-colliculus-m-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-colliculus-m-overlay-back.png"; sourceTree = "<group>"; };
-		3213C954170D661D000DF667 /* superior-colliculus-m-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-colliculus-m-overlay-side.png"; sourceTree = "<group>"; };
-		3213C955170D661D000DF667 /* trigeminal-motor-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trigeminal-motor-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C956170D661D000DF667 /* trigeminal-motor-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trigeminal-motor-n-overlay-side.png"; sourceTree = "<group>"; };
-		3213C957170D661D000DF667 /* trochlear-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trochlear-n-overlay-back.png"; sourceTree = "<group>"; };
-		3213C958170D661D000DF667 /* trochlear-n-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trochlear-n-overlay-side.png"; sourceTree = "<group>"; };
 		3213C983170D708A000DF667 /* BSFuckometerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFuckometerView.h; sourceTree = "<group>"; };
 		3213C984170D708A000DF667 /* BSFuckometerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFuckometerView.m; sourceTree = "<group>"; };
 		321C8E9F1711194000517510 /* BSDrawModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawModeViewController.h; sourceTree = "<group>"; };
 		321C8EA01711194000517510 /* BSDrawModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawModeViewController.m; sourceTree = "<group>"; };
-		321C8EA417115CD200517510 /* fuckometer-needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuckometer-needle.png"; sourceTree = "<group>"; };
-		321C8EA517115CD200517510 /* fuckometer-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuckometer-background.png"; sourceTree = "<group>"; };
-		322FBF3617B9ECA10056D964 /* basilar-long-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-4.png"; sourceTree = "<group>"; };
-		322FBF3717B9ECA10056D964 /* basilar-long-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-5.png"; sourceTree = "<group>"; };
-		322FBF3817B9ECA10056D964 /* basilar-long-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-6.png"; sourceTree = "<group>"; };
-		322FBF3C17B9ECB50056D964 /* basilar-paramedian-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-3.png"; sourceTree = "<group>"; };
-		322FBF3D17B9ECB50056D964 /* basilar-paramedian-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-4.png"; sourceTree = "<group>"; };
-		322FBF3E17B9ECB50056D964 /* basilar-paramedian-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-5.png"; sourceTree = "<group>"; };
-		322FBF3F17B9ECB50056D964 /* basilar-paramedian-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-6.png"; sourceTree = "<group>"; };
-		322FBF4017B9ECB50056D964 /* basilar-paramedian-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-7.png"; sourceTree = "<group>"; };
-		322FBF4117B9ECB50056D964 /* basilar-paramedian-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-8.png"; sourceTree = "<group>"; };
-		322FBF4817B9ECBD0056D964 /* basilar-short-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-4.png"; sourceTree = "<group>"; };
-		322FBF4917B9ECBD0056D964 /* basilar-short-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-5.png"; sourceTree = "<group>"; };
-		322FBF4A17B9ECBD0056D964 /* basilar-short-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-6.png"; sourceTree = "<group>"; };
 		3230B657168062C3004A196E /* BSProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSProfileViewController.h; sourceTree = "<group>"; };
 		3230B658168062C3004A196E /* BSProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileViewController.m; sourceTree = "<group>"; };
 		323A723617773C2900222ECF /* BSTutorialImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTutorialImageView.h; sourceTree = "<group>"; };
@@ -705,16 +495,11 @@
 		32490A2918398A030028876A /* BSQuizCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizCollectionViewCell.m; sourceTree = "<group>"; };
 		32490A2B18398D850028876A /* BSQuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizQuestion.h; sourceTree = "<group>"; };
 		32490A2C18398D850028876A /* BSQuizQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizQuestion.m; sourceTree = "<group>"; };
-		324EFCE417AB6D7700BE93BC /* tutorial-ask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-ask.png"; sourceTree = "<group>"; };
-		324EFCE617AB7AF400BE93BC /* tutorial-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-profile.png"; sourceTree = "<group>"; };
 		32523E931709D79E00D55ECA /* claude-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-sec.png"; sourceTree = "<group>"; };
 		32523E941709D79E00D55ECA /* medial-medullary-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-medullary-sec.png"; sourceTree = "<group>"; };
 		32523E951709D79E00D55ECA /* nothnagel-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nothnagel-sec.png"; sourceTree = "<group>"; };
 		32523E961709D79E00D55ECA /* wallenberg-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallenberg-sec.png"; sourceTree = "<group>"; };
 		32523E971709D79E00D55ECA /* weber-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-sec.png"; sourceTree = "<group>"; };
-		3253620318A78F4F00017864 /* tutorial-atlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-atlas.png"; sourceTree = "<group>"; };
-		3253620418A78F4F00017864 /* tutorial-page0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-page0.png"; sourceTree = "<group>"; };
-		3253620718A791B400017864 /* tutorial-quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-quiz.png"; sourceTree = "<group>"; };
 		32638703176CDE2100AAA785 /* BSGlassStemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGlassStemView.h; sourceTree = "<group>"; };
 		32638704176CDE2100AAA785 /* BSGlassStemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGlassStemView.m; sourceTree = "<group>"; };
 		326F878E17212522008E923E /* locked-in-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locked-in-mug.png"; sourceTree = "<group>"; };
@@ -922,129 +707,34 @@
 		327E13011707BF8900C5D237 /* jackson-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-mug.png"; sourceTree = "<group>"; };
 		327E13031707D0CA00C5D237 /* BSClinicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClinicalViewController.h; sourceTree = "<group>"; };
 		327E13041707D0CB00C5D237 /* BSClinicalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClinicalViewController.m; sourceTree = "<group>"; };
-		327E13071707FC9700C5D237 /* stem-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stem-front.png"; sourceTree = "<group>"; };
-		327E131017081F5300C5D237 /* MRI0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI0.jpg; sourceTree = "<group>"; };
-		327E131117081F5300C5D237 /* MRI1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI1.jpg; sourceTree = "<group>"; };
-		327E131217081F5300C5D237 /* MRI2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI2.jpg; sourceTree = "<group>"; };
-		327E131317081F5300C5D237 /* MRI3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI3.jpg; sourceTree = "<group>"; };
-		327E131417081F5300C5D237 /* MRI4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI4.jpg; sourceTree = "<group>"; };
-		327E131517081F5300C5D237 /* MRI5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI5.jpg; sourceTree = "<group>"; };
-		327E131617081F5300C5D237 /* MRI6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI6.jpg; sourceTree = "<group>"; };
-		327E131717081F5300C5D237 /* MRI7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI7.jpg; sourceTree = "<group>"; };
-		327E131817081F5300C5D237 /* MRI8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRI8.jpg; sourceTree = "<group>"; };
 		327E1322170842E900C5D237 /* claude-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claude-mug.png"; sourceTree = "<group>"; };
 		327E132A17085DBD00C5D237 /* weber-mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weber-mug.png"; sourceTree = "<group>"; };
-		328848A616B10DD4005FA824 /* sxn-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-8.png"; sourceTree = "<group>"; };
-		328848A716B10DD4005FA824 /* sxn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-7.png"; sourceTree = "<group>"; };
-		328848A816B10DD4005FA824 /* sxn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-6.png"; sourceTree = "<group>"; };
-		328848A916B10DD4005FA824 /* sxn-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-5.png"; sourceTree = "<group>"; };
-		328848AA16B10DD4005FA824 /* sxn-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-4.png"; sourceTree = "<group>"; };
-		328848AB16B10DD4005FA824 /* sxn-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-3.png"; sourceTree = "<group>"; };
-		328848AC16B10DD4005FA824 /* sxn-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-2.png"; sourceTree = "<group>"; };
-		328848AD16B10DD4005FA824 /* sxn-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-1.png"; sourceTree = "<group>"; };
-		328848B816B111EC005FA824 /* sxn-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sxn-0.png"; sourceTree = "<group>"; };
 		328CC6A116717B8900B166CA /* BSSyndrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndrome.h; sourceTree = "<group>"; };
 		328CC6A216717B8900B166CA /* BSSyndrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndrome.m; sourceTree = "<group>"; };
 		328CC6A316717B8900B166CA /* BSSyndromeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndromeGenerator.h; sourceTree = "<group>"; };
 		328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndromeGenerator.m; sourceTree = "<group>"; };
-		32948467190CC1E600B145F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		329E1D7E1A68E6EA00E9AB37 /* SXN Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "SXN Images.xcassets"; path = "Images/SXN Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		329E1D801A68E80F00E9AB37 /* General.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = General.xcassets; path = Images/General.xcassets; sourceTree = "<group>"; };
+		329E1D851A68E88900E9AB37 /* Glass Stem.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Glass Stem.xcassets"; path = "Images/Glass Stem.xcassets"; sourceTree = "<group>"; };
+		329E1D871A68E9BB00E9AB37 /* Tutorial.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Tutorial.xcassets; path = Images/Tutorial.xcassets; sourceTree = "<group>"; };
+		329E1D8F1A68F3D900E9AB37 /* Stem View Backgrounds.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Stem View Backgrounds.xcassets"; path = "Images/Stem View Backgrounds.xcassets"; sourceTree = "<group>"; };
+		329E1D911A68F4E800E9AB37 /* Stem View Overlays.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Stem View Overlays.xcassets"; path = "Images/Stem View Overlays.xcassets"; sourceTree = "<group>"; };
+		329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Artery Section Overlays.xcassets"; path = "Images/Artery Section Overlays.xcassets"; sourceTree = "<group>"; };
 		32AFEDF716D9D183006A3101 /* BSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawView.h; sourceTree = "<group>"; };
 		32AFEDF816D9D183006A3101 /* BSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawView.m; sourceTree = "<group>"; };
-		32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inferior-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
-		32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lateral-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
-		32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
-		32B9A84718A7471A0027805F /* superior-vestibular-n-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-vestibular-n-overlay-back.png"; sourceTree = "<group>"; };
 		32B9A84C18A768EA0027805F /* BSQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizViewController.h; sourceTree = "<group>"; };
 		32B9A84D18A768EA0027805F /* BSQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizViewController.m; sourceTree = "<group>"; };
-		32BAE7941718048200F04334 /* iii-oculomotor-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iii-oculomotor-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE7951718048200F04334 /* iv-trochlear-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iv-trochlear-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE7961718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ix-glossopharyngeal-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE7971718048200F04334 /* v-trigeminal-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "v-trigeminal-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE7981718048200F04334 /* vi-abducens-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vi-abducens-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE7991718048200F04334 /* vii-facial-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vii-facial-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE79A1718048200F04334 /* viii-vestibulocochlear-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viii-vestibulocochlear-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE79B1718048200F04334 /* x-vagus-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "x-vagus-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE79C1718048200F04334 /* xi-accessory-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xi-accessory-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE79D1718048200F04334 /* xii-hypoglossal-cn-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xii-hypoglossal-cn-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE7AA17180F0600F04334 /* spinal-trigeminal-t-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-t-overlay-back.png"; sourceTree = "<group>"; };
-		32BAE7AB17180F0900F04334 /* spinal-trigeminal-t-overlay-side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spinal-trigeminal-t-overlay-side.png"; sourceTree = "<group>"; };
-		32BAE7AF1718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-a-overlay-front.png"; sourceTree = "<group>"; };
-		32BAE7B01718175E00F04334 /* anterior-spinal-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-a-overlay-front.png"; sourceTree = "<group>"; };
-		32BAE7B21718175E00F04334 /* posterior-cerebral-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cerebral-a-overlay-front.png"; sourceTree = "<group>"; };
-		32BAE7B31718175E00F04334 /* posterior-communicating-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-communicating-a-overlay-front.png"; sourceTree = "<group>"; };
-		32BAE7B41718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-inferior-cerebellar-a-overlay-front.png"; sourceTree = "<group>"; };
-		32BAE7B51718175E00F04334 /* superior-cerebellar-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebellar-a-overlay-front.png"; sourceTree = "<group>"; };
-		32BAE7B61718175E00F04334 /* vertebral-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-a-overlay-front.png"; sourceTree = "<group>"; };
 		32C384BE1777A45400333310 /* BSProfileSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSProfileSectionView.h; sourceTree = "<group>"; };
 		32C384BF1777A45400333310 /* BSProfileSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileSectionView.m; sourceTree = "<group>"; };
-		32C384C21777E1B400333310 /* profile-sxn-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-2.png"; sourceTree = "<group>"; };
-		32C384C31777E1B400333310 /* profile-sxn-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-5.png"; sourceTree = "<group>"; };
-		32C384C41777E1B400333310 /* profile-sxn-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-4.png"; sourceTree = "<group>"; };
-		32C384C51777E1B400333310 /* profile-sxn-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-8.png"; sourceTree = "<group>"; };
-		32C384C61777E1B400333310 /* profile-sxn-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-0.png"; sourceTree = "<group>"; };
-		32C384C71777E1B400333310 /* profile-sxn-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-1.png"; sourceTree = "<group>"; };
-		32C384C81777E1B400333310 /* profile-sxn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-7.png"; sourceTree = "<group>"; };
-		32C384C91777E1B400333310 /* profile-sxn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-6.png"; sourceTree = "<group>"; };
-		32C384CA1777E1B400333310 /* profile-sxn-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-sxn-3.png"; sourceTree = "<group>"; };
 		32C384DA177810BC00333310 /* jackson-sec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-sec.png"; sourceTree = "<group>"; };
 		32C384DC1778119700333310 /* jackson-perf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jackson-perf.png"; sourceTree = "<group>"; };
-		32C4620D176CE0FF00B55189 /* glass-stem-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-0.png"; sourceTree = "<group>"; };
-		32C4620E176CE0FF00B55189 /* glass-stem-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-1.png"; sourceTree = "<group>"; };
-		32C4620F176CE0FF00B55189 /* glass-stem-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-10.png"; sourceTree = "<group>"; };
-		32C46210176CE0FF00B55189 /* glass-stem-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-11.png"; sourceTree = "<group>"; };
-		32C46211176CE0FF00B55189 /* glass-stem-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-12.png"; sourceTree = "<group>"; };
-		32C46212176CE0FF00B55189 /* glass-stem-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-13.png"; sourceTree = "<group>"; };
-		32C46213176CE0FF00B55189 /* glass-stem-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-14.png"; sourceTree = "<group>"; };
-		32C46214176CE0FF00B55189 /* glass-stem-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-15.png"; sourceTree = "<group>"; };
-		32C46215176CE0FF00B55189 /* glass-stem-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-16.png"; sourceTree = "<group>"; };
-		32C46216176CE0FF00B55189 /* glass-stem-17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-17.png"; sourceTree = "<group>"; };
-		32C46217176CE0FF00B55189 /* glass-stem-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-2.png"; sourceTree = "<group>"; };
-		32C46218176CE0FF00B55189 /* glass-stem-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-3.png"; sourceTree = "<group>"; };
-		32C46219176CE0FF00B55189 /* glass-stem-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-4.png"; sourceTree = "<group>"; };
-		32C4621A176CE0FF00B55189 /* glass-stem-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-5.png"; sourceTree = "<group>"; };
-		32C4621B176CE0FF00B55189 /* glass-stem-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-6.png"; sourceTree = "<group>"; };
-		32C4621C176CE0FF00B55189 /* glass-stem-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-7.png"; sourceTree = "<group>"; };
-		32C4621D176CE0FF00B55189 /* glass-stem-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-8.png"; sourceTree = "<group>"; };
-		32C4621E176CE0FF00B55189 /* glass-stem-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glass-stem-9.png"; sourceTree = "<group>"; };
 		32CC33B7176C609600000F07 /* BSQuizView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizView.h; sourceTree = "<group>"; };
 		32CC33B8176C609600000F07 /* BSQuizView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizView.m; sourceTree = "<group>"; };
-		32D3351C179E542100F95A7D /* anterior-inferior-cerebellar-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-4.png"; sourceTree = "<group>"; };
-		32D3351D179E542100F95A7D /* anterior-inferior-cerebellar-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-inferior-cerebellar-5.png"; sourceTree = "<group>"; };
-		32D3351E179E542100F95A7D /* anterior-spinal-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-0.png"; sourceTree = "<group>"; };
-		32D3351F179E542100F95A7D /* anterior-spinal-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-1.png"; sourceTree = "<group>"; };
-		32D33520179E542100F95A7D /* anterior-spinal-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anterior-spinal-2.png"; sourceTree = "<group>"; };
-		32D33527179E542100F95A7D /* pica-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pica-1.png"; sourceTree = "<group>"; };
-		32D33528179E542100F95A7D /* pica-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pica-2.png"; sourceTree = "<group>"; };
-		32D33529179E542100F95A7D /* pica-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pica-3.png"; sourceTree = "<group>"; };
-		32D3352A179E542100F95A7D /* posterior-cerebral-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cerebral-7.png"; sourceTree = "<group>"; };
-		32D3352B179E542100F95A7D /* posterior-cerebral-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-cerebral-8.png"; sourceTree = "<group>"; };
-		32D3352C179E542100F95A7D /* posterior-spinal-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-spinal-0.png"; sourceTree = "<group>"; };
-		32D3352D179E542100F95A7D /* posterior-spinal-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "posterior-spinal-1.png"; sourceTree = "<group>"; };
-		32D3352E179E542100F95A7D /* superior-cerebeller-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebeller-5.png"; sourceTree = "<group>"; };
-		32D3352F179E542100F95A7D /* superior-cerebeller-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebeller-6.png"; sourceTree = "<group>"; };
-		32D33530179E542100F95A7D /* superior-cerebeller-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "superior-cerebeller-7.png"; sourceTree = "<group>"; };
-		32D33531179E542100F95A7D /* vertebral-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-0.png"; sourceTree = "<group>"; };
-		32D33532179E542100F95A7D /* vertebral-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-1.png"; sourceTree = "<group>"; };
-		32D33533179E542100F95A7D /* vertebral-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertebral-2.png"; sourceTree = "<group>"; };
-		32D84796178D463400718C4C /* corticospinal-t-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corticospinal-t-overlay-back.png"; sourceTree = "<group>"; };
-		32D84797178D463400718C4C /* medial-lemniscus-t-overlay-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medial-lemniscus-t-overlay-back.png"; sourceTree = "<group>"; };
 		32DD437F16524FD3002AAE0F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		32E4D28F1651AACB0051AE2D /* BSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSModel.h; sourceTree = "<group>"; };
 		32E4D2901651AACB0051AE2D /* BSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSModel.m; sourceTree = "<group>"; };
-		32E51B7917B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-paramedian-a-overlay-front.png"; sourceTree = "<group>"; };
-		32E51B7B17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-long-circumferential-a-overlay-front.png"; sourceTree = "<group>"; };
-		32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basilar-short-circumferential-a-overlay-front.png"; sourceTree = "<group>"; };
 		32E77B4A16326B3A0077D0B4 /* BSStemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStemView.h; sourceTree = "<group>"; };
 		32E77B4B16326B3A0077D0B4 /* BSStemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStemView.m; sourceTree = "<group>"; };
-		32EDE79E177102DC006434A5 /* atlas-sxn-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-0.png"; sourceTree = "<group>"; };
-		32EDE79F177102DC006434A5 /* atlas-sxn-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-1.png"; sourceTree = "<group>"; };
-		32EDE7A0177102DC006434A5 /* atlas-sxn-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-2.png"; sourceTree = "<group>"; };
-		32EDE7A1177102DC006434A5 /* atlas-sxn-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-3.png"; sourceTree = "<group>"; };
-		32EDE7A2177102DC006434A5 /* atlas-sxn-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-4.png"; sourceTree = "<group>"; };
-		32EDE7A3177102DC006434A5 /* atlas-sxn-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-5.png"; sourceTree = "<group>"; };
-		32EDE7A4177102DC006434A5 /* atlas-sxn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-6.png"; sourceTree = "<group>"; };
-		32EDE7A5177102DC006434A5 /* atlas-sxn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-7.png"; sourceTree = "<group>"; };
-		32EDE7A6177102DC006434A5 /* atlas-sxn-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atlas-sxn-8.png"; sourceTree = "<group>"; };
 		32F5A88D176EF24000646E64 /* BSAtlasSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAtlasSectionView.h; sourceTree = "<group>"; };
 		32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAtlasSectionView.m; sourceTree = "<group>"; };
 		32F5A890176EF9DB00646E64 /* BSSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSection.h; sourceTree = "<group>"; };
@@ -1295,42 +985,18 @@
 		32035531162C0C8E0079394F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				323A7231177735BA00222ECF /* Tutorial Images */,
-				32C4620C176CE0FF00B55189 /* Glass Stem Images */,
-				326386B8176CC37C00AAA785 /* ArteryImages */,
+				329E1D851A68E88900E9AB37 /* Glass Stem.xcassets */,
+				329E1D801A68E80F00E9AB37 /* General.xcassets */,
+				329E1D7E1A68E6EA00E9AB37 /* SXN Images.xcassets */,
+				329E1D871A68E9BB00E9AB37 /* Tutorial.xcassets */,
+				329E1D8F1A68F3D900E9AB37 /* Stem View Backgrounds.xcassets */,
+				329E1D911A68F4E800E9AB37 /* Stem View Overlays.xcassets */,
+				329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */,
 				32FB66A517200146005E6DE6 /* Quiz */,
-				3213C98A170D72A5000DF667 /* Fuckometer */,
-				327E13061707FC7E00C5D237 /* Stem Views */,
 				328848C816B12200005FA824 /* Syndrome Images */,
-				8179EB1C161D41BB0050D663 /* Sxn Images */,
-				327E130F17081F5200C5D237 /* MRI Images */,
 			);
 			name = Images;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		3213C98A170D72A5000DF667 /* Fuckometer */ = {
-			isa = PBXGroup;
-			children = (
-				321C8EA417115CD200517510 /* fuckometer-needle.png */,
-				321C8EA517115CD200517510 /* fuckometer-background.png */,
-			);
-			name = Fuckometer;
-			path = Images/Fuckometer;
-			sourceTree = "<group>";
-		};
-		323A7231177735BA00222ECF /* Tutorial Images */ = {
-			isa = PBXGroup;
-			children = (
-				320D703F183219EB000F6AFA /* tutorial-clinical.png */,
-				324EFCE417AB6D7700BE93BC /* tutorial-ask.png */,
-				3253620318A78F4F00017864 /* tutorial-atlas.png */,
-				3253620418A78F4F00017864 /* tutorial-page0.png */,
-				324EFCE617AB7AF400BE93BC /* tutorial-profile.png */,
-				3253620718A791B400017864 /* tutorial-quiz.png */,
-			);
-			name = "Tutorial Images";
-			path = "Images/Tutorial Images";
 			sourceTree = "<group>";
 		};
 		32490A2E183991280028876A /* Quiz Objects */ = {
@@ -1342,44 +1008,6 @@
 				32490A2C18398D850028876A /* BSQuizQuestion.m */,
 			);
 			name = "Quiz Objects";
-			sourceTree = "<group>";
-		};
-		326386B8176CC37C00AAA785 /* ArteryImages */ = {
-			isa = PBXGroup;
-			children = (
-				32D3351C179E542100F95A7D /* anterior-inferior-cerebellar-4.png */,
-				32D3351D179E542100F95A7D /* anterior-inferior-cerebellar-5.png */,
-				32D3351E179E542100F95A7D /* anterior-spinal-0.png */,
-				32D3351F179E542100F95A7D /* anterior-spinal-1.png */,
-				32D33520179E542100F95A7D /* anterior-spinal-2.png */,
-				32D33527179E542100F95A7D /* pica-1.png */,
-				32D33528179E542100F95A7D /* pica-2.png */,
-				32D33529179E542100F95A7D /* pica-3.png */,
-				32D3352A179E542100F95A7D /* posterior-cerebral-7.png */,
-				32D3352B179E542100F95A7D /* posterior-cerebral-8.png */,
-				32D3352C179E542100F95A7D /* posterior-spinal-0.png */,
-				32D3352D179E542100F95A7D /* posterior-spinal-1.png */,
-				32D3352E179E542100F95A7D /* superior-cerebeller-5.png */,
-				32D3352F179E542100F95A7D /* superior-cerebeller-6.png */,
-				32D33530179E542100F95A7D /* superior-cerebeller-7.png */,
-				32D33531179E542100F95A7D /* vertebral-0.png */,
-				32D33532179E542100F95A7D /* vertebral-1.png */,
-				32D33533179E542100F95A7D /* vertebral-2.png */,
-				322FBF3617B9ECA10056D964 /* basilar-long-4.png */,
-				322FBF3717B9ECA10056D964 /* basilar-long-5.png */,
-				322FBF3817B9ECA10056D964 /* basilar-long-6.png */,
-				322FBF3C17B9ECB50056D964 /* basilar-paramedian-3.png */,
-				322FBF3D17B9ECB50056D964 /* basilar-paramedian-4.png */,
-				322FBF3E17B9ECB50056D964 /* basilar-paramedian-5.png */,
-				322FBF3F17B9ECB50056D964 /* basilar-paramedian-6.png */,
-				322FBF4017B9ECB50056D964 /* basilar-paramedian-7.png */,
-				322FBF4117B9ECB50056D964 /* basilar-paramedian-8.png */,
-				322FBF4817B9ECBD0056D964 /* basilar-short-4.png */,
-				322FBF4917B9ECBD0056D964 /* basilar-short-5.png */,
-				322FBF4A17B9ECBD0056D964 /* basilar-short-6.png */,
-			);
-			name = ArteryImages;
-			path = Images/ArteryImages;
 			sourceTree = "<group>";
 		};
 		326FB689170BDCC1002CD59B /* Cells */ = {
@@ -1670,37 +1298,6 @@
 			path = side;
 			sourceTree = "<group>";
 		};
-		327E13061707FC7E00C5D237 /* Stem Views */ = {
-			isa = PBXGroup;
-			children = (
-				3213C92D170D61FB000DF667 /* stem-back.png */,
-				3213C92E170D61FB000DF667 /* stem-side.png */,
-				327E13071707FC9700C5D237 /* stem-front.png */,
-				32BAE7AE1718175B00F04334 /* Arteries */,
-				32BAE7931718048200F04334 /* CN */,
-				32D3354C179E553F00F95A7D /* Nuclei Tracts Misc */,
-			);
-			name = "Stem Views";
-			path = "Images/Stem Views";
-			sourceTree = "<group>";
-		};
-		327E130F17081F5200C5D237 /* MRI Images */ = {
-			isa = PBXGroup;
-			children = (
-				327E131017081F5300C5D237 /* MRI0.jpg */,
-				327E131117081F5300C5D237 /* MRI1.jpg */,
-				327E131217081F5300C5D237 /* MRI2.jpg */,
-				327E131317081F5300C5D237 /* MRI3.jpg */,
-				327E131417081F5300C5D237 /* MRI4.jpg */,
-				327E131517081F5300C5D237 /* MRI5.jpg */,
-				327E131617081F5300C5D237 /* MRI6.jpg */,
-				327E131717081F5300C5D237 /* MRI7.jpg */,
-				327E131817081F5300C5D237 /* MRI8.jpg */,
-			);
-			name = "MRI Images";
-			path = "Images/MRI Images";
-			sourceTree = "<group>";
-		};
 		328848C816B12200005FA824 /* Syndrome Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -1744,153 +1341,6 @@
 			);
 			name = "Syndrome Images";
 			path = "Images/Syndrome Images";
-			sourceTree = "<group>";
-		};
-		32BAE7931718048200F04334 /* CN */ = {
-			isa = PBXGroup;
-			children = (
-				32BAE7941718048200F04334 /* iii-oculomotor-cn-overlay-side.png */,
-				32BAE7951718048200F04334 /* iv-trochlear-cn-overlay-side.png */,
-				32BAE7961718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png */,
-				32BAE7971718048200F04334 /* v-trigeminal-cn-overlay-side.png */,
-				32BAE7981718048200F04334 /* vi-abducens-cn-overlay-side.png */,
-				32BAE7991718048200F04334 /* vii-facial-cn-overlay-side.png */,
-				32BAE79A1718048200F04334 /* viii-vestibulocochlear-cn-overlay-side.png */,
-				32BAE79B1718048200F04334 /* x-vagus-cn-overlay-side.png */,
-				32BAE79C1718048200F04334 /* xi-accessory-cn-overlay-side.png */,
-				32BAE79D1718048200F04334 /* xii-hypoglossal-cn-overlay-side.png */,
-			);
-			path = CN;
-			sourceTree = "<group>";
-		};
-		32BAE7AE1718175B00F04334 /* Arteries */ = {
-			isa = PBXGroup;
-			children = (
-				32BAE7AF1718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png */,
-				32BAE7B01718175E00F04334 /* anterior-spinal-a-overlay-front.png */,
-				32E51B7917B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png */,
-				32E51B7B17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png */,
-				32E51B7C17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png */,
-				32BAE7B21718175E00F04334 /* posterior-cerebral-a-overlay-front.png */,
-				32BAE7B31718175E00F04334 /* posterior-communicating-a-overlay-front.png */,
-				32BAE7B41718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png */,
-				32BAE7B51718175E00F04334 /* superior-cerebellar-a-overlay-front.png */,
-				32BAE7B61718175E00F04334 /* vertebral-a-overlay-front.png */,
-			);
-			path = Arteries;
-			sourceTree = "<group>";
-		};
-		32C384C11777E18600333310 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				32C384C21777E1B400333310 /* profile-sxn-2.png */,
-				32C384C31777E1B400333310 /* profile-sxn-5.png */,
-				32C384C41777E1B400333310 /* profile-sxn-4.png */,
-				32C384C51777E1B400333310 /* profile-sxn-8.png */,
-				32C384C61777E1B400333310 /* profile-sxn-0.png */,
-				32C384C71777E1B400333310 /* profile-sxn-1.png */,
-				32C384C81777E1B400333310 /* profile-sxn-7.png */,
-				32C384C91777E1B400333310 /* profile-sxn-6.png */,
-				32C384CA1777E1B400333310 /* profile-sxn-3.png */,
-			);
-			name = Profile;
-			path = "../Images/SXN Images/Profile";
-			sourceTree = "<group>";
-		};
-		32C384D51777E1DB00333310 /* Original */ = {
-			isa = PBXGroup;
-			children = (
-				328848A616B10DD4005FA824 /* sxn-8.png */,
-				328848A716B10DD4005FA824 /* sxn-7.png */,
-				328848A816B10DD4005FA824 /* sxn-6.png */,
-				328848A916B10DD4005FA824 /* sxn-5.png */,
-				328848AA16B10DD4005FA824 /* sxn-4.png */,
-				328848AB16B10DD4005FA824 /* sxn-3.png */,
-				328848AC16B10DD4005FA824 /* sxn-2.png */,
-				328848AD16B10DD4005FA824 /* sxn-1.png */,
-				328848B816B111EC005FA824 /* sxn-0.png */,
-			);
-			name = Original;
-			path = "../Images/SXN Images/Original";
-			sourceTree = "<group>";
-		};
-		32C4620C176CE0FF00B55189 /* Glass Stem Images */ = {
-			isa = PBXGroup;
-			children = (
-				32C4620D176CE0FF00B55189 /* glass-stem-0.png */,
-				32C4620E176CE0FF00B55189 /* glass-stem-1.png */,
-				32C46217176CE0FF00B55189 /* glass-stem-2.png */,
-				32C46218176CE0FF00B55189 /* glass-stem-3.png */,
-				32C46219176CE0FF00B55189 /* glass-stem-4.png */,
-				32C4621A176CE0FF00B55189 /* glass-stem-5.png */,
-				32C4621B176CE0FF00B55189 /* glass-stem-6.png */,
-				32C4621C176CE0FF00B55189 /* glass-stem-7.png */,
-				32C4621D176CE0FF00B55189 /* glass-stem-8.png */,
-				32C4621E176CE0FF00B55189 /* glass-stem-9.png */,
-				32C4620F176CE0FF00B55189 /* glass-stem-10.png */,
-				32C46210176CE0FF00B55189 /* glass-stem-11.png */,
-				32C46211176CE0FF00B55189 /* glass-stem-12.png */,
-				32C46212176CE0FF00B55189 /* glass-stem-13.png */,
-				32C46213176CE0FF00B55189 /* glass-stem-14.png */,
-				32C46214176CE0FF00B55189 /* glass-stem-15.png */,
-				32C46215176CE0FF00B55189 /* glass-stem-16.png */,
-				32C46216176CE0FF00B55189 /* glass-stem-17.png */,
-			);
-			name = "Glass Stem Images";
-			path = "Images/Glass Stem Images";
-			sourceTree = "<group>";
-		};
-		32D3354C179E553F00F95A7D /* Nuclei Tracts Misc */ = {
-			isa = PBXGroup;
-			children = (
-				3213C931170D661C000DF667 /* abducens-n-overlay-back.png */,
-				3213C932170D661C000DF667 /* abducens-n-overlay-side.png */,
-				3213C933170D661C000DF667 /* accessory-n-overlay-back.png */,
-				3213C934170D661C000DF667 /* accessory-n-overlay-side.png */,
-				3213C935170D661C000DF667 /* anterior-cochlear-n-overlay-back.png */,
-				32D84796178D463400718C4C /* corticospinal-t-overlay-back.png */,
-				3213C936170D661C000DF667 /* dorsal-motor-of-vagus-n-overlay-back.png */,
-				3213C937170D661C000DF667 /* dorsal-motor-of-vagus-n-overlay-side.png */,
-				3213C938170D661C000DF667 /* edinger-westphal-n-overlay-back.png */,
-				3213C939170D661C000DF667 /* edinger-westphal-n-overlay-side.png */,
-				3213C93A170D661C000DF667 /* facial-motor-n-overlay-back.png */,
-				3213C93B170D661D000DF667 /* facial-motor-n-overlay-side.png */,
-				3213C93C170D661D000DF667 /* fourth-ventricle-m-overlay-back.png */,
-				3213C93D170D661D000DF667 /* hypoglossal-n-overlay-back.png */,
-				3213C93E170D661D000DF667 /* hypoglossal-n-overlay-side.png */,
-				3213C93F170D661D000DF667 /* inferior-colliculus-m-overlay-back.png */,
-				3213C940170D661D000DF667 /* inferior-colliculus-m-overlay-side.png */,
-				3213C943170D661D000DF667 /* mesencephalic-n-overlay-back.png */,
-				3213C944170D661D000DF667 /* mesencephalic-n-overlay-side.png */,
-				32D84797178D463400718C4C /* medial-lemniscus-t-overlay-back.png */,
-				3213C945170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png */,
-				3213C946170D661D000DF667 /* nucleus-ambiguus-n-overlay-back.png */,
-				3213C947170D661D000DF667 /* nucleus-ambiguus-n-overlay-side.png */,
-				3213C948170D661D000DF667 /* oculomotor-n-overlay-back.png */,
-				3213C949170D661D000DF667 /* posterior-cochlear-n-overlay-back.png */,
-				3213C94A170D661D000DF667 /* principal-n-overlay-side.png */,
-				3213C94B170D661D000DF667 /* principal-n-overlay-back.png */,
-				3213C94C170D661D000DF667 /* red-n-overlay-side.png */,
-				3213C94D170D661D000DF667 /* salivatory-n-overlay-back.png */,
-				3213C94E170D661D000DF667 /* solitary-n-overlay-back.png */,
-				3213C94F170D661D000DF667 /* solitary-n-overlay-side.png */,
-				3213C950170D661D000DF667 /* spinal-trigeminal-n-overlay-back.png */,
-				3213C951170D661D000DF667 /* spinal-trigeminal-n-overlay-side.png */,
-				32BAE7AA17180F0600F04334 /* spinal-trigeminal-t-overlay-back.png */,
-				32BAE7AB17180F0900F04334 /* spinal-trigeminal-t-overlay-side.png */,
-				3213C952170D661D000DF667 /* superior-cerebellar-peduncle-m-overlay-back.png */,
-				3213C953170D661D000DF667 /* superior-colliculus-m-overlay-back.png */,
-				3213C954170D661D000DF667 /* superior-colliculus-m-overlay-side.png */,
-				3213C955170D661D000DF667 /* trigeminal-motor-n-overlay-back.png */,
-				3213C956170D661D000DF667 /* trigeminal-motor-n-overlay-side.png */,
-				3213C957170D661D000DF667 /* trochlear-n-overlay-back.png */,
-				3213C958170D661D000DF667 /* trochlear-n-overlay-side.png */,
-				32B9A84418A7471A0027805F /* inferior-vestibular-n-overlay-back.png */,
-				32B9A84518A7471A0027805F /* lateral-vestibular-n-overlay-back.png */,
-				32B9A84618A7471A0027805F /* medial-vestibular-n-overlay-back.png */,
-				32B9A84718A7471A0027805F /* superior-vestibular-n-overlay-back.png */,
-			);
-			path = "Nuclei Tracts Misc";
 			sourceTree = "<group>";
 		};
 		32DD438016525569002AAE0F /* Views */ = {
@@ -1954,23 +1404,6 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		32EDE79D177102DC006434A5 /* Atlas */ = {
-			isa = PBXGroup;
-			children = (
-				32EDE79E177102DC006434A5 /* atlas-sxn-0.png */,
-				32EDE79F177102DC006434A5 /* atlas-sxn-1.png */,
-				32EDE7A0177102DC006434A5 /* atlas-sxn-2.png */,
-				32EDE7A1177102DC006434A5 /* atlas-sxn-3.png */,
-				32EDE7A2177102DC006434A5 /* atlas-sxn-4.png */,
-				32EDE7A3177102DC006434A5 /* atlas-sxn-5.png */,
-				32EDE7A4177102DC006434A5 /* atlas-sxn-6.png */,
-				32EDE7A5177102DC006434A5 /* atlas-sxn-7.png */,
-				32EDE7A6177102DC006434A5 /* atlas-sxn-8.png */,
-			);
-			name = Atlas;
-			path = "../Images/SXN Images/Atlas";
-			sourceTree = "<group>";
-		};
 		32FB66A517200146005E6DE6 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -1983,9 +1416,9 @@
 				32782E1017B4A701008C072D /* 6 */,
 				32782E1D17B4A701008C072D /* 7 */,
 				32782E2D17B4A701008C072D /* 8 */,
-				32782E4717B4A701008C072D /* gen.py */,
 				32782E4817B4A701008C072D /* perfusion */,
 				32782E5417B4A701008C072D /* side */,
+				32782E4717B4A701008C072D /* gen.py */,
 			);
 			name = Quiz;
 			path = Images/Quiz;
@@ -2212,7 +1645,6 @@
 				8179EAE5161D40CF0050D663 /* Brainstem101 */,
 				8179EADE161D40CF0050D663 /* Frameworks */,
 				8179EADC161D40CF0050D663 /* Products */,
-				32948467190CC1E600B145F1 /* Images.xcassets */,
 				EE3B8F4AF201C52F44077D96 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -2266,17 +1698,6 @@
 				8179EAED161D40CF0050D663 /* Brainstem101-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8179EB1C161D41BB0050D663 /* Sxn Images */ = {
-			isa = PBXGroup;
-			children = (
-				32C384C11777E18600333310 /* Profile */,
-				32EDE79D177102DC006434A5 /* Atlas */,
-				32C384D51777E1DB00333310 /* Original */,
-			);
-			name = "Sxn Images";
-			path = Brainstem101;
 			sourceTree = "<group>";
 		};
 		EE3B8F4AF201C52F44077D96 /* Pods */ = {
@@ -2350,18 +1771,9 @@
 				32FF11F41A46F57500CEAE55 /* anterior-spinocerebellar-t-5.json in Resources */,
 				32035533162C0CC60079394F /* MainStoryboard.storyboard in Resources */,
 				32FF127F1A46F57500CEAE55 /* rubrospinal-t-5.json in Resources */,
-				328848AE16B10DD4005FA824 /* sxn-8.png in Resources */,
-				328848AF16B10DD4005FA824 /* sxn-7.png in Resources */,
-				328848B016B10DD4005FA824 /* sxn-6.png in Resources */,
 				32FF12881A46F57500CEAE55 /* spinal-trigeminal-n-0.json in Resources */,
 				32FF12AA1A46F57500CEAE55 /* vi-abducens-cn-4.json in Resources */,
-				328848B116B10DD4005FA824 /* sxn-5.png in Resources */,
-				328848B216B10DD4005FA824 /* sxn-4.png in Resources */,
 				32FF12171A46F57500CEAE55 /* cuneate-n-0.json in Resources */,
-				328848B316B10DD4005FA824 /* sxn-3.png in Resources */,
-				328848B416B10DD4005FA824 /* sxn-2.png in Resources */,
-				328848B516B10DD4005FA824 /* sxn-1.png in Resources */,
-				328848B916B111EC005FA824 /* sxn-0.png in Resources */,
 				32FF12111A46F57500CEAE55 /* corticospinal-t-5.json in Resources */,
 				327E12F21707BD6400C5D237 /* wallenberg-mug.png in Resources */,
 				327E12F41707BD7C00C5D237 /* millard-gubler-mug.png in Resources */,
@@ -2374,21 +1786,12 @@
 				327E13001707BF3D00C5D237 /* foville-mug.png in Resources */,
 				32FF12421A46F57500CEAE55 /* medial-lemniscus-t-1.json in Resources */,
 				327E13021707BF8900C5D237 /* jackson-mug.png in Resources */,
-				327E130A1707FC9700C5D237 /* stem-front.png in Resources */,
+				329E1D881A68E9BB00E9AB37 /* Tutorial.xcassets in Resources */,
 				32FF12AB1A46F57500CEAE55 /* vii-facial-cn-4.json in Resources */,
-				327E131917081F5300C5D237 /* MRI0.jpg in Resources */,
-				327E131A17081F5300C5D237 /* MRI1.jpg in Resources */,
-				327E131B17081F5300C5D237 /* MRI2.jpg in Resources */,
-				327E131C17081F5300C5D237 /* MRI3.jpg in Resources */,
 				32FF11FB1A46F57500CEAE55 /* anterolateral-system-t-6.json in Resources */,
-				327E131D17081F5300C5D237 /* MRI4.jpg in Resources */,
 				32FF12931A46F57500CEAE55 /* superior-cerebellar-peduncle-m-7.json in Resources */,
-				327E131E17081F5300C5D237 /* MRI5.jpg in Resources */,
-				327E131F17081F5300C5D237 /* MRI6.jpg in Resources */,
 				32FF12991A46F57500CEAE55 /* tectospinal-t-4.json in Resources */,
-				327E132017081F5300C5D237 /* MRI7.jpg in Resources */,
 				32FF11EB1A46F57500CEAE55 /* accessory-cuneate-n-1.json in Resources */,
-				327E132117081F5300C5D237 /* MRI8.jpg in Resources */,
 				327E1324170842EA00C5D237 /* claude-mug.png in Resources */,
 				327E132B17085DBD00C5D237 /* weber-mug.png in Resources */,
 				32523E991709D79E00D55ECA /* claude-sec.png in Resources */,
@@ -2422,86 +1825,24 @@
 				326FB6A4170C15D5002CD59B /* locked-in-perf.png in Resources */,
 				326FB6A6170C15E0002CD59B /* foville-perf.png in Resources */,
 				326FB6A8170C15E7002CD59B /* claude-perf.png in Resources */,
-				3213C92F170D61FB000DF667 /* stem-back.png in Resources */,
-				3213C930170D61FB000DF667 /* stem-side.png in Resources */,
 				32FF11F11A46F57500CEAE55 /* anterior-spinocerebellar-t-1.json in Resources */,
-				3213C95A170D661D000DF667 /* abducens-n-overlay-back.png in Resources */,
-				3213C95B170D661D000DF667 /* abducens-n-overlay-side.png in Resources */,
 				32FF120F1A46F57500CEAE55 /* corticospinal-t-3.json in Resources */,
 				32FF122A1A46F57500CEAE55 /* hypoglossal-n-1.json in Resources */,
 				32FF12511A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-7.json in Resources */,
-				3213C95C170D661D000DF667 /* accessory-n-overlay-back.png in Resources */,
-				3213C95D170D661D000DF667 /* accessory-n-overlay-side.png in Resources */,
-				3213C95E170D661D000DF667 /* anterior-cochlear-n-overlay-back.png in Resources */,
-				3213C95F170D661D000DF667 /* dorsal-motor-of-vagus-n-overlay-back.png in Resources */,
-				3213C960170D661D000DF667 /* dorsal-motor-of-vagus-n-overlay-side.png in Resources */,
 				32FF121E1A46F57500CEAE55 /* edinger-westphal-n-8.json in Resources */,
-				3213C961170D661D000DF667 /* edinger-westphal-n-overlay-back.png in Resources */,
-				3213C962170D661D000DF667 /* edinger-westphal-n-overlay-side.png in Resources */,
-				3213C963170D661D000DF667 /* facial-motor-n-overlay-back.png in Resources */,
-				3213C964170D661D000DF667 /* facial-motor-n-overlay-side.png in Resources */,
-				3213C965170D661D000DF667 /* fourth-ventricle-m-overlay-back.png in Resources */,
 				32FF120C1A46F57500CEAE55 /* corticobulbars-t-8.json in Resources */,
-				3213C966170D661D000DF667 /* hypoglossal-n-overlay-back.png in Resources */,
-				3213C967170D661D000DF667 /* hypoglossal-n-overlay-side.png in Resources */,
-				3213C968170D661D000DF667 /* inferior-colliculus-m-overlay-back.png in Resources */,
 				32FF12331A46F57500CEAE55 /* inferior-vestibular-n-2.json in Resources */,
 				32FF11FE1A46F57500CEAE55 /* brachium-of-inferior-colliculus-m-8.json in Resources */,
-				3213C969170D661D000DF667 /* inferior-colliculus-m-overlay-side.png in Resources */,
-				3213C96C170D661D000DF667 /* mesencephalic-n-overlay-back.png in Resources */,
-				3213C96D170D661D000DF667 /* mesencephalic-n-overlay-side.png in Resources */,
-				3213C96E170D661D000DF667 /* middle-cerebellar-peduncle-m-overlay-back.png in Resources */,
-				3213C96F170D661D000DF667 /* nucleus-ambiguus-n-overlay-back.png in Resources */,
-				3213C970170D661D000DF667 /* nucleus-ambiguus-n-overlay-side.png in Resources */,
 				32FF12591A46F57500CEAE55 /* mesencephalic-n-7.json in Resources */,
-				3213C971170D661D000DF667 /* oculomotor-n-overlay-back.png in Resources */,
-				3213C972170D661D000DF667 /* posterior-cochlear-n-overlay-back.png in Resources */,
 				32FF122D1A46F57500CEAE55 /* inferior-cerebellar-peduncle-m-2.json in Resources */,
-				3213C973170D661D000DF667 /* principal-n-overlay-side.png in Resources */,
-				3213C974170D661D000DF667 /* principal-n-overlay-back.png in Resources */,
-				3213C975170D661D000DF667 /* red-n-overlay-side.png in Resources */,
-				3213C976170D661D000DF667 /* salivatory-n-overlay-back.png in Resources */,
-				3213C977170D661D000DF667 /* solitary-n-overlay-back.png in Resources */,
 				32FF12971A46F57500CEAE55 /* tectospinal-t-2.json in Resources */,
-				3213C978170D661D000DF667 /* solitary-n-overlay-side.png in Resources */,
-				3213C979170D661D000DF667 /* spinal-trigeminal-n-overlay-back.png in Resources */,
 				32FF123D1A46F57500CEAE55 /* lateral-vestibular-n-3.json in Resources */,
-				3213C97A170D661D000DF667 /* spinal-trigeminal-n-overlay-side.png in Resources */,
-				3213C97B170D661D000DF667 /* superior-cerebellar-peduncle-m-overlay-back.png in Resources */,
-				3213C97C170D661D000DF667 /* superior-colliculus-m-overlay-back.png in Resources */,
-				3213C97D170D661D000DF667 /* superior-colliculus-m-overlay-side.png in Resources */,
-				3213C97E170D661D000DF667 /* trigeminal-motor-n-overlay-back.png in Resources */,
-				3253620518A78F4F00017864 /* tutorial-atlas.png in Resources */,
 				32FF128A1A46F57500CEAE55 /* spinal-trigeminal-n-2.json in Resources */,
-				3213C97F170D661D000DF667 /* trigeminal-motor-n-overlay-side.png in Resources */,
-				3213C980170D661D000DF667 /* trochlear-n-overlay-back.png in Resources */,
-				3213C981170D661D000DF667 /* trochlear-n-overlay-side.png in Resources */,
-				321C8EA617115CD200517510 /* fuckometer-needle.png in Resources */,
-				321C8EA717115CD200517510 /* fuckometer-background.png in Resources */,
 				32FF129C1A46F57500CEAE55 /* tectospinal-t-7.json in Resources */,
-				32BAE79E1718048200F04334 /* iii-oculomotor-cn-overlay-side.png in Resources */,
-				32BAE79F1718048200F04334 /* iv-trochlear-cn-overlay-side.png in Resources */,
-				32BAE7A01718048200F04334 /* ix-glossopharyngeal-cn-overlay-side.png in Resources */,
-				32BAE7A11718048200F04334 /* v-trigeminal-cn-overlay-side.png in Resources */,
-				32BAE7A21718048200F04334 /* vi-abducens-cn-overlay-side.png in Resources */,
-				32BAE7A31718048200F04334 /* vii-facial-cn-overlay-side.png in Resources */,
 				32FF123B1A46F57500CEAE55 /* lateral-reticular-n-1.json in Resources */,
-				32BAE7A41718048200F04334 /* viii-vestibulocochlear-cn-overlay-side.png in Resources */,
-				32BAE7A51718048200F04334 /* x-vagus-cn-overlay-side.png in Resources */,
-				32BAE7A61718048200F04334 /* xi-accessory-cn-overlay-side.png in Resources */,
 				32FF12601A46F57500CEAE55 /* nucleus-centralis-superior-n-6.json in Resources */,
-				32BAE7A71718048200F04334 /* xii-hypoglossal-cn-overlay-side.png in Resources */,
-				32BAE7AC17180F0D00F04334 /* spinal-trigeminal-t-overlay-back.png in Resources */,
-				32BAE7AD17180F0D00F04334 /* spinal-trigeminal-t-overlay-side.png in Resources */,
-				32BAE7B71718175E00F04334 /* anterior-inferior-cerebellar-a-overlay-front.png in Resources */,
-				32BAE7B81718175E00F04334 /* anterior-spinal-a-overlay-front.png in Resources */,
-				32BAE7BA1718175E00F04334 /* posterior-cerebral-a-overlay-front.png in Resources */,
 				32FF12131A46F57500CEAE55 /* corticospinal-t-7.json in Resources */,
-				32BAE7BB1718175E00F04334 /* posterior-communicating-a-overlay-front.png in Resources */,
 				32FF12671A46F57500CEAE55 /* nucleus-raphe-pontis-n-5.json in Resources */,
-				32BAE7BC1718175E00F04334 /* posterior-inferior-cerebellar-a-overlay-front.png in Resources */,
-				32BAE7BD1718175E00F04334 /* superior-cerebellar-a-overlay-front.png in Resources */,
-				32BAE7BE1718175E00F04334 /* vertebral-a-overlay-front.png in Resources */,
 				32FF12A21A46F57500CEAE55 /* ventral-trigeminothalamic-t-2.json in Resources */,
 				32FF12291A46F57500CEAE55 /* hypoglossal-n-0.json in Resources */,
 				32FF12521A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-8.json in Resources */,
@@ -2515,7 +1856,6 @@
 				32FF12261A46F57500CEAE55 /* gracile-fasciculus-t-1.json in Resources */,
 				32FF11FA1A46F57500CEAE55 /* anterolateral-system-t-5.json in Resources */,
 				32FF12101A46F57500CEAE55 /* corticospinal-t-4.json in Resources */,
-				32B9A84818A7471A0027805F /* inferior-vestibular-n-overlay-back.png in Resources */,
 				32FF12381A46F57500CEAE55 /* lateral-lemniscus-t-5.json in Resources */,
 				32FF12481A46F57500CEAE55 /* medial-lemniscus-t-7.json in Resources */,
 				32FF12091A46F57500CEAE55 /* cerebral-aqueduct-m-7.json in Resources */,
@@ -2528,7 +1868,6 @@
 				32FF12251A46F57500CEAE55 /* gracile-fasciculus-t-0.json in Resources */,
 				32FF124F1A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-5.json in Resources */,
 				32FF12071A46F57500CEAE55 /* cerebellothalamic-t-8.json in Resources */,
-				3253620818A791B400017864 /* tutorial-quiz.png in Resources */,
 				32FF12391A46F57500CEAE55 /* lateral-lemniscus-t-6.json in Resources */,
 				32FF128B1A46F57500CEAE55 /* spinal-trigeminal-n-3.json in Resources */,
 				32FF11F71A46F57500CEAE55 /* anterolateral-system-t-2.json in Resources */,
@@ -2541,10 +1880,10 @@
 				32FF125D1A46F57500CEAE55 /* middle-cerebellar-peduncle-m-6.json in Resources */,
 				32FF12A31A46F57500CEAE55 /* ventral-trigeminothalamic-t-3.json in Resources */,
 				32FF12701A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-4.json in Resources */,
-				32B9A84B18A7471A0027805F /* superior-vestibular-n-overlay-back.png in Resources */,
 				32FF126F1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-3.json in Resources */,
 				32FF12821A46F57500CEAE55 /* rubrospinal-t-8.json in Resources */,
 				32FF126E1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-2.json in Resources */,
+				329E1D811A68E80F00E9AB37 /* General.xcassets in Resources */,
 				32FF12081A46F57500CEAE55 /* cerebral-aqueduct-m-6.json in Resources */,
 				32FF12761A46F57500CEAE55 /* pyramidal-decussation-m-0.json in Resources */,
 				32FF12A11A46F57500CEAE55 /* ventral-trigeminothalamic-t-1.json in Resources */,
@@ -2570,95 +1909,36 @@
 				326F878F17212522008E923E /* locked-in-mug.png in Resources */,
 				32FF126D1A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-1.json in Resources */,
 				32FF12371A46F57500CEAE55 /* lateral-lemniscus-t-4.json in Resources */,
-				32C46220176CE0FF00B55189 /* glass-stem-0.png in Resources */,
 				32FF12361A46F57500CEAE55 /* interpeduncular-n-8.json in Resources */,
 				32FF12A61A46F57500CEAE55 /* ventral-trigeminothalamic-t-6.json in Resources */,
 				32FF128D1A46F57500CEAE55 /* spinal-trigeminal-t-0.json in Resources */,
-				32C46221176CE0FF00B55189 /* glass-stem-1.png in Resources */,
-				32C46222176CE0FF00B55189 /* glass-stem-10.png in Resources */,
-				32C46223176CE0FF00B55189 /* glass-stem-11.png in Resources */,
-				32C46224176CE0FF00B55189 /* glass-stem-12.png in Resources */,
 				32FF12611A46F57500CEAE55 /* nucleus-raphe-dorsalis-n-6.json in Resources */,
-				32C46225176CE0FF00B55189 /* glass-stem-13.png in Resources */,
-				32C46226176CE0FF00B55189 /* glass-stem-14.png in Resources */,
 				32FF127C1A46F57500CEAE55 /* rubrospinal-t-2.json in Resources */,
 				32FF12771A46F57500CEAE55 /* red-n-8.json in Resources */,
-				32C46227176CE0FF00B55189 /* glass-stem-15.png in Resources */,
-				32C46228176CE0FF00B55189 /* glass-stem-16.png in Resources */,
-				32C46229176CE0FF00B55189 /* glass-stem-17.png in Resources */,
-				32C4622A176CE0FF00B55189 /* glass-stem-2.png in Resources */,
-				32C4622B176CE0FF00B55189 /* glass-stem-3.png in Resources */,
-				32C4622C176CE0FF00B55189 /* glass-stem-4.png in Resources */,
-				32C4622D176CE0FF00B55189 /* glass-stem-5.png in Resources */,
-				32C4622E176CE0FF00B55189 /* glass-stem-6.png in Resources */,
 				32FF121A1A46F57500CEAE55 /* dorsal-motor-of-vagus-n-1.json in Resources */,
 				32FF128E1A46F57500CEAE55 /* spinal-trigeminal-t-1.json in Resources */,
 				32FF12B71A47195600CEAE55 /* nuclei.plist in Resources */,
 				32FF126B1A46F57500CEAE55 /* pontine-n-6.json in Resources */,
-				32C4622F176CE0FF00B55189 /* glass-stem-7.png in Resources */,
-				32C46230176CE0FF00B55189 /* glass-stem-8.png in Resources */,
-				32C46231176CE0FF00B55189 /* glass-stem-9.png in Resources */,
-				32EDE7A7177102DC006434A5 /* atlas-sxn-0.png in Resources */,
-				32EDE7A8177102DC006434A5 /* atlas-sxn-1.png in Resources */,
-				32EDE7A9177102DC006434A5 /* atlas-sxn-2.png in Resources */,
-				32EDE7AA177102DC006434A5 /* atlas-sxn-3.png in Resources */,
-				32EDE7AB177102DC006434A5 /* atlas-sxn-4.png in Resources */,
-				32EDE7AC177102DC006434A5 /* atlas-sxn-5.png in Resources */,
-				32EDE7AD177102DC006434A5 /* atlas-sxn-6.png in Resources */,
-				32EDE7AE177102DC006434A5 /* atlas-sxn-7.png in Resources */,
-				32EDE7AF177102DC006434A5 /* atlas-sxn-8.png in Resources */,
-				32C384CB1777E1B400333310 /* profile-sxn-2.png in Resources */,
+				329E1D7F1A68E6EA00E9AB37 /* SXN Images.xcassets in Resources */,
 				32FF11FD1A46F57500CEAE55 /* anterolateral-system-t-8.json in Resources */,
 				32FF12431A46F57500CEAE55 /* medial-lemniscus-t-2.json in Resources */,
-				32C384CC1777E1B400333310 /* profile-sxn-5.png in Resources */,
-				32C384CD1777E1B400333310 /* profile-sxn-4.png in Resources */,
-				32C384CE1777E1B400333310 /* profile-sxn-8.png in Resources */,
-				32C384CF1777E1B400333310 /* profile-sxn-0.png in Resources */,
 				32FF12541A46F57500CEAE55 /* medial-vestibular-n-2.json in Resources */,
-				32C384D01777E1B400333310 /* profile-sxn-1.png in Resources */,
 				32FF126A1A46F57500CEAE55 /* pontine-n-5.json in Resources */,
-				32C384D11777E1B400333310 /* profile-sxn-7.png in Resources */,
 				32FF11F91A46F57500CEAE55 /* anterolateral-system-t-4.json in Resources */,
-				32C384D21777E1B400333310 /* profile-sxn-6.png in Resources */,
-				32C384D31777E1B400333310 /* profile-sxn-3.png in Resources */,
 				32C384DB177810BD00333310 /* jackson-sec.png in Resources */,
 				32C384DD1778119900333310 /* jackson-perf.png in Resources */,
 				32FF12711A46F57500CEAE55 /* posterior-longitudinal-fasciculus-t-5.json in Resources */,
-				320D7040183219EB000F6AFA /* tutorial-clinical.png in Resources */,
-				32D84798178D463400718C4C /* corticospinal-t-overlay-back.png in Resources */,
 				32FF122C1A46F57500CEAE55 /* iii-oculomotor-cn-8.json in Resources */,
 				32FF12461A46F57500CEAE55 /* medial-lemniscus-t-5.json in Resources */,
 				32FF124B1A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-1.json in Resources */,
-				32D84799178D463400718C4C /* medial-lemniscus-t-overlay-back.png in Resources */,
-				32D33534179E542100F95A7D /* anterior-inferior-cerebellar-4.png in Resources */,
-				32D33535179E542100F95A7D /* anterior-inferior-cerebellar-5.png in Resources */,
-				32D33536179E542100F95A7D /* anterior-spinal-0.png in Resources */,
 				32FF120E1A46F57500CEAE55 /* corticospinal-t-2.json in Resources */,
-				32D33537179E542100F95A7D /* anterior-spinal-1.png in Resources */,
-				32D33538179E542100F95A7D /* anterior-spinal-2.png in Resources */,
-				32D3353F179E542100F95A7D /* pica-1.png in Resources */,
-				32D33540179E542100F95A7D /* pica-2.png in Resources */,
 				32FF12A01A46F57500CEAE55 /* trochlear-n-7.json in Resources */,
-				32D33541179E542100F95A7D /* pica-3.png in Resources */,
 				32FF12651A46F57500CEAE55 /* nucleus-raphe-obscurus-n-2.json in Resources */,
-				32D33542179E542100F95A7D /* posterior-cerebral-7.png in Resources */,
-				32D33543179E542100F95A7D /* posterior-cerebral-8.png in Resources */,
-				32D33544179E542100F95A7D /* posterior-spinal-0.png in Resources */,
-				32D33545179E542100F95A7D /* posterior-spinal-1.png in Resources */,
 				32FF126C1A46F57500CEAE55 /* posterior-cochlear-n-3.json in Resources */,
-				32D33546179E542100F95A7D /* superior-cerebeller-5.png in Resources */,
 				32FF125F1A46F57500CEAE55 /* nucleus-ambiguus-n-2.json in Resources */,
 				32FF123A1A46F57500CEAE55 /* lateral-lemniscus-t-7.json in Resources */,
-				32D33547179E542100F95A7D /* superior-cerebeller-6.png in Resources */,
-				32D33548179E542100F95A7D /* superior-cerebeller-7.png in Resources */,
-				32D33549179E542100F95A7D /* vertebral-0.png in Resources */,
-				32D3354A179E542100F95A7D /* vertebral-1.png in Resources */,
-				32948468190CC1E600B145F1 /* Images.xcassets in Resources */,
 				32FF12471A46F57500CEAE55 /* medial-lemniscus-t-6.json in Resources */,
-				32D3354B179E542100F95A7D /* vertebral-2.png in Resources */,
 				32FF12121A46F57500CEAE55 /* corticospinal-t-6.json in Resources */,
-				324EFCE517AB6D7700BE93BC /* tutorial-ask.png in Resources */,
-				324EFCE717AB7AF400BE93BC /* tutorial-profile.png in Resources */,
 				32782E6617B4A701008C072D /* accessory-nucleus-(CNXI)-0.png in Resources */,
 				32782E6717B4A701008C072D /* anterior-corticospinal-tract-0.png in Resources */,
 				32782E6817B4A701008C072D /* cuneate-nucleus-0.png in Resources */,
@@ -2729,7 +2009,6 @@
 				32782E9617B4A701008C072D /* lateral-vestibular-nucleus-3.png in Resources */,
 				32782E9717B4A701008C072D /* medial-lemniscus-3.png in Resources */,
 				32FF12191A46F57500CEAE55 /* dorsal-motor-of-vagus-n-0.json in Resources */,
-				3253620618A78F4F00017864 /* tutorial-page0.png in Resources */,
 				32FF12871A46F57500CEAE55 /* solitary-n-4.json in Resources */,
 				32782E9817B4A701008C072D /* medial-vestibular-nucleus-3.png in Resources */,
 				32FF128C1A46F57500CEAE55 /* spinal-trigeminal-n-4.json in Resources */,
@@ -2767,9 +2046,9 @@
 				32782EB117B4A701008C072D /* spinal-trigeminal-nucleus-4.png in Resources */,
 				32782EB217B4A701008C072D /* superior-vestibular-nucleus-4.png in Resources */,
 				32782EB317B4A701008C072D /* ventral-pontine-syndrome-4.png in Resources */,
+				329E1D861A68E88900E9AB37 /* Glass Stem.xcassets in Resources */,
 				32782EB417B4A701008C072D /* als-5.png in Resources */,
 				32782EB517B4A701008C072D /* central-tegmental-tract-5.png in Resources */,
-				32B9A84918A7471A0027805F /* lateral-vestibular-n-overlay-back.png in Resources */,
 				32782EB617B4A701008C072D /* locked-in-5.png in Resources */,
 				32782EB717B4A701008C072D /* locus-ceruleus-5.png in Resources */,
 				32782EB817B4A701008C072D /* medial-lemniscus-5.png in Resources */,
@@ -2793,6 +2072,7 @@
 				32782EC317B4A701008C072D /* cerebral-aqueduct-6.png in Resources */,
 				32782EC417B4A701008C072D /* lateral-lemniscus-6.png in Resources */,
 				32782EC517B4A701008C072D /* medial-lemniscus-6.png in Resources */,
+				329E1D921A68F4E800E9AB37 /* Stem View Overlays.xcassets in Resources */,
 				32782EC617B4A701008C072D /* mesencephalic-nucleus-6.png in Resources */,
 				32FF12561A46F57500CEAE55 /* medial-vestibular-n-4.json in Resources */,
 				32FF12231A46F57500CEAE55 /* fourth-ventricle-m-4.json in Resources */,
@@ -2815,7 +2095,6 @@
 				32FF11EA1A46F57500CEAE55 /* abducens-n-4.json in Resources */,
 				32782ED517B4A701008C072D /* mlf-7.png in Resources */,
 				32782ED617B4A701008C072D /* periaqueductal-grey-7.png in Resources */,
-				32B9A84A18A7471A0027805F /* medial-vestibular-n-overlay-back.png in Resources */,
 				32FF12181A46F57500CEAE55 /* cuneate-n-1.json in Resources */,
 				32782ED717B4A701008C072D /* quiz-background-7.png in Resources */,
 				32FF12301A46F57500CEAE55 /* inferior-olivary-n-1.json in Resources */,
@@ -2876,8 +2155,10 @@
 				32782EFC17B4A701008C072D /* quiz-background-perfusion.png in Resources */,
 				32FF125B1A46F57500CEAE55 /* middle-cerebellar-peduncle-m-4.json in Resources */,
 				32782EFD17B4A701008C072D /* short-circumfrentials-perfusion.png in Resources */,
+				329E1D941A68F6AB00E9AB37 /* Artery Section Overlays.xcassets in Resources */,
 				32782EFE17B4A701008C072D /* superior-cerebellar-perfusion.png in Resources */,
 				32782EFF17B4A701008C072D /* vertebral-artery-perfusion.png in Resources */,
+				329E1D901A68F3D900E9AB37 /* Stem View Backgrounds.xcassets in Resources */,
 				32782F0017B4A701008C072D /* (CNIII)-oculomotor-nerve-side.png in Resources */,
 				32782F0117B4A701008C072D /* (CNIV)-trochlear-nerve-side.png in Resources */,
 				32782F0217B4A701008C072D /* (CNIX) glossopharengeal nerve-side.png in Resources */,
@@ -2898,27 +2179,12 @@
 				32782F0E17B4A701008C072D /* principal-sensory-nucleus-side.png in Resources */,
 				32782F0F17B4A701008C072D /* quiz-background-side.png in Resources */,
 				32782F1017B4A701008C072D /* superior-&-inferior-colliculi-side.png in Resources */,
-				322FBF3917B9ECA10056D964 /* basilar-long-4.png in Resources */,
 				32FF124D1A46F57500CEAE55 /* medial-longitudinal-fasciculus-t-3.json in Resources */,
-				322FBF3A17B9ECA10056D964 /* basilar-long-5.png in Resources */,
-				322FBF3B17B9ECA10056D964 /* basilar-long-6.png in Resources */,
-				322FBF4217B9ECB50056D964 /* basilar-paramedian-3.png in Resources */,
 				32FF12341A46F57500CEAE55 /* internal-arcuate-fibers-m-1.json in Resources */,
-				322FBF4317B9ECB50056D964 /* basilar-paramedian-4.png in Resources */,
 				32FF12681A46F57500CEAE55 /* oculomotor-n-8.json in Resources */,
 				32FF122F1A46F57500CEAE55 /* inferior-colliculus-m-7.json in Resources */,
-				322FBF4417B9ECB50056D964 /* basilar-paramedian-5.png in Resources */,
 				32FF12281A46F57500CEAE55 /* gracile-n-1.json in Resources */,
-				322FBF4517B9ECB50056D964 /* basilar-paramedian-6.png in Resources */,
-				322FBF4617B9ECB50056D964 /* basilar-paramedian-7.png in Resources */,
-				322FBF4717B9ECB50056D964 /* basilar-paramedian-8.png in Resources */,
-				322FBF4B17B9ECBD0056D964 /* basilar-short-4.png in Resources */,
-				322FBF4C17B9ECBD0056D964 /* basilar-short-5.png in Resources */,
-				322FBF4D17B9ECBD0056D964 /* basilar-short-6.png in Resources */,
-				32E51B7A17B9EE670080CC16 /* basilar-paramedian-a-overlay-front.png in Resources */,
 				32FF129E1A46F57500CEAE55 /* trigeminal-motor-n-4.json in Resources */,
-				32E51B7D17B9EF220080CC16 /* basilar-long-circumferential-a-overlay-front.png in Resources */,
-				32E51B7E17B9EF220080CC16 /* basilar-short-circumferential-a-overlay-front.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

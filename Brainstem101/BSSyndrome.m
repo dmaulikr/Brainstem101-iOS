@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        self.name = name;
+        self.syndromeName = name;
         
         self.conventionalName = name;
         self.conventionalName = [self.conventionalName lowercaseString];
@@ -40,7 +40,7 @@
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"BSSyndrome %@ (%@), deficits: %lu, (%@, %@)",
-            self.name, self.conventionalName, (unsigned long)self.deficits.count, self.mugshotImageName, self.sectionImageName];
+            self.syndromeName, self.conventionalName, (unsigned long)self.deficits.count, self.mugshotImageName, self.sectionImageName];
 }
 
 @end
