@@ -39,6 +39,7 @@
 		329E1D941A68F6AB00E9AB37 /* Artery Section Overlays.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */; };
 		329E1D961A6901C600E9AB37 /* Syndrome Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D951A6901C600E9AB37 /* Syndrome Images.xcassets */; };
 		329E1D981A6913C400E9AB37 /* Quiz Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D971A6913C400E9AB37 /* Quiz Images.xcassets */; };
+		329E1D9B1A691BF100E9AB37 /* nuclei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 329E1D9A1A691BF100E9AB37 /* nuclei.plist */; };
 		32AFEDF916D9D183006A3101 /* BSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AFEDF816D9D183006A3101 /* BSDrawView.m */; };
 		32B9A84E18A768EA0027805F /* BSQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9A84D18A768EA0027805F /* BSQuizViewController.m */; };
 		32C384C01777A45400333310 /* BSProfileSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C384BF1777A45400333310 /* BSProfileSectionView.m */; };
@@ -246,7 +247,6 @@
 		32FF12AD1A46F57500CEAE55 /* xii-hypoglossal-cn-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 32FF11E91A46F57500CEAE55 /* xii-hypoglossal-cn-2.json */; };
 		32FF12B51A47195600CEAE55 /* cranialnerves.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B01A47195600CEAE55 /* cranialnerves.plist */; };
 		32FF12B61A47195600CEAE55 /* miscellaneous.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B11A47195600CEAE55 /* miscellaneous.plist */; };
-		32FF12B71A47195600CEAE55 /* nuclei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B21A47195600CEAE55 /* nuclei.plist */; };
 		32FF12B81A47195600CEAE55 /* tracts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B31A47195600CEAE55 /* tracts.plist */; };
 		32FF12BA1A47227E00CEAE55 /* arteries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B91A47227E00CEAE55 /* arteries.plist */; };
 		32FF6F7617098CBF00B4FB0F /* BSDeficit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF6F7517098CBE00B4FB0F /* BSDeficit.m */; };
@@ -310,6 +310,7 @@
 		329E1D931A68F6AB00E9AB37 /* Artery Section Overlays.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Artery Section Overlays.xcassets"; path = "Images/Artery Section Overlays.xcassets"; sourceTree = "<group>"; };
 		329E1D951A6901C600E9AB37 /* Syndrome Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Syndrome Images.xcassets"; path = "Images/Syndrome Images.xcassets"; sourceTree = "<group>"; };
 		329E1D971A6913C400E9AB37 /* Quiz Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Quiz Images.xcassets"; path = "Images/Quiz Images.xcassets"; sourceTree = "<group>"; };
+		329E1D9A1A691BF100E9AB37 /* nuclei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nuclei.plist; sourceTree = "<group>"; };
 		32AFEDF716D9D183006A3101 /* BSDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDrawView.h; sourceTree = "<group>"; };
 		32AFEDF816D9D183006A3101 /* BSDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDrawView.m; sourceTree = "<group>"; };
 		32B9A84C18A768EA0027805F /* BSQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizViewController.h; sourceTree = "<group>"; };
@@ -527,7 +528,6 @@
 		32FF11E91A46F57500CEAE55 /* xii-hypoglossal-cn-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "xii-hypoglossal-cn-2.json"; sourceTree = "<group>"; };
 		32FF12B01A47195600CEAE55 /* cranialnerves.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cranialnerves.plist; sourceTree = "<group>"; };
 		32FF12B11A47195600CEAE55 /* miscellaneous.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = miscellaneous.plist; sourceTree = "<group>"; };
-		32FF12B21A47195600CEAE55 /* nuclei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nuclei.plist; sourceTree = "<group>"; };
 		32FF12B31A47195600CEAE55 /* tracts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tracts.plist; sourceTree = "<group>"; };
 		32FF12B91A47227E00CEAE55 /* arteries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = arteries.plist; sourceTree = "<group>"; };
 		32FF6F7417098CBE00B4FB0F /* BSDeficit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeficit.h; sourceTree = "<group>"; };
@@ -915,8 +915,8 @@
 		32FF12AE1A47195600CEAE55 /* structure-data */ = {
 			isa = PBXGroup;
 			children = (
-				32FF12B21A47195600CEAE55 /* nuclei.plist */,
 				32FF12B31A47195600CEAE55 /* tracts.plist */,
+				329E1D9A1A691BF100E9AB37 /* nuclei.plist */,
 				32FF12B91A47227E00CEAE55 /* arteries.plist */,
 				32FF12B11A47195600CEAE55 /* miscellaneous.plist */,
 				32FF12B01A47195600CEAE55 /* cranialnerves.plist */,
@@ -1153,6 +1153,7 @@
 				32FF127E1A46F57500CEAE55 /* rubrospinal-t-4.json in Resources */,
 				32FF12221A46F57500CEAE55 /* fourth-ventricle-m-3.json in Resources */,
 				32FF12141A46F57500CEAE55 /* corticospinal-t-8.json in Resources */,
+				329E1D9B1A691BF100E9AB37 /* nuclei.plist in Resources */,
 				32FF11F21A46F57500CEAE55 /* anterior-spinocerebellar-t-2.json in Resources */,
 				32FF12811A46F57500CEAE55 /* rubrospinal-t-7.json in Resources */,
 				32FF12B61A47195600CEAE55 /* miscellaneous.plist in Resources */,
@@ -1167,7 +1168,6 @@
 				32FF12771A46F57500CEAE55 /* red-n-8.json in Resources */,
 				32FF121A1A46F57500CEAE55 /* dorsal-motor-of-vagus-n-1.json in Resources */,
 				32FF128E1A46F57500CEAE55 /* spinal-trigeminal-t-1.json in Resources */,
-				32FF12B71A47195600CEAE55 /* nuclei.plist in Resources */,
 				32FF126B1A46F57500CEAE55 /* pontine-n-6.json in Resources */,
 				329E1D7F1A68E6EA00E9AB37 /* SXN Images.xcassets in Resources */,
 				32FF11FD1A46F57500CEAE55 /* anterolateral-system-t-8.json in Resources */,
