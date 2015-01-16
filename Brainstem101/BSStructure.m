@@ -133,7 +133,7 @@
 - (void)addArteryNamed:(NSString *) name forIndecies:(NSArray *)indicies
 {
     for (NSNumber *number in indicies) {
-        NSString *tmp = [NSString stringWithFormat:@"%@-%d.png",name, number.integerValue];
+        NSString *tmp = [NSString stringWithFormat:@"%@-%d",name, number.intValue];
         self.arteryImages[number.integerValue] = [tmp copy];
     }
 }
@@ -216,8 +216,8 @@
 
 + (CGPathRef)newScaledPath:(CGPathRef)path toRect:(CGRect)rect
 {
-    CGFloat individualFrameFactor = (rect.size.height)/CAPTURE_DEVICE_HEIGHT;
-    CGFloat scaleFactor = individualFrameFactor;
+    // Scale by the smallest of the height and width to match capture circumstances
+    CGFloat scaleFactor = MIN(rect.size.height, rect.size.width)/CAPTURE_DEVICE_HEIGHT;
     
     CGAffineTransform scaleTransform = CGAffineTransformIdentity;
     scaleTransform = CGAffineTransformScale(scaleTransform, scaleFactor, scaleFactor);
@@ -229,7 +229,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"BSStructure %@ (%@), type: %u, paths: %lu", self.structureName, self.conventionalName, self.structureType, (unsigned long)self.structurePaths.count];
+    return [NSString stringWithFormat:@"BSStructure %@ (%@), type: %u, paths: %d", self.structureName, self.conventionalName, (int)self.structureType, (int)self.structurePaths.count];
 }
 
 @end

@@ -77,8 +77,6 @@
     }
 }
 
-
-
 #pragma mark Presentation Methods
 
 - (void)presentStructures

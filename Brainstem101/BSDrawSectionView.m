@@ -45,6 +45,7 @@
 
 - (void)drawPaths:(NSMutableArray *)inputPaths
 {
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         // replace these with image dimensions somehow
         CGSize contextSize = CGSizeMake(CAPTURE_DEVICE_WIDTH, CAPTURE_DEVICE_HEIGHT);
@@ -64,7 +65,8 @@
             CGContextSetLineJoin(currentContext, kCGLineJoinRound);
             
             CGContextBeginPath(currentContext);
-            CGContextAddPath(currentContext, [[path pathData] CGPath]);
+            
+            CGContextAddPath(currentContext, path.pathData.CGPath);
             CGContextClosePath(currentContext);
             CGContextDrawPath(currentContext, kCGPathFillStroke);
         }

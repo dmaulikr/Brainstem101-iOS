@@ -49,27 +49,21 @@
             [self.backgroundOverlayImageView setAlpha:0.0];
             [self.backgroundImageView addSubview:self.backgroundOverlayImageView];
             
+            // add tag
+            static CGFloat amoutToMoveTag = 200.0;
+            self.tagImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+            [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag"]];
+            self.tagImageView.centerX += amoutToMoveTag;
+            [self.backgroundImageView addSubview:self.tagImageView];
+            
             [UIView animateWithDuration:LOAD_TIME/2 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 [self.backgroundOverlayImageView setAlpha:1];
+                self.tagImageView.centerX -= amoutToMoveTag;
                 
             } completion:^(BOOL finished) {
                 
-                // add tag
-                static CGFloat amoutToMoveTag = 200.0;
-                self.tagImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-                [self.tagImageView setImage:[UIImage imageNamed:@"page0-background-tag"]];
-                self.tagImageView.centerX += amoutToMoveTag;
-                [self.backgroundImageView addSubview:self.tagImageView];
+                [self setupButtons];
                 
-                [UIView animateWithDuration:LOAD_TIME/2 delay:0 usingSpringWithDamping:1 initialSpringVelocity:0.1 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-                    
-                    self.tagImageView.centerX -= amoutToMoveTag;
-                    
-                } completion:^(BOOL finished) {
-                    
-                    [self setupButtons];
-                    
-                }];
             }];
         }];
     }];

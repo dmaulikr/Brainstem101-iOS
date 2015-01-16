@@ -88,9 +88,9 @@
 
 - (UIImage *)drawStructure:(BSStructure *)structure
 {
-    CGSize retinaSize = self.backingView.bounds.size;
+    CGSize size = self.backingView.bounds.size;
     
-    UIGraphicsBeginImageContextWithOptions(retinaSize, NO, 0.0);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
     // TODO : Double check this is right
@@ -193,31 +193,31 @@
     
     switch (num) {
         case 0:
-            scaleFactor = 1.5;
+            scaleFactor = .15;
             break;
         case 1:
-            scaleFactor = 1.5;
+            scaleFactor = .15;
             break;
         case 2:
-            scaleFactor = 1.6;
+            scaleFactor = .16;
             break;
         case 3:
-            scaleFactor= 1.7;
+            scaleFactor= .17;
             break;
         case 4:
-            scaleFactor = 2;
+            scaleFactor = .2;
             break;
         case 5:
-            scaleFactor = 2.1;
+            scaleFactor = .21;
             break;
         case 6:
-            scaleFactor = 2.1;
+            scaleFactor = .21;
             break;
         case 7:
-            scaleFactor = 2.1;
+            scaleFactor = .21;
             break;
         case 8:
-            scaleFactor = 2.1;
+            scaleFactor = .21;
             break;
             
         default:
@@ -225,10 +225,8 @@
             break;
     }
     
-    CGFloat newWidth = CAPTURE_DEVICE_WIDTH*(scaleFactor/10);
-    CGFloat newHeight = CAPTURE_DEVICE_HEIGHT*(scaleFactor/10);
-    CGRect rFrame = CGRectMake(0, 0, newWidth, newHeight);
-    return rFrame;
+    // Hardcoded sizes
+    return CGRectMake(0, 0, (1314 * scaleFactor), (868 * scaleFactor));
 }
 
 + (CGPoint)getCenterForSection:(NSInteger)num

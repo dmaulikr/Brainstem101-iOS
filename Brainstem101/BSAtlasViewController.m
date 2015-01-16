@@ -94,6 +94,25 @@
         [view setAlpha:0];
         [self.view addSubview:view];
     }
+        
+//    for (BSStructure *structure in [[BSModel sharedModel] allStructures]) {
+//        for (BSStructurePath *path in structure.structurePaths) {
+//            UIBezierPath *originalPath = [path pathData];
+//            UIBezierPath *newPath = [UIBezierPath bezierPathWithCGPath:[BSStructure newScaledPath:originalPath.CGPath toRect:self.view.bounds]];
+//
+//            NSFileManager *fileManager = [NSFileManager defaultManager];
+//            NSString *dataPath = [NSString stringWithFormat:@"/Users/%@/Desktop/path-json", @"Cam"];
+//            NSString *filename = [NSString stringWithFormat:@"%@-%d.json", structure.conventionalName, (int)path.sectionNumber];
+//            NSString *filePath = [NSString stringWithFormat:@"%@/%@", dataPath, filename];
+//
+//            NSData *jsonData = [UIBezierPathSerialization dataWithBezierPath:newPath options:0 error:nil];
+//            BOOL success = [fileManager createFileAtPath:filePath contents:jsonData attributes:nil];
+//            if (!success) {
+//                NSLog(@"Failed to save %@", structure);
+//            }
+//            
+//        }
+//    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
