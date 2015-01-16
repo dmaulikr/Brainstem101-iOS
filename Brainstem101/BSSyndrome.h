@@ -10,7 +10,7 @@
 
 @interface BSSyndrome : NSObject // <NSCoding>
 
-@property (strong, nonatomic) NSString *syndromeName;
+@property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *syndromeDescription;
 @property (strong, nonatomic) NSString *sectionImageName;
 @property (strong, nonatomic) NSString *mugshotImageName;

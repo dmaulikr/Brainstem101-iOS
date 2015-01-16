@@ -10,13 +10,13 @@
 
 @implementation BSSyndrome
 
-- (instancetype)initWithName:(NSString *) syndromeName
+- (instancetype)initWithName:(NSString *)name
 {
     self = [super init];
     if (self) {
-        self.syndromeName = syndromeName;
+        self.name = name;
         
-        self.conventionalName = syndromeName;
+        self.conventionalName = name;
         self.conventionalName = [self.conventionalName lowercaseString];
         self.conventionalName = [self.conventionalName stringByReplacingOccurrencesOfString:@"\'s" withString:@""];
         self.conventionalName = [self.conventionalName stringByReplacingOccurrencesOfString:@" " withString:@"-"];
@@ -40,7 +40,7 @@
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"BSSyndrome %@ (%@), deficits: %lu, (%@, %@)",
-            self.syndromeName, self.conventionalName, (unsigned long)self.deficits.count, self.mugshotImageName, self.sectionImageName];
+            self.name, self.conventionalName, (unsigned long)self.deficits.count, self.mugshotImageName, self.sectionImageName];
 }
 
 @end
