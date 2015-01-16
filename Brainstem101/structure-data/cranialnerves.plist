@@ -44,7 +44,7 @@
 		<key>conventionalName</key>
 		<string>iv-trochlear-cn</string>
 		<key>structureDescription</key>
-		<string>Controls Superior Oblique (an intrinsic eye muscle capable of intorsion and depression of the orbit). If damaged, the affected eye will be extorted and unable to look down. Patient will sidebend head to contralateral side to keep the 'good eye' in an intorted state, and therefore in alignment with the fixed extorted eye on opposite side. Patient may report difficulty with tasks that require looking down such as walking down stairs or navigating a cluttered room.</string>
+		<string>Controls Superior Oblique (an intrinsic eye muscle capable of intorsion and depression of the orbit). If damaged, the affected eye will be extorted and unable to look down. Patient will sidebend head to contralateral side to keep the &apos;good eye&apos; in an intorted state, and therefore in alignment with the fixed extorted eye on opposite side. Patient may report difficulty with tasks that require looking down such as walking down stairs or navigating a cluttered room.</string>
 		<key>structureName</key>
 		<string>CN IV (Trochlear)</string>
 		<key>structureType</key>
@@ -130,7 +130,7 @@
 		<key>conventionalName</key>
 		<string>abducens-n</string>
 		<key>structureDescription</key>
-		<string>Controls the Lateral Rectus muscle, an intrinsic muscle of the eye, that pulls the eye laterally. An isolated lesion of this nerve  is called 'Lateral Rectus Palsy'. The absence of tone in the lateral aspect will leave the eye in mediosuperior position.</string>
+		<string>Controls the Lateral Rectus muscle, an intrinsic muscle of the eye, that pulls the eye laterally. An isolated lesion of this nerve  is called &apos;Lateral Rectus Palsy&apos;. The absence of tone in the lateral aspect will leave the eye in mediosuperior position.</string>
 		<key>structureName</key>
 		<string>- Abducens Nucleus</string>
 		<key>structureType</key>
@@ -198,7 +198,7 @@
 		<key>$class</key>
 		<string>BSStructure</string>
 		<key>conventionalName</key>
-		<string>inferior-vestibular-n</string>
+		<string>vestibular-inferior-n</string>
 		<key>structureDescription</key>
 		<string>Responsible for integrating vestibular signals. Receives input from the semicircular canals, utricle, saccule, and vermis of cerebellum. Efferent fibers project to the reticular nn, as the vestibuloreticular tract, or travel down through the spinal cord as the vestibulospinal tract.</string>
 		<key>structureName</key>
@@ -210,7 +210,19 @@
 		<key>$class</key>
 		<string>BSStructure</string>
 		<key>conventionalName</key>
-		<string>medial-vestibular-n</string>
+		<string>vestibular-superior-n</string>
+		<key>structureDescription</key>
+		<string>The superior vestibular nucleus is the dorso-lateral part of the vestibular nucleus and receives collaterals and terminals from the ascending branches of the vestibular nerve. Sends uncrossed fibers to cranial nerve 3 and 4 via MLF.</string>
+		<key>structureName</key>
+		<string>- Superior Vestibular Nucleus</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
+		<string>vestibular-medial-n</string>
 		<key>structureDescription</key>
 		<string>Receives input from the semicircular canals and projects to the cervical spinal cord to innervate neck muscles to help stabilize the head in space. </string>
 		<key>structureName</key>
@@ -222,7 +234,7 @@
 		<key>$class</key>
 		<string>BSStructure</string>
 		<key>conventionalName</key>
-		<string>lateral-vestibular-n</string>
+		<string>vestibular-lateral-n</string>
 		<key>structureName</key>
 		<string>- Lateral Vestibular Nucleus</string>
 		<key>structureType</key>
@@ -246,7 +258,7 @@
 		<key>conventionalName</key>
 		<string>posterior-cochlear-n</string>
 		<key>structureDescription</key>
-		<string>Cell bodies that receive signals from the cochlea, through the 'Auditory Nerve'. The axons project as the Intermediate Acoustic Striae which joins the ascending fibers in the contralateral lateral lemniscus (traveling to Inferior Colliculus)</string>
+		<string>Cell bodies that receive signals from the cochlea, through the &apos;Auditory Nerve&apos;. The axons project as the Intermediate Acoustic Striae which joins the ascending fibers in the contralateral lateral lemniscus (traveling to Inferior Colliculus)</string>
 		<key>structureName</key>
 		<string>- Posterior Cochlear Nucleus</string>
 		<key>structureType</key>

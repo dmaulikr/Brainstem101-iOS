@@ -17,7 +17,8 @@
 @property (nonatomic, strong) UIImageView *arteryView;
 @property (nonatomic, strong) BSSection   *section;
 @property (nonatomic, assign) BOOL        isRotated;
-
+@property (nonatomic, strong) NSMutableDictionary *structureLayersCache;
+@property (nonatomic, strong) NSOperationQueue *operationQueue;
 
 + (BSAtlasSectionView *) atlasSectionViewForSection:(NSInteger)number;
 

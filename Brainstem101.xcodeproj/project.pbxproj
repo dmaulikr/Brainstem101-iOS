@@ -87,8 +87,8 @@
 		329E24B11A6939C400E9AB37 /* cuneate-fasciculus-t-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23ED1A6939C400E9AB37 /* cuneate-fasciculus-t-1.json */; };
 		329E24B21A6939C400E9AB37 /* cuneate-n-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23EE1A6939C400E9AB37 /* cuneate-n-0.json */; };
 		329E24B31A6939C400E9AB37 /* cuneate-n-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23EF1A6939C400E9AB37 /* cuneate-n-1.json */; };
-		329E24B41A6939C400E9AB37 /* dorsal-motor-of-vagus-n-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23F01A6939C400E9AB37 /* dorsal-motor-of-vagus-n-0.json */; };
-		329E24B51A6939C400E9AB37 /* dorsal-motor-of-vagus-n-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23F11A6939C400E9AB37 /* dorsal-motor-of-vagus-n-1.json */; };
+		329E24B41A6939C400E9AB37 /* dorsal-motor-n-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23F01A6939C400E9AB37 /* dorsal-motor-n-0.json */; };
+		329E24B51A6939C400E9AB37 /* dorsal-motor-n-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23F11A6939C400E9AB37 /* dorsal-motor-n-1.json */; };
 		329E24B71A6939C400E9AB37 /* dorsal-trigeminothalamic-t-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23F31A6939C400E9AB37 /* dorsal-trigeminothalamic-t-7.json */; };
 		329E24B81A6939C400E9AB37 /* dorsal-trigeminothalamic-t-8.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23F41A6939C400E9AB37 /* dorsal-trigeminothalamic-t-8.json */; };
 		329E24B91A6939C400E9AB37 /* edinger-westphal-n-8.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E23F51A6939C400E9AB37 /* edinger-westphal-n-8.json */; };
@@ -112,7 +112,7 @@
 		329E24CB1A6939C400E9AB37 /* inferior-olivary-n-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24071A6939C400E9AB37 /* inferior-olivary-n-1.json */; };
 		329E24CC1A6939C400E9AB37 /* inferior-olivary-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24081A6939C400E9AB37 /* inferior-olivary-n-2.json */; };
 		329E24CD1A6939C400E9AB37 /* inferior-olivary-n-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24091A6939C400E9AB37 /* inferior-olivary-n-3.json */; };
-		329E24CE1A6939C400E9AB37 /* inferior-vestibular-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E240A1A6939C400E9AB37 /* inferior-vestibular-n-2.json */; };
+		329E24CE1A6939C400E9AB37 /* vestibular-inferior-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E240A1A6939C400E9AB37 /* vestibular-inferior-n-2.json */; };
 		329E24CF1A6939C400E9AB37 /* internal-arcuate-fibers-m-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E240B1A6939C400E9AB37 /* internal-arcuate-fibers-m-1.json */; };
 		329E24D01A6939C400E9AB37 /* interpeduncular-n-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E240C1A6939C400E9AB37 /* interpeduncular-n-7.json */; };
 		329E24D11A6939C400E9AB37 /* interpeduncular-n-8.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E240D1A6939C400E9AB37 /* interpeduncular-n-8.json */; };
@@ -122,8 +122,8 @@
 		329E24D51A6939C400E9AB37 /* lateral-lemniscus-t-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24111A6939C400E9AB37 /* lateral-lemniscus-t-7.json */; };
 		329E24D61A6939C400E9AB37 /* lateral-reticular-n-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24121A6939C400E9AB37 /* lateral-reticular-n-1.json */; };
 		329E24D71A6939C400E9AB37 /* lateral-reticular-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24131A6939C400E9AB37 /* lateral-reticular-n-2.json */; };
-		329E24D81A6939C400E9AB37 /* lateral-vestibular-n-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24141A6939C400E9AB37 /* lateral-vestibular-n-3.json */; };
-		329E24D91A6939C400E9AB37 /* lateral-vestibular-n-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24151A6939C400E9AB37 /* lateral-vestibular-n-4.json */; };
+		329E24D81A6939C400E9AB37 /* vestibular-lateral-n-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24141A6939C400E9AB37 /* vestibular-lateral-n-3.json */; };
+		329E24D91A6939C400E9AB37 /* vestibular-lateral-n-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24151A6939C400E9AB37 /* vestibular-lateral-n-4.json */; };
 		329E24DA1A6939C400E9AB37 /* locus-ceruleus-n-5.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24161A6939C400E9AB37 /* locus-ceruleus-n-5.json */; };
 		329E24DC1A6939C400E9AB37 /* medial-geniculate-n-8.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24181A6939C400E9AB37 /* medial-geniculate-n-8.json */; };
 		329E24DD1A6939C400E9AB37 /* medial-lemniscus-t-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24191A6939C400E9AB37 /* medial-lemniscus-t-1.json */; };
@@ -144,9 +144,9 @@
 		329E24EC1A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24281A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-7.json */; };
 		329E24ED1A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-8.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24291A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-8.json */; };
 		329E24EE1A6939C400E9AB37 /* medial-motor-n-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242A1A6939C400E9AB37 /* medial-motor-n-0.json */; };
-		329E24EF1A6939C400E9AB37 /* medial-vestibular-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242B1A6939C400E9AB37 /* medial-vestibular-n-2.json */; };
-		329E24F01A6939C400E9AB37 /* medial-vestibular-n-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242C1A6939C400E9AB37 /* medial-vestibular-n-3.json */; };
-		329E24F11A6939C400E9AB37 /* medial-vestibular-n-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242D1A6939C400E9AB37 /* medial-vestibular-n-4.json */; };
+		329E24EF1A6939C400E9AB37 /* vestibular-medial-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242B1A6939C400E9AB37 /* vestibular-medial-n-2.json */; };
+		329E24F01A6939C400E9AB37 /* vestibular-medial-n-3.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242C1A6939C400E9AB37 /* vestibular-medial-n-3.json */; };
+		329E24F11A6939C400E9AB37 /* vestibular-medial-n-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242D1A6939C400E9AB37 /* vestibular-medial-n-4.json */; };
 		329E24F21A6939C400E9AB37 /* mesencephalic-n-5.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242E1A6939C400E9AB37 /* mesencephalic-n-5.json */; };
 		329E24F31A6939C400E9AB37 /* mesencephalic-n-6.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E242F1A6939C400E9AB37 /* mesencephalic-n-6.json */; };
 		329E24F41A6939C400E9AB37 /* mesencephalic-n-7.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24301A6939C400E9AB37 /* mesencephalic-n-7.json */; };
@@ -232,8 +232,7 @@
 		329E25481A6939C400E9AB37 /* xii-hypoglossal-cn-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E24841A6939C400E9AB37 /* xii-hypoglossal-cn-2.json */; };
 		329E254C1A69400700E9AB37 /* tracts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 329E254B1A69400700E9AB37 /* tracts.plist */; };
 		329E25581A694CA400E9AB37 /* pyramidal-decussation-m-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E25571A694CA400E9AB37 /* pyramidal-decussation-m-0.json */; };
-		329E255A1A694CFB00E9AB37 /* solitary-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E25591A694CFB00E9AB37 /* solitary-n-2.json */; };
-		329E255C1A694D4900E9AB37 /* dorsal-motor-of-vagus-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E255B1A694D4900E9AB37 /* dorsal-motor-of-vagus-n-2.json */; };
+		329E255C1A694D4900E9AB37 /* dorsal-motor-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E255B1A694D4900E9AB37 /* dorsal-motor-n-2.json */; };
 		329E255E1A694DEA00E9AB37 /* pontine-n-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E255D1A694DEA00E9AB37 /* pontine-n-4.json */; };
 		329E25601A694E0C00E9AB37 /* pontine-n-5.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E255F1A694E0C00E9AB37 /* pontine-n-5.json */; };
 		329E25621A694E9400E9AB37 /* locus-ceruleus-n-6.json in Resources */ = {isa = PBXBuildFile; fileRef = 329E25611A694E9400E9AB37 /* locus-ceruleus-n-6.json */; };
@@ -243,6 +242,8 @@
 		32B9A84E18A768EA0027805F /* BSQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9A84D18A768EA0027805F /* BSQuizViewController.m */; };
 		32C384C01777A45400333310 /* BSProfileSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C384BF1777A45400333310 /* BSProfileSectionView.m */; };
 		32CC33B9176C609600000F07 /* BSQuizView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC33B8176C609600000F07 /* BSQuizView.m */; };
+		32DBC91F1A697A6F00ED52C2 /* vestibular-superior-n-4.json in Resources */ = {isa = PBXBuildFile; fileRef = 32DBC91E1A697A6F00ED52C2 /* vestibular-superior-n-4.json */; };
+		32DBC9211A697BE100ED52C2 /* solitary-n-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 32DBC9201A697BE100ED52C2 /* solitary-n-2.json */; };
 		32E4D2911651AACB0051AE2D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E4D2901651AACB0051AE2D /* BSModel.m */; };
 		32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E77B4B16326B3A0077D0B4 /* BSStemView.m */; };
 		32F5A88F176EF24000646E64 /* BSAtlasSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5A88E176EF24000646E64 /* BSAtlasSectionView.m */; };
@@ -360,8 +361,8 @@
 		329E23ED1A6939C400E9AB37 /* cuneate-fasciculus-t-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cuneate-fasciculus-t-1.json"; sourceTree = "<group>"; };
 		329E23EE1A6939C400E9AB37 /* cuneate-n-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cuneate-n-0.json"; sourceTree = "<group>"; };
 		329E23EF1A6939C400E9AB37 /* cuneate-n-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cuneate-n-1.json"; sourceTree = "<group>"; };
-		329E23F01A6939C400E9AB37 /* dorsal-motor-of-vagus-n-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-motor-of-vagus-n-0.json"; sourceTree = "<group>"; };
-		329E23F11A6939C400E9AB37 /* dorsal-motor-of-vagus-n-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-motor-of-vagus-n-1.json"; sourceTree = "<group>"; };
+		329E23F01A6939C400E9AB37 /* dorsal-motor-n-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-motor-n-0.json"; sourceTree = "<group>"; };
+		329E23F11A6939C400E9AB37 /* dorsal-motor-n-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-motor-n-1.json"; sourceTree = "<group>"; };
 		329E23F31A6939C400E9AB37 /* dorsal-trigeminothalamic-t-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-trigeminothalamic-t-7.json"; sourceTree = "<group>"; };
 		329E23F41A6939C400E9AB37 /* dorsal-trigeminothalamic-t-8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-trigeminothalamic-t-8.json"; sourceTree = "<group>"; };
 		329E23F51A6939C400E9AB37 /* edinger-westphal-n-8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "edinger-westphal-n-8.json"; sourceTree = "<group>"; };
@@ -385,7 +386,7 @@
 		329E24071A6939C400E9AB37 /* inferior-olivary-n-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inferior-olivary-n-1.json"; sourceTree = "<group>"; };
 		329E24081A6939C400E9AB37 /* inferior-olivary-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inferior-olivary-n-2.json"; sourceTree = "<group>"; };
 		329E24091A6939C400E9AB37 /* inferior-olivary-n-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inferior-olivary-n-3.json"; sourceTree = "<group>"; };
-		329E240A1A6939C400E9AB37 /* inferior-vestibular-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "inferior-vestibular-n-2.json"; sourceTree = "<group>"; };
+		329E240A1A6939C400E9AB37 /* vestibular-inferior-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vestibular-inferior-n-2.json"; sourceTree = "<group>"; };
 		329E240B1A6939C400E9AB37 /* internal-arcuate-fibers-m-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "internal-arcuate-fibers-m-1.json"; sourceTree = "<group>"; };
 		329E240C1A6939C400E9AB37 /* interpeduncular-n-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "interpeduncular-n-7.json"; sourceTree = "<group>"; };
 		329E240D1A6939C400E9AB37 /* interpeduncular-n-8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "interpeduncular-n-8.json"; sourceTree = "<group>"; };
@@ -395,8 +396,8 @@
 		329E24111A6939C400E9AB37 /* lateral-lemniscus-t-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lateral-lemniscus-t-7.json"; sourceTree = "<group>"; };
 		329E24121A6939C400E9AB37 /* lateral-reticular-n-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lateral-reticular-n-1.json"; sourceTree = "<group>"; };
 		329E24131A6939C400E9AB37 /* lateral-reticular-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lateral-reticular-n-2.json"; sourceTree = "<group>"; };
-		329E24141A6939C400E9AB37 /* lateral-vestibular-n-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lateral-vestibular-n-3.json"; sourceTree = "<group>"; };
-		329E24151A6939C400E9AB37 /* lateral-vestibular-n-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lateral-vestibular-n-4.json"; sourceTree = "<group>"; };
+		329E24141A6939C400E9AB37 /* vestibular-lateral-n-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vestibular-lateral-n-3.json"; sourceTree = "<group>"; };
+		329E24151A6939C400E9AB37 /* vestibular-lateral-n-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vestibular-lateral-n-4.json"; sourceTree = "<group>"; };
 		329E24161A6939C400E9AB37 /* locus-ceruleus-n-5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "locus-ceruleus-n-5.json"; sourceTree = "<group>"; };
 		329E24181A6939C400E9AB37 /* medial-geniculate-n-8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-geniculate-n-8.json"; sourceTree = "<group>"; };
 		329E24191A6939C400E9AB37 /* medial-lemniscus-t-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-lemniscus-t-1.json"; sourceTree = "<group>"; };
@@ -417,9 +418,9 @@
 		329E24281A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-longitudinal-fasciculus-t-7.json"; sourceTree = "<group>"; };
 		329E24291A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-longitudinal-fasciculus-t-8.json"; sourceTree = "<group>"; };
 		329E242A1A6939C400E9AB37 /* medial-motor-n-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-motor-n-0.json"; sourceTree = "<group>"; };
-		329E242B1A6939C400E9AB37 /* medial-vestibular-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-vestibular-n-2.json"; sourceTree = "<group>"; };
-		329E242C1A6939C400E9AB37 /* medial-vestibular-n-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-vestibular-n-3.json"; sourceTree = "<group>"; };
-		329E242D1A6939C400E9AB37 /* medial-vestibular-n-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "medial-vestibular-n-4.json"; sourceTree = "<group>"; };
+		329E242B1A6939C400E9AB37 /* vestibular-medial-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vestibular-medial-n-2.json"; sourceTree = "<group>"; };
+		329E242C1A6939C400E9AB37 /* vestibular-medial-n-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vestibular-medial-n-3.json"; sourceTree = "<group>"; };
+		329E242D1A6939C400E9AB37 /* vestibular-medial-n-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vestibular-medial-n-4.json"; sourceTree = "<group>"; };
 		329E242E1A6939C400E9AB37 /* mesencephalic-n-5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mesencephalic-n-5.json"; sourceTree = "<group>"; };
 		329E242F1A6939C400E9AB37 /* mesencephalic-n-6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mesencephalic-n-6.json"; sourceTree = "<group>"; };
 		329E24301A6939C400E9AB37 /* mesencephalic-n-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mesencephalic-n-7.json"; sourceTree = "<group>"; };
@@ -505,8 +506,7 @@
 		329E24841A6939C400E9AB37 /* xii-hypoglossal-cn-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "xii-hypoglossal-cn-2.json"; sourceTree = "<group>"; };
 		329E254B1A69400700E9AB37 /* tracts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tracts.plist; sourceTree = "<group>"; };
 		329E25571A694CA400E9AB37 /* pyramidal-decussation-m-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pyramidal-decussation-m-0.json"; sourceTree = "<group>"; };
-		329E25591A694CFB00E9AB37 /* solitary-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "solitary-n-2.json"; sourceTree = "<group>"; };
-		329E255B1A694D4900E9AB37 /* dorsal-motor-of-vagus-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-motor-of-vagus-n-2.json"; sourceTree = "<group>"; };
+		329E255B1A694D4900E9AB37 /* dorsal-motor-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dorsal-motor-n-2.json"; sourceTree = "<group>"; };
 		329E255D1A694DEA00E9AB37 /* pontine-n-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pontine-n-4.json"; sourceTree = "<group>"; };
 		329E255F1A694E0C00E9AB37 /* pontine-n-5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pontine-n-5.json"; sourceTree = "<group>"; };
 		329E25611A694E9400E9AB37 /* locus-ceruleus-n-6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "locus-ceruleus-n-6.json"; sourceTree = "<group>"; };
@@ -520,6 +520,8 @@
 		32C384BF1777A45400333310 /* BSProfileSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProfileSectionView.m; sourceTree = "<group>"; };
 		32CC33B7176C609600000F07 /* BSQuizView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuizView.h; sourceTree = "<group>"; };
 		32CC33B8176C609600000F07 /* BSQuizView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuizView.m; sourceTree = "<group>"; };
+		32DBC91E1A697A6F00ED52C2 /* vestibular-superior-n-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vestibular-superior-n-4.json"; sourceTree = "<group>"; };
+		32DBC9201A697BE100ED52C2 /* solitary-n-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "solitary-n-2.json"; sourceTree = "<group>"; };
 		32DD437F16524FD3002AAE0F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		32E4D28F1651AACB0051AE2D /* BSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSModel.h; sourceTree = "<group>"; };
 		32E4D2901651AACB0051AE2D /* BSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSModel.m; sourceTree = "<group>"; };
@@ -702,9 +704,9 @@
 				329E23ED1A6939C400E9AB37 /* cuneate-fasciculus-t-1.json */,
 				329E23EE1A6939C400E9AB37 /* cuneate-n-0.json */,
 				329E23EF1A6939C400E9AB37 /* cuneate-n-1.json */,
-				329E23F01A6939C400E9AB37 /* dorsal-motor-of-vagus-n-0.json */,
-				329E23F11A6939C400E9AB37 /* dorsal-motor-of-vagus-n-1.json */,
-				329E255B1A694D4900E9AB37 /* dorsal-motor-of-vagus-n-2.json */,
+				329E23F01A6939C400E9AB37 /* dorsal-motor-n-0.json */,
+				329E23F11A6939C400E9AB37 /* dorsal-motor-n-1.json */,
+				329E255B1A694D4900E9AB37 /* dorsal-motor-n-2.json */,
 				329E23F31A6939C400E9AB37 /* dorsal-trigeminothalamic-t-7.json */,
 				329E23F41A6939C400E9AB37 /* dorsal-trigeminothalamic-t-8.json */,
 				329E23F51A6939C400E9AB37 /* edinger-westphal-n-8.json */,
@@ -728,7 +730,6 @@
 				329E24071A6939C400E9AB37 /* inferior-olivary-n-1.json */,
 				329E24081A6939C400E9AB37 /* inferior-olivary-n-2.json */,
 				329E24091A6939C400E9AB37 /* inferior-olivary-n-3.json */,
-				329E240A1A6939C400E9AB37 /* inferior-vestibular-n-2.json */,
 				329E240B1A6939C400E9AB37 /* internal-arcuate-fibers-m-1.json */,
 				329E240C1A6939C400E9AB37 /* interpeduncular-n-7.json */,
 				329E240D1A6939C400E9AB37 /* interpeduncular-n-8.json */,
@@ -738,8 +739,13 @@
 				329E24111A6939C400E9AB37 /* lateral-lemniscus-t-7.json */,
 				329E24121A6939C400E9AB37 /* lateral-reticular-n-1.json */,
 				329E24131A6939C400E9AB37 /* lateral-reticular-n-2.json */,
-				329E24141A6939C400E9AB37 /* lateral-vestibular-n-3.json */,
-				329E24151A6939C400E9AB37 /* lateral-vestibular-n-4.json */,
+				329E24141A6939C400E9AB37 /* vestibular-lateral-n-3.json */,
+				329E24151A6939C400E9AB37 /* vestibular-lateral-n-4.json */,
+				329E240A1A6939C400E9AB37 /* vestibular-inferior-n-2.json */,
+				329E242B1A6939C400E9AB37 /* vestibular-medial-n-2.json */,
+				329E242C1A6939C400E9AB37 /* vestibular-medial-n-3.json */,
+				329E242D1A6939C400E9AB37 /* vestibular-medial-n-4.json */,
+				32DBC91E1A697A6F00ED52C2 /* vestibular-superior-n-4.json */,
 				329E24161A6939C400E9AB37 /* locus-ceruleus-n-5.json */,
 				329E25611A694E9400E9AB37 /* locus-ceruleus-n-6.json */,
 				329E24181A6939C400E9AB37 /* medial-geniculate-n-8.json */,
@@ -761,9 +767,6 @@
 				329E24281A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-7.json */,
 				329E24291A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-8.json */,
 				329E242A1A6939C400E9AB37 /* medial-motor-n-0.json */,
-				329E242B1A6939C400E9AB37 /* medial-vestibular-n-2.json */,
-				329E242C1A6939C400E9AB37 /* medial-vestibular-n-3.json */,
-				329E242D1A6939C400E9AB37 /* medial-vestibular-n-4.json */,
 				329E242E1A6939C400E9AB37 /* mesencephalic-n-5.json */,
 				329E242F1A6939C400E9AB37 /* mesencephalic-n-6.json */,
 				329E24301A6939C400E9AB37 /* mesencephalic-n-7.json */,
@@ -810,7 +813,7 @@
 				329E24591A6939C400E9AB37 /* rubrospinal-t-8.json */,
 				329E245A1A6939C400E9AB37 /* salivatory-n-4.json */,
 				329E245B1A6939C400E9AB37 /* solitary-n-1.json */,
-				329E25591A694CFB00E9AB37 /* solitary-n-2.json */,
+				32DBC9201A697BE100ED52C2 /* solitary-n-2.json */,
 				329E245D1A6939C400E9AB37 /* solitary-n-3.json */,
 				329E245E1A6939C400E9AB37 /* solitary-n-4.json */,
 				329E245F1A6939C400E9AB37 /* spinal-trigeminal-n-0.json */,
@@ -1070,7 +1073,7 @@
 				329E25601A694E0C00E9AB37 /* pontine-n-5.json in Resources */,
 				329E24E61A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-1.json in Resources */,
 				329E24FD1A6939C400E9AB37 /* nucleus-raphe-dorsalis-n-7.json in Resources */,
-				329E24F01A6939C400E9AB37 /* medial-vestibular-n-3.json in Resources */,
+				329E24F01A6939C400E9AB37 /* vestibular-medial-n-3.json in Resources */,
 				329E25251A6939C400E9AB37 /* spinal-trigeminal-n-2.json in Resources */,
 				329E251E1A6939C400E9AB37 /* salivatory-n-4.json in Resources */,
 				329E24A31A6939C400E9AB37 /* cerebral-aqueduct-m-6.json in Resources */,
@@ -1096,16 +1099,15 @@
 				329E25121A6939C400E9AB37 /* red-n-8.json in Resources */,
 				329E25081A6939C400E9AB37 /* posterior-longitudinal-fasciculus-t-1.json in Resources */,
 				329E25641A694F1900E9AB37 /* substantia-nigra-n-7.json in Resources */,
-				329E255A1A694CFB00E9AB37 /* solitary-n-2.json in Resources */,
 				329E1D811A68E80F00E9AB37 /* General.xcassets in Resources */,
 				329E24D21A6939C400E9AB37 /* lateral-lemniscus-t-4.json in Resources */,
 				329E253E1A6939C400E9AB37 /* ventral-trigeminothalamic-t-3.json in Resources */,
-				329E24EF1A6939C400E9AB37 /* medial-vestibular-n-2.json in Resources */,
+				329E24EF1A6939C400E9AB37 /* vestibular-medial-n-2.json in Resources */,
 				329E24961A6939C400E9AB37 /* anterolateral-system-t-6.json in Resources */,
 				329E24E21A6939C400E9AB37 /* medial-lemniscus-t-6.json in Resources */,
 				329E24951A6939C400E9AB37 /* anterolateral-system-t-5.json in Resources */,
 				329E24C81A6939C400E9AB37 /* inferior-cerebellar-peduncle-m-2.json in Resources */,
-				329E24D91A6939C400E9AB37 /* lateral-vestibular-n-4.json in Resources */,
+				329E24D91A6939C400E9AB37 /* vestibular-lateral-n-4.json in Resources */,
 				329E24BB1A6939C400E9AB37 /* facial-motor-n-4.json in Resources */,
 				329E24CD1A6939C400E9AB37 /* inferior-olivary-n-3.json in Resources */,
 				329E24971A6939C400E9AB37 /* anterolateral-system-t-7.json in Resources */,
@@ -1116,7 +1118,7 @@
 				329E1D9B1A691BF100E9AB37 /* nuclei.plist in Resources */,
 				329E24FE1A6939C400E9AB37 /* nucleus-raphe-magnus-n-3.json in Resources */,
 				329E24D71A6939C400E9AB37 /* lateral-reticular-n-2.json in Resources */,
-				329E24D81A6939C400E9AB37 /* lateral-vestibular-n-3.json in Resources */,
+				329E24D81A6939C400E9AB37 /* vestibular-lateral-n-3.json in Resources */,
 				32FF12B61A47195600CEAE55 /* miscellaneous.plist in Resources */,
 				329E250F1A6939C400E9AB37 /* principal-n-4.json in Resources */,
 				329E25441A6939C400E9AB37 /* vestibulospinal-and-reticulospinal-t-0.json in Resources */,
@@ -1126,7 +1128,7 @@
 				329E24B81A6939C400E9AB37 /* dorsal-trigeminothalamic-t-8.json in Resources */,
 				329E25141A6939C400E9AB37 /* reticulotegmental-n-5.json in Resources */,
 				329E24901A6939C400E9AB37 /* anterolateral-system-t-0.json in Resources */,
-				329E24F11A6939C400E9AB37 /* medial-vestibular-n-4.json in Resources */,
+				329E24F11A6939C400E9AB37 /* vestibular-medial-n-4.json in Resources */,
 				329E25221A6939C400E9AB37 /* solitary-n-4.json in Resources */,
 				329E24E31A6939C400E9AB37 /* medial-lemniscus-t-7.json in Resources */,
 				329E253D1A6939C400E9AB37 /* ventral-trigeminothalamic-t-2.json in Resources */,
@@ -1152,7 +1154,8 @@
 				329E25401A6939C400E9AB37 /* ventral-trigeminothalamic-t-5.json in Resources */,
 				329E24AD1A6939C400E9AB37 /* corticospinal-t-6.json in Resources */,
 				329E249A1A6939C400E9AB37 /* central-canal-m-0.json in Resources */,
-				329E255C1A694D4900E9AB37 /* dorsal-motor-of-vagus-n-2.json in Resources */,
+				32DBC91F1A697A6F00ED52C2 /* vestibular-superior-n-4.json in Resources */,
+				329E255C1A694D4900E9AB37 /* dorsal-motor-n-2.json in Resources */,
 				329E24E71A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-2.json in Resources */,
 				329E25341A6939C400E9AB37 /* tectospinal-t-4.json in Resources */,
 				329E24861A6939C400E9AB37 /* accessory-cuneate-n-1.json in Resources */,
@@ -1198,7 +1201,7 @@
 				329E24DD1A6939C400E9AB37 /* medial-lemniscus-t-1.json in Resources */,
 				329E25031A6939C400E9AB37 /* oculomotor-n-8.json in Resources */,
 				329E24C01A6939C400E9AB37 /* gracile-fasciculus-t-0.json in Resources */,
-				329E24CE1A6939C400E9AB37 /* inferior-vestibular-n-2.json in Resources */,
+				329E24CE1A6939C400E9AB37 /* vestibular-inferior-n-2.json in Resources */,
 				329E25151A6939C400E9AB37 /* rubrospinal-t-0.json in Resources */,
 				329E25291A6939C400E9AB37 /* spinal-trigeminal-t-1.json in Resources */,
 				329E1D961A6901C600E9AB37 /* Syndrome Images.xcassets in Resources */,
@@ -1234,6 +1237,7 @@
 				329E25391A6939C400E9AB37 /* trigeminal-motor-n-4.json in Resources */,
 				329E248E1A6939C400E9AB37 /* anterior-spinocerebellar-t-3.json in Resources */,
 				329E251F1A6939C400E9AB37 /* solitary-n-1.json in Resources */,
+				32DBC9211A697BE100ED52C2 /* solitary-n-2.json in Resources */,
 				329E25281A6939C400E9AB37 /* spinal-trigeminal-t-0.json in Resources */,
 				329E24A51A6939C400E9AB37 /* cerebral-aqueduct-m-8.json in Resources */,
 				329E250B1A6939C400E9AB37 /* posterior-longitudinal-fasciculus-t-4.json in Resources */,
@@ -1241,7 +1245,7 @@
 				329E24C11A6939C400E9AB37 /* gracile-fasciculus-t-1.json in Resources */,
 				329E24E51A6939C400E9AB37 /* medial-longitudinal-fasciculus-t-0.json in Resources */,
 				329E25231A6939C400E9AB37 /* spinal-trigeminal-n-0.json in Resources */,
-				329E24B51A6939C400E9AB37 /* dorsal-motor-of-vagus-n-1.json in Resources */,
+				329E24B51A6939C400E9AB37 /* dorsal-motor-n-1.json in Resources */,
 				329E248D1A6939C400E9AB37 /* anterior-spinocerebellar-t-2.json in Resources */,
 				329E24B71A6939C400E9AB37 /* dorsal-trigeminothalamic-t-7.json in Resources */,
 				329E24F81A6939C400E9AB37 /* middle-cerebellar-peduncle-m-6.json in Resources */,
@@ -1266,7 +1270,7 @@
 				329E24DE1A6939C400E9AB37 /* medial-lemniscus-t-2.json in Resources */,
 				329E25171A6939C400E9AB37 /* rubrospinal-t-2.json in Resources */,
 				329E249B1A6939C400E9AB37 /* central-canal-m-1.json in Resources */,
-				329E24B41A6939C400E9AB37 /* dorsal-motor-of-vagus-n-0.json in Resources */,
+				329E24B41A6939C400E9AB37 /* dorsal-motor-n-0.json in Resources */,
 				329E24D31A6939C400E9AB37 /* lateral-lemniscus-t-5.json in Resources */,
 				329E24AC1A6939C400E9AB37 /* corticospinal-t-5.json in Resources */,
 				329E25311A6939C400E9AB37 /* tectospinal-t-1.json in Resources */,

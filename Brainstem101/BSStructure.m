@@ -166,16 +166,16 @@
 
 - (void)generateImageDictionary
 {
-    NSString *tmpStr = [NSString stringWithFormat:@"%@-overlay-back.png", self.conventionalName];
-    if ([self doesFileExsist:tmpStr]) {
+    NSString *tmpStr = [NSString stringWithFormat:@"%@-overlay-back", self.conventionalName];
+    if ([UIImage imageNamed:tmpStr]) {
         self.stemViewOverlayBack = tmpStr;
     }
-    tmpStr = [NSString stringWithFormat:@"%@-overlay-side.png", self.conventionalName];
-    if ([self doesFileExsist:tmpStr]) {
+    tmpStr = [NSString stringWithFormat:@"%@-overlay-side", self.conventionalName];
+    if ([UIImage imageNamed:tmpStr]) {
         self.stemViewOverlaySide = tmpStr;
     }
-    tmpStr = [NSString stringWithFormat:@"%@-overlay-front.png", self.conventionalName];
-    if ([self doesFileExsist:tmpStr]) {
+    tmpStr = [NSString stringWithFormat:@"%@-overlay-front", self.conventionalName];
+    if ([UIImage imageNamed:tmpStr]) {
         self.stemViewOverlayFront = tmpStr;
     }
 }
@@ -210,7 +210,6 @@
     [tmpLayer setLineWidth:2];
     [tmpLayer setLineCap:kCALineCapRound];
     
-
     return tmpLayer;
 }
 

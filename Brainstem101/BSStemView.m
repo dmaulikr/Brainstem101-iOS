@@ -86,18 +86,9 @@
     }
 }
 
-
 - (void)changeCurrentImageToViewMode:(BSStemViewMode)viewMode
 {
     _currentViewMode = viewMode;
-    
-    // Set to default background if the current structure is nil
-    if (!self.currentStructure) {
-        [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-default"]];
-        return;
-    }
-    
-    [self setUserInteractionEnabled:NO];
     
     [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self setAlpha:0];
@@ -108,7 +99,12 @@
             case BSStemViewModeBack:
                 switch (self.currentStructure.structureType) {
                     case BSStructureTypeNucleus:
-                        [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-nuclei"]];
+                        // Set to default background if the current structure is nil
+                        if (self.currentStructure) {
+                            [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-nuclei"]];
+                        }else{
+                            [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-default"]];
+                        }
                         break;
                     default:
                         [self.backgroundView setImage:[UIImage imageNamed:@"stem-back-default"]];
@@ -144,24 +140,32 @@
         }
         
         // Set the stem overlay image
+        NSString *imageName;
+        
         switch (self.currentViewMode) {
             case BSStemViewModeBack:
-                [self.overlayView setImage:[UIImage imageNamed:self.currentStructure.stemViewOverlayBack]];
+                imageName = self.currentStructure.stemViewOverlayBack;
                 break;
             case BSStemViewModeSide:
-                [self.overlayView setImage:[UIImage imageNamed:self.currentStructure.stemViewOverlaySide]];
+                imageName = self.currentStructure.stemViewOverlaySide;
                 break;
             case BSStemViewModeFront:
-                [self.overlayView setImage:[UIImage imageNamed:self.currentStructure.stemViewOverlayFront]];
+                imageName = self.currentStructure.stemViewOverlayFront;
                 break;
             default:
                 break;
         }
         
+        if (imageName) {
+            [self.overlayView setImage:[UIImage imageNamed:imageName]];
+        }else{
+            [self.overlayView setImage:nil];
+        }
+        
         [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             [self setAlpha:1];
         } completion:^(BOOL finished) {
-            [self setUserInteractionEnabled:YES];
+
         }];
     }];
 }

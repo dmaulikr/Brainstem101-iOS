@@ -84,7 +84,7 @@
 			<string>basilar-paramedian-8.png</string>
 		</array>
 		<key>conventionalName</key>
-		<string>--basilar-paramedian-a</string>
+		<string>basilar-paramedian-a</string>
 		<key>structureName</key>
 		<string>- Basilar Paramedian</string>
 		<key>structureType</key>
@@ -106,7 +106,7 @@
 			<string></string>
 		</array>
 		<key>conventionalName</key>
-		<string>--basilar-long-circumferential-a</string>
+		<string>basilar-long-circumferential-a</string>
 		<key>structureName</key>
 		<string>- Basilar Long Circumferential</string>
 		<key>structureType</key>
@@ -128,7 +128,7 @@
 			<string></string>
 		</array>
 		<key>conventionalName</key>
-		<string>--basilar-short-circumferential-a</string>
+		<string>basilar-short-circumferential-a</string>
 		<key>structureName</key>
 		<string>- Basilar Short Circumferential</string>
 		<key>structureType</key>

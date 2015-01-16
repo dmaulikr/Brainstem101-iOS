@@ -12,24 +12,21 @@
 #define ATLAS_SECTION_VIEW_PATH_COLOR [UIColor yellowColor]
 
 @implementation BSAtlasSectionView
-{
-    NSMutableArray *currentStructures;
-    NSMutableDictionary *structureLayersCache;
-    NSOperationQueue *operationQueue;
-}
 
 - (instancetype)initWithFrame:(CGRect)frame andSection:(BSSection *)section
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.section           = section;
-        self.backingView       = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        self.section = section;
+        self.backingView = [[UIImageView alloc] initWithFrame:self.bounds];
         self.backingView.image = [self.section atlasImage];
 
-        self.arteryView        = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        self.arteryView = [[UIImageView alloc] initWithFrame:self.bounds];
 
-        operationQueue         = [NSOperationQueue new];
-        structureLayersCache   = [NSMutableDictionary new];
+        self.operationQueue = [[NSOperationQueue alloc] init];
+        [self.operationQueue setMaxConcurrentOperationCount:NSOperationQueueDefaultMaxConcurrentOperationCount];
+
+        self.structureLayersCache = [[NSMutableDictionary alloc] init];
         
         [self addSubview:self.backingView];
         [self addSubview:self.arteryView];
@@ -46,41 +43,40 @@
 
 - (void)setStructures:(NSArray *)structures
 {
-    [operationQueue cancelAllOperations];
+    [self.operationQueue cancelAllOperations];
     
-    for (UIView *subview in _backingView.subviews) {
+    for (UIView *subview in self.backingView.subviews) {
         [subview setHidden:YES];
     }
     
     for (BSStructure *structure in structures) {
         [self showStructure:structure];
     }
-    
 }
 
 - (void)arteryImageNamed:(NSString *)imageName
 {
     if (imageName) {
         [self.arteryView setImage:[UIImage imageNamed:imageName]];
-        [self.arteryView setAlpha:1];
     }else{
-        [self.arteryView setAlpha:0];
+        [self.arteryView setImage:nil];
      }
 }
 
 - (void)showStructure:(BSStructure *) structure
 {
-    UIImageView *structureImageView = structureLayersCache[structure.structureName];
+    UIImageView *structureImageView = [self.structureLayersCache objectForKey:@(structure.hash)];
     if (structureImageView) {
         [structureImageView setHidden:NO];
-    }else if (structureImageView == nil) {
-        [operationQueue addOperationWithBlock:^{
+    }
+    else {
+        [self.operationQueue addOperationWithBlock:^{
             UIImage *newStructure = [self drawStructure:structure];
             dispatch_async(dispatch_get_main_queue(), ^{
                 UIImageView *newStructureView = [[UIImageView alloc] initWithFrame:self.bounds];
                 [newStructureView setImage:newStructure];
                 [self.backingView addSubview:newStructureView];
-                structureLayersCache[structure.structureName] = newStructureView;
+                [self.structureLayersCache setObject:newStructureView forKey:@(structure.hash)];
             });
         }];
     }
@@ -93,7 +89,6 @@
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
-    // TODO : Double check this is right
     BSStructurePath *currPath = [structure structurePathInSection:self.section.sectionNumber];
     [ATLAS_SECTION_VIEW_PATH_COLOR setStroke];
     CGContextSetLineWidth(currentContext, ATLAS_SECTION_VIEW_LINE_WIDTH);
@@ -124,7 +119,6 @@
 }
 
 #pragma mark Rotation Methods
-#define ROTATION_SPEED 0.4
 #define SECTION_3_Y_ROTATION_OFFSET 35
 
 - (void)rotateView
@@ -226,7 +220,7 @@
     }
     
     // Hardcoded sizes
-    return CGRectMake(0, 0, (1314 * scaleFactor), (868 * scaleFactor));
+    return CGRectMake(0, 0, (CAPTURE_DEVICE_WIDTH * scaleFactor), (CAPTURE_DEVICE_HEIGHT * scaleFactor));
 }
 
 + (CGPoint)getCenterForSection:(NSInteger)num
@@ -271,7 +265,12 @@
 
 - (void)purgeCache
 {
-    [structureLayersCache removeAllObjects];
+    self.structureLayersCache = [[NSMutableDictionary alloc] init];
+    [self.operationQueue cancelAllOperations];
+    for (UIView *sub in self.backingView.subviews) {
+        [sub removeFromSuperview];
+    }
+    self.arteryView.image = nil;
 }
 
 @end

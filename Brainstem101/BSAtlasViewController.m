@@ -80,7 +80,7 @@
     [self.indexTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self.indexTable setSeparatorColor:[UIColor clearColor]];
     [self.indexTable setShowsVerticalScrollIndicator:NO];
-    [self.indexTable setContentInset:UIEdgeInsetsMake(0, 0, 30, 0)];
+    [self.indexTable setContentInset:UIEdgeInsetsMake(0, 0, 40, 0)];
     [self.view addSubview:self.indexTable];
     
     self.clinicalButton  = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -94,25 +94,34 @@
         [view setAlpha:0];
         [self.view addSubview:view];
     }
-        
-//    for (BSStructure *structure in [[BSModel sharedModel] allStructures]) {
-//        for (BSStructurePath *path in structure.structurePaths) {
-//            UIBezierPath *originalPath = [path pathData];
-//            UIBezierPath *newPath = [UIBezierPath bezierPathWithCGPath:[BSStructure newScaledPath:originalPath.CGPath toRect:self.view.bounds]];
-//
-//            NSFileManager *fileManager = [NSFileManager defaultManager];
-//            NSString *dataPath = [NSString stringWithFormat:@"/Users/%@/Desktop/path-json", @"Cam"];
-//            NSString *filename = [NSString stringWithFormat:@"%@-%d.json", structure.conventionalName, (int)path.sectionNumber];
-//            NSString *filePath = [NSString stringWithFormat:@"%@/%@", dataPath, filename];
-//
-//            NSData *jsonData = [UIBezierPathSerialization dataWithBezierPath:newPath options:0 error:nil];
-//            BOOL success = [fileManager createFileAtPath:filePath contents:jsonData attributes:nil];
-//            if (!success) {
-//                NSLog(@"Failed to save %@", structure);
-//            }
-//            
-//        }
-//    }
+    
+    // Bring search field to the front so that it doesn't lag as much
+    [self.view bringSubviewToFront:self.searchBox];
+    
+    // Print all conventional names
+    //    for (BSStructure *structure in [[BSModel sharedModel] allStructures]) {
+    //        NSLog(@"%@", structure.conventionalName);
+    //    }
+    
+    // Export all paths as json
+    //    for (BSStructure *structure in [[BSModel sharedModel] allStructures]) {
+    //        for (BSStructurePath *path in structure.structurePaths) {
+    //            UIBezierPath *originalPath = [path pathData];
+    //            UIBezierPath *newPath = [UIBezierPath bezierPathWithCGPath:[BSStructure newScaledPath:originalPath.CGPath toRect:self.view.bounds]];
+    //
+    //            NSFileManager *fileManager = [NSFileManager defaultManager];
+    //            NSString *dataPath = [NSString stringWithFormat:@"/Users/%@/Desktop/path-json", @"Cam"];
+    //            NSString *filename = [NSString stringWithFormat:@"%@-%d.json", structure.conventionalName, (int)path.sectionNumber];
+    //            NSString *filePath = [NSString stringWithFormat:@"%@/%@", dataPath, filename];
+    //
+    //            NSData *jsonData = [UIBezierPathSerialization dataWithBezierPath:newPath options:0 error:nil];
+    //            BOOL success = [fileManager createFileAtPath:filePath contents:jsonData attributes:nil];
+    //            if (!success) {
+    //                NSLog(@"Failed to save %@", structure);
+    //            }
+    //            
+    //        }
+    //    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -154,6 +163,7 @@
 #pragma mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+//    NSLog(@"Offset %@, Size %@", NSStringFromCGPoint(self.indexTable.contentOffset), NSStringFromCGSize(self.indexTable.contentSize));
     [self updateFadedCells];
 }
 
@@ -162,14 +172,19 @@
     NSArray *visibleCells = [self.indexTable visibleCells];
     static CGFloat offsetNotToFade = 10.0;
     for (UITableViewCell *cell in visibleCells) {
+        if (self.indexTable.contentOffset.y > (self.indexTable.contentSize.height - self.indexTable.bounds.size.height - offsetNotToFade)) {
+            [cell setAlpha:1];
+            continue;
+        }
+        
         if (([cell isEqual:visibleCells[0]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells.lastObject]) {
-            [cell setAlpha:0.2];
-        }else if (([cell isEqual:visibleCells[1]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells[visibleCells.count - 2]]){
             [cell setAlpha:0.3];
+        }else if (([cell isEqual:visibleCells[1]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells[visibleCells.count - 2]]){
+            [cell setAlpha:0.4];
         }else if (([cell isEqual:visibleCells[2]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells[visibleCells.count - 3]]) {
-            [cell setAlpha:0.5];
+            [cell setAlpha:0.6];
         }else if (([cell isEqual:visibleCells[3]] && self.indexTable.contentOffset.y > offsetNotToFade) || [cell isEqual:visibleCells[visibleCells.count - 4]]) {
-            [cell setAlpha:0.7];
+            [cell setAlpha:0.8];
         }else{
             [cell setAlpha:1];
         }
@@ -285,7 +300,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.currentStructure = [[self currentSectionForType:indexPath.section] objectAtIndex:indexPath.row];
-//    NSLog(@"%@", self.currentStructure.conventionalName);
+
     [self.stemView show];
     [self.glassStemView hide];
     [self.stemView setCurrentStructure:self.currentStructure];
@@ -406,7 +421,7 @@
     [self performSegueWithIdentifier:@"atlas-to-clinical" sender:self];
 }
 
--(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
     if (CGRectContainsPoint(self.indexTable.frame, [touch locationInView:self.view])) {
         return NO;
@@ -414,13 +429,16 @@
     return YES;
 }
 
--(void)textFieldDidBeginEditing:(UITextField *)textField
+- (void)textFieldDidBeginEditing:(UITextField *)textField
 {
+    [self.searchBox becomeFirstResponder];
+
     [UIView animateWithDuration:0.3 animations:^{
-        [self.searchBox setAlpha:1];
+         [self.searchBox setAlpha:1];
+    } completion:^(BOOL finished) {
+        //
     }];
     
-    [self.searchBox becomeFirstResponder];
 }
 
 #pragma mark Search -- UITextFieldDelegate Methods
@@ -443,7 +461,7 @@
     return YES;
 }
 
--(void)performSearchWithQuery:(NSString *)query
+- (void)performSearchWithQuery:(NSString *)query
 {
     if (query.length == 0) {
         [self reloadStructresIntoLocalVariables];
@@ -534,7 +552,7 @@
     
 }
 
--(BOOL)does:(BSStructure *)structure match:(NSString *)query
+- (BOOL)does:(BSStructure *)structure match:(NSString *)query
 {
     if ([[[structure conventionalName] stringByReplacingOccurrencesOfString:@"-" withString:@" "]
          rangeOfString:[query lowercaseString]].location == NSNotFound){
@@ -562,6 +580,14 @@
 - (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    for (BSAtlasSectionView *sectionView in allSectionViews) {
+        [sectionView purgeCache];
+    }
 }
 
 @end
