@@ -285,6 +285,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.currentStructure = [[self currentSectionForType:indexPath.section] objectAtIndex:indexPath.row];
+    NSLog(@"%@", self.currentStructure.conventionalName);
     [self.stemView show];
     [self.glassStemView hide];
     [self.stemView setCurrentStructure:self.currentStructure];

@@ -400,6 +400,18 @@
 		<key>$class</key>
 		<string>BSStructure</string>
 		<key>conventionalName</key>
+		<string>substantia-nigra-n</string>
+		<key>structureDescription</key>
+		<string>The substantia nigra, along with four other nuclei, is part of the basal ganglia. It is the largest nucleus in the midbrain, lying dorsal to the cerebral peduncles. Humans have two substantiae nigrae, one on each side of the midline.</string>
+		<key>structureName</key>
+		<string>Substantia Nigra</string>
+		<key>structureType</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>$class</key>
+		<string>BSStructure</string>
+		<key>conventionalName</key>
 		<string>trigeminal-motor-n</string>
 		<key>structureDescription</key>
 		<string>The nuclei innervate muscles of the first branchial arch: muscles of mastication, the tensor tympani, tensor veli palatini, mylohyoid, and anterior belly of the digastric. </string>
