@@ -11,4 +11,5 @@ target 'Brainstem101' do
 	pod 'SVProgressHUD', '~> 1.0'
 	pod 'UIBezierPathSerialization', '~> 1.0'
 	pod 'HRCoder', '~> 1.3'
+	pod 'BuddyBuildSDK', '~> 1.0.16'
 end
