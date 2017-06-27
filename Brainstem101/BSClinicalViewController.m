@@ -44,7 +44,7 @@
         }
     }
     
-    [UIView animateWithDuration:3 delay:0 options:UIViewAnimationCurveLinear animations:^{
+    [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [self.fadingEyeView setAlpha:0];
     } completion:nil];
 

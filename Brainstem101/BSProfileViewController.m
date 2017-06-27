@@ -85,7 +85,7 @@
             [self.sectionView setCurrentSection:[BSSection profileSectionNumber:self.sectionNumber]];
             [self.sectionView setCenter:CGPointMake([[UIScreen mainScreen] bounds].size.width, originalCenter.y)];
             
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationCurveEaseOut animations:^{
+            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 
                 [self.sectionView setAlpha:1];
                 [self.sectionView setCenter:originalCenter];
@@ -104,7 +104,7 @@
             [self.sectionView setCurrentSection:[BSSection profileSectionNumber:self.sectionNumber]];
             [self.sectionView setCenter:CGPointMake([[UIScreen mainScreen] bounds].origin.x, originalCenter.y)];
             
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationCurveEaseOut animations:^{
+            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 
                 [self.sectionView setAlpha:1];
                 [self.sectionView setCenter:originalCenter];

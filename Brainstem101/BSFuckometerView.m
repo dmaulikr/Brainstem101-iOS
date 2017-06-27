@@ -27,7 +27,7 @@
     [self.backgroundView addSubview:self.needleView];
         
     
-    [UIView animateWithDuration:0.5 delay:0 options:nil animations:^{
+    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
         [self.backgroundView setAlpha:1];
         
