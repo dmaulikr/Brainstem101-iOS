@@ -255,8 +255,8 @@
         case 8:
             newCenter = CGPointMake(315, 95);
             break;
-            
         default:
+            newCenter = CGPointMake(0, 0);
             NSLog(@"Error switching in section view frame creation");
             break;
     }

@@ -21,6 +21,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
     _lineWidth = DEFAULT_WIDTH;
     _lineColor = DEFAULT_COLOR;

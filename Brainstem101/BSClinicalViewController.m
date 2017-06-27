@@ -188,8 +188,15 @@
 
 - (CGFloat) calculatedTableCellHeightForDeficit:(BSDeficit *)deficit
 {
-    CGFloat symptomsHeight = [[deficit symptoms] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(343, 105)].height;
-    CGFloat deficitHeight = [[deficit deficit] sizeWithFont:[UIFont fontWithName:@"AmericanTypewriter" size:12] constrainedToSize:CGSizeMake(130, 105)].height;
+    CGFloat symptomsHeight = [deficit.symptoms boundingRectWithSize:CGSizeMake(343, 105)
+                                                           options:NSStringDrawingUsesFontLeading
+                                                        attributes:@{NSFontAttributeName: [UIFont fontWithName:@"AmericanTypewriter" size:12]}
+                                                           context:nil].size.height;
+    
+    CGFloat deficitHeight = [deficit.deficit boundingRectWithSize:CGSizeMake(130, 105)
+                                                          options:NSStringDrawingUsesFontLeading
+                                                       attributes:@{NSFontAttributeName: [UIFont fontWithName:@"AmericanTypewriter" size:12]}
+                                                          context:nil].size.height;
     
     CGFloat finalHeight = MAX(symptomsHeight, deficitHeight);
     finalHeight = MAX(finalHeight, 50);
