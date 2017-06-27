@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC3916F9445F1862552B7B3 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBD2FB40FDB5AD17EF7C03D /* BuddyBuildSDK.framework */; };
 		111250F21622607800644DD6 /* BSStructureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 111250F11622607800644DD6 /* BSStructureGenerator.m */; };
 		11A9932B162170610016CE48 /* BSStructurePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9932A162170610016CE48 /* BSStructurePath.m */; };
 		25D18ABD1622CAA600417FBC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D18ABC1622CAA600417FBC /* CoreImage.framework */; };
@@ -252,6 +253,7 @@
 		32FF12B61A47195600CEAE55 /* miscellaneous.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B11A47195600CEAE55 /* miscellaneous.plist */; };
 		32FF12BA1A47227E00CEAE55 /* arteries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32FF12B91A47227E00CEAE55 /* arteries.plist */; };
 		32FF6F7617098CBF00B4FB0F /* BSDeficit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF6F7517098CBE00B4FB0F /* BSDeficit.m */; };
+		46BD8DDE43DDCFC6ADC5818C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08D7E924D4F9726A72F1882 /* CoreText.framework */; };
 		8179EAE0161D40CF0050D663 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EADF161D40CF0050D663 /* UIKit.framework */; };
 		8179EAE2161D40CF0050D663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EAE1161D40CF0050D663 /* Foundation.framework */; };
 		8179EAE4161D40CF0050D663 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EAE3161D40CF0050D663 /* CoreGraphics.framework */; };
@@ -260,14 +262,21 @@
 		8179EAFC161D40CF0050D663 /* BSAtlasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8179EAFB161D40CF0050D663 /* BSAtlasViewController.m */; };
 		8179EB03161D41020050D663 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8179EB02161D41020050D663 /* QuartzCore.framework */; };
 		8179EB09161D41A50050D663 /* BSStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 8179EB08161D41A50050D663 /* BSStructure.m */; };
+		81CE6AC552E042577B19E698 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716F987FB851E52016AA741 /* CoreTelephony.framework */; };
+		91B9CAB2141E39AE18B44C24 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF864DAFCD4D52F4A5E4794 /* CoreMedia.framework */; };
 		959AEFED51A2ABC6A0612651 /* libPods-Brainstem101.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB35414AEDF665F150F4E70 /* libPods-Brainstem101.a */; };
+		D55BF1AB14CF162EAA379388 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6BE6AB8377EF8E3521280 /* AVFoundation.framework */; };
+		EDC45504EBF2160125E6F111 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D52B95DE4B5CA3551CDCC /* AssetsLibrary.framework */; };
+		EFE8EA448BB950833B111FC1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596CE602F93A9C457DBF350B /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CBD2FB40FDB5AD17EF7C03D /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuddyBuildSDK.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		111250F01622607800644DD6 /* BSStructureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStructureGenerator.h; sourceTree = "<group>"; };
 		111250F11622607800644DD6 /* BSStructureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStructureGenerator.m; sourceTree = "<group>"; };
 		11A99329162170610016CE48 /* BSStructurePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStructurePath.h; sourceTree = "<group>"; };
 		11A9932A162170610016CE48 /* BSStructurePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStructurePath.m; sourceTree = "<group>"; };
+		19F6BE6AB8377EF8E3521280 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		25D18ABC1622CAA600417FBC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		32035532162C0CC60079394F /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		320D18541708FD22002D9E15 /* BSPage0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPage0ViewController.h; sourceTree = "<group>"; };
@@ -538,6 +547,9 @@
 		32FF12B91A47227E00CEAE55 /* arteries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = arteries.plist; sourceTree = "<group>"; };
 		32FF6F7417098CBE00B4FB0F /* BSDeficit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeficit.h; sourceTree = "<group>"; };
 		32FF6F7517098CBE00B4FB0F /* BSDeficit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeficit.m; sourceTree = "<group>"; };
+		4DF864DAFCD4D52F4A5E4794 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		596CE602F93A9C457DBF350B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6716F987FB851E52016AA741 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8179EADB161D40CF0050D663 /* Brainstem101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainstem101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8179EADF161D40CF0050D663 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8179EAE1161D40CF0050D663 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -552,7 +564,9 @@
 		8179EB02161D41020050D663 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8179EB07161D41A50050D663 /* BSStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStructure.h; sourceTree = "<group>"; };
 		8179EB08161D41A50050D663 /* BSStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStructure.m; sourceTree = "<group>"; };
+		8E8D52B95DE4B5CA3551CDCC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B054A4F3AD12D7127760CE4B /* Pods-Brainstem101.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainstem101.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainstem101/Pods-Brainstem101.release.xcconfig"; sourceTree = "<group>"; };
+		B08D7E924D4F9726A72F1882 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		BFB35414AEDF665F150F4E70 /* libPods-Brainstem101.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Brainstem101.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E7965EBAAB62751B5BA021 /* Pods-Brainstem101.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainstem101.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainstem101/Pods-Brainstem101.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -570,6 +584,13 @@
 				8179EAE2161D40CF0050D663 /* Foundation.framework in Frameworks */,
 				8179EAE4161D40CF0050D663 /* CoreGraphics.framework in Frameworks */,
 				959AEFED51A2ABC6A0612651 /* libPods-Brainstem101.a in Frameworks */,
+				0EC3916F9445F1862552B7B3 /* BuddyBuildSDK.framework in Frameworks */,
+				EDC45504EBF2160125E6F111 /* AssetsLibrary.framework in Frameworks */,
+				46BD8DDE43DDCFC6ADC5818C /* CoreText.framework in Frameworks */,
+				81CE6AC552E042577B19E698 /* CoreTelephony.framework in Frameworks */,
+				D55BF1AB14CF162EAA379388 /* AVFoundation.framework in Frameworks */,
+				91B9CAB2141E39AE18B44C24 /* CoreMedia.framework in Frameworks */,
+				EFE8EA448BB950833B111FC1 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +983,13 @@
 				8179EAE1161D40CF0050D663 /* Foundation.framework */,
 				8179EAE3161D40CF0050D663 /* CoreGraphics.framework */,
 				BFB35414AEDF665F150F4E70 /* libPods-Brainstem101.a */,
+				0CBD2FB40FDB5AD17EF7C03D /* BuddyBuildSDK.framework */,
+				8E8D52B95DE4B5CA3551CDCC /* AssetsLibrary.framework */,
+				B08D7E924D4F9726A72F1882 /* CoreText.framework */,
+				6716F987FB851E52016AA741 /* CoreTelephony.framework */,
+				19F6BE6AB8377EF8E3521280 /* AVFoundation.framework */,
+				4DF864DAFCD4D52F4A5E4794 /* CoreMedia.framework */,
+				596CE602F93A9C457DBF350B /* CoreVideo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1462,6 +1490,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 56XM2VF9KK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Brainstem101/Brainstem101-Prefix.pch";
 				INFOPLIST_FILE = "Brainstem101/Brainstem101-Info.plist";
@@ -1484,6 +1516,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 56XM2VF9KK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Brainstem101/Brainstem101-Prefix.pch";
 				INFOPLIST_FILE = "Brainstem101/Brainstem101-Info.plist";
