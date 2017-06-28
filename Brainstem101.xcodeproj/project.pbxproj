@@ -1037,6 +1037,7 @@
 				TargetAttributes = {
 					8179EADA161D40CF0050D663 = {
 						DevelopmentTeam = 56XM2VF9KK;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1469,6 +1470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Zebovin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1491,6 +1493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Zebovin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
