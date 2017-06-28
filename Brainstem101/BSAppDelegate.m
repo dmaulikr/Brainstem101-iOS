@@ -7,11 +7,14 @@
 //
 
 #import "BSAppDelegate.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation BSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [BuddyBuildSDK setup];
+    
     [BSModel sharedModel];
     return YES;
 }
