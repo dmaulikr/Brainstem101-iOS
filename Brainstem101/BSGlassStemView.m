@@ -7,7 +7,7 @@
 //
 
 #import "BSGlassStemView.h"
-#import <UIView+Positioning.h>
+#import <UIView_Positioning/UIView_Positioning-Swift.h>
 
 const NSString *baseFileName = @"glass-stem";
 const CGFloat sectionDistance = 100;

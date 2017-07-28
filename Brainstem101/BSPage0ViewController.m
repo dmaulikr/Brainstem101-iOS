@@ -7,8 +7,8 @@
 //
 
 #import "BSPage0ViewController.h"
-#import <UIView+Positioning.h>
-#import <SVProgressHUD.h>
+#import <UIView_Positioning/UIView_Positioning-Swift.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 #define LOAD_TIME 2
 

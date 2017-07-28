@@ -7,7 +7,7 @@
 //
 
 #import "BSStructurePath.h"
-#import <UIBezierPathSerialization.h>
+#import <UIBezierPathSerialization/UIBezierPathSerialization.h>
 
 @interface BSStructure : NSObject <NSCoding>
 

@@ -8,7 +8,7 @@
 
 #import "BSStructureGenerator.h"
 #import "BSStructure.h"
-#import <HRCoder.h>
+#import <HRCoder/HRCoder.h>
 
 
 @implementation BSStructureGenerator

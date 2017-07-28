@@ -8,7 +8,7 @@
 
 #import "BSAtlasViewController.h"
 #import "BSProfileViewController.h"
-#import <UIView+Positioning.h>
+#import <UIView_Positioning/UIView_Positioning-Swift.h>
 
 @implementation BSAtlasViewController
 {

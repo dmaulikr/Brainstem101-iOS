@@ -7,7 +7,7 @@
 //
 
 #import "BSModel.h"
-#import <HRCoder.h>
+#import <HRCoder/HRCoder.h>
 
 @implementation BSModel
 

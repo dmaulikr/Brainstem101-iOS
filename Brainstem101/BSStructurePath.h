@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Brainstem101. All rights reserved.
 //
 
-#import <UIBezierPathSerialization.h>
+#import <UIBezierPathSerialization/UIBezierPathSerialization.h>
 
 @interface BSStructurePath : NSObject <NSCoding>
 
