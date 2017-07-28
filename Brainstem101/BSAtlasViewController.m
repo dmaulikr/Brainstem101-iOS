@@ -230,7 +230,7 @@
     [cell setBackgroundColor:[UIColor clearColor]];
     [cell.textLabel setFont:[UIFont fontWithName:@"AmericanTypewriter" size:13]];
     [cell.textLabel setAdjustsFontSizeToFitWidth:YES];
-    [cell.textLabel setAdjustsLetterSpacingToFitWidth:YES];
+    [cell.textLabel setAdjustsFontSizeToFitWidth:YES];
     [cell.textLabel setText:structureName];
     
     [cell.textLabel setTextColor:[UIColor whiteColor]];
@@ -577,7 +577,7 @@
     }
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }

@@ -82,7 +82,7 @@ const static int exitButtonWidthHeight = 150;
 
 - (void)quitTutorial:(UIButton *)sender
 {
-    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [self setAlpha:0.0];
     } completion:^(BOOL finished) {
         [[BSModel sharedModel] setInTutorialMode:NO];

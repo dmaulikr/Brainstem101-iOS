@@ -15,6 +15,7 @@
 
 -(void)awakeFromNib
 {
+    [super awakeFromNib];
     [self.answerBoxView setBackgroundColor:[UIColor clearColor]];
     [self.answerBoxView setText:nil];
 }
